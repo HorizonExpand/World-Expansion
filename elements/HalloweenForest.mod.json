@@ -17,11 +17,11 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -7711191,
+      "value": -7705559,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -7711191,
+      "value": -7705559,
       "falpha": 0.0
     },
     "waterColor": {
@@ -80,13 +80,13 @@
     "treeType": 1,
     "minHeight": 7,
     "treeStem": {
-      "value": "Blocks.LOG2#1"
+      "value": "Blocks.LOG#0"
     },
     "treeBranch": {
-      "value": "Blocks.LEAVES2#1"
+      "value": "Blocks.LEAVES#0"
     },
     "treeVines": {
-      "value": ""
+      "value": "Blocks.VINE"
     },
     "treeFruits": {
       "value": ""
