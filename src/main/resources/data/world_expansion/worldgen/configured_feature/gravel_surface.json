@@ -1,0 +1,21 @@
+{
+  "type": "world_expansion:gravel_surface",
+  "config": {
+    "target": {
+      "Name": "minecraft:grass_block",
+      "Properties": {
+        "snowy": "false"
+      }
+    },
+    "state": {
+      "Name": "minecraft:gravel"
+    },
+    "radius": {
+      "type": "uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BaobabSlab"
+      },
+      {
+        "value": "CUSTOM:Kabanytslab"
+      },
+      {
+        "value": "CUSTOM:Kabanytbricksslab"
+      },
+      {
+        "value": "CUSTOM:Kabanyttilesslab"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "slabs",
+    "namespace": "minecraft"
+  }
+}

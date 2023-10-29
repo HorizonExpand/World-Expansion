@@ -1,0 +1,11 @@
+{
+  "_fv": 47,
+  "_type": "tab",
+  "definition": {
+    "name": "WE: Plants",
+    "icon": {
+      "value": "CUSTOM:Astilba"
+    },
+    "showSearch": false
+  }
+}

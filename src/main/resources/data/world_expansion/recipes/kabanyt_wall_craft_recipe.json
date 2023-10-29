@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "world_expansion:kabanyt"
+    },
+    "1": {
+      "item": "world_expansion:kabanyt"
+    },
+    "2": {
+      "item": "world_expansion:kabanyt"
+    },
+    "3": {
+      "item": "world_expansion:kabanyt"
+    },
+    "4": {
+      "item": "world_expansion:kabanyt"
+    },
+    "5": {
+      "item": "world_expansion:kabanyt"
+    }
+  },
+  "result": {
+    "item": "world_expansion:kabanyt_wall",
+    "count": 6
+  }
+}

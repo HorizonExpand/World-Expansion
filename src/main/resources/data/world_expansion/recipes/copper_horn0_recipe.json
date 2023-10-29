@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "012",
+    " 4 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:copper_ingot"
+    },
+    "1": {
+      "item": "minecraft:goat_horn"
+    },
+    "2": {
+      "item": "minecraft:copper_ingot"
+    },
+    "4": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "world_expansion:copper_horn0",
+    "count": 1
+  }
+}

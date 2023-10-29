@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "world_expansion:baobab_valley",
+    "world_expansion:politania"
+  ],
+  "features": "world_expansion:baobab_valley_underwater_dirt",
+  "step": "underground_decoration"
+}

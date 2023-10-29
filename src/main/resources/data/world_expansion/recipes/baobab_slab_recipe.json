@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "world_expansion:baobab_planks"
+    },
+    "1": {
+      "item": "world_expansion:baobab_planks"
+    },
+    "2": {
+      "item": "world_expansion:baobab_planks"
+    }
+  },
+  "result": {
+    "item": "world_expansion:baobab_slab",
+    "count": 6
+  }
+}

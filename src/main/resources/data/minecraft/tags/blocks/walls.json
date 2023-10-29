@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:kabanyt_wall",
+    "world_expansion:kabanyt_bricks_wall",
+    "world_expansion:kabanyt_tiles_wall"
+  ]
+}

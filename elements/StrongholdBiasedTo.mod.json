@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Biomes",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [
+      {
+        "value": "CUSTOM:Baobabvalley"
+      },
+      {
+        "value": "CUSTOM:SavannaPrairie"
+      }
+    ],
+    "name": "stronghold_biased_to",
+    "namespace": "minecraft"
+  }
+}

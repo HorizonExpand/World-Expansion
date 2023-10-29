@@ -1,0 +1,101 @@
+
+/*
+ *    MCreator note: This file will be REGENERATED on each build.
+ */
+package net.horizonexpand.world_expansion.init;
+
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DoubleHighBlockItem;
+import net.minecraft.world.item.BlockItem;
+
+import net.horizonexpand.world_expansion.item.TumbleweedProjectileItem;
+import net.horizonexpand.world_expansion.item.SplitJudasFruitItem;
+import net.horizonexpand.world_expansion.item.PieceTotemOfUndyingItem;
+import net.horizonexpand.world_expansion.item.MusicDiscDestroyerItem;
+import net.horizonexpand.world_expansion.item.LeaveOfAloeVeraItem;
+import net.horizonexpand.world_expansion.item.JudasFruitItem;
+import net.horizonexpand.world_expansion.item.CopperHornItem;
+import net.horizonexpand.world_expansion.item.CopperHorn9Item;
+import net.horizonexpand.world_expansion.item.CopperHorn8Item;
+import net.horizonexpand.world_expansion.item.CopperHorn7Item;
+import net.horizonexpand.world_expansion.item.CopperHorn6Item;
+import net.horizonexpand.world_expansion.item.CopperHorn5Item;
+import net.horizonexpand.world_expansion.item.CopperHorn4Item;
+import net.horizonexpand.world_expansion.item.CopperHorn3Item;
+import net.horizonexpand.world_expansion.item.CopperHorn2Item;
+import net.horizonexpand.world_expansion.item.CopperHorn1Item;
+import net.horizonexpand.world_expansion.WorldExpansionMod;
+
+public class WorldExpansionModItems {
+	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, WorldExpansionMod.MODID);
+	public static final RegistryObject<Item> BAOBAB_LEAVES = block(WorldExpansionModBlocks.BAOBAB_LEAVES);
+	public static final RegistryObject<Item> BAOBAB_WOOD = block(WorldExpansionModBlocks.BAOBAB_WOOD);
+	public static final RegistryObject<Item> BAOBAB_LOG = block(WorldExpansionModBlocks.BAOBAB_LOG);
+	public static final RegistryObject<Item> STRIPPED_BAOBAB_WOOD = block(WorldExpansionModBlocks.STRIPPED_BAOBAB_WOOD);
+	public static final RegistryObject<Item> STRIPPED_BAOBAB_LOG = block(WorldExpansionModBlocks.STRIPPED_BAOBAB_LOG);
+	public static final RegistryObject<Item> BAOBAB_PLANKS = block(WorldExpansionModBlocks.BAOBAB_PLANKS);
+	public static final RegistryObject<Item> BAOBAB_STAIRS = block(WorldExpansionModBlocks.BAOBAB_STAIRS);
+	public static final RegistryObject<Item> BAOBAB_SLAB = block(WorldExpansionModBlocks.BAOBAB_SLAB);
+	public static final RegistryObject<Item> BAOBAB_FENCE = block(WorldExpansionModBlocks.BAOBAB_FENCE);
+	public static final RegistryObject<Item> BAOBAB_FENCE_GATE = block(WorldExpansionModBlocks.BAOBAB_FENCE_GATE);
+	public static final RegistryObject<Item> BAOBAB_PRESSURE_PLATE = block(WorldExpansionModBlocks.BAOBAB_PRESSURE_PLATE);
+	public static final RegistryObject<Item> BAOBAB_BUTTON = block(WorldExpansionModBlocks.BAOBAB_BUTTON);
+	public static final RegistryObject<Item> BAOBAB_DOOR = doubleBlock(WorldExpansionModBlocks.BAOBAB_DOOR);
+	public static final RegistryObject<Item> BAOBAB_TRAPDOOR = block(WorldExpansionModBlocks.BAOBAB_TRAPDOOR);
+	public static final RegistryObject<Item> KABANYT = block(WorldExpansionModBlocks.KABANYT);
+	public static final RegistryObject<Item> KABANYT_STAIRS = block(WorldExpansionModBlocks.KABANYT_STAIRS);
+	public static final RegistryObject<Item> KABANYT_SLAB = block(WorldExpansionModBlocks.KABANYT_SLAB);
+	public static final RegistryObject<Item> KABANYT_WALL = block(WorldExpansionModBlocks.KABANYT_WALL);
+	public static final RegistryObject<Item> KABANYT_BRICKS = block(WorldExpansionModBlocks.KABANYT_BRICKS);
+	public static final RegistryObject<Item> KABANYT_BRICKS_STAIRS = block(WorldExpansionModBlocks.KABANYT_BRICKS_STAIRS);
+	public static final RegistryObject<Item> KABANYT_BRICKS_SLAB = block(WorldExpansionModBlocks.KABANYT_BRICKS_SLAB);
+	public static final RegistryObject<Item> KABANYT_BRICKS_WALL = block(WorldExpansionModBlocks.KABANYT_BRICKS_WALL);
+	public static final RegistryObject<Item> KABANYT_TILES = block(WorldExpansionModBlocks.KABANYT_TILES);
+	public static final RegistryObject<Item> KABANYT_TILES_STAIRS = block(WorldExpansionModBlocks.KABANYT_TILES_STAIRS);
+	public static final RegistryObject<Item> KABANYT_TILES_SLAB = block(WorldExpansionModBlocks.KABANYT_TILES_SLAB);
+	public static final RegistryObject<Item> KABANYT_TILES_WALL = block(WorldExpansionModBlocks.KABANYT_TILES_WALL);
+	public static final RegistryObject<Item> CARVED_KABANYT = block(WorldExpansionModBlocks.CARVED_KABANYT);
+	public static final RegistryObject<Item> ASTILBA = block(WorldExpansionModBlocks.ASTILBA);
+	public static final RegistryObject<Item> ASTILBA_MULTICOLORED = block(WorldExpansionModBlocks.ASTILBA_MULTICOLORED);
+	public static final RegistryObject<Item> YELLOW_ASTILBA = block(WorldExpansionModBlocks.YELLOW_ASTILBA);
+	public static final RegistryObject<Item> ALOE_VERA = block(WorldExpansionModBlocks.ALOE_VERA);
+	public static final RegistryObject<Item> ALOE_VERA_TIGER = block(WorldExpansionModBlocks.ALOE_VERA_TIGER);
+	public static final RegistryObject<Item> TUMBLEWEED = block(WorldExpansionModBlocks.TUMBLEWEED);
+	public static final RegistryObject<Item> BAOBAB_SAPLING = block(WorldExpansionModBlocks.BAOBAB_SAPLING);
+	public static final RegistryObject<Item> LEAVE_OF_ALOE_VERA = REGISTRY.register("leave_of_aloe_vera", () -> new LeaveOfAloeVeraItem());
+	public static final RegistryObject<Item> JUDAS_FRUIT = REGISTRY.register("judas_fruit", () -> new JudasFruitItem());
+	public static final RegistryObject<Item> SPLIT_JUDAS_FRUIT = REGISTRY.register("split_judas_fruit", () -> new SplitJudasFruitItem());
+	public static final RegistryObject<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> new MusicDiscDestroyerItem());
+	public static final RegistryObject<Item> PIECE_TOTEM_OF_UNDYING = REGISTRY.register("piece_totem_of_undying", () -> new PieceTotemOfUndyingItem());
+	public static final RegistryObject<Item> TUMBLEWEED_PROJECTILE = REGISTRY.register("tumbleweed_projectile", () -> new TumbleweedProjectileItem());
+	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
+	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
+	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
+	public static final RegistryObject<Item> TAKYR = block(WorldExpansionModBlocks.TAKYR);
+	public static final RegistryObject<Item> DRY_DIRT = block(WorldExpansionModBlocks.DRY_DIRT);
+	public static final RegistryObject<Item> COPPER_HORN0 = REGISTRY.register("copper_horn0", () -> new CopperHornItem());
+	public static final RegistryObject<Item> COPPER_HORN1 = REGISTRY.register("copper_horn1", () -> new CopperHorn1Item());
+	public static final RegistryObject<Item> COPPER_HORN2 = REGISTRY.register("copper_horn2", () -> new CopperHorn2Item());
+	public static final RegistryObject<Item> COPPER_HORN3 = REGISTRY.register("copper_horn3", () -> new CopperHorn3Item());
+	public static final RegistryObject<Item> COPPER_HORN4 = REGISTRY.register("copper_horn4", () -> new CopperHorn4Item());
+	public static final RegistryObject<Item> COPPER_HORN5 = REGISTRY.register("copper_horn5", () -> new CopperHorn5Item());
+	public static final RegistryObject<Item> COPPER_HORN6 = REGISTRY.register("copper_horn6", () -> new CopperHorn6Item());
+	public static final RegistryObject<Item> COPPER_HORN7 = REGISTRY.register("copper_horn7", () -> new CopperHorn7Item());
+	public static final RegistryObject<Item> COPPER_HORN8 = REGISTRY.register("copper_horn8", () -> new CopperHorn8Item());
+	public static final RegistryObject<Item> COPPER_HORN9 = REGISTRY.register("copper_horn9", () -> new CopperHorn9Item());
+	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
+	public static final RegistryObject<Item> FALLING_SUSPICIOUS_MUD = block(WorldExpansionModBlocks.FALLING_SUSPICIOUS_MUD);
+
+	private static RegistryObject<Item> block(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
+
+	private static RegistryObject<Item> doubleBlock(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties()));
+	}
+}

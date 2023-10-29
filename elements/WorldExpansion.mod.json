@@ -1,0 +1,25 @@
+{
+  "_fv": 47,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "World Expansion",
+    "achievementDescription": "Explore the world!",
+    "achievementIcon": {
+      "value": "CUSTOM:Kabanyt"
+    },
+    "background": "kabanyt.png",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 15,
+    "achievementType": "task",
+    "parent": {
+      "value": "No parent: root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"8\" y=\"50\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Astilbamulticolored"
+      },
+      {
+        "value": "CUSTOM:Kabanyt"
+      },
+      {
+        "value": "CUSTOM:Kabanytbricks"
+      },
+      {
+        "value": "CUSTOM:Kabanyttiles"
+      },
+      {
+        "value": "CUSTOM:Carvedkabanyt"
+      },
+      {
+        "value": "CUSTOM:Kabanytstairs"
+      },
+      {
+        "value": "CUSTOM:Kabanytslab"
+      },
+      {
+        "value": "CUSTOM:Kabanytwall"
+      },
+      {
+        "value": "CUSTOM:Kabanytbricksstairs"
+      },
+      {
+        "value": "CUSTOM:Kabanytbricksslab"
+      },
+      {
+        "value": "CUSTOM:Kabanytbrickswall"
+      },
+      {
+        "value": "CUSTOM:Kabanyttilesstairs"
+      },
+      {
+        "value": "CUSTOM:Kabanyttilesslab"
+      },
+      {
+        "value": "CUSTOM:Kabanyttileswall"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "hoglin_repellents",
+    "namespace": "minecraft"
+  }
+}

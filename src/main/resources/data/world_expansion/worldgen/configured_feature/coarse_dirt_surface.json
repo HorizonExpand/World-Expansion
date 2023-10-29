@@ -1,0 +1,18 @@
+{
+  "type": "world_expansion:coarse_dirt_surface",
+  "config": {
+    "target": {
+      "Name": "minecraft:gravel"
+    },
+    "state": {
+      "Name": "minecraft:coarse_dirt"
+    },
+    "radius": {
+      "type": "uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 6
+      }
+    }
+  }
+}

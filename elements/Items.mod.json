@@ -1,0 +1,11 @@
+{
+  "_fv": 47,
+  "_type": "tab",
+  "definition": {
+    "name": "WE: Items",
+    "icon": {
+      "value": "CUSTOM:LeaveOfAloeVera"
+    },
+    "showSearch": false
+  }
+}

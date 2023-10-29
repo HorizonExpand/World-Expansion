@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "world_expansion:piece_totem_of_undying"
+    },
+    "1": {
+      "item": "world_expansion:piece_totem_of_undying"
+    },
+    "2": {
+      "item": "world_expansion:piece_totem_of_undying"
+    },
+    "3": {
+      "item": "world_expansion:piece_totem_of_undying"
+    },
+    "4": {
+      "item": "minecraft:emerald"
+    },
+    "5": {
+      "item": "world_expansion:piece_totem_of_undying"
+    },
+    "6": {
+      "item": "world_expansion:piece_totem_of_undying"
+    },
+    "7": {
+      "item": "world_expansion:piece_totem_of_undying"
+    },
+    "8": {
+      "item": "world_expansion:piece_totem_of_undying"
+    }
+  },
+  "result": {
+    "item": "minecraft:totem_of_undying",
+    "count": 1
+  }
+}

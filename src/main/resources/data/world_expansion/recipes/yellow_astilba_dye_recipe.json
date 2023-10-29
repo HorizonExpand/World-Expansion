@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "world_expansion:yellow_astilba"
+    }
+  },
+  "result": {
+    "item": "minecraft:yellow_dye",
+    "count": 1
+  }
+}

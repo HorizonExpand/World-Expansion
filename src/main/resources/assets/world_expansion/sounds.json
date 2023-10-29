@@ -1,0 +1,288 @@
+{
+  "music_disc_destroyer": {
+    "sounds": [
+      {
+        "name": "world_expansion:music_disc_destroyer",
+        "stream": true
+      }
+    ]
+  },
+  "music_disc_spooky_forest": {
+    "sounds": [
+      {
+        "name": "world_expansion:music_disc_spooky_forest",
+        "stream": true
+      }
+    ]
+  },
+  "bass0": {
+    "subtitle": "subtitles.bass0",
+    "sounds": [
+      {
+        "name": "world_expansion:bass0",
+        "stream": true
+      }
+    ]
+  },
+  "bass1": {
+    "subtitle": "subtitles.bass1",
+    "sounds": [
+      {
+        "name": "world_expansion:bass1",
+        "stream": true
+      }
+    ]
+  },
+  "bass2": {
+    "subtitle": "subtitles.bass2",
+    "sounds": [
+      {
+        "name": "world_expansion:bass2",
+        "stream": true
+      }
+    ]
+  },
+  "bass3": {
+    "subtitle": "subtitles.bass3",
+    "sounds": [
+      {
+        "name": "world_expansion:bass3",
+        "stream": true
+      }
+    ]
+  },
+  "bass4": {
+    "subtitle": "subtitles.bass4",
+    "sounds": [
+      {
+        "name": "world_expansion:bass4",
+        "stream": true
+      }
+    ]
+  },
+  "bass5": {
+    "subtitle": "subtitles.bass5",
+    "sounds": [
+      {
+        "name": "world_expansion:bass5",
+        "stream": true
+      }
+    ]
+  },
+  "bass6": {
+    "subtitle": "subtitles.bass6",
+    "sounds": [
+      {
+        "name": "world_expansion:bass6",
+        "stream": true
+      }
+    ]
+  },
+  "bass7": {
+    "subtitle": "subtitles.bass7",
+    "sounds": [
+      {
+        "name": "world_expansion:bass7",
+        "stream": true
+      }
+    ]
+  },
+  "bass8": {
+    "subtitle": "subtitles.bass8",
+    "sounds": [
+      {
+        "name": "world_expansion:bass8",
+        "stream": true
+      }
+    ]
+  },
+  "bass9": {
+    "subtitle": "subtitles.bass9",
+    "sounds": [
+      {
+        "name": "world_expansion:bass9",
+        "stream": true
+      }
+    ]
+  },
+  "harmony0": {
+    "subtitle": "subtitles.harmony0",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony0",
+        "stream": true
+      }
+    ]
+  },
+  "harmony1": {
+    "subtitle": "subtitles.harmony1",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony1",
+        "stream": true
+      }
+    ]
+  },
+  "harmony2": {
+    "subtitle": "subtitles.harmony2",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony2",
+        "stream": true
+      }
+    ]
+  },
+  "harmony3": {
+    "subtitle": "subtitles.harmony3",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony3",
+        "stream": true
+      }
+    ]
+  },
+  "harmony4": {
+    "subtitle": "subtitles.harmony4",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony4",
+        "stream": true
+      }
+    ]
+  },
+  "harmony5": {
+    "subtitle": "subtitles.harmony5",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony5",
+        "stream": true
+      }
+    ]
+  },
+  "harmony6": {
+    "subtitle": "subtitles.harmony6",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony6",
+        "stream": true
+      }
+    ]
+  },
+  "harmony7": {
+    "subtitle": "subtitles.harmony7",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony7",
+        "stream": true
+      }
+    ]
+  },
+  "harmony8": {
+    "subtitle": "subtitles.harmony8",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony8",
+        "stream": true
+      }
+    ]
+  },
+  "harmony9": {
+    "subtitle": "subtitles.harmony9",
+    "sounds": [
+      {
+        "name": "world_expansion:harmony9",
+        "stream": true
+      }
+    ]
+  },
+  "melody0": {
+    "subtitle": "subtitles.melody0",
+    "sounds": [
+      {
+        "name": "world_expansion:melody0",
+        "stream": true
+      }
+    ]
+  },
+  "melody1": {
+    "subtitle": "subtitles.melody1",
+    "sounds": [
+      {
+        "name": "world_expansion:melody1",
+        "stream": true
+      }
+    ]
+  },
+  "melody2": {
+    "subtitle": "subtitles.melody2",
+    "sounds": [
+      {
+        "name": "world_expansion:melody2",
+        "stream": true
+      }
+    ]
+  },
+  "melody3": {
+    "subtitle": "subtitles.melody3",
+    "sounds": [
+      {
+        "name": "world_expansion:melody3",
+        "stream": true
+      }
+    ]
+  },
+  "melody4": {
+    "subtitle": "subtitles.melody4",
+    "sounds": [
+      {
+        "name": "world_expansion:melody4",
+        "stream": true
+      }
+    ]
+  },
+  "melody5": {
+    "subtitle": "subtitles.melody5",
+    "sounds": [
+      {
+        "name": "world_expansion:melody5",
+        "stream": true
+      }
+    ]
+  },
+  "melody6": {
+    "subtitle": "subtitles.melody6",
+    "sounds": [
+      {
+        "name": "world_expansion:melody6",
+        "stream": true
+      }
+    ]
+  },
+  "melody7": {
+    "subtitle": "subtitles.melody7",
+    "sounds": [
+      {
+        "name": "world_expansion:melody7",
+        "stream": true
+      }
+    ]
+  },
+  "melody8": {
+    "subtitle": "subtitles.melody8",
+    "sounds": [
+      {
+        "name": "world_expansion:melody8",
+        "stream": true
+      }
+    ]
+  },
+  "melody9": {
+    "subtitle": "subtitles.melody9",
+    "sounds": [
+      {
+        "name": "world_expansion:melody9",
+        "stream": true
+      }
+    ]
+  }
+}

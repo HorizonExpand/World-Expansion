@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "world_expansion:halloween_forest",
+  "features": "world_expansion:coarse_dirt_surface",
+  "step": "surface_structures"
+}

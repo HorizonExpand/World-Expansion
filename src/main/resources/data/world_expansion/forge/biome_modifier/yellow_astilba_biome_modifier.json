@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna_plateau",
+    "world_expansion:baobab_valley",
+    "savanna",
+    "windswept_savanna",
+    "world_expansion:politania"
+  ],
+  "features": "world_expansion:yellow_astilba",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "world_expansion:block/takyr"
+    },
+    "facing=east": {
+      "model": "world_expansion:block/takyr",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "world_expansion:block/takyr",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "world_expansion:block/takyr",
+      "y": 270
+    }
+  }
+}

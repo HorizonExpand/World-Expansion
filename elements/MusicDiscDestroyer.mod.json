@@ -1,0 +1,19 @@
+{
+  "_fv": 47,
+  "_type": "musicdisc",
+  "definition": {
+    "name": "Music Disc ",
+    "texture": "music_disc_destroyer",
+    "description": "Hrumer—Destroyer",
+    "creativeTab": {
+      "value": "CUSTOM:Items"
+    },
+    "specialInfo": [],
+    "hasGlow": false,
+    "music": {
+      "value": "CUSTOM:music_disc_destroyer"
+    },
+    "lengthInTicks": 4940,
+    "analogOutput": 13
+  }
+}

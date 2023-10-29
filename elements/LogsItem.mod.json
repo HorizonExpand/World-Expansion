@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:BaobabWood"
+      },
+      {
+        "value": "CUSTOM:BaobabLog"
+      },
+      {
+        "value": "CUSTOM:Strippedbaobabwood"
+      },
+      {
+        "value": "CUSTOM:Strippedbaobablog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "logs",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna_plateau",
+    "world_expansion:baobab_valley",
+    "savanna",
+    "plains",
+    "windswept_savanna"
+  ],
+  "features": "world_expansion:baobab8",
+  "step": "surface_structures"
+}

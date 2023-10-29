@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "badlands",
+    "plains",
+    "eroded_badlands"
+  ],
+  "features": "world_expansion:mud_ruin1_badlands",
+  "step": "surface_structures"
+}

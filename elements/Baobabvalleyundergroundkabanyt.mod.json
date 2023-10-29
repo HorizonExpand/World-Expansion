@@ -1,0 +1,14 @@
+{
+  "_fv": 47,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "SURFACE_STRUCTURES",
+    "restrictionDimensions": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Baobabvalley"
+      }
+    ],
+    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_random_patch_simple\"><field name=\"tries\">128</field><field name=\"xzSpread\">16</field><field name=\"ySpread\">3</field><value name=\"block\"><block type=\"mcitem_allblocks\"><field name=\"value\">CUSTOM:Kabanyt</field></block></value><value name=\"condition\"><block type=\"block_predicate_matching_blocks\"><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><value name=\"blockSet\"><block type=\"block_holderset_tag\"><field name=\"tag\">minecraft:stone_ore_replaceables</field></block></value></block></value></block></value><next><block type=\"placement_height_uniform\"><value name=\"min\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">56</field></block></value><value name=\"max\"><block type=\"vertical_anchor_absolute\"><field name=\"value\">96</field></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">32</field></block></value><next><block type=\"placement_biome_filter\"/></next></block></next></block></next></block></next></block></xml>"
+  }
+}

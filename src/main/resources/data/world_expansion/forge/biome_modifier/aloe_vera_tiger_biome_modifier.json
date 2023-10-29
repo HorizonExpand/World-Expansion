@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "badlands",
+    "plains",
+    "wooded_badlands",
+    "desert",
+    "eroded_badlands",
+    "world_expansion:politania"
+  ],
+  "features": "world_expansion:aloe_vera_tiger",
+  "step": "vegetal_decoration"
+}

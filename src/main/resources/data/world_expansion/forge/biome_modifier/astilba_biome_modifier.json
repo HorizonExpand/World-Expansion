@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "plains",
+    "flower_forest",
+    "meadow"
+  ],
+  "features": "world_expansion:astilba",
+  "step": "vegetal_decoration"
+}

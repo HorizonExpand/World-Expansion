@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "world_expansion:baobab_planks"
+    },
+    "1": {
+      "item": "world_expansion:baobab_planks"
+    },
+    "2": {
+      "item": "world_expansion:baobab_planks"
+    },
+    "3": {
+      "item": "world_expansion:baobab_planks"
+    },
+    "4": {
+      "item": "world_expansion:baobab_planks"
+    },
+    "5": {
+      "item": "world_expansion:baobab_planks"
+    }
+  },
+  "result": {
+    "item": "world_expansion:baobab_door",
+    "count": 3
+  }
+}

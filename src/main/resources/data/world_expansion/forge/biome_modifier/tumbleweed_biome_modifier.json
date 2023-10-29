@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "badlands",
+    "world_expansion:baobab_valley",
+    "plains",
+    "windswept_savanna",
+    "wooded_badlands",
+    "desert",
+    "eroded_badlands"
+  ],
+  "features": "world_expansion:tumbleweed",
+  "step": "vegetal_decoration"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side",
+  "textures": {
+    "wall": "world_expansion:block/kabanyt_bricks",
+    "particle": "world_expansion:block/kabanyt_bricks"
+  },
+  "render_type": "solid"
+}

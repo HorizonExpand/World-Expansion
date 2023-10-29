@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "world_expansion:baobab_valley",
+  "features": "world_expansion:raider_base_in_baobab",
+  "step": "surface_structures"
+}

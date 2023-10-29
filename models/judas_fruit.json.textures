@@ -1,0 +1,22 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "judas_fruit3"
+      },
+      "name": "default"
+    },
+    "first": {
+      "map": {
+        "3": "judas_fruit1"
+      },
+      "name": "first"
+    },
+    "second": {
+      "map": {
+        "3": "judas_fruit2"
+      },
+      "name": "second"
+    }
+  }
+}

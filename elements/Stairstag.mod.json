@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BaobabStairs"
+      },
+      {
+        "value": "CUSTOM:Kabanytstairs"
+      },
+      {
+        "value": "CUSTOM:Kabanytbricksstairs"
+      },
+      {
+        "value": "CUSTOM:Kabanyttilesstairs"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "stairs",
+    "namespace": "minecraft"
+  }
+}
