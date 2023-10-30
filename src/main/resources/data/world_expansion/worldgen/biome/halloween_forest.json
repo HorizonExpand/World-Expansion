@@ -3,11 +3,16 @@
   "temperature": 0.7,
   "downfall": 1,
   "effects": {
+    "ambient_sound": "ambient.soul_sand_valley.loop",
     "mood_sound": {
       "sound": "ambient.soul_sand_valley.mood",
-      "tick_delay": 6000,
+      "tick_delay": 3000,
       "offset": 8,
       "block_search_extent": 2
+    },
+    "additions_sound": {
+      "sound": "ambient.soul_sand_valley.additions",
+      "tick_chance": 0.0111
     },
     "music": {
       "sound": "music.overworld.deep_dark",
@@ -25,61 +30,62 @@
     "grass_color": -7705559,
     "sky_color": -10066330,
     "fog_color": -10066330,
-    "water_color": -7711191,
-    "water_fog_color": -7711191
+    "water_color": -10202301,
+    "water_fog_color": -10202301
   },
   "spawners": {
     "monster": [
       {
         "type": "cave_spider",
-        "weight": 80,
+        "weight": 100,
         "minCount": 3,
         "maxCount": 4
       },
       {
-        "type": "phantom",
-        "weight": 20,
-        "minCount": 4,
-        "maxCount": 4
-      },
-      {
         "type": "skeleton",
-        "weight": 100,
+        "weight": 120,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "spider",
-        "weight": 80,
+        "weight": 100,
         "minCount": 3,
         "maxCount": 4
       },
       {
         "type": "witch",
-        "weight": 4,
+        "weight": 8,
         "minCount": 1,
         "maxCount": 2
       },
       {
         "type": "zombie",
-        "weight": 95,
+        "weight": 110,
         "minCount": 4,
         "maxCount": 4
       },
       {
         "type": "bat",
-        "weight": 20,
+        "weight": 50,
         "minCount": 3,
         "maxCount": 6
       },
       {
         "type": "creeper",
-        "weight": 80,
+        "weight": 100,
         "minCount": 4,
         "maxCount": 4
       }
     ],
-    "creature": [],
+    "creature": [
+      {
+        "type": "pig",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
     "ambient": [],
     "axolotls": [],
     "underground_water_creature": [],
@@ -88,7 +94,7 @@
     "misc": [
       {
         "type": "enderman",
-        "weight": 4,
+        "weight": 8,
         "minCount": 1,
         "maxCount": 2
       }

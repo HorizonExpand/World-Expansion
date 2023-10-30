@@ -4,12 +4,6 @@
  */
 package net.horizonexpand.world_expansion.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-
-import net.minecraft.world.level.block.Block;
-
 import net.horizonexpand.world_expansion.block.YellowAstilbaBlock;
 import net.horizonexpand.world_expansion.block.TumbleweedBlock;
 import net.horizonexpand.world_expansion.block.TakyrBlock;
@@ -31,6 +25,7 @@ import net.horizonexpand.world_expansion.block.KabanytBlock;
 import net.horizonexpand.world_expansion.block.JudasFruit3Block;
 import net.horizonexpand.world_expansion.block.JudasFruit2Block;
 import net.horizonexpand.world_expansion.block.JudasFruit1Block;
+import net.horizonexpand.world_expansion.block.JackOLanternWithSoulBlock;
 import net.horizonexpand.world_expansion.block.FallingSuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.DryDirtBlock;
 import net.horizonexpand.world_expansion.block.CarvedkabanytBlock;
@@ -82,6 +77,9 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> KABANYT_TILES_SLAB = REGISTRY.register("kabanyt_tiles_slab", () -> new KabanyttilesslabBlock());
 	public static final RegistryObject<Block> KABANYT_TILES_WALL = REGISTRY.register("kabanyt_tiles_wall", () -> new KabanyttileswallBlock());
 	public static final RegistryObject<Block> CARVED_KABANYT = REGISTRY.register("carved_kabanyt", () -> new CarvedkabanytBlock());
+	public static final RegistryObject<Block> TAKYR = REGISTRY.register("takyr", () -> new TakyrBlock());
+	public static final RegistryObject<Block> DRY_DIRT = REGISTRY.register("dry_dirt", () -> new DryDirtBlock());
+	public static final RegistryObject<Block> SUSPICIOUS_MUD = REGISTRY.register("suspicious_mud", () -> new SuspiciousMudBlock());
 	public static final RegistryObject<Block> ASTILBA = REGISTRY.register("astilba", () -> new AstilbaBlock());
 	public static final RegistryObject<Block> ASTILBA_MULTICOLORED = REGISTRY.register("astilba_multicolored", () -> new AstilbamulticoloredBlock());
 	public static final RegistryObject<Block> YELLOW_ASTILBA = REGISTRY.register("yellow_astilba", () -> new YellowAstilbaBlock());
@@ -89,11 +87,9 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> ALOE_VERA_TIGER = REGISTRY.register("aloe_vera_tiger", () -> new AloeVeraTigerBlock());
 	public static final RegistryObject<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", () -> new TumbleweedBlock());
 	public static final RegistryObject<Block> BAOBAB_SAPLING = REGISTRY.register("baobab_sapling", () -> new BaobabSaplingBlock());
+	public static final RegistryObject<Block> JACK_O_LANTERN_WITH_SOUL = REGISTRY.register("jack_o_lantern_with_soul", () -> new JackOLanternWithSoulBlock());
 	public static final RegistryObject<Block> JUDAS_FRUIT1 = REGISTRY.register("judas_fruit1", () -> new JudasFruit1Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_2 = REGISTRY.register("judas_fruit_2", () -> new JudasFruit2Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_3 = REGISTRY.register("judas_fruit_3", () -> new JudasFruit3Block());
-	public static final RegistryObject<Block> TAKYR = REGISTRY.register("takyr", () -> new TakyrBlock());
-	public static final RegistryObject<Block> DRY_DIRT = REGISTRY.register("dry_dirt", () -> new DryDirtBlock());
-	public static final RegistryObject<Block> SUSPICIOUS_MUD = REGISTRY.register("suspicious_mud", () -> new SuspiciousMudBlock());
 	public static final RegistryObject<Block> FALLING_SUSPICIOUS_MUD = REGISTRY.register("falling_suspicious_mud", () -> new FallingSuspiciousMudBlock());
 }

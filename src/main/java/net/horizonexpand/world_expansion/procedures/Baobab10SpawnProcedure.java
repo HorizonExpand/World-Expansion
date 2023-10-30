@@ -1,13 +1,5 @@
 package net.horizonexpand.world_expansion.procedures;
 
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.BlockPos;
-
 public class Baobab10SpawnProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		ItemStack UnderSoil = ItemStack.EMPTY;

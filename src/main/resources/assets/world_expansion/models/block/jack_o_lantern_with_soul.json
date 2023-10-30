@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "world_expansion:block/pumpkin_top",
+    "up": "world_expansion:block/pumpkin_top",
+    "north": "world_expansion:block/jack_o_lanter_with_soul",
+    "east": "world_expansion:block/pumpkin_side",
+    "south": "world_expansion:block/pumpkin_side",
+    "west": "world_expansion:block/pumpkin_side",
+    "particle": "world_expansion:block/pumpkin_top"
+  },
+  "render_type": "solid"
+}

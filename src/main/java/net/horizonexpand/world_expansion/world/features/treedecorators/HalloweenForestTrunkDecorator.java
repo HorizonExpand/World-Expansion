@@ -1,17 +1,6 @@
 
 package net.horizonexpand.world_expansion.world.features.treedecorators;
 
-import net.minecraftforge.registries.RegisterEvent;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-
-import net.minecraft.world.level.levelgen.feature.treedecorators.TrunkVineDecorator;
-import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
-import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.core.BlockPos;
-
 import com.mojang.serialization.Codec;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)

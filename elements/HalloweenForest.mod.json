@@ -25,18 +25,18 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -7711191,
+      "value": -10202301,
       "falpha": 0.0
     },
     "waterFogColor": {
-      "value": -7711191,
+      "value": -10202301,
       "falpha": 0.0
     },
     "ambientSound": {
-      "value": ""
+      "value": "ambient.soul_sand_valley.loop"
     },
     "additionsSound": {
-      "value": ""
+      "value": "ambient.soul_sand_valley.additions"
     },
     "music": {
       "value": "music.overworld.deep_dark"
@@ -44,7 +44,7 @@
     "moodSound": {
       "value": "ambient.soul_sand_valley.mood"
     },
-    "moodSoundDelay": 6000,
+    "moodSoundDelay": 3000,
     "spawnParticles": true,
     "particleToSpawn": {
       "value": "SMOKE_LARGE"
@@ -56,8 +56,8 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": -0.3,
-      "max": 0.5
+      "min": -0.4,
+      "max": 0.4
     },
     "genHumidity": {
       "min": 0.2,
@@ -68,17 +68,17 @@
       "max": 1.0
     },
     "genErosion": {
-      "min": -1.0,
-      "max": 0.5
+      "min": -0.5,
+      "max": 1.0
     },
     "genWeirdness": {
       "min": -1.0,
       "max": 1.0
     },
-    "treesPerChunk": 8,
+    "treesPerChunk": 12,
     "vanillaTreeType": "Default",
     "treeType": 1,
-    "minHeight": 7,
+    "minHeight": 5,
     "treeStem": {
       "value": "Blocks.LOG#0"
     },
@@ -104,12 +104,12 @@
       "PlainsTallGrass",
       "ReedsAndPumpkins"
     ],
-    "spawnStronghold": true,
+    "spawnStronghold": false,
     "spawnMineshaft": false,
     "spawnMineshaftMesa": true,
-    "spawnPillagerOutpost": false,
+    "spawnPillagerOutpost": true,
     "villageType": "none",
-    "spawnWoodlandMansion": true,
+    "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
     "spawnSwampHut": true,
@@ -131,7 +131,7 @@
         },
         "minGroup": 3,
         "maxGroup": 4,
-        "weight": 80,
+        "weight": 100,
         "spawnType": "monster"
       },
       {
@@ -140,17 +140,8 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 4,
+        "weight": 8,
         "spawnType": "misc"
-      },
-      {
-        "entity": {
-          "value": "EntityPhantom"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "monster"
       },
       {
         "entity": {
@@ -158,7 +149,7 @@
         },
         "minGroup": 4,
         "maxGroup": 4,
-        "weight": 100,
+        "weight": 120,
         "spawnType": "monster"
       },
       {
@@ -167,7 +158,7 @@
         },
         "minGroup": 3,
         "maxGroup": 4,
-        "weight": 80,
+        "weight": 100,
         "spawnType": "monster"
       },
       {
@@ -176,7 +167,7 @@
         },
         "minGroup": 1,
         "maxGroup": 2,
-        "weight": 4,
+        "weight": 8,
         "spawnType": "monster"
       },
       {
@@ -185,7 +176,7 @@
         },
         "minGroup": 4,
         "maxGroup": 4,
-        "weight": 95,
+        "weight": 110,
         "spawnType": "monster"
       },
       {
@@ -194,7 +185,7 @@
         },
         "minGroup": 3,
         "maxGroup": 6,
-        "weight": 20,
+        "weight": 50,
         "spawnType": "monster"
       },
       {
@@ -203,8 +194,17 @@
         },
         "minGroup": 4,
         "maxGroup": 4,
-        "weight": 80,
+        "weight": 100,
         "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityPig"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
       }
     ]
   }

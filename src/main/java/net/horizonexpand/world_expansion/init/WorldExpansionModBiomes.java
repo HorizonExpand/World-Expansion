@@ -4,37 +4,10 @@
  */
 package net.horizonexpand.world_expansion.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.server.ServerAboutToStartEvent;
-
-import net.minecraft.world.level.levelgen.placement.CaveSurface;
-import net.minecraft.world.level.levelgen.SurfaceRules;
-import net.minecraft.world.level.levelgen.NoiseGeneratorSettings;
-import net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator;
-import net.minecraft.world.level.dimension.LevelStem;
-import net.minecraft.world.level.dimension.DimensionType;
-import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
-import net.minecraft.world.level.chunk.ChunkGenerator;
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
-import net.minecraft.world.level.biome.FeatureSorter;
-import net.minecraft.world.level.biome.Climate;
-import net.minecraft.world.level.biome.Biome;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.core.Registry;
-import net.minecraft.core.Holder;
-
 import java.util.List;
 import java.util.ArrayList;
 
 import com.mojang.datafixers.util.Pair;
-
-import com.google.common.base.Suppliers;
 
 @Mod.EventBusSubscriber
 public class WorldExpansionModBiomes {
@@ -63,9 +36,9 @@ public class WorldExpansionModBiomes {
 							Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "died_savanna")))));
 					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.5f, 1f), Climate.Parameter.span(-1f, -0.2f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-1f, 0.5f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "died_savanna")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.3f, 0.5f), Climate.Parameter.span(0.2f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-1f, 0.5f), Climate.Parameter.point(0.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.4f, 0.4f), Climate.Parameter.span(0.2f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.point(0.0f),
 							Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "halloween_forest")))));
-					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.3f, 0.5f), Climate.Parameter.span(0.2f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-1f, 0.5f), Climate.Parameter.point(1.0f),
+					parameters.add(new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(-0.4f, 0.4f), Climate.Parameter.span(0.2f, 1f), Climate.Parameter.span(0.3f, 1f), Climate.Parameter.span(-0.5f, 1f), Climate.Parameter.point(1.0f),
 							Climate.Parameter.span(-1f, 1f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "halloween_forest")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers

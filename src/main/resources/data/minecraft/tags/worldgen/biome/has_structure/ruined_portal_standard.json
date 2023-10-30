@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "world_expansion:politania",
-    "world_expansion:halloween_forest"
+    "world_expansion:halloween_forest",
+    "world_expansion:halloween_dark_forest"
   ]
 }

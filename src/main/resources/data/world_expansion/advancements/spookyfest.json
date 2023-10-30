@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "world_expansion:textures/screens/pumpkin_side.png",
+    "icon": {
+      "item": "world_expansion:jack_o_lantern_with_soul"
+    },
+    "title": {
+      "translate": "advancements.spookyfest.title"
+    },
+    "description": {
+      "translate": "advancements.spookyfest.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "spookyfest": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "world_expansion:spookyfest_world"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 23
+  }
+}

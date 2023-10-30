@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "world_expansion:baobab_valley",
-    "world_expansion:politania",
-    "world_expansion:halloween_forest"
+    "world_expansion:politania"
   ]
 }

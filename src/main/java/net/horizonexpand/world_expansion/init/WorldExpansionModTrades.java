@@ -4,15 +4,6 @@
 */
 package net.horizonexpand.world_expansion.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.village.WandererTradesEvent;
-import net.minecraftforge.common.BasicItemListing;
-
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.ItemStack;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class WorldExpansionModTrades {
 	@SubscribeEvent

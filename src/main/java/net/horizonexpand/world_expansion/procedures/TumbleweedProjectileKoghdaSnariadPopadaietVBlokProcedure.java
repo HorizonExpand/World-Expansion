@@ -1,9 +1,5 @@
 package net.horizonexpand.world_expansion.procedures;
 
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.core.BlockPos;
-
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class TumbleweedProjectileKoghdaSnariadPopadaietVBlokProcedure {

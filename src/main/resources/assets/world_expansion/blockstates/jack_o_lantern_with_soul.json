@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "world_expansion:block/jack_o_lantern_with_soul"
+    },
+    "facing=east": {
+      "model": "world_expansion:block/jack_o_lantern_with_soul",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "world_expansion:block/jack_o_lantern_with_soul",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "world_expansion:block/jack_o_lantern_with_soul",
+      "y": 270
+    }
+  }
+}

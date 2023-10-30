@@ -4,13 +4,6 @@
  */
 package net.horizonexpand.world_expansion.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-
-import net.minecraft.world.level.levelgen.feature.Feature;
-
 import net.horizonexpand.world_expansion.world.features.plants.YellowAstilbaFeature;
 import net.horizonexpand.world_expansion.world.features.plants.TumbleweedFeature;
 import net.horizonexpand.world_expansion.world.features.plants.AstilbamulticoloredFeature;
@@ -18,11 +11,13 @@ import net.horizonexpand.world_expansion.world.features.plants.AstilbaFeature;
 import net.horizonexpand.world_expansion.world.features.plants.AloeVeraTigerFeature;
 import net.horizonexpand.world_expansion.world.features.plants.AloeVeraFeature;
 import net.horizonexpand.world_expansion.world.features.ores.KabanytFeature;
+import net.horizonexpand.world_expansion.world.features.WaterLakeFeature;
 import net.horizonexpand.world_expansion.world.features.RaiderBaseInBaobabFeature;
 import net.horizonexpand.world_expansion.world.features.MudRuin1Feature;
 import net.horizonexpand.world_expansion.world.features.MudRuin1DesertFeature;
 import net.horizonexpand.world_expansion.world.features.MudRuin1BadlandFeature;
 import net.horizonexpand.world_expansion.world.features.JackLanternFeature;
+import net.horizonexpand.world_expansion.world.features.HalloweenForestWellFeature;
 import net.horizonexpand.world_expansion.world.features.GravelsurfaceFeature;
 import net.horizonexpand.world_expansion.world.features.Drybaobab2Feature;
 import net.horizonexpand.world_expansion.world.features.Drybaobab1Feature;
@@ -78,4 +73,6 @@ public class WorldExpansionModFeatures {
 	public static final RegistryObject<Feature<?>> JACK_LANTERN = REGISTRY.register("jack_lantern", JackLanternFeature::new);
 	public static final RegistryObject<Feature<?>> GRAVEL_SURFACE = REGISTRY.register("gravel_surface", GravelsurfaceFeature::new);
 	public static final RegistryObject<Feature<?>> COARSE_DIRT_SURFACE = REGISTRY.register("coarse_dirt_surface", CoarseDirtSurfaceFeature::new);
+	public static final RegistryObject<Feature<?>> WATER_LAKE = REGISTRY.register("water_lake", WaterLakeFeature::new);
+	public static final RegistryObject<Feature<?>> HALLOWEEN_FOREST_WELL = REGISTRY.register("halloween_forest_well", HalloweenForestWellFeature::new);
 }

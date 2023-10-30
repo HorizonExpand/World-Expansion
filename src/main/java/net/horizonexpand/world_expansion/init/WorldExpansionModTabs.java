@@ -4,14 +4,6 @@
  */
 package net.horizonexpand.world_expansion.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.registries.Registries;
-
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 public class WorldExpansionModTabs {
@@ -80,6 +72,13 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.COPPER_HORN7.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN8.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN9.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> WE_HALLOWEEN = REGISTRY.register("we_halloween",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.we_halloween")).icon(() -> new ItemStack(WorldExpansionModItems.SOUL.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL.get().asItem());
+				tabData.accept(WorldExpansionModItems.SOUL.get());
 			})
 
 					.build());

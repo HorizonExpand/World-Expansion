@@ -1,10 +1,5 @@
 package net.horizonexpand.world_expansion.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.util.RandomSource;
-import net.minecraft.util.Mth;
-import net.minecraft.core.BlockPos;
-
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class TumbleweedObnovlieniieTikaProcedure {

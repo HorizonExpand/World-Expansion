@@ -4,17 +4,9 @@
  */
 package net.horizonexpand.world_expansion.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
-
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DoubleHighBlockItem;
-import net.minecraft.world.item.BlockItem;
-
 import net.horizonexpand.world_expansion.item.TumbleweedProjectileItem;
 import net.horizonexpand.world_expansion.item.SplitJudasFruitItem;
+import net.horizonexpand.world_expansion.item.SoulItem;
 import net.horizonexpand.world_expansion.item.PieceTotemOfUndyingItem;
 import net.horizonexpand.world_expansion.item.MusicDiscDestroyerItem;
 import net.horizonexpand.world_expansion.item.LeaveOfAloeVeraItem;
@@ -60,6 +52,9 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> KABANYT_TILES_SLAB = block(WorldExpansionModBlocks.KABANYT_TILES_SLAB);
 	public static final RegistryObject<Item> KABANYT_TILES_WALL = block(WorldExpansionModBlocks.KABANYT_TILES_WALL);
 	public static final RegistryObject<Item> CARVED_KABANYT = block(WorldExpansionModBlocks.CARVED_KABANYT);
+	public static final RegistryObject<Item> TAKYR = block(WorldExpansionModBlocks.TAKYR);
+	public static final RegistryObject<Item> DRY_DIRT = block(WorldExpansionModBlocks.DRY_DIRT);
+	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
 	public static final RegistryObject<Item> ASTILBA = block(WorldExpansionModBlocks.ASTILBA);
 	public static final RegistryObject<Item> ASTILBA_MULTICOLORED = block(WorldExpansionModBlocks.ASTILBA_MULTICOLORED);
 	public static final RegistryObject<Item> YELLOW_ASTILBA = block(WorldExpansionModBlocks.YELLOW_ASTILBA);
@@ -72,12 +67,6 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> SPLIT_JUDAS_FRUIT = REGISTRY.register("split_judas_fruit", () -> new SplitJudasFruitItem());
 	public static final RegistryObject<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> new MusicDiscDestroyerItem());
 	public static final RegistryObject<Item> PIECE_TOTEM_OF_UNDYING = REGISTRY.register("piece_totem_of_undying", () -> new PieceTotemOfUndyingItem());
-	public static final RegistryObject<Item> TUMBLEWEED_PROJECTILE = REGISTRY.register("tumbleweed_projectile", () -> new TumbleweedProjectileItem());
-	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
-	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
-	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
-	public static final RegistryObject<Item> TAKYR = block(WorldExpansionModBlocks.TAKYR);
-	public static final RegistryObject<Item> DRY_DIRT = block(WorldExpansionModBlocks.DRY_DIRT);
 	public static final RegistryObject<Item> COPPER_HORN0 = REGISTRY.register("copper_horn0", () -> new CopperHornItem());
 	public static final RegistryObject<Item> COPPER_HORN1 = REGISTRY.register("copper_horn1", () -> new CopperHorn1Item());
 	public static final RegistryObject<Item> COPPER_HORN2 = REGISTRY.register("copper_horn2", () -> new CopperHorn2Item());
@@ -88,7 +77,12 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> COPPER_HORN7 = REGISTRY.register("copper_horn7", () -> new CopperHorn7Item());
 	public static final RegistryObject<Item> COPPER_HORN8 = REGISTRY.register("copper_horn8", () -> new CopperHorn8Item());
 	public static final RegistryObject<Item> COPPER_HORN9 = REGISTRY.register("copper_horn9", () -> new CopperHorn9Item());
-	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
+	public static final RegistryObject<Item> JACK_O_LANTERN_WITH_SOUL = block(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL);
+	public static final RegistryObject<Item> SOUL = REGISTRY.register("soul", () -> new SoulItem());
+	public static final RegistryObject<Item> TUMBLEWEED_PROJECTILE = REGISTRY.register("tumbleweed_projectile", () -> new TumbleweedProjectileItem());
+	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
+	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
+	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
 	public static final RegistryObject<Item> FALLING_SUSPICIOUS_MUD = block(WorldExpansionModBlocks.FALLING_SUSPICIOUS_MUD);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
