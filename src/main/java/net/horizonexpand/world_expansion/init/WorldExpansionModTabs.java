@@ -4,6 +4,14 @@
  */
 package net.horizonexpand.world_expansion.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.DeferredRegister;
+
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
+import net.minecraft.core.registries.Registries;
+
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 public class WorldExpansionModTabs {
@@ -45,13 +53,13 @@ public class WorldExpansionModTabs {
 					.build());
 	public static final RegistryObject<CreativeModeTab> PLANTS = REGISTRY.register("plants",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.plants")).icon(() -> new ItemStack(WorldExpansionModBlocks.ASTILBA.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.YELLOW_ASTILBA.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.ALOE_VERA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ALOE_VERA_TIGER.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TUMBLEWEED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.ALOE_VERA.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
 			})
 
 					.build());

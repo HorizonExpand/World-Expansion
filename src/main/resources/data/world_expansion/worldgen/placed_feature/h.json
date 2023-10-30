@@ -1,9 +1,9 @@
 {
-  "feature": "world_expansion:aloe_vera",
+  "feature": "world_expansion:h",
   "placement": [
     {
       "type": "minecraft:count",
-      "count": 6
+      "count": 5
     },
     {
       "type": "minecraft:rarity_filter",

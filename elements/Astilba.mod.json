@@ -28,7 +28,7 @@
         "subtract": false
       }
     ],
-    "name": "Astilba",
+    "name": "Astilba ",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:Plants"
@@ -77,27 +77,30 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "isBonemealable": true,
-    "onBonemealSuccess": {
-      "name": "AstilbaOnBoneMealSuccess"
-    },
-    "frequencyOnChunks": 4,
+    "isBonemealable": false,
+    "frequencyOnChunks": 6,
     "spawnWorldTypes": [
       "Surface"
     ],
     "restrictionBiomes": [
       {
-        "value": "plains"
+        "value": "meadow"
       },
       {
-        "value": "meadow"
+        "value": "jungle_hills"
+      },
+      {
+        "value": "jungle_edge"
       },
       {
         "value": "mutated_forest"
       }
     ],
+    "generateCondition": {
+      "name": "AstilbamulticoloredDobavochnoieUsloviiePoGienieratsii"
+    },
     "generationType": "Flower",
-    "patchSize": 32,
+    "patchSize": 12,
     "generateAtAnyHeight": false
   }
 }

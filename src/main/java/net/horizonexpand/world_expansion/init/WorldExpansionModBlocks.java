@@ -4,6 +4,12 @@
  */
 package net.horizonexpand.world_expansion.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+
+import net.minecraft.world.level.block.Block;
+
 import net.horizonexpand.world_expansion.block.YellowAstilbaBlock;
 import net.horizonexpand.world_expansion.block.TumbleweedBlock;
 import net.horizonexpand.world_expansion.block.TakyrBlock;
@@ -80,10 +86,8 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> TAKYR = REGISTRY.register("takyr", () -> new TakyrBlock());
 	public static final RegistryObject<Block> DRY_DIRT = REGISTRY.register("dry_dirt", () -> new DryDirtBlock());
 	public static final RegistryObject<Block> SUSPICIOUS_MUD = REGISTRY.register("suspicious_mud", () -> new SuspiciousMudBlock());
-	public static final RegistryObject<Block> ASTILBA = REGISTRY.register("astilba", () -> new AstilbaBlock());
 	public static final RegistryObject<Block> ASTILBA_MULTICOLORED = REGISTRY.register("astilba_multicolored", () -> new AstilbamulticoloredBlock());
 	public static final RegistryObject<Block> YELLOW_ASTILBA = REGISTRY.register("yellow_astilba", () -> new YellowAstilbaBlock());
-	public static final RegistryObject<Block> ALOE_VERA = REGISTRY.register("aloe_vera", () -> new AloeVeraBlock());
 	public static final RegistryObject<Block> ALOE_VERA_TIGER = REGISTRY.register("aloe_vera_tiger", () -> new AloeVeraTigerBlock());
 	public static final RegistryObject<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", () -> new TumbleweedBlock());
 	public static final RegistryObject<Block> BAOBAB_SAPLING = REGISTRY.register("baobab_sapling", () -> new BaobabSaplingBlock());
@@ -92,4 +96,6 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> JUDAS_FRUIT_2 = REGISTRY.register("judas_fruit_2", () -> new JudasFruit2Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_3 = REGISTRY.register("judas_fruit_3", () -> new JudasFruit3Block());
 	public static final RegistryObject<Block> FALLING_SUSPICIOUS_MUD = REGISTRY.register("falling_suspicious_mud", () -> new FallingSuspiciousMudBlock());
+	public static final RegistryObject<Block> ALOE_VERA = REGISTRY.register("aloe_vera", () -> new AloeVeraBlock());
+	public static final RegistryObject<Block> ASTILBA = REGISTRY.register("astilba", () -> new AstilbaBlock());
 }

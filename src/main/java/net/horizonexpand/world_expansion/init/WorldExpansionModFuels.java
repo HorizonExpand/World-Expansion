@@ -4,6 +4,12 @@
  */
 package net.horizonexpand.world_expansion.init;
 
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.furnace.FurnaceFuelBurnTimeEvent;
+
+import net.minecraft.world.item.ItemStack;
+
 @Mod.EventBusSubscriber
 public class WorldExpansionModFuels {
 	@SubscribeEvent

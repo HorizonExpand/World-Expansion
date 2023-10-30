@@ -61,7 +61,7 @@
     "customDrop": {
       "value": "CUSTOM:LeaveOfAloeVera"
     },
-    "dropAmount": 2,
+    "dropAmount": 1,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
@@ -87,6 +87,9 @@
         "value": "Blocks.DIRT#0"
       },
       {
+        "value": "Blocks.MOSS_BLOCK"
+      },
+      {
         "value": "Blocks.DIRT#1"
       },
       {
@@ -99,9 +102,6 @@
         "value": "Blocks.MUD"
       },
       {
-        "value": "Blocks.MOSS_BLOCK"
-      },
-      {
         "value": "Blocks.SAND#0"
       },
       {
@@ -109,47 +109,11 @@
       }
     ],
     "isBonemealable": false,
-    "frequencyOnChunks": 6,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Baobabvalley"
-      },
-      {
-        "value": "savanna"
-      },
-      {
-        "value": "savanna_rock"
-      },
-      {
-        "value": "mutated_savanna_rock"
-      },
-      {
-        "value": "mutated_savanna"
-      },
-      {
-        "value": "bamboo_jungle"
-      },
-      {
-        "value": "bamboo_jungle_hills"
-      },
-      {
-        "value": "jungle"
-      },
-      {
-        "value": "jungle_hills"
-      },
-      {
-        "value": "jungle_edge"
-      },
-      {
-        "value": "CUSTOM:SavannaPrairie"
-      }
-    ],
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "generationType": "Flower",
-    "patchSize": 32,
+    "patchSize": 64,
     "generateAtAnyHeight": false
   }
 }

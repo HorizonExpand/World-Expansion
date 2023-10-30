@@ -4,6 +4,15 @@
  */
 package net.horizonexpand.world_expansion.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.DoubleHighBlockItem;
+import net.minecraft.world.item.BlockItem;
+
 import net.horizonexpand.world_expansion.item.TumbleweedProjectileItem;
 import net.horizonexpand.world_expansion.item.SplitJudasFruitItem;
 import net.horizonexpand.world_expansion.item.SoulItem;
@@ -55,10 +64,8 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> TAKYR = block(WorldExpansionModBlocks.TAKYR);
 	public static final RegistryObject<Item> DRY_DIRT = block(WorldExpansionModBlocks.DRY_DIRT);
 	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
-	public static final RegistryObject<Item> ASTILBA = block(WorldExpansionModBlocks.ASTILBA);
 	public static final RegistryObject<Item> ASTILBA_MULTICOLORED = block(WorldExpansionModBlocks.ASTILBA_MULTICOLORED);
 	public static final RegistryObject<Item> YELLOW_ASTILBA = block(WorldExpansionModBlocks.YELLOW_ASTILBA);
-	public static final RegistryObject<Item> ALOE_VERA = block(WorldExpansionModBlocks.ALOE_VERA);
 	public static final RegistryObject<Item> ALOE_VERA_TIGER = block(WorldExpansionModBlocks.ALOE_VERA_TIGER);
 	public static final RegistryObject<Item> TUMBLEWEED = block(WorldExpansionModBlocks.TUMBLEWEED);
 	public static final RegistryObject<Item> BAOBAB_SAPLING = block(WorldExpansionModBlocks.BAOBAB_SAPLING);
@@ -84,6 +91,8 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
 	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
 	public static final RegistryObject<Item> FALLING_SUSPICIOUS_MUD = block(WorldExpansionModBlocks.FALLING_SUSPICIOUS_MUD);
+	public static final RegistryObject<Item> ALOE_VERA = block(WorldExpansionModBlocks.ALOE_VERA);
+	public static final RegistryObject<Item> ASTILBA = block(WorldExpansionModBlocks.ASTILBA);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

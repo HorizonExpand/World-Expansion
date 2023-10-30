@@ -1,6 +1,7 @@
 {
   "type": "forge:add_features",
   "biomes": [
+    "sparse_jungle",
     "plains",
     "flower_forest",
     "meadow"

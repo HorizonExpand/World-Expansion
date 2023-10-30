@@ -1,5 +1,10 @@
 package net.horizonexpand.world_expansion.procedures;
 
+import net.minecraft.world.level.block.state.properties.Property;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.core.BlockPos;
+
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 import java.util.Map;

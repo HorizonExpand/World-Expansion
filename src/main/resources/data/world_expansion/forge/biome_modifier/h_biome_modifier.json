@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "world_expansion:h",
+  "step": "vegetal_decoration"
+}

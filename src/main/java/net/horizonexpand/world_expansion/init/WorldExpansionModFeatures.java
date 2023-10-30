@@ -4,12 +4,18 @@
  */
 package net.horizonexpand.world_expansion.init;
 
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+
+import net.minecraft.world.level.levelgen.feature.Feature;
+
 import net.horizonexpand.world_expansion.world.features.plants.YellowAstilbaFeature;
 import net.horizonexpand.world_expansion.world.features.plants.TumbleweedFeature;
 import net.horizonexpand.world_expansion.world.features.plants.AstilbamulticoloredFeature;
 import net.horizonexpand.world_expansion.world.features.plants.AstilbaFeature;
 import net.horizonexpand.world_expansion.world.features.plants.AloeVeraTigerFeature;
-import net.horizonexpand.world_expansion.world.features.plants.AloeVeraFeature;
 import net.horizonexpand.world_expansion.world.features.ores.KabanytFeature;
 import net.horizonexpand.world_expansion.world.features.WaterLakeFeature;
 import net.horizonexpand.world_expansion.world.features.RaiderBaseInBaobabFeature;
@@ -43,10 +49,8 @@ import net.horizonexpand.world_expansion.WorldExpansionMod;
 public class WorldExpansionModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, WorldExpansionMod.MODID);
 	public static final RegistryObject<Feature<?>> KABANYT = REGISTRY.register("kabanyt", KabanytFeature::new);
-	public static final RegistryObject<Feature<?>> ASTILBA = REGISTRY.register("astilba", AstilbaFeature::new);
 	public static final RegistryObject<Feature<?>> ASTILBA_MULTICOLORED = REGISTRY.register("astilba_multicolored", AstilbamulticoloredFeature::new);
 	public static final RegistryObject<Feature<?>> YELLOW_ASTILBA = REGISTRY.register("yellow_astilba", YellowAstilbaFeature::new);
-	public static final RegistryObject<Feature<?>> ALOE_VERA = REGISTRY.register("aloe_vera", AloeVeraFeature::new);
 	public static final RegistryObject<Feature<?>> ALOE_VERA_TIGER = REGISTRY.register("aloe_vera_tiger", AloeVeraTigerFeature::new);
 	public static final RegistryObject<Feature<?>> TUMBLEWEED = REGISTRY.register("tumbleweed", TumbleweedFeature::new);
 	public static final RegistryObject<Feature<?>> BAOBAB1 = REGISTRY.register("baobab1", Baobab1Feature::new);
@@ -75,4 +79,5 @@ public class WorldExpansionModFeatures {
 	public static final RegistryObject<Feature<?>> COARSE_DIRT_SURFACE = REGISTRY.register("coarse_dirt_surface", CoarseDirtSurfaceFeature::new);
 	public static final RegistryObject<Feature<?>> WATER_LAKE = REGISTRY.register("water_lake", WaterLakeFeature::new);
 	public static final RegistryObject<Feature<?>> HALLOWEEN_FOREST_WELL = REGISTRY.register("halloween_forest_well", HalloweenForestWellFeature::new);
+	public static final RegistryObject<Feature<?>> ASTILBA = REGISTRY.register("astilba", AstilbaFeature::new);
 }

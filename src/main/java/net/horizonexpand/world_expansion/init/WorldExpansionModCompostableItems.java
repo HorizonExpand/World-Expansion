@@ -4,6 +4,12 @@
  */
 package net.horizonexpand.world_expansion.init;
 
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+
+import net.minecraft.world.level.block.ComposterBlock;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class WorldExpansionModCompostableItems {
 	@SubscribeEvent

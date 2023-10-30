@@ -1,12 +1,25 @@
 
 package net.horizonexpand.world_expansion.block;
 
-import net.horizonexpand.world_expansion.procedures.AstilbaOnBoneMealSuccessProcedure;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
 
 import java.util.List;
 import java.util.Collections;
 
-public class AstilbaBlock extends FlowerBlock implements BonemealableBlock {
+public class AstilbaBlock extends FlowerBlock {
 	public AstilbaBlock() {
 		super(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
@@ -37,20 +50,5 @@ public class AstilbaBlock extends FlowerBlock implements BonemealableBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this));
-	}
-
-	@Override
-	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
-		return true;
-	}
-
-	@Override
-	public boolean isBonemealSuccess(Level world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		return true;
-	}
-
-	@Override
-	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		AstilbaOnBoneMealSuccessProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

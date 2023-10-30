@@ -461,42 +461,6 @@
       "path": "~/Procedures/Stripped Wood"
     },
     {
-      "name": "Strippedbaobabwoodprocedure",
-      "type": "procedure",
-      "sortid": 71,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strippedbaobabwoodprocedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/StrippedbaobabwoodprocedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Stripped Wood"
-    },
-    {
       "name": "Baobabtrapdoor",
       "type": "block",
       "sortid": 14,
@@ -628,27 +592,6 @@
         ]
       },
       "path": "~/Procedures"
-    },
-    {
-      "name": "Astilba",
-      "type": "plant",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "astilba",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/astilba.json",
-          "src/main/resources/data/world_expansion/worldgen/placed_feature/astilba.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/AstilbaBlock.java",
-          "src/main/resources/assets/world_expansion/blockstates/astilba.json",
-          "src/main/resources/data/world_expansion/forge/biome_modifier/astilba_biome_modifier.json",
-          "src/main/resources/assets/world_expansion/models/item/astilba.json",
-          "src/main/resources/assets/world_expansion/models/block/astilba.json",
-          "src/main/java/net/horizonexpand/world_expansion/world/features/plants/AstilbaFeature.java"
-        ]
-      },
-      "path": "~/Blocks/Plants/Astilba"
     },
     {
       "name": "Astilbamulticolored",
@@ -2949,27 +2892,6 @@
         ]
       },
       "path": "~/Recipe/Plants/Astilba"
-    },
-    {
-      "name": "AloeVera",
-      "type": "plant",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aloe_vera",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/block/AloeVeraBlock.java",
-          "src/main/resources/data/world_expansion/worldgen/placed_feature/aloe_vera.json",
-          "src/main/java/net/horizonexpand/world_expansion/world/features/plants/AloeVeraFeature.java",
-          "src/main/resources/assets/world_expansion/models/block/aloe_vera.json",
-          "src/main/resources/assets/world_expansion/models/item/aloe_vera.json",
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/aloe_vera.json",
-          "src/main/resources/assets/world_expansion/blockstates/aloe_vera.json",
-          "src/main/resources/data/world_expansion/forge/biome_modifier/aloe_vera_biome_modifier.json"
-        ]
-      },
-      "path": "~/Blocks/Plants/Aloe"
     },
     {
       "name": "AloeVeraTiger",
@@ -6220,18 +6142,42 @@
       "path": "~/Halloween"
     },
     {
-      "name": "HalloweenDarkForest",
-      "type": "biome",
-      "sortid": 332,
+      "name": "AloeVera",
+      "type": "plant",
+      "sortid": 335,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "halloween_dark_forest",
+      "registry_name": "aloe_vera",
       "metadata": {
         "files": [
-          "src/main/resources/data/world_expansion/worldgen/biome/halloween_dark_forest.json"
+          "src/main/java/net/horizonexpand/world_expansion/block/AloeVeraBlock.java",
+          "src/main/resources/assets/world_expansion/models/block/aloe_vera.json",
+          "src/main/resources/assets/world_expansion/models/item/aloe_vera.json",
+          "src/main/resources/assets/world_expansion/blockstates/aloe_vera.json"
         ]
       },
-      "path": "~/Halloween"
+      "path": "~/Blocks/Plants/Aloe"
+    },
+    {
+      "name": "Astilba",
+      "type": "plant",
+      "sortid": 336,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astilba",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/astilba.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/astilba.json",
+          "src/main/java/net/horizonexpand/world_expansion/block/AstilbaBlock.java",
+          "src/main/resources/assets/world_expansion/blockstates/astilba.json",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/astilba_biome_modifier.json",
+          "src/main/resources/assets/world_expansion/models/item/astilba.json",
+          "src/main/resources/assets/world_expansion/models/block/astilba.json",
+          "src/main/java/net/horizonexpand/world_expansion/world/features/plants/AstilbaFeature.java"
+        ]
+      },
+      "path": "~/Blocks/Plants/Astilba"
     }
   ],
   "variable_elements": [],
@@ -6497,12 +6443,12 @@
     "ru_ru": {
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог",
-      "biome.world_expansion.politania": "Политания",
       "item.world_expansion.copper_horn2": "Медный рог",
+      "biome.world_expansion.politania": "Политания",
       "subtitles.bass1": "Отдыхает",
       "item.world_expansion.copper_horn5": "Медный рог",
-      "subtitles.bass0": "Падение",
       "item.world_expansion.copper_horn4": "Медный рог",
+      "subtitles.bass0": "Падение",
       "item.world_expansion.copper_horn7": "Медный рог",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Медный рог",
@@ -6521,7 +6467,7 @@
       "advancements.fallen_paradise.title": "Павший Рай",
       "block.world_expansion.stripped_baobab_wood": "Обтёсанная кора баобаба",
       "item.world_expansion.piece_totem_of_undying": "Кусочек Тотема бессмертия",
-      "block.world_expansion.aloe_vera": "Алое вера",
+      "block.world_expansion.aloe_vera": "Aloe Vera",
       "block.world_expansion.kabanyt_tiles_stairs": "Ступеньки из плиточного кабанита",
       "advancements.spookyfest.descr": "Отправляйтесь в жуткий тёмный мир, наполненный опасностями и ценной добычей!",
       "block.world_expansion.baobab_wood": "Кора баобаба",
@@ -6537,7 +6483,6 @@
       "subtitles.bass4": "Гнев",
       "block.world_expansion.baobab_door": "Дверь из древесины баобаба",
       "item_group.world_expansion.plants": "WE: Растения",
-      "biome.world_expansion.halloween_dark_forest": "Halloween Dark Forest",
       "block.world_expansion.judas_fruit_3": "Плод Иуды3",
       "block.world_expansion.judas_fruit_2": "Плод Иуды2",
       "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
@@ -6618,12 +6563,12 @@
     "en_us": {
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
-      "item.world_expansion.copper_horn2": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
+      "item.world_expansion.copper_horn2": "Copper Horn",
       "subtitles.bass1": "Copper Horn bass plays",
       "item.world_expansion.copper_horn5": "Copper Horn",
-      "item.world_expansion.copper_horn4": "Copper Horn",
       "subtitles.bass0": "Falling",
+      "item.world_expansion.copper_horn4": "Copper Horn",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Copper Horn",
@@ -6658,7 +6603,6 @@
       "subtitles.bass4": "Copper Horn bass plays",
       "block.world_expansion.baobab_door": "Baobab door",
       "item_group.world_expansion.plants": "WE: Plants",
-      "biome.world_expansion.halloween_dark_forest": "Halloween Dark Forest",
       "block.world_expansion.judas_fruit_3": "Judas Fruit3",
       "block.world_expansion.judas_fruit_2": "Judas Fruit2",
       "block.world_expansion.baobab_slab": "Baobab slab",
@@ -6686,7 +6630,7 @@
       "item.world_expansion.leave_of_aloe_vera": "Leave of aloe vera",
       "block.world_expansion.falling_suspicious_mud": "Suspicious Mud",
       "block.world_expansion.aloe_vera_tiger": "Aloe vera tiger",
-      "block.world_expansion.astilba": "Astilba",
+      "block.world_expansion.astilba": "Astilba ",
       "subtitles.harmony9": "Copper Horn harmony plays",
       "subtitles.harmony7": "Copper Horn harmony plays",
       "advancements.world_expansion.descr": "Explore the world!",
@@ -6729,7 +6673,7 @@
       "advancements.poor_zhorik.descr": "Get a Goat Horn",
       "item.world_expansion.judas_fruit": "Judas Fruit",
       "block.world_expansion.kabanyt_tiles_slab": "Kabanyt tiles slab",
-      "block.world_expansion.astilba_multicolored": "Astilba",
+      "block.world_expansion.astilba_multicolored": "Astilba Multicolored",
       "block.world_expansion.baobab_sapling": "Baobab sapling",
       "block.world_expansion.yellow_astilba": "Yellow astilba",
       "advancements.spookyfest.title": "§6Spookyfest!",

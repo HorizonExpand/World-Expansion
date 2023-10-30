@@ -1,6 +1,11 @@
 
 package net.horizonexpand.world_expansion.item;
 
+import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.InteractionResult;
+
 import net.horizonexpand.world_expansion.procedures.SoulPriShchielchkiePKMPoBlokuProcedure;
 
 public class SoulItem extends Item {
