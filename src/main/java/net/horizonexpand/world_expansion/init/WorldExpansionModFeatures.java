@@ -14,7 +14,6 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.horizonexpand.world_expansion.world.features.plants.YellowAstilbaFeature;
 import net.horizonexpand.world_expansion.world.features.plants.TumbleweedFeature;
 import net.horizonexpand.world_expansion.world.features.plants.AstilbamulticoloredFeature;
-import net.horizonexpand.world_expansion.world.features.plants.AstilbaFeature;
 import net.horizonexpand.world_expansion.world.features.plants.AloeVeraTigerFeature;
 import net.horizonexpand.world_expansion.world.features.ores.KabanytFeature;
 import net.horizonexpand.world_expansion.world.features.WaterLakeFeature;
@@ -79,5 +78,4 @@ public class WorldExpansionModFeatures {
 	public static final RegistryObject<Feature<?>> COARSE_DIRT_SURFACE = REGISTRY.register("coarse_dirt_surface", CoarseDirtSurfaceFeature::new);
 	public static final RegistryObject<Feature<?>> WATER_LAKE = REGISTRY.register("water_lake", WaterLakeFeature::new);
 	public static final RegistryObject<Feature<?>> HALLOWEEN_FOREST_WELL = REGISTRY.register("halloween_forest_well", HalloweenForestWellFeature::new);
-	public static final RegistryObject<Feature<?>> ASTILBA = REGISTRY.register("astilba", AstilbaFeature::new);
 }

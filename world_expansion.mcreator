@@ -185,7 +185,7 @@
     {
       "name": "BaobabItemsTag",
       "type": "tag",
-      "sortid": 55,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_items_tag",
@@ -199,7 +199,7 @@
     {
       "name": "BaobabWoodRecipe",
       "type": "recipe",
-      "sortid": 56,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_wood_recipe",
@@ -213,7 +213,7 @@
     {
       "name": "BaobabPlanksRecipe",
       "type": "recipe",
-      "sortid": 57,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_planks_recipe",
@@ -227,7 +227,7 @@
     {
       "name": "BaobabStairsRecipe",
       "type": "recipe",
-      "sortid": 58,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_stairs_recipe",
@@ -241,7 +241,7 @@
     {
       "name": "BaobabSlabRecipe",
       "type": "recipe",
-      "sortid": 59,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_slab_recipe",
@@ -255,7 +255,7 @@
     {
       "name": "BaobabFenceRecipe",
       "type": "recipe",
-      "sortid": 60,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_fence_recipe",
@@ -269,7 +269,7 @@
     {
       "name": "BaobabFenceGateRecipe",
       "type": "recipe",
-      "sortid": 61,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_fence_gate_recipe",
@@ -283,7 +283,7 @@
     {
       "name": "BaobabPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 62,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_pressure_plate_recipe",
@@ -297,7 +297,7 @@
     {
       "name": "BaobabButtonRecipe",
       "type": "recipe",
-      "sortid": 63,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_button_recipe",
@@ -311,7 +311,7 @@
     {
       "name": "Worldexpansionblocks",
       "type": "tab",
-      "sortid": 64,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "building_blocks",
@@ -323,7 +323,7 @@
     {
       "name": "FenceBlocks",
       "type": "tag",
-      "sortid": 65,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fence_blocks",
@@ -337,7 +337,7 @@
     {
       "name": "WoodenFenceBlocks",
       "type": "tag",
-      "sortid": 66,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_fence_blocks",
@@ -351,7 +351,7 @@
     {
       "name": "LogBlocks",
       "type": "tag",
-      "sortid": 67,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "log_blocks",
@@ -365,7 +365,7 @@
     {
       "name": "LeaveBlocks",
       "type": "tag",
-      "sortid": 68,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "leave_blocks",
@@ -379,7 +379,7 @@
     {
       "name": "PlankItems",
       "type": "tag",
-      "sortid": 69,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plank_items",
@@ -427,7 +427,7 @@
     {
       "name": "Strippedbaobablogprocedure",
       "type": "procedure",
-      "sortid": 70,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "strippedbaobablogprocedure",
@@ -5946,7 +5946,7 @@
     {
       "name": "WaterLake",
       "type": "feature",
-      "sortid": 322,
+      "sortid": 321,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_lake",
@@ -5963,7 +5963,7 @@
     {
       "name": "HalloweenForestWellDrop",
       "type": "loottable",
-      "sortid": 323,
+      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_forest_well_drop",
@@ -5992,7 +5992,7 @@
     {
       "name": "SoulPriShchielchkiePKMPoBloku",
       "type": "procedure",
-      "sortid": 324,
+      "sortid": 323,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_pri_shchielchkie_pkm_po_bloku",
@@ -6049,7 +6049,7 @@
     {
       "name": "JackOLanternWithSoulPriShchielchkiePKMPoBloku",
       "type": "procedure",
-      "sortid": 325,
+      "sortid": 324,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jack_o_lantern_with_soul_pri_shchielchkie_pkm_po_bloku",
@@ -6085,7 +6085,7 @@
     {
       "name": "Spookyfest",
       "type": "achievement",
-      "sortid": 326,
+      "sortid": 325,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spookyfest",
@@ -6099,7 +6099,7 @@
     {
       "name": "WEHalloween",
       "type": "tab",
-      "sortid": 327,
+      "sortid": 326,
       "compiles": true,
       "locked_code": false,
       "registry_name": "we_halloween",
@@ -6111,7 +6111,7 @@
     {
       "name": "HalloweenForestWell",
       "type": "structure",
-      "sortid": 328,
+      "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_forest_well",
@@ -6128,7 +6128,7 @@
     {
       "name": "SpookyfestWorld",
       "type": "dimension",
-      "sortid": 329,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spookyfest_world",
@@ -6144,7 +6144,7 @@
     {
       "name": "AloeVera",
       "type": "plant",
-      "sortid": 335,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aloe_vera",
@@ -6161,20 +6161,16 @@
     {
       "name": "Astilba",
       "type": "plant",
-      "sortid": 336,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilba",
       "metadata": {
         "files": [
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/astilba.json",
-          "src/main/resources/data/world_expansion/worldgen/placed_feature/astilba.json",
           "src/main/java/net/horizonexpand/world_expansion/block/AstilbaBlock.java",
           "src/main/resources/assets/world_expansion/blockstates/astilba.json",
-          "src/main/resources/data/world_expansion/forge/biome_modifier/astilba_biome_modifier.json",
           "src/main/resources/assets/world_expansion/models/item/astilba.json",
-          "src/main/resources/assets/world_expansion/models/block/astilba.json",
-          "src/main/java/net/horizonexpand/world_expansion/world/features/plants/AstilbaFeature.java"
+          "src/main/resources/assets/world_expansion/models/block/astilba.json"
         ]
       },
       "path": "~/Blocks/Plants/Astilba"

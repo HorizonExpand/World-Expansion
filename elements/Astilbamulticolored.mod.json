@@ -76,7 +76,38 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:Kabanyt"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.ROOTED_DIRT"
+      },
+      {
+        "value": "Blocks.MUD"
+      },
+      {
+        "value": "Blocks.MOSS_BLOCK"
+      },
+      {
+        "value": "Blocks.SAND#0"
+      },
+      {
+        "value": "Blocks.SAND#1"
+      }
+    ],
     "isBonemealable": false,
     "frequencyOnChunks": 6,
     "spawnWorldTypes": [

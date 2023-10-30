@@ -76,31 +76,47 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
-    "isBonemealable": false,
-    "frequencyOnChunks": 6,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
+    "canBePlacedOn": [
       {
-        "value": "meadow"
+        "value": "CUSTOM:Kabanyt"
       },
       {
-        "value": "jungle_hills"
+        "value": "Blocks.GRASS"
       },
       {
-        "value": "jungle_edge"
+        "value": "Blocks.DIRT#0"
       },
       {
-        "value": "mutated_forest"
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.ROOTED_DIRT"
+      },
+      {
+        "value": "Blocks.MUD"
+      },
+      {
+        "value": "Blocks.SAND#0"
+      },
+      {
+        "value": "Blocks.SAND#1"
+      },
+      {
+        "value": "Blocks.MOSS_BLOCK"
       }
     ],
-    "generateCondition": {
-      "name": "AstilbamulticoloredDobavochnoieUsloviiePoGienieratsii"
+    "isBonemealable": true,
+    "onBonemealSuccess": {
+      "name": "AstilbaOnBoneMealSuccess"
     },
+    "frequencyOnChunks": 4,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "generationType": "Flower",
-    "patchSize": 12,
+    "patchSize": 48,
     "generateAtAnyHeight": false
   }
 }
