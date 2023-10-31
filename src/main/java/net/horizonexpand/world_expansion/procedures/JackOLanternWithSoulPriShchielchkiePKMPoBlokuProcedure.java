@@ -16,6 +16,7 @@ import net.minecraft.network.protocol.game.ClientboundPlayerAbilitiesPacket;
 import net.minecraft.network.protocol.game.ClientboundLevelEventPacket;
 import net.minecraft.network.protocol.game.ClientboundGameEventPacket;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
 public class JackOLanternWithSoulPriShchielchkiePKMPoBlokuProcedure {
@@ -40,19 +41,23 @@ public class JackOLanternWithSoulPriShchielchkiePKMPoBlokuProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("particle.soul_escape")), SoundSource.BLOCKS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sculk_shrieker.shriek")), SoundSource.BLOCKS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("particle.soul_escape")), SoundSource.BLOCKS, 1, 1, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sculk_shrieker.shriek")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SOUL, x, y, z, 10, 0.5, 0.5, 0.5, 0.5);
 		} else {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("particle.soul_escape")), SoundSource.BLOCKS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sculk_shrieker.shriek")), SoundSource.BLOCKS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("particle.soul_escape")), SoundSource.BLOCKS, 1, 1, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sculk_shrieker.shriek")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SOUL, x, y, z, 2, 0.5, 0.5, 0.5, 0.5);
 		}
 	}
 }

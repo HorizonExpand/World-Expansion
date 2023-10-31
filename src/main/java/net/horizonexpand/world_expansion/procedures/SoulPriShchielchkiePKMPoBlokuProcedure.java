@@ -13,8 +13,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
@@ -34,6 +36,8 @@ public class SoulPriShchielchkiePKMPoBlokuProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("particle.soul_escape")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SOUL, x, y, z, 10, 0.5, 0.5, 0.5, 0.5);
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL.get().defaultBlockState();
@@ -71,6 +75,8 @@ public class SoulPriShchielchkiePKMPoBlokuProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("particle.soul_escape")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
+			if (world instanceof ServerLevel _level)
+				_level.sendParticles(ParticleTypes.SOUL, x, y, z, 1, 0.5, 0.5, 0.5, 0.5);
 		}
 	}
 }
