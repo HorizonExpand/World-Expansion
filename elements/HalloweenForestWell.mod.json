@@ -5,7 +5,7 @@
     "structure": "halloween_forest_well",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 20000,
+    "spawnProbability": 15000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

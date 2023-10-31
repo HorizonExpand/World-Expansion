@@ -113,26 +113,8 @@
       "name": "AstilbaOnBoneMealSuccess"
     },
     "frequencyOnChunks": 6,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "savanna"
-      },
-      {
-        "value": "savanna_rock"
-      },
-      {
-        "value": "mutated_savanna"
-      },
-      {
-        "value": "CUSTOM:Baobabvalley"
-      },
-      {
-        "value": "CUSTOM:SavannaPrairie"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "generationType": "Flower",
     "patchSize": 56,
     "generateAtAnyHeight": false

@@ -107,32 +107,8 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 6,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "badlands"
-      },
-      {
-        "value": "badlands_plateau"
-      },
-      {
-        "value": "desert"
-      },
-      {
-        "value": "desert_hills"
-      },
-      {
-        "value": "mutated_mesa"
-      },
-      {
-        "value": "wooded_badlands_plateau"
-      },
-      {
-        "value": "CUSTOM:SavannaPrairie"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "generationType": "Flower",
     "patchSize": 24,
     "generateAtAnyHeight": false,

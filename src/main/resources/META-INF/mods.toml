@@ -1,13 +1,13 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="Custom license"
+license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="world_expansion"
 version="0.0.2.0"
 displayName="World Expansion: Light and Dark"
 credits="Hrumer, Samuelchik"
-displayURL="https://discord.gg/8GPXrWb4zb"
+displayURL="https://discord.gg/sJayn3BYDh"
 logoFile="logo.png"
 authors="HorizonExpand"
 description="This mod pumps vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark forest"

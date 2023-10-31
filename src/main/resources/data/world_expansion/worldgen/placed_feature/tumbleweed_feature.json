@@ -1,20 +1,16 @@
 {
-  "feature": "world_expansion:tumbleweed",
+  "feature": "world_expansion:tumbleweed_feature",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 4
-    },
-    {
       "type": "minecraft:rarity_filter",
-      "chance": 32
+      "chance": 35
     },
     {
       "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
+      "heightmap": "MOTION_BLOCKING"
     },
     {
       "type": "minecraft:biome"

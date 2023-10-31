@@ -17,7 +17,7 @@ public class WorldExpansionModCompostableItems {
 		ComposterBlock.COMPOSTABLES.put(WorldExpansionModBlocks.ASTILBA.get().asItem(), 0.65f);
 		ComposterBlock.COMPOSTABLES.put(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem(), 0.77f);
 		ComposterBlock.COMPOSTABLES.put(WorldExpansionModBlocks.ALOE_VERA.get().asItem(), 0.6f);
-		ComposterBlock.COMPOSTABLES.put(WorldExpansionModBlocks.ALOE_VERA_TIGER.get().asItem(), 0.5f);
+		ComposterBlock.COMPOSTABLES.put(WorldExpansionModBlocks.TIGER_ALOE_VERA.get().asItem(), 0.5f);
 		ComposterBlock.COMPOSTABLES.put(WorldExpansionModBlocks.YELLOW_ASTILBA.get().asItem(), 0.65f);
 	}
 }

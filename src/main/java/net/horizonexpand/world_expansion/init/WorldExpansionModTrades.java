@@ -22,7 +22,7 @@ public class WorldExpansionModTrades {
 				new ItemStack(WorldExpansionModBlocks.BAOBAB_SAPLING.get()), 10, 5, 0.05f));
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 2),
 
-				new ItemStack(WorldExpansionModBlocks.ALOE_VERA_TIGER.get()), 8, 5, 0.1f));
+				new ItemStack(WorldExpansionModBlocks.TIGER_ALOE_VERA.get()), 8, 5, 0.1f));
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 2),
 
 				new ItemStack(Blocks.CARVED_PUMPKIN), 12, 5, 0.05f));

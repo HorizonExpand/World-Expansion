@@ -1,11 +1,10 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "sparse_jungle",
     "plains",
     "flower_forest",
     "meadow"
   ],
-  "features": "world_expansion:astilba_multicolored",
+  "features": "world_expansion:astilba_feature",
   "step": "vegetal_decoration"
 }

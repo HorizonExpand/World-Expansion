@@ -90,7 +90,7 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> ASTILBA_MULTICOLORED = REGISTRY.register("astilba_multicolored", () -> new AstilbamulticoloredBlock());
 	public static final RegistryObject<Block> YELLOW_ASTILBA = REGISTRY.register("yellow_astilba", () -> new YellowAstilbaBlock());
 	public static final RegistryObject<Block> ALOE_VERA = REGISTRY.register("aloe_vera", () -> new AloeVeraBlock());
-	public static final RegistryObject<Block> ALOE_VERA_TIGER = REGISTRY.register("aloe_vera_tiger", () -> new AloeVeraTigerBlock());
+	public static final RegistryObject<Block> TIGER_ALOE_VERA = REGISTRY.register("tiger_aloe_vera", () -> new AloeVeraTigerBlock());
 	public static final RegistryObject<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", () -> new TumbleweedBlock());
 	public static final RegistryObject<Block> BAOBAB_SAPLING = REGISTRY.register("baobab_sapling", () -> new BaobabSaplingBlock());
 	public static final RegistryObject<Block> JACK_O_LANTERN_WITH_SOUL = REGISTRY.register("jack_o_lantern_with_soul", () -> new JackOLanternWithSoulBlock());

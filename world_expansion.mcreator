@@ -602,14 +602,10 @@
       "registry_name": "astilba_multicolored",
       "metadata": {
         "files": [
-          "src/main/resources/data/world_expansion/forge/biome_modifier/astilba_multicolored_biome_modifier.json",
           "src/main/resources/assets/world_expansion/models/item/astilba_multicolored.json",
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/astilba_multicolored.json",
           "src/main/resources/assets/world_expansion/blockstates/astilba_multicolored.json",
           "src/main/java/net/horizonexpand/world_expansion/block/AstilbamulticoloredBlock.java",
-          "src/main/java/net/horizonexpand/world_expansion/world/features/plants/AstilbamulticoloredFeature.java",
-          "src/main/resources/assets/world_expansion/models/block/astilba_multicolored.json",
-          "src/main/resources/data/world_expansion/worldgen/placed_feature/astilba_multicolored.json"
+          "src/main/resources/assets/world_expansion/models/block/astilba_multicolored.json"
         ]
       },
       "path": "~/Blocks/Plants/Astilba"
@@ -2869,12 +2865,8 @@
         "files": [
           "src/main/java/net/horizonexpand/world_expansion/block/YellowAstilbaBlock.java",
           "src/main/resources/assets/world_expansion/models/block/yellow_astilba.json",
-          "src/main/resources/data/world_expansion/worldgen/placed_feature/yellow_astilba.json",
-          "src/main/java/net/horizonexpand/world_expansion/world/features/plants/YellowAstilbaFeature.java",
-          "src/main/resources/data/world_expansion/forge/biome_modifier/yellow_astilba_biome_modifier.json",
           "src/main/resources/assets/world_expansion/models/item/yellow_astilba.json",
-          "src/main/resources/assets/world_expansion/blockstates/yellow_astilba.json",
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/yellow_astilba.json"
+          "src/main/resources/assets/world_expansion/blockstates/yellow_astilba.json"
         ]
       },
       "path": "~/Blocks/Plants/Astilba"
@@ -2899,17 +2891,13 @@
       "sortid": 35,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "aloe_vera_tiger",
+      "registry_name": "tiger_aloe_vera",
       "metadata": {
         "files": [
+          "src/main/resources/assets/world_expansion/models/block/tiger_aloe_vera.json",
+          "src/main/resources/assets/world_expansion/blockstates/tiger_aloe_vera.json",
           "src/main/java/net/horizonexpand/world_expansion/block/AloeVeraTigerBlock.java",
-          "src/main/resources/assets/world_expansion/models/item/aloe_vera_tiger.json",
-          "src/main/resources/assets/world_expansion/blockstates/aloe_vera_tiger.json",
-          "src/main/resources/data/world_expansion/worldgen/placed_feature/aloe_vera_tiger.json",
-          "src/main/resources/data/world_expansion/forge/biome_modifier/aloe_vera_tiger_biome_modifier.json",
-          "src/main/resources/assets/world_expansion/models/block/aloe_vera_tiger.json",
-          "src/main/java/net/horizonexpand/world_expansion/world/features/plants/AloeVeraTigerFeature.java",
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/aloe_vera_tiger.json"
+          "src/main/resources/assets/world_expansion/models/item/tiger_aloe_vera.json"
         ]
       },
       "path": "~/Blocks/Plants/Aloe"
@@ -3006,11 +2994,7 @@
       "registry_name": "tumbleweed",
       "metadata": {
         "files": [
-          "src/main/java/net/horizonexpand/world_expansion/world/features/plants/TumbleweedFeature.java",
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/tumbleweed.json",
           "src/main/resources/assets/world_expansion/blockstates/tumbleweed.json",
-          "src/main/resources/data/world_expansion/forge/biome_modifier/tumbleweed_biome_modifier.json",
-          "src/main/resources/data/world_expansion/worldgen/placed_feature/tumbleweed.json",
           "src/main/resources/assets/world_expansion/models/block/tumbleweed.json",
           "src/main/resources/assets/world_expansion/models/item/tumbleweed.json",
           "src/main/java/net/horizonexpand/world_expansion/block/TumbleweedBlock.java"
@@ -6174,6 +6158,108 @@
         ]
       },
       "path": "~/Blocks/Plants/Astilba"
+    },
+    {
+      "name": "AstilbaFeature",
+      "type": "feature",
+      "sortid": 328,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astilba_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/forge/biome_modifier/astilba_feature_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/astilba_feature.json",
+          "src/main/java/net/horizonexpand/world_expansion/world/features/AstilbaFeatureFeature.java",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/astilba_feature.json"
+        ]
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "AstilbaMulticoloredFeature",
+      "type": "feature",
+      "sortid": 329,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astilba_multicolored_feature",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/world/features/AstilbaMulticoloredFeatureFeature.java",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/astilba_multicolored_feature_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/astilba_multicolored_feature.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/astilba_multicolored_feature.json"
+        ]
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "YellowAstilbaFeature",
+      "type": "feature",
+      "sortid": 330,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "yellow_astilba_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/forge/biome_modifier/yellow_astilba_feature_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/yellow_astilba_feature.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/yellow_astilba_feature.json",
+          "src/main/java/net/horizonexpand/world_expansion/world/features/YellowAstilbaFeatureFeature.java"
+        ]
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "TumbleweedFeature",
+      "type": "feature",
+      "sortid": 331,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tumbleweed_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/forge/biome_modifier/tumbleweed_feature_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/tumbleweed_feature.json",
+          "src/main/java/net/horizonexpand/world_expansion/world/features/TumbleweedFeatureFeature.java",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/tumbleweed_feature.json"
+        ]
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "TigerAloeVeraFeature",
+      "type": "feature",
+      "sortid": 332,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tiger_aloe_vera_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/tiger_aloe_vera_feature.json",
+          "src/main/java/net/horizonexpand/world_expansion/world/features/TigerAloeVeraFeatureFeature.java",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/tiger_aloe_vera_feature_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/tiger_aloe_vera_feature.json"
+        ]
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "AloeVeraFeature",
+      "type": "feature",
+      "sortid": 333,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aloe_vera_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/forge/biome_modifier/aloe_vera_feature_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/aloe_vera_feature.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/aloe_vera_feature.json",
+          "src/main/java/net/horizonexpand/world_expansion/world/features/AloeVeraFeatureFeature.java"
+        ]
+      },
+      "path": "~/Features"
     }
   ],
   "variable_elements": [],
@@ -6439,12 +6525,12 @@
     "ru_ru": {
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог",
-      "item.world_expansion.copper_horn2": "Медный рог",
       "biome.world_expansion.politania": "Политания",
-      "subtitles.bass1": "Отдыхает",
+      "item.world_expansion.copper_horn2": "Медный рог",
       "item.world_expansion.copper_horn5": "Медный рог",
-      "item.world_expansion.copper_horn4": "Медный рог",
+      "subtitles.bass1": "Отдыхает",
       "subtitles.bass0": "Падение",
+      "item.world_expansion.copper_horn4": "Медный рог",
       "item.world_expansion.copper_horn7": "Медный рог",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Медный рог",
@@ -6463,7 +6549,8 @@
       "advancements.fallen_paradise.title": "Павший Рай",
       "block.world_expansion.stripped_baobab_wood": "Обтёсанная кора баобаба",
       "item.world_expansion.piece_totem_of_undying": "Кусочек Тотема бессмертия",
-      "block.world_expansion.aloe_vera": "Aloe Vera",
+      "block.world_expansion.aloe_vera": "Алое вера",
+      "block.world_expansion.tiger_aloe_vera": "Тигровое алое вера",
       "block.world_expansion.kabanyt_tiles_stairs": "Ступеньки из плиточного кабанита",
       "advancements.spookyfest.descr": "Отправляйтесь в жуткий тёмный мир, наполненный опасностями и ценной добычей!",
       "block.world_expansion.baobab_wood": "Кора баобаба",
@@ -6505,7 +6592,6 @@
       "advancements.fallen_paradise.descr": "Найдите Мёртвую саванну",
       "item.world_expansion.leave_of_aloe_vera": "Листки алое вера",
       "block.world_expansion.falling_suspicious_mud": "Падающая подозрительная грязь",
-      "block.world_expansion.aloe_vera_tiger": "Тигровое алое вера",
       "block.world_expansion.astilba": "Астильба",
       "subtitles.harmony9": "Сладкая",
       "subtitles.harmony7": "Секрет",
@@ -6585,6 +6671,7 @@
       "item.world_expansion.piece_totem_of_undying": "Piece Totem of Undying",
       "block.world_expansion.aloe_vera": "Aloe Vera",
       "block.world_expansion.kabanyt_tiles_stairs": "Kabanyt tiles stairs",
+      "block.world_expansion.tiger_aloe_vera": "Aloe vera tiger",
       "advancements.spookyfest.descr": "Go on a Creepy Dark World Filled with Dangers and Valuable Loot!",
       "block.world_expansion.baobab_wood": "Baobab wood",
       "subtitles.bass7": "Copper Horn bass plays",
@@ -6625,7 +6712,6 @@
       "advancements.fallen_paradise.descr": "Find the Dead Savanna",
       "item.world_expansion.leave_of_aloe_vera": "Leave of aloe vera",
       "block.world_expansion.falling_suspicious_mud": "Suspicious Mud",
-      "block.world_expansion.aloe_vera_tiger": "Aloe vera tiger",
       "block.world_expansion.astilba": "Astilba ",
       "subtitles.harmony9": "Copper Horn harmony plays",
       "subtitles.harmony7": "Copper Horn harmony plays",
@@ -6869,8 +6955,8 @@
     "version": "0.0.2.0",
     "description": "This mod pumps vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark forest",
     "author": "HorizonExpand",
-    "websiteURL": "https://discord.gg/8GPXrWb4zb",
-    "license": "Custom license",
+    "websiteURL": "https://discord.gg/sJayn3BYDh",
+    "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "modPicture": "world_expansion_light_and_dark_1.0.0",

@@ -7,6 +7,6 @@
     "windswept_savanna",
     "world_expansion:politania"
   ],
-  "features": "world_expansion:yellow_astilba",
+  "features": "world_expansion:yellow_astilba_feature",
   "step": "vegetal_decoration"
 }

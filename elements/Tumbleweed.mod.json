@@ -1250,44 +1250,8 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 4,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Baobabvalley"
-      },
-      {
-        "value": "desert"
-      },
-      {
-        "value": "desert_hills"
-      },
-      {
-        "value": "mutated_savanna_rock"
-      },
-      {
-        "value": "mutated_savanna"
-      },
-      {
-        "value": "badlands"
-      },
-      {
-        "value": "badlands_plateau"
-      },
-      {
-        "value": "mutated_mesa"
-      },
-      {
-        "value": "mutated_mesa_clear_rock"
-      },
-      {
-        "value": "mutated_mesa_rock"
-      },
-      {
-        "value": "wooded_badlands_plateau"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "generationType": "Flower",
     "patchSize": 54,
     "generateAtAnyHeight": false,

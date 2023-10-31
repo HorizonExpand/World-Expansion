@@ -57,7 +57,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.YELLOW_ASTILBA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ALOE_VERA.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.ALOE_VERA_TIGER.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.TIGER_ALOE_VERA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TUMBLEWEED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem());
 			})

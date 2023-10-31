@@ -1,5 +1,5 @@
 
-package net.horizonexpand.world_expansion.world.features.plants;
+package net.horizonexpand.world_expansion.world.features;
 
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.RandomPatchFeature;
@@ -10,16 +10,16 @@ import net.minecraft.resources.ResourceKey;
 
 import java.util.Set;
 
-public class YellowAstilbaFeature extends RandomPatchFeature {
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+public class YellowAstilbaFeatureFeature extends RandomPatchFeature {
+	private final Set<ResourceKey<Level>> generateDimensions = Set.of(Level.OVERWORLD);
 
-	public YellowAstilbaFeature() {
+	public YellowAstilbaFeatureFeature() {
 		super(RandomPatchConfiguration.CODEC);
 	}
 
 	public boolean place(FeaturePlaceContext<RandomPatchConfiguration> context) {
 		WorldGenLevel world = context.level();
-		if (!generate_dimensions.contains(world.getLevel().dimension()))
+		if (!generateDimensions.contains(world.getLevel().dimension()))
 			return false;
 		return super.place(context);
 	}

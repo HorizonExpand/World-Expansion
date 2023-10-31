@@ -1,20 +1,16 @@
 {
-  "feature": "world_expansion:yellow_astilba",
+  "feature": "world_expansion:tiger_aloe_vera_feature",
   "placement": [
     {
-      "type": "minecraft:count",
-      "count": 6
-    },
-    {
       "type": "minecraft:rarity_filter",
-      "chance": 32
+      "chance": 35
     },
     {
       "type": "minecraft:in_square"
     },
     {
       "type": "minecraft:heightmap",
-      "heightmap": "WORLD_SURFACE_WG"
+      "heightmap": "MOTION_BLOCKING"
     },
     {
       "type": "minecraft:biome"

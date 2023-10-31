@@ -68,7 +68,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> ASTILBA_MULTICOLORED = block(WorldExpansionModBlocks.ASTILBA_MULTICOLORED);
 	public static final RegistryObject<Item> YELLOW_ASTILBA = block(WorldExpansionModBlocks.YELLOW_ASTILBA);
 	public static final RegistryObject<Item> ALOE_VERA = block(WorldExpansionModBlocks.ALOE_VERA);
-	public static final RegistryObject<Item> ALOE_VERA_TIGER = block(WorldExpansionModBlocks.ALOE_VERA_TIGER);
+	public static final RegistryObject<Item> TIGER_ALOE_VERA = block(WorldExpansionModBlocks.TIGER_ALOE_VERA);
 	public static final RegistryObject<Item> TUMBLEWEED = block(WorldExpansionModBlocks.TUMBLEWEED);
 	public static final RegistryObject<Item> BAOBAB_SAPLING = block(WorldExpansionModBlocks.BAOBAB_SAPLING);
 	public static final RegistryObject<Item> LEAVE_OF_ALOE_VERA = REGISTRY.register("leave_of_aloe_vera", () -> new LeaveOfAloeVeraItem());

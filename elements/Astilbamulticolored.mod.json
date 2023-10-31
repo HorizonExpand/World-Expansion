@@ -110,23 +110,8 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 6,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "meadow"
-      },
-      {
-        "value": "jungle_hills"
-      },
-      {
-        "value": "jungle_edge"
-      },
-      {
-        "value": "mutated_forest"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
     "generateCondition": {
       "name": "AstilbamulticoloredDobavochnoieUsloviiePoGienieratsii"
     },
