@@ -1,11 +1,16 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "world_expansion:died_savanna",
     "badlands",
-    "windswept_savanna",
+    "savanna_plateau",
+    "bamboo_jungle",
+    "world_expansion:baobab_valley",
+    "sparse_jungle",
+    "savanna",
     "wooded_badlands",
+    "jungle",
     "desert",
+    "world_expansion:politania",
     "eroded_badlands"
   ],
   "features": "world_expansion:aloe_vera_feature",

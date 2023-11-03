@@ -8,7 +8,10 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:DiedSavanna"
+        "value": "CUSTOM:Baobabvalley"
+      },
+      {
+        "value": "CUSTOM:SavannaPrairie"
       },
       {
         "value": "badlands"
@@ -18,6 +21,12 @@
       },
       {
         "value": "mutated_mesa"
+      },
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "savanna_rock"
       },
       {
         "value": "mutated_savanna"

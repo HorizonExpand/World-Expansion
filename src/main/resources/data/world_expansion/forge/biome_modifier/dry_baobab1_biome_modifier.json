@@ -2,7 +2,6 @@
   "type": "forge:add_features",
   "biomes": [
     "world_expansion:baobab_valley",
-    "plains",
     "windswept_savanna"
   ],
   "features": "world_expansion:dry_baobab1",

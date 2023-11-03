@@ -6,10 +6,8 @@
     "targets": [
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:stone"
-          }
+          "predicate_type": "tag_match",
+          "tag": "dirt"
         },
         "state": {
           "Name": "world_expansion:kabanyt"
@@ -17,13 +15,8 @@
       },
       {
         "target": {
-          "predicate_type": "blockstate_match",
-          "block_state": {
-            "Name": "minecraft:grass_block",
-            "Properties": {
-              "snowy": "false"
-            }
-          }
+          "predicate_type": "tag_match",
+          "tag": "base_stone_overworld"
         },
         "state": {
           "Name": "world_expansion:kabanyt"

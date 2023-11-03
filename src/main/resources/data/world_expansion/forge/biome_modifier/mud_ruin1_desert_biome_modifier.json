@@ -2,7 +2,6 @@
   "type": "forge:add_features",
   "biomes": [
     "beach",
-    "plains",
     "desert"
   ],
   "features": "world_expansion:mud_ruin1_desert",

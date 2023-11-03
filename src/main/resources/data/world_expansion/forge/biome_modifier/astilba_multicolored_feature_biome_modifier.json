@@ -4,7 +4,8 @@
     "bamboo_jungle",
     "sparse_jungle",
     "flower_forest",
-    "meadow"
+    "meadow",
+    "cherry_grove"
   ],
   "features": "world_expansion:astilba_multicolored_feature",
   "step": "vegetal_decoration"

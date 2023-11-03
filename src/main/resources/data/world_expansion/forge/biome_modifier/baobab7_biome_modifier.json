@@ -3,7 +3,6 @@
   "biomes": [
     "savanna_plateau",
     "savanna",
-    "plains",
     "windswept_savanna"
   ],
   "features": "world_expansion:baobab7",

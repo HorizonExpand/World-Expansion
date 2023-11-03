@@ -47,7 +47,7 @@ public class JackOLanternWithSoulPriShchielchkiePKMPoBlokuProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.SOUL, x, y, z, 10, 0.5, 0.5, 0.5, 0.5);
+				_level.sendParticles(ParticleTypes.SOUL, x, (y + 1), z, 10, 0, 0.2, 0, 0.5);
 		} else {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -57,7 +57,7 @@ public class JackOLanternWithSoulPriShchielchkiePKMPoBlokuProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.SOUL, x, y, z, 2, 0.5, 0.5, 0.5, 0.5);
+				_level.sendParticles(ParticleTypes.SOUL, x, (y + 1), z, 2, 0, 0.2, 0, 0.5);
 		}
 	}
 }

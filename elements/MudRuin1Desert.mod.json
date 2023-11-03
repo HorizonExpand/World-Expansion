@@ -26,9 +26,6 @@
       },
       {
         "value": "desert"
-      },
-      {
-        "value": "desert_hills"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

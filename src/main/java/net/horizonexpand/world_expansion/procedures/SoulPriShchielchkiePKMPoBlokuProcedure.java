@@ -31,13 +31,13 @@ public class SoulPriShchielchkiePKMPoBlokuProcedure {
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == Blocks.JACK_O_LANTERN && (entity.level().dimension()) == Level.OVERWORLD) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("particle.soul_escape")), SoundSource.BLOCKS, 1, 1);
+					_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sculk_shrieker.shriek")), SoundSource.BLOCKS, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("particle.soul_escape")), SoundSource.BLOCKS, 1, 1, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.sculk_shrieker.shriek")), SoundSource.BLOCKS, 1, 1, false);
 				}
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.SOUL, x, y, z, 10, 0.5, 0.5, 0.5, 0.5);
+				_level.sendParticles(ParticleTypes.SOUL, x, (y + 1), z, 10, 0, 0.2, 0, 0.5);
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL.get().defaultBlockState();
@@ -76,7 +76,7 @@ public class SoulPriShchielchkiePKMPoBlokuProcedure {
 				}
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.SOUL, x, y, z, 1, 0.5, 0.5, 0.5, 0.5);
+				_level.sendParticles(ParticleTypes.SOUL, x, (y + 1), z, 1, 0, 0.2, 0, 0.5);
 		}
 	}
 }

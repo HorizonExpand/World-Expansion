@@ -8,10 +8,16 @@
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:DiedSavanna"
+        "value": "CUSTOM:Baobabvalley"
+      },
+      {
+        "value": "CUSTOM:SavannaPrairie"
       },
       {
         "value": "badlands"
+      },
+      {
+        "value": "bamboo_jungle"
       },
       {
         "value": "desert"
@@ -20,7 +26,16 @@
         "value": "mutated_mesa"
       },
       {
-        "value": "mutated_savanna"
+        "value": "jungle"
+      },
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "savanna_rock"
+      },
+      {
+        "value": "jungle_edge"
       },
       {
         "value": "wooded_badlands_plateau"

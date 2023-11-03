@@ -68,8 +68,8 @@
       "max": 1.0
     },
     "genErosion": {
-      "min": -2.0,
-      "max": 2.0
+      "min": -1.0,
+      "max": 1.0
     },
     "genWeirdness": {
       "min": -1.0,

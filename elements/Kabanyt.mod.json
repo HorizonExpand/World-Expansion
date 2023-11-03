@@ -130,10 +130,10 @@
     ],
     "blocksToReplace": [
       {
-        "value": "Blocks.STONE#0"
+        "value": "TAG:dirt"
       },
       {
-        "value": "Blocks.GRASS"
+        "value": "TAG:base_stone_overworld"
       }
     ],
     "generationShape": "TRIANGLE",
