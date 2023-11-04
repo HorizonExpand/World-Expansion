@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "world_expansion:halloween_pumpkin_field",
+  "features": "world_expansion:pumpkin_field",
+  "step": "vegetal_decoration"
+}

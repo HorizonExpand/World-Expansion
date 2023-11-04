@@ -2,6 +2,7 @@
 package net.horizonexpand.world_expansion.block;
 
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Mob;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
@@ -42,6 +44,11 @@ public class BaobabSaplingBlock extends FlowerBlock implements EntityBlock, Bone
 	@Override
 	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 100;
+	}
+
+	@Override
+	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return BlockPathTypes.WALKABLE;
 	}
 
 	@Override

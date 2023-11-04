@@ -1,0 +1,25 @@
+{
+  "_fv": 47,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "§6Summer Resort in Winter",
+    "achievementDescription": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
+    "achievementIcon": {
+      "value": "CUSTOM:Soul"
+    },
+    "background": "pumpkin_side.png",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": true,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
+    "rewardXP": 25,
+    "achievementType": "challenge",
+    "parent": {
+      "value": "CUSTOM:Spookyfest"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"38\" y=\"39\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

@@ -16,6 +16,7 @@ import net.horizonexpand.world_expansion.block.TakyrBlock;
 import net.horizonexpand.world_expansion.block.SuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobabwoodBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobablogBlock;
+import net.horizonexpand.world_expansion.block.LittleShroomlightBlock;
 import net.horizonexpand.world_expansion.block.KabanytwallBlock;
 import net.horizonexpand.world_expansion.block.KabanyttileswallBlock;
 import net.horizonexpand.world_expansion.block.KabanyttilesstairsBlock;
@@ -98,4 +99,5 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> JUDAS_FRUIT_2 = REGISTRY.register("judas_fruit_2", () -> new JudasFruit2Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_3 = REGISTRY.register("judas_fruit_3", () -> new JudasFruit3Block());
 	public static final RegistryObject<Block> FALLING_SUSPICIOUS_MUD = REGISTRY.register("falling_suspicious_mud", () -> new FallingSuspiciousMudBlock());
+	public static final RegistryObject<Block> LITTLE_SHROOMLIGHT = REGISTRY.register("little_shroomlight", () -> new LittleShroomlightBlock());
 }

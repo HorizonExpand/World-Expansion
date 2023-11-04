@@ -71,7 +71,7 @@
       "value": ""
     },
     "offsetType": "XZ",
-    "aiPathNodeType": "DEFAULT",
+    "aiPathNodeType": "WALKABLE",
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,

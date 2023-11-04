@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "world_expansion:halloween_pumpkin_field",
+  "features": "world_expansion:halloween_oak_scarecrow_2",
+  "step": "surface_structures"
+}

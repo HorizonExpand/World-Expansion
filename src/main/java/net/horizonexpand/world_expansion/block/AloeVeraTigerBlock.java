@@ -12,8 +12,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
@@ -25,7 +23,6 @@ import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.procedures.AloeVeraTigerPriStolknovieniiSushchnostiSRastieniiemProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
-import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -67,19 +64,6 @@ public class AloeVeraTigerBlock extends FlowerBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(WorldExpansionModItems.LEAVE_OF_ALOE_VERA.get()));
-	}
-
-	@Override
-	public boolean mayPlaceOn(BlockState groundState, BlockGetter worldIn, BlockPos pos) {
-		return groundState.is(WorldExpansionModBlocks.KABANYT.get()) || groundState.is(Blocks.GRASS_BLOCK) || groundState.is(Blocks.DIRT) || groundState.is(Blocks.COARSE_DIRT) || groundState.is(Blocks.PODZOL) || groundState.is(Blocks.ROOTED_DIRT)
-				|| groundState.is(Blocks.MOSS_BLOCK) || groundState.is(Blocks.SAND) || groundState.is(Blocks.RED_SAND);
-	}
-
-	@Override
-	public boolean canSurvive(BlockState blockstate, LevelReader worldIn, BlockPos pos) {
-		BlockPos blockpos = pos.below();
-		BlockState groundState = worldIn.getBlockState(blockpos);
-		return this.mayPlaceOn(groundState, worldIn, blockpos);
 	}
 
 	@Override

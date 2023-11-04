@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "world_expansion:soul"
+    },
+    "title": {
+      "translate": "advancements.summer_resort_in_winter.title"
+    },
+    "description": {
+      "translate": "advancements.summer_resort_in_winter.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "summer_resort_in_winter": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 25
+  },
+  "parent": "world_expansion:spookyfest"
+}

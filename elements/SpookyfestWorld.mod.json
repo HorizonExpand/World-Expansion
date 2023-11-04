@@ -5,6 +5,15 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:HalloweenForest"
+      },
+      {
+        "value": "CUSTOM:HalloweenWheatField"
+      },
+      {
+        "value": "CUSTOM:HalloweenDarkForest"
+      },
+      {
+        "value": "CUSTOM:HalloweenPlains"
       }
     ],
     "worldGenType": "Normal world gen",

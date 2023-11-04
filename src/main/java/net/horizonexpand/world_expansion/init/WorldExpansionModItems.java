@@ -70,6 +70,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> ALOE_VERA = block(WorldExpansionModBlocks.ALOE_VERA);
 	public static final RegistryObject<Item> TIGER_ALOE_VERA = block(WorldExpansionModBlocks.TIGER_ALOE_VERA);
 	public static final RegistryObject<Item> TUMBLEWEED = block(WorldExpansionModBlocks.TUMBLEWEED);
+	public static final RegistryObject<Item> TUMBLEWEED_PROJECTILE = REGISTRY.register("tumbleweed_projectile", () -> new TumbleweedProjectileItem());
 	public static final RegistryObject<Item> BAOBAB_SAPLING = block(WorldExpansionModBlocks.BAOBAB_SAPLING);
 	public static final RegistryObject<Item> LEAVE_OF_ALOE_VERA = REGISTRY.register("leave_of_aloe_vera", () -> new LeaveOfAloeVeraItem());
 	public static final RegistryObject<Item> JUDAS_FRUIT = REGISTRY.register("judas_fruit", () -> new JudasFruitItem());
@@ -88,11 +89,11 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> COPPER_HORN9 = REGISTRY.register("copper_horn9", () -> new CopperHorn9Item());
 	public static final RegistryObject<Item> JACK_O_LANTERN_WITH_SOUL = block(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL);
 	public static final RegistryObject<Item> SOUL = REGISTRY.register("soul", () -> new SoulItem());
-	public static final RegistryObject<Item> TUMBLEWEED_PROJECTILE = REGISTRY.register("tumbleweed_projectile", () -> new TumbleweedProjectileItem());
 	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
 	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
 	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
 	public static final RegistryObject<Item> FALLING_SUSPICIOUS_MUD = block(WorldExpansionModBlocks.FALLING_SUSPICIOUS_MUD);
+	public static final RegistryObject<Item> LITTLE_SHROOMLIGHT = block(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -16,7 +16,7 @@ import net.horizonexpand.world_expansion.procedures.BaobabLeavesKoghdaBlokRazrus
 
 public class BaobabLeavesBlock extends LeavesBlock {
 	public BaobabLeavesBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion().randomTicks());
+		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion().randomTicks().noLootTable());
 	}
 
 	@Override

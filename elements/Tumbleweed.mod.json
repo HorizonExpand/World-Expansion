@@ -31,7 +31,7 @@
     "name": "Tumbleweed",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:Plants"
+      "value": "No creative tab entry"
     },
     "hardness": 0.0,
     "resistance": 0.0,
@@ -68,7 +68,7 @@
     "isReplaceable": true,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:TumbleweedProjectile"
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
@@ -1246,6 +1246,57 @@
       },
       {
         "value": "CUSTOM:SuspiciousMud"
+      },
+      {
+        "value": "Blocks.TNT"
+      },
+      {
+        "value": "Blocks.BOOKSHELF"
+      },
+      {
+        "value": "Blocks.CHISELED_BOOKSHELF"
+      },
+      {
+        "value": "Blocks.MOB_SPAWNER"
+      },
+      {
+        "value": "Blocks.CHEST"
+      },
+      {
+        "value": "Blocks.TRAPPED_CHEST"
+      },
+      {
+        "value": "Blocks.ENDER_CHEST"
+      },
+      {
+        "value": "Blocks.CRAFTING_TABLE"
+      },
+      {
+        "value": "Blocks.FARMLAND"
+      },
+      {
+        "value": "Blocks.FURNACE"
+      },
+      {
+        "value": "Blocks.HOPPER"
+      },
+      {
+        "value": "Blocks.CHERRY_LOG"
+      },
+      {
+        "value": "Blocks.BAMBOO_BLOCK"
+      },
+      {
+        "value": "Blocks.STRIPPED_CHERRY_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_BAMBOO_BLOCK"
+      },
+      {
+        "value": "Blocks.CHERRY_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_CHERRY_WOOD"
       }
     ],
     "isBonemealable": false,

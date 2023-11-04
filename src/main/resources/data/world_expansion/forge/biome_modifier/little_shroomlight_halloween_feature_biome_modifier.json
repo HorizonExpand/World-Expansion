@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "world_expansion:halloween_dark_forest",
+  "features": "world_expansion:little_shroomlight_halloween_feature",
+  "step": "vegetal_decoration"
+}

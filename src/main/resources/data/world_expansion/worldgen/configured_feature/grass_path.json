@@ -1,0 +1,21 @@
+{
+  "type": "world_expansion:grass_path",
+  "config": {
+    "target": {
+      "Name": "minecraft:farmland",
+      "Properties": {
+        "moisture": "0"
+      }
+    },
+    "state": {
+      "Name": "minecraft:dirt_path"
+    },
+    "radius": {
+      "type": "uniform",
+      "value": {
+        "min_inclusive": 2,
+        "max_inclusive": 5
+      }
+    }
+  }
+}

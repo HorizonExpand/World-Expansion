@@ -4,6 +4,7 @@ package net.horizonexpand.world_expansion.block;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.InteractionResult;
@@ -26,6 +28,7 @@ import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.procedures.TumbleweedPriShchielchkiePKMPoRastieniiuProcedure;
 import net.horizonexpand.world_expansion.procedures.TumbleweedObnovlieniieTikaProcedure;
+import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class TumbleweedBlock extends FlowerBlock {
@@ -53,6 +56,11 @@ public class TumbleweedBlock extends FlowerBlock {
 	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
+	}
+
+	@Override
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+		return new ItemStack(WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get());
 	}
 
 	@Override
@@ -135,7 +143,10 @@ public class TumbleweedBlock extends FlowerBlock {
 				|| groundState.is(Blocks.CARTOGRAPHY_TABLE) || groundState.is(Blocks.FLETCHING_TABLE) || groundState.is(Blocks.SMITHING_TABLE) || groundState.is(Blocks.BEEHIVE) || groundState.is(Blocks.BEE_NEST) || groundState.is(Blocks.BASALT)
 				|| groundState.is(Blocks.POLISHED_BASALT) || groundState.is(Blocks.SMOOTH_BASALT) || groundState.is(Blocks.LODESTONE) || groundState.is(Blocks.AZALEA) || groundState.is(Blocks.FLOWERING_AZALEA)
 				|| groundState.is(Blocks.OCHRE_FROGLIGHT) || groundState.is(Blocks.VERDANT_FROGLIGHT) || groundState.is(Blocks.PEARLESCENT_FROGLIGHT) || groundState.is(WorldExpansionModBlocks.TAKYR.get())
-				|| groundState.is(WorldExpansionModBlocks.DRY_DIRT.get()) || groundState.is(WorldExpansionModBlocks.SUSPICIOUS_MUD.get());
+				|| groundState.is(WorldExpansionModBlocks.DRY_DIRT.get()) || groundState.is(WorldExpansionModBlocks.SUSPICIOUS_MUD.get()) || groundState.is(Blocks.TNT) || groundState.is(Blocks.BOOKSHELF) || groundState.is(Blocks.CHISELED_BOOKSHELF)
+				|| groundState.is(Blocks.SPAWNER) || groundState.is(Blocks.CHEST) || groundState.is(Blocks.TRAPPED_CHEST) || groundState.is(Blocks.ENDER_CHEST) || groundState.is(Blocks.CRAFTING_TABLE) || groundState.is(Blocks.FARMLAND)
+				|| groundState.is(Blocks.FURNACE) || groundState.is(Blocks.HOPPER) || groundState.is(Blocks.CHERRY_LOG) || groundState.is(Blocks.BAMBOO_BLOCK) || groundState.is(Blocks.STRIPPED_CHERRY_LOG)
+				|| groundState.is(Blocks.STRIPPED_BAMBOO_BLOCK) || groundState.is(Blocks.CHERRY_WOOD) || groundState.is(Blocks.STRIPPED_CHERRY_WOOD);
 	}
 
 	@Override

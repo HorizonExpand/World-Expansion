@@ -76,38 +76,7 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [
-      {
-        "value": "CUSTOM:Kabanyt"
-      },
-      {
-        "value": "Blocks.GRASS"
-      },
-      {
-        "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": "Blocks.DIRT#1"
-      },
-      {
-        "value": "Blocks.DIRT#2"
-      },
-      {
-        "value": "Blocks.ROOTED_DIRT"
-      },
-      {
-        "value": "Blocks.MUD"
-      },
-      {
-        "value": "Blocks.SAND#0"
-      },
-      {
-        "value": "Blocks.SAND#1"
-      },
-      {
-        "value": "Blocks.MOSS_BLOCK"
-      }
-    ],
+    "canBePlacedOn": [],
     "isBonemealable": true,
     "onBonemealSuccess": {
       "name": "AstilbaOnBoneMealSuccess"

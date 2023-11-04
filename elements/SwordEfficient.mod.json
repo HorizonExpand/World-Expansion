@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Tumbleweed"
+      },
+      {
+        "value": "CUSTOM:JudasFruit1"
+      },
+      {
+        "value": "CUSTOM:JudasFruit2"
+      },
+      {
+        "value": "CUSTOM:JudasFruit3"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "sword_efficient",
+    "namespace": "minecraft"
+  }
+}

@@ -63,7 +63,7 @@ public class TumbleweedProjectileItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				TumbleweedProjectileEntity entityarrow = TumbleweedProjectileEntity.shoot(world, entity, world.getRandom(), 0.4f, 5, 0);
+				TumbleweedProjectileEntity entityarrow = TumbleweedProjectileEntity.shoot(world, entity, world.getRandom(), 0.4f, 3, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 				TumbleweedProjectilePoslieIspolzovaniiaSnariadaProcedure.execute(entity, itemstack);

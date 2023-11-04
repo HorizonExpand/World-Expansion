@@ -43,5 +43,7 @@ public class WorldExpansionModFuels {
 			event.setBurnTime(300);
 		else if (itemstack.getItem() == WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem())
 			event.setBurnTime(100);
+		else if (itemstack.getItem() == WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get())
+			event.setBurnTime(100);
 	}
 }

@@ -1,0 +1,24 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Biomes",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [
+      {
+        "value": "CUSTOM:DiedSavanna"
+      },
+      {
+        "value": "CUSTOM:HalloweenForest"
+      },
+      {
+        "value": "CUSTOM:HalloweenWheatField"
+      }
+    ],
+    "name": "without_wandering_trader_spawns",
+    "namespace": "minecraft"
+  }
+}
