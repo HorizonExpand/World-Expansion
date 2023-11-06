@@ -2,23 +2,23 @@
   "feature": "world_expansion:baobab_valley_underground_kabanyt",
   "placement": [
     {
-      "type": "minecraft:height_range",
-      "height": {
-        "type": "minecraft:uniform",
-        "min_inclusive": {
-          "absolute": 56
-        },
-        "max_inclusive": {
-          "absolute": 96
-        }
-      }
+      "type": "minecraft:count",
+      "count": 240
     },
     {
       "type": "minecraft:in_square"
     },
     {
-      "type": "minecraft:count",
-      "count": 32
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 32
+        },
+        "max_inclusive": {
+          "absolute": 160
+        }
+      }
     },
     {
       "type": "minecraft:biome"

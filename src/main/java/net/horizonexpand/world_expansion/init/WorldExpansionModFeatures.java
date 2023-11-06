@@ -11,7 +11,6 @@ import net.minecraftforge.fml.common.Mod;
 
 import net.minecraft.world.level.levelgen.feature.Feature;
 
-import net.horizonexpand.world_expansion.world.features.ores.KabanytFeature;
 import net.horizonexpand.world_expansion.world.features.YellowAstilbaFeatureFeature;
 import net.horizonexpand.world_expansion.world.features.WaterLakeFieldFeature;
 import net.horizonexpand.world_expansion.world.features.WaterLakeFeature;
@@ -23,6 +22,7 @@ import net.horizonexpand.world_expansion.world.features.MudRuin1Feature;
 import net.horizonexpand.world_expansion.world.features.MudRuin1DesertFeature;
 import net.horizonexpand.world_expansion.world.features.MudRuin1BadlandFeature;
 import net.horizonexpand.world_expansion.world.features.LittleShroomlightHalloweenFeatureFeature;
+import net.horizonexpand.world_expansion.world.features.KabanytGenerationFeature;
 import net.horizonexpand.world_expansion.world.features.JackLanternFieldFeature;
 import net.horizonexpand.world_expansion.world.features.JackLanternFeature;
 import net.horizonexpand.world_expansion.world.features.HalloweenOakScarecrow3Feature;
@@ -74,7 +74,6 @@ import net.horizonexpand.world_expansion.WorldExpansionMod;
 @Mod.EventBusSubscriber
 public class WorldExpansionModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, WorldExpansionMod.MODID);
-	public static final RegistryObject<Feature<?>> KABANYT = REGISTRY.register("kabanyt", KabanytFeature::new);
 	public static final RegistryObject<Feature<?>> BAOBAB1 = REGISTRY.register("baobab1", Baobab1Feature::new);
 	public static final RegistryObject<Feature<?>> BAOBAB2 = REGISTRY.register("baobab2", Baobab2Feature::new);
 	public static final RegistryObject<Feature<?>> BAOBAB3 = REGISTRY.register("baobab3", Baobab3Feature::new);
@@ -132,4 +131,5 @@ public class WorldExpansionModFeatures {
 	public static final RegistryObject<Feature<?>> DARK_OAK_11 = REGISTRY.register("dark_oak_11", DarkOak11Feature::new);
 	public static final RegistryObject<Feature<?>> LITTLE_SHROOMLIGHT_HALLOWEEN_FEATURE = REGISTRY.register("little_shroomlight_halloween_feature", LittleShroomlightHalloweenFeatureFeature::new);
 	public static final RegistryObject<Feature<?>> PUMPKIN_FIELD = REGISTRY.register("pumpkin_field", PumpkinFieldFeature::new);
+	public static final RegistryObject<Feature<?>> KABANYT_GENERATION = REGISTRY.register("kabanyt_generation", KabanytGenerationFeature::new);
 }

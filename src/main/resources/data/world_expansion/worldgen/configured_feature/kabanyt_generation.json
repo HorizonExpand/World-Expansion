@@ -1,8 +1,8 @@
 {
-  "type": "minecraft:ore",
+  "type": "world_expansion:kabanyt_generation",
   "config": {
-    "size": 64,
-    "discard_chance_on_air_exposure": 0.2,
+    "size": 32,
+    "discard_chance_on_air_exposure": 0,
     "targets": [
       {
         "target": {

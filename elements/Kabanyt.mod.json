@@ -117,25 +117,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "mutated_savanna"
-      },
-      {
-        "value": "CUSTOM:Baobabvalley"
-      }
-    ],
-    "blocksToReplace": [
-      {
-        "value": "TAG:dirt"
-      },
-      {
-        "value": "TAG:base_stone_overworld"
-      }
-    ],
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
     "generationShape": "TRIANGLE",
     "frequencyPerChunks": 16,
     "frequencyOnChunk": 48,

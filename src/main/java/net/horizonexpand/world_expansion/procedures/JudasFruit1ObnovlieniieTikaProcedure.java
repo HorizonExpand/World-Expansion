@@ -37,7 +37,7 @@ public class JudasFruit1ObnovlieniieTikaProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "time") == 50) {
+		}.getValue(world, BlockPos.containing(x, y, z), "time") == 20) {
 			{
 				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = WorldExpansionModBlocks.JUDAS_FRUIT_2.get().defaultBlockState();

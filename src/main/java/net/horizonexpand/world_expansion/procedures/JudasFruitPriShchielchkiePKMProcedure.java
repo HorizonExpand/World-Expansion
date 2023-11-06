@@ -44,7 +44,7 @@ public class JudasFruitPriShchielchkiePKMProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WorldExpansionModItems.JUDAS_FRUIT.get()
-				&& (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:base_stone_overworld"))) && !entity.isShiftKeyDown()) {
+				&& (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("minecraft:mineable/pickaxe"))) && entity.isShiftKeyDown()) {
 			if (!(new Object() {
 				public boolean checkGamemode(Entity _ent) {
 					if (_ent instanceof ServerPlayer _serverPlayer) {
@@ -90,7 +90,7 @@ public class JudasFruitPriShchielchkiePKMProcedure {
 					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.place")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WorldExpansionModItems.JUDAS_FRUIT.get() && entity.isShiftKeyDown()
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WorldExpansionModItems.JUDAS_FRUIT.get() && !entity.isShiftKeyDown()
 				&& (world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == WorldExpansionModBlocks.KABANYT.get()) {
 			if (!(new Object() {
 				public boolean checkGamemode(Entity _ent) {

@@ -59,7 +59,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:JudasFruit"
     },
     "dropAmount": 1,
     "forceTicking": true,
@@ -68,7 +68,7 @@
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:JudasFruit"
     },
     "offsetType": "XZ",
     "aiPathNodeType": "WALKABLE",

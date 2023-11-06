@@ -65,7 +65,7 @@ public class WorldExpansionModTabs {
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> ITEMS = REGISTRY.register("items",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.items")).icon(() -> new ItemStack(WorldExpansionModItems.LEAVE_OF_ALOE_VERA.get())).displayItems((parameters, tabData) -> {
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.items")).icon(() -> new ItemStack(WorldExpansionModItems.COPPER_HORN0.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModItems.LEAVE_OF_ALOE_VERA.get());
 				tabData.accept(WorldExpansionModItems.JUDAS_FRUIT.get());
 				tabData.accept(WorldExpansionModItems.SPLIT_JUDAS_FRUIT.get());

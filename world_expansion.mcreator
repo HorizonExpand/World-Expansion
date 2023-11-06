@@ -749,12 +749,8 @@
       "registry_name": "kabanyt",
       "metadata": {
         "files": [
-          "src/main/java/net/horizonexpand/world_expansion/world/features/ores/KabanytFeature.java",
           "src/main/java/net/horizonexpand/world_expansion/block/KabanytBlock.java",
           "src/main/resources/assets/world_expansion/models/item/kabanyt.json",
-          "src/main/resources/data/world_expansion/forge/biome_modifier/kabanyt_biome_modifier.json",
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/kabanyt.json",
-          "src/main/resources/data/world_expansion/worldgen/placed_feature/kabanyt.json",
           "src/main/resources/assets/world_expansion/blockstates/kabanyt.json",
           "src/main/resources/assets/world_expansion/models/block/kabanyt.json"
         ]
@@ -1558,62 +1554,6 @@
         ]
       },
       "path": "~/Recipe/Kabanyt"
-    },
-    {
-      "name": "Baobablogtocoal",
-      "type": "recipe",
-      "sortid": 126,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baobablogtocoal",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/recipes/baobab_log_to_charcoal.json"
-        ]
-      },
-      "path": "~/Recipe/Baobab"
-    },
-    {
-      "name": "Baobabwoodtocharcoal",
-      "type": "recipe",
-      "sortid": 127,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "baobabwoodtocharcoal",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/recipes/baobab_wood_to_charcoal.json"
-        ]
-      },
-      "path": "~/Recipe/Baobab"
-    },
-    {
-      "name": "Strippedbaobabwoodtocharcoal",
-      "type": "recipe",
-      "sortid": 128,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strippedbaobabwoodtocharcoal",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/recipes/stripped_baobab_wood_to_charcoal.json"
-        ]
-      },
-      "path": "~/Recipe/Baobab"
-    },
-    {
-      "name": "Strippedbaobablogtocharcoal",
-      "type": "recipe",
-      "sortid": 129,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "strippedbaobablogtocharcoal",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/recipes/stripped_baobab_log_to_charcoal.json"
-        ]
-      },
-      "path": "~/Recipe/Baobab"
     },
     {
       "name": "Strippedbaobabwoodrecipe",
@@ -5625,20 +5565,6 @@
       "path": "~/Procedures/Copper horn"
     },
     {
-      "name": "CopperHorn0Recipe",
-      "type": "recipe",
-      "sortid": 307,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_horn_0_recipe",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/recipes/copper_horn0_recipe.json"
-        ]
-      },
-      "path": "~/Recipe/Copper horn"
-    },
-    {
       "name": "CopperMusician",
       "type": "achievement",
       "sortid": 308,
@@ -7168,6 +7094,111 @@
         ]
       },
       "path": "~/Halloween/Features"
+    },
+    {
+      "name": "BaobabValleySurfaceKabanyt",
+      "type": "feature",
+      "sortid": 385,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "baobab_valley_surface_kabanyt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/baobab_valley_surface_kabanyt.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/baobab_valley_surface_kabanyt.json",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/baobab_valley_surface_kabanyt_biome_modifier.json"
+        ]
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "KabanytGeneration",
+      "type": "feature",
+      "sortid": 386,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kabanyt_generation",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/kabanyt_generation.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/kabanyt_generation.json",
+          "src/main/java/net/horizonexpand/world_expansion/world/features/KabanytGenerationFeature.java",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/kabanyt_generation_biome_modifier.json"
+        ]
+      },
+      "path": "~/Features"
+    },
+    {
+      "name": "AloeVeraTigerPriRazrushieniiRastieniiaIghrokom",
+      "type": "procedure",
+      "sortid": 387,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aloe_vera_tiger_pri_razrushienii_rastieniia_ighrokom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/AloeVeraTigerPriRazrushieniiRastieniiaIghrokomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "AloeVeraPriRazrushieniiRastieniiaIghrokom",
+      "type": "procedure",
+      "sortid": 388,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aloe_vera_pri_razrushienii_rastieniia_ighrokom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/AloeVeraPriRazrushieniiRastieniiaIghrokomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [],
@@ -7433,13 +7464,13 @@
     "ru_ru": {
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог",
-      "item.world_expansion.copper_horn2": "Медный рог",
       "biome.world_expansion.politania": "Политания",
-      "subtitles.bass1": "Отдыхает",
+      "item.world_expansion.copper_horn2": "Медный рог",
       "item.world_expansion.copper_horn5": "Медный рог",
-      "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
-      "item.world_expansion.copper_horn4": "Медный рог",
+      "subtitles.bass1": "Отдыхает",
       "subtitles.bass0": "Падение",
+      "item.world_expansion.copper_horn4": "Медный рог",
+      "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
       "item.world_expansion.copper_horn7": "Медный рог",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Медный рог",
@@ -7559,13 +7590,13 @@
     "en_us": {
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
-      "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn2": "Copper Horn",
-      "subtitles.bass1": "Copper Horn bass plays",
+      "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn5": "Copper Horn",
-      "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
-      "subtitles.bass0": "Falling",
+      "subtitles.bass1": "Copper Horn bass plays",
       "item.world_expansion.copper_horn4": "Copper Horn",
+      "subtitles.bass0": "Falling",
+      "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Copper Horn",
@@ -7738,19 +7769,11 @@
               {
                 "name": "Astilba",
                 "children": []
-              },
-              {
-                "name": "Aloe",
-                "children": []
               }
             ]
           },
           {
             "name": "Vanilla",
-            "children": []
-          },
-          {
-            "name": "Copper horn",
             "children": []
           }
         ]

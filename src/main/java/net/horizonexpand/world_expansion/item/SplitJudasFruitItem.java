@@ -7,6 +7,6 @@ import net.minecraft.world.food.FoodProperties;
 
 public class SplitJudasFruitItem extends Item {
 	public SplitJudasFruitItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.3f).build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(5).saturationMod(5f).build()));
 	}
 }
