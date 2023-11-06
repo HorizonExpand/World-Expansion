@@ -5611,88 +5611,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "SuspiciousMudObnovlieniieTika",
-      "type": "procedure",
-      "sortid": 310,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "suspicious_mud_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/SuspiciousMudObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "FallingSuspiciousMud",
-      "type": "block",
-      "sortid": 311,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "falling_suspicious_mud",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/world_expansion/models/block/falling_suspicious_mud.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/FallingSuspiciousMudBlock.java",
-          "src/main/resources/assets/world_expansion/models/item/falling_suspicious_mud.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/entity/FallingSuspiciousMudBlockEntity.java",
-          "src/main/resources/assets/world_expansion/blockstates/falling_suspicious_mud.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "FallingSuspiciousMudObnovlieniieTika",
-      "type": "procedure",
-      "sortid": 312,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "falling_suspicious_mud_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/FallingSuspiciousMudObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "FallingTakyrObnovlieniieTika",
       "type": "procedure",
       "sortid": 313,
@@ -7464,13 +7382,13 @@
     "ru_ru": {
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог",
-      "biome.world_expansion.politania": "Политания",
       "item.world_expansion.copper_horn2": "Медный рог",
-      "item.world_expansion.copper_horn5": "Медный рог",
+      "biome.world_expansion.politania": "Политания",
       "subtitles.bass1": "Отдыхает",
-      "subtitles.bass0": "Падение",
-      "item.world_expansion.copper_horn4": "Медный рог",
+      "item.world_expansion.copper_horn5": "Медный рог",
       "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
+      "item.world_expansion.copper_horn4": "Медный рог",
+      "subtitles.bass0": "Падение",
       "item.world_expansion.copper_horn7": "Медный рог",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Медный рог",
@@ -7534,7 +7452,6 @@
       "block.world_expansion.stripped_baobab_log": "Обтёсанная древесина баобаба",
       "advancements.fallen_paradise.descr": "Найдите Мёртвую саванну",
       "item.world_expansion.leave_of_aloe_vera": "Листки алое вера",
-      "block.world_expansion.falling_suspicious_mud": "Падающая подозрительная грязь",
       "block.world_expansion.astilba": "Астильба",
       "subtitles.harmony9": "Сладкая",
       "subtitles.harmony7": "Секрет",
@@ -7590,13 +7507,13 @@
     "en_us": {
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
-      "item.world_expansion.copper_horn2": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
-      "item.world_expansion.copper_horn5": "Copper Horn",
+      "item.world_expansion.copper_horn2": "Copper Horn",
       "subtitles.bass1": "Copper Horn bass plays",
-      "item.world_expansion.copper_horn4": "Copper Horn",
-      "subtitles.bass0": "Falling",
+      "item.world_expansion.copper_horn5": "Copper Horn",
       "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
+      "subtitles.bass0": "Falling",
+      "item.world_expansion.copper_horn4": "Copper Horn",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Copper Horn",
@@ -7660,7 +7577,6 @@
       "block.world_expansion.stripped_baobab_log": "Stripped baobab log",
       "advancements.fallen_paradise.descr": "Find the Dead Savanna",
       "item.world_expansion.leave_of_aloe_vera": "Leave of aloe vera",
-      "block.world_expansion.falling_suspicious_mud": "Suspicious Mud",
       "block.world_expansion.astilba": "Astilba ",
       "subtitles.harmony9": "Copper Horn harmony plays",
       "subtitles.harmony7": "Copper Horn harmony plays",

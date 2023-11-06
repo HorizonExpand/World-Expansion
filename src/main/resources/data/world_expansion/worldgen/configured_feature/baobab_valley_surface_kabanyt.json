@@ -1,17 +1,18 @@
 {
-  "type": "minecraft:lake",
+  "type": "minecraft:ore",
   "config": {
-    "fluid": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "world_expansion:kabanyt"
+    "size": 64,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "tag_match",
+          "tag": "dirt"
+        },
+        "state": {
+          "Name": "world_expansion:kabanyt"
+        }
       }
-    },
-    "barrier": {
-      "type": "minecraft:simple_state_provider",
-      "state": {
-        "Name": "minecraft:red_sand"
-      }
-    }
+    ]
   }
 }

@@ -92,7 +92,6 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
 	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
 	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
-	public static final RegistryObject<Item> FALLING_SUSPICIOUS_MUD = block(WorldExpansionModBlocks.FALLING_SUSPICIOUS_MUD);
 	public static final RegistryObject<Item> LITTLE_SHROOMLIGHT = block(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {

@@ -2,5 +2,5 @@
   "type": "forge:add_features",
   "biomes": "world_expansion:baobab_valley",
   "features": "world_expansion:baobab_valley_surface_kabanyt",
-  "step": "lakes"
+  "step": "top_layer_modification"
 }
