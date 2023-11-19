@@ -21,4 +21,10 @@ description="This mod pumps vanilla biomes and adds new ones for a more interest
 
 
 
+[[dependencies.world_expansion]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

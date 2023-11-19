@@ -81,6 +81,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.COPPER_HORN7.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN8.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN9.get());
+				tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
 			})
 
 					.build());

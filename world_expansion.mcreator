@@ -7117,6 +7117,24 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "MiniFirefly",
+      "type": "animatedentity",
+      "sortid": 389,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mini_fireflies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/entity/model/MiniFireflyModel.java",
+          "src/main/java/net/horizonexpand/world_expansion/entity/MiniFireflyEntity.java",
+          "src/main/resources/assets/world_expansion/models/item/mini_fireflies_spawn_egg.json",
+          "src/main/java/net/horizonexpand/world_expansion/client/renderer/MiniFireflyRenderer.java",
+          "src/main/java/net/horizonexpand/world_expansion/entity/layer/MiniFireflyLayer.java"
+        ]
+      },
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [],
@@ -7382,13 +7400,13 @@
     "ru_ru": {
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог",
-      "item.world_expansion.copper_horn2": "Медный рог",
       "biome.world_expansion.politania": "Политания",
+      "item.world_expansion.copper_horn2": "Медный рог",
       "subtitles.bass1": "Отдыхает",
       "item.world_expansion.copper_horn5": "Медный рог",
-      "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
-      "item.world_expansion.copper_horn4": "Медный рог",
       "subtitles.bass0": "Падение",
+      "item.world_expansion.copper_horn4": "Медный рог",
+      "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
       "item.world_expansion.copper_horn7": "Медный рог",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Медный рог",
@@ -7402,6 +7420,7 @@
       "advancements.oh_great_baobab.title": "Ох, Великий Баобаб!",
       "block.world_expansion.baobab_fence_gate": "Калитка из древесины баобаба",
       "subtitles.music_disc_spooky_forest": "",
+      "item.world_expansion.mini_fireflies_spawn_egg": "Яйцо призива Мини-Светлячков",
       "block.world_expansion.baobab_pressure_plate": "Нажимная пластина из древесины баобаба",
       "block.world_expansion.baobab_log": "Древисина баобаба",
       "advancements.copper_musician.title": "Медный музыкант",
@@ -7468,6 +7487,7 @@
       "block.world_expansion.baobab_stairs": "Ступеньки из древесины баобаба",
       "subtitles.harmony": "Медный рог гармонично трубит",
       "block.world_expansion.kabanyt_wall": "Ограда из кабанита",
+      "entity.world_expansion.mini_fireflies": "Mini-Firefly\u0027s",
       "block.world_expansion.jack_o_lantern_with_soul": "Светильник Джека с душой",
       "item.world_expansion.split_judas_fruit": "Расколотый плод Иуды",
       "block.world_expansion.baobab_button": "Кнопка из древесины баобаба",
@@ -7507,13 +7527,13 @@
     "en_us": {
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
-      "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn2": "Copper Horn",
-      "subtitles.bass1": "Copper Horn bass plays",
+      "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn5": "Copper Horn",
-      "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
-      "subtitles.bass0": "Falling",
+      "subtitles.bass1": "Copper Horn bass plays",
       "item.world_expansion.copper_horn4": "Copper Horn",
+      "subtitles.bass0": "Falling",
+      "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Copper Horn",
@@ -7527,6 +7547,7 @@
       "advancements.oh_great_baobab.title": "Oh, Great Baobab!",
       "block.world_expansion.baobab_fence_gate": "Baobab fence gate",
       "subtitles.music_disc_spooky_forest": "",
+      "item.world_expansion.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
       "block.world_expansion.baobab_pressure_plate": "Baobab pressure plate",
       "block.world_expansion.baobab_log": "Baobab log",
       "advancements.copper_musician.title": "Copper Musician",
@@ -7593,6 +7614,7 @@
       "block.world_expansion.baobab_stairs": "Baobab stairs",
       "subtitles.harmony": "Copper Goat Horn harmony plays",
       "block.world_expansion.kabanyt_wall": "Kabanyt wall",
+      "entity.world_expansion.mini_fireflies": "Mini-Fireflies",
       "block.world_expansion.jack_o_lantern_with_soul": "Jack o\u0027Lantern with Soul",
       "item.world_expansion.split_judas_fruit": "Judas Fruit",
       "block.world_expansion.baobab_button": "Baobab button",
@@ -7864,6 +7886,10 @@
             "children": []
           }
         ]
+      },
+      {
+        "name": "Mobs",
+        "children": []
       }
     ]
   },
@@ -7881,7 +7907,9 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
     "currentGenerator": "forge-1.20.1",
     "credits": "Hrumer, Samuelchik",
     "modElementsPackage": "net.horizonexpand.world_expansion",

@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.horizonexpand.world_expansion.entity.TumbleweedProjectileEntity;
+import net.horizonexpand.world_expansion.entity.MiniFireflyEntity;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -24,6 +25,10 @@ public class WorldExpansionModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, WorldExpansionMod.MODID);
 	public static final RegistryObject<EntityType<TumbleweedProjectileEntity>> TUMBLEWEED_PROJECTILE = register("projectile_tumbleweed_projectile", EntityType.Builder.<TumbleweedProjectileEntity>of(TumbleweedProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(TumbleweedProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MiniFireflyEntity>> MINI_FIREFLIES = register("mini_fireflies",
+			EntityType.Builder.<MiniFireflyEntity>of(MiniFireflyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MiniFireflyEntity::new)
+
+					.sized(0.6f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -32,10 +37,12 @@ public class WorldExpansionModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			MiniFireflyEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(MINI_FIREFLIES.get(), MiniFireflyEntity.createAttributes().build());
 	}
 }

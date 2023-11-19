@@ -7,6 +7,7 @@ package net.horizonexpand.world_expansion.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
@@ -93,6 +94,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
 	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
 	public static final RegistryObject<Item> LITTLE_SHROOMLIGHT = block(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT);
+	public static final RegistryObject<Item> MINI_FIREFLIES_SPAWN_EGG = REGISTRY.register("mini_fireflies_spawn_egg", () -> new ForgeSpawnEggItem(WorldExpansionModEntities.MINI_FIREFLIES, -5577450, -14869219, new Item.Properties()));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
