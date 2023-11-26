@@ -10,6 +10,7 @@ import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIMenu;
+import net.horizonexpand.world_expansion.procedures.DyeButtonShowProcedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButtonShowProcedure;
 import net.horizonexpand.world_expansion.network.MultiCraftingTableGUIButtonMessage;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
@@ -33,6 +34,12 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 	ImageButton imagebutton_copper_horn7;
 	ImageButton imagebutton_copper_horn8;
 	ImageButton imagebutton_copper_horn9;
+	ImageButton imagebutton_cyan_dye_craft_gui;
+	ImageButton imagebutton_light_blue_dye_craft_gui;
+	ImageButton imagebutton_magenta_dye_craft_gui;
+	ImageButton imagebutton_orange_dye_craft_gui;
+	ImageButton imagebutton_pink_dye_craft_gui;
+	ImageButton imagebutton_yellow_dye_craft_gui;
 
 	public MultiCraftingTableGUIScreen(MultiCraftingTableGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -53,35 +60,53 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 96 && mouseX < leftPos + 112 && mouseY > topPos + 25 && mouseY < topPos + 41)
+			if (mouseX > leftPos + 87 && mouseX < leftPos + 103 && mouseY > topPos + 16 && mouseY < topPos + 32)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_0"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 114 && mouseX < leftPos + 130 && mouseY > topPos + 25 && mouseY < topPos + 41)
+			if (mouseX > leftPos + 105 && mouseX < leftPos + 121 && mouseY > topPos + 16 && mouseY < topPos + 32)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_1"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 132 && mouseX < leftPos + 148 && mouseY > topPos + 25 && mouseY < topPos + 41)
+			if (mouseX > leftPos + 123 && mouseX < leftPos + 139 && mouseY > topPos + 16 && mouseY < topPos + 32)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_2"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 150 && mouseX < leftPos + 165 && mouseY > topPos + 25 && mouseY < topPos + 40)
+			if (mouseX > leftPos + 141 && mouseX < leftPos + 156 && mouseY > topPos + 16 && mouseY < topPos + 31)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_3"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 95 && mouseX < leftPos + 112 && mouseY > topPos + 43 && mouseY < topPos + 58)
+			if (mouseX > leftPos + 87 && mouseX < leftPos + 104 && mouseY > topPos + 34 && mouseY < topPos + 49)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_4"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 114 && mouseX < leftPos + 130 && mouseY > topPos + 43 && mouseY < topPos + 59)
+			if (mouseX > leftPos + 105 && mouseX < leftPos + 121 && mouseY > topPos + 34 && mouseY < topPos + 50)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_5"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 132 && mouseX < leftPos + 148 && mouseY > topPos + 43 && mouseY < topPos + 58)
+			if (mouseX > leftPos + 123 && mouseX < leftPos + 139 && mouseY > topPos + 34 && mouseY < topPos + 49)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_6"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 150 && mouseX < leftPos + 165 && mouseY > topPos + 43 && mouseY < topPos + 59)
+			if (mouseX > leftPos + 141 && mouseX < leftPos + 156 && mouseY > topPos + 34 && mouseY < topPos + 50)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_7"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 113 && mouseX < leftPos + 129 && mouseY > topPos + 61 && mouseY < topPos + 76)
+			if (mouseX > leftPos + 105 && mouseX < leftPos + 121 && mouseY > topPos + 52 && mouseY < topPos + 67)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_8"), mouseX, mouseY);
 		if (CopperHornButtonShowProcedure.execute(entity))
-			if (mouseX > leftPos + 132 && mouseX < leftPos + 148 && mouseY > topPos + 61 && mouseY < topPos + 76)
+			if (mouseX > leftPos + 123 && mouseX < leftPos + 139 && mouseY > topPos + 52 && mouseY < topPos + 67)
 				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_9"), mouseX, mouseY);
+		if (DyeButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 87 && mouseX < leftPos + 102 && mouseY > topPos + 16 && mouseY < topPos + 31)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_cyan_dye"), mouseX, mouseY);
+		if (DyeButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 105 && mouseX < leftPos + 121 && mouseY > topPos + 16 && mouseY < topPos + 32)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_light_blue_dye"), mouseX, mouseY);
+		if (DyeButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 123 && mouseX < leftPos + 139 && mouseY > topPos + 16 && mouseY < topPos + 32)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_magenta_dye"), mouseX, mouseY);
+		if (DyeButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 141 && mouseX < leftPos + 156 && mouseY > topPos + 16 && mouseY < topPos + 32)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_orange_dye"), mouseX, mouseY);
+		if (DyeButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 105 && mouseX < leftPos + 121 && mouseY > topPos + 34 && mouseY < topPos + 49)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_pink_dye"), mouseX, mouseY);
+		if (DyeButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 123 && mouseX < leftPos + 139 && mouseY > topPos + 34 && mouseY < topPos + 50)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_yellow_dye"), mouseX, mouseY);
 	}
 
 	@Override
@@ -110,6 +135,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.label_multicrafting_table"), 6, 7, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.label_inventory"), 6, 75, -12829636, false);
 	}
 
 	@Override
@@ -120,7 +146,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_copper_horn = new ImageButton(this.leftPos + 96, this.topPos + 25, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn.png"), 16, 32, e -> {
+		imagebutton_copper_horn = new ImageButton(this.leftPos + 87, this.topPos + 16, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(0, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -134,7 +160,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn", imagebutton_copper_horn);
 		this.addRenderableWidget(imagebutton_copper_horn);
-		imagebutton_copper_horn1 = new ImageButton(this.leftPos + 114, this.topPos + 25, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn1.png"), 16, 32, e -> {
+		imagebutton_copper_horn1 = new ImageButton(this.leftPos + 105, this.topPos + 16, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn1.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(1, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
@@ -148,7 +174,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn1", imagebutton_copper_horn1);
 		this.addRenderableWidget(imagebutton_copper_horn1);
-		imagebutton_copper_horn2 = new ImageButton(this.leftPos + 132, this.topPos + 25, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn2.png"), 16, 32, e -> {
+		imagebutton_copper_horn2 = new ImageButton(this.leftPos + 123, this.topPos + 16, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn2.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(2, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
@@ -162,7 +188,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn2", imagebutton_copper_horn2);
 		this.addRenderableWidget(imagebutton_copper_horn2);
-		imagebutton_copper_horn3 = new ImageButton(this.leftPos + 150, this.topPos + 25, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn3.png"), 16, 32, e -> {
+		imagebutton_copper_horn3 = new ImageButton(this.leftPos + 141, this.topPos + 16, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn3.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(3, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
@@ -176,7 +202,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn3", imagebutton_copper_horn3);
 		this.addRenderableWidget(imagebutton_copper_horn3);
-		imagebutton_copper_horn4 = new ImageButton(this.leftPos + 96, this.topPos + 43, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn4.png"), 16, 32, e -> {
+		imagebutton_copper_horn4 = new ImageButton(this.leftPos + 87, this.topPos + 34, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn4.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(4, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
@@ -190,7 +216,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn4", imagebutton_copper_horn4);
 		this.addRenderableWidget(imagebutton_copper_horn4);
-		imagebutton_copper_horn5 = new ImageButton(this.leftPos + 114, this.topPos + 43, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn5.png"), 16, 32, e -> {
+		imagebutton_copper_horn5 = new ImageButton(this.leftPos + 105, this.topPos + 34, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn5.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(5, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
@@ -204,7 +230,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn5", imagebutton_copper_horn5);
 		this.addRenderableWidget(imagebutton_copper_horn5);
-		imagebutton_copper_horn6 = new ImageButton(this.leftPos + 132, this.topPos + 43, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn6.png"), 16, 32, e -> {
+		imagebutton_copper_horn6 = new ImageButton(this.leftPos + 123, this.topPos + 34, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn6.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(6, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 6, x, y, z);
@@ -218,7 +244,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn6", imagebutton_copper_horn6);
 		this.addRenderableWidget(imagebutton_copper_horn6);
-		imagebutton_copper_horn7 = new ImageButton(this.leftPos + 150, this.topPos + 43, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn7.png"), 16, 32, e -> {
+		imagebutton_copper_horn7 = new ImageButton(this.leftPos + 141, this.topPos + 34, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn7.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(7, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 7, x, y, z);
@@ -232,7 +258,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn7", imagebutton_copper_horn7);
 		this.addRenderableWidget(imagebutton_copper_horn7);
-		imagebutton_copper_horn8 = new ImageButton(this.leftPos + 114, this.topPos + 61, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn8.png"), 16, 32, e -> {
+		imagebutton_copper_horn8 = new ImageButton(this.leftPos + 105, this.topPos + 52, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn8.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(8, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 8, x, y, z);
@@ -246,7 +272,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn8", imagebutton_copper_horn8);
 		this.addRenderableWidget(imagebutton_copper_horn8);
-		imagebutton_copper_horn9 = new ImageButton(this.leftPos + 132, this.topPos + 61, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn9.png"), 16, 32, e -> {
+		imagebutton_copper_horn9 = new ImageButton(this.leftPos + 123, this.topPos + 52, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_copper_horn9.png"), 16, 32, e -> {
 			if (CopperHornButtonShowProcedure.execute(entity)) {
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(9, x, y, z));
 				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 9, x, y, z);
@@ -260,5 +286,89 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		};
 		guistate.put("button:imagebutton_copper_horn9", imagebutton_copper_horn9);
 		this.addRenderableWidget(imagebutton_copper_horn9);
+		imagebutton_cyan_dye_craft_gui = new ImageButton(this.leftPos + 87, this.topPos + 16, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_cyan_dye_craft_gui.png"), 16, 32, e -> {
+			if (DyeButtonShowProcedure.execute(entity)) {
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(10, x, y, z));
+				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 10, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (DyeButtonShowProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_cyan_dye_craft_gui", imagebutton_cyan_dye_craft_gui);
+		this.addRenderableWidget(imagebutton_cyan_dye_craft_gui);
+		imagebutton_light_blue_dye_craft_gui = new ImageButton(this.leftPos + 105, this.topPos + 16, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_light_blue_dye_craft_gui.png"), 16, 32, e -> {
+			if (DyeButtonShowProcedure.execute(entity)) {
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(11, x, y, z));
+				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 11, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (DyeButtonShowProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_light_blue_dye_craft_gui", imagebutton_light_blue_dye_craft_gui);
+		this.addRenderableWidget(imagebutton_light_blue_dye_craft_gui);
+		imagebutton_magenta_dye_craft_gui = new ImageButton(this.leftPos + 123, this.topPos + 16, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_magenta_dye_craft_gui.png"), 16, 32, e -> {
+			if (DyeButtonShowProcedure.execute(entity)) {
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(12, x, y, z));
+				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 12, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (DyeButtonShowProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_magenta_dye_craft_gui", imagebutton_magenta_dye_craft_gui);
+		this.addRenderableWidget(imagebutton_magenta_dye_craft_gui);
+		imagebutton_orange_dye_craft_gui = new ImageButton(this.leftPos + 141, this.topPos + 16, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_orange_dye_craft_gui.png"), 16, 32, e -> {
+			if (DyeButtonShowProcedure.execute(entity)) {
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(13, x, y, z));
+				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 13, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (DyeButtonShowProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_orange_dye_craft_gui", imagebutton_orange_dye_craft_gui);
+		this.addRenderableWidget(imagebutton_orange_dye_craft_gui);
+		imagebutton_pink_dye_craft_gui = new ImageButton(this.leftPos + 105, this.topPos + 34, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_pink_dye_craft_gui.png"), 16, 32, e -> {
+			if (DyeButtonShowProcedure.execute(entity)) {
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(14, x, y, z));
+				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 14, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (DyeButtonShowProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_pink_dye_craft_gui", imagebutton_pink_dye_craft_gui);
+		this.addRenderableWidget(imagebutton_pink_dye_craft_gui);
+		imagebutton_yellow_dye_craft_gui = new ImageButton(this.leftPos + 123, this.topPos + 34, 16, 16, 0, 0, 16, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_yellow_dye_craft_gui.png"), 16, 32, e -> {
+			if (DyeButtonShowProcedure.execute(entity)) {
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(15, x, y, z));
+				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 15, x, y, z);
+			}
+		}) {
+			@Override
+			public void render(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
+				if (DyeButtonShowProcedure.execute(entity))
+					super.render(guiGraphics, gx, gy, ticks);
+			}
+		};
+		guistate.put("button:imagebutton_yellow_dye_craft_gui", imagebutton_yellow_dye_craft_gui);
+		this.addRenderableWidget(imagebutton_yellow_dye_craft_gui);
 	}
 }

@@ -1,0 +1,84 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Strippedbaobabwood"
+      },
+      {
+        "value": "CUSTOM:Strippedbaobablog"
+      },
+      {
+        "value": "Blocks.STRIPPED_OAK_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_SPRUCE_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_BIRCH_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_JUNGLE_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_DARK_OAK_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_WARPED_STEM"
+      },
+      {
+        "value": "Blocks.STRIPPED_CRIMSON_STEM"
+      },
+      {
+        "value": "Blocks.STRIPPED_MANGROVE_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_CHERRY_LOG"
+      },
+      {
+        "value": "Blocks.STRIPPED_BAMBOO_BLOCK"
+      },
+      {
+        "value": "Blocks.STRIPPED_OAK_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_SPRUCE_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_BIRCH_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_JUNGLE_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_ACACIA_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_DARK_OAK_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_WARPED_HYPHAE"
+      },
+      {
+        "value": "Blocks.STRIPPED_CRIMSON_HYPHAE"
+      },
+      {
+        "value": "Blocks.STRIPPED_MANGROVE_WOOD"
+      },
+      {
+        "value": "Blocks.STRIPPED_CHERRY_WOOD"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "stripped_log",
+    "namespace": "forge"
+  }
+}

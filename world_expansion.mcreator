@@ -7982,6 +7982,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8002,6 +8018,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8022,6 +8054,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8042,6 +8090,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8062,6 +8126,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8082,6 +8162,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8102,6 +8198,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8122,6 +8234,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8142,6 +8270,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -8162,10 +8306,305 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
       "path": "~/Procedures/Multi-Crafting Table/Copper Horn"
+    },
+    {
+      "name": "StrippedLogBlock",
+      "type": "tag",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_log_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/stripped_log.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "StrippedLogItem",
+      "type": "tag",
+      "sortid": 433,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_log_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/stripped_log.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "MultiCraftingTableRecipe",
+      "type": "recipe",
+      "sortid": 434,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multi_crafting_table_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/recipes/multi_crafting_table_recipe.json"
+        ]
+      },
+      "path": "~/Recipe/Multi-Crafting Table"
+    },
+    {
+      "name": "DyeButtonShow",
+      "type": "procedure",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dye_button_show",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/DyeButtonShowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Dye"
+    },
+    {
+      "name": "DyeButtonCyan",
+      "type": "procedure",
+      "sortid": 436,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dye_button_cyan",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/DyeButtonCyanProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Dye"
+    },
+    {
+      "name": "DyeButtonLightBlue",
+      "type": "procedure",
+      "sortid": 437,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dye_button_light_blue",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/DyeButtonLightBlueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Dye"
+    },
+    {
+      "name": "DyeButtonMagenta",
+      "type": "procedure",
+      "sortid": 438,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dye_button_magenta",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/DyeButtonMagentaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Dye"
+    },
+    {
+      "name": "DyeButtonOrange",
+      "type": "procedure",
+      "sortid": 439,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dye_button_orange",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/DyeButtonOrangeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Dye"
+    },
+    {
+      "name": "DyeButtonPink",
+      "type": "procedure",
+      "sortid": 440,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dye_button_pink",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/DyeButtonPinkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Dye"
+    },
+    {
+      "name": "DyeButtonYellow",
+      "type": "procedure",
+      "sortid": 441,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dye_button_yellow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/DyeButtonYellowProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Dye"
     }
   ],
   "variable_elements": [],
@@ -8440,15 +8879,15 @@
   ],
   "language_map": {
     "ru_ru": {
-      "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог",
+      "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn2": "Медный рог",
       "biome.world_expansion.politania": "Политания",
-      "subtitles.bass1": "Отдыхает",
       "item.world_expansion.copper_horn5": "Медный рог",
-      "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
-      "item.world_expansion.copper_horn4": "Медный рог",
+      "subtitles.bass1": "Отдыхает",
       "subtitles.bass0": "Падение",
+      "item.world_expansion.copper_horn4": "Медный рог",
+      "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
       "item.world_expansion.copper_horn7": "Медный рог",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Медный рог",
@@ -8487,24 +8926,25 @@
       "subtitles.bass2": "Желание",
       "subtitles.bass5": "Путешествие",
       "subtitles.bass4": "Гнев",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_7": "Медный рог 7",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_6": "Медный рог 6",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_9": "Медный рог 9",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_8": "Медный рог 8",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_7": "1х Медный рог 7",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_6": "1х Медный рог 6",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_9": "1х Медный рог 9",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_8": "1х Медный рог 8",
       "block.world_expansion.baobab_door": "Дверь из древесины баобаба",
       "biome.world_expansion.halloween_dark_forest": "Хеллоунский тёмный лес",
       "block.world_expansion.judas_fruit_3": "Плод Иуды3",
       "block.world_expansion.judas_fruit_2": "Плод Иуды2",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_1": "Медный рог 1",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_1": "1х Медный рог 1",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_cyan_dye": "2х Бирюзовый краситель",
       "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_0": "Медный рог 0",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_0": "1х Медный рог 0",
       "subtitles.melody2": "Вода",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_3": "Медный рог 3",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_3": "1х Медный рог 3",
       "subtitles.melody1": "Гимн",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_2": "Медный рог 2",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_2": "1х Медный рог 2",
       "subtitles.melody0": "Небо",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_5": "Медный рог 5",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_4": "Медный рог 4",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_5": "1х Медный рог 5",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_4": "1х Медный рог 4",
       "subtitles.melody6": "Гнездо",
       "block.world_expansion.kabanyt_bricks": "Кирпичи из кабанита",
       "subtitles.melody5": "Характер",
@@ -8530,6 +8970,7 @@
       "subtitles.mini-fireflies_ambient": "Мини-Светлячок стрекочет",
       "block.world_expansion.astilba": "Астильба",
       "subtitles.harmony9": "Сладкая",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_pink_dye": "2х Розовый краситель",
       "subtitles.harmony7": "Секрет",
       "advancements.world_expansion.descr": "Исследуйте мир!",
       "subtitles.harmony8": "Бесстрашный",
@@ -8538,7 +8979,7 @@
       "biome.world_expansion.died_savanna": "Мёртвая саванна",
       "subtitles.harmony3": "Скромный",
       "item_group.world_expansion.we_halloween": "WE: Хеллоуин",
-      "advancements.summer_resort_in_winter.title": "§6Летний курорт зимой",
+      "advancements.summer_resort_in_winter.title": "§6Летний курорт зимой ",
       "subtitles.harmony4": "Сухой",
       "advancements.lisa_simpson.title": "Лиза Симпсон",
       "block.world_expansion.baobab_stairs": "Ступеньки из древесины баобаба",
@@ -8556,6 +8997,7 @@
       "block.world_expansion.tumbleweed": "Перекати-поле",
       "item_group.world_expansion.building_blocks": "WE: Строительные блоки",
       "item.world_expansion.music_disc_destroyer": "Пластинка",
+      "gui.world_expansion.multi_crafting_table_gui.label_inventory": "Инвентарь",
       "item_group.world_expansion.items": "WE: Предметы",
       "subtitles.harmony1": "Старый",
       "subtitles.harmony2": "Чистый",
@@ -8571,14 +9013,18 @@
       "item_group.world_expansion.mobs": "WE: Мобы",
       "advancements.tile_slab.descr": "Создайте плиту из плиточного кабанита (ну и название)...",
       "item.world_expansion.titanium_ingot": "Титановый слиток",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_orange_dye": "1х Оранжевый краситель",
       "block.world_expansion.kabanyt_bricks_stairs": "Кирпичные ступеньки из кабанита",
       "advancements.poor_zhorik.title": "Бедный Жорик!",
       "block.world_expansion.bottle_with_mini_fireflies": "Бутылка с Мини-Светлячками",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_light_blue_dye": "1х Светло-синий краситель",
       "item.world_expansion.soul": "Душа",
       "advancements.oh_great_baobab.descr": "Найдите Долину баобабов",
       "advancements.ancient_civilization_part_1.descr": "Найдите Политанию",
       "advancements.poor_zhorik.descr": "Получите Козий рог",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_yellow_dye": "1х Жёлтый краситель",
       "item.world_expansion.raw_titanium": "Необработанный титан",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_magenta_dye": "2х Сиреневый краситель",
       "item.world_expansion.judas_fruit": "Плод Иуды",
       "block.world_expansion.kabanyt_tiles_slab": "Плита из плиточного кабанита",
       "block.world_expansion.titanium_ore": "Титановая руда",
@@ -8591,15 +9037,15 @@
       "item.world_expansion.copper_horn0": "Медный рог"
     },
     "en_us": {
-      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
+      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn2": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
-      "item.world_expansion.copper_horn5": "Copper Horn",
       "subtitles.bass1": "Copper Horn bass plays",
-      "item.world_expansion.copper_horn4": "Copper Horn",
-      "subtitles.bass0": "Falling",
+      "item.world_expansion.copper_horn5": "Copper Horn",
       "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
+      "subtitles.bass0": "Falling",
+      "item.world_expansion.copper_horn4": "Copper Horn",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Copper Horn",
@@ -8638,24 +9084,25 @@
       "subtitles.bass2": "Copper Horn bass plays",
       "subtitles.bass5": "Copper Horn bass plays",
       "subtitles.bass4": "Copper Horn bass plays",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_7": "Copper Horn 7",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_6": "Copper Horn 6",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_9": "Copper Horn 9",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_8": "Copper Horn 8",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_7": "1x Copper Horn 7",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_6": "1x Copper Horn 6",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_9": "1x Copper Horn 9",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_8": "1x Copper Horn 8",
       "block.world_expansion.baobab_door": "Baobab door",
       "biome.world_expansion.halloween_dark_forest": "Halloween Dark Forest",
       "block.world_expansion.judas_fruit_3": "Judas Fruit3",
       "block.world_expansion.judas_fruit_2": "Judas Fruit2",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_1": "Copper Horn 1",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_1": "1x Copper Horn 1",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_cyan_dye": "2x Cyan Dye",
       "block.world_expansion.baobab_slab": "Baobab slab",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_0": "Copper Horn 0",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_0": "1x Copper Horn 0",
       "subtitles.melody2": "Copper Horn melody plays",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_3": "Copper Horn 3",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_3": "1x Copper Horn 3",
       "subtitles.melody1": "Copper Horn melody plays",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_2": "Copper Horn 2",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_2": "1x Copper Horn 2",
       "subtitles.melody0": "Sky",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_5": "Copper Horn 5",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_4": "Copper Horn 4",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_5": "1x Copper Horn 5",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_4": "1x Copper Horn 4",
       "subtitles.melody6": "Copper Horn melody plays",
       "block.world_expansion.kabanyt_bricks": "Kabanyt bricks",
       "subtitles.melody5": "Copper Horn melody plays",
@@ -8681,6 +9128,7 @@
       "subtitles.mini-fireflies_ambient": "The Mini-Firefly Chirps",
       "block.world_expansion.astilba": "Astilba ",
       "subtitles.harmony9": "Copper Horn harmony plays",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_pink_dye": "2x Pink Dye",
       "subtitles.harmony7": "Copper Horn harmony plays",
       "advancements.world_expansion.descr": "Explore the world!",
       "subtitles.harmony8": "Copper Horn harmony plays",
@@ -8707,6 +9155,7 @@
       "block.world_expansion.tumbleweed": "Tumbleweed",
       "item_group.world_expansion.building_blocks": "WE: Building Blocks",
       "item.world_expansion.music_disc_destroyer": "Music Disc ",
+      "gui.world_expansion.multi_crafting_table_gui.label_inventory": "Inventory",
       "item_group.world_expansion.items": "WE: Items",
       "subtitles.harmony1": "Copper Horn harmony plays",
       "subtitles.harmony2": "Copper Horn harmony plays",
@@ -8722,14 +9171,18 @@
       "item_group.world_expansion.mobs": "WE: Mobs",
       "advancements.tile_slab.descr": "Create a slab from kabanyt tiles (well, the name)...",
       "item.world_expansion.titanium_ingot": "Titanium Ingot",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_orange_dye": "1x Orange Dye",
       "block.world_expansion.kabanyt_bricks_stairs": "Kabanyt bricks stairs",
       "advancements.poor_zhorik.title": "Poor Zhorik!",
       "block.world_expansion.bottle_with_mini_fireflies": "Bottle Witn Mini Fireflies",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_light_blue_dye": "1x Light Blue Dye",
       "item.world_expansion.soul": "Soul",
       "advancements.oh_great_baobab.descr": "Find the Baobab Valley",
       "advancements.ancient_civilization_part_1.descr": "Find the Politania",
       "advancements.poor_zhorik.descr": "Get a Goat Horn",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_yellow_dye": "1x Yellow Dye",
       "item.world_expansion.raw_titanium": "Raw Titanium",
+      "gui.world_expansion.multi_crafting_table_gui.tooltip_magenta_dye": "2x Magenta Dye",
       "item.world_expansion.judas_fruit": "Judas Fruit",
       "block.world_expansion.kabanyt_tiles_slab": "Kabanyt tiles slab",
       "block.world_expansion.titanium_ore": "Titanium Ore",
@@ -8823,6 +9276,10 @@
           {
             "name": "Titanium",
             "children": []
+          },
+          {
+            "name": "Multi-Crafting Table",
+            "children": []
           }
         ]
       },
@@ -8900,6 +9357,10 @@
             "children": [
               {
                 "name": "Copper Horn",
+                "children": []
+              },
+              {
+                "name": "Dye",
                 "children": []
               }
             ]

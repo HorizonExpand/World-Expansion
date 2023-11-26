@@ -1,5 +1,6 @@
 package net.horizonexpand.world_expansion.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
@@ -9,6 +10,8 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 
@@ -42,6 +45,12 @@ public class GiverecipeProcedure {
 				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("world_expansion:titanium_ingot_from_stone_ore_smelting")});
 			if (entity instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("world_expansion:titanium_ingot_from_stone_ore_blasting")});
+		}
+		if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(WorldExpansionModItems.TITANIUM_INGOT.get())) : false) || (entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack((ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation("forge:stripped_log"))).getRandomElement(RandomSource.create()).orElseGet(() -> Items.AIR))))
+				: false)) {
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("world_expansion:multi_crafting_table_recipe")});
 		}
 		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(WorldExpansionModItems.TITANIUM_INGOT.get())) : false) {
 			if (entity instanceof ServerPlayer _serverPlayer)

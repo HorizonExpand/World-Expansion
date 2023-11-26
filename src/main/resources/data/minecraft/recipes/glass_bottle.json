@@ -8,13 +8,13 @@
   ],
   "key": {
     "0": {
-      "item": "minecraft:glass"
+      "tag": "forge:glass"
     },
     "2": {
-      "item": "minecraft:glass"
+      "tag": "forge:glass"
     },
     "4": {
-      "item": "minecraft:glass"
+      "tag": "forge:glass"
     }
   },
   "result": {

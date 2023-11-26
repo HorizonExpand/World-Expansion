@@ -12,6 +12,12 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIMenu;
+import net.horizonexpand.world_expansion.procedures.DyeButtonYellowProcedure;
+import net.horizonexpand.world_expansion.procedures.DyeButtonPinkProcedure;
+import net.horizonexpand.world_expansion.procedures.DyeButtonOrangeProcedure;
+import net.horizonexpand.world_expansion.procedures.DyeButtonMagentaProcedure;
+import net.horizonexpand.world_expansion.procedures.DyeButtonLightBlueProcedure;
+import net.horizonexpand.world_expansion.procedures.DyeButtonCyanProcedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton9Procedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton8Procedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton7Procedure;
@@ -73,43 +79,67 @@ public class MultiCraftingTableGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			CopperHornButton0Procedure.execute(entity);
+			CopperHornButton0Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 1) {
 
-			CopperHornButton1Procedure.execute(entity);
+			CopperHornButton1Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 2) {
 
-			CopperHornButton2Procedure.execute(entity);
+			CopperHornButton2Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 3) {
 
-			CopperHornButton3Procedure.execute(entity);
+			CopperHornButton3Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 4) {
 
-			CopperHornButton4Procedure.execute(entity);
+			CopperHornButton4Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 5) {
 
-			CopperHornButton5Procedure.execute(entity);
+			CopperHornButton5Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 6) {
 
-			CopperHornButton6Procedure.execute(entity);
+			CopperHornButton6Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 7) {
 
-			CopperHornButton7Procedure.execute(entity);
+			CopperHornButton7Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 8) {
 
-			CopperHornButton8Procedure.execute(entity);
+			CopperHornButton8Procedure.execute(world, x, y, z, entity);
 		}
 		if (buttonID == 9) {
 
-			CopperHornButton9Procedure.execute(entity);
+			CopperHornButton9Procedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 10) {
+
+			DyeButtonCyanProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 11) {
+
+			DyeButtonLightBlueProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 12) {
+
+			DyeButtonMagentaProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 13) {
+
+			DyeButtonOrangeProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 14) {
+
+			DyeButtonPinkProcedure.execute(world, x, y, z, entity);
+		}
+		if (buttonID == 15) {
+
+			DyeButtonYellowProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

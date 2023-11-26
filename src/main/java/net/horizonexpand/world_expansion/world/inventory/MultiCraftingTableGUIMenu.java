@@ -77,31 +77,31 @@ public class MultiCraftingTableGUIMenu extends AbstractContainerMenu implements 
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 26) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 17) {
 			private final int slot = 0;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 43, 26) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 34, 17) {
 			private final int slot = 1;
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 61, 26) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 52, 17) {
 			private final int slot = 2;
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 25, 44) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 16, 35) {
 			private final int slot = 3;
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 43, 44) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 34, 35) {
 			private final int slot = 4;
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 61, 44) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 52, 35) {
 			private final int slot = 5;
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 25, 62) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 16, 53) {
 			private final int slot = 6;
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 43, 62) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 34, 53) {
 			private final int slot = 7;
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 61, 62) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 52, 53) {
 			private final int slot = 8;
 		}));
 		for (int si = 0; si < 3; ++si)
