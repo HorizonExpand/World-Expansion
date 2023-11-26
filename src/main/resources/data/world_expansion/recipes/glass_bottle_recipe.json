@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "glass_bottle",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "world_expansion:bottle"
+    }
+  },
+  "result": {
+    "item": "minecraft:glass_bottle",
+    "count": 1
+  }
+}

@@ -2,9 +2,9 @@
   "_fv": 47,
   "_type": "tab",
   "definition": {
-    "name": "WE: Plants",
+    "name": "WE: Mobs",
     "icon": {
-      "value": "CUSTOM:Astilba"
+      "value": "CUSTOM:MiniFirefly.spawn_egg"
     },
     "showSearch": false
   }

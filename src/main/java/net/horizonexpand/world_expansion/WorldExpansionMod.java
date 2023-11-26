@@ -31,6 +31,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.horizonexpand.world_expansion.init.WorldExpansionModTabs;
 import net.horizonexpand.world_expansion.init.WorldExpansionModSounds;
+import net.horizonexpand.world_expansion.init.WorldExpansionModParticleTypes;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
 import net.horizonexpand.world_expansion.init.WorldExpansionModFeatures;
 import net.horizonexpand.world_expansion.init.WorldExpansionModEntities;
@@ -62,6 +63,8 @@ public class WorldExpansionMod {
 
 		WorldExpansionModTabs.REGISTRY.register(bus);
 		WorldExpansionModFeatures.REGISTRY.register(bus);
+
+		WorldExpansionModParticleTypes.REGISTRY.register(bus);
 
 	}
 

@@ -41,7 +41,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Worldexpansionblocks"
+      "value": "CUSTOM:NatureBlocks"
     },
     "destroyTool": "Not specified",
     "customDrop": {

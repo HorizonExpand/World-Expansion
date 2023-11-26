@@ -18,7 +18,6 @@ public class WorldExpansionModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WorldExpansionMod.MODID);
 	public static final RegistryObject<CreativeModeTab> BUILDING_BLOCKS = REGISTRY.register("building_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.building_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LOG.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_WOOD.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LOG.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.STRIPPED_BAOBAB_WOOD.get().asItem());
@@ -45,22 +44,8 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_SLAB.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_WALL.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.CARVED_KABANYT.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.TAKYR.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.DRY_DIRT.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> PLANTS = REGISTRY.register("plants",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.plants")).icon(() -> new ItemStack(WorldExpansionModBlocks.ASTILBA.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.YELLOW_ASTILBA.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.ALOE_VERA.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.TIGER_ALOE_VERA.get().asItem());
-				tabData.accept(WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get());
-				tabData.accept(WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.BOTTLE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
 			})
 
 					.build());
@@ -81,7 +66,6 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.COPPER_HORN7.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN8.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN9.get());
-				tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
 			})
 
 					.build());
@@ -89,6 +73,29 @@ public class WorldExpansionModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.we_halloween")).icon(() -> new ItemStack(WorldExpansionModItems.SOUL.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL.get().asItem());
 				tabData.accept(WorldExpansionModItems.SOUL.get());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> NATURAL_BLOCKS = REGISTRY.register("natural_blocks",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.natural_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LEAVES.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.TAKYR.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.DRY_DIRT.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.YELLOW_ASTILBA.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.ALOE_VERA.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.TIGER_ALOE_VERA.get().asItem());
+				tabData.accept(WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get());
+				tabData.accept(WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT.get().asItem());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> MOBS = REGISTRY.register("mobs",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.mobs")).icon(() -> new ItemStack(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
 			})
 
 					.build());

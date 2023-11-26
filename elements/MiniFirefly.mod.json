@@ -26,7 +26,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:Items"
+      "value": "CUSTOM:Mobs"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -98,6 +98,9 @@
     },
     "stepSound": {
       "value": ""
+    },
+    "onRightClickedOn": {
+      "name": "MiniFireflyPriShchielchkiePKMPoSushchnosti"
     },
     "hasAI": true,
     "aiBase": "(none)",
