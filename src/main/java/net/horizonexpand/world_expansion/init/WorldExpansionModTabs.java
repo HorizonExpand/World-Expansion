@@ -44,8 +44,10 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_SLAB.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_WALL.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.CARVED_KABANYT.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BOTTLE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get().asItem());
 			})
 
 					.build());
@@ -54,6 +56,8 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.LEAVE_OF_ALOE_VERA.get());
 				tabData.accept(WorldExpansionModItems.JUDAS_FRUIT.get());
 				tabData.accept(WorldExpansionModItems.SPLIT_JUDAS_FRUIT.get());
+				tabData.accept(WorldExpansionModItems.TITANIUM_INGOT.get());
+				tabData.accept(WorldExpansionModItems.RAW_TITANIUM.get());
 				tabData.accept(WorldExpansionModItems.MUSIC_DISC_DESTROYER.get());
 				tabData.accept(WorldExpansionModItems.PIECE_TOTEM_OF_UNDYING.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN0.get());
@@ -79,16 +83,18 @@ public class WorldExpansionModTabs {
 	public static final RegistryObject<CreativeModeTab> NATURAL_BLOCKS = REGISTRY.register("natural_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.natural_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LEAVES.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.TITANIUM_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TAKYR.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.DRY_DIRT.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.YELLOW_ASTILBA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ALOE_VERA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TIGER_ALOE_VERA.get().asItem());
 				tabData.accept(WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get());
-				tabData.accept(WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT.get().asItem());
 			})
 

@@ -19,8 +19,8 @@ public class ClientListener {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(WorldExpansionModBlockEntities.BOTTLE.get(), context -> new BottleTileRenderer());
-		event.registerBlockEntityRenderer(WorldExpansionModBlockEntities.HANGING_BOTTLE.get(), context -> new HangingBottleTileRenderer());
 		event.registerBlockEntityRenderer(WorldExpansionModBlockEntities.BOTTLE_WITH_MINI_FIREFLIES.get(), context -> new BottleWithMiniFirefliesTileRenderer());
+		event.registerBlockEntityRenderer(WorldExpansionModBlockEntities.HANGING_BOTTLE.get(), context -> new HangingBottleTileRenderer());
 		event.registerBlockEntityRenderer(WorldExpansionModBlockEntities.HANGING_BOTTLE_WITN_MINI_FIREFLIES.get(), context -> new HangingBottleWitnMiniFirefliesTileRenderer());
 	}
 }

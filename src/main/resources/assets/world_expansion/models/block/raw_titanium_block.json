@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "world_expansion:block/raw_titanium_block",
+    "particle": "world_expansion:block/raw_titanium_block"
+  },
+  "render_type": "solid"
+}

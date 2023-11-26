@@ -15,8 +15,10 @@ import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
 
 import net.horizonexpand.world_expansion.item.TumbleweedProjectileItem;
+import net.horizonexpand.world_expansion.item.TitaniumIngotItem;
 import net.horizonexpand.world_expansion.item.SplitJudasFruitItem;
 import net.horizonexpand.world_expansion.item.SoulItem;
+import net.horizonexpand.world_expansion.item.RawTitaniumItem;
 import net.horizonexpand.world_expansion.item.PieceTotemOfUndyingItem;
 import net.horizonexpand.world_expansion.item.MusicDiscDestroyerItem;
 import net.horizonexpand.world_expansion.item.LeaveOfAloeVeraItem;
@@ -40,16 +42,18 @@ import net.horizonexpand.world_expansion.WorldExpansionMod;
 public class WorldExpansionModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, WorldExpansionMod.MODID);
 	public static final RegistryObject<Item> BAOBAB_LEAVES = block(WorldExpansionModBlocks.BAOBAB_LEAVES);
+	public static final RegistryObject<Item> TITANIUM_ORE = block(WorldExpansionModBlocks.TITANIUM_ORE);
+	public static final RegistryObject<Item> RAW_TITANIUM_BLOCK = block(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK);
+	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
 	public static final RegistryObject<Item> TAKYR = block(WorldExpansionModBlocks.TAKYR);
 	public static final RegistryObject<Item> DRY_DIRT = block(WorldExpansionModBlocks.DRY_DIRT);
-	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
+	public static final RegistryObject<Item> BAOBAB_SAPLING = block(WorldExpansionModBlocks.BAOBAB_SAPLING);
 	public static final RegistryObject<Item> ASTILBA = block(WorldExpansionModBlocks.ASTILBA);
 	public static final RegistryObject<Item> ASTILBA_MULTICOLORED = block(WorldExpansionModBlocks.ASTILBA_MULTICOLORED);
 	public static final RegistryObject<Item> YELLOW_ASTILBA = block(WorldExpansionModBlocks.YELLOW_ASTILBA);
 	public static final RegistryObject<Item> ALOE_VERA = block(WorldExpansionModBlocks.ALOE_VERA);
 	public static final RegistryObject<Item> TIGER_ALOE_VERA = block(WorldExpansionModBlocks.TIGER_ALOE_VERA);
 	public static final RegistryObject<Item> TUMBLEWEED_PROJECTILE = REGISTRY.register("tumbleweed_projectile", () -> new TumbleweedProjectileItem());
-	public static final RegistryObject<Item> BAOBAB_SAPLING = block(WorldExpansionModBlocks.BAOBAB_SAPLING);
 	public static final RegistryObject<Item> LITTLE_SHROOMLIGHT = block(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT);
 	public static final RegistryObject<Item> BAOBAB_WOOD = block(WorldExpansionModBlocks.BAOBAB_WOOD);
 	public static final RegistryObject<Item> BAOBAB_LOG = block(WorldExpansionModBlocks.BAOBAB_LOG);
@@ -77,9 +81,15 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> KABANYT_TILES_SLAB = block(WorldExpansionModBlocks.KABANYT_TILES_SLAB);
 	public static final RegistryObject<Item> KABANYT_TILES_WALL = block(WorldExpansionModBlocks.KABANYT_TILES_WALL);
 	public static final RegistryObject<Item> CARVED_KABANYT = block(WorldExpansionModBlocks.CARVED_KABANYT);
+	public static final RegistryObject<Item> TITANIUM_BLOCK = block(WorldExpansionModBlocks.TITANIUM_BLOCK);
+	public static final RegistryObject<Item> BOTTLE = REGISTRY.register(WorldExpansionModBlocks.BOTTLE.getId().getPath(), () -> new BottleDisplayItem(WorldExpansionModBlocks.BOTTLE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.getId().getPath(),
+			() -> new BottleWithMiniFirefliesDisplayItem(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get(), new Item.Properties()));
 	public static final RegistryObject<Item> LEAVE_OF_ALOE_VERA = REGISTRY.register("leave_of_aloe_vera", () -> new LeaveOfAloeVeraItem());
 	public static final RegistryObject<Item> JUDAS_FRUIT = REGISTRY.register("judas_fruit", () -> new JudasFruitItem());
 	public static final RegistryObject<Item> SPLIT_JUDAS_FRUIT = REGISTRY.register("split_judas_fruit", () -> new SplitJudasFruitItem());
+	public static final RegistryObject<Item> TITANIUM_INGOT = REGISTRY.register("titanium_ingot", () -> new TitaniumIngotItem());
+	public static final RegistryObject<Item> RAW_TITANIUM = REGISTRY.register("raw_titanium", () -> new RawTitaniumItem());
 	public static final RegistryObject<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> new MusicDiscDestroyerItem());
 	public static final RegistryObject<Item> PIECE_TOTEM_OF_UNDYING = REGISTRY.register("piece_totem_of_undying", () -> new PieceTotemOfUndyingItem());
 	public static final RegistryObject<Item> COPPER_HORN0 = REGISTRY.register("copper_horn0", () -> new CopperHornItem());
@@ -99,12 +109,10 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
 	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
 	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
-	public static final RegistryObject<Item> BOTTLE = REGISTRY.register(WorldExpansionModBlocks.BOTTLE.getId().getPath(), () -> new BottleDisplayItem(WorldExpansionModBlocks.BOTTLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> HANGING_BOTTLE = REGISTRY.register(WorldExpansionModBlocks.HANGING_BOTTLE.getId().getPath(), () -> new HangingBottleDisplayItem(WorldExpansionModBlocks.HANGING_BOTTLE.get(), new Item.Properties()));
-	public static final RegistryObject<Item> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.getId().getPath(),
-			() -> new BottleWithMiniFirefliesDisplayItem(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get(), new Item.Properties()));
 	public static final RegistryObject<Item> HANGING_BOTTLE_WITN_MINI_FIREFLIES = REGISTRY.register(WorldExpansionModBlocks.HANGING_BOTTLE_WITN_MINI_FIREFLIES.getId().getPath(),
 			() -> new HangingBottleWitnMiniFirefliesDisplayItem(WorldExpansionModBlocks.HANGING_BOTTLE_WITN_MINI_FIREFLIES.get(), new Item.Properties()));
+	public static final RegistryObject<Item> MULTI_CRAFTING_TABLE = block(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

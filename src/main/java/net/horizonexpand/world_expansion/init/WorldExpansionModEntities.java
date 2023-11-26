@@ -26,7 +26,7 @@ public class WorldExpansionModEntities {
 	public static final RegistryObject<EntityType<TumbleweedProjectileEntity>> TUMBLEWEED_PROJECTILE = register("projectile_tumbleweed_projectile", EntityType.Builder.<TumbleweedProjectileEntity>of(TumbleweedProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(TumbleweedProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MiniFireflyEntity>> MINI_FIREFLIES = register("mini_fireflies",
-			EntityType.Builder.<MiniFireflyEntity>of(MiniFireflyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MiniFireflyEntity::new)
+			EntityType.Builder.<MiniFireflyEntity>of(MiniFireflyEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MiniFireflyEntity::new)
 
 					.sized(0.6f, 1f));
 

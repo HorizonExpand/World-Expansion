@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "world_expansion:block/titanium_block_top",
+    "up": "world_expansion:block/titanium_block_top",
+    "north": "world_expansion:block/titanium_block_side",
+    "east": "world_expansion:block/titanium_block_side",
+    "south": "world_expansion:block/titanium_block_side",
+    "west": "world_expansion:block/titanium_block_side",
+    "particle": "world_expansion:block/titanium_block_top"
+  },
+  "render_type": "solid"
+}

@@ -64,7 +64,7 @@
     "material": {
       "value": "GLASS"
     },
-    "tickRate": 0,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -140,6 +140,9 @@
     },
     "onNeighbourBlockChanges": {
       "name": "BottleWithMiniFirefliesPriDobavlieniiBloka"
+    },
+    "onTickUpdate": {
+      "name": "BottleWithMiniFirefliesObnovlieniieTika"
     },
     "onDestroyedByPlayer": {
       "name": "BottleWithMiniFirefliesPriRazrushieniiBlokaIghrokom"

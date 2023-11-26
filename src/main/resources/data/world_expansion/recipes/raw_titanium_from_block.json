@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "world_expansion:raw_titanium_block"
+    }
+  },
+  "result": {
+    "item": "world_expansion:raw_titanium",
+    "count": 9
+  }
+}

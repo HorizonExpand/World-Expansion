@@ -47,4 +47,5 @@ public class WorldExpansionModSounds {
 	public static final RegistryObject<SoundEvent> MELODY7 = REGISTRY.register("melody7", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "melody7")));
 	public static final RegistryObject<SoundEvent> MELODY8 = REGISTRY.register("melody8", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "melody8")));
 	public static final RegistryObject<SoundEvent> MELODY9 = REGISTRY.register("melody9", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "melody9")));
+	public static final RegistryObject<SoundEvent> MINI_FIREFLIES_AMBIENT = REGISTRY.register("mini-fireflies_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "mini-fireflies_ambient")));
 }

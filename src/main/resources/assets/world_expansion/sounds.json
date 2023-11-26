@@ -284,5 +284,26 @@
         "stream": true
       }
     ]
+  },
+  "mini-fireflies_ambient": {
+    "subtitle": "subtitles.mini-fireflies_ambient",
+    "sounds": [
+      {
+        "name": "world_expansion:fireflies_ambient0",
+        "stream": false
+      },
+      {
+        "name": "world_expansion:fireflies_ambient1",
+        "stream": false
+      },
+      {
+        "name": "world_expansion:fireflies_ambient2",
+        "stream": false
+      },
+      {
+        "name": "world_expansion:fireflies_ambient3",
+        "stream": false
+      }
+    ]
   }
 }
