@@ -346,6 +346,166 @@
           "x": 132,
           "y": 44
         }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_0",
+          "text": {
+            "fixedValue": "Copper Horn 0"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 222,
+          "y": 62
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_1",
+          "text": {
+            "fixedValue": "Copper Horn 1"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 240,
+          "y": 62
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_2",
+          "text": {
+            "fixedValue": "Copper Horn 2"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_3",
+          "text": {
+            "fixedValue": "Copper Horn 3"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 15,
+          "height": 15,
+          "x": 276,
+          "y": 62
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_4",
+          "text": {
+            "fixedValue": "Copper Horn 4"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 17,
+          "height": 15,
+          "x": 221,
+          "y": 80
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_5",
+          "text": {
+            "fixedValue": "Copper Horn 5"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 240,
+          "y": 80
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_6",
+          "text": {
+            "fixedValue": "Copper Horn 6"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 16,
+          "height": 15,
+          "x": 258,
+          "y": 80
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_7",
+          "text": {
+            "fixedValue": "Copper Horn 7"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 15,
+          "height": 16,
+          "x": 276,
+          "y": 80
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_8",
+          "text": {
+            "fixedValue": "Copper Horn 8"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 16,
+          "height": 15,
+          "x": 239,
+          "y": 98
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_copper_horn_9",
+          "text": {
+            "fixedValue": "Copper Horn 9"
+          },
+          "displayCondition": {
+            "name": "CopperHornButtonShow"
+          },
+          "width": 16,
+          "height": 15,
+          "x": 258,
+          "y": 98
+        }
       }
     ],
     "gridSettings": {
@@ -353,7 +513,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

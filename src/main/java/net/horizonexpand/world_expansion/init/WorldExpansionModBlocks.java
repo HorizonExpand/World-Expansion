@@ -104,6 +104,7 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> KABANYT_TILES_WALL = REGISTRY.register("kabanyt_tiles_wall", () -> new KabanyttileswallBlock());
 	public static final RegistryObject<Block> CARVED_KABANYT = REGISTRY.register("carved_kabanyt", () -> new CarvedkabanytBlock());
 	public static final RegistryObject<Block> TITANIUM_BLOCK = REGISTRY.register("titanium_block", () -> new TitaniumBlockBlock());
+	public static final RegistryObject<Block> MULTI_CRAFTING_TABLE = REGISTRY.register("multi_crafting_table", () -> new MultiCraftingTableBlock());
 	public static final RegistryObject<Block> BOTTLE = REGISTRY.register("bottle", () -> new BottleBlock());
 	public static final RegistryObject<Block> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register("bottle_with_mini_fireflies", () -> new BottleWithMiniFirefliesBlock());
 	public static final RegistryObject<Block> JACK_O_LANTERN_WITH_SOUL = REGISTRY.register("jack_o_lantern_with_soul", () -> new JackOLanternWithSoulBlock());
@@ -113,5 +114,4 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> JUDAS_FRUIT_3 = REGISTRY.register("judas_fruit_3", () -> new JudasFruit3Block());
 	public static final RegistryObject<Block> HANGING_BOTTLE = REGISTRY.register("hanging_bottle", () -> new HangingBottleBlock());
 	public static final RegistryObject<Block> HANGING_BOTTLE_WITN_MINI_FIREFLIES = REGISTRY.register("hanging_bottle_witn_mini_fireflies", () -> new HangingBottleWitnMiniFirefliesBlock());
-	public static final RegistryObject<Block> MULTI_CRAFTING_TABLE = REGISTRY.register("multi_crafting_table", () -> new MultiCraftingTableBlock());
 }

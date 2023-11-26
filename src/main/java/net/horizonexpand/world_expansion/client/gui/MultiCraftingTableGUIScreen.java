@@ -52,6 +52,36 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 96 && mouseX < leftPos + 112 && mouseY > topPos + 25 && mouseY < topPos + 41)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_0"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 114 && mouseX < leftPos + 130 && mouseY > topPos + 25 && mouseY < topPos + 41)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_1"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 132 && mouseX < leftPos + 148 && mouseY > topPos + 25 && mouseY < topPos + 41)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_2"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 150 && mouseX < leftPos + 165 && mouseY > topPos + 25 && mouseY < topPos + 40)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_3"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 95 && mouseX < leftPos + 112 && mouseY > topPos + 43 && mouseY < topPos + 58)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_4"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 114 && mouseX < leftPos + 130 && mouseY > topPos + 43 && mouseY < topPos + 59)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_5"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 132 && mouseX < leftPos + 148 && mouseY > topPos + 43 && mouseY < topPos + 58)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_6"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 150 && mouseX < leftPos + 165 && mouseY > topPos + 43 && mouseY < topPos + 59)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_7"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 113 && mouseX < leftPos + 129 && mouseY > topPos + 61 && mouseY < topPos + 76)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_8"), mouseX, mouseY);
+		if (CopperHornButtonShowProcedure.execute(entity))
+			if (mouseX > leftPos + 132 && mouseX < leftPos + 148 && mouseY > topPos + 61 && mouseY < topPos + 76)
+				guiGraphics.renderTooltip(font, Component.translatable("gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_9"), mouseX, mouseY);
 	}
 
 	@Override

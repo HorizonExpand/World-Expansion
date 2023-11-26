@@ -82,6 +82,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> KABANYT_TILES_WALL = block(WorldExpansionModBlocks.KABANYT_TILES_WALL);
 	public static final RegistryObject<Item> CARVED_KABANYT = block(WorldExpansionModBlocks.CARVED_KABANYT);
 	public static final RegistryObject<Item> TITANIUM_BLOCK = block(WorldExpansionModBlocks.TITANIUM_BLOCK);
+	public static final RegistryObject<Item> MULTI_CRAFTING_TABLE = block(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE);
 	public static final RegistryObject<Item> BOTTLE = REGISTRY.register(WorldExpansionModBlocks.BOTTLE.getId().getPath(), () -> new BottleDisplayItem(WorldExpansionModBlocks.BOTTLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.getId().getPath(),
 			() -> new BottleWithMiniFirefliesDisplayItem(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get(), new Item.Properties()));
@@ -112,7 +113,6 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> HANGING_BOTTLE = REGISTRY.register(WorldExpansionModBlocks.HANGING_BOTTLE.getId().getPath(), () -> new HangingBottleDisplayItem(WorldExpansionModBlocks.HANGING_BOTTLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> HANGING_BOTTLE_WITN_MINI_FIREFLIES = REGISTRY.register(WorldExpansionModBlocks.HANGING_BOTTLE_WITN_MINI_FIREFLIES.getId().getPath(),
 			() -> new HangingBottleWitnMiniFirefliesDisplayItem(WorldExpansionModBlocks.HANGING_BOTTLE_WITN_MINI_FIREFLIES.get(), new Item.Properties()));
-	public static final RegistryObject<Item> MULTI_CRAFTING_TABLE = block(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
