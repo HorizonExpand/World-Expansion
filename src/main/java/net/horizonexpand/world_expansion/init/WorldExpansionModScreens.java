@@ -12,13 +12,15 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.horizonexpand.world_expansion.client.gui.MultiCraftingTableGUIScreen;
+import net.horizonexpand.world_expansion.client.gui.MultiCraftingTableGUIAstilbaScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class WorldExpansionModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(WorldExpansionModMenus.MULTI_CRAFTING_TABLE_GUI.get(), MultiCraftingTableGUIScreen::new);
+			MenuScreens.register(WorldExpansionModMenus.MULTI_CRAFTING_TABLE_GUI_COPPER_HORN.get(), MultiCraftingTableGUIScreen::new);
+			MenuScreens.register(WorldExpansionModMenus.MULTI_CRAFTING_TABLE_GUI_ASTILBA.get(), MultiCraftingTableGUIAstilbaScreen::new);
 		});
 	}
 }

@@ -12,9 +12,11 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIMenu;
+import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIAstilbaMenu;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 public class WorldExpansionModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, WorldExpansionMod.MODID);
-	public static final RegistryObject<MenuType<MultiCraftingTableGUIMenu>> MULTI_CRAFTING_TABLE_GUI = REGISTRY.register("multi_crafting_table_gui", () -> IForgeMenuType.create(MultiCraftingTableGUIMenu::new));
+	public static final RegistryObject<MenuType<MultiCraftingTableGUIMenu>> MULTI_CRAFTING_TABLE_GUI_COPPER_HORN = REGISTRY.register("multi_crafting_table_gui_copper_horn", () -> IForgeMenuType.create(MultiCraftingTableGUIMenu::new));
+	public static final RegistryObject<MenuType<MultiCraftingTableGUIAstilbaMenu>> MULTI_CRAFTING_TABLE_GUI_ASTILBA = REGISTRY.register("multi_crafting_table_gui_astilba", () -> IForgeMenuType.create(MultiCraftingTableGUIAstilbaMenu::new));
 }

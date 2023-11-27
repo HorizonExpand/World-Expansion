@@ -1,0 +1,10 @@
+{
+  "asset_name": "titanium",
+  "description": {
+    "color": "#c0d9e9",
+    "translate": "trim_material.world_expansion.titanium"
+  },
+  "incompatible_armor_material": "titanium",
+  "ingredient": "world_expansion:titanium_ingot",
+  "item_model_index": 0.8
+}

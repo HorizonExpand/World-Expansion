@@ -84,6 +84,7 @@ public class WorldExpansionModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.natural_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LEAVES.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TITANIUM_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TAKYR.get().asItem());

@@ -43,6 +43,7 @@ public class WorldExpansionModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, WorldExpansionMod.MODID);
 	public static final RegistryObject<Item> BAOBAB_LEAVES = block(WorldExpansionModBlocks.BAOBAB_LEAVES);
 	public static final RegistryObject<Item> TITANIUM_ORE = block(WorldExpansionModBlocks.TITANIUM_ORE);
+	public static final RegistryObject<Item> DEEPSLATE_TITANIUM_ORE = block(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE);
 	public static final RegistryObject<Item> RAW_TITANIUM_BLOCK = block(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK);
 	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
 	public static final RegistryObject<Item> TAKYR = block(WorldExpansionModBlocks.TAKYR);

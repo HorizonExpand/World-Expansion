@@ -12,12 +12,6 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIMenu;
-import net.horizonexpand.world_expansion.procedures.DyeButtonYellowProcedure;
-import net.horizonexpand.world_expansion.procedures.DyeButtonPinkProcedure;
-import net.horizonexpand.world_expansion.procedures.DyeButtonOrangeProcedure;
-import net.horizonexpand.world_expansion.procedures.DyeButtonMagentaProcedure;
-import net.horizonexpand.world_expansion.procedures.DyeButtonLightBlueProcedure;
-import net.horizonexpand.world_expansion.procedures.DyeButtonCyanProcedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton9Procedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton8Procedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton7Procedure;
@@ -28,6 +22,7 @@ import net.horizonexpand.world_expansion.procedures.CopperHornButton3Procedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton2Procedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton1Procedure;
 import net.horizonexpand.world_expansion.procedures.CopperHornButton0Procedure;
+import net.horizonexpand.world_expansion.procedures.AstilbaMulticoloredTabProcedure;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 import java.util.function.Supplier;
@@ -117,29 +112,9 @@ public class MultiCraftingTableGUIButtonMessage {
 
 			CopperHornButton9Procedure.execute(world, x, y, z, entity);
 		}
-		if (buttonID == 10) {
-
-			DyeButtonCyanProcedure.execute(world, x, y, z, entity);
-		}
 		if (buttonID == 11) {
 
-			DyeButtonLightBlueProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 12) {
-
-			DyeButtonMagentaProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 13) {
-
-			DyeButtonOrangeProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 14) {
-
-			DyeButtonPinkProcedure.execute(world, x, y, z, entity);
-		}
-		if (buttonID == 15) {
-
-			DyeButtonYellowProcedure.execute(world, x, y, z, entity);
+			AstilbaMulticoloredTabProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

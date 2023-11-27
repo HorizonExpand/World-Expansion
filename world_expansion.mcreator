@@ -3,7 +3,7 @@
     {
       "name": "BaobabWood",
       "type": "block",
-      "sortid": 15,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_wood",
@@ -20,7 +20,7 @@
     {
       "name": "BaobabLog",
       "type": "block",
-      "sortid": 16,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_log",
@@ -37,7 +37,7 @@
     {
       "name": "BaobabPlanks",
       "type": "block",
-      "sortid": 19,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_planks",
@@ -71,7 +71,7 @@
     {
       "name": "BaobabStairs",
       "type": "block",
-      "sortid": 20,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_stairs",
@@ -90,7 +90,7 @@
     {
       "name": "BaobabSlab",
       "type": "block",
-      "sortid": 21,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_slab",
@@ -109,7 +109,7 @@
     {
       "name": "BaobabFence",
       "type": "block",
-      "sortid": 22,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_fence",
@@ -128,7 +128,7 @@
     {
       "name": "BaobabFenceGate",
       "type": "block",
-      "sortid": 23,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_fence_gate",
@@ -148,7 +148,7 @@
     {
       "name": "BaobabPressurePlate",
       "type": "block",
-      "sortid": 24,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_pressure_plate",
@@ -166,7 +166,7 @@
     {
       "name": "BaobabButton",
       "type": "block",
-      "sortid": 25,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_button",
@@ -185,7 +185,7 @@
     {
       "name": "BaobabItemsTag",
       "type": "tag",
-      "sortid": 66,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_items_tag",
@@ -194,12 +194,12 @@
           "src/main/resources/data/forge/tags/items/baobab_log.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "BaobabWoodRecipe",
       "type": "recipe",
-      "sortid": 67,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_wood_recipe",
@@ -213,7 +213,7 @@
     {
       "name": "BaobabPlanksRecipe",
       "type": "recipe",
-      "sortid": 68,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_planks_recipe",
@@ -227,7 +227,7 @@
     {
       "name": "BaobabStairsRecipe",
       "type": "recipe",
-      "sortid": 69,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_stairs_recipe",
@@ -241,7 +241,7 @@
     {
       "name": "BaobabSlabRecipe",
       "type": "recipe",
-      "sortid": 70,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_slab_recipe",
@@ -255,7 +255,7 @@
     {
       "name": "BaobabFenceRecipe",
       "type": "recipe",
-      "sortid": 71,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_fence_recipe",
@@ -269,7 +269,7 @@
     {
       "name": "BaobabFenceGateRecipe",
       "type": "recipe",
-      "sortid": 72,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_fence_gate_recipe",
@@ -283,7 +283,7 @@
     {
       "name": "BaobabPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 73,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_pressure_plate_recipe",
@@ -297,7 +297,7 @@
     {
       "name": "BaobabButtonRecipe",
       "type": "recipe",
-      "sortid": 74,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_button_recipe",
@@ -311,7 +311,7 @@
     {
       "name": "Worldexpansionblocks",
       "type": "tab",
-      "sortid": 75,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "registry_name": "building_blocks",
@@ -323,7 +323,7 @@
     {
       "name": "FenceBlocks",
       "type": "tag",
-      "sortid": 76,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fence_blocks",
@@ -332,12 +332,12 @@
           "src/main/resources/data/minecraft/tags/blocks/fences.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "WoodenFenceBlocks",
       "type": "tag",
-      "sortid": 77,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_fence_blocks",
@@ -346,12 +346,12 @@
           "src/main/resources/data/minecraft/tags/blocks/wooden_fences.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "LogBlocks",
       "type": "tag",
-      "sortid": 78,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "registry_name": "log_blocks",
@@ -360,12 +360,12 @@
           "src/main/resources/data/minecraft/tags/blocks/logs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "LeaveBlocks",
       "type": "tag",
-      "sortid": 79,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "registry_name": "leave_blocks",
@@ -374,12 +374,12 @@
           "src/main/resources/data/minecraft/tags/blocks/leaves.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "PlankItems",
       "type": "tag",
-      "sortid": 80,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "registry_name": "plank_items",
@@ -388,12 +388,12 @@
           "src/main/resources/data/minecraft/tags/items/planks.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "Strippedbaobabwood",
       "type": "block",
-      "sortid": 17,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stripped_baobab_wood",
@@ -410,7 +410,7 @@
     {
       "name": "Strippedbaobablog",
       "type": "block",
-      "sortid": 18,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stripped_baobab_log",
@@ -427,7 +427,7 @@
     {
       "name": "Strippedbaobablogprocedure",
       "type": "procedure",
-      "sortid": 81,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "registry_name": "strippedbaobablogprocedure",
@@ -463,7 +463,7 @@
     {
       "name": "Baobabtrapdoor",
       "type": "block",
-      "sortid": 27,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_trapdoor",
@@ -482,7 +482,7 @@
     {
       "name": "Baobab1",
       "type": "structure",
-      "sortid": 82,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab1",
@@ -499,7 +499,7 @@
     {
       "name": "Baobab2",
       "type": "structure",
-      "sortid": 83,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab2",
@@ -516,7 +516,7 @@
     {
       "name": "Baobab3",
       "type": "structure",
-      "sortid": 84,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab3",
@@ -533,7 +533,7 @@
     {
       "name": "Baobab4",
       "type": "structure",
-      "sortid": 85,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab4",
@@ -550,7 +550,7 @@
     {
       "name": "Baobabvalley",
       "type": "biome",
-      "sortid": 86,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley",
@@ -564,7 +564,7 @@
     {
       "name": "AstilbaOnBoneMealSuccess",
       "type": "procedure",
-      "sortid": 87,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilba_on_bone_meal_success",
@@ -596,7 +596,7 @@
     {
       "name": "Astilbamulticolored",
       "type": "plant",
-      "sortid": 9,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilba_multicolored",
@@ -613,7 +613,7 @@
     {
       "name": "AstilbamulticoloredDobavochnoieUsloviiePoGienieratsii",
       "type": "procedure",
-      "sortid": 88,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilbamulticolored_dobavochnoie_usloviie_po_gienieratsii",
@@ -629,7 +629,7 @@
     {
       "name": "Baobabdoor",
       "type": "block",
-      "sortid": 26,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_door",
@@ -653,7 +653,7 @@
     {
       "name": "Astilbadyerecipe",
       "type": "recipe",
-      "sortid": 89,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilbadyerecipe",
@@ -667,7 +667,7 @@
     {
       "name": "Giverecipe",
       "type": "procedure",
-      "sortid": 90,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "registry_name": "giverecipe",
@@ -687,7 +687,7 @@
     {
       "name": "Baobabdoorrecipe",
       "type": "recipe",
-      "sortid": 91,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobabdoorrecipe",
@@ -701,7 +701,7 @@
     {
       "name": "Baobabtrapdoorrecipe",
       "type": "recipe",
-      "sortid": 92,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobabtrapdoorrecipe",
@@ -715,7 +715,7 @@
     {
       "name": "IsOverworldBiomes",
       "type": "tag",
-      "sortid": 93,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "registry_name": "is_overworld_biomes",
@@ -724,12 +724,12 @@
           "src/main/resources/data/minecraft/tags/worldgen/biome/is_overworld.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Biome"
     },
     {
       "name": "IsSavannaBiomes",
       "type": "tag",
-      "sortid": 94,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "registry_name": "is_savanna_biomes",
@@ -738,12 +738,12 @@
           "src/main/resources/data/minecraft/tags/worldgen/biome/is_savanna.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Biome"
     },
     {
       "name": "Kabanyt",
       "type": "block",
-      "sortid": 28,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt",
@@ -760,7 +760,7 @@
     {
       "name": "Kabanytbricks",
       "type": "block",
-      "sortid": 32,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_bricks",
@@ -777,7 +777,7 @@
     {
       "name": "Kabanyttiles",
       "type": "block",
-      "sortid": 36,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_tiles",
@@ -794,7 +794,7 @@
     {
       "name": "Carvedkabanyt",
       "type": "block",
-      "sortid": 40,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carved_kabanyt",
@@ -811,7 +811,7 @@
     {
       "name": "Kabanytbricksrecipe",
       "type": "recipe",
-      "sortid": 95,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbricksrecipe",
@@ -825,7 +825,7 @@
     {
       "name": "Kabanytbrickscutrecipe",
       "type": "recipe",
-      "sortid": 96,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbrickscutrecipe",
@@ -839,7 +839,7 @@
     {
       "name": "Kabanyttilescutrecipe",
       "type": "recipe",
-      "sortid": 97,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttilescutrecipe",
@@ -853,7 +853,7 @@
     {
       "name": "Carvedkabanytcutrecipe",
       "type": "recipe",
-      "sortid": 98,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carvedkabanytcutrecipe",
@@ -867,7 +867,7 @@
     {
       "name": "Kabanytstairs",
       "type": "block",
-      "sortid": 29,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_stairs",
@@ -886,7 +886,7 @@
     {
       "name": "Kabanytslab",
       "type": "block",
-      "sortid": 30,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_slab",
@@ -905,7 +905,7 @@
     {
       "name": "Kabanytwall",
       "type": "block",
-      "sortid": 31,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_wall",
@@ -925,7 +925,7 @@
     {
       "name": "WallBlocks",
       "type": "tag",
-      "sortid": 99,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wall_blocks",
@@ -934,12 +934,12 @@
           "src/main/resources/data/minecraft/tags/blocks/walls.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "Kabanytbricksstairs",
       "type": "block",
-      "sortid": 33,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_bricks_stairs",
@@ -958,7 +958,7 @@
     {
       "name": "Kabanytbricksslab",
       "type": "block",
-      "sortid": 34,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_bricks_slab",
@@ -977,7 +977,7 @@
     {
       "name": "Kabanytbrickswall",
       "type": "block",
-      "sortid": 35,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_bricks_wall",
@@ -997,7 +997,7 @@
     {
       "name": "Kabanyttilesstairs",
       "type": "block",
-      "sortid": 37,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_tiles_stairs",
@@ -1016,7 +1016,7 @@
     {
       "name": "Kabanyttilesslab",
       "type": "block",
-      "sortid": 38,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_tiles_slab",
@@ -1035,7 +1035,7 @@
     {
       "name": "Kabanyttileswall",
       "type": "block",
-      "sortid": 39,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_tiles_wall",
@@ -1055,7 +1055,7 @@
     {
       "name": "Kabanytstairscraftrecipe",
       "type": "recipe",
-      "sortid": 100,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytstairscraftrecipe",
@@ -1069,7 +1069,7 @@
     {
       "name": "Kabanytstairscutrecipe",
       "type": "recipe",
-      "sortid": 101,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytstairscutrecipe",
@@ -1083,7 +1083,7 @@
     {
       "name": "Kabanytslabcraftrecipe",
       "type": "recipe",
-      "sortid": 102,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytslabcraftrecipe",
@@ -1097,7 +1097,7 @@
     {
       "name": "Kabanytslabcutrecipe",
       "type": "recipe",
-      "sortid": 103,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytslabcutrecipe",
@@ -1111,7 +1111,7 @@
     {
       "name": "Kabanytwallcraftrecipe",
       "type": "recipe",
-      "sortid": 104,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytwallcraftrecipe",
@@ -1125,7 +1125,7 @@
     {
       "name": "Kabanytwallcutrecipe",
       "type": "recipe",
-      "sortid": 105,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytwallcutrecipe",
@@ -1139,7 +1139,7 @@
     {
       "name": "Kabanytbricksstairscraftrecipe",
       "type": "recipe",
-      "sortid": 106,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbricksstairscraftrecipe",
@@ -1153,7 +1153,7 @@
     {
       "name": "Kabanytbricksstairscutrecipe",
       "type": "recipe",
-      "sortid": 107,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbricksstairscutrecipe",
@@ -1167,7 +1167,7 @@
     {
       "name": "Kabanytbricksslabcraftrecipe",
       "type": "recipe",
-      "sortid": 108,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbricksslabcraftrecipe",
@@ -1181,7 +1181,7 @@
     {
       "name": "Kabanytbricksslabcutrecipe",
       "type": "recipe",
-      "sortid": 109,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbricksslabcutrecipe",
@@ -1195,7 +1195,7 @@
     {
       "name": "Kabanytbrickswallcraftrecipe",
       "type": "recipe",
-      "sortid": 110,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbrickswallcraftrecipe",
@@ -1209,7 +1209,7 @@
     {
       "name": "Kabanytbrickswallcutrecipe",
       "type": "recipe",
-      "sortid": 111,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbrickswallcutrecipe",
@@ -1223,7 +1223,7 @@
     {
       "name": "Kabanyttilesstairscraftrecipe",
       "type": "recipe",
-      "sortid": 112,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttilesstairscraftrecipe",
@@ -1237,7 +1237,7 @@
     {
       "name": "Kabanyttilesstairscutrecipe",
       "type": "recipe",
-      "sortid": 113,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttilesstairscutrecipe",
@@ -1251,7 +1251,7 @@
     {
       "name": "Kabanyttilesslabcraftrecipe",
       "type": "recipe",
-      "sortid": 114,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttilesslabcraftrecipe",
@@ -1265,7 +1265,7 @@
     {
       "name": "Kabanyttilesslabcutrecipe",
       "type": "recipe",
-      "sortid": 115,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttilesslabcutrecipe",
@@ -1279,7 +1279,7 @@
     {
       "name": "Kabanyttileswallcraftrecipe",
       "type": "recipe",
-      "sortid": 116,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttileswallcraftrecipe",
@@ -1293,7 +1293,7 @@
     {
       "name": "Kabanyttileswallcutrecipe",
       "type": "recipe",
-      "sortid": 117,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttileswallcutrecipe",
@@ -1307,7 +1307,7 @@
     {
       "name": "Kabanytbricksstairscutrecipe2",
       "type": "recipe",
-      "sortid": 118,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbricksstairscutrecipe_2",
@@ -1321,7 +1321,7 @@
     {
       "name": "Kabanytbricksslabcutrecipe2",
       "type": "recipe",
-      "sortid": 119,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbricksslabcutrecipe_2",
@@ -1335,7 +1335,7 @@
     {
       "name": "Kabanytbrickswallcutrecipe2",
       "type": "recipe",
-      "sortid": 120,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanytbrickswallcutrecipe_2",
@@ -1349,7 +1349,7 @@
     {
       "name": "Kabanyttilesstairscutrecipe2",
       "type": "recipe",
-      "sortid": 121,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttilesstairscutrecipe_2",
@@ -1363,7 +1363,7 @@
     {
       "name": "Kabanyttilesslabcutrecipe2",
       "type": "recipe",
-      "sortid": 122,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttilesslabcutrecipe_2",
@@ -1377,7 +1377,7 @@
     {
       "name": "Kabanyttileswallcutrecipe2",
       "type": "recipe",
-      "sortid": 123,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyttileswallcutrecipe_2",
@@ -1391,7 +1391,7 @@
     {
       "name": "Baobab5",
       "type": "structure",
-      "sortid": 124,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab5",
@@ -1408,7 +1408,7 @@
     {
       "name": "Baobabvalleylavalake",
       "type": "feature",
-      "sortid": 125,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_lava_lake",
@@ -1419,12 +1419,12 @@
           "src/main/resources/data/world_expansion/worldgen/placed_feature/baobab_valley_lava_lake.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes/Baobab Valley"
     },
     {
       "name": "Baobab6",
       "type": "structure",
-      "sortid": 126,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab6",
@@ -1441,7 +1441,7 @@
     {
       "name": "Baobab7",
       "type": "structure",
-      "sortid": 127,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab7",
@@ -1458,7 +1458,7 @@
     {
       "name": "Baobabvalleytallgrass",
       "type": "feature",
-      "sortid": 128,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_tall_grass",
@@ -1469,12 +1469,12 @@
           "src/main/resources/data/world_expansion/worldgen/configured_feature/baobab_valley_tall_grass.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes/Baobab Valley"
     },
     {
       "name": "Baobableavesdrop",
       "type": "loottable",
-      "sortid": 129,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobableavesdrop",
@@ -1488,7 +1488,7 @@
     {
       "name": "SmallFlowerBlocks",
       "type": "tag",
-      "sortid": 130,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "registry_name": "small_flower_blocks",
@@ -1497,12 +1497,12 @@
           "src/main/resources/data/minecraft/tags/blocks/small_flowers.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "BeeGrowableBlocks",
       "type": "tag",
-      "sortid": 131,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bee_growable_blocks",
@@ -1511,12 +1511,12 @@
           "src/main/resources/data/minecraft/tags/blocks/bee_growables.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "FlowerItems",
       "type": "tag",
-      "sortid": 132,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "registry_name": "flower_items",
@@ -1525,12 +1525,12 @@
           "src/main/resources/data/minecraft/tags/items/flowers.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "SmallFlowerItems",
       "type": "tag",
-      "sortid": 133,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "registry_name": "small_flower_items",
@@ -1539,12 +1539,12 @@
           "src/main/resources/data/minecraft/tags/items/small_flowers.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "Carvedkabanytcraftrecipe",
       "type": "recipe",
-      "sortid": 134,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "registry_name": "carvedkabanytcraftrecipe",
@@ -1558,7 +1558,7 @@
     {
       "name": "Strippedbaobabwoodrecipe",
       "type": "recipe",
-      "sortid": 135,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "registry_name": "strippedbaobabwoodrecipe",
@@ -1572,7 +1572,7 @@
     {
       "name": "Stonetoolmaterials",
       "type": "tag",
-      "sortid": 136,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stonetoolmaterials",
@@ -1581,12 +1581,12 @@
           "src/main/resources/data/minecraft/tags/items/stone_tool_materials.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "Stoneorereplaceables",
       "type": "tag",
-      "sortid": 137,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stoneorereplaceables",
@@ -1595,12 +1595,12 @@
           "src/main/resources/data/minecraft/tags/blocks/stone_ore_replaceables.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "Astilbaupgrade",
       "type": "itemextension",
-      "sortid": 138,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilba_upgrade",
@@ -1612,7 +1612,7 @@
     {
       "name": "Astilbamulticoloredupgrade",
       "type": "itemextension",
-      "sortid": 139,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilba_multicolored_upgrade",
@@ -1624,7 +1624,7 @@
     {
       "name": "Baobabvalleyunderwatersand",
       "type": "feature",
-      "sortid": 140,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_underwater_sand",
@@ -1635,12 +1635,12 @@
           "src/main/resources/data/world_expansion/worldgen/configured_feature/baobab_valley_underwater_sand.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes"
     },
     {
       "name": "Baobabvalleyunderwaterclay",
       "type": "feature",
-      "sortid": 141,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_underwater_clay",
@@ -1651,12 +1651,12 @@
           "src/main/resources/data/world_expansion/worldgen/placed_feature/baobab_valley_underwater_clay.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes"
     },
     {
       "name": "BaobabLeavesKoghdaBlokRazrushienIghrokom",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_leaves_koghda_blok_razrushien_ighrokom",
@@ -1692,7 +1692,7 @@
     {
       "name": "Baobabvalleyunderwaterdirt",
       "type": "feature",
-      "sortid": 143,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_underwater_dirt",
@@ -1703,12 +1703,12 @@
           "src/main/resources/data/world_expansion/forge/biome_modifier/baobab_valley_underwater_dirt_biome_modifier.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes"
     },
     {
       "name": "Baobabvalleyunderwatercoarsedirt",
       "type": "feature",
-      "sortid": 144,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_underwater_coarse_dirt",
@@ -1719,12 +1719,12 @@
           "src/main/resources/data/world_expansion/worldgen/configured_feature/baobab_valley_underwater_coarse_dirt.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes/Baobab Valley"
     },
     {
       "name": "Baobabvalleyunderwaterseagrass",
       "type": "feature",
-      "sortid": 145,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_underwater_seagrass",
@@ -1735,12 +1735,12 @@
           "src/main/resources/data/world_expansion/worldgen/configured_feature/baobab_valley_underwater_seagrass.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes"
     },
     {
       "name": "Baobab8",
       "type": "structure",
-      "sortid": 146,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab8",
@@ -1757,7 +1757,7 @@
     {
       "name": "Drybaobab1",
       "type": "structure",
-      "sortid": 147,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dry_baobab1",
@@ -1774,7 +1774,7 @@
     {
       "name": "Drybaobab2",
       "type": "structure",
-      "sortid": 148,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dry_baobab2",
@@ -1791,7 +1791,7 @@
     {
       "name": "Baobabvalleyundergroundkabanyt",
       "type": "feature",
-      "sortid": 149,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_underground_kabanyt",
@@ -1802,12 +1802,12 @@
           "src/main/resources/data/world_expansion/forge/biome_modifier/baobab_valley_underground_kabanyt_biome_modifier.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes/Baobab Valley"
     },
     {
       "name": "StrongholdBiasedTo",
       "type": "tag",
-      "sortid": 150,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stronghold_biased_to",
@@ -1816,12 +1816,12 @@
           "src/main/resources/data/minecraft/tags/worldgen/biome/stronghold_biased_to.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Biome"
     },
     {
       "name": "MudRuin1",
       "type": "structure",
-      "sortid": 151,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin1_savanna",
@@ -1838,7 +1838,7 @@
     {
       "name": "MudRuin1Drop",
       "type": "loottable",
-      "sortid": 152,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin_1_drop",
@@ -1852,7 +1852,7 @@
     {
       "name": "MudRuin1Desert",
       "type": "structure",
-      "sortid": 153,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin1_desert",
@@ -1869,7 +1869,7 @@
     {
       "name": "MudRuin1Badland",
       "type": "structure",
-      "sortid": 154,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin1_badlands",
@@ -1886,7 +1886,7 @@
     {
       "name": "BaobabSapling",
       "type": "plant",
-      "sortid": 7,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_sapling",
@@ -1904,7 +1904,7 @@
     {
       "name": "BaobabSaplingObnovitTakt",
       "type": "procedure",
-      "sortid": 155,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_sapling_obnovit_takt",
@@ -1936,7 +1936,7 @@
     {
       "name": "BaobabSaplingUsloviieUspiekhaKostnoiMuki",
       "type": "procedure",
-      "sortid": 156,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_sapling_usloviie_uspiekha_kostnoi_muki",
@@ -1969,7 +1969,7 @@
     {
       "name": "BaobabSaplingPriUspiekhieKostnoiMuki",
       "type": "procedure",
-      "sortid": 157,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_sapling_pri_uspiekhie_kostnoi_muki",
@@ -2001,7 +2001,7 @@
     {
       "name": "TileSlab",
       "type": "achievement",
-      "sortid": 158,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tile_slab",
@@ -2015,7 +2015,7 @@
     {
       "name": "Saplings",
       "type": "tag",
-      "sortid": 159,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "registry_name": "saplings",
@@ -2024,12 +2024,12 @@
           "src/main/resources/data/minecraft/tags/blocks/saplings.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "WoodenStairs",
       "type": "tag",
-      "sortid": 160,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_stairs",
@@ -2038,12 +2038,12 @@
           "src/main/resources/data/minecraft/tags/blocks/wooden_stairs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "Stairstag",
       "type": "tag",
-      "sortid": 161,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stairstag",
@@ -2052,12 +2052,12 @@
           "src/main/resources/data/minecraft/tags/blocks/stairs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "FenceGate",
       "type": "tag",
-      "sortid": 162,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fence_gate",
@@ -2066,12 +2066,12 @@
           "src/main/resources/data/minecraft/tags/blocks/fence_gates.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "Slabs",
       "type": "tag",
-      "sortid": 163,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slabs",
@@ -2080,12 +2080,12 @@
           "src/main/resources/data/minecraft/tags/blocks/slabs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "WoodenSlabs",
       "type": "tag",
-      "sortid": 164,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_slabs",
@@ -2094,12 +2094,12 @@
           "src/main/resources/data/minecraft/tags/blocks/wooden_slabs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "Buttons",
       "type": "tag",
-      "sortid": 165,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "registry_name": "buttons",
@@ -2108,12 +2108,12 @@
           "src/main/resources/data/minecraft/tags/blocks/buttons.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "Doors",
       "type": "tag",
-      "sortid": 166,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "registry_name": "doors",
@@ -2122,12 +2122,12 @@
           "src/main/resources/data/minecraft/tags/blocks/doors.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "HoglinRepellents",
       "type": "tag",
-      "sortid": 167,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hoglin_repellents",
@@ -2136,12 +2136,12 @@
           "src/main/resources/data/minecraft/tags/blocks/hoglin_repellents.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "LogsThatBurn",
       "type": "tag",
-      "sortid": 168,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "registry_name": "logs_that_burn",
@@ -2150,12 +2150,12 @@
           "src/main/resources/data/minecraft/tags/blocks/logs_that_burn.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "OverworldNaturalLogs",
       "type": "tag",
-      "sortid": 169,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "registry_name": "overworld_natural_logs",
@@ -2164,12 +2164,12 @@
           "src/main/resources/data/minecraft/tags/blocks/overworld_natural_logs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "Planks",
       "type": "tag",
-      "sortid": 170,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "registry_name": "planks",
@@ -2178,12 +2178,12 @@
           "src/main/resources/data/minecraft/tags/blocks/planks.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "PressurePlates",
       "type": "tag",
-      "sortid": 171,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pressure_plates",
@@ -2192,12 +2192,12 @@
           "src/main/resources/data/minecraft/tags/blocks/pressure_plates.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "Trapdoors",
       "type": "tag",
-      "sortid": 172,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trapdoors",
@@ -2206,12 +2206,12 @@
           "src/main/resources/data/minecraft/tags/blocks/trapdoors.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "WoodenButtons",
       "type": "tag",
-      "sortid": 173,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_buttons",
@@ -2220,12 +2220,12 @@
           "src/main/resources/data/minecraft/tags/blocks/wooden_buttons.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "WoodenDoors",
       "type": "tag",
-      "sortid": 174,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_doors",
@@ -2234,12 +2234,12 @@
           "src/main/resources/data/minecraft/tags/blocks/wooden_doors.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "WoodenPressurePlates",
       "type": "tag",
-      "sortid": 175,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_pressure_plates",
@@ -2248,12 +2248,12 @@
           "src/main/resources/data/minecraft/tags/blocks/wooden_pressure_plates.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "WoodenTrapdoors",
       "type": "tag",
-      "sortid": 176,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_trapdoors",
@@ -2262,12 +2262,12 @@
           "src/main/resources/data/minecraft/tags/blocks/wooden_trapdoors.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "PiglinRepellents",
       "type": "tag",
-      "sortid": 177,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "registry_name": "piglin_repellents",
@@ -2276,12 +2276,12 @@
           "src/main/resources/data/minecraft/tags/blocks/piglin_repellents.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "ButtonsItem",
       "type": "tag",
-      "sortid": 178,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "registry_name": "buttons_item",
@@ -2290,12 +2290,12 @@
           "src/main/resources/data/minecraft/tags/items/buttons.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "DoorsItem",
       "type": "tag",
-      "sortid": 179,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "registry_name": "doors_item",
@@ -2304,12 +2304,12 @@
           "src/main/resources/data/minecraft/tags/items/doors.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "FencesItem",
       "type": "tag",
-      "sortid": 180,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fences_item",
@@ -2318,12 +2318,12 @@
           "src/main/resources/data/minecraft/tags/items/fences.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "LeavesItem",
       "type": "tag",
-      "sortid": 181,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "registry_name": "leaves_item",
@@ -2332,12 +2332,12 @@
           "src/main/resources/data/minecraft/tags/items/leaves.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "LogsItem",
       "type": "tag",
-      "sortid": 182,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "registry_name": "logs_item",
@@ -2346,12 +2346,12 @@
           "src/main/resources/data/minecraft/tags/items/logs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "LogsThatBurnItem",
       "type": "tag",
-      "sortid": 183,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "registry_name": "logs_that_burn_item",
@@ -2360,12 +2360,12 @@
           "src/main/resources/data/minecraft/tags/items/logs_that_burn.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "OverworldNaturalLogsItem",
       "type": "tag",
-      "sortid": 184,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "registry_name": "overworld_natural_logs_item",
@@ -2374,12 +2374,12 @@
           "src/main/resources/data/minecraft/tags/items/overworld_natural_logs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "PiglinRepellentsItem",
       "type": "tag",
-      "sortid": 185,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "registry_name": "piglin_repellents_item",
@@ -2388,12 +2388,12 @@
           "src/main/resources/data/minecraft/tags/items/piglin_repellents.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "SaplingsItem",
       "type": "tag",
-      "sortid": 186,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "registry_name": "saplings_item",
@@ -2402,12 +2402,12 @@
           "src/main/resources/data/minecraft/tags/items/saplings.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "SlabsItem",
       "type": "tag",
-      "sortid": 187,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "registry_name": "slabs_item",
@@ -2416,12 +2416,12 @@
           "src/main/resources/data/minecraft/tags/items/slabs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "StairsItem",
       "type": "tag",
-      "sortid": 188,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stairs_item",
@@ -2430,12 +2430,12 @@
           "src/main/resources/data/minecraft/tags/items/stairs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "StoneCraftingMaterials",
       "type": "tag",
-      "sortid": 189,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stone_crafting_materials",
@@ -2444,12 +2444,12 @@
           "src/main/resources/data/minecraft/tags/items/stone_crafting_materials.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "TrapdoorsItem",
       "type": "tag",
-      "sortid": 190,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trapdoors_item",
@@ -2458,12 +2458,12 @@
           "src/main/resources/data/minecraft/tags/items/trapdoors.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "WallsItem",
       "type": "tag",
-      "sortid": 191,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "registry_name": "walls_item",
@@ -2472,12 +2472,12 @@
           "src/main/resources/data/minecraft/tags/items/walls.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "WoodenButtonsItem",
       "type": "tag",
-      "sortid": 192,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_buttons_item",
@@ -2486,12 +2486,12 @@
           "src/main/resources/data/minecraft/tags/items/wooden_buttons.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "WoodenDoorsItem",
       "type": "tag",
-      "sortid": 193,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_doors_item",
@@ -2500,12 +2500,12 @@
           "src/main/resources/data/minecraft/tags/items/wooden_doors.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "WoodenFencesItem",
       "type": "tag",
-      "sortid": 194,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_fences_item",
@@ -2514,12 +2514,12 @@
           "src/main/resources/data/minecraft/tags/items/wooden_fences.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "WoodenPressurePlatesItem",
       "type": "tag",
-      "sortid": 195,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_pressure_plates_item",
@@ -2528,12 +2528,12 @@
           "src/main/resources/data/minecraft/tags/items/wooden_pressure_plates.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "WoodenSlabsItem",
       "type": "tag",
-      "sortid": 196,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_slabs_item",
@@ -2542,12 +2542,12 @@
           "src/main/resources/data/minecraft/tags/items/wooden_slabs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "WoodenStairsItem",
       "type": "tag",
-      "sortid": 197,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_stairs_item",
@@ -2556,12 +2556,12 @@
           "src/main/resources/data/minecraft/tags/items/wooden_stairs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "WoodenTrapdoorsItem",
       "type": "tag",
-      "sortid": 198,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "registry_name": "wooden_trapdoors_item",
@@ -2570,12 +2570,12 @@
           "src/main/resources/data/minecraft/tags/items/wooden_trapdoors.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "BaobabSaplingWanderingTraders",
       "type": "villagertrade",
-      "sortid": 199,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_sapling_wandering_traders",
@@ -2587,7 +2587,7 @@
     {
       "name": "BaobabWoodUpgrade",
       "type": "itemextension",
-      "sortid": 200,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_wood_upgrade",
@@ -2599,7 +2599,7 @@
     {
       "name": "BaobabLogUpgrade",
       "type": "itemextension",
-      "sortid": 201,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_log_upgrade",
@@ -2611,7 +2611,7 @@
     {
       "name": "BaobabPlanksUpgrade",
       "type": "itemextension",
-      "sortid": 202,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_planks_upgrade",
@@ -2623,7 +2623,7 @@
     {
       "name": "BaobabStairsUpgrade",
       "type": "itemextension",
-      "sortid": 203,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_stairs_upgrade",
@@ -2635,7 +2635,7 @@
     {
       "name": "BaobabSlabUpgrade",
       "type": "itemextension",
-      "sortid": 204,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_slab_upgrade",
@@ -2647,7 +2647,7 @@
     {
       "name": "BaobabFenceUpgrade",
       "type": "itemextension",
-      "sortid": 205,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_fence_upgrade",
@@ -2659,7 +2659,7 @@
     {
       "name": "BaobabFencegateUpgrade",
       "type": "itemextension",
-      "sortid": 206,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_fence_gate_upgrade",
@@ -2671,7 +2671,7 @@
     {
       "name": "BaobabPressurePlateUpgrade",
       "type": "itemextension",
-      "sortid": 207,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_pressure_plate_upgrade",
@@ -2683,7 +2683,7 @@
     {
       "name": "BaobabButtonUpgrade",
       "type": "itemextension",
-      "sortid": 208,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_button_upgrade",
@@ -2695,7 +2695,7 @@
     {
       "name": "StrippedBaobabWoodUpgrade",
       "type": "itemextension",
-      "sortid": 209,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stripped_baobab_wood_upgrade",
@@ -2707,7 +2707,7 @@
     {
       "name": "StrippedBaobabLogUpgrade",
       "type": "itemextension",
-      "sortid": 210,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "registry_name": "stripped_baobab_log_upgrade",
@@ -2719,7 +2719,7 @@
     {
       "name": "BaobabDoorUpgrade",
       "type": "itemextension",
-      "sortid": 211,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_door_upgrade",
@@ -2731,7 +2731,7 @@
     {
       "name": "BaobabTrapdoorUpgrade",
       "type": "itemextension",
-      "sortid": 212,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_trapdoor_upgrade",
@@ -2743,7 +2743,7 @@
     {
       "name": "BaobabSaplingUpgrade",
       "type": "itemextension",
-      "sortid": 213,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_sapling_upgrade",
@@ -2755,7 +2755,7 @@
     {
       "name": "DirtBlocks",
       "type": "tag",
-      "sortid": 214,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dirt_blocks",
@@ -2764,12 +2764,12 @@
           "src/main/resources/data/minecraft/tags/blocks/dirt.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "ValidSpawnBlocks",
       "type": "tag",
-      "sortid": 215,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "registry_name": "valid_spawn_blocks",
@@ -2778,12 +2778,12 @@
           "src/main/resources/data/minecraft/tags/blocks/valid_spawn.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "AnimalsSpawnableOnBlocks",
       "type": "tag",
-      "sortid": 216,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "registry_name": "animals_spawnable_on_blocks",
@@ -2792,12 +2792,12 @@
           "src/main/resources/data/minecraft/tags/blocks/animals_spawnable_on.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "YellowAstilba",
       "type": "plant",
-      "sortid": 10,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_astilba",
@@ -2814,7 +2814,7 @@
     {
       "name": "YellowAstilbaDyeRecipe",
       "type": "recipe",
-      "sortid": 217,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_astilba_dye_recipe",
@@ -2828,7 +2828,7 @@
     {
       "name": "AloeVeraTiger",
       "type": "plant",
-      "sortid": 12,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tiger_aloe_vera",
@@ -2845,7 +2845,7 @@
     {
       "name": "LeaveOfAloeVera",
       "type": "item",
-      "sortid": 45,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "registry_name": "leave_of_aloe_vera",
@@ -2860,7 +2860,7 @@
     {
       "name": "LeaveOfAloeVeraPriZaviershieniiIspolzovaniia",
       "type": "procedure",
-      "sortid": 218,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "registry_name": "leave_of_aloe_vera_pri_zaviershienii_ispolzovaniia",
@@ -2880,7 +2880,7 @@
     {
       "name": "Items",
       "type": "tab",
-      "sortid": 219,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "registry_name": "items",
@@ -2892,7 +2892,7 @@
     {
       "name": "AloeVeraUpgrade",
       "type": "itemextension",
-      "sortid": 220,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aloe_vera_upgrade",
@@ -2904,7 +2904,7 @@
     {
       "name": "AloeVeraTigerUpgrade",
       "type": "itemextension",
-      "sortid": 221,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aloe_vera_tiger_upgrade",
@@ -2916,7 +2916,7 @@
     {
       "name": "Tumbleweed",
       "type": "plant",
-      "sortid": 222,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweed",
@@ -2933,7 +2933,7 @@
     {
       "name": "YellowAstilbaUpgrade",
       "type": "itemextension",
-      "sortid": 223,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_astilba_upgrade",
@@ -2945,7 +2945,7 @@
     {
       "name": "Tumbleweeddrop",
       "type": "loottable",
-      "sortid": 224,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweeddrop",
@@ -2959,7 +2959,7 @@
     {
       "name": "AloeVeraTigerPriStolknovieniiSushchnostiSRastieniiem",
       "type": "procedure",
-      "sortid": 225,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aloe_vera_tiger_pri_stolknovienii_sushchnosti_s_rastieniiem",
@@ -2983,7 +2983,7 @@
     {
       "name": "BaobabValleyGrass",
       "type": "feature",
-      "sortid": 226,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_grass",
@@ -2994,12 +2994,12 @@
           "src/main/resources/data/world_expansion/worldgen/configured_feature/baobab_valley_grass.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes/Baobab Valley"
     },
     {
       "name": "TumbleweedProjectile",
       "type": "rangeditem",
-      "sortid": 13,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweed_projectile",
@@ -3015,7 +3015,7 @@
     {
       "name": "TumbleweedPriShchielchkiePKMPoRastieniiu",
       "type": "procedure",
-      "sortid": 227,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweed_pri_shchielchkie_pkm_po_rastieniiu",
@@ -3051,7 +3051,7 @@
     {
       "name": "TumbleweedProjectilePoslieIspolzovaniiaSnariada",
       "type": "procedure",
-      "sortid": 228,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweed_projectile_poslie_ispolzovaniia_snariada",
@@ -3075,7 +3075,7 @@
     {
       "name": "JudasFruit1",
       "type": "block",
-      "sortid": 229,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit1",
@@ -3093,7 +3093,7 @@
     {
       "name": "JudasFruit",
       "type": "item",
-      "sortid": 46,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit",
@@ -3108,7 +3108,7 @@
     {
       "name": "SplitJudasFruit",
       "type": "item",
-      "sortid": 47,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "registry_name": "split_judas_fruit",
@@ -3123,7 +3123,7 @@
     {
       "name": "BaseStoneOverworld",
       "type": "tag",
-      "sortid": 230,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "registry_name": "base_stone_overworld",
@@ -3132,12 +3132,12 @@
           "src/main/resources/data/minecraft/tags/blocks/base_stone_overworld.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "MusicDiscDestroyer",
       "type": "musicdisc",
-      "sortid": 50,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_disc_destroyer",
@@ -3152,7 +3152,7 @@
     {
       "name": "JudasFruitPriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 231,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_pri_shchielchkie_pkm",
@@ -3188,7 +3188,7 @@
     {
       "name": "JudasFruit2",
       "type": "block",
-      "sortid": 232,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_2",
@@ -3206,7 +3206,7 @@
     {
       "name": "JudasFruit3",
       "type": "block",
-      "sortid": 233,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_3",
@@ -3224,7 +3224,7 @@
     {
       "name": "JudasFruit1ObnovlieniieTika",
       "type": "procedure",
-      "sortid": 234,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_1_obnovlieniie_tika",
@@ -3256,7 +3256,7 @@
     {
       "name": "JudasFruit2ObnovlieniieTika",
       "type": "procedure",
-      "sortid": 235,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_2_obnovlieniie_tika",
@@ -3288,7 +3288,7 @@
     {
       "name": "JudasFruit3ObnovlieniieTika",
       "type": "procedure",
-      "sortid": 236,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_3_obnovlieniie_tika",
@@ -3320,7 +3320,7 @@
     {
       "name": "JudasFruit1PriIspolzovaniiKostnoiMuki",
       "type": "procedure",
-      "sortid": 237,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_1_pri_ispolzovanii_kostnoi_muki",
@@ -3352,7 +3352,7 @@
     {
       "name": "JudasFruit2PriIspolzovaniiKostnoiMuki",
       "type": "procedure",
-      "sortid": 238,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_2_pri_ispolzovanii_kostnoi_muki",
@@ -3384,7 +3384,7 @@
     {
       "name": "TumbleweedProjectileKoghdaSnariadPopadaietVBlok",
       "type": "procedure",
-      "sortid": 239,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweed_projectile_koghda_snariad_popadaiet_v_blok",
@@ -3416,7 +3416,7 @@
     {
       "name": "WorldExpansion",
       "type": "achievement",
-      "sortid": 240,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "registry_name": "world_expansion",
@@ -3430,7 +3430,7 @@
     {
       "name": "AirForStructures",
       "type": "tag",
-      "sortid": 241,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "registry_name": "air_for_structures",
@@ -3439,12 +3439,12 @@
           "src/main/resources/data/forge/tags/blocks/air_for_structures.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "TopSoilForStructures",
       "type": "tag",
-      "sortid": 242,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "registry_name": "top_soil_for_structures",
@@ -3453,12 +3453,12 @@
           "src/main/resources/data/forge/tags/blocks/top_soil_for_structures.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "UnderSoilForStructures",
       "type": "tag",
-      "sortid": 243,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "registry_name": "under_soil_for_structures",
@@ -3467,12 +3467,12 @@
           "src/main/resources/data/forge/tags/blocks/under_soil_for_structures.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "SmallStructureGen",
       "type": "procedure",
-      "sortid": 244,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "registry_name": "small_structure_gen",
@@ -3505,7 +3505,7 @@
     {
       "name": "Baobab1DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 245,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_1_dopolnitielnoie_usloviie_gienieratsii",
@@ -3538,7 +3538,7 @@
     {
       "name": "Baobab2Spawn",
       "type": "procedure",
-      "sortid": 246,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_2_spawn",
@@ -3571,7 +3571,7 @@
     {
       "name": "Baobab2DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 247,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_2_dopolnitielnoie_usloviie_gienieratsii",
@@ -3604,7 +3604,7 @@
     {
       "name": "Baobab3Spawn",
       "type": "procedure",
-      "sortid": 248,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_3_spawn",
@@ -3637,7 +3637,7 @@
     {
       "name": "Baobab3DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 249,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_3_dopolnitielnoie_usloviie_gienieratsii",
@@ -3670,7 +3670,7 @@
     {
       "name": "Baobab4Spawn",
       "type": "procedure",
-      "sortid": 250,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_4_spawn",
@@ -3703,7 +3703,7 @@
     {
       "name": "Baobab4DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 251,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_4_dopolnitielnoie_usloviie_gienieratsii",
@@ -3736,7 +3736,7 @@
     {
       "name": "Baobab5Spawn",
       "type": "procedure",
-      "sortid": 252,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_5_spawn",
@@ -3769,7 +3769,7 @@
     {
       "name": "Baobab5DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 253,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_5_dopolnitielnoie_usloviie_gienieratsii",
@@ -3802,7 +3802,7 @@
     {
       "name": "Baobab6Spawn",
       "type": "procedure",
-      "sortid": 254,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_6_spawn",
@@ -3835,7 +3835,7 @@
     {
       "name": "Baobab6DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 255,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_6_dopolnitielnoie_usloviie_gienieratsii",
@@ -3868,7 +3868,7 @@
     {
       "name": "Baobab7Spawn",
       "type": "procedure",
-      "sortid": 256,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_7_spawn",
@@ -3901,7 +3901,7 @@
     {
       "name": "Baobab7DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 257,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_7_dopolnitielnoie_usloviie_gienieratsii",
@@ -3934,7 +3934,7 @@
     {
       "name": "Baobab8Spawn",
       "type": "procedure",
-      "sortid": 258,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_8_spawn",
@@ -3967,7 +3967,7 @@
     {
       "name": "Baobab8DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 259,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_8_dopolnitielnoie_usloviie_gienieratsii",
@@ -4000,7 +4000,7 @@
     {
       "name": "DryBaobab1Spawn",
       "type": "procedure",
-      "sortid": 260,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dry_baobab_1_spawn",
@@ -4033,7 +4033,7 @@
     {
       "name": "Drybaobab1DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 261,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drybaobab_1_dopolnitielnoie_usloviie_gienieratsii",
@@ -4066,7 +4066,7 @@
     {
       "name": "DryBaobab2Spawn",
       "type": "procedure",
-      "sortid": 262,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dry_baobab_2_spawn",
@@ -4099,7 +4099,7 @@
     {
       "name": "Drybaobab2DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 263,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "registry_name": "drybaobab_2_dopolnitielnoie_usloviie_gienieratsii",
@@ -4132,7 +4132,7 @@
     {
       "name": "MudRuin1BadlandsSpawn",
       "type": "procedure",
-      "sortid": 264,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin_1_badlands_spawn",
@@ -4165,7 +4165,7 @@
     {
       "name": "MudRuin1BadlandDopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 265,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin_1_badland_dopolnitielnoie_usloviie_gienieratsii",
@@ -4198,7 +4198,7 @@
     {
       "name": "TopSoilForStructuresBadlands",
       "type": "tag",
-      "sortid": 266,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "registry_name": "top_soil_for_structures_badlands",
@@ -4207,12 +4207,12 @@
           "src/main/resources/data/forge/tags/blocks/top_soil_for_structures_badlands.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "UnderSoilForStructuresBadlands",
       "type": "tag",
-      "sortid": 267,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "registry_name": "under_soil_for_structures_badlands",
@@ -4221,12 +4221,12 @@
           "src/main/resources/data/forge/tags/blocks/under_soil_for_structures_badlands.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "MudRuin1DesertDopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 268,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin_1_desert_dopolnitielnoie_usloviie_gienieratsii",
@@ -4259,7 +4259,7 @@
     {
       "name": "MudRuin1DesertSpawn",
       "type": "procedure",
-      "sortid": 269,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin_1_desert_spawn",
@@ -4292,7 +4292,7 @@
     {
       "name": "TopSoilForStructuresDesert",
       "type": "tag",
-      "sortid": 270,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "registry_name": "top_soil_for_structures_desert",
@@ -4301,12 +4301,12 @@
           "src/main/resources/data/forge/tags/blocks/top_soil_for_structures_desert.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "UnderSoilForStructuresDesert",
       "type": "tag",
-      "sortid": 271,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "registry_name": "under_soil_for_structures_desert",
@@ -4315,12 +4315,12 @@
           "src/main/resources/data/forge/tags/blocks/under_soil_for_structures_desert.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "MudRuin1SavannaDopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 272,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin_1_savanna_dopolnitielnoie_usloviie_gienieratsii",
@@ -4353,7 +4353,7 @@
     {
       "name": "MudRuin1SavannaSpawn",
       "type": "procedure",
-      "sortid": 273,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mud_ruin_1_savanna_spawn",
@@ -4386,7 +4386,7 @@
     {
       "name": "Baobab9Spawn",
       "type": "procedure",
-      "sortid": 274,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_9_spawn",
@@ -4419,7 +4419,7 @@
     {
       "name": "Baobab9Dop",
       "type": "procedure",
-      "sortid": 275,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_9_dop",
@@ -4452,7 +4452,7 @@
     {
       "name": "Baobab10Spawn",
       "type": "procedure",
-      "sortid": 276,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_10_spawn",
@@ -4485,7 +4485,7 @@
     {
       "name": "Baobab10Dop",
       "type": "procedure",
-      "sortid": 277,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_10_dop",
@@ -4518,7 +4518,7 @@
     {
       "name": "Baobab9",
       "type": "structure",
-      "sortid": 278,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_9",
@@ -4535,7 +4535,7 @@
     {
       "name": "Baobab10",
       "type": "structure",
-      "sortid": 279,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_10",
@@ -4552,7 +4552,7 @@
     {
       "name": "RaiderBaseInBaobab",
       "type": "structure",
-      "sortid": 280,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raider_base_in_baobab",
@@ -4569,7 +4569,7 @@
     {
       "name": "RaiderBaseInBaobabDrop",
       "type": "loottable",
-      "sortid": 281,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raider_base_in_baobab_drop",
@@ -4583,7 +4583,7 @@
     {
       "name": "RaiderBaseInBaobabDropBonus",
       "type": "loottable",
-      "sortid": 282,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raider_base_in_baobab_drop_bonus",
@@ -4597,7 +4597,7 @@
     {
       "name": "SavannaPrairie",
       "type": "biome",
-      "sortid": 283,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "registry_name": "politania",
@@ -4611,7 +4611,7 @@
     {
       "name": "SavannaPrairieGrass",
       "type": "feature",
-      "sortid": 284,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "registry_name": "savanna_prairie_grass",
@@ -4622,12 +4622,12 @@
           "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_prairie_grass.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes/Savanna Prarie"
     },
     {
       "name": "SavannaPrairieTallGrass",
       "type": "feature",
-      "sortid": 285,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "registry_name": "savanna_prairie_tall_grass",
@@ -4638,12 +4638,12 @@
           "src/main/resources/data/world_expansion/forge/biome_modifier/savanna_prairie_tall_grass_biome_modifier.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes/Savanna Prarie"
     },
     {
       "name": "EvokerDrop",
       "type": "loottable",
-      "sortid": 286,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "registry_name": "evoker_drop",
@@ -4657,7 +4657,7 @@
     {
       "name": "PieceTotemOfUndying",
       "type": "item",
-      "sortid": 51,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "registry_name": "piece_totem_of_undying",
@@ -4672,7 +4672,7 @@
     {
       "name": "TotemOfUndyingRecipe",
       "type": "recipe",
-      "sortid": 287,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "registry_name": "totem_of_undying_recipe",
@@ -4686,7 +4686,7 @@
     {
       "name": "OhGreatBaobab",
       "type": "achievement",
-      "sortid": 288,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "registry_name": "oh_great_baobab",
@@ -4700,7 +4700,7 @@
     {
       "name": "AncientCivilizationPart1",
       "type": "achievement",
-      "sortid": 289,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "registry_name": "ancient_civilization_part_1",
@@ -4714,7 +4714,7 @@
     {
       "name": "Takyr",
       "type": "block",
-      "sortid": 5,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "registry_name": "takyr",
@@ -4732,7 +4732,7 @@
     {
       "name": "DiedSavanna",
       "type": "biome",
-      "sortid": 290,
+      "sortid": 291,
       "compiles": true,
       "locked_code": false,
       "registry_name": "died_savanna",
@@ -4746,7 +4746,7 @@
     {
       "name": "DiedAcacia1",
       "type": "structure",
-      "sortid": 291,
+      "sortid": 292,
       "compiles": true,
       "locked_code": false,
       "registry_name": "died_acacia_1",
@@ -4763,7 +4763,7 @@
     {
       "name": "DiedAcacia2",
       "type": "structure",
-      "sortid": 292,
+      "sortid": 293,
       "compiles": true,
       "locked_code": false,
       "registry_name": "died_acacia_2",
@@ -4780,7 +4780,7 @@
     {
       "name": "DiedAcacia3",
       "type": "structure",
-      "sortid": 293,
+      "sortid": 294,
       "compiles": true,
       "locked_code": false,
       "registry_name": "died_acacia_3",
@@ -4797,7 +4797,7 @@
     {
       "name": "DiedAcacia4",
       "type": "structure",
-      "sortid": 294,
+      "sortid": 295,
       "compiles": true,
       "locked_code": false,
       "registry_name": "died_acacia_4",
@@ -4814,7 +4814,7 @@
     {
       "name": "DiedAcacia5",
       "type": "structure",
-      "sortid": 295,
+      "sortid": 296,
       "compiles": true,
       "locked_code": false,
       "registry_name": "died_acacia_5",
@@ -4831,7 +4831,7 @@
     {
       "name": "TakyrObnovlieniieTika",
       "type": "procedure",
-      "sortid": 296,
+      "sortid": 297,
       "compiles": true,
       "locked_code": false,
       "registry_name": "takyr_obnovlieniie_tika",
@@ -4863,7 +4863,7 @@
     {
       "name": "DryDirt",
       "type": "block",
-      "sortid": 6,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dry_dirt",
@@ -4881,7 +4881,7 @@
     {
       "name": "DryDirtObnovlieniieTika",
       "type": "procedure",
-      "sortid": 297,
+      "sortid": 298,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dry_dirt_obnovlieniie_tika",
@@ -4913,7 +4913,7 @@
     {
       "name": "DryDirtPriDobavlieniiBloka",
       "type": "procedure",
-      "sortid": 298,
+      "sortid": 299,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dry_dirt_pri_dobavlienii_bloka",
@@ -4945,7 +4945,7 @@
     {
       "name": "FallenParadise",
       "type": "achievement",
-      "sortid": 299,
+      "sortid": 300,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fallen_paradise",
@@ -4959,7 +4959,7 @@
     {
       "name": "TakyrDrop",
       "type": "loottable",
-      "sortid": 300,
+      "sortid": 301,
       "compiles": true,
       "locked_code": false,
       "registry_name": "takyr_drop",
@@ -4973,7 +4973,7 @@
     {
       "name": "TumbleweedObnovlieniieTika",
       "type": "procedure",
-      "sortid": 301,
+      "sortid": 302,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweed_obnovlieniie_tika",
@@ -5005,7 +5005,7 @@
     {
       "name": "CopperHorn",
       "type": "item",
-      "sortid": 52,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn0",
@@ -5020,7 +5020,7 @@
     {
       "name": "CopperHornPriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 302,
+      "sortid": 303,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_pri_shchielchkie_pkm",
@@ -5060,7 +5060,7 @@
     {
       "name": "CopperHorn1",
       "type": "item",
-      "sortid": 53,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn1",
@@ -5075,7 +5075,7 @@
     {
       "name": "CopperHorn1PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 303,
+      "sortid": 304,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_1_pri_shchielchkie_pkm",
@@ -5115,7 +5115,7 @@
     {
       "name": "CopperHorn2",
       "type": "item",
-      "sortid": 54,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn2",
@@ -5130,7 +5130,7 @@
     {
       "name": "CopperHorn2PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 304,
+      "sortid": 305,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_2_pri_shchielchkie_pkm",
@@ -5170,7 +5170,7 @@
     {
       "name": "CopperHorn3",
       "type": "item",
-      "sortid": 55,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn3",
@@ -5185,7 +5185,7 @@
     {
       "name": "CopperHorn3PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 305,
+      "sortid": 306,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_3_pri_shchielchkie_pkm",
@@ -5225,7 +5225,7 @@
     {
       "name": "CopperHorn4",
       "type": "item",
-      "sortid": 56,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn4",
@@ -5240,7 +5240,7 @@
     {
       "name": "CopperHorn4PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 306,
+      "sortid": 307,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_4_pri_shchielchkie_pkm",
@@ -5280,7 +5280,7 @@
     {
       "name": "CopperHorn5",
       "type": "item",
-      "sortid": 57,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn5",
@@ -5295,7 +5295,7 @@
     {
       "name": "CopperHorn5PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 307,
+      "sortid": 308,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_5_pri_shchielchkie_pkm",
@@ -5335,7 +5335,7 @@
     {
       "name": "CopperHorn6",
       "type": "item",
-      "sortid": 58,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn6",
@@ -5350,7 +5350,7 @@
     {
       "name": "CopperHorn6PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 308,
+      "sortid": 309,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_6_pri_shchielchkie_pkm",
@@ -5390,7 +5390,7 @@
     {
       "name": "CopperHorn7",
       "type": "item",
-      "sortid": 59,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn7",
@@ -5405,7 +5405,7 @@
     {
       "name": "CopperHorn7PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 309,
+      "sortid": 310,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_7_pri_shchielchkie_pkm",
@@ -5445,7 +5445,7 @@
     {
       "name": "CopperHorn8",
       "type": "item",
-      "sortid": 60,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn8",
@@ -5460,7 +5460,7 @@
     {
       "name": "CopperHorn8PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 310,
+      "sortid": 311,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_8_pri_shchielchkie_pkm",
@@ -5500,7 +5500,7 @@
     {
       "name": "CopperHorn9",
       "type": "item",
-      "sortid": 61,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn9",
@@ -5515,7 +5515,7 @@
     {
       "name": "CopperHorn9PriShchielchkiePKM",
       "type": "procedure",
-      "sortid": 311,
+      "sortid": 312,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_9_pri_shchielchkie_pkm",
@@ -5555,7 +5555,7 @@
     {
       "name": "PoorZhorik",
       "type": "achievement",
-      "sortid": 312,
+      "sortid": 313,
       "compiles": true,
       "locked_code": false,
       "registry_name": "poor_zhorik",
@@ -5569,7 +5569,7 @@
     {
       "name": "SuspiciousMud",
       "type": "block",
-      "sortid": 4,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suspicious_mud",
@@ -5587,7 +5587,7 @@
     {
       "name": "FallingTakyrObnovlieniieTika",
       "type": "procedure",
-      "sortid": 313,
+      "sortid": 314,
       "compiles": true,
       "locked_code": false,
       "registry_name": "falling_takyr_obnovlieniie_tika",
@@ -5619,7 +5619,7 @@
     {
       "name": "SuspiciousMudPriShchielchkiePKMPoBloku",
       "type": "procedure",
-      "sortid": 314,
+      "sortid": 315,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suspicious_mud_pri_shchielchkie_pkm_po_bloku",
@@ -5651,7 +5651,7 @@
     {
       "name": "SuspiciousMudDrop",
       "type": "loottable",
-      "sortid": 315,
+      "sortid": 316,
       "compiles": true,
       "locked_code": false,
       "registry_name": "suspicious_mud_drop",
@@ -5665,7 +5665,7 @@
     {
       "name": "HalloweenForest",
       "type": "biome",
-      "sortid": 316,
+      "sortid": 317,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_forest",
@@ -5683,7 +5683,7 @@
     {
       "name": "JackLantern",
       "type": "feature",
-      "sortid": 317,
+      "sortid": 318,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jack_lantern",
@@ -5700,7 +5700,7 @@
     {
       "name": "Gravelsurface",
       "type": "feature",
-      "sortid": 318,
+      "sortid": 319,
       "compiles": true,
       "locked_code": false,
       "registry_name": "gravel_surface",
@@ -5717,7 +5717,7 @@
     {
       "name": "CoarseDirtSurface",
       "type": "feature",
-      "sortid": 319,
+      "sortid": 320,
       "compiles": true,
       "locked_code": false,
       "registry_name": "coarse_dirt_surface",
@@ -5734,7 +5734,7 @@
     {
       "name": "HalloweenForestSurfaceBlock",
       "type": "tag",
-      "sortid": 320,
+      "sortid": 321,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_forest_surface_block",
@@ -5748,7 +5748,7 @@
     {
       "name": "WaterLake",
       "type": "feature",
-      "sortid": 321,
+      "sortid": 322,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_lake",
@@ -5765,7 +5765,7 @@
     {
       "name": "HalloweenForestWellDrop",
       "type": "loottable",
-      "sortid": 322,
+      "sortid": 323,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_forest_well_drop",
@@ -5779,7 +5779,7 @@
     {
       "name": "Soul",
       "type": "item",
-      "sortid": 64,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul",
@@ -5794,7 +5794,7 @@
     {
       "name": "SoulPriShchielchkiePKMPoBloku",
       "type": "procedure",
-      "sortid": 323,
+      "sortid": 324,
       "compiles": true,
       "locked_code": false,
       "registry_name": "soul_pri_shchielchkie_pkm_po_bloku",
@@ -5834,7 +5834,7 @@
     {
       "name": "JackOLanternWithSoul",
       "type": "block",
-      "sortid": 63,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jack_o_lantern_with_soul",
@@ -5851,7 +5851,7 @@
     {
       "name": "JackOLanternWithSoulPriShchielchkiePKMPoBloku",
       "type": "procedure",
-      "sortid": 324,
+      "sortid": 325,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jack_o_lantern_with_soul_pri_shchielchkie_pkm_po_bloku",
@@ -5887,7 +5887,7 @@
     {
       "name": "Spookyfest",
       "type": "achievement",
-      "sortid": 325,
+      "sortid": 326,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spookyfest",
@@ -5901,7 +5901,7 @@
     {
       "name": "WEHalloween",
       "type": "tab",
-      "sortid": 326,
+      "sortid": 327,
       "compiles": true,
       "locked_code": false,
       "registry_name": "we_halloween",
@@ -5913,7 +5913,7 @@
     {
       "name": "HalloweenForestWell",
       "type": "structure",
-      "sortid": 327,
+      "sortid": 328,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_forest_well",
@@ -5930,7 +5930,7 @@
     {
       "name": "SpookyfestWorld",
       "type": "dimension",
-      "sortid": 65,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "spookyfest_world",
@@ -5946,7 +5946,7 @@
     {
       "name": "AloeVera",
       "type": "plant",
-      "sortid": 11,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aloe_vera",
@@ -5963,7 +5963,7 @@
     {
       "name": "Astilba",
       "type": "plant",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilba",
@@ -5980,7 +5980,7 @@
     {
       "name": "AstilbaFeature",
       "type": "feature",
-      "sortid": 328,
+      "sortid": 329,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilba_feature",
@@ -5992,12 +5992,12 @@
           "src/main/resources/data/world_expansion/worldgen/configured_feature/astilba_feature.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Plants/Astilba"
     },
     {
       "name": "AstilbaMulticoloredFeature",
       "type": "feature",
-      "sortid": 329,
+      "sortid": 330,
       "compiles": true,
       "locked_code": false,
       "registry_name": "astilba_multicolored_feature",
@@ -6009,12 +6009,12 @@
           "src/main/resources/data/world_expansion/worldgen/configured_feature/astilba_multicolored_feature.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Plants/Astilba"
     },
     {
       "name": "YellowAstilbaFeature",
       "type": "feature",
-      "sortid": 330,
+      "sortid": 331,
       "compiles": true,
       "locked_code": false,
       "registry_name": "yellow_astilba_feature",
@@ -6026,12 +6026,12 @@
           "src/main/java/net/horizonexpand/world_expansion/world/features/YellowAstilbaFeatureFeature.java"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Plants/Astilba"
     },
     {
       "name": "TumbleweedFeature",
       "type": "feature",
-      "sortid": 331,
+      "sortid": 332,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweed_feature",
@@ -6043,12 +6043,12 @@
           "src/main/resources/data/world_expansion/worldgen/placed_feature/tumbleweed_feature.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Plants/Tumbleweed"
     },
     {
       "name": "TigerAloeVeraFeature",
       "type": "feature",
-      "sortid": 332,
+      "sortid": 333,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tiger_aloe_vera_feature",
@@ -6060,12 +6060,12 @@
           "src/main/resources/data/world_expansion/worldgen/configured_feature/tiger_aloe_vera_feature.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Plants/Aloe"
     },
     {
       "name": "AloeVeraFeature",
       "type": "feature",
-      "sortid": 333,
+      "sortid": 334,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aloe_vera_feature",
@@ -6077,12 +6077,12 @@
           "src/main/java/net/horizonexpand/world_expansion/world/features/AloeVeraFeatureFeature.java"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes"
     },
     {
       "name": "JudasFruitUpgrade",
       "type": "itemextension",
-      "sortid": 334,
+      "sortid": 335,
       "compiles": true,
       "locked_code": false,
       "registry_name": "judas_fruit_upgrade",
@@ -6094,7 +6094,7 @@
     {
       "name": "SplitJudasFruitUpgrade",
       "type": "itemextension",
-      "sortid": 335,
+      "sortid": 336,
       "compiles": true,
       "locked_code": false,
       "registry_name": "split_judas_fruit_upgrade",
@@ -6106,7 +6106,7 @@
     {
       "name": "LeaveOfAloeVeraUpgrade",
       "type": "itemextension",
-      "sortid": 336,
+      "sortid": 337,
       "compiles": true,
       "locked_code": false,
       "registry_name": "leave_of_aloe_vera_upgrade",
@@ -6118,7 +6118,7 @@
     {
       "name": "TumbleweedUpgrade",
       "type": "itemextension",
-      "sortid": 337,
+      "sortid": 338,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tumbleweed_upgrade",
@@ -6130,7 +6130,7 @@
     {
       "name": "BaobabLeavesUpgrade",
       "type": "itemextension",
-      "sortid": 338,
+      "sortid": 339,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_leaves_upgrade",
@@ -6142,7 +6142,7 @@
     {
       "name": "HalloweenWheatField",
       "type": "biome",
-      "sortid": 339,
+      "sortid": 340,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_pumpkin_field",
@@ -6160,7 +6160,7 @@
     {
       "name": "IsSpookyfestWorld",
       "type": "tag",
-      "sortid": 340,
+      "sortid": 341,
       "compiles": true,
       "locked_code": false,
       "registry_name": "is_spookyfest_world",
@@ -6174,7 +6174,7 @@
     {
       "name": "GrassPath",
       "type": "feature",
-      "sortid": 341,
+      "sortid": 342,
       "compiles": true,
       "locked_code": false,
       "registry_name": "grass_path",
@@ -6191,7 +6191,7 @@
     {
       "name": "JackLanternField",
       "type": "feature",
-      "sortid": 342,
+      "sortid": 343,
       "compiles": true,
       "locked_code": false,
       "registry_name": "jack_lantern_field",
@@ -6208,7 +6208,7 @@
     {
       "name": "WaterLakeField",
       "type": "feature",
-      "sortid": 343,
+      "sortid": 344,
       "compiles": true,
       "locked_code": false,
       "registry_name": "water_lake_field",
@@ -6225,7 +6225,7 @@
     {
       "name": "WithoutWanderingTraderSpawns",
       "type": "tag",
-      "sortid": 344,
+      "sortid": 345,
       "compiles": true,
       "locked_code": false,
       "registry_name": "without_wandering_trader_spawns",
@@ -6234,12 +6234,12 @@
           "src/main/resources/data/minecraft/tags/worldgen/biome/without_wandering_trader_spawns.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Biome"
     },
     {
       "name": "IsForest",
       "type": "tag",
-      "sortid": 345,
+      "sortid": 346,
       "compiles": true,
       "locked_code": false,
       "registry_name": "is_forest",
@@ -6248,12 +6248,12 @@
           "src/main/resources/data/minecraft/tags/worldgen/biome/is_forest.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Biome"
     },
     {
       "name": "SnowGolemMelts",
       "type": "tag",
-      "sortid": 346,
+      "sortid": 347,
       "compiles": true,
       "locked_code": false,
       "registry_name": "snow_golem_melts",
@@ -6262,12 +6262,12 @@
           "src/main/resources/data/minecraft/tags/worldgen/biome/snow_golem_melts.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Biome"
     },
     {
       "name": "WithoutPatrolSpawns",
       "type": "tag",
-      "sortid": 347,
+      "sortid": 348,
       "compiles": true,
       "locked_code": false,
       "registry_name": "without_patrol_spawns",
@@ -6276,12 +6276,12 @@
           "src/main/resources/data/minecraft/tags/worldgen/biome/without_patrol_spawns.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Biome"
     },
     {
       "name": "MusicDiscs",
       "type": "tag",
-      "sortid": 348,
+      "sortid": 349,
       "compiles": true,
       "locked_code": false,
       "registry_name": "music_discs",
@@ -6290,12 +6290,12 @@
           "src/main/resources/data/minecraft/tags/items/music_discs.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "CopperHorns",
       "type": "tag",
-      "sortid": 349,
+      "sortid": 350,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horns",
@@ -6304,12 +6304,12 @@
           "src/main/resources/data/forge/tags/items/copper_horns.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "SwordEfficient",
       "type": "tag",
-      "sortid": 350,
+      "sortid": 351,
       "compiles": true,
       "locked_code": false,
       "registry_name": "sword_efficient",
@@ -6318,12 +6318,12 @@
           "src/main/resources/data/minecraft/tags/blocks/sword_efficient.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "HalloweenDarkForest",
       "type": "biome",
-      "sortid": 351,
+      "sortid": 352,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_dark_forest",
@@ -6337,7 +6337,7 @@
     {
       "name": "HalloweenPlains",
       "type": "biome",
-      "sortid": 352,
+      "sortid": 353,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_plains",
@@ -6351,7 +6351,7 @@
     {
       "name": "HalloweenOakScarecrow0DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 353,
+      "sortid": 354,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_oak_scarecrow_0_dopolnitielnoie_usloviie_gienieratsii",
@@ -6384,7 +6384,7 @@
     {
       "name": "HalloweenOakScarecrow0PriGienieratsiiStruktury",
       "type": "procedure",
-      "sortid": 354,
+      "sortid": 355,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_oak_scarecrow_0_pri_gienieratsii_struktury",
@@ -6417,7 +6417,7 @@
     {
       "name": "HalloweenOakScarecrow0",
       "type": "structure",
-      "sortid": 355,
+      "sortid": 356,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_oak_scarecrow_0",
@@ -6434,7 +6434,7 @@
     {
       "name": "HalloweenOakScarecrow1",
       "type": "structure",
-      "sortid": 356,
+      "sortid": 357,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_oak_scarecrow_1",
@@ -6451,7 +6451,7 @@
     {
       "name": "HalloweenOakScarecrow2",
       "type": "structure",
-      "sortid": 357,
+      "sortid": 358,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_oak_scarecrow_2",
@@ -6468,7 +6468,7 @@
     {
       "name": "HalloweenOakScarecrow3",
       "type": "structure",
-      "sortid": 358,
+      "sortid": 359,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_oak_scarecrow_3",
@@ -6485,7 +6485,7 @@
     {
       "name": "HalloweenDarkOakScarecrow0",
       "type": "structure",
-      "sortid": 359,
+      "sortid": 360,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_dark_oak_scarecrow_0",
@@ -6502,7 +6502,7 @@
     {
       "name": "HalloweenDarkOakScarecrow1",
       "type": "structure",
-      "sortid": 360,
+      "sortid": 361,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_dark_oak_scarecrow_1",
@@ -6519,7 +6519,7 @@
     {
       "name": "HalloweenDarkOakScarecrow2",
       "type": "structure",
-      "sortid": 361,
+      "sortid": 362,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_dark_oak_scarecrow_2",
@@ -6536,7 +6536,7 @@
     {
       "name": "HalloweenDarkOakScarecrow3",
       "type": "structure",
-      "sortid": 362,
+      "sortid": 363,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_dark_oak_scarecrow_3",
@@ -6553,7 +6553,7 @@
     {
       "name": "HalloweenDarkOakScarecrow0DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 363,
+      "sortid": 364,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_dark_oak_scarecrow_0_dopolnitielnoie_usloviie_gienieratsii",
@@ -6586,7 +6586,7 @@
     {
       "name": "HalloweenDarkOakScarecrow0PriGienieratsiiStruktury",
       "type": "procedure",
-      "sortid": 364,
+      "sortid": 365,
       "compiles": true,
       "locked_code": false,
       "registry_name": "halloween_dark_oak_scarecrow_0_pri_gienieratsii_struktury",
@@ -6619,7 +6619,7 @@
     {
       "name": "DarkOak0",
       "type": "structure",
-      "sortid": 365,
+      "sortid": 366,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_0",
@@ -6636,7 +6636,7 @@
     {
       "name": "DarkOak0DopolnitielnoieUsloviieGienieratsii",
       "type": "procedure",
-      "sortid": 366,
+      "sortid": 367,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_0_dopolnitielnoie_usloviie_gienieratsii",
@@ -6669,7 +6669,7 @@
     {
       "name": "DarkOakSpawn",
       "type": "procedure",
-      "sortid": 367,
+      "sortid": 368,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_spawn",
@@ -6702,7 +6702,7 @@
     {
       "name": "DarkOak1",
       "type": "structure",
-      "sortid": 368,
+      "sortid": 369,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_1",
@@ -6719,7 +6719,7 @@
     {
       "name": "DarkOak2",
       "type": "structure",
-      "sortid": 369,
+      "sortid": 370,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_2",
@@ -6736,7 +6736,7 @@
     {
       "name": "DarkOak3",
       "type": "structure",
-      "sortid": 370,
+      "sortid": 371,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_3",
@@ -6753,7 +6753,7 @@
     {
       "name": "DarkOak4",
       "type": "structure",
-      "sortid": 371,
+      "sortid": 372,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_4",
@@ -6770,7 +6770,7 @@
     {
       "name": "DarkOak5",
       "type": "structure",
-      "sortid": 372,
+      "sortid": 373,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_5",
@@ -6787,7 +6787,7 @@
     {
       "name": "DarkOak6",
       "type": "structure",
-      "sortid": 373,
+      "sortid": 374,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_6",
@@ -6804,7 +6804,7 @@
     {
       "name": "DarkOak7",
       "type": "structure",
-      "sortid": 374,
+      "sortid": 375,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_7",
@@ -6821,7 +6821,7 @@
     {
       "name": "DarkOak8",
       "type": "structure",
-      "sortid": 375,
+      "sortid": 376,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_8",
@@ -6838,7 +6838,7 @@
     {
       "name": "DarkOak9",
       "type": "structure",
-      "sortid": 376,
+      "sortid": 377,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_9",
@@ -6855,7 +6855,7 @@
     {
       "name": "DarkOak10",
       "type": "structure",
-      "sortid": 377,
+      "sortid": 378,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_10",
@@ -6872,7 +6872,7 @@
     {
       "name": "DarkOak11",
       "type": "structure",
-      "sortid": 378,
+      "sortid": 379,
       "compiles": true,
       "locked_code": false,
       "registry_name": "dark_oak_11",
@@ -6889,7 +6889,7 @@
     {
       "name": "SummerResortInWinter",
       "type": "achievement",
-      "sortid": 379,
+      "sortid": 380,
       "compiles": true,
       "locked_code": false,
       "registry_name": "summer_resort_in_winter",
@@ -6903,7 +6903,7 @@
     {
       "name": "SummerResortInWinterProcedure",
       "type": "procedure",
-      "sortid": 380,
+      "sortid": 381,
       "compiles": true,
       "locked_code": false,
       "registry_name": "summer_resort_in_winter_procedure",
@@ -6939,7 +6939,7 @@
     {
       "name": "LittleShroomlight",
       "type": "plant",
-      "sortid": 14,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "registry_name": "little_shroomlight",
@@ -6956,7 +6956,7 @@
     {
       "name": "LittleShroomlightHalloweenFeature",
       "type": "feature",
-      "sortid": 381,
+      "sortid": 382,
       "compiles": true,
       "locked_code": false,
       "registry_name": "little_shroomlight_halloween_feature",
@@ -6973,7 +6973,7 @@
     {
       "name": "PumpkinField",
       "type": "feature",
-      "sortid": 382,
+      "sortid": 383,
       "compiles": true,
       "locked_code": false,
       "registry_name": "pumpkin_field",
@@ -6990,7 +6990,7 @@
     {
       "name": "BaobabValleySurfaceKabanyt",
       "type": "feature",
-      "sortid": 383,
+      "sortid": 384,
       "compiles": true,
       "locked_code": false,
       "registry_name": "baobab_valley_surface_kabanyt",
@@ -7001,12 +7001,12 @@
           "src/main/resources/data/world_expansion/forge/biome_modifier/baobab_valley_surface_kabanyt_biome_modifier.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Biomes/Baobab Valley"
     },
     {
       "name": "KabanytGeneration",
       "type": "feature",
-      "sortid": 384,
+      "sortid": 385,
       "compiles": true,
       "locked_code": false,
       "registry_name": "kabanyt_generation",
@@ -7018,12 +7018,12 @@
           "src/main/resources/data/world_expansion/forge/biome_modifier/kabanyt_generation_biome_modifier.json"
         ]
       },
-      "path": "~/Features"
+      "path": "~/Features/Blocks/Kabanyt"
     },
     {
       "name": "AloeVeraTigerPriRazrushieniiRastieniiaIghrokom",
       "type": "procedure",
-      "sortid": 385,
+      "sortid": 386,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aloe_vera_tiger_pri_razrushienii_rastieniia_ighrokom",
@@ -7059,7 +7059,7 @@
     {
       "name": "AloeVeraPriRazrushieniiRastieniiaIghrokom",
       "type": "procedure",
-      "sortid": 386,
+      "sortid": 387,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aloe_vera_pri_razrushienii_rastieniia_ighrokom",
@@ -7095,7 +7095,7 @@
     {
       "name": "MiniFirefly",
       "type": "animatedentity",
-      "sortid": 62,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_fireflies",
@@ -7114,7 +7114,7 @@
     {
       "name": "MiniFireflyPriShchielchkiePKMPoSushchnosti",
       "type": "procedure",
-      "sortid": 387,
+      "sortid": 388,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_firefly_pri_shchielchkie_pkm_po_sushchnosti",
@@ -7138,7 +7138,7 @@
     {
       "name": "BottlePriDobavlieniiBloka",
       "type": "procedure",
-      "sortid": 388,
+      "sortid": 389,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_pri_dobavlienii_bloka",
@@ -7170,7 +7170,7 @@
     {
       "name": "NatureBlocks",
       "type": "tab",
-      "sortid": 389,
+      "sortid": 390,
       "compiles": true,
       "locked_code": false,
       "registry_name": "natural_blocks",
@@ -7182,7 +7182,7 @@
     {
       "name": "Mobs",
       "type": "tab",
-      "sortid": 390,
+      "sortid": 391,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mobs",
@@ -7194,7 +7194,7 @@
     {
       "name": "Bottle",
       "type": "animatedblock",
-      "sortid": 43,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle",
@@ -7217,7 +7217,7 @@
     {
       "name": "HangingBottle",
       "type": "animatedblock",
-      "sortid": 391,
+      "sortid": 392,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hanging_bottle",
@@ -7240,7 +7240,7 @@
     {
       "name": "HangingBottlePriIzmienieniiSosiednieghoBloka",
       "type": "procedure",
-      "sortid": 392,
+      "sortid": 393,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hanging_bottle_pri_izmienienii_sosiedniegho_bloka",
@@ -7272,7 +7272,7 @@
     {
       "name": "BottleWithMiniFireflies",
       "type": "animatedblock",
-      "sortid": 44,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_with_mini_fireflies",
@@ -7295,7 +7295,7 @@
     {
       "name": "HangingBottleWitnMiniFireflies",
       "type": "animatedblock",
-      "sortid": 393,
+      "sortid": 394,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hanging_bottle_witn_mini_fireflies",
@@ -7318,7 +7318,7 @@
     {
       "name": "BottleWithMiniFirefliesPriDobavlieniiBloka",
       "type": "procedure",
-      "sortid": 394,
+      "sortid": 395,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_with_mini_fireflies_pri_dobavlienii_bloka",
@@ -7350,7 +7350,7 @@
     {
       "name": "HangingBottleWitnMiniFirefliesPriIzmienieniiSosiednieghoBloka",
       "type": "procedure",
-      "sortid": 395,
+      "sortid": 396,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hanging_bottle_witn_mini_fireflies_pri_izmienienii_sosiedniegho_bloka",
@@ -7382,7 +7382,7 @@
     {
       "name": "BottleWithMiniFirefliesPriRazrushieniiBlokaIghrokom",
       "type": "procedure",
-      "sortid": 396,
+      "sortid": 397,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_with_mini_fireflies_pri_razrushienii_bloka_ighrokom",
@@ -7414,7 +7414,7 @@
     {
       "name": "BottleWithMiniFirefliesParticle",
       "type": "particle",
-      "sortid": 397,
+      "sortid": 398,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_with_mini_fireflies_particle",
@@ -7429,7 +7429,7 @@
     {
       "name": "BottleWitnMiniFirefliesPkm",
       "type": "procedure",
-      "sortid": 398,
+      "sortid": 399,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_witn_mini_fireflies_pkm",
@@ -7465,7 +7465,7 @@
     {
       "name": "BottleRecipe",
       "type": "recipe",
-      "sortid": 399,
+      "sortid": 400,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_recipe",
@@ -7479,7 +7479,7 @@
     {
       "name": "GlassBottleRecipe",
       "type": "recipe",
-      "sortid": 400,
+      "sortid": 401,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glass_bottle_recipe",
@@ -7493,7 +7493,7 @@
     {
       "name": "GlassBlock",
       "type": "tag",
-      "sortid": 401,
+      "sortid": 402,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glass_block",
@@ -7502,12 +7502,12 @@
           "src/main/resources/data/forge/tags/blocks/glass.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "GlassItem",
       "type": "tag",
-      "sortid": 402,
+      "sortid": 403,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glass_item",
@@ -7516,12 +7516,12 @@
           "src/main/resources/data/forge/tags/items/glass.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "GlassPaneBlock",
       "type": "tag",
-      "sortid": 403,
+      "sortid": 404,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glass_pane_block",
@@ -7530,12 +7530,12 @@
           "src/main/resources/data/forge/tags/blocks/glass_pane.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "GlassPaneItem",
       "type": "tag",
-      "sortid": 404,
+      "sortid": 405,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glass_pane_item",
@@ -7544,12 +7544,12 @@
           "src/main/resources/data/forge/tags/items/glass_pane.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "GlassBottleRecipeVanilla",
       "type": "recipe",
-      "sortid": 405,
+      "sortid": 406,
       "compiles": true,
       "locked_code": false,
       "registry_name": "glass_bottle_recipe_vanilla",
@@ -7563,7 +7563,7 @@
     {
       "name": "BottleWithMiniFirefliesPriShchielchkiePKMPoBloku",
       "type": "procedure",
-      "sortid": 406,
+      "sortid": 407,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_with_mini_fireflies_pri_shchielchkie_pkm_po_bloku",
@@ -7599,7 +7599,7 @@
     {
       "name": "HangingBottleWitnMiniFirefliesPriShchielchkiePKMPoBloku",
       "type": "procedure",
-      "sortid": 407,
+      "sortid": 408,
       "compiles": true,
       "locked_code": false,
       "registry_name": "hanging_bottle_witn_mini_fireflies_pri_shchielchkie_pkm_po_bloku",
@@ -7635,7 +7635,7 @@
     {
       "name": "MiniFireflyUsloviieGienieratsiiSushchnosti",
       "type": "procedure",
-      "sortid": 408,
+      "sortid": 409,
       "compiles": true,
       "locked_code": false,
       "registry_name": "mini_firefly_usloviie_gienieratsii_sushchnosti",
@@ -7668,7 +7668,7 @@
     {
       "name": "BottleWithMiniFirefliesObnovlieniieTika",
       "type": "procedure",
-      "sortid": 409,
+      "sortid": 410,
       "compiles": true,
       "locked_code": false,
       "registry_name": "bottle_with_mini_fireflies_obnovlieniie_tika",
@@ -7700,7 +7700,7 @@
     {
       "name": "TitaniumIngot",
       "type": "item",
-      "sortid": 48,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ingot",
@@ -7736,7 +7736,7 @@
     {
       "name": "TitaniumBlock",
       "type": "block",
-      "sortid": 41,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_block",
@@ -7753,7 +7753,7 @@
     {
       "name": "RawTitanium",
       "type": "item",
-      "sortid": 49,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_titanium",
@@ -7768,7 +7768,7 @@
     {
       "name": "RawTitaniumBlock",
       "type": "block",
-      "sortid": 3,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_titanium_block",
@@ -7789,7 +7789,7 @@
     {
       "name": "RawTitaniumFromBlock",
       "type": "recipe",
-      "sortid": 410,
+      "sortid": 411,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_titanium_from_block",
@@ -7803,7 +7803,7 @@
     {
       "name": "TitaniumIngotFromBlasting",
       "type": "recipe",
-      "sortid": 411,
+      "sortid": 412,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ingot_from_blasting",
@@ -7817,7 +7817,7 @@
     {
       "name": "TitaniumIngotFromSmelting",
       "type": "recipe",
-      "sortid": 412,
+      "sortid": 413,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ingot_from_smelting",
@@ -7831,7 +7831,7 @@
     {
       "name": "TitaniumIngotFromStoneOreBlasting",
       "type": "recipe",
-      "sortid": 413,
+      "sortid": 414,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ingot_from_stone_ore_blasting",
@@ -7845,7 +7845,7 @@
     {
       "name": "TitaniumIngotFromStoneOreSmelting",
       "type": "recipe",
-      "sortid": 414,
+      "sortid": 415,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ingot_from_stone_ore_smelting",
@@ -7859,7 +7859,7 @@
     {
       "name": "TitaniumIngotFromBlock",
       "type": "recipe",
-      "sortid": 415,
+      "sortid": 416,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_ingot_from_block",
@@ -7873,7 +7873,7 @@
     {
       "name": "TitaniumBlockRecipe",
       "type": "recipe",
-      "sortid": 416,
+      "sortid": 417,
       "compiles": true,
       "locked_code": false,
       "registry_name": "titanium_block_recipe",
@@ -7887,7 +7887,7 @@
     {
       "name": "RawTitaniumBlockRecipe",
       "type": "recipe",
-      "sortid": 417,
+      "sortid": 418,
       "compiles": true,
       "locked_code": false,
       "registry_name": "raw_titanium_block_recipe",
@@ -7901,7 +7901,7 @@
     {
       "name": "LisaSimpson",
       "type": "achievement",
-      "sortid": 418,
+      "sortid": 419,
       "compiles": true,
       "locked_code": false,
       "registry_name": "lisa_simpson",
@@ -7915,7 +7915,7 @@
     {
       "name": "MultiCraftingTable",
       "type": "block",
-      "sortid": 42,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "registry_name": "multi_crafting_table",
@@ -7923,7 +7923,6 @@
         "files": [
           "src/main/resources/assets/world_expansion/models/block/multi_crafting_table.json",
           "src/main/java/net/horizonexpand/world_expansion/block/MultiCraftingTableBlock.java",
-          "src/main/java/net/horizonexpand/world_expansion/block/entity/MultiCraftingTableBlockEntity.java",
           "src/main/resources/assets/world_expansion/models/item/multi_crafting_table.json",
           "src/main/resources/assets/world_expansion/blockstates/multi_crafting_table.json"
         ]
@@ -7933,10 +7932,10 @@
     {
       "name": "MultiCraftingTableGUI",
       "type": "gui",
-      "sortid": 419,
+      "sortid": 420,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "multi_crafting_table_gui",
+      "registry_name": "multi_crafting_table_gui_copper_horn",
       "metadata": {
         "files": [
           "src/main/java/net/horizonexpand/world_expansion/world/inventory/MultiCraftingTableGUIMenu.java",
@@ -7947,30 +7946,9 @@
       "path": "~/GUI"
     },
     {
-      "name": "CopperHornButtonShow",
-      "type": "procedure",
-      "sortid": 420,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "copper_horn_button_show",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/CopperHornButtonShowProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Multi-Crafting Table/Copper Horn"
-    },
-    {
       "name": "CopperHornButton0",
       "type": "procedure",
-      "sortid": 421,
+      "sortid": 422,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_0",
@@ -8006,7 +7984,7 @@
     {
       "name": "CopperHornButton1",
       "type": "procedure",
-      "sortid": 422,
+      "sortid": 423,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_1",
@@ -8042,7 +8020,7 @@
     {
       "name": "CopperHornButton2",
       "type": "procedure",
-      "sortid": 423,
+      "sortid": 424,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_2",
@@ -8078,7 +8056,7 @@
     {
       "name": "CopperHornButton3",
       "type": "procedure",
-      "sortid": 424,
+      "sortid": 425,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_3",
@@ -8114,7 +8092,7 @@
     {
       "name": "CopperHornButton4",
       "type": "procedure",
-      "sortid": 425,
+      "sortid": 426,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_4",
@@ -8150,7 +8128,7 @@
     {
       "name": "CopperHornButton5",
       "type": "procedure",
-      "sortid": 426,
+      "sortid": 427,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_5",
@@ -8186,7 +8164,7 @@
     {
       "name": "CopperHornButton6",
       "type": "procedure",
-      "sortid": 427,
+      "sortid": 428,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_6",
@@ -8222,7 +8200,7 @@
     {
       "name": "CopperHornButton7",
       "type": "procedure",
-      "sortid": 428,
+      "sortid": 429,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_7",
@@ -8258,7 +8236,7 @@
     {
       "name": "CopperHornButton8",
       "type": "procedure",
-      "sortid": 429,
+      "sortid": 430,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_8",
@@ -8294,7 +8272,7 @@
     {
       "name": "CopperHornButton9",
       "type": "procedure",
-      "sortid": 430,
+      "sortid": 431,
       "compiles": true,
       "locked_code": false,
       "registry_name": "copper_horn_button_9",
@@ -8339,7 +8317,7 @@
           "src/main/resources/data/forge/tags/blocks/stripped_log.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Blocks"
     },
     {
       "name": "StrippedLogItem",
@@ -8353,7 +8331,7 @@
           "src/main/resources/data/forge/tags/items/stripped_log.json"
         ]
       },
-      "path": "~/Tags"
+      "path": "~/Tags/Items"
     },
     {
       "name": "MultiCraftingTableRecipe",
@@ -8368,27 +8346,6 @@
         ]
       },
       "path": "~/Recipe/Multi-Crafting Table"
-    },
-    {
-      "name": "DyeButtonShow",
-      "type": "procedure",
-      "sortid": 435,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dye_button_show",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/DyeButtonShowProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Multi-Crafting Table/Dye"
     },
     {
       "name": "DyeButtonCyan",
@@ -8605,6 +8562,393 @@
         ]
       },
       "path": "~/Procedures/Multi-Crafting Table/Dye"
+    },
+    {
+      "name": "BeaconBaseBlocks",
+      "type": "tag",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_base_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/beacon_base_blocks.json"
+        ]
+      },
+      "path": "~/Tags/Blocks"
+    },
+    {
+      "name": "DeepslateTitaniumOre",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslate_titanium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/deepslate_titanium_ore.json",
+          "src/main/resources/assets/world_expansion/models/block/deepslate_titanium_ore.json",
+          "src/main/resources/assets/world_expansion/blockstates/deepslate_titanium_ore.json",
+          "src/main/java/net/horizonexpand/world_expansion/world/features/ores/DeepslateTitaniumOreFeature.java",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/deepslate_titanium_ore.json",
+          "src/main/resources/assets/world_expansion/models/item/deepslate_titanium_ore.json",
+          "src/main/java/net/horizonexpand/world_expansion/block/DeepslateTitaniumOreBlock.java",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/deepslate_titanium_ore_biome_modifier.json"
+        ]
+      },
+      "path": "~/Blocks/Titanium"
+    },
+    {
+      "name": "TitaniumIngotFromDeepslateOreSmelting",
+      "type": "recipe",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ingot_from_deepslate_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/recipes/titanium_ingot_from_deepslate_ore_smelting.json"
+        ]
+      },
+      "path": "~/Recipe/Titanium"
+    },
+    {
+      "name": "TitaniumIngotFromDeepslateOreBlasting",
+      "type": "recipe",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ingot_from_deepslate_ore_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/recipes/titanium_ingot_from_deepslate_ore_blasting.json"
+        ]
+      },
+      "path": "~/Recipe/Titanium"
+    },
+    {
+      "name": "EnchantmentPowerTransmitter",
+      "type": "tag",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "enchantment_power_transmitter",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/enchantment_power_transmitter.json"
+        ]
+      },
+      "path": "~/Tags/Blocks"
+    },
+    {
+      "name": "FrogFood",
+      "type": "tag",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "frog_food",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/entity_types/frog_food.json"
+        ]
+      },
+      "path": "~/Tags/Mobs"
+    },
+    {
+      "name": "PowderSnowWalkableMobs",
+      "type": "tag",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powder_snow_walkable_mobs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/entity_types/powder_snow_walkable_mobs.json"
+        ]
+      },
+      "path": "~/Tags/Mobs"
+    },
+    {
+      "name": "FallDamageImmune",
+      "type": "tag",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fall_damage_immune",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/entity_types/fall_damage_immune.json"
+        ]
+      },
+      "path": "~/Tags/Mobs"
+    },
+    {
+      "name": "SnifferDiggableBlock",
+      "type": "tag",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sniffer_diggable_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/sniffer_diggable_block.json"
+        ]
+      },
+      "path": "~/Tags/Blocks"
+    },
+    {
+      "name": "SoulFireBaseBlocks",
+      "type": "tag",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_fire_base_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/soul_fire_base_blocks.json"
+        ]
+      },
+      "path": "~/Tags/Blocks"
+    },
+    {
+      "name": "BeaconPaymentItems",
+      "type": "tag",
+      "sortid": 451,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_payment_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/beacon_payment_items.json"
+        ]
+      },
+      "path": "~/Tags/Items"
+    },
+    {
+      "name": "TitaniumOresBlock",
+      "type": "tag",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ores_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/tags/blocks/titanium_ores.json"
+        ]
+      },
+      "path": "~/Tags/Blocks"
+    },
+    {
+      "name": "TitaniumOresItem",
+      "type": "tag",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ores_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/tags/items/titanium_ores.json"
+        ]
+      },
+      "path": "~/Tags/Items"
+    },
+    {
+      "name": "CreeperDropMusicDiscs",
+      "type": "tag",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_drop_music_discs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/creeper_drop_music_discs.json"
+        ]
+      },
+      "path": "~/Tags/Items"
+    },
+    {
+      "name": "SoulFireBaseBlocksItem",
+      "type": "tag",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_fire_base_blocks_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/soul_fire_base_blocks.json"
+        ]
+      },
+      "path": "~/Tags/Items"
+    },
+    {
+      "name": "TitaniumOreFeature",
+      "type": "feature",
+      "sortid": 456,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/titanium_ore_feature.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/titanium_ore_feature.json",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/titanium_ore_feature_biome_modifier.json"
+        ]
+      },
+      "path": "~/Features/Blocks/Titanium"
+    },
+    {
+      "name": "TitaniumOreFeatureAddition",
+      "type": "feature",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore_feature_addition",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/forge/biome_modifier/titanium_ore_feature_addition_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/titanium_ore_feature_addition.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/titanium_ore_feature_addition.json"
+        ]
+      },
+      "path": "~/Features/Blocks/Titanium"
+    },
+    {
+      "name": "MultiCraftingTableGUIAstilba",
+      "type": "gui",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multi_crafting_table_gui_astilba",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/client/gui/MultiCraftingTableGUIAstilbaScreen.java",
+          "src/main/java/net/horizonexpand/world_expansion/world/inventory/MultiCraftingTableGUIAstilbaMenu.java",
+          "src/main/java/net/horizonexpand/world_expansion/network/MultiCraftingTableGUIAstilbaButtonMessage.java"
+        ]
+      },
+      "path": "~/GUI"
+    },
+    {
+      "name": "AstilbaMulticoloredTab",
+      "type": "procedure",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "astilba_multicolored_tab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/AstilbaMulticoloredTabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Tabs"
+    },
+    {
+      "name": "MultiCraftingTablePriShchielchkiePKMPoBloku",
+      "type": "procedure",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "multi_crafting_table_pri_shchielchkie_pkm_po_bloku",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/MultiCraftingTablePriShchielchkiePKMPoBlokuProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table"
+    },
+    {
+      "name": "CopperHornTab",
+      "type": "procedure",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_horn_tab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/CopperHornTabProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Multi-Crafting Table/Tabs"
+    },
+    {
+      "name": "TrimMaterials",
+      "type": "tag",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trim_materials",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/trim_materials.json"
+        ]
+      },
+      "path": "~/Tags/Items"
     }
   ],
   "variable_elements": [],
@@ -8879,30 +9223,28 @@
   ],
   "language_map": {
     "ru_ru": {
-      "item.world_expansion.copper_horn3": "Медный рог",
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
-      "item.world_expansion.copper_horn2": "Медный рог",
+      "item.world_expansion.copper_horn3": "Медный рог 3",
       "biome.world_expansion.politania": "Политания",
-      "item.world_expansion.copper_horn5": "Медный рог",
-      "subtitles.bass1": "Отдыхает",
-      "subtitles.bass0": "Падение",
-      "item.world_expansion.copper_horn4": "Медный рог",
+      "item.world_expansion.copper_horn2": "Медный рог 2",
+      "item.world_expansion.copper_horn5": "Медный рог 5",
       "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
-      "item.world_expansion.copper_horn7": "Медный рог",
-      "advancements.world_expansion.title": "World Expansion",
-      "item.world_expansion.copper_horn6": "Медный рог",
+      "item.world_expansion.copper_horn4": "Медный рог 4",
+      "item.world_expansion.copper_horn7": "Медный рог 7",
       "block.world_expansion.little_shroomlight": "Маленький грибосвет",
-      "item.world_expansion.copper_horn9": "Медный рог",
+      "advancements.world_expansion.title": "World Expansion",
+      "item.world_expansion.copper_horn6": "Медный рог 6",
       "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
-      "item.world_expansion.copper_horn8": "Медный рог",
+      "item.world_expansion.copper_horn9": "Медный рог 9",
+      "item.world_expansion.copper_horn8": "Медный рог 8",
       "block.world_expansion.kabanyt_slab": "Плита из кабанита",
-      "advancements.ancient_civilization_part_1.title": "Древняя Цивилизация: Часть 1 ",
-      "block.world_expansion.carved_kabanyt": "Резной кабанит",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
+      "advancements.ancient_civilization_part_1.title": "Древняя Цивилизация: Часть 1",
       "block.world_expansion.baobab_fence": "Забор из древесины баобаба",
-      "gui.world_expansion.multi_crafting_table_gui.label_multicrafting_table": "Мульти-Верстак",
+      "block.world_expansion.carved_kabanyt": "Резной кабанит",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Инвентарь",
       "advancements.oh_great_baobab.title": "Ох, Великий Баобаб!",
       "block.world_expansion.baobab_fence_gate": "Калитка из древесины баобаба",
-      "subtitles.music_disc_spooky_forest": "",
       "item.world_expansion.mini_fireflies_spawn_egg": "Яйцо призива Мини-Светлячков",
       "block.world_expansion.titanium_block": "Титановый блок",
       "block.world_expansion.baobab_pressure_plate": "Нажимная пластина из древесины баобаба",
@@ -8916,151 +9258,119 @@
       "block.world_expansion.multi_crafting_table": "Мульти-Верстак",
       "advancements.spookyfest.descr": "Отправляйтесь в жуткий тёмный мир, наполненный опасностями и ценной добычей!",
       "block.world_expansion.baobab_wood": "Кора баобаба",
-      "subtitles.bass7": "Слеза",
-      "subtitles.bass6": "Мысль",
-      "subtitles.bass9": "Любовь",
-      "subtitles.bass8": "Подарок",
       "biome.world_expansion.halloween_forest": "Хеллоуинский лес",
-      "subtitles.bass3": "Память",
       "block.world_expansion.kabanyt": "Кабанит",
-      "subtitles.bass2": "Желание",
-      "subtitles.bass5": "Путешествие",
-      "subtitles.bass4": "Гнев",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_7": "1х Медный рог 7",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_6": "1х Медный рог 6",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_9": "1х Медный рог 9",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_8": "1х Медный рог 8",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_magenta_dye": "2x Сиреневый краситель",
       "block.world_expansion.baobab_door": "Дверь из древесины баобаба",
       "biome.world_expansion.halloween_dark_forest": "Хеллоунский тёмный лес",
       "block.world_expansion.judas_fruit_3": "Плод Иуды3",
       "block.world_expansion.judas_fruit_2": "Плод Иуды2",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_1": "1х Медный рог 1",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_cyan_dye": "2х Бирюзовый краситель",
       "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_0": "1х Медный рог 0",
-      "subtitles.melody2": "Вода",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_3": "1х Медный рог 3",
-      "subtitles.melody1": "Гимн",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_2": "1х Медный рог 2",
-      "subtitles.melody0": "Небо",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_5": "1х Медный рог 5",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_4": "1х Медный рог 4",
-      "subtitles.melody6": "Гнездо",
       "block.world_expansion.kabanyt_bricks": "Кирпичи из кабанита",
-      "subtitles.melody5": "Характер",
-      "subtitles.melody4": "Побуждение",
-      "subtitles.melody3": "Огонь",
       "block.world_expansion.suspicious_mud": "Подозрительная грязь",
-      "subtitles.melody9": "Луна",
-      "subtitles.melody8": "Река",
-      "subtitles.melody7": "Озеро",
       "block.world_expansion.kabanyt_tiles_wall": "Ограда из плиточного кабанита",
-      "item.world_expansion.tumbleweed_projectile": "Перекати-поле",
       "block.world_expansion.judas_fruit1": "Плод Иуды1",
+      "item.world_expansion.tumbleweed_projectile": "Перекати-поле",
       "block.world_expansion.baobab_planks": "Доски из древесины баобаба",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_light_blue_dye": "1x Светло-синий краситель",
       "block.world_expansion.hanging_bottle": "Подвешенная бутылка",
       "block.world_expansion.kabanyt_tiles": "Плитняк из кабанита",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_orange_dye": "1x Оранжевый краситель",
       "block.world_expansion.dry_dirt": "Сухая земля",
-      "message.halloween.right_click": "Нажмите ПКМ по блоку",
       "biome.world_expansion.halloween_plains": "Хеллоуинская равнина",
       "block.world_expansion.stripped_baobab_log": "Обтёсанная древесина баобаба",
       "advancements.fallen_paradise.descr": "Найдите Мёртвую саванну",
       "block.world_expansion.raw_titanium_block": "Блок необработанного титана",
+      "trim_material.world_expansion.titanium": "Титановый материал",
       "item.world_expansion.leave_of_aloe_vera": "Листки алое вера",
-      "subtitles.mini-fireflies_ambient": "Мини-Светлячок стрекочет",
+      "block.world_expansion.deepslate_titanium_ore": "Титаноносный глубинный сланец",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_yellow_dye": "1x Жёлтый краситель",
       "block.world_expansion.astilba": "Астильба",
-      "subtitles.harmony9": "Сладкая",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_pink_dye": "2х Розовый краситель",
-      "subtitles.harmony7": "Секрет",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.label_inventory": "Инвентарь",
       "advancements.world_expansion.descr": "Исследуйте мир!",
-      "subtitles.harmony8": "Бесстрашный",
-      "subtitles.harmony5": "Очистить",
-      "subtitles.harmony6": "Свежесть",
       "biome.world_expansion.died_savanna": "Мёртвая саванна",
-      "subtitles.harmony3": "Скромный",
+      "advancements.summer_resort_in_winter.title": "§6Летний курорт зимой",
       "item_group.world_expansion.we_halloween": "WE: Хеллоуин",
-      "advancements.summer_resort_in_winter.title": "§6Летний курорт зимой ",
-      "subtitles.harmony4": "Сухой",
       "advancements.lisa_simpson.title": "Лиза Симпсон",
       "block.world_expansion.baobab_stairs": "Ступеньки из древесины баобаба",
-      "subtitles.harmony": "Медный рог гармонично трубит",
       "block.world_expansion.kabanyt_wall": "Ограда из кабанита",
       "entity.world_expansion.mini_fireflies": "Мини-Светлячки",
       "block.world_expansion.jack_o_lantern_with_soul": "Светильник Джека с душой",
       "item.world_expansion.split_judas_fruit": "Расколотый плод Иуды",
-      "block.world_expansion.baobab_button": "Кнопка из древесины баобаба",
-      "block.world_expansion.baobab_leaves": "Листва баобаба",
       "block.world_expansion.baobab_trapdoor": "Люк из древесины баобаба",
-      "subtitles.fireflies_ambient": "Светлячок стрекочет",
+      "block.world_expansion.baobab_leaves": "Листва баобаба",
+      "block.world_expansion.baobab_button": "Кнопка из древесины баобаба",
       "block.world_expansion.bottle": "Бутылка",
       "block.world_expansion.takyr": "Такыр",
       "block.world_expansion.tumbleweed": "Перекати-поле",
       "item_group.world_expansion.building_blocks": "WE: Строительные блоки",
       "item.world_expansion.music_disc_destroyer": "Пластинка",
-      "gui.world_expansion.multi_crafting_table_gui.label_inventory": "Инвентарь",
       "item_group.world_expansion.items": "WE: Предметы",
-      "subtitles.harmony1": "Старый",
-      "subtitles.harmony2": "Чистый",
       "block.world_expansion.kabanyt_bricks_slab": "Кирпичная плита из кабанита",
-      "subtitles.harmony0": "Великий",
       "biome.world_expansion.halloween_pumpkin_field": "Хеллоунское тыквенное поле",
       "block.world_expansion.kabanyt_stairs": "Ступеньки из кабанита",
-      "subtitles.music_disc_destroyer": "",
       "biome.world_expansion.baobab_valley": "Долина баобабов",
       "item_group.world_expansion.natural_blocks": "WE: Природные блоки",
-      "item.world_expansion.music_disc_destroyer.desc": "Hrumer - Destroyer",
       "advancements.tile_slab.title": "Плиточная плита",
+      "item.world_expansion.music_disc_destroyer.desc": "Hrumer - Destroyer",
       "item_group.world_expansion.mobs": "WE: Мобы",
       "advancements.tile_slab.descr": "Создайте плиту из плиточного кабанита (ну и название)...",
       "item.world_expansion.titanium_ingot": "Титановый слиток",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_orange_dye": "1х Оранжевый краситель",
       "block.world_expansion.kabanyt_bricks_stairs": "Кирпичные ступеньки из кабанита",
       "advancements.poor_zhorik.title": "Бедный Жорик!",
       "block.world_expansion.bottle_with_mini_fireflies": "Бутылка с Мини-Светлячками",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_light_blue_dye": "1х Светло-синий краситель",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_9": "1x Медный рог 9",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_8": "1x Медный рог 8",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_7": "1x Медный рог 7",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_6": "1x Медный рог 6",
       "item.world_expansion.soul": "Душа",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_5": "1x Медный рог 5",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_4": "1x Медный рог 4",
       "advancements.oh_great_baobab.descr": "Найдите Долину баобабов",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_pink_dye": "2x Розовый краситель",
       "advancements.ancient_civilization_part_1.descr": "Найдите Политанию",
       "advancements.poor_zhorik.descr": "Получите Козий рог",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_yellow_dye": "1х Жёлтый краситель",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_3": "1x Медный рог 3",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_2": "1x Медный рог 2",
       "item.world_expansion.raw_titanium": "Необработанный титан",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_magenta_dye": "2х Сиреневый краситель",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_1": "1x Медный рог 1",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_0": "1x Медный рог 0",
       "item.world_expansion.judas_fruit": "Плод Иуды",
       "block.world_expansion.kabanyt_tiles_slab": "Плита из плиточного кабанита",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.label_multicrafting_table": "Мульти-Верстак",
       "block.world_expansion.titanium_ore": "Титановая руда",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_cyan_dye": "2x Бирюзовый краситель",
       "block.world_expansion.astilba_multicolored": "Астильба многоцветная",
       "block.world_expansion.baobab_sapling": "Саженец баобаба",
       "block.world_expansion.yellow_astilba": "Жёлтая астильба",
       "block.world_expansion.hanging_bottle_witn_mini_fireflies": "Подвешенная бутылка с Мини-Светлячками",
       "advancements.spookyfest.title": "§6Фестиваль Страха!",
-      "item.world_expansion.copper_horn1": "Медный рог",
-      "item.world_expansion.copper_horn0": "Медный рог"
+      "item.world_expansion.copper_horn1": "Медный рог 1",
+      "item.world_expansion.copper_horn0": "Медный рог 0"
     },
     "en_us": {
       "item.world_expansion.copper_horn3": "Copper Horn",
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn2": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
-      "subtitles.bass1": "Copper Horn bass plays",
       "item.world_expansion.copper_horn5": "Copper Horn",
       "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
-      "subtitles.bass0": "Falling",
       "item.world_expansion.copper_horn4": "Copper Horn",
       "item.world_expansion.copper_horn7": "Copper Horn",
-      "advancements.world_expansion.title": "World Expansion",
-      "item.world_expansion.copper_horn6": "Copper Horn",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
-      "item.world_expansion.copper_horn9": "Copper Horn",
+      "item.world_expansion.copper_horn6": "Copper Horn",
+      "advancements.world_expansion.title": "World Expansion",
       "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
+      "item.world_expansion.copper_horn9": "Copper Horn",
       "item.world_expansion.copper_horn8": "Copper Horn",
       "block.world_expansion.kabanyt_slab": "Kabanyt slab",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
       "advancements.ancient_civilization_part_1.title": "Ancient Civilization: Part 1",
-      "block.world_expansion.baobab_fence": "Baobab fence",
       "block.world_expansion.carved_kabanyt": "Carved kabanyt",
-      "gui.world_expansion.multi_crafting_table_gui.label_multicrafting_table": "Multi-Crafting Table",
+      "block.world_expansion.baobab_fence": "Baobab fence",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
       "advancements.oh_great_baobab.title": "Oh, Great Baobab!",
       "block.world_expansion.baobab_fence_gate": "Baobab fence gate",
-      "subtitles.music_disc_spooky_forest": "",
       "item.world_expansion.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
       "block.world_expansion.titanium_block": "Titanium Block",
       "block.world_expansion.baobab_pressure_plate": "Baobab pressure plate",
@@ -9069,123 +9379,93 @@
       "block.world_expansion.stripped_baobab_wood": "Stripped baobab wood",
       "item.world_expansion.piece_totem_of_undying": "Piece Totem of Undying",
       "block.world_expansion.aloe_vera": "Aloe Vera",
-      "block.world_expansion.tiger_aloe_vera": "Aloe vera tiger",
       "block.world_expansion.kabanyt_tiles_stairs": "Kabanyt tiles stairs",
+      "block.world_expansion.tiger_aloe_vera": "Aloe vera tiger",
       "block.world_expansion.multi_crafting_table": "Multi-Crafting Table",
       "advancements.spookyfest.descr": "Go on a Creepy Dark World Filled with Dangers and Valuable Loot!",
       "block.world_expansion.baobab_wood": "Baobab wood",
-      "subtitles.bass7": "Copper Horn bass plays",
-      "subtitles.bass6": "Copper Horn bass plays",
-      "subtitles.bass9": "Copper Horn bass plays",
-      "subtitles.bass8": "Copper Horn bass plays",
       "biome.world_expansion.halloween_forest": "Halloween Forest",
-      "subtitles.bass3": "Copper Horn bass plays",
       "block.world_expansion.kabanyt": "Kabanyt",
-      "subtitles.bass2": "Copper Horn bass plays",
-      "subtitles.bass5": "Copper Horn bass plays",
-      "subtitles.bass4": "Copper Horn bass plays",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_7": "1x Copper Horn 7",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_6": "1x Copper Horn 6",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_9": "1x Copper Horn 9",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_8": "1x Copper Horn 8",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_magenta_dye": "2x Magenta Dye",
       "block.world_expansion.baobab_door": "Baobab door",
       "biome.world_expansion.halloween_dark_forest": "Halloween Dark Forest",
       "block.world_expansion.judas_fruit_3": "Judas Fruit3",
       "block.world_expansion.judas_fruit_2": "Judas Fruit2",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_1": "1x Copper Horn 1",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_cyan_dye": "2x Cyan Dye",
       "block.world_expansion.baobab_slab": "Baobab slab",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_0": "1x Copper Horn 0",
-      "subtitles.melody2": "Copper Horn melody plays",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_3": "1x Copper Horn 3",
-      "subtitles.melody1": "Copper Horn melody plays",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_2": "1x Copper Horn 2",
-      "subtitles.melody0": "Sky",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_5": "1x Copper Horn 5",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_copper_horn_4": "1x Copper Horn 4",
-      "subtitles.melody6": "Copper Horn melody plays",
       "block.world_expansion.kabanyt_bricks": "Kabanyt bricks",
-      "subtitles.melody5": "Copper Horn melody plays",
-      "subtitles.melody4": "Copper Horn melody plays",
-      "subtitles.melody3": "Copper Horn melody plays",
       "block.world_expansion.suspicious_mud": "Suspicious Mud",
-      "subtitles.melody9": "Copper Horn melody plays",
-      "subtitles.melody8": "Copper Horn melody plays",
-      "subtitles.melody7": "Copper Horn melody plays",
       "block.world_expansion.kabanyt_tiles_wall": "Kabanyt tiles wall",
       "item.world_expansion.tumbleweed_projectile": "Tumbleweed ",
       "block.world_expansion.judas_fruit1": "Judas Fruit1",
       "block.world_expansion.baobab_planks": "Baobab planks",
       "block.world_expansion.hanging_bottle": "Hanging Bottle",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_light_blue_dye": "1x Light Blue Dye",
       "block.world_expansion.kabanyt_tiles": "Kabanyt tiles",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_orange_dye": "1x Orange Dye",
       "block.world_expansion.dry_dirt": "Dry Dirt",
-      "message.halloween.right_click": "Right-Click on Block",
       "biome.world_expansion.halloween_plains": "Halloween Plains",
       "block.world_expansion.stripped_baobab_log": "Stripped baobab log",
       "advancements.fallen_paradise.descr": "Find the Dead Savanna",
       "block.world_expansion.raw_titanium_block": "Raw Titanium Block",
+      "trim_material.world_expansion.titanium": "",
       "item.world_expansion.leave_of_aloe_vera": "Leave of aloe vera",
-      "subtitles.mini-fireflies_ambient": "The Mini-Firefly Chirps",
+      "block.world_expansion.deepslate_titanium_ore": "Deepslate Titanium Ore",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_yellow_dye": "1x Yellow Dye",
       "block.world_expansion.astilba": "Astilba ",
-      "subtitles.harmony9": "Copper Horn harmony plays",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_pink_dye": "2x Pink Dye",
-      "subtitles.harmony7": "Copper Horn harmony plays",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.label_inventory": "Inventory",
       "advancements.world_expansion.descr": "Explore the world!",
-      "subtitles.harmony8": "Copper Horn harmony plays",
-      "subtitles.harmony5": "Copper Horn harmony plays",
-      "subtitles.harmony6": "Copper Horn harmony plays",
       "biome.world_expansion.died_savanna": "Died Savanna",
-      "subtitles.harmony3": "Copper Horn harmony plays",
       "item_group.world_expansion.we_halloween": "WE: Halloween",
       "advancements.summer_resort_in_winter.title": "§6Summer Resort in Winter",
-      "subtitles.harmony4": "Copper Horn harmony plays",
       "advancements.lisa_simpson.title": "Lisa Simpson",
       "block.world_expansion.baobab_stairs": "Baobab stairs",
-      "subtitles.harmony": "Copper Goat Horn harmony plays",
       "block.world_expansion.kabanyt_wall": "Kabanyt wall",
       "entity.world_expansion.mini_fireflies": "Mini-Fireflies",
       "block.world_expansion.jack_o_lantern_with_soul": "Jack o\u0027Lantern with Soul",
       "item.world_expansion.split_judas_fruit": "Judas Fruit",
-      "block.world_expansion.baobab_button": "Baobab button",
       "block.world_expansion.baobab_leaves": "Baobab leaves",
+      "block.world_expansion.baobab_button": "Baobab button",
       "block.world_expansion.baobab_trapdoor": "Baobab trapdoor",
-      "subtitles.fireflies_ambient": "The Mini-Firefly Chirps",
       "block.world_expansion.bottle": "Bottle",
       "block.world_expansion.takyr": "Takyr",
       "block.world_expansion.tumbleweed": "Tumbleweed",
       "item_group.world_expansion.building_blocks": "WE: Building Blocks",
       "item.world_expansion.music_disc_destroyer": "Music Disc ",
-      "gui.world_expansion.multi_crafting_table_gui.label_inventory": "Inventory",
       "item_group.world_expansion.items": "WE: Items",
-      "subtitles.harmony1": "Copper Horn harmony plays",
-      "subtitles.harmony2": "Copper Horn harmony plays",
       "block.world_expansion.kabanyt_bricks_slab": "Kabanyt bricks slab",
-      "subtitles.harmony0": "\"Great\"",
       "biome.world_expansion.halloween_pumpkin_field": "Halloween Pumpkin Field",
       "block.world_expansion.kabanyt_stairs": "Kabanyt stairs",
-      "subtitles.music_disc_destroyer": "",
       "biome.world_expansion.baobab_valley": "Baobab valley",
       "item_group.world_expansion.natural_blocks": "WE: Natural Blocks",
-      "item.world_expansion.music_disc_destroyer.desc": "Hrumer—Destroyer",
       "advancements.tile_slab.title": "Tile slab",
+      "item.world_expansion.music_disc_destroyer.desc": "Hrumer—Destroyer",
       "item_group.world_expansion.mobs": "WE: Mobs",
       "advancements.tile_slab.descr": "Create a slab from kabanyt tiles (well, the name)...",
       "item.world_expansion.titanium_ingot": "Titanium Ingot",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_orange_dye": "1x Orange Dye",
       "block.world_expansion.kabanyt_bricks_stairs": "Kabanyt bricks stairs",
       "advancements.poor_zhorik.title": "Poor Zhorik!",
       "block.world_expansion.bottle_with_mini_fireflies": "Bottle Witn Mini Fireflies",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_light_blue_dye": "1x Light Blue Dye",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_9": "1x Copper Horn 9",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_8": "1x Copper Horn 8",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_7": "1x Copper Horn 7",
       "item.world_expansion.soul": "Soul",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_6": "1x Copper Horn 6",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_5": "1x Copper Horn 5",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_4": "1x Copper Horn 4",
       "advancements.oh_great_baobab.descr": "Find the Baobab Valley",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_pink_dye": "2x Pink Dye",
       "advancements.ancient_civilization_part_1.descr": "Find the Politania",
       "advancements.poor_zhorik.descr": "Get a Goat Horn",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_yellow_dye": "1x Yellow Dye",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_3": "1x Copper Horn 3",
       "item.world_expansion.raw_titanium": "Raw Titanium",
-      "gui.world_expansion.multi_crafting_table_gui.tooltip_magenta_dye": "2x Magenta Dye",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_2": "1x Copper Horn 2",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_1": "1x Copper Horn 1",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_0": "1x Copper Horn 0",
       "item.world_expansion.judas_fruit": "Judas Fruit",
       "block.world_expansion.kabanyt_tiles_slab": "Kabanyt tiles slab",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.label_multicrafting_table": "Multi-Crafting Table",
       "block.world_expansion.titanium_ore": "Titanium Ore",
+      "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_cyan_dye": "2x Cyan Dye",
       "block.world_expansion.astilba_multicolored": "Astilba Multicolored",
       "block.world_expansion.baobab_sapling": "Baobab sapling",
       "block.world_expansion.yellow_astilba": "Yellow astilba",
@@ -9285,7 +9565,24 @@
       },
       {
         "name": "Tags",
-        "children": []
+        "children": [
+          {
+            "name": "Items",
+            "children": []
+          },
+          {
+            "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "Mobs",
+            "children": []
+          },
+          {
+            "name": "Biome",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Procedures",
@@ -9362,6 +9659,10 @@
               {
                 "name": "Dye",
                 "children": []
+              },
+              {
+                "name": "Tabs",
+                "children": []
               }
             ]
           }
@@ -9381,7 +9682,51 @@
       },
       {
         "name": "Features",
-        "children": []
+        "children": [
+          {
+            "name": "Biomes",
+            "children": [
+              {
+                "name": "Baobab Valley",
+                "children": []
+              },
+              {
+                "name": "Savanna Prarie",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Plants",
+            "children": [
+              {
+                "name": "Astilba",
+                "children": []
+              },
+              {
+                "name": "Tumbleweed",
+                "children": []
+              },
+              {
+                "name": "Aloe",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Blocks",
+            "children": [
+              {
+                "name": "Kabanyt",
+                "children": []
+              },
+              {
+                "name": "Titanium",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "Drops",

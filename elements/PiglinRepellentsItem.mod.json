@@ -45,6 +45,9 @@
       },
       {
         "value": "CUSTOM:Kabanyttileswall"
+      },
+      {
+        "value": "CUSTOM:TitaniumBlock"
       }
     ],
     "blocks": [],

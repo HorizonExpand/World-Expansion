@@ -213,7 +213,7 @@ public class MiniFireflyEntity extends PathfinderMob implements GeoEntity {
 
 	private PlayState movementPredicate(AnimationState event) {
 		if (this.animationprocedure.equals("empty")) {
-			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mini_firefly.idle"));
+			return event.setAndContinue(RawAnimation.begin().thenLoop("animation.mini_fireflies.idle"));
 		}
 		return PlayState.STOP;
 	}

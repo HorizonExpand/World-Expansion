@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:TitaniumOre"
+      },
+      {
+        "value": "CUSTOM:DeepslateTitaniumOre"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "titanium_ores",
+    "namespace": "mod"
+  }
+}

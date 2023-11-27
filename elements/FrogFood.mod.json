@@ -1,0 +1,18 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:MiniFirefly"
+      }
+    ],
+    "biomes": [],
+    "name": "frog_food",
+    "namespace": "minecraft"
+  }
+}

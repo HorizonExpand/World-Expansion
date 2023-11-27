@@ -25,7 +25,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 141,
-          "y": 53
+          "y": 62
         }
       },
       {
@@ -43,7 +43,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 159,
-          "y": 53
+          "y": 62
         }
       },
       {
@@ -61,7 +61,7 @@
           },
           "dropItemsWhenNotBound": true,
           "x": 177,
-          "y": 53
+          "y": 62
         }
       },
       {
@@ -78,98 +78,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 141,
-          "y": 71
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 4,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
           "x": 159,
-          "y": 71
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 5,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 177,
-          "y": 71
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 6,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 141,
-          "y": 89
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 7,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 159,
-          "y": 89
-        }
-      },
-      {
-        "type": "inputslot",
-        "data": {
-          "inputLimit": {
-            "value": ""
-          },
-          "disablePlacement": {
-            "fixedValue": false
-          },
-          "id": 8,
-          "disablePickup": {
-            "fixedValue": false
-          },
-          "dropItemsWhenNotBound": true,
-          "x": 177,
-          "y": 89
+          "y": 80
         }
       },
       {
@@ -180,9 +90,6 @@
           "hoveredImage": "copper_horn_craft_gui_light.png",
           "onClick": {
             "name": "CopperHornButton0"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "x": 213,
           "y": 53
@@ -197,9 +104,6 @@
           "onClick": {
             "name": "CopperHornButton1"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "x": 231,
           "y": 53
         }
@@ -212,9 +116,6 @@
           "hoveredImage": "copper_horn_craft_gui_light.png",
           "onClick": {
             "name": "CopperHornButton2"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "x": 249,
           "y": 53
@@ -229,9 +130,6 @@
           "onClick": {
             "name": "CopperHornButton3"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "x": 267,
           "y": 53
         }
@@ -244,9 +142,6 @@
           "hoveredImage": "copper_horn_craft_gui_light.png",
           "onClick": {
             "name": "CopperHornButton4"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "x": 213,
           "y": 71
@@ -261,9 +156,6 @@
           "onClick": {
             "name": "CopperHornButton5"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "x": 231,
           "y": 71
         }
@@ -276,9 +168,6 @@
           "hoveredImage": "copper_horn_craft_gui_light.png",
           "onClick": {
             "name": "CopperHornButton6"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "x": 249,
           "y": 71
@@ -293,9 +182,6 @@
           "onClick": {
             "name": "CopperHornButton7"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "x": 267,
           "y": 71
         }
@@ -309,9 +195,6 @@
           "onClick": {
             "name": "CopperHornButton8"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "x": 231,
           "y": 89
         }
@@ -324,9 +207,6 @@
           "hoveredImage": "copper_horn_craft_gui_light.png",
           "onClick": {
             "name": "CopperHornButton9"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "x": 249,
           "y": 89
@@ -354,9 +234,6 @@
           "text": {
             "fixedValue": "1x Copper Horn 0"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "width": 16,
           "height": 16,
           "x": 213,
@@ -369,9 +246,6 @@
           "name": "tooltip_copper_horn_1",
           "text": {
             "fixedValue": "1x Copper Horn 1"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "width": 16,
           "height": 16,
@@ -386,9 +260,6 @@
           "text": {
             "fixedValue": "1x Copper Horn 2"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "width": 16,
           "height": 16,
           "x": 249,
@@ -401,9 +272,6 @@
           "name": "tooltip_copper_horn_3",
           "text": {
             "fixedValue": "1x Copper Horn 3"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "width": 15,
           "height": 15,
@@ -418,9 +286,6 @@
           "text": {
             "fixedValue": "1x Copper Horn 4"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "width": 17,
           "height": 15,
           "x": 213,
@@ -433,9 +298,6 @@
           "name": "tooltip_copper_horn_5",
           "text": {
             "fixedValue": "1x Copper Horn 5"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "width": 16,
           "height": 16,
@@ -450,9 +312,6 @@
           "text": {
             "fixedValue": "1x Copper Horn 6"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "width": 16,
           "height": 15,
           "x": 249,
@@ -465,9 +324,6 @@
           "name": "tooltip_copper_horn_7",
           "text": {
             "fixedValue": "1x Copper Horn 7"
-          },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
           },
           "width": 15,
           "height": 16,
@@ -482,9 +338,6 @@
           "text": {
             "fixedValue": "1x Copper Horn 8"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "width": 16,
           "height": 15,
           "x": 231,
@@ -498,109 +351,10 @@
           "text": {
             "fixedValue": "1x Copper Horn 9"
           },
-          "displayCondition": {
-            "name": "CopperHornButtonShow"
-          },
           "width": 16,
           "height": 15,
           "x": 249,
           "y": 89
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_cyan_dye_craft_gui",
-          "image": "cyan_dye_craft_gui.png",
-          "hoveredImage": "cyan_dye_craft_gui_light.png",
-          "onClick": {
-            "name": "DyeButtonCyan"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "x": 213,
-          "y": 53
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_light_blue_dye_craft_gui",
-          "image": "light_blue_dye_craft_gui.png",
-          "hoveredImage": "cyan_dye_craft_gui_light.png",
-          "onClick": {
-            "name": "DyeButtonLightBlue"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "x": 231,
-          "y": 53
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_magenta_dye_craft_gui",
-          "image": "magenta_dye_craft_gui.png",
-          "hoveredImage": "magenta_dye_craft_gui_light.png",
-          "onClick": {
-            "name": "DyeButtonMagenta"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "x": 249,
-          "y": 53
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_orange_dye_craft_gui",
-          "image": "orange_dye_craft_gui.png",
-          "hoveredImage": "orange_dye_craft_gui_light.png",
-          "onClick": {
-            "name": "DyeButtonOrange"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "x": 267,
-          "y": 53
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_pink_dye_craft_gui",
-          "image": "pink_dye_craft_gui.png",
-          "hoveredImage": "pink_dye_craft_gui_light.png",
-          "onClick": {
-            "name": "DyeButtonPink"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "x": 231,
-          "y": 71
-        }
-      },
-      {
-        "type": "imagebutton",
-        "data": {
-          "name": "imagebutton_yellow_dye_craft_gui",
-          "image": "yellow_dye_craft_gui.png",
-          "hoveredImage": "yellow_dye_craft_gui_light.png",
-          "onClick": {
-            "name": "DyeButtonYellow"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "x": 249,
-          "y": 71
         }
       },
       {
@@ -619,98 +373,25 @@
         }
       },
       {
-        "type": "tooltip",
+        "type": "imagebutton",
         "data": {
-          "name": "tooltip_cyan_dye",
-          "text": {
-            "fixedValue": "2x Cyan Dye"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "width": 15,
-          "height": 15,
-          "x": 213,
+          "name": "imagebutton_copper_horn_craft_gui_tab",
+          "image": "copper_horn_craft_gui_tab_light.png",
+          "hoveredImage": "",
+          "x": 298,
           "y": 53
         }
       },
       {
-        "type": "tooltip",
+        "type": "imagebutton",
         "data": {
-          "name": "tooltip_light_blue_dye",
-          "text": {
-            "fixedValue": "1x Light Blue Dye"
+          "name": "imagebutton_astilba_multicolored_craft_gui_t",
+          "image": "astilba_multicolored_craft_gui_tab.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "AstilbaMulticoloredTab"
           },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "width": 16,
-          "height": 16,
-          "x": 231,
-          "y": 53
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_magenta_dye",
-          "text": {
-            "fixedValue": "2x Magenta Dye"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "width": 16,
-          "height": 16,
-          "x": 249,
-          "y": 53
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_orange_dye",
-          "text": {
-            "fixedValue": "1x Orange Dye"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "width": 15,
-          "height": 16,
-          "x": 267,
-          "y": 53
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_pink_dye",
-          "text": {
-            "fixedValue": "2x Pink Dye"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "width": 16,
-          "height": 15,
-          "x": 231,
-          "y": 71
-        }
-      },
-      {
-        "type": "tooltip",
-        "data": {
-          "name": "tooltip_yellow_dye",
-          "text": {
-            "fixedValue": "1x Yellow Dye"
-          },
-          "displayCondition": {
-            "name": "DyeButtonShow"
-          },
-          "width": 16,
-          "height": 16,
-          "x": 249,
+          "x": 298,
           "y": 71
         }
       }

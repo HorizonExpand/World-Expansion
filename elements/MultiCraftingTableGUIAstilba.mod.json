@@ -1,0 +1,249 @@
+{
+  "_fv": 47,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 159,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_cyan_dye_craft_gui",
+          "image": "cyan_dye_craft_gui.png",
+          "hoveredImage": "cyan_dye_craft_gui_light.png",
+          "onClick": {
+            "name": "DyeButtonCyan"
+          },
+          "x": 213,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_light_blue_dye_craft_gui",
+          "image": "light_blue_dye_craft_gui.png",
+          "hoveredImage": "cyan_dye_craft_gui_light.png",
+          "onClick": {
+            "name": "DyeButtonLightBlue"
+          },
+          "x": 231,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_magenta_dye_craft_gui",
+          "image": "magenta_dye_craft_gui.png",
+          "hoveredImage": "magenta_dye_craft_gui_light.png",
+          "onClick": {
+            "name": "DyeButtonMagenta"
+          },
+          "x": 249,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_orange_dye_craft_gui",
+          "image": "orange_dye_craft_gui.png",
+          "hoveredImage": "orange_dye_craft_gui_light.png",
+          "onClick": {
+            "name": "DyeButtonOrange"
+          },
+          "x": 267,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_pink_dye_craft_gui",
+          "image": "pink_dye_craft_gui.png",
+          "hoveredImage": "pink_dye_craft_gui_light.png",
+          "onClick": {
+            "name": "DyeButtonPink"
+          },
+          "x": 231,
+          "y": 71
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_yellow_dye_craft_gui",
+          "image": "yellow_dye_craft_gui.png",
+          "hoveredImage": "yellow_dye_craft_gui_light.png",
+          "onClick": {
+            "name": "DyeButtonYellow"
+          },
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_inventory",
+          "text": {
+            "fixedValue": "Inventory"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 112
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_cyan_dye",
+          "text": {
+            "fixedValue": "2x Cyan Dye"
+          },
+          "width": 15,
+          "height": 15,
+          "x": 213,
+          "y": 53
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_light_blue_dye",
+          "text": {
+            "fixedValue": "1x Light Blue Dye"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 231,
+          "y": 53
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_magenta_dye",
+          "text": {
+            "fixedValue": "2x Magenta Dye"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 249,
+          "y": 53
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_orange_dye",
+          "text": {
+            "fixedValue": "1x Orange Dye"
+          },
+          "width": 15,
+          "height": 16,
+          "x": 267,
+          "y": 53
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_pink_dye",
+          "text": {
+            "fixedValue": "2x Pink Dye"
+          },
+          "width": 16,
+          "height": 15,
+          "x": 231,
+          "y": 71
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_yellow_dye",
+          "text": {
+            "fixedValue": "1x Yellow Dye"
+          },
+          "width": 16,
+          "height": 16,
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_multicrafting_table",
+          "text": {
+            "fixedValue": "Multi-Crafting Table"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_copper_horn_craft_gui_tab",
+          "image": "copper_horn_craft_gui_tab.png",
+          "hoveredImage": "",
+          "onClick": {
+            "name": "CopperHornTab"
+          },
+          "x": 298,
+          "y": 53
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_astilba_multicolored_craft_gui_t",
+          "image": "astilba_multicolored_craft_gui_tab_light.png",
+          "hoveredImage": "",
+          "x": 298,
+          "y": 71
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -40,6 +40,7 @@ import net.horizonexpand.world_expansion.block.JackOLanternWithSoulBlock;
 import net.horizonexpand.world_expansion.block.HangingBottleWitnMiniFirefliesBlock;
 import net.horizonexpand.world_expansion.block.HangingBottleBlock;
 import net.horizonexpand.world_expansion.block.DryDirtBlock;
+import net.horizonexpand.world_expansion.block.DeepslateTitaniumOreBlock;
 import net.horizonexpand.world_expansion.block.CarvedkabanytBlock;
 import net.horizonexpand.world_expansion.block.BottleWithMiniFirefliesBlock;
 import net.horizonexpand.world_expansion.block.BottleBlock;
@@ -66,6 +67,7 @@ public class WorldExpansionModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, WorldExpansionMod.MODID);
 	public static final RegistryObject<Block> BAOBAB_LEAVES = REGISTRY.register("baobab_leaves", () -> new BaobabLeavesBlock());
 	public static final RegistryObject<Block> TITANIUM_ORE = REGISTRY.register("titanium_ore", () -> new TitaniumOreBlock());
+	public static final RegistryObject<Block> DEEPSLATE_TITANIUM_ORE = REGISTRY.register("deepslate_titanium_ore", () -> new DeepslateTitaniumOreBlock());
 	public static final RegistryObject<Block> RAW_TITANIUM_BLOCK = REGISTRY.register("raw_titanium_block", () -> new RawTitaniumBlockBlock());
 	public static final RegistryObject<Block> SUSPICIOUS_MUD = REGISTRY.register("suspicious_mud", () -> new SuspiciousMudBlock());
 	public static final RegistryObject<Block> TAKYR = REGISTRY.register("takyr", () -> new TakyrBlock());

@@ -1,0 +1,70 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mini_fireflies",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "bone0",
+					"parent": "bone",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [6, 0, -3], "size": [0, 16, 6], "uv": [4, 20]}
+					]
+				},
+				{
+					"name": "bone1",
+					"parent": "bone",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-8, 0, -3], "size": [0, 16, 6], "pivot": [0, 8, 0], "rotation": [0, 27.5, 0], "uv": [4, 4]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "bone",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-6, 0, -5], "size": [8, 16, 0], "pivot": [0, 8, 0], "rotation": [0, 52.5, 0], "uv": [19, 0]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "bone",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [1, 0, -5], "size": [0, 16, 6], "pivot": [2, 8, 0], "rotation": [0, 140, 0], "uv": [15, 20]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "bone",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [5, 1, 5], "size": [0, 16, 6], "pivot": [5, 8, 4], "rotation": [0, -90, 0], "uv": [0, 1]}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "bone",
+					"pivot": [0, 8, 0],
+					"rotation": [0, -175, 0],
+					"cubes": [
+						{"origin": [-6, 0, 6], "size": [7, 16, 0], "pivot": [2, 8, 3], "rotation": [0, -42.5, 0], "uv": [13, 29]}
+					]
+				}
+			]
+		}
+	]
+}

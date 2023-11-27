@@ -13,6 +13,7 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 
 import net.horizonexpand.world_expansion.world.features.ores.TitaniumOreFeature;
 import net.horizonexpand.world_expansion.world.features.ores.RawTitaniumBlockFeature;
+import net.horizonexpand.world_expansion.world.features.ores.DeepslateTitaniumOreFeature;
 import net.horizonexpand.world_expansion.world.features.YellowAstilbaFeatureFeature;
 import net.horizonexpand.world_expansion.world.features.WaterLakeFieldFeature;
 import net.horizonexpand.world_expansion.world.features.WaterLakeFeature;
@@ -77,6 +78,7 @@ import net.horizonexpand.world_expansion.WorldExpansionMod;
 public class WorldExpansionModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, WorldExpansionMod.MODID);
 	public static final RegistryObject<Feature<?>> TITANIUM_ORE = REGISTRY.register("titanium_ore", TitaniumOreFeature::new);
+	public static final RegistryObject<Feature<?>> DEEPSLATE_TITANIUM_ORE = REGISTRY.register("deepslate_titanium_ore", DeepslateTitaniumOreFeature::new);
 	public static final RegistryObject<Feature<?>> RAW_TITANIUM_BLOCK = REGISTRY.register("raw_titanium_block", RawTitaniumBlockFeature::new);
 	public static final RegistryObject<Feature<?>> BAOBAB1 = REGISTRY.register("baobab1", Baobab1Feature::new);
 	public static final RegistryObject<Feature<?>> BAOBAB2 = REGISTRY.register("baobab2", Baobab2Feature::new);

@@ -46,6 +46,12 @@ public class GiverecipeProcedure {
 			if (entity instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("world_expansion:titanium_ingot_from_stone_ore_blasting")});
 		}
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE.get())) : false) {
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("world_expansion:titanium_ingot_from_deepslate_ore_smelting")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("world_expansion:titanium_ingot_from_deepslate_ore_blasting")});
+		}
 		if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(WorldExpansionModItems.TITANIUM_INGOT.get())) : false) || (entity instanceof Player _playerHasItem
 				? _playerHasItem.getInventory().contains(new ItemStack((ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation("forge:stripped_log"))).getRandomElement(RandomSource.create()).orElseGet(() -> Items.AIR))))
 				: false)) {

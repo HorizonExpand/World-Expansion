@@ -9,12 +9,12 @@ import net.horizonexpand.world_expansion.entity.MiniFireflyEntity;
 public class MiniFireflyModel extends GeoModel<MiniFireflyEntity> {
 	@Override
 	public ResourceLocation getAnimationResource(MiniFireflyEntity entity) {
-		return new ResourceLocation("world_expansion", "animations/mini_firefly.animation.json");
+		return new ResourceLocation("world_expansion", "animations/mini_fireflies.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(MiniFireflyEntity entity) {
-		return new ResourceLocation("world_expansion", "geo/mini_firefly.geo.json");
+		return new ResourceLocation("world_expansion", "geo/mini_fireflies.geo.json");
 	}
 
 	@Override
