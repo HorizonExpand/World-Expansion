@@ -6,7 +6,7 @@
 				"identifier": "geometry.bottle_witn_mini_fireflies",
 				"texture_width": 64,
 				"texture_height": 64,
-				"visible_bounds_width": 2,
+				"visible_bounds_width": 3,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},
@@ -23,13 +23,53 @@
 				},
 				{
 					"name": "fireflies",
+					"pivot": [0, 4, 0]
+				},
+				{
+					"name": "fireflies0",
+					"parent": "fireflies",
 					"pivot": [0, 4, 0],
 					"cubes": [
-						{"origin": [-2, 2, -1], "size": [0, 1, 2], "pivot": [-2, 2.5, 0], "rotation": [0, 180, 0], "uv": [60, -2]},
-						{"origin": [1, 2, -1], "size": [0, 1, 2], "uv": [60, -2]},
-						{"origin": [0, 4, 1], "size": [0, 1, 2], "pivot": [0, 4.5, 2], "rotation": [0, -90, 0], "uv": [60, -2]},
-						{"origin": [2, 3, -1], "size": [0, 1, 2], "uv": [60, -2]},
-						{"origin": [-1, 4, -3], "size": [0, 1, 2], "pivot": [-1, 4.5, -2], "rotation": [0, 90, 0], "uv": [60, -2]},
+						{"origin": [-2, 2, -1], "size": [0, 1, 2], "pivot": [-2, 2.5, 0], "rotation": [0, 180, 0], "uv": [60, -2]}
+					]
+				},
+				{
+					"name": "fireflies1",
+					"parent": "fireflies",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{"origin": [1, 2, -1], "size": [0, 1, 2], "uv": [60, -2]}
+					]
+				},
+				{
+					"name": "fireflies2",
+					"parent": "fireflies",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{"origin": [0, 4, 1], "size": [0, 1, 2], "pivot": [0, 4.5, 2], "rotation": [0, -90, 0], "uv": [60, -2]}
+					]
+				},
+				{
+					"name": "fireflies3",
+					"parent": "fireflies",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{"origin": [2, 3, -1], "size": [0, 1, 2], "uv": [60, -2]}
+					]
+				},
+				{
+					"name": "fireflies4",
+					"parent": "fireflies",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{"origin": [-1, 4, -3], "size": [0, 1, 2], "pivot": [-1, 4.5, -2], "rotation": [0, 90, 0], "uv": [60, -2]}
+					]
+				},
+				{
+					"name": "fireflies5",
+					"parent": "fireflies",
+					"pivot": [0, 4, 0],
+					"cubes": [
 						{"origin": [0, 6, 0], "size": [0, 1, 2], "pivot": [0, 6.5, 1], "rotation": [0, -90, 0], "uv": [60, -2]}
 					]
 				}

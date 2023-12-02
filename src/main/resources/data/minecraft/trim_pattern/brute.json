@@ -1,0 +1,7 @@
+{
+  "asset_id": "minecraft:brute",
+  "description": {
+    "translate": "trim_pattern.world_expansion.brute"
+  },
+  "template_item": "world_expansion:brute_armor_trim_smithing_template"
+}

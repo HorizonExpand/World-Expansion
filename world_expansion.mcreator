@@ -8949,6 +8949,49 @@
         ]
       },
       "path": "~/Tags/Items"
+    },
+    {
+      "name": "TrimTemplates",
+      "type": "tag",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trim_templates",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/trim_templates.json"
+        ]
+      },
+      "path": "~/Tags/Items"
+    },
+    {
+      "name": "BruteArmorTrimSmithingTemplate",
+      "type": "item",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brute_armor_trim_smithing_template",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/world_expansion/models/item/brute_armor_trim_smithing_template.json",
+          "src/main/java/net/horizonexpand/world_expansion/item/BruteArmorTrimSmithingTemplateItem.java"
+        ]
+      },
+      "path": "~/Items/Trims"
+    },
+    {
+      "name": "BruteArmorTrimSmithingTemplateRecipe",
+      "type": "recipe",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brute_armor_trim_smithing_template_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/recipes/brute_armor_trim_smithing_template.json"
+        ]
+      },
+      "path": "~/Recipe/Trims"
     }
   ],
   "variable_elements": [],
@@ -9231,9 +9274,9 @@
       "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
       "item.world_expansion.copper_horn4": "Медный рог 4",
       "item.world_expansion.copper_horn7": "Медный рог 7",
-      "block.world_expansion.little_shroomlight": "Маленький грибосвет",
-      "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Медный рог 6",
+      "advancements.world_expansion.title": "World Expansion",
+      "block.world_expansion.little_shroomlight": "Маленький грибосвет",
       "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
       "item.world_expansion.copper_horn9": "Медный рог 9",
       "item.world_expansion.copper_horn8": "Медный рог 8",
@@ -9261,6 +9304,7 @@
       "biome.world_expansion.halloween_forest": "Хеллоуинский лес",
       "block.world_expansion.kabanyt": "Кабанит",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_magenta_dye": "2x Сиреневый краситель",
+      "trim_pattern.world_expansion.brute": "Отделка \"Брутал\"",
       "block.world_expansion.baobab_door": "Дверь из древесины баобаба",
       "biome.world_expansion.halloween_dark_forest": "Хеллоунский тёмный лес",
       "block.world_expansion.judas_fruit_3": "Плод Иуды3",
@@ -9268,6 +9312,7 @@
       "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
       "block.world_expansion.kabanyt_bricks": "Кирпичи из кабанита",
       "block.world_expansion.suspicious_mud": "Подозрительная грязь",
+      "item.world_expansion.brute_armor_trim_smithing_template": "Кузнечный шаблон",
       "block.world_expansion.kabanyt_tiles_wall": "Ограда из плиточного кабанита",
       "block.world_expansion.judas_fruit1": "Плод Иуды1",
       "item.world_expansion.tumbleweed_projectile": "Перекати-поле",
@@ -9349,25 +9394,25 @@
       "item.world_expansion.copper_horn0": "Медный рог 0"
     },
     "en_us": {
-      "item.world_expansion.copper_horn3": "Copper Horn",
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
-      "item.world_expansion.copper_horn2": "Copper Horn",
+      "item.world_expansion.copper_horn3": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
+      "item.world_expansion.copper_horn2": "Copper Horn",
       "item.world_expansion.copper_horn5": "Copper Horn",
-      "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
       "item.world_expansion.copper_horn4": "Copper Horn",
+      "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
       "item.world_expansion.copper_horn6": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
-      "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "item.world_expansion.copper_horn9": "Copper Horn",
+      "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "item.world_expansion.copper_horn8": "Copper Horn",
       "block.world_expansion.kabanyt_slab": "Kabanyt slab",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
       "advancements.ancient_civilization_part_1.title": "Ancient Civilization: Part 1",
-      "block.world_expansion.carved_kabanyt": "Carved kabanyt",
       "block.world_expansion.baobab_fence": "Baobab fence",
+      "block.world_expansion.carved_kabanyt": "Carved kabanyt",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
       "advancements.oh_great_baobab.title": "Oh, Great Baobab!",
       "block.world_expansion.baobab_fence_gate": "Baobab fence gate",
@@ -9387,6 +9432,7 @@
       "biome.world_expansion.halloween_forest": "Halloween Forest",
       "block.world_expansion.kabanyt": "Kabanyt",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_magenta_dye": "2x Magenta Dye",
+      "trim_pattern.world_expansion.brute": "\"Brute Armor Trim\"",
       "block.world_expansion.baobab_door": "Baobab door",
       "biome.world_expansion.halloween_dark_forest": "Halloween Dark Forest",
       "block.world_expansion.judas_fruit_3": "Judas Fruit3",
@@ -9394,6 +9440,7 @@
       "block.world_expansion.baobab_slab": "Baobab slab",
       "block.world_expansion.kabanyt_bricks": "Kabanyt bricks",
       "block.world_expansion.suspicious_mud": "Suspicious Mud",
+      "item.world_expansion.brute_armor_trim_smithing_template": "Brute Armor Trim Smithing Template",
       "block.world_expansion.kabanyt_tiles_wall": "Kabanyt tiles wall",
       "item.world_expansion.tumbleweed_projectile": "Tumbleweed ",
       "block.world_expansion.judas_fruit1": "Judas Fruit1",
@@ -9407,7 +9454,7 @@
       "block.world_expansion.stripped_baobab_log": "Stripped baobab log",
       "advancements.fallen_paradise.descr": "Find the Dead Savanna",
       "block.world_expansion.raw_titanium_block": "Raw Titanium Block",
-      "trim_material.world_expansion.titanium": "",
+      "trim_material.world_expansion.titanium": "\"Titanium Material\"",
       "item.world_expansion.leave_of_aloe_vera": "Leave of aloe vera",
       "block.world_expansion.deepslate_titanium_ore": "Deepslate Titanium Ore",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_yellow_dye": "1x Yellow Dye",
@@ -9559,6 +9606,10 @@
           },
           {
             "name": "Multi-Crafting Table",
+            "children": []
+          },
+          {
+            "name": "Trims",
             "children": []
           }
         ]
@@ -9753,6 +9804,10 @@
           },
           {
             "name": "Titanium",
+            "children": []
+          },
+          {
+            "name": "Trims",
             "children": []
           }
         ]

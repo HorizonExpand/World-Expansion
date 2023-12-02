@@ -70,6 +70,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.COPPER_HORN7.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN8.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN9.get());
+				tabData.accept(WorldExpansionModItems.BRUTE_ARMOR_TRIM_SMITHING_TEMPLATE.get());
 			})
 
 					.build());

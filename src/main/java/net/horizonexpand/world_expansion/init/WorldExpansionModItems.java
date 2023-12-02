@@ -33,6 +33,7 @@ import net.horizonexpand.world_expansion.item.CopperHorn4Item;
 import net.horizonexpand.world_expansion.item.CopperHorn3Item;
 import net.horizonexpand.world_expansion.item.CopperHorn2Item;
 import net.horizonexpand.world_expansion.item.CopperHorn1Item;
+import net.horizonexpand.world_expansion.item.BruteArmorTrimSmithingTemplateItem;
 import net.horizonexpand.world_expansion.block.display.HangingBottleWitnMiniFirefliesDisplayItem;
 import net.horizonexpand.world_expansion.block.display.HangingBottleDisplayItem;
 import net.horizonexpand.world_expansion.block.display.BottleWithMiniFirefliesDisplayItem;
@@ -114,6 +115,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> HANGING_BOTTLE = REGISTRY.register(WorldExpansionModBlocks.HANGING_BOTTLE.getId().getPath(), () -> new HangingBottleDisplayItem(WorldExpansionModBlocks.HANGING_BOTTLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> HANGING_BOTTLE_WITN_MINI_FIREFLIES = REGISTRY.register(WorldExpansionModBlocks.HANGING_BOTTLE_WITN_MINI_FIREFLIES.getId().getPath(),
 			() -> new HangingBottleWitnMiniFirefliesDisplayItem(WorldExpansionModBlocks.HANGING_BOTTLE_WITN_MINI_FIREFLIES.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BRUTE_ARMOR_TRIM_SMITHING_TEMPLATE = REGISTRY.register("brute_armor_trim_smithing_template", () -> new BruteArmorTrimSmithingTemplateItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
