@@ -1,0 +1,22 @@
+{
+  "_fv": 57,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:TumbleweedProjectile"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "block.mangrove_roots.break"
+    },
+    "igniteFire": false,
+    "power": 0.4,
+    "damage": 2.5,
+    "knockback": 0,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "TumbleweedProjectileKoghdaSnariadPopadaietVBlok"
+    }
+  }
+}

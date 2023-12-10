@@ -1,5 +1,5 @@
 {
-  "type": "world_expansion:grass_path",
+  "type": "minecraft:netherrack_replace_blobs",
   "config": {
     "target": {
       "Name": "minecraft:farmland",

@@ -1,0 +1,23 @@
+{
+  "_fv": 57,
+  "_type": "structure",
+  "definition": {
+    "structure": "baobab0",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.AIR"
+      }
+    ],
+    "spacing": 6,
+    "separation": 3,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Baobabvalley"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "VEGETAL_DECORATION"
+  }
+}

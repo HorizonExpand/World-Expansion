@@ -2,26 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "012",
-    "345"
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "world_expansion:kabanyt_bricks"
-    },
-    "1": {
-      "item": "world_expansion:kabanyt_bricks"
-    },
-    "2": {
-      "item": "world_expansion:kabanyt_bricks"
-    },
-    "3": {
-      "item": "world_expansion:kabanyt_bricks"
-    },
-    "4": {
-      "item": "world_expansion:kabanyt_bricks"
-    },
-    "5": {
+    "a": {
       "item": "world_expansion:kabanyt_bricks"
     }
   },

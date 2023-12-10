@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -231,7 +231,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_astilba_multicolored_craft_gui_t",
-          "image": "astilba_multicolored_craft_gui_tab_light.png",
+          "image": "astilba_multicolored_craft_gui_tab.png",
           "hoveredImage": "",
           "x": 298,
           "y": 71

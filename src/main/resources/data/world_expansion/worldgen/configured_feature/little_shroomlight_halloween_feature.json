@@ -1,5 +1,5 @@
 {
-  "type": "world_expansion:little_shroomlight_halloween_feature",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 256,
     "feature": {

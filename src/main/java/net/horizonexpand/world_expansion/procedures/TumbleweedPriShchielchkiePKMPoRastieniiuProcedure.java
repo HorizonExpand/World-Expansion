@@ -21,7 +21,7 @@ public class TumbleweedPriShchielchkiePKMPoRastieniiuProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.AIR.asItem()
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get()) {
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WorldExpansionModItems.TUMBLEWEED_ITEM.get()) {
 			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
@@ -31,7 +31,7 @@ public class TumbleweedPriShchielchkiePKMPoRastieniiuProcedure {
 				}
 			}
 			if (entity instanceof Player _player) {
-				ItemStack _setstack = new ItemStack(WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get());
+				ItemStack _setstack = new ItemStack(WorldExpansionModItems.TUMBLEWEED_ITEM.get());
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}

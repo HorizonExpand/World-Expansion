@@ -2,25 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    " 1 ",
-    "345",
-    " 7 "
+    " a ",
+    "aba",
+    " a "
   ],
   "key": {
-    "1": {
+    "a": {
       "item": "world_expansion:titanium_ingot"
     },
-    "3": {
-      "item": "world_expansion:titanium_ingot"
-    },
-    "4": {
+    "b": {
       "tag": "forge:stripped_log"
-    },
-    "5": {
-      "item": "world_expansion:titanium_ingot"
-    },
-    "7": {
-      "item": "world_expansion:titanium_ingot"
     }
   },
   "result": {

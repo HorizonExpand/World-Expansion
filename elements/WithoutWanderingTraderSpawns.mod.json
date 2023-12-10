@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Biomes",
@@ -16,8 +16,15 @@
       },
       {
         "value": "CUSTOM:HalloweenWheatField"
+      },
+      {
+        "value": "CUSTOM:HalloweenDarkForest"
+      },
+      {
+        "value": "CUSTOM:HalloweenPlains"
       }
     ],
+    "damageTypes": [],
     "name": "without_wandering_trader_spawns",
     "namespace": "minecraft"
   }

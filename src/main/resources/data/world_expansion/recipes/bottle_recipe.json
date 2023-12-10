@@ -2,15 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "0"
+    "a"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:glass_bottle"
     }
   },
   "result": {
-    "item": "world_expansion:bottle",
+    "item": "world_expansion:deleted_mod_element",
     "count": 1
   }
 }

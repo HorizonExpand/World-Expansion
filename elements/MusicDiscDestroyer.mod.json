@@ -1,15 +1,20 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "musicdisc",
   "definition": {
     "name": "Music Disc ",
+    "rarity": "RARE",
     "texture": "music_disc_destroyer",
-    "description": "Hrumer—Destroyer",
+    "description": "Hrumer — Destroyer",
     "creativeTab": {
       "value": "CUSTOM:Items"
     },
-    "specialInfo": [],
-    "hasGlow": false,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
     "music": {
       "value": "CUSTOM:music_disc_destroyer"
     },

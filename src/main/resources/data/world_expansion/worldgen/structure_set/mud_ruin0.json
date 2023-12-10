@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "world_expansion:mud_ruin0",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 20,
+    "salt": 544065145
+  }
+}

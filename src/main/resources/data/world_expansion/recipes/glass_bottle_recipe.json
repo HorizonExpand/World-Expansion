@@ -3,11 +3,11 @@
   "group": "glass_bottle",
   "category": "misc",
   "pattern": [
-    "0"
+    "a"
   ],
   "key": {
-    "0": {
-      "item": "world_expansion:bottle"
+    "a": {
+      "item": "world_expansion:deleted_mod_element"
     }
   },
   "result": {

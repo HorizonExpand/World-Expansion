@@ -1,0 +1,14 @@
+{
+  "type": "world_expansion:structure_feature",
+  "config": {
+    "structure": "world_expansion:died_acacia1",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block",
+    "offset": [
+      0,
+      -1,
+      0
+    ]
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Astilba Multicolored",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:NatureBlocks"
     },
@@ -79,11 +81,8 @@
     "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 6,
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
-    "generateCondition": {
-      "name": "AstilbamulticoloredDobavochnoieUsloviiePoGienieratsii"
-    },
     "generationType": "Flower",
     "patchSize": 12,
     "generateAtAnyHeight": false

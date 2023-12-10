@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "biome",
   "definition": {
     "name": "Died Savanna",
@@ -56,7 +56,7 @@
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
-      "min": 0.4,
+      "min": 0.0,
       "max": 1.0
     },
     "genHumidity": {
@@ -64,16 +64,16 @@
       "max": -0.2
     },
     "genContinentalness": {
-      "min": 0.3,
+      "min": 0.1,
       "max": 1.0
     },
     "genErosion": {
-      "min": -1.0,
+      "min": -0.2,
       "max": 0.5
     },
     "genWeirdness": {
       "min": -1.0,
-      "max": 1.0
+      "max": -0.5
     },
     "treesPerChunk": 0,
     "vanillaTreeType": "Default",

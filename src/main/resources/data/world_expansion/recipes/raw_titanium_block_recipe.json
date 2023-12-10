@@ -2,36 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aaa",
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "world_expansion:raw_titanium"
-    },
-    "1": {
-      "item": "world_expansion:raw_titanium"
-    },
-    "2": {
-      "item": "world_expansion:raw_titanium"
-    },
-    "3": {
-      "item": "world_expansion:raw_titanium"
-    },
-    "4": {
-      "item": "world_expansion:raw_titanium"
-    },
-    "5": {
-      "item": "world_expansion:raw_titanium"
-    },
-    "6": {
-      "item": "world_expansion:raw_titanium"
-    },
-    "7": {
-      "item": "world_expansion:raw_titanium"
-    },
-    "8": {
+    "a": {
       "item": "world_expansion:raw_titanium"
     }
   },

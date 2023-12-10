@@ -1,43 +1,56 @@
 {
-  "_fv": 47,
-  "_type": "rangeditem",
+  "_fv": 57,
+  "_type": "item",
   "definition": {
     "renderType": 0,
     "texture": "tumbleweed",
     "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
     "name": "Tumbleweed ",
-    "specialInfo": [],
+    "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:NatureBlocks"
     },
     "stackSize": 16,
-    "ammoItem": {
+    "enchantability": 0,
+    "useDuration": 72000,
+    "toolType": 0.0,
+    "damageCount": 0,
+    "recipeRemainder": {
       "value": ""
     },
-    "shootConstantly": true,
-    "usageCount": 0,
-    "actionSound": {
-      "value": "entity.arrow.shoot"
-    },
-    "hasGlow": false,
-    "animation": "bow",
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
     "enableMeleeDamage": true,
     "damageVsEntity": 2.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": true,
+    "shootConstantly": true,
+    "projectile": {
+      "value": "CUSTOM:TumbleweedProjectileProjectile"
+    },
     "onRangedItemUsed": {
       "name": "TumbleweedProjectilePoslieIspolzovaniiaSnariada"
     },
-    "bulletPower": 0.4,
-    "bulletDamage": 3.0,
-    "bulletKnockback": 0,
-    "bulletParticles": false,
-    "bulletIgnitesFire": false,
-    "bulletItemTexture": {
-      "value": "CUSTOM:Tumbleweed"
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": "",
-    "onBulletHitsBlock": {
-      "name": "TumbleweedProjectileKoghdaSnariadPopadaietVBlok"
-    }
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "bow"
   }
 }

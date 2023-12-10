@@ -1,0 +1,34 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Biomes",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [
+      {
+        "value": "savanna"
+      },
+      {
+        "value": "savanna_rock"
+      },
+      {
+        "value": "CUSTOM:Baobabvalley"
+      },
+      {
+        "value": "mangrove_swamp"
+      },
+      {
+        "value": "beaches"
+      },
+      {
+        "value": "desert"
+      }
+    ],
+    "damageTypes": [],
+    "name": "mud_ruin_based_to",
+    "namespace": "forge"
+  }
+}

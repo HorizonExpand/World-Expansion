@@ -1,6 +1,9 @@
 {
   "replace": false,
   "values": [
+    "world_expansion:titanium_ore",
+    "world_expansion:deepslate_titanium_ore",
+    "world_expansion:raw_titanium_block",
     "world_expansion:kabanyt",
     "world_expansion:kabanyt_stairs",
     "world_expansion:kabanyt_slab",
@@ -13,6 +16,7 @@
     "world_expansion:kabanyt_tiles_stairs",
     "world_expansion:kabanyt_tiles_slab",
     "world_expansion:kabanyt_tiles_wall",
-    "world_expansion:carved_kabanyt"
+    "world_expansion:carved_kabanyt",
+    "world_expansion:titanium_block"
   ]
 }

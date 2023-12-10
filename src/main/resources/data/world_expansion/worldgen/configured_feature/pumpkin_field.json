@@ -1,5 +1,5 @@
 {
-  "type": "world_expansion:pumpkin_field",
+  "type": "minecraft:random_patch",
   "config": {
     "xz_spread": 8,
     "y_spread": 8,

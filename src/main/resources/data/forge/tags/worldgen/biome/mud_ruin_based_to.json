@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "savanna_plateau",
+    "world_expansion:baobab_valley",
+    "savanna",
+    "beach",
+    "mangrove_swamp",
+    "desert"
+  ]
+}

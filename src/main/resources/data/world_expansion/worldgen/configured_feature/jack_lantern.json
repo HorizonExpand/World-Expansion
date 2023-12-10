@@ -1,5 +1,5 @@
 {
-  "type": "world_expansion:jack_lantern",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 96,
     "xz_spread": 8,

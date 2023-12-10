@@ -2,14 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "0",
-    "1"
+    "a",
+    "a"
   ],
   "key": {
-    "0": {
-      "item": "world_expansion:kabanyt_bricks_slab"
-    },
-    "1": {
+    "a": {
       "item": "world_expansion:kabanyt_bricks_slab"
     }
   },

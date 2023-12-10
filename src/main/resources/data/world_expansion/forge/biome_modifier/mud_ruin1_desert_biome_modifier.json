@@ -1,9 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": [
-    "beach",
-    "desert"
-  ],
-  "features": "world_expansion:mud_ruin1_desert",
-  "step": "surface_structures"
-}

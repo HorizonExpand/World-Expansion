@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Tumbleweed",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "No creative tab entry"
     },
@@ -59,9 +61,9 @@
     },
     "useLootTableForDrops": true,
     "customDrop": {
-      "value": "Items.STICK"
+      "value": ""
     },
-    "dropAmount": 2,
+    "dropAmount": 0,
     "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
@@ -1301,7 +1303,7 @@
     ],
     "isBonemealable": false,
     "frequencyOnChunks": 4,
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "generationType": "Flower",
     "patchSize": 54,

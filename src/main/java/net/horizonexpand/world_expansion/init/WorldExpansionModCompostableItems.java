@@ -23,7 +23,7 @@ public class WorldExpansionModCompostableItems {
 		ComposterBlock.COMPOSTABLES.put(WorldExpansionModItems.JUDAS_FRUIT.get(), 0.5f);
 		ComposterBlock.COMPOSTABLES.put(WorldExpansionModItems.SPLIT_JUDAS_FRUIT.get(), 0.5f);
 		ComposterBlock.COMPOSTABLES.put(WorldExpansionModItems.LEAVE_OF_ALOE_VERA.get(), 0.3f);
-		ComposterBlock.COMPOSTABLES.put(WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get(), 0.5f);
+		ComposterBlock.COMPOSTABLES.put(WorldExpansionModItems.TUMBLEWEED_ITEM.get(), 0.5f);
 		ComposterBlock.COMPOSTABLES.put(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem(), 0.3f);
 	}
 }

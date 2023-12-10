@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -376,7 +376,7 @@
         "type": "imagebutton",
         "data": {
           "name": "imagebutton_copper_horn_craft_gui_tab",
-          "image": "copper_horn_craft_gui_tab_light.png",
+          "image": "copper_horn_craft_gui_tab.png",
           "hoveredImage": "",
           "x": 298,
           "y": 53

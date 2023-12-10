@@ -11,13 +11,10 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
-import net.horizonexpand.world_expansion.client.renderer.MiniFireflyRenderer;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class WorldExpansionModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(WorldExpansionModEntities.TUMBLEWEED_PROJECTILE.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(WorldExpansionModEntities.MINI_FIREFLIES.get(), MiniFireflyRenderer::new);
 	}
 }

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "world_expansion:raiders_base_in_baobab",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 48,
+    "separation": 32,
+    "salt": 212624504
+  }
+}

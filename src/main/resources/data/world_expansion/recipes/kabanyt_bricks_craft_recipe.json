@@ -2,20 +2,11 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "pattern": [
-    "01",
-    "23"
+    "aa",
+    "aa"
   ],
   "key": {
-    "0": {
-      "item": "world_expansion:kabanyt"
-    },
-    "1": {
-      "item": "world_expansion:kabanyt"
-    },
-    "2": {
-      "item": "world_expansion:kabanyt"
-    },
-    "3": {
+    "a": {
       "item": "world_expansion:kabanyt"
     }
   },

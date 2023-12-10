@@ -2,37 +2,19 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "012",
-    "345",
-    "678"
+    "aba",
+    "aca",
+    "aaa"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "minecraft:diamond"
     },
-    "1": {
+    "b": {
       "item": "world_expansion:brute_armor_trim_smithing_template"
     },
-    "2": {
-      "item": "minecraft:diamond"
-    },
-    "3": {
-      "item": "minecraft:diamond"
-    },
-    "4": {
+    "c": {
       "item": "world_expansion:kabanyt"
-    },
-    "5": {
-      "item": "minecraft:diamond"
-    },
-    "6": {
-      "item": "minecraft:diamond"
-    },
-    "7": {
-      "item": "minecraft:diamond"
-    },
-    "8": {
-      "item": "minecraft:diamond"
     }
   },
   "result": {

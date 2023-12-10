@@ -1,9 +1,8 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "feature",
   "definition": {
     "generationStep": "UNDERGROUND_DECORATION",
-    "restrictionDimensions": [],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Baobabvalley"

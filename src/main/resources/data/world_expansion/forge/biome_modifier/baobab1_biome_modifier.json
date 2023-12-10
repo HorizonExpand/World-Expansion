@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "savanna",
-  "features": "world_expansion:baobab1",
-  "step": "surface_structures"
-}

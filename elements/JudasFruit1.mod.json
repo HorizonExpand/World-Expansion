@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "judas_fruit1",
@@ -43,7 +43,9 @@
       }
     ],
     "name": "Judas Fruit1",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 0.0,
     "resistance": 0.0,
     "hasGravity": false,
@@ -132,7 +134,7 @@
     "onTickUpdate": {
       "name": "JudasFruit1ObnovlieniieTika"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",

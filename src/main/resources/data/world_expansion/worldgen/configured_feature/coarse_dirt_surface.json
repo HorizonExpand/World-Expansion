@@ -1,5 +1,5 @@
 {
-  "type": "world_expansion:coarse_dirt_surface",
+  "type": "minecraft:netherrack_replace_blobs",
   "config": {
     "target": {
       "Name": "minecraft:gravel"

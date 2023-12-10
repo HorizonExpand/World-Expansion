@@ -1,10 +1,10 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tab",
   "definition": {
     "name": "WE: Mobs",
     "icon": {
-      "value": "CUSTOM:MiniFirefly.spawn_egg"
+      "value": "Blocks.CHERRY_SAPLING"
     },
     "showSearch": false
   }

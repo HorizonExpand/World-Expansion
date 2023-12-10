@@ -3,13 +3,10 @@
   "group": "wooden_pressure_plate",
   "category": "building",
   "pattern": [
-    "01"
+    "aa"
   ],
   "key": {
-    "0": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "1": {
+    "a": {
       "item": "world_expansion:baobab_planks"
     }
   },

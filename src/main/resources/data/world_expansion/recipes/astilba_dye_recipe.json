@@ -3,10 +3,10 @@
   "group": "pink_dye",
   "category": "misc",
   "pattern": [
-    "0"
+    "a"
   ],
   "key": {
-    "0": {
+    "a": {
       "item": "world_expansion:astilba"
     }
   },

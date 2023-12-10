@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -29,7 +29,9 @@
       }
     ],
     "name": "Aloe Vera",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "creativeTab": {
       "value": "CUSTOM:NatureBlocks"
     },
@@ -59,9 +61,9 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "CUSTOM:LeaveOfAloeVera"
+      "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
@@ -79,7 +81,7 @@
     "canBePlacedOn": [],
     "isBonemealable": false,
     "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "generationType": "Flower",
     "patchSize": 64,

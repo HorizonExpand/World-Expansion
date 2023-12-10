@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "world_expansion:halloween_forest",
-  "features": "world_expansion:halloween_forest_well",
-  "step": "surface_structures"
-}

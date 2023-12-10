@@ -6,9 +6,9 @@ license="GNU General Public License version 3 (GPLv3)"
 modId="world_expansion"
 version="0.0.2.0"
 displayName="World Expansion: Light and Dark"
-credits="Hrumer, Samuelchik"
 displayURL="https://discord.gg/sJayn3BYDh"
 logoFile="logo.png"
+credits="Hrumer, Samuelchik"
 authors="HorizonExpand"
 description="This mod pumps vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark forest"
 
@@ -21,10 +21,4 @@ description="This mod pumps vanilla biomes and adds new ones for a more interest
 
 
 
-[[dependencies.world_expansion]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 

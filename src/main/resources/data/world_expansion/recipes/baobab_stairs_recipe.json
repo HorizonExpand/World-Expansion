@@ -3,27 +3,12 @@
   "group": "wooden_stairs",
   "category": "building",
   "pattern": [
-    "0  ",
-    "34 ",
-    "678"
+    "a  ",
+    "aa ",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "3": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "4": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "6": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "7": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "8": {
+    "a": {
       "item": "world_expansion:baobab_planks"
     }
   },

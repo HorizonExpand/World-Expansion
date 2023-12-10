@@ -1,17 +1,18 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "tag",
   "definition": {
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:BreezeArmorTrimSmithingTemplate"
+        "value": "CUSTOM:BruteArmorTrimSmithingTemplate"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "trim_templates",
     "namespace": "minecraft"
   }

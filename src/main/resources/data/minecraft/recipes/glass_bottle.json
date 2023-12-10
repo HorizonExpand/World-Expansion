@@ -3,17 +3,11 @@
   "group": "glass_bottle",
   "category": "misc",
   "pattern": [
-    "0 2",
-    " 4 "
+    "a a",
+    " a "
   ],
   "key": {
-    "0": {
-      "tag": "forge:glass"
-    },
-    "2": {
-      "tag": "forge:glass"
-    },
-    "4": {
+    "a": {
       "tag": "forge:glass"
     }
   },

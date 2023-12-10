@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "world_expansion:halloween_dark_forest",
-  "features": "world_expansion:dark_oak_10",
-  "step": "surface_structures"
-}

@@ -1,5 +1,5 @@
 {
-  "type": "world_expansion:tumbleweed_feature",
+  "type": "minecraft:random_patch",
   "config": {
     "tries": 96,
     "feature": {

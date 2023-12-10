@@ -3,26 +3,11 @@
   "group": "wooden_trapdoor",
   "category": "building",
   "pattern": [
-    "012",
-    "345"
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "0": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "1": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "2": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "3": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "4": {
-      "item": "world_expansion:baobab_planks"
-    },
-    "5": {
+    "a": {
       "item": "world_expansion:baobab_planks"
     }
   },

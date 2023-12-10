@@ -1,0 +1,9 @@
+{
+  "type": "world_expansion:structure_feature",
+  "config": {
+    "structure": "world_expansion:halloween_dark_oak_scarecrow1",
+    "random_rotation": true,
+    "random_mirror": true,
+    "ignored_blocks": "minecraft:structure_block"
+  }
+}

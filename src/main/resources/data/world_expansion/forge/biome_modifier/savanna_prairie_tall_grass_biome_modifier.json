@@ -1,6 +1,10 @@
 {
   "type": "forge:add_features",
-  "biomes": "world_expansion:politania",
+  "biomes": [
+    "savanna_plateau",
+    "savanna",
+    "world_expansion:politania"
+  ],
   "features": "world_expansion:savanna_prairie_tall_grass",
   "step": "top_layer_modification"
 }

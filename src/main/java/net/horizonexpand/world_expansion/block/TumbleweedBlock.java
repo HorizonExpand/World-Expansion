@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.effect.MobEffects;
@@ -23,6 +24,7 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -30,6 +32,8 @@ import net.horizonexpand.world_expansion.procedures.TumbleweedPriShchielchkiePKM
 import net.horizonexpand.world_expansion.procedures.TumbleweedObnovlieniieTikaProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
+
+import java.util.List;
 
 public class TumbleweedBlock extends FlowerBlock {
 	public TumbleweedBlock() {
@@ -54,13 +58,18 @@ public class TumbleweedBlock extends FlowerBlock {
 	}
 
 	@Override
+	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+	}
+
+	@Override
 	public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 60;
 	}
 
 	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
-		return new ItemStack(WorldExpansionModItems.TUMBLEWEED_PROJECTILE.get());
+		return new ItemStack(WorldExpansionModItems.TUMBLEWEED_ITEM.get());
 	}
 
 	@Override

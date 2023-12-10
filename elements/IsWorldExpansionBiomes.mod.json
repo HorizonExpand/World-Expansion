@@ -1,0 +1,37 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Biomes",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [
+      {
+        "value": "CUSTOM:Baobabvalley"
+      },
+      {
+        "value": "CUSTOM:DiedSavanna"
+      },
+      {
+        "value": "CUSTOM:HalloweenDarkForest"
+      },
+      {
+        "value": "CUSTOM:HalloweenForest"
+      },
+      {
+        "value": "CUSTOM:HalloweenPlains"
+      },
+      {
+        "value": "CUSTOM:HalloweenWheatField"
+      },
+      {
+        "value": "CUSTOM:SavannaPrairie"
+      }
+    ],
+    "damageTypes": [],
+    "name": "is_world_expansion_biomes",
+    "namespace": "mod"
+  }
+}

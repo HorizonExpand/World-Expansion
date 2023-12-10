@@ -1,5 +1,5 @@
 {
-  "_fv": 47,
+  "_fv": 57,
   "_type": "block",
   "definition": {
     "texture": "dry_dirt0",
@@ -34,7 +34,9 @@
       }
     ],
     "name": "Dry Dirt",
-    "specialInfo": [],
+    "specialInformation": {
+      "fixedValue": []
+    },
     "hardness": 1.0,
     "resistance": 2.2,
     "hasGravity": true,
@@ -123,7 +125,7 @@
     "onTickUpdate": {
       "name": "DryDirtObnovlieniieTika"
     },
-    "spawnWorldTypes": [],
+    "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],
     "generationShape": "UNIFORM",
