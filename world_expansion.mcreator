@@ -8195,6 +8195,346 @@
         ]
       },
       "path": "~/Structures/Baobab"
+    },
+    {
+      "name": "SnowCannonBase",
+      "type": "block",
+      "sortid": 477,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_cannon_base",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/world_expansion/models/block/snow_cannon_base.json",
+          "src/main/java/net/horizonexpand/world_expansion/block/SnowCannonBaseBlock.java",
+          "src/main/resources/assets/world_expansion/models/item/snow_cannon_base.json",
+          "src/main/resources/assets/world_expansion/blockstates/snow_cannon_base.json",
+          "src/main/java/net/horizonexpand/world_expansion/block/entity/SnowCannonBaseBlockEntity.java"
+        ]
+      },
+      "path": "~/New Year 2024/Blocks"
+    },
+    {
+      "name": "SnowCannonBarrel",
+      "type": "block",
+      "sortid": 478,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_cannon_barrel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/world_expansion/models/block/snow_cannon_barrel.json",
+          "src/main/resources/assets/world_expansion/models/item/snow_cannon_barrel.json",
+          "src/main/java/net/horizonexpand/world_expansion/block/SnowCannonBarrelBlock.java",
+          "src/main/resources/assets/world_expansion/blockstates/snow_cannon_barrel.json"
+        ]
+      },
+      "path": "~/New Year 2024/Blocks"
+    },
+    {
+      "name": "SnowCannonBarrelUsloviieRazmieshchieniiaBloka",
+      "type": "procedure",
+      "sortid": 479,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_cannon_barrel_usloviie_razmieshchieniia_bloka",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/SnowCannonBarrelUsloviieRazmieshchieniiaBlokaProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "SnowCannonGUI",
+      "type": "gui",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_cannon_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/world/inventory/SnowCannonGUIMenu.java",
+          "src/main/java/net/horizonexpand/world_expansion/client/gui/SnowCannonGUIScreen.java",
+          "src/main/java/net/horizonexpand/world_expansion/network/SnowCannonGUISlotMessage.java"
+        ]
+      },
+      "path": "~/New Year 2024/GUI"
+    },
+    {
+      "name": "SnowBlocks",
+      "type": "tag",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/snow_blocks.json"
+        ]
+      },
+      "path": "~/Tags/Items"
+    },
+    {
+      "name": "SnowCannonBaseRiedstounVkliuchion",
+      "type": "procedure",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_cannon_base_riedstoun_vkliuchion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/SnowCannonBaseRiedstounVkliuchionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "PieceOfPowderSnow",
+      "type": "projectile",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piece_of_powder_snow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/entity/PieceOfPowderSnowEntity.java",
+          "src/main/java/net/horizonexpand/world_expansion/client/renderer/PieceOfPowderSnowRenderer.java"
+        ]
+      },
+      "path": "~/New Year 2024/Projectiles"
+    },
+    {
+      "name": "PieceOfPowderSnowKoghdaSnariadPopadaietVBlok",
+      "type": "procedure",
+      "sortid": 484,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piece_of_powder_snow_koghda_snariad_popadaiet_v_blok",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/PieceOfPowderSnowKoghdaSnariadPopadaietVBlokProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "Replaceable",
+      "type": "tag",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "replaceable",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/replaceable.json"
+        ]
+      },
+      "path": "~/Tags/Blocks"
+    },
+    {
+      "name": "SnowCannonGUIChangeSlot",
+      "type": "procedure",
+      "sortid": 486,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_cannon_gui_change_slot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/SnowCannonGUIChangeSlotProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "PieceOfSnow",
+      "type": "projectile",
+      "sortid": 487,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piece_of_snow",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/entity/PieceOfSnowEntity.java",
+          "src/main/java/net/horizonexpand/world_expansion/client/renderer/PieceOfSnowRenderer.java"
+        ]
+      },
+      "path": "~/New Year 2024/Projectiles"
+    },
+    {
+      "name": "PieceOfSnowKoghdaSnariadPopadaietVBlok",
+      "type": "procedure",
+      "sortid": 488,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piece_of_snow_koghda_snariad_popadaiet_v_blok",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/PieceOfSnowKoghdaSnariadPopadaietVBlokProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "PowderSnowValue",
+      "type": "procedure",
+      "sortid": 489,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powder_snow_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/PowderSnowValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "SnowValue",
+      "type": "procedure",
+      "sortid": 490,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snow_value",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/SnowValueProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
     }
   ],
   "variable_elements": [],
@@ -8469,25 +8809,25 @@
   ],
   "language_map": {
     "ru_ru": {
-      "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог ",
-      "item.world_expansion.copper_horn2": "Медный рог ",
+      "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "biome.world_expansion.politania": "Политания",
+      "item.world_expansion.copper_horn2": "Медный рог ",
       "item.world_expansion.copper_horn5": "Медный рог ",
-      "item.world_expansion.copper_horn4": "Медный рог ",
       "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
+      "item.world_expansion.copper_horn4": "Медный рог ",
       "item.world_expansion.copper_horn7": "Медный рог ",
       "item.world_expansion.copper_horn6": "Медный рог ",
       "advancements.world_expansion.title": "World Expansion",
       "block.world_expansion.little_shroomlight": "Маленький грибосвет",
-      "item.world_expansion.copper_horn9": "Медный рог ",
       "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
+      "item.world_expansion.copper_horn9": "Медный рог ",
       "item.world_expansion.copper_horn8": "Медный рог ",
       "block.world_expansion.kabanyt_slab": "Плита из кабанита",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
       "advancements.ancient_civilization_part_1.title": "Древняя Цивилизация: Часть 1",
-      "block.world_expansion.carved_kabanyt": "Резной кабанит",
       "block.world_expansion.baobab_fence": "Забор из древесины баобаба",
+      "block.world_expansion.carved_kabanyt": "Резной кабанит",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Инвентарь",
       "advancements.oh_great_baobab.title": "Ох, Великий Баобаб!",
       "block.world_expansion.baobab_fence_gate": "Калитка из древесины баобаба",
@@ -8505,6 +8845,7 @@
       "advancements.spookyfest.descr": "Отправляйтесь в жуткий тёмный мир, наполненный опасностями и ценной добычей!",
       "block.world_expansion.baobab_wood": "Кора баобаба",
       "item.minecraft.smithing_template.ingredients": "§7Материалы:",
+      "block.world_expansion.snow_cannon_barrel": "Дуло снежной пушки",
       "biome.world_expansion.halloween_forest": "Хеллоуинский лес",
       "block.world_expansion.kabanyt": "Кабанит",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_magenta_dye": "2x Сиреневый краситель",
@@ -8528,12 +8869,14 @@
       "item.world_expansion.tumbleweed_item": "Перекати-поле",
       "item.minecraft.smithing_template.armor_trim.ingredients": "§9Слитки и кристаллы",
       "biome.world_expansion.halloween_plains": "Хеллоуинская равнина",
+      "gui.world_expansion.snow_cannon_gui.label_powder_snow": "Рыхлый снег:",
       "block.world_expansion.stripped_baobab_log": "Обтёсанная древесина баобаба",
       "advancements.fallen_paradise.descr": "Найдите Мёртвую саванну",
       "item.minecraft.smithing_template.armor_trim.applies_to": " §9Доспехам",
       "block.world_expansion.raw_titanium_block": "Блок необработанного титана",
       "trim_material.world_expansion.titanium": "Титановый материал",
       "item.world_expansion.leave_of_aloe_vera": "Листки алое вера",
+      "block.world_expansion.snow_cannon_base": "Основание снежной пушки",
       "block.world_expansion.deepslate_titanium_ore": "Титаноносный глубинный сланец",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_yellow_dye": "1x Жёлтый краситель",
       "block.world_expansion.astilba": "Астильба",
@@ -8591,6 +8934,7 @@
       "block.world_expansion.kabanyt_tiles_slab": "Плита из плиточного кабанита",
       "gui.world_expansion.multi_crafting_table_gui_astilba.label_multicrafting_table": "Мульти-Верстак",
       "block.world_expansion.titanium_ore": "Титановая руда",
+      "gui.world_expansion.snow_cannon_gui.label_snow": "Снег:",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_cyan_dye": "2x Бирюзовый краситель",
       "block.world_expansion.astilba_multicolored": "Астильба многоцветная",
       "block.world_expansion.baobab_sapling": "Саженец баобаба",
@@ -8637,6 +8981,7 @@
       "advancements.spookyfest.descr": "Go on a Creepy Dark World Filled with Dangers and Valuable Loot!",
       "block.world_expansion.baobab_wood": "Baobab wood",
       "item.minecraft.smithing_template.ingredients": "§7Ingredients:",
+      "block.world_expansion.snow_cannon_barrel": "Snow Cannon Barrel",
       "biome.world_expansion.halloween_forest": "Halloween Forest",
       "block.world_expansion.kabanyt": "Kabanyt",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_magenta_dye": "2x Magenta Dye",
@@ -8660,12 +9005,14 @@
       "item.world_expansion.tumbleweed_item": "Tumbleweed ",
       "item.minecraft.smithing_template.armor_trim.ingredients": " §9Ingots \u0026 Crystals",
       "biome.world_expansion.halloween_plains": "Halloween Plains",
+      "gui.world_expansion.snow_cannon_gui.label_powder_snow": "Powder Snow:",
       "block.world_expansion.stripped_baobab_log": "Stripped baobab log",
       "advancements.fallen_paradise.descr": "Find the Dead Savanna",
       "item.minecraft.smithing_template.armor_trim.applies_to": " §9Armor",
       "block.world_expansion.raw_titanium_block": "Raw Titanium Block",
       "trim_material.world_expansion.titanium": "Titanium Material",
       "item.world_expansion.leave_of_aloe_vera": "Leave of aloe vera",
+      "block.world_expansion.snow_cannon_base": "Snow Cannon Base",
       "block.world_expansion.deepslate_titanium_ore": "Deepslate Titanium Ore",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_yellow_dye": "1x Yellow Dye",
       "block.world_expansion.astilba": "Astilba ",
@@ -8723,6 +9070,7 @@
       "block.world_expansion.kabanyt_tiles_slab": "Kabanyt tiles slab",
       "gui.world_expansion.multi_crafting_table_gui_astilba.label_multicrafting_table": "Multi-Crafting Table",
       "block.world_expansion.titanium_ore": "Titanium Ore",
+      "gui.world_expansion.snow_cannon_gui.label_snow": "Snow:",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_cyan_dye": "2x Cyan Dye",
       "block.world_expansion.astilba_multicolored": "Astilba Multicolored",
       "block.world_expansion.baobab_sapling": "Baobab sapling",
@@ -9152,6 +9500,27 @@
       {
         "name": "GUI",
         "children": []
+      },
+      {
+        "name": "New Year 2024",
+        "children": [
+          {
+            "name": "Blocks",
+            "children": []
+          },
+          {
+            "name": "Procedures",
+            "children": []
+          },
+          {
+            "name": "GUI",
+            "children": []
+          },
+          {
+            "name": "Projectiles",
+            "children": []
+          }
+        ]
       }
     ]
   },

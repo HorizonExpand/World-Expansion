@@ -46,6 +46,8 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.CARVED_KABANYT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BASE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BARREL.get().asItem());
 			})
 
 					.build());

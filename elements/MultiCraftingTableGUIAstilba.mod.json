@@ -46,7 +46,7 @@
         "data": {
           "name": "imagebutton_light_blue_dye_craft_gui",
           "image": "light_blue_dye_craft_gui.png",
-          "hoveredImage": "cyan_dye_craft_gui_light.png",
+          "hoveredImage": "light_blue_dye_craft_gui_light.png",
           "onClick": {
             "name": "DyeButtonLightBlue"
           },

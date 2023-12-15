@@ -104,6 +104,8 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
 	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
 	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
+	public static final RegistryObject<Item> SNOW_CANNON_BASE = block(WorldExpansionModBlocks.SNOW_CANNON_BASE);
+	public static final RegistryObject<Item> SNOW_CANNON_BARREL = block(WorldExpansionModBlocks.SNOW_CANNON_BARREL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -18,6 +18,8 @@ import net.horizonexpand.world_expansion.block.TakyrBlock;
 import net.horizonexpand.world_expansion.block.SuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobabwoodBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobablogBlock;
+import net.horizonexpand.world_expansion.block.SnowCannonBaseBlock;
+import net.horizonexpand.world_expansion.block.SnowCannonBarrelBlock;
 import net.horizonexpand.world_expansion.block.RawTitaniumBlockBlock;
 import net.horizonexpand.world_expansion.block.MultiCraftingTableBlock;
 import net.horizonexpand.world_expansion.block.LittleShroomlightBlock;
@@ -108,4 +110,6 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> JUDAS_FRUIT1 = REGISTRY.register("judas_fruit1", () -> new JudasFruit1Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_2 = REGISTRY.register("judas_fruit_2", () -> new JudasFruit2Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_3 = REGISTRY.register("judas_fruit_3", () -> new JudasFruit3Block());
+	public static final RegistryObject<Block> SNOW_CANNON_BASE = REGISTRY.register("snow_cannon_base", () -> new SnowCannonBaseBlock());
+	public static final RegistryObject<Block> SNOW_CANNON_BARREL = REGISTRY.register("snow_cannon_barrel", () -> new SnowCannonBarrelBlock());
 }

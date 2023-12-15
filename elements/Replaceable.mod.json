@@ -1,0 +1,301 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Astilbamulticolored"
+      },
+      {
+        "value": "CUSTOM:BaobabSapling"
+      },
+      {
+        "value": "CUSTOM:YellowAstilba"
+      },
+      {
+        "value": "CUSTOM:AloeVeraTiger"
+      },
+      {
+        "value": "CUSTOM:Tumbleweed"
+      },
+      {
+        "value": "CUSTOM:AloeVera"
+      },
+      {
+        "value": "CUSTOM:Astilba"
+      },
+      {
+        "value": "CUSTOM:LittleShroomlight"
+      },
+      {
+        "value": "Blocks.MOSS_CARPET"
+      },
+      {
+        "value": "Blocks.SAPLING#0"
+      },
+      {
+        "value": "Blocks.SAPLING#1"
+      },
+      {
+        "value": "Blocks.SAPLING#2"
+      },
+      {
+        "value": "Blocks.SAPLING#3"
+      },
+      {
+        "value": "Blocks.SAPLING#4"
+      },
+      {
+        "value": "Blocks.SAPLING#5"
+      },
+      {
+        "value": "Blocks.MANGROVE_PROPAGULE"
+      },
+      {
+        "value": "Blocks.REEDS"
+      },
+      {
+        "value": "Blocks.CHERRY_SAPLING"
+      },
+      {
+        "value": "Blocks.DEADBUSH"
+      },
+      {
+        "value": "Blocks.TALLGRASS#0"
+      },
+      {
+        "value": "Blocks.TALLGRASS#1"
+      },
+      {
+        "value": "Blocks.TALLGRASS#2"
+      },
+      {
+        "value": "Blocks.YELLOW_FLOWER"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#0"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#1"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#2"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#3"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#4"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#5"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#6"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#7"
+      },
+      {
+        "value": "Blocks.RED_FLOWER#8"
+      },
+      {
+        "value": "Blocks.CORNFLOWER"
+      },
+      {
+        "value": "Blocks.LILY_OF_THE_VALLEY"
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": "Blocks.TORCHFLOWER"
+      },
+      {
+        "value": "Blocks.PINK_PETALS"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#0"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#1"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#2"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#3"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#4"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT#5"
+      },
+      {
+        "value": "Blocks.PITCHER_PLANT"
+      },
+      {
+        "value": "Blocks.BROWN_MUSHROOM"
+      },
+      {
+        "value": "Blocks.RED_MUSHROOM"
+      },
+      {
+        "value": "Blocks.WARPED_FUNGUS"
+      },
+      {
+        "value": "Blocks.CRIMSON_FUNGUS"
+      },
+      {
+        "value": "Blocks.WHEAT"
+      },
+      {
+        "value": "Blocks.NETHER_WART"
+      },
+      {
+        "value": "Blocks.MELON_STEM"
+      },
+      {
+        "value": "Blocks.ATTACHED_MELON_STEM"
+      },
+      {
+        "value": "Blocks.PUMPKIN_STEM"
+      },
+      {
+        "value": "Blocks.ATTACHED_PUMPKIN_STEM"
+      },
+      {
+        "value": "Blocks.SWEET_BERRY_BUSH"
+      },
+      {
+        "value": "Blocks.VINE"
+      },
+      {
+        "value": "Blocks.GLOW_LICHEN"
+      },
+      {
+        "value": "Blocks.WATERLILY"
+      },
+      {
+        "value": "Blocks.BEETROOTS"
+      },
+      {
+        "value": "Blocks.CARROTS"
+      },
+      {
+        "value": "Blocks.POTATOES"
+      },
+      {
+        "value": "Blocks.TORCHFLOWER_CROP"
+      },
+      {
+        "value": "Blocks.PITCHER_CROP"
+      },
+      {
+        "value": "Blocks.KELP"
+      },
+      {
+        "value": "Blocks.KELP_PLANT"
+      },
+      {
+        "value": "Blocks.SEAGRASS"
+      },
+      {
+        "value": "Blocks.TALL_SEAGRASS"
+      },
+      {
+        "value": "Blocks.SEA_PICKLE"
+      },
+      {
+        "value": "Blocks.BAMBOO_SAPLING"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_TUBE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BRAIN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_BUBBLE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_FIRE_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.DEAD_HORN_CORAL_WALL_FAN"
+      },
+      {
+        "value": "Blocks.WARPED_ROOTS"
+      },
+      {
+        "value": "Blocks.NETHER_SPROUTS"
+      },
+      {
+        "value": "Blocks.WEEPING_VINES"
+      },
+      {
+        "value": "Blocks.WEEPING_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.TWISTING_VINES"
+      },
+      {
+        "value": "Blocks.TWISTING_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.CRIMSON_ROOTS"
+      },
+      {
+        "value": "Blocks.CAVE_VINES"
+      },
+      {
+        "value": "Blocks.CAVE_VINES_PLANT"
+      },
+      {
+        "value": "Blocks.SPORE_BLOSSOM"
+      },
+      {
+        "value": "Blocks.HANGING_ROOTS"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "replaceable",
+    "namespace": "forge"
+  }
+}

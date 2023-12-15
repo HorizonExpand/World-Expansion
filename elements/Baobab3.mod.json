@@ -9,8 +9,8 @@
         "value": "Blocks.AIR"
       }
     ],
-    "spacing": 6,
-    "separation": 3,
+    "spacing": 5,
+    "separation": 2,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:Baobabvalley"

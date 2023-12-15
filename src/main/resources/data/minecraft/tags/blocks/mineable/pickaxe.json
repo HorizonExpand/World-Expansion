@@ -17,6 +17,8 @@
     "world_expansion:kabanyt_tiles_slab",
     "world_expansion:kabanyt_tiles_wall",
     "world_expansion:carved_kabanyt",
-    "world_expansion:titanium_block"
+    "world_expansion:titanium_block",
+    "world_expansion:snow_cannon_base",
+    "world_expansion:snow_cannon_barrel"
   ]
 }

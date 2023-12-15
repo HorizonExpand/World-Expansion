@@ -1,0 +1,25 @@
+{
+  "_fv": 57,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Blocks.SNOW"
+      },
+      {
+        "value": "Blocks.POWDER_SNOW"
+      },
+      {
+        "value": "Items.POWDER_SNOW_BUCKET"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "damageTypes": [],
+    "name": "snow_blocks",
+    "namespace": "forge"
+  }
+}
