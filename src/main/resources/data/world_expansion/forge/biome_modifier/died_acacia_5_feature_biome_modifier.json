@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "world_expansion:died_savanna",
-  "features": "world_expansion:died_acacia_5_feature",
-  "step": "vegetal_decoration"
-}

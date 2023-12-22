@@ -131,6 +131,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onNeighbourBlockChanges": {
+      "name": "JudasFruitPriIzmienieniiSosiednieghoBloka"
+    },
     "onTickUpdate": {
       "name": "JudasFruit1ObnovlieniieTika"
     },

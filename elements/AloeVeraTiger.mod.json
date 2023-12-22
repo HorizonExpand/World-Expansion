@@ -73,7 +73,7 @@
       "value": ""
     },
     "offsetType": "XZ",
-    "aiPathNodeType": "DAMAGE_CAUTIOUS",
+    "aiPathNodeType": "DAMAGE_OTHER",
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,

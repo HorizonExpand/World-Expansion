@@ -15,12 +15,10 @@
         "value": "CUSTOM:SavannaPrairie"
       },
       {
-        "value": "CUSTOM:DiedSavanna"
-      },
-      {
-        "value": "CUSTOM:HalloweenForest"
+        "value": "CUSTOM:DrySavanna"
       }
     ],
+    "damageTypes": [],
     "name": "is_overworld",
     "namespace": "minecraft"
   }

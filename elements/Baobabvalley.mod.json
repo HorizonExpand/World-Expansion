@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -6176967,
+      "value": -4740034,
       "falpha": 0.0
     },
     "waterColor": {
@@ -50,26 +50,26 @@
       "value": "EXPLOSION_NORMAL"
     },
     "particlesProbability": 0.5,
-    "rainingPossibility": 0.6,
-    "temperature": 1.0,
+    "rainingPossibility": 0.7,
+    "temperature": 1.0999999999999999,
     "spawnBiome": true,
     "spawnInCaves": false,
     "spawnBiomeNether": false,
     "genTemperature": {
       "min": 0.2,
-      "max": 0.8
+      "max": 0.9
     },
     "genHumidity": {
       "min": -0.3,
-      "max": 0.2
+      "max": 0.3
     },
     "genContinentalness": {
       "min": -0.2,
       "max": 1.0
     },
     "genErosion": {
-      "min": -0.7,
-      "max": 0.7
+      "min": -0.6,
+      "max": 0.5
     },
     "genWeirdness": {
       "min": -1.0,

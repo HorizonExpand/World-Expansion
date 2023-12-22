@@ -68,8 +68,5 @@ public class JudasFruit2ObnovlieniieTikaProcedure {
 				}
 			}
 		}
-		if (!((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == WorldExpansionModBlocks.BAOBAB_LEAVES.get())) {
-			world.destroyBlock(BlockPos.containing(x, y, z), false);
-		}
 	}
 }

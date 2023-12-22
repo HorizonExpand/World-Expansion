@@ -77,6 +77,8 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> ASTILBA = REGISTRY.register("astilba", () -> new AstilbaBlock());
 	public static final RegistryObject<Block> ASTILBA_MULTICOLORED = REGISTRY.register("astilba_multicolored", () -> new AstilbamulticoloredBlock());
 	public static final RegistryObject<Block> LITTLE_SHROOMLIGHT = REGISTRY.register("little_shroomlight", () -> new LittleShroomlightBlock());
+	public static final RegistryObject<Block> TITANIUM_BLOCK = REGISTRY.register("titanium_block", () -> new TitaniumBlockBlock());
+	public static final RegistryObject<Block> MULTI_CRAFTING_TABLE = REGISTRY.register("multi_crafting_table", () -> new MultiCraftingTableBlock());
 	public static final RegistryObject<Block> BAOBAB_WOOD = REGISTRY.register("baobab_wood", () -> new BaobabWoodBlock());
 	public static final RegistryObject<Block> BAOBAB_LOG = REGISTRY.register("baobab_log", () -> new BaobabLogBlock());
 	public static final RegistryObject<Block> STRIPPED_BAOBAB_WOOD = REGISTRY.register("stripped_baobab_wood", () -> new StrippedbaobabwoodBlock());
@@ -103,13 +105,11 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> KABANYT_TILES_SLAB = REGISTRY.register("kabanyt_tiles_slab", () -> new KabanyttilesslabBlock());
 	public static final RegistryObject<Block> KABANYT_TILES_WALL = REGISTRY.register("kabanyt_tiles_wall", () -> new KabanyttileswallBlock());
 	public static final RegistryObject<Block> CARVED_KABANYT = REGISTRY.register("carved_kabanyt", () -> new CarvedkabanytBlock());
-	public static final RegistryObject<Block> TITANIUM_BLOCK = REGISTRY.register("titanium_block", () -> new TitaniumBlockBlock());
-	public static final RegistryObject<Block> MULTI_CRAFTING_TABLE = REGISTRY.register("multi_crafting_table", () -> new MultiCraftingTableBlock());
+	public static final RegistryObject<Block> SNOW_CANNON_BASE = REGISTRY.register("snow_cannon_base", () -> new SnowCannonBaseBlock());
+	public static final RegistryObject<Block> SNOW_CANNON_BARREL = REGISTRY.register("snow_cannon_barrel", () -> new SnowCannonBarrelBlock());
 	public static final RegistryObject<Block> JACK_O_LANTERN_WITH_SOUL = REGISTRY.register("jack_o_lantern_with_soul", () -> new JackOLanternWithSoulBlock());
 	public static final RegistryObject<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", () -> new TumbleweedBlock());
 	public static final RegistryObject<Block> JUDAS_FRUIT1 = REGISTRY.register("judas_fruit1", () -> new JudasFruit1Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_2 = REGISTRY.register("judas_fruit_2", () -> new JudasFruit2Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_3 = REGISTRY.register("judas_fruit_3", () -> new JudasFruit3Block());
-	public static final RegistryObject<Block> SNOW_CANNON_BASE = REGISTRY.register("snow_cannon_base", () -> new SnowCannonBaseBlock());
-	public static final RegistryObject<Block> SNOW_CANNON_BARREL = REGISTRY.register("snow_cannon_barrel", () -> new SnowCannonBarrelBlock());
 }

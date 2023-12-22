@@ -19,11 +19,13 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 
+import java.util.Calendar;
+
 public class JackOLanternWithSoulPriShchielchkiePKMPoBlokuProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity.level().dimension()) == Level.OVERWORLD) {
+		if ((entity.level().dimension()) == Level.OVERWORLD && Calendar.getInstance().get(Calendar.MONTH) == 10) {
 			world.destroyBlock(BlockPos.containing(x, y, z), false);
 			if (entity instanceof ServerPlayer _player && !_player.level().isClientSide()) {
 				ResourceKey<Level> destinationType = ResourceKey.create(Registries.DIMENSION, new ResourceLocation("world_expansion:spookyfest_world"));

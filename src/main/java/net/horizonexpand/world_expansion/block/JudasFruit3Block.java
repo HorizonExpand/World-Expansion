@@ -25,6 +25,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
+import net.horizonexpand.world_expansion.procedures.JudasFruit3PriIzmienieniiSosiednieghoBlokaProcedure;
 import net.horizonexpand.world_expansion.procedures.JudasFruit3ObnovlieniieTikaProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
 import net.horizonexpand.world_expansion.block.entity.JudasFruit3BlockEntity;
@@ -73,6 +74,12 @@ public class JudasFruit3Block extends Block implements EntityBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(WorldExpansionModItems.JUDAS_FRUIT.get()));
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		JudasFruit3PriIzmienieniiSosiednieghoBlokaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

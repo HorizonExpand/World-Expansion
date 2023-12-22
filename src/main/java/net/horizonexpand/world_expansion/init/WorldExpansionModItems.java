@@ -52,6 +52,8 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> ASTILBA = block(WorldExpansionModBlocks.ASTILBA);
 	public static final RegistryObject<Item> ASTILBA_MULTICOLORED = block(WorldExpansionModBlocks.ASTILBA_MULTICOLORED);
 	public static final RegistryObject<Item> LITTLE_SHROOMLIGHT = block(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT);
+	public static final RegistryObject<Item> TITANIUM_BLOCK = block(WorldExpansionModBlocks.TITANIUM_BLOCK);
+	public static final RegistryObject<Item> MULTI_CRAFTING_TABLE = block(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE);
 	public static final RegistryObject<Item> BAOBAB_WOOD = block(WorldExpansionModBlocks.BAOBAB_WOOD);
 	public static final RegistryObject<Item> BAOBAB_LOG = block(WorldExpansionModBlocks.BAOBAB_LOG);
 	public static final RegistryObject<Item> STRIPPED_BAOBAB_WOOD = block(WorldExpansionModBlocks.STRIPPED_BAOBAB_WOOD);
@@ -78,8 +80,8 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> KABANYT_TILES_SLAB = block(WorldExpansionModBlocks.KABANYT_TILES_SLAB);
 	public static final RegistryObject<Item> KABANYT_TILES_WALL = block(WorldExpansionModBlocks.KABANYT_TILES_WALL);
 	public static final RegistryObject<Item> CARVED_KABANYT = block(WorldExpansionModBlocks.CARVED_KABANYT);
-	public static final RegistryObject<Item> TITANIUM_BLOCK = block(WorldExpansionModBlocks.TITANIUM_BLOCK);
-	public static final RegistryObject<Item> MULTI_CRAFTING_TABLE = block(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE);
+	public static final RegistryObject<Item> SNOW_CANNON_BASE = block(WorldExpansionModBlocks.SNOW_CANNON_BASE);
+	public static final RegistryObject<Item> SNOW_CANNON_BARREL = block(WorldExpansionModBlocks.SNOW_CANNON_BARREL);
 	public static final RegistryObject<Item> TITANIUM_INGOT = REGISTRY.register("titanium_ingot", () -> new TitaniumIngotItem());
 	public static final RegistryObject<Item> RAW_TITANIUM = REGISTRY.register("raw_titanium", () -> new RawTitaniumItem());
 	public static final RegistryObject<Item> JUDAS_FRUIT = REGISTRY.register("judas_fruit", () -> new JudasFruitItem());
@@ -104,8 +106,6 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
 	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
 	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
-	public static final RegistryObject<Item> SNOW_CANNON_BASE = block(WorldExpansionModBlocks.SNOW_CANNON_BASE);
-	public static final RegistryObject<Item> SNOW_CANNON_BARREL = block(WorldExpansionModBlocks.SNOW_CANNON_BARREL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

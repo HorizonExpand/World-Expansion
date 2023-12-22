@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "world_expansion:takyr"
+      "item": "minecraft:coarse_dirt"
     },
     "title": {
       "translate": "advancements.fallen_paradise.title"
@@ -24,7 +24,7 @@
             "entity": "this",
             "predicate": {
               "location": {
-                "biome": "world_expansion:died_savanna"
+                "biome": "world_expansion:dry_savanna"
               }
             }
           }

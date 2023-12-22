@@ -15,9 +15,10 @@
         "value": "CUSTOM:SavannaPrairie"
       },
       {
-        "value": "CUSTOM:DiedSavanna"
+        "value": "CUSTOM:DrySavanna"
       }
     ],
+    "damageTypes": [],
     "name": "is_savanna",
     "namespace": "minecraft"
   }

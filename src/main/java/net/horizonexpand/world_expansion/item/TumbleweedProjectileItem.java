@@ -21,7 +21,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.Component;
 
-import net.horizonexpand.world_expansion.procedures.TumbleweedProjectilePoslieIspolzovaniiaSnariadaProcedure;
 import net.horizonexpand.world_expansion.entity.TumbleweedProjectileProjectileEntity;
 
 import java.util.List;
@@ -74,7 +73,7 @@ public class TumbleweedProjectileItem extends Item {
 	}
 
 	@Override
-	public void onUseTick(Level world, LivingEntity entity, ItemStack itemstack, int count) {
+	public void releaseUsing(ItemStack itemstack, Level world, LivingEntity entity, int time) {
 		if (!world.isClientSide() && entity instanceof ServerPlayer player) {
 			ItemStack stack = ProjectileWeaponItem.getHeldProjectile(entity, e -> e.getItem() == TumbleweedProjectileProjectileEntity.PROJECTILE_ITEM.getItem());
 			if (stack == ItemStack.EMPTY) {
@@ -105,9 +104,7 @@ public class TumbleweedProjectileItem extends Item {
 							player.getInventory().removeItem(stack);
 					}
 				}
-				TumbleweedProjectilePoslieIspolzovaniiaSnariadaProcedure.execute(entity, itemstack);
 			}
-			entity.releaseUsingItem();
 		}
 	}
 }

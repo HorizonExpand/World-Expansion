@@ -1,9 +1,8 @@
 {
   "replace": false,
   "values": [
-    "world_expansion:died_savanna",
-    "world_expansion:halloween_forest",
     "world_expansion:baobab_valley",
+    "world_expansion:dry_savanna",
     "world_expansion:politania"
   ]
 }

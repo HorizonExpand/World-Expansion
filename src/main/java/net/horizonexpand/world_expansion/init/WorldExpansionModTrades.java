@@ -37,6 +37,6 @@ public class WorldExpansionModTrades {
 				new ItemStack(Items.EXPERIENCE_BOTTLE), 4, 5, 0.55f));
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 5),
 
-				new ItemStack(Items.GOAT_HORN), 2, 5, 0.2f));
+				new ItemStack(WorldExpansionModItems.COPPER_HORN7.get()), 2, 5, 0.2f));
 	}
 }

@@ -36,12 +36,9 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "enableRanged": true,
-    "shootConstantly": true,
+    "shootConstantly": false,
     "projectile": {
       "value": "CUSTOM:TumbleweedProjectileProjectile"
-    },
-    "onRangedItemUsed": {
-      "name": "TumbleweedProjectilePoslieIspolzovaniiaSnariada"
     },
     "isFood": false,
     "nutritionalValue": 0,

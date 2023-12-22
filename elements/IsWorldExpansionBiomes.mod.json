@@ -12,9 +12,6 @@
         "value": "CUSTOM:Baobabvalley"
       },
       {
-        "value": "CUSTOM:DiedSavanna"
-      },
-      {
         "value": "CUSTOM:HalloweenDarkForest"
       },
       {
@@ -28,6 +25,9 @@
       },
       {
         "value": "CUSTOM:SavannaPrairie"
+      },
+      {
+        "value": "CUSTOM:DrySavanna"
       }
     ],
     "damageTypes": [],

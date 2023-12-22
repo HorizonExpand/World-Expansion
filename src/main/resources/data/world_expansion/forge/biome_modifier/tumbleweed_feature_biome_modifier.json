@@ -1,10 +1,10 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "world_expansion:died_savanna",
     "badlands",
     "windswept_savanna",
     "wooded_badlands",
+    "world_expansion:dry_savanna",
     "desert",
     "eroded_badlands"
   ],

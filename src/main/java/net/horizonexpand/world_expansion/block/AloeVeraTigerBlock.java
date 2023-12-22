@@ -52,7 +52,7 @@ public class AloeVeraTigerBlock extends FlowerBlock {
 
 	@Override
 	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
-		return BlockPathTypes.DAMAGE_CAUTIOUS;
+		return BlockPathTypes.DAMAGE_OTHER;
 	}
 
 	@Override

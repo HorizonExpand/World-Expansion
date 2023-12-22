@@ -1,7 +1,7 @@
 {
   "has_precipitation": true,
-  "temperature": 1,
-  "downfall": 0.6,
+  "temperature": 1.1,
+  "downfall": 0.7,
   "effects": {
     "music": {
       "sound": "music.creative",
@@ -9,7 +9,7 @@
       "max_delay": 24000,
       "replace_current_music": true
     },
-    "foliage_color": -6176967,
+    "foliage_color": -4740034,
     "grass_color": -4407495,
     "sky_color": -10318145,
     "fog_color": -10318145,

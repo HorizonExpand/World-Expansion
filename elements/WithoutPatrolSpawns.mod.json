@@ -9,9 +9,10 @@
     "entities": [],
     "biomes": [
       {
-        "value": "CUSTOM:DiedSavanna"
+        "value": "CUSTOM:DrySavanna"
       }
     ],
+    "damageTypes": [],
     "name": "without_patrol_spawns",
     "namespace": "minecraft"
   }

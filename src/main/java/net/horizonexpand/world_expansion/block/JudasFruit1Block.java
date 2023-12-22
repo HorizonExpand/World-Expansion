@@ -26,6 +26,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
+import net.horizonexpand.world_expansion.procedures.JudasFruitPriIzmienieniiSosiednieghoBlokaProcedure;
 import net.horizonexpand.world_expansion.procedures.JudasFruit1PriIspolzovaniiKostnoiMukiProcedure;
 import net.horizonexpand.world_expansion.procedures.JudasFruit1ObnovlieniieTikaProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
@@ -66,6 +67,12 @@ public class JudasFruit1Block extends Block implements EntityBlock, Bonemealable
 	@Override
 	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
 		return new ItemStack(WorldExpansionModItems.JUDAS_FRUIT.get());
+	}
+
+	@Override
+	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
+		JudasFruitPriIzmienieniiSosiednieghoBlokaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

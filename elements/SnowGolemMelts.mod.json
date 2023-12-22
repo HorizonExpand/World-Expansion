@@ -12,12 +12,13 @@
         "value": "CUSTOM:Baobabvalley"
       },
       {
-        "value": "CUSTOM:DiedSavanna"
+        "value": "CUSTOM:SavannaPrairie"
       },
       {
-        "value": "CUSTOM:SavannaPrairie"
+        "value": "CUSTOM:DrySavanna"
       }
     ],
+    "damageTypes": [],
     "name": "snow_golem_melts",
     "namespace": "minecraft"
   }

@@ -9,9 +9,6 @@
     "entities": [],
     "biomes": [
       {
-        "value": "CUSTOM:DiedSavanna"
-      },
-      {
         "value": "CUSTOM:HalloweenForest"
       },
       {
@@ -22,6 +19,9 @@
       },
       {
         "value": "CUSTOM:HalloweenPlains"
+      },
+      {
+        "value": "CUSTOM:DrySavanna"
       }
     ],
     "damageTypes": [],

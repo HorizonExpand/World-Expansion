@@ -18,6 +18,8 @@ public class WorldExpansionModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WorldExpansionMod.MODID);
 	public static final RegistryObject<CreativeModeTab> BUILDING_BLOCKS = REGISTRY.register("building_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.building_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LOG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WorldExpansionModBlocks.TITANIUM_BLOCK.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_WOOD.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LOG.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.STRIPPED_BAOBAB_WOOD.get().asItem());
@@ -44,8 +46,6 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_SLAB.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_WALL.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.CARVED_KABANYT.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.TITANIUM_BLOCK.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BASE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BARREL.get().asItem());
 			})
