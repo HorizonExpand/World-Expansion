@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "beacon_base_blocks",
     "namespace": "minecraft"
   }

@@ -7101,20 +7101,6 @@
       "path": "~/Procedures/Multi-Crafting Table/Dye"
     },
     {
-      "name": "BeaconBaseBlocks",
-      "type": "tag",
-      "sortid": 376,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "beacon_base_blocks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/beacon_base_blocks.json"
-        ]
-      },
-      "path": "~/Tags/Blocks"
-    },
-    {
       "name": "DeepslateTitaniumOre",
       "type": "block",
       "sortid": 2,
@@ -8721,6 +8707,20 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "BeaconBaseBlockBlocks",
+      "type": "tag",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "beacon_base_block_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/beacon_base_blocks.json"
+        ]
+      },
+      "path": "~/Tags/Blocks"
     }
   ],
   "variable_elements": [],
@@ -8995,25 +8995,25 @@
   ],
   "language_map": {
     "ru_ru": {
-      "item.world_expansion.copper_horn3": "Медный рог ",
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
-      "item.world_expansion.copper_horn2": "Медный рог ",
+      "item.world_expansion.copper_horn3": "Медный рог ",
       "biome.world_expansion.politania": "Политания",
+      "item.world_expansion.copper_horn2": "Медный рог ",
       "item.world_expansion.copper_horn5": "Медный рог ",
-      "item.world_expansion.copper_horn4": "Медный рог ",
       "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
+      "item.world_expansion.copper_horn4": "Медный рог ",
       "item.world_expansion.copper_horn7": "Медный рог ",
       "item.world_expansion.copper_horn6": "Медный рог ",
       "advancements.world_expansion.title": "World Expansion",
       "block.world_expansion.little_shroomlight": "Маленький грибосвет",
-      "item.world_expansion.copper_horn9": "Медный рог ",
       "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
+      "item.world_expansion.copper_horn9": "Медный рог ",
       "item.world_expansion.copper_horn8": "Медный рог ",
       "block.world_expansion.kabanyt_slab": "Плита из кабанита",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
       "advancements.ancient_civilization_part_1.title": "Древняя Цивилизация: Часть 1",
-      "block.world_expansion.baobab_fence": "Забор из древесины баобаба",
       "block.world_expansion.carved_kabanyt": "Резной кабанит",
+      "block.world_expansion.baobab_fence": "Забор из древесины баобаба",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Инвентарь",
       "advancements.oh_great_baobab.title": "Ох, Великий Баобаб!",
       "block.world_expansion.baobab_fence_gate": "Калитка из древесины баобаба",
@@ -9131,25 +9131,25 @@
       "item.world_expansion.copper_horn0": "Медный рог "
     },
     "en_us": {
-      "item.world_expansion.copper_horn3": "Copper Horn",
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
-      "biome.world_expansion.politania": "Politania",
+      "item.world_expansion.copper_horn3": "Copper Horn",
       "item.world_expansion.copper_horn2": "Copper Horn",
+      "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn5": "Copper Horn",
-      "item.world_expansion.copper_horn4": "Copper Horn",
       "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
+      "item.world_expansion.copper_horn4": "Copper Horn",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
       "item.world_expansion.copper_horn6": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
-      "item.world_expansion.copper_horn9": "Copper Horn",
       "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
+      "item.world_expansion.copper_horn9": "Copper Horn",
       "item.world_expansion.copper_horn8": "Copper Horn",
       "block.world_expansion.kabanyt_slab": "Kabanyt slab",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
       "advancements.ancient_civilization_part_1.title": "Ancient Civilization: Part 1",
-      "block.world_expansion.baobab_fence": "Baobab fence",
       "block.world_expansion.carved_kabanyt": "Carved kabanyt",
+      "block.world_expansion.baobab_fence": "Baobab fence",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
       "advancements.oh_great_baobab.title": "Oh, Great Baobab!",
       "block.world_expansion.baobab_fence_gate": "Baobab fence gate",
@@ -9718,7 +9718,7 @@
   "workspaceSettings": {
     "modid": "world_expansion",
     "modName": "World Expansion: Light and Dark",
-    "version": "0.1.0",
+    "version": "0.0.2.0",
     "description": "This mod pumps vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark forest",
     "author": "HorizonExpand",
     "websiteURL": "https://discord.gg/sJayn3BYDh",
@@ -9735,5 +9735,5 @@
     "modElementsPackage": "net.horizonexpand.world_expansion",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300449117
+  "mcreatorVersion": 202300451615
 }
