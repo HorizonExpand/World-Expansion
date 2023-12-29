@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 264,
+    "width": 298,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -106,7 +106,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 123,
+          "x": 78,
           "y": 89
         }
       },
@@ -121,7 +121,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 123,
+          "x": 78,
           "y": 107
         }
       },
@@ -136,7 +136,7 @@
             "value": -12829636,
             "falpha": 0.0
           },
-          "x": 123,
+          "x": 78,
           "y": 125
         }
       },
@@ -161,7 +161,7 @@
       "sy": 9,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }
