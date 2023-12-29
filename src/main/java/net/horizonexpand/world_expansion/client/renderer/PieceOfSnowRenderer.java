@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class PieceOfSnowRenderer extends EntityRenderer<PieceOfSnowEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("world_expansion:textures/entities/snow.png");
+	private static final ResourceLocation texture = new ResourceLocation("world_expansion:textures/entities/piece_of_snow.png");
 	private final Modelpiece_of_powder_snow model;
 
 	public PieceOfSnowRenderer(EntityRendererProvider.Context context) {

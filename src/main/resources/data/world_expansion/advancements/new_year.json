@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "world_expansion:textures/screens/snow.png",
+    "icon": {
+      "item": "minecraft:cookie"
+    },
+    "title": {
+      "translate": "advancements.new_year.title"
+    },
+    "description": {
+      "translate": "advancements.new_year.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "new_year": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "minecraft:overworld"
+      }
+    }
+  }
+}

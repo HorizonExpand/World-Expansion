@@ -46,8 +46,6 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_SLAB.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_WALL.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.CARVED_KABANYT.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BASE.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BARREL.get().asItem());
 			})
 
 					.build());
@@ -61,6 +59,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.BRUTE_ARMOR_TRIM_SMITHING_TEMPLATE.get());
 				tabData.accept(WorldExpansionModItems.PIECE_TOTEM_OF_UNDYING.get());
 				tabData.accept(WorldExpansionModItems.MUSIC_DISC_DESTROYER.get());
+				tabData.accept(WorldExpansionModItems.WINDOMETER.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN0.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN1.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN2.get());
@@ -74,8 +73,8 @@ public class WorldExpansionModTabs {
 			})
 
 					.build());
-	public static final RegistryObject<CreativeModeTab> WE_HALLOWEEN = REGISTRY.register("we_halloween",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.we_halloween")).icon(() -> new ItemStack(WorldExpansionModItems.SOUL.get())).displayItems((parameters, tabData) -> {
+	public static final RegistryObject<CreativeModeTab> HALLOWEEN = REGISTRY.register("halloween",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.halloween")).icon(() -> new ItemStack(WorldExpansionModItems.SOUL.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL.get().asItem());
 				tabData.accept(WorldExpansionModItems.SOUL.get());
 			})
@@ -98,6 +97,14 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT.get().asItem());
+			})
+
+					.build());
+	public static final RegistryObject<CreativeModeTab> NEW_YEAR_2024 = REGISTRY.register("new_year_2024",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.new_year_2024")).icon(() -> new ItemStack(WorldExpansionModBlocks.SNOW_CANNON_BARREL.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BASE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BARREL.get().asItem());
+				tabData.accept(WorldExpansionModItems.ICE_SKATES_BOOTS.get());
 			})
 
 					.build());

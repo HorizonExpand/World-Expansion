@@ -3,6 +3,7 @@ package net.horizonexpand.world_expansion.block;
 
 import net.minecraftforge.common.IPlantable;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -36,7 +37,7 @@ public class TakyrBlock extends FallingBlock implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public TakyrBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.SAND).strength(0.8f, 2f).randomTicks());
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.SAND).strength(0.8f, 2f).randomTicks());
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

@@ -1,0 +1,33 @@
+{
+  "parent": "world_expansion:custom/anemometer",
+  "textures": {
+    "empty": "world_expansion:block/empty_anemometer",
+    "particle": "world_expansion:item/empty_anemometer"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "world_expansion:windometer_wind": 1
+      },
+      "model": "world_expansion:item/windometer_0"
+    },
+    {
+      "predicate": {
+        "world_expansion:windometer_wind": 2
+      },
+      "model": "world_expansion:item/windometer_1"
+    },
+    {
+      "predicate": {
+        "world_expansion:windometer_wind": 3
+      },
+      "model": "world_expansion:item/windometer_2"
+    },
+    {
+      "predicate": {
+        "world_expansion:windometer_wind": 4
+      },
+      "model": "world_expansion:item/windometer_3"
+    }
+  ]
+}

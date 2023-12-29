@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "snow_cannon"
+        "2": "snow_cannon"
       },
       "name": "default"
     }

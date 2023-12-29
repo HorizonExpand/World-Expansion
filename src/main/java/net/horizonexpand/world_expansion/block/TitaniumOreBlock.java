@@ -23,7 +23,7 @@ import java.util.Collections;
 
 public class TitaniumOreBlock extends Block {
 	public TitaniumOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.ICE).sound(SoundType.STONE).strength(4.5f, 7f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.STONE).sound(SoundType.STONE).strength(4.5f, 7f).requiresCorrectToolForDrops());
 	}
 
 	@Override

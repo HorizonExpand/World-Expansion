@@ -23,7 +23,7 @@ import java.util.Collections;
 
 public class AstilbamulticoloredBlock extends FlowerBlock {
 	public AstilbamulticoloredBlock() {
-		super(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PURPLE).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

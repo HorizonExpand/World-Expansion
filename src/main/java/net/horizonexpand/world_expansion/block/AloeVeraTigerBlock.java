@@ -31,7 +31,8 @@ import java.util.List;
 
 public class AloeVeraTigerBlock extends FlowerBlock {
 	public AloeVeraTigerBlock() {
-		super(() -> MobEffects.DAMAGE_BOOST, 10, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noLootTable().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(() -> MobEffects.DAMAGE_BOOST, 10,
+				BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.GRASS).instabreak().noLootTable().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

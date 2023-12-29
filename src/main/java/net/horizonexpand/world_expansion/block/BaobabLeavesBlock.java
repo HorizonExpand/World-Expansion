@@ -1,6 +1,7 @@
 
 package net.horizonexpand.world_expansion.block;
 
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -21,7 +22,7 @@ import java.util.List;
 
 public class BaobabLeavesBlock extends LeavesBlock {
 	public BaobabLeavesBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().sound(SoundType.GRASS).strength(0.2f).noOcclusion().randomTicks().noLootTable());
+		super(BlockBehaviour.Properties.of().ignitedByLava().mapColor(MapColor.PLANT).sound(SoundType.GRASS).strength(0.2f).noOcclusion().randomTicks().noLootTable());
 	}
 
 	@Override

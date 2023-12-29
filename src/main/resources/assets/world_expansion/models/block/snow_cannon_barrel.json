@@ -3,7 +3,7 @@
   "textures": {
     "all": "world_expansion:block/snow_cannon",
     "particle": "world_expansion:block/snow_cannon",
-    "0": "world_expansion:block/snow_cannon"
+    "2": "world_expansion:block/snow_cannon"
   },
   "render_type": "cutout"
 }

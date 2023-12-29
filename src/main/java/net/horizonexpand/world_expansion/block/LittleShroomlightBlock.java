@@ -32,7 +32,7 @@ import java.util.Collections;
 
 public class LittleShroomlightBlock extends FlowerBlock {
 	public LittleShroomlightBlock() {
-		super(() -> MobEffects.NIGHT_VISION, 8, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.SHROOMLIGHT).instabreak().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 12)
+		super(() -> MobEffects.NIGHT_VISION, 8, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.SHROOMLIGHT).instabreak().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 12)
 				.noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 

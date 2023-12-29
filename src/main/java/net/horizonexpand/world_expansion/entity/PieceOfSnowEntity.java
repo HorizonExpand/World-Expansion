@@ -7,6 +7,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
@@ -21,6 +22,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.horizonexpand.world_expansion.procedures.PieceOfSnowKoghdaSnariadPopadaietVSushchnostProcedure;
 import net.horizonexpand.world_expansion.procedures.PieceOfSnowKoghdaSnariadPopadaietVBlokProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModEntities;
 
@@ -67,6 +69,12 @@ public class PieceOfSnowEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		PieceOfSnowKoghdaSnariadPopadaietVSushchnostProcedure.execute(entityHitResult.getEntity());
+	}
+
+	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
 		PieceOfSnowKoghdaSnariadPopadaietVBlokProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
@@ -87,7 +95,7 @@ public class PieceOfSnowEntity extends AbstractArrow implements ItemSupplier {
 		PieceOfSnowEntity entityarrow = new PieceOfSnowEntity(WorldExpansionModEntities.PIECE_OF_SNOW.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
@@ -104,7 +112,7 @@ public class PieceOfSnowEntity extends AbstractArrow implements ItemSupplier {
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(2);
 		entityarrow.setKnockback(0);
-		entityarrow.setCritArrow(true);
+		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);
 		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.snowball.throw")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;

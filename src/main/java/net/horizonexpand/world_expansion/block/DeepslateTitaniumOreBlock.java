@@ -23,7 +23,7 @@ import java.util.Collections;
 
 public class DeepslateTitaniumOreBlock extends Block {
 	public DeepslateTitaniumOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.ICE).sound(SoundType.DEEPSLATE).strength(5.25f, 8f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.DEEPSLATE).sound(SoundType.DEEPSLATE).strength(5.25f, 8f).requiresCorrectToolForDrops());
 	}
 
 	@Override

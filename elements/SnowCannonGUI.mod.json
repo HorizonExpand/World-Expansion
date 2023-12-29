@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 1,
-    "width": 176,
+    "width": 264,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -24,27 +24,26 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "onSlotChanged": {
-            "name": "SnowCannonGUIChangeSlot"
-          },
           "x": 204,
           "y": 89
         }
       },
       {
-        "type": "label",
+        "type": "inputslot",
         "data": {
-          "name": "label_proc_powder_snow_value",
-          "text": {
-            "fixedValue": "",
-            "name": "PowderSnowValue"
+          "inputLimit": {
+            "value": ""
           },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
+          "disablePlacement": {
+            "fixedValue": false
           },
-          "x": 132,
-          "y": 112
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 96,
+          "y": 179
         }
       },
       {
@@ -60,12 +59,105 @@
             "falpha": 0.0
           },
           "x": 132,
+          "y": 112
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "name": "X",
+          "width": 36,
+          "height": 20,
+          "x": 87,
+          "y": 85
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "16",
+          "name": "Y",
+          "width": 36,
+          "height": 20,
+          "x": 87,
           "y": 103
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "0",
+          "name": "Z",
+          "width": 36,
+          "height": 20,
+          "x": 87,
+          "y": 121
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_x",
+          "text": {
+            "fixedValue": "X"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_y",
+          "text": {
+            "fixedValue": "Y"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_z",
+          "text": {
+            "fixedValue": "Z"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_fire",
+          "text": "Fire",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "SnowCannonBaseRiedstounVkliuchion"
+          },
+          "width": 36,
+          "height": 20,
+          "x": 87,
+          "y": 143
         }
       }
     ],
     "gridSettings": {
-      "sx": 9,
+      "sx": 18,
       "sy": 9,
       "ox": 11,
       "oy": 15,

@@ -21,7 +21,7 @@ import java.util.Collections;
 
 public class RawTitaniumBlockBlock extends Block {
 	public RawTitaniumBlockBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.ICE).sound(SoundType.STONE).strength(4.5f, 7f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.COLOR_CYAN).sound(SoundType.STONE).strength(4.5f, 7f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -20,8 +20,6 @@ public class CopperHornPriShchielchkiePKMProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (entity instanceof LivingEntity _entity)
-			_entity.swing(InteractionHand.MAIN_HAND, true);
 		if (entity instanceof ServerPlayer _player) {
 			Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("world_expansion:lisa_simpson"));
 			AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -60,6 +58,13 @@ public class CopperHornPriShchielchkiePKMProcedure {
 			}
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 80);
+		}
+		if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.swing(InteractionHand.MAIN_HAND, true);
+		} else if (itemstack.getItem() == (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem()) {
+			if (entity instanceof LivingEntity _entity)
+				_entity.swing(InteractionHand.OFF_HAND, true);
 		}
 	}
 }

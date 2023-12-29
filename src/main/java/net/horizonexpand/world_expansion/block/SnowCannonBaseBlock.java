@@ -8,6 +8,7 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -33,14 +34,17 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.world.inventory.SnowCannonGUIMenu;
-import net.horizonexpand.world_expansion.procedures.SnowCannonBaseRiedstounVkliuchionProcedure;
+import net.horizonexpand.world_expansion.procedures.SnowCannonGUIChangeSlotProcedure;
+import net.horizonexpand.world_expansion.procedures.SnowCannonBasePriRazrushieniiBlokaIghrokomProcedure;
 import net.horizonexpand.world_expansion.block.entity.SnowCannonBaseBlockEntity;
 
 import java.util.List;
@@ -52,7 +56,7 @@ public class SnowCannonBaseBlock extends Block implements SimpleWaterloggedBlock
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public SnowCannonBaseBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(3f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.METAL).strength(3f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -78,7 +82,7 @@ public class SnowCannonBaseBlock extends Block implements SimpleWaterloggedBlock
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(3, 10, 3, 13, 14, 13), box(2, 0, 2, 14, 10, 14));
+		return Shapes.or(box(2, 8, 2, 14, 10, 14), box(3, 0, 3, 13, 2, 13), box(4, 2, 4, 12, 8, 12));
 	}
 
 	@Override
@@ -119,11 +123,26 @@ public class SnowCannonBaseBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		if (world.getBestNeighborSignal(pos) > 0) {
-			SnowCannonBaseRiedstounVkliuchionProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		}
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 4);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+		SnowCannonGUIChangeSlotProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 4);
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		SnowCannonBasePriRazrushieniiBlokaIghrokomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		return retval;
 	}
 
 	@Override

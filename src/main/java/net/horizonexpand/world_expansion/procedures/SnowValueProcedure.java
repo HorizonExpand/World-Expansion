@@ -14,6 +14,6 @@ public class SnowValueProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, BlockPos.containing(x, y, z), "snow"));
+		}.getValue(world, BlockPos.containing(x, y, z), "Snow"));
 	}
 }

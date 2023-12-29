@@ -5,6 +5,7 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -35,7 +36,7 @@ public class JackOLanternWithSoulBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public JackOLanternWithSoulBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.WOOD).strength(1f).lightLevel(s -> 10));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_ORANGE).sound(SoundType.WOOD).strength(1f).lightLevel(s -> 10));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

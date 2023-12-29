@@ -31,7 +31,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class SnowCannonBaseBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(1, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(2, ItemStack.EMPTY);
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public SnowCannonBaseBlockEntity(BlockPos position, BlockState state) {

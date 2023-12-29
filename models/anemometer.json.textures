@@ -1,0 +1,40 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "empty": "empty_anemometer"
+      },
+      "name": "default"
+    },
+    "empty": {
+      "map": {
+        "empty": "empty_anemometer"
+      },
+      "name": "empty"
+    },
+    "north": {
+      "map": {
+        "empty": "anemometer_north"
+      },
+      "name": "north"
+    },
+    "east": {
+      "map": {
+        "empty": "anemometer_east"
+      },
+      "name": "east"
+    },
+    "west": {
+      "map": {
+        "empty": "anemometer_west"
+      },
+      "name": "west"
+    },
+    "south": {
+      "map": {
+        "empty": "anemometer_south"
+      },
+      "name": "south"
+    }
+  }
+}

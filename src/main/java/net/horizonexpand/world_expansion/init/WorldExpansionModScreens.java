@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.horizonexpand.world_expansion.client.gui.TheCoordinateTemplateForSnowCannonGUIScreen;
 import net.horizonexpand.world_expansion.client.gui.SnowCannonGUIScreen;
 import net.horizonexpand.world_expansion.client.gui.MultiCraftingTableGUIScreen;
 import net.horizonexpand.world_expansion.client.gui.MultiCraftingTableGUIAstilbaScreen;
@@ -23,6 +24,7 @@ public class WorldExpansionModScreens {
 			MenuScreens.register(WorldExpansionModMenus.MULTI_CRAFTING_TABLE_GUI_COPPER_HORN.get(), MultiCraftingTableGUIScreen::new);
 			MenuScreens.register(WorldExpansionModMenus.MULTI_CRAFTING_TABLE_GUI_ASTILBA.get(), MultiCraftingTableGUIAstilbaScreen::new);
 			MenuScreens.register(WorldExpansionModMenus.SNOW_CANNON_GUI.get(), SnowCannonGUIScreen::new);
+			MenuScreens.register(WorldExpansionModMenus.THE_COORDINATE_TEMPLATE_FOR_SNOW_CANNON_GUI.get(), TheCoordinateTemplateForSnowCannonGUIScreen::new);
 		});
 	}
 }

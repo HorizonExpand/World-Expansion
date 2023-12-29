@@ -38,7 +38,7 @@ import java.util.List;
 public class TumbleweedBlock extends FlowerBlock {
 	public TumbleweedBlock() {
 		super(() -> MobEffects.DIG_SLOWDOWN, 10,
-				BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).randomTicks().sound(SoundType.MANGROVE_ROOTS).instabreak().noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+				BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).randomTicks().sound(SoundType.MANGROVE_ROOTS).instabreak().noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -113,7 +113,7 @@ public class TumbleweedBlock extends FlowerBlock {
 				|| groundState.is(Blocks.BRICKS) || groundState.is(Blocks.REDSTONE_LAMP) || groundState.is(Blocks.REDSTONE_LAMP) || groundState.is(Blocks.DISPENSER) || groundState.is(Blocks.DROPPER) || groundState.is(Blocks.OBSERVER)
 				|| groundState.is(Blocks.TARGET) || groundState.is(Blocks.SCULK) || groundState.is(Blocks.SCULK_CATALYST) || groundState.is(Blocks.COMMAND_BLOCK) || groundState.is(Blocks.REPEATING_COMMAND_BLOCK)
 				|| groundState.is(Blocks.CHAIN_COMMAND_BLOCK) || groundState.is(Blocks.SNOW_BLOCK) || groundState.is(Blocks.POWDER_SNOW) || groundState.is(Blocks.ICE) || groundState.is(Blocks.PACKED_ICE) || groundState.is(Blocks.FROSTED_ICE)
-				|| groundState.is(Blocks.BLUE_ICE) || groundState.is(Blocks.CACTUS) || groundState.is(Blocks.CLAY) || groundState.is(Blocks.JUKEBOX) || groundState.is(Blocks.NETHER_BRICKS) || groundState.is(Blocks.CHISELED_NETHER_BRICKS)
+				|| groundState.is(Blocks.BLUE_ICE) || groundState.is(Blocks.CLAY) || groundState.is(Blocks.JUKEBOX) || groundState.is(Blocks.NETHER_BRICKS) || groundState.is(Blocks.CHISELED_NETHER_BRICKS)
 				|| groundState.is(Blocks.CRACKED_NETHER_BRICKS) || groundState.is(Blocks.NETHERRACK) || groundState.is(Blocks.WARPED_NYLIUM) || groundState.is(Blocks.CRIMSON_NYLIUM) || groundState.is(Blocks.SOUL_SAND)
 				|| groundState.is(Blocks.SOUL_SOIL) || groundState.is(Blocks.SHROOMLIGHT) || groundState.is(Blocks.BONE_BLOCK) || groundState.is(Blocks.NETHER_WART_BLOCK) || groundState.is(Blocks.STONE_BRICKS)
 				|| groundState.is(Blocks.MOSSY_STONE_BRICKS) || groundState.is(Blocks.CRACKED_STONE_BRICKS) || groundState.is(Blocks.CHISELED_STONE_BRICKS) || groundState.is(Blocks.MELON) || groundState.is(Blocks.PUMPKIN)
@@ -141,21 +141,19 @@ public class TumbleweedBlock extends FlowerBlock {
 				|| groundState.is(Blocks.YELLOW_STAINED_GLASS) || groundState.is(Blocks.LIME_STAINED_GLASS) || groundState.is(Blocks.PINK_STAINED_GLASS) || groundState.is(Blocks.GRAY_STAINED_GLASS) || groundState.is(Blocks.LIGHT_GRAY_STAINED_GLASS)
 				|| groundState.is(Blocks.CYAN_STAINED_GLASS) || groundState.is(Blocks.PURPLE_STAINED_GLASS) || groundState.is(Blocks.BLUE_STAINED_GLASS) || groundState.is(Blocks.BROWN_STAINED_GLASS) || groundState.is(Blocks.GREEN_STAINED_GLASS)
 				|| groundState.is(Blocks.RED_STAINED_GLASS) || groundState.is(Blocks.BLACK_STAINED_GLASS) || groundState.is(Blocks.STRUCTURE_BLOCK) || groundState.is(Blocks.STRUCTURE_BLOCK) || groundState.is(Blocks.STRUCTURE_BLOCK)
-				|| groundState.is(Blocks.SEA_LANTERN) || groundState.is(Blocks.PRISMARINE) || groundState.is(Blocks.PRISMARINE_BRICKS) || groundState.is(Blocks.DARK_PRISMARINE) || groundState.is(Blocks.SHULKER_BOX)
-				|| groundState.is(Blocks.WHITE_SHULKER_BOX) || groundState.is(Blocks.ORANGE_SHULKER_BOX) || groundState.is(Blocks.MAGENTA_SHULKER_BOX) || groundState.is(Blocks.LIGHT_BLUE_SHULKER_BOX) || groundState.is(Blocks.YELLOW_SHULKER_BOX)
-				|| groundState.is(Blocks.LIME_SHULKER_BOX) || groundState.is(Blocks.PINK_SHULKER_BOX) || groundState.is(Blocks.GRAY_SHULKER_BOX) || groundState.is(Blocks.LIGHT_GRAY_SHULKER_BOX) || groundState.is(Blocks.CYAN_SHULKER_BOX)
-				|| groundState.is(Blocks.PURPLE_SHULKER_BOX) || groundState.is(Blocks.BLUE_SHULKER_BOX) || groundState.is(Blocks.BROWN_SHULKER_BOX) || groundState.is(Blocks.GREEN_SHULKER_BOX) || groundState.is(Blocks.RED_SHULKER_BOX)
-				|| groundState.is(Blocks.BLACK_SHULKER_BOX) || groundState.is(Blocks.DEAD_TUBE_CORAL_BLOCK) || groundState.is(Blocks.DEAD_BRAIN_CORAL_BLOCK) || groundState.is(Blocks.DEAD_BUBBLE_CORAL_BLOCK)
-				|| groundState.is(Blocks.DEAD_FIRE_CORAL_BLOCK) || groundState.is(Blocks.DEAD_HORN_CORAL_BLOCK) || groundState.is(Blocks.TUBE_CORAL_BLOCK) || groundState.is(Blocks.BRAIN_CORAL_BLOCK) || groundState.is(Blocks.BUBBLE_CORAL_BLOCK)
-				|| groundState.is(Blocks.FIRE_CORAL_BLOCK) || groundState.is(Blocks.HORN_CORAL_BLOCK) || groundState.is(Blocks.STRUCTURE_BLOCK) || groundState.is(Blocks.STRUCTURE_BLOCK) || groundState.is(Blocks.JIGSAW)
-				|| groundState.is(Blocks.DRIED_KELP_BLOCK) || groundState.is(Blocks.SCAFFOLDING) || groundState.is(Blocks.LOOM) || groundState.is(Blocks.BARREL) || groundState.is(Blocks.SMOKER) || groundState.is(Blocks.BLAST_FURNACE)
-				|| groundState.is(Blocks.CARTOGRAPHY_TABLE) || groundState.is(Blocks.FLETCHING_TABLE) || groundState.is(Blocks.SMITHING_TABLE) || groundState.is(Blocks.BEEHIVE) || groundState.is(Blocks.BEE_NEST) || groundState.is(Blocks.BASALT)
-				|| groundState.is(Blocks.POLISHED_BASALT) || groundState.is(Blocks.SMOOTH_BASALT) || groundState.is(Blocks.LODESTONE) || groundState.is(Blocks.AZALEA) || groundState.is(Blocks.FLOWERING_AZALEA)
-				|| groundState.is(Blocks.OCHRE_FROGLIGHT) || groundState.is(Blocks.VERDANT_FROGLIGHT) || groundState.is(Blocks.PEARLESCENT_FROGLIGHT) || groundState.is(WorldExpansionModBlocks.TAKYR.get())
-				|| groundState.is(WorldExpansionModBlocks.DRY_DIRT.get()) || groundState.is(WorldExpansionModBlocks.SUSPICIOUS_MUD.get()) || groundState.is(Blocks.TNT) || groundState.is(Blocks.BOOKSHELF) || groundState.is(Blocks.CHISELED_BOOKSHELF)
-				|| groundState.is(Blocks.SPAWNER) || groundState.is(Blocks.CHEST) || groundState.is(Blocks.TRAPPED_CHEST) || groundState.is(Blocks.ENDER_CHEST) || groundState.is(Blocks.CRAFTING_TABLE) || groundState.is(Blocks.FARMLAND)
-				|| groundState.is(Blocks.FURNACE) || groundState.is(Blocks.HOPPER) || groundState.is(Blocks.CHERRY_LOG) || groundState.is(Blocks.BAMBOO_BLOCK) || groundState.is(Blocks.STRIPPED_CHERRY_LOG)
-				|| groundState.is(Blocks.STRIPPED_BAMBOO_BLOCK) || groundState.is(Blocks.CHERRY_WOOD) || groundState.is(Blocks.STRIPPED_CHERRY_WOOD);
+				|| groundState.is(Blocks.SEA_LANTERN) || groundState.is(Blocks.PRISMARINE) || groundState.is(Blocks.PRISMARINE_BRICKS) || groundState.is(Blocks.DARK_PRISMARINE) || groundState.is(Blocks.DEAD_TUBE_CORAL_BLOCK)
+				|| groundState.is(Blocks.DEAD_BRAIN_CORAL_BLOCK) || groundState.is(Blocks.DEAD_BUBBLE_CORAL_BLOCK) || groundState.is(Blocks.DEAD_FIRE_CORAL_BLOCK) || groundState.is(Blocks.DEAD_HORN_CORAL_BLOCK)
+				|| groundState.is(Blocks.TUBE_CORAL_BLOCK) || groundState.is(Blocks.BRAIN_CORAL_BLOCK) || groundState.is(Blocks.BUBBLE_CORAL_BLOCK) || groundState.is(Blocks.FIRE_CORAL_BLOCK) || groundState.is(Blocks.HORN_CORAL_BLOCK)
+				|| groundState.is(Blocks.STRUCTURE_BLOCK) || groundState.is(Blocks.STRUCTURE_BLOCK) || groundState.is(Blocks.JIGSAW) || groundState.is(Blocks.DRIED_KELP_BLOCK) || groundState.is(Blocks.SCAFFOLDING) || groundState.is(Blocks.LOOM)
+				|| groundState.is(Blocks.BARREL) || groundState.is(Blocks.SMOKER) || groundState.is(Blocks.BLAST_FURNACE) || groundState.is(Blocks.CARTOGRAPHY_TABLE) || groundState.is(Blocks.FLETCHING_TABLE) || groundState.is(Blocks.SMITHING_TABLE)
+				|| groundState.is(Blocks.BEEHIVE) || groundState.is(Blocks.BEE_NEST) || groundState.is(Blocks.BASALT) || groundState.is(Blocks.POLISHED_BASALT) || groundState.is(Blocks.SMOOTH_BASALT) || groundState.is(Blocks.LODESTONE)
+				|| groundState.is(Blocks.AZALEA) || groundState.is(Blocks.FLOWERING_AZALEA) || groundState.is(Blocks.OCHRE_FROGLIGHT) || groundState.is(Blocks.VERDANT_FROGLIGHT) || groundState.is(Blocks.PEARLESCENT_FROGLIGHT)
+				|| groundState.is(WorldExpansionModBlocks.TAKYR.get()) || groundState.is(WorldExpansionModBlocks.DRY_DIRT.get()) || groundState.is(WorldExpansionModBlocks.SUSPICIOUS_MUD.get()) || groundState.is(Blocks.TNT)
+				|| groundState.is(Blocks.BOOKSHELF) || groundState.is(Blocks.CHISELED_BOOKSHELF) || groundState.is(Blocks.SPAWNER) || groundState.is(Blocks.CHEST) || groundState.is(Blocks.TRAPPED_CHEST) || groundState.is(Blocks.ENDER_CHEST)
+				|| groundState.is(Blocks.CRAFTING_TABLE) || groundState.is(Blocks.FARMLAND) || groundState.is(Blocks.FURNACE) || groundState.is(Blocks.HOPPER) || groundState.is(Blocks.CHERRY_LOG) || groundState.is(Blocks.BAMBOO_BLOCK)
+				|| groundState.is(Blocks.STRIPPED_CHERRY_LOG) || groundState.is(Blocks.STRIPPED_BAMBOO_BLOCK) || groundState.is(Blocks.CHERRY_WOOD) || groundState.is(Blocks.STRIPPED_CHERRY_WOOD)
+				|| groundState.is(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL.get()) || groundState.is(WorldExpansionModBlocks.TITANIUM_ORE.get()) || groundState.is(WorldExpansionModBlocks.TITANIUM_BLOCK.get())
+				|| groundState.is(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get()) || groundState.is(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get()) || groundState.is(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE.get());
 	}
 
 	@Override

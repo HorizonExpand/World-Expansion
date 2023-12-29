@@ -6,11 +6,14 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.EditBox;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.horizonexpand.world_expansion.world.inventory.SnowCannonGUIMenu;
 import net.horizonexpand.world_expansion.procedures.SnowValueProcedure;
-import net.horizonexpand.world_expansion.procedures.PowderSnowValueProcedure;
+import net.horizonexpand.world_expansion.network.SnowCannonGUIButtonMessage;
+import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 import java.util.HashMap;
 
@@ -21,6 +24,10 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	EditBox X;
+	EditBox Y;
+	EditBox Z;
+	Button button_fire;
 
 	public SnowCannonGUIScreen(SnowCannonGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -29,7 +36,7 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
+		this.imageWidth = 264;
 		this.imageHeight = 166;
 	}
 
@@ -39,6 +46,9 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
+		X.render(guiGraphics, mouseX, mouseY, partialTicks);
+		Y.render(guiGraphics, mouseX, mouseY, partialTicks);
+		Z.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
@@ -57,22 +67,31 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 			this.minecraft.player.closeContainer();
 			return true;
 		}
+		if (X.isFocused())
+			return X.keyPressed(key, b, c);
+		if (Y.isFocused())
+			return Y.keyPressed(key, b, c);
+		if (Z.isFocused())
+			return Z.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
 	@Override
 	public void containerTick() {
 		super.containerTick();
+		X.tick();
+		Y.tick();
+		Z.tick();
 	}
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font,
 
-				PowderSnowValueProcedure.execute(world, x, y, z), 6, 75, -12829636, false);
-		guiGraphics.drawString(this.font,
-
-				SnowValueProcedure.execute(world, x, y, z), 6, 66, -12829636, false);
+				SnowValueProcedure.execute(world, x, y, z), 50, 75, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.snow_cannon_gui.label_x"), 41, 52, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.snow_cannon_gui.label_y"), 41, 70, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.snow_cannon_gui.label_z"), 41, 88, -12829636, false);
 	}
 
 	@Override
@@ -83,5 +102,82 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 	@Override
 	public void init() {
 		super.init();
+		X = new EditBox(this.font, this.leftPos + 6, this.topPos + 49, 34, 18, Component.translatable("gui.world_expansion.snow_cannon_gui.X")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.X").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.X").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		X.setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.X").getString());
+		X.setMaxLength(32767);
+		guistate.put("text:X", X);
+		this.addWidget(this.X);
+		Y = new EditBox(this.font, this.leftPos + 6, this.topPos + 67, 34, 18, Component.translatable("gui.world_expansion.snow_cannon_gui.Y")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.Y").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.Y").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		Y.setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.Y").getString());
+		Y.setMaxLength(32767);
+		guistate.put("text:Y", Y);
+		this.addWidget(this.Y);
+		Z = new EditBox(this.font, this.leftPos + 6, this.topPos + 85, 34, 18, Component.translatable("gui.world_expansion.snow_cannon_gui.Z")) {
+			@Override
+			public void insertText(String text) {
+				super.insertText(text);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.Z").getString());
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void moveCursorTo(int pos) {
+				super.moveCursorTo(pos);
+				if (getValue().isEmpty())
+					setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.Z").getString());
+				else
+					setSuggestion(null);
+			}
+		};
+		Z.setSuggestion(Component.translatable("gui.world_expansion.snow_cannon_gui.Z").getString());
+		Z.setMaxLength(32767);
+		guistate.put("text:Z", Z);
+		this.addWidget(this.Z);
+		button_fire = Button.builder(Component.translatable("gui.world_expansion.snow_cannon_gui.button_fire"), e -> {
+			if (true) {
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new SnowCannonGUIButtonMessage(0, x, y, z));
+				SnowCannonGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 5, this.topPos + 106, 36, 20).build();
+		guistate.put("button:button_fire", button_fire);
+		this.addRenderableWidget(button_fire);
 	}
 }

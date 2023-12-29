@@ -68,7 +68,7 @@
     "emissiveRendering": true,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "RED",
     "creativePickItem": {
       "value": ""
     },

@@ -11,6 +11,7 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
 
+import net.horizonexpand.world_expansion.world.inventory.TheCoordinateTemplateForSnowCannonGUIMenu;
 import net.horizonexpand.world_expansion.world.inventory.SnowCannonGUIMenu;
 import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIMenu;
 import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIAstilbaMenu;
@@ -21,4 +22,6 @@ public class WorldExpansionModMenus {
 	public static final RegistryObject<MenuType<MultiCraftingTableGUIMenu>> MULTI_CRAFTING_TABLE_GUI_COPPER_HORN = REGISTRY.register("multi_crafting_table_gui_copper_horn", () -> IForgeMenuType.create(MultiCraftingTableGUIMenu::new));
 	public static final RegistryObject<MenuType<MultiCraftingTableGUIAstilbaMenu>> MULTI_CRAFTING_TABLE_GUI_ASTILBA = REGISTRY.register("multi_crafting_table_gui_astilba", () -> IForgeMenuType.create(MultiCraftingTableGUIAstilbaMenu::new));
 	public static final RegistryObject<MenuType<SnowCannonGUIMenu>> SNOW_CANNON_GUI = REGISTRY.register("snow_cannon_gui", () -> IForgeMenuType.create(SnowCannonGUIMenu::new));
+	public static final RegistryObject<MenuType<TheCoordinateTemplateForSnowCannonGUIMenu>> THE_COORDINATE_TEMPLATE_FOR_SNOW_CANNON_GUI = REGISTRY.register("the_coordinate_template_for_snow_cannon_gui",
+			() -> IForgeMenuType.create(TheCoordinateTemplateForSnowCannonGUIMenu::new));
 }

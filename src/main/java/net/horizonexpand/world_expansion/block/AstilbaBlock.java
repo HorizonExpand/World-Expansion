@@ -30,7 +30,7 @@ import java.util.Collections;
 
 public class AstilbaBlock extends FlowerBlock implements BonemealableBlock {
 	public AstilbaBlock() {
-		super(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

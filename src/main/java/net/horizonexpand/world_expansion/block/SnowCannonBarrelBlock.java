@@ -5,6 +5,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
@@ -35,7 +36,7 @@ public class SnowCannonBarrelBlock extends Block implements SimpleWaterloggedBlo
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public SnowCannonBarrelBlock() {
-		super(BlockBehaviour.Properties.of().sound(SoundType.METAL).strength(3f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BLACK).sound(SoundType.METAL).strength(3f, 6f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -61,7 +62,7 @@ public class SnowCannonBarrelBlock extends Block implements SimpleWaterloggedBlo
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(3, 13, 3, 13, 16, 13), box(4, 1, 4, 12, 13, 12), box(7, -2, 7, 9, 1, 9), box(3, -2, 7, 5, 4, 9), box(11, -2, 7, 13, 4, 9));
+		return Shapes.or(box(3, 13, 3, 13, 16, 13), box(4, 1, 4, 12, 9, 12), box(5, 9, 5, 11, 13, 11), box(5, -4, 5, 11, -2, 11), box(6, -2, 6, 10, 1, 10));
 	}
 
 	@Override
