@@ -41,9 +41,9 @@ public class Baobab3SaplingGrowProcedure {
 			structureOffsetZ = 1;
 			conditionOffsetX = 1;
 			conditionOffsetZ = 1;
-			sizeX = 12;
+			sizeX = 12 - 3;
 			sizeY = 16;
-			sizeZ = 9;
+			sizeZ = 9 - 3;
 			if (!(airTag).isEmpty() && ((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() == customSappling.getBlock() && (world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == customSappling.getBlock()
 					&& (world.getBlockState(BlockPos.containing(x + 1, y, z + 1))).getBlock() == customSappling.getBlock()
 					|| (world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() == customSappling.getBlock() && (world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() == customSappling.getBlock()
