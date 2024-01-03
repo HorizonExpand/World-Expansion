@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "group": "diamond",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "world_expansion:kabanyt_diamond_ore"
+  },
+  "result": "minecraft:diamond"
+}

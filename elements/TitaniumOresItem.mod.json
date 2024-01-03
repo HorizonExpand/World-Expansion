@@ -9,12 +9,16 @@
       },
       {
         "value": "CUSTOM:DeepslateTitaniumOre"
+      },
+      {
+        "value": "CUSTOM:KabanytTitaniumOre"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "titanium_ores",
     "namespace": "mod"
   }

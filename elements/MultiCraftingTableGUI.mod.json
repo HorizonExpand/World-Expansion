@@ -394,6 +394,42 @@
           "x": 298,
           "y": 71
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "horn_border.png",
+          "use1Xscale": false,
+          "x": 160,
+          "y": 63
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ingot_border.png",
+          "use1Xscale": false,
+          "x": 178,
+          "y": 63
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ingot_border.png",
+          "use1Xscale": false,
+          "x": 142,
+          "y": 63
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ingot_border.png",
+          "use1Xscale": false,
+          "x": 160,
+          "y": 81
+        }
       }
     ],
     "gridSettings": {
@@ -401,7 +437,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

@@ -81,6 +81,15 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/horn_border.png"), this.leftPos + 34, this.topPos + 26, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/ingot_border.png"), this.leftPos + 52, this.topPos + 26, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/ingot_border.png"), this.leftPos + 16, this.topPos + 26, 0, 0, 16, 16, 16, 16);
+
+		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/ingot_border.png"), this.leftPos + 34, this.topPos + 44, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 

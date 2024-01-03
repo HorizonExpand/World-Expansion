@@ -85,6 +85,15 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.TITANIUM_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_TITANIUM_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_COAL_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_IRON_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_COPPER_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_GOLD_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_EMERALD_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_LAPIS_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT_DIAMOND_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TAKYR.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.DRY_DIRT.get().asItem());

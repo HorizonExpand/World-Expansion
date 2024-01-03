@@ -3,11 +3,11 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 176,
+    "width": 134,
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
       {
@@ -17,8 +17,8 @@
           "name": "X",
           "width": 36,
           "height": 20,
-          "x": 137,
-          "y": 62
+          "x": 195,
+          "y": 71
         }
       },
       {
@@ -29,7 +29,7 @@
           "width": 36,
           "height": 20,
           "x": 195,
-          "y": 62
+          "y": 104
         }
       },
       {
@@ -39,53 +39,8 @@
           "name": "Z",
           "width": 36,
           "height": 20,
-          "x": 254,
-          "y": 62
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_x",
-          "text": {
-            "fixedValue": "X"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 155,
-          "y": 85
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_y",
-          "text": {
-            "fixedValue": "Y"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 213,
-          "y": 89
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_z",
-          "text": {
-            "fixedValue": "Z"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 272,
-          "y": 85
+          "x": 195,
+          "y": 137
         }
       },
       {
@@ -108,14 +63,14 @@
         "data": {
           "name": "label_the_coordinate_template_for_snow",
           "text": {
-            "fixedValue": "The Coordinate Template"
+            "fixedValue": "The Coordinate "
           },
           "color": {
-            "value": -12829636,
+            "value": -1315964,
             "falpha": 0.0
           },
-          "x": 128,
-          "y": 40
+          "x": 155,
+          "y": 44
         }
       },
       {
@@ -126,11 +81,20 @@
             "fixedValue": "For Snow Cannon"
           },
           "color": {
-            "value": -12829636,
+            "value": -1315964,
             "falpha": 0.0
           },
-          "x": 128,
-          "y": 49
+          "x": 155,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "the_coordinate_template_for_snow_cannon_gui_overlay.png",
+          "use1Xscale": false,
+          "x": 147,
+          "y": 37
         }
       }
     ],
@@ -142,7 +106,7 @@
       "sy": 9,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

@@ -50,6 +50,15 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> TITANIUM_ORE = block(WorldExpansionModBlocks.TITANIUM_ORE);
 	public static final RegistryObject<Item> DEEPSLATE_TITANIUM_ORE = block(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE);
 	public static final RegistryObject<Item> RAW_TITANIUM_BLOCK = block(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK);
+	public static final RegistryObject<Item> KABANYT_TITANIUM_ORE = block(WorldExpansionModBlocks.KABANYT_TITANIUM_ORE);
+	public static final RegistryObject<Item> KABANYT_COAL_ORE = block(WorldExpansionModBlocks.KABANYT_COAL_ORE);
+	public static final RegistryObject<Item> KABANYT_IRON_ORE = block(WorldExpansionModBlocks.KABANYT_IRON_ORE);
+	public static final RegistryObject<Item> KABANYT_COPPER_ORE = block(WorldExpansionModBlocks.KABANYT_COPPER_ORE);
+	public static final RegistryObject<Item> KABANYT_GOLD_ORE = block(WorldExpansionModBlocks.KABANYT_GOLD_ORE);
+	public static final RegistryObject<Item> KABANYT_REDSTONE_ORE = block(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE);
+	public static final RegistryObject<Item> KABANYT_EMERALD_ORE = block(WorldExpansionModBlocks.KABANYT_EMERALD_ORE);
+	public static final RegistryObject<Item> KABANYT_LAPIS_ORE = block(WorldExpansionModBlocks.KABANYT_LAPIS_ORE);
+	public static final RegistryObject<Item> KABANYT_DIAMOND_ORE = block(WorldExpansionModBlocks.KABANYT_DIAMOND_ORE);
 	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
 	public static final RegistryObject<Item> TAKYR = block(WorldExpansionModBlocks.TAKYR);
 	public static final RegistryObject<Item> DRY_DIRT = block(WorldExpansionModBlocks.DRY_DIRT);
@@ -92,6 +101,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> CARVED_KABANYT = block(WorldExpansionModBlocks.CARVED_KABANYT);
 	public static final RegistryObject<Item> SNOW_CANNON_BASE = block(WorldExpansionModBlocks.SNOW_CANNON_BASE);
 	public static final RegistryObject<Item> SNOW_CANNON_BARREL = block(WorldExpansionModBlocks.SNOW_CANNON_BARREL);
+	public static final RegistryObject<Item> ICE_SKATES_BOOTS = REGISTRY.register("ice_skates_boots", () -> new IceSkatesItem.Boots());
 	public static final RegistryObject<Item> TITANIUM_INGOT = REGISTRY.register("titanium_ingot", () -> new TitaniumIngotItem());
 	public static final RegistryObject<Item> RAW_TITANIUM = REGISTRY.register("raw_titanium", () -> new RawTitaniumItem());
 	public static final RegistryObject<Item> JUDAS_FRUIT = REGISTRY.register("judas_fruit", () -> new JudasFruitItem());
@@ -117,7 +127,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
 	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
 	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
-	public static final RegistryObject<Item> ICE_SKATES_BOOTS = REGISTRY.register("ice_skates_boots", () -> new IceSkatesItem.Boots());
+	public static final RegistryObject<Item> KABANYT_REDSTONE_ORE_ON = block(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE_ON);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

@@ -43,7 +43,7 @@
       },
       {
         "minrolls": 1,
-        "maxrolls": 3,
+        "maxrolls": 2,
         "minbonusrolls": 0,
         "maxbonusrolls": 1,
         "hasbonusrolls": true,
@@ -68,7 +68,7 @@
               "value": "CUSTOM:RawTitanium"
             },
             "weight": 1,
-            "minCount": 1,
+            "minCount": 0,
             "maxCount": 2,
             "minEnchantmentLevel": 0,
             "maxEnchantmentLevel": 0,

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 64,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "block_match",
+          "block": "minecraft:gold_ore"
+        },
+        "state": {
+          "Name": "world_expansion:kabanyt_gold_ore"
+        }
+      }
+    ]
+  }
+}

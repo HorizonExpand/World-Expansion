@@ -7,9 +7,18 @@
     "height": 166,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
-    "renderBgLayer": true,
+    "renderBgLayer": false,
     "doesPauseGame": false,
     "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "snow_cannon_gui_overlay.png",
+          "use1Xscale": false,
+          "x": 66,
+          "y": 37
+        }
+      },
       {
         "type": "inputslot",
         "data": {
@@ -24,7 +33,7 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 204,
+          "x": 206,
           "y": 89
         }
       },
@@ -42,8 +51,8 @@
             "fixedValue": false
           },
           "dropItemsWhenNotBound": true,
-          "x": 96,
-          "y": 179
+          "x": 322,
+          "y": 121
         }
       },
       {
@@ -93,51 +102,6 @@
           "height": 20,
           "x": 87,
           "y": 121
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_x",
-          "text": {
-            "fixedValue": "X"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 78,
-          "y": 89
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_y",
-          "text": {
-            "fixedValue": "Y"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 78,
-          "y": 107
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_z",
-          "text": {
-            "fixedValue": "Z"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 78,
-          "y": 125
         }
       },
       {

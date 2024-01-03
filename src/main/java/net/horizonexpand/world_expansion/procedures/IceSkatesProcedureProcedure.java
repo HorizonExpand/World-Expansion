@@ -1,21 +1,18 @@
 package net.horizonexpand.world_expansion.procedures;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
-import net.minecraft.commands.CommandSourceStack;
-import net.minecraft.commands.CommandSource;
 import net.minecraft.client.Minecraft;
 
 public class IceSkatesProcedureProcedure {
@@ -23,33 +20,25 @@ public class IceSkatesProcedureProcedure {
 		if (entity == null)
 			return;
 		boolean found = false;
-		double sx = 0;
 		double sy = 0;
-		double sz = 0;
-		sx = -1.9;
 		found = false;
-		for (int index0 = 0; index0 < 6; index0++) {
-			sy = -1.9;
-			for (int index1 = 0; index1 < 6; index1++) {
-				sz = -1.9;
-				for (int index2 = 0; index2 < 6; index2++) {
-					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))) {
-						found = true;
-					}
-					sz = sz + 1;
-				}
-				sy = sy + 1;
+		sy = -3;
+		for (int index0 = 0; index0 < 3; index0++) {
+			if ((world.getBlockState(BlockPos.containing(x, y + sy, z))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))
+					&& ((world.getBlockState(BlockPos.containing(x, y + sy + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))
+							&& (world.getBlockState(BlockPos.containing(x, y + sy + 2, z))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))
+							&& (world.getBlockState(BlockPos.containing(x, y + sy + 3, z))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))
+							|| world.isEmptyBlock(BlockPos.containing(x, y + sy + 1, z)) && world.isEmptyBlock(BlockPos.containing(x, y + sy + 2, z)) && world.isEmptyBlock(BlockPos.containing(x, y + sy + 3, z)))) {
+				found = true;
 			}
-			sx = sx + 1;
+			sy = sy + 1;
 		}
 		if (found == true) {
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"attribute @p minecraft:generic.movement_speed base set 0.2");
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"attribute @p forge:entity_gravity base set 0.05");
-			if ((!entity.onGround() || entity.isSprinting()) && Math.random() < 0.05 && !(new Object() {
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 2, 0, false, false));
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2, 1, false, false));
+			if (Math.random() < 0.05 && !(new Object() {
 				public boolean checkGamemode(Entity _ent) {
 					if (_ent instanceof ServerPlayer _serverPlayer) {
 						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
@@ -59,7 +48,7 @@ public class IceSkatesProcedureProcedure {
 					}
 					return false;
 				}
-			}.checkGamemode(entity))) {
+			}.checkGamemode(entity)) && (!entity.onGround() || entity.isSprinting())) {
 				{
 					ItemStack _ist = itemstack;
 					if (_ist.hurt(1, RandomSource.create(), null)) {
@@ -69,12 +58,8 @@ public class IceSkatesProcedureProcedure {
 				}
 			}
 		} else {
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"attribute @p minecraft:generic.movement_speed base set 0.08");
-			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-						"attribute @p forge:entity_gravity base set 0.08");
+			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 2, 1, false, false));
 		}
 	}
 }

@@ -69,6 +69,9 @@ public class MultiCraftingTableGUIAstilbaScreen extends AbstractContainerScreen<
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/astilba_border.png"), this.leftPos + 34, this.topPos + 35, 0, 0, 16, 16, 16, 16);
+
 		RenderSystem.disableBlend();
 	}
 

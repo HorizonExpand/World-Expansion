@@ -34,6 +34,16 @@ import net.horizonexpand.world_expansion.block.KabanytbrickswallBlock;
 import net.horizonexpand.world_expansion.block.KabanytbricksstairsBlock;
 import net.horizonexpand.world_expansion.block.KabanytbricksslabBlock;
 import net.horizonexpand.world_expansion.block.KabanytbricksBlock;
+import net.horizonexpand.world_expansion.block.KabanytTitaniumOreBlock;
+import net.horizonexpand.world_expansion.block.KabanytRedstoneOreOnBlock;
+import net.horizonexpand.world_expansion.block.KabanytRedstoneOreBlock;
+import net.horizonexpand.world_expansion.block.KabanytLapisOreBlock;
+import net.horizonexpand.world_expansion.block.KabanytIronOreBlock;
+import net.horizonexpand.world_expansion.block.KabanytGoldOreBlock;
+import net.horizonexpand.world_expansion.block.KabanytEmeraldOreBlock;
+import net.horizonexpand.world_expansion.block.KabanytDiamondOreBlock;
+import net.horizonexpand.world_expansion.block.KabanytCopperOreBlock;
+import net.horizonexpand.world_expansion.block.KabanytCoalOreBlock;
 import net.horizonexpand.world_expansion.block.KabanytBlock;
 import net.horizonexpand.world_expansion.block.JudasFruit3Block;
 import net.horizonexpand.world_expansion.block.JudasFruit2Block;
@@ -66,6 +76,15 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> TITANIUM_ORE = REGISTRY.register("titanium_ore", () -> new TitaniumOreBlock());
 	public static final RegistryObject<Block> DEEPSLATE_TITANIUM_ORE = REGISTRY.register("deepslate_titanium_ore", () -> new DeepslateTitaniumOreBlock());
 	public static final RegistryObject<Block> RAW_TITANIUM_BLOCK = REGISTRY.register("raw_titanium_block", () -> new RawTitaniumBlockBlock());
+	public static final RegistryObject<Block> KABANYT_TITANIUM_ORE = REGISTRY.register("kabanyt_titanium_ore", () -> new KabanytTitaniumOreBlock());
+	public static final RegistryObject<Block> KABANYT_COAL_ORE = REGISTRY.register("kabanyt_coal_ore", () -> new KabanytCoalOreBlock());
+	public static final RegistryObject<Block> KABANYT_IRON_ORE = REGISTRY.register("kabanyt_iron_ore", () -> new KabanytIronOreBlock());
+	public static final RegistryObject<Block> KABANYT_COPPER_ORE = REGISTRY.register("kabanyt_copper_ore", () -> new KabanytCopperOreBlock());
+	public static final RegistryObject<Block> KABANYT_GOLD_ORE = REGISTRY.register("kabanyt_gold_ore", () -> new KabanytGoldOreBlock());
+	public static final RegistryObject<Block> KABANYT_REDSTONE_ORE = REGISTRY.register("kabanyt_redstone_ore", () -> new KabanytRedstoneOreBlock());
+	public static final RegistryObject<Block> KABANYT_EMERALD_ORE = REGISTRY.register("kabanyt_emerald_ore", () -> new KabanytEmeraldOreBlock());
+	public static final RegistryObject<Block> KABANYT_LAPIS_ORE = REGISTRY.register("kabanyt_lapis_ore", () -> new KabanytLapisOreBlock());
+	public static final RegistryObject<Block> KABANYT_DIAMOND_ORE = REGISTRY.register("kabanyt_diamond_ore", () -> new KabanytDiamondOreBlock());
 	public static final RegistryObject<Block> SUSPICIOUS_MUD = REGISTRY.register("suspicious_mud", () -> new SuspiciousMudBlock());
 	public static final RegistryObject<Block> TAKYR = REGISTRY.register("takyr", () -> new TakyrBlock());
 	public static final RegistryObject<Block> DRY_DIRT = REGISTRY.register("dry_dirt", () -> new DryDirtBlock());
@@ -112,4 +131,5 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> JUDAS_FRUIT1 = REGISTRY.register("judas_fruit1", () -> new JudasFruit1Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_2 = REGISTRY.register("judas_fruit_2", () -> new JudasFruit2Block());
 	public static final RegistryObject<Block> JUDAS_FRUIT_3 = REGISTRY.register("judas_fruit_3", () -> new JudasFruit3Block());
+	public static final RegistryObject<Block> KABANYT_REDSTONE_ORE_ON = REGISTRY.register("kabanyt_redstone_ore_on", () -> new KabanytRedstoneOreOnBlock());
 }

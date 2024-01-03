@@ -16,7 +16,7 @@
         "value": "CUSTOM:Baobabvalley"
       }
     ],
-    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "surfaceDetectionType": "MOTION_BLOCKING_NO_LEAVES",
     "terrainAdaptation": "beard_thin",
     "generationStep": "VEGETAL_DECORATION"
   }

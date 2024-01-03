@@ -40,8 +40,6 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("world_expansion:textures/screens/snow_cannon_gui.png");
-
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
@@ -57,7 +55,9 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/snow_cannon_gui_overlay.png"), this.leftPos + 1, this.topPos + 0, 0, 0, 298, 166, 298, 166);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -89,9 +89,6 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 		guiGraphics.drawString(this.font,
 
 				SnowValueProcedure.execute(world, x, y, z), 67, 75, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.snow_cannon_gui.label_x"), 13, 52, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.snow_cannon_gui.label_y"), 13, 70, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.snow_cannon_gui.label_z"), 13, 88, -12829636, false);
 	}
 
 	@Override

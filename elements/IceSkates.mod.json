@@ -9,7 +9,7 @@
     "enableLeggings": false,
     "textureLeggings": "",
     "enableBoots": true,
-    "textureBoots": "oxidized_copper_sheet_boots",
+    "textureBoots": "engineers_boots_item",
     "onBootsTick": {
       "name": "IceSkatesProcedure"
     },

@@ -1,7 +1,6 @@
 
 package net.horizonexpand.world_expansion.block;
 
-import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,14 +15,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
-import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
-
 import java.util.List;
-import java.util.Collections;
 
 public class DeepslateTitaniumOreBlock extends Block {
 	public DeepslateTitaniumOreBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.DEEPSLATE).sound(SoundType.DEEPSLATE).strength(5.25f, 8f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.DEEPSLATE).sound(SoundType.DEEPSLATE).strength(6f, 4f).requiresCorrectToolForDrops());
 	}
 
 	@Override
@@ -41,13 +37,5 @@ public class DeepslateTitaniumOreBlock extends Block {
 		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 2;
 		return false;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
-		if (!dropsOriginal.isEmpty())
-			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(WorldExpansionModItems.RAW_TITANIUM.get()));
 	}
 }

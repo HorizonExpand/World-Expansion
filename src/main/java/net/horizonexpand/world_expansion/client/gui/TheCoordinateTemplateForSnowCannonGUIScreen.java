@@ -35,11 +35,9 @@ public class TheCoordinateTemplateForSnowCannonGUIScreen extends AbstractContain
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 176;
+		this.imageWidth = 134;
 		this.imageHeight = 166;
 	}
-
-	private static final ResourceLocation texture = new ResourceLocation("world_expansion:textures/screens/the_coordinate_template_for_snow_cannon_gui.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
@@ -56,7 +54,9 @@ public class TheCoordinateTemplateForSnowCannonGUIScreen extends AbstractContain
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+
+		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/the_coordinate_template_for_snow_cannon_gui_overlay.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 134, 166, 134, 166);
+
 		RenderSystem.disableBlend();
 	}
 
@@ -85,11 +85,8 @@ public class TheCoordinateTemplateForSnowCannonGUIScreen extends AbstractContain
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_x"), 29, 48, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_y"), 87, 52, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_z"), 146, 48, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_the_coordinate_template_for_snow"), 2, 3, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_for_snow_cannon"), 2, 12, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_the_coordinate_template_for_snow"), 8, 7, -1315964, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_for_snow_cannon"), 8, 16, -1315964, false);
 	}
 
 	@Override
@@ -100,7 +97,7 @@ public class TheCoordinateTemplateForSnowCannonGUIScreen extends AbstractContain
 	@Override
 	public void init() {
 		super.init();
-		X = new EditBox(this.font, this.leftPos + 12, this.topPos + 26, 34, 18, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.X")) {
+		X = new EditBox(this.font, this.leftPos + 49, this.topPos + 35, 34, 18, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.X")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -123,7 +120,7 @@ public class TheCoordinateTemplateForSnowCannonGUIScreen extends AbstractContain
 		X.setMaxLength(32767);
 		guistate.put("text:X", X);
 		this.addWidget(this.X);
-		Y = new EditBox(this.font, this.leftPos + 70, this.topPos + 26, 34, 18, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.Y")) {
+		Y = new EditBox(this.font, this.leftPos + 49, this.topPos + 68, 34, 18, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.Y")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -146,7 +143,7 @@ public class TheCoordinateTemplateForSnowCannonGUIScreen extends AbstractContain
 		Y.setMaxLength(32767);
 		guistate.put("text:Y", Y);
 		this.addWidget(this.Y);
-		Z = new EditBox(this.font, this.leftPos + 129, this.topPos + 26, 34, 18, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.Z")) {
+		Z = new EditBox(this.font, this.leftPos + 49, this.topPos + 101, 34, 18, Component.translatable("gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.Z")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -174,7 +171,7 @@ public class TheCoordinateTemplateForSnowCannonGUIScreen extends AbstractContain
 				WorldExpansionMod.PACKET_HANDLER.sendToServer(new TheCoordinateTemplateForSnowCannonGUIButtonMessage(0, x, y, z));
 				TheCoordinateTemplateForSnowCannonGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}).bounds(this.leftPos + 60, this.topPos + 133, 54, 20).build();
+		}).bounds(this.leftPos + 39, this.topPos + 133, 54, 20).build();
 		guistate.put("button:button_accept", button_accept);
 		this.addRenderableWidget(button_accept);
 	}

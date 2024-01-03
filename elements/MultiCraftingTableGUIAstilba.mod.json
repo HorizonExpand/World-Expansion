@@ -236,6 +236,15 @@
           "x": 298,
           "y": 71
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "astilba_border.png",
+          "use1Xscale": false,
+          "x": 160,
+          "y": 72
+        }
       }
     ],
     "gridSettings": {
@@ -243,7 +252,7 @@
       "sy": 18,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": true
+      "snapOnGrid": false
     }
   }
 }

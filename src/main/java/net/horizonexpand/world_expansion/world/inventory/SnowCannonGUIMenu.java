@@ -77,10 +77,10 @@ public class SnowCannonGUIMenu extends AbstractContainerMenu implements Supplier
 					});
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 140, 53) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 142, 53) {
 			private final int slot = 0;
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 32, 143) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 258, 85) {
 			private final int slot = 1;
 		}));
 		for (int si = 0; si < 3; ++si)
