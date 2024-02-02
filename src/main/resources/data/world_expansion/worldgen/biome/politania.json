@@ -3,6 +3,18 @@
   "temperature": 1.3,
   "downfall": 0.5,
   "effects": {
+    "mood_sound": {
+      "sound": "ambient.cave",
+      "tick_delay": 6000,
+      "offset": 8,
+      "block_search_extent": 2
+    },
+    "music": {
+      "sound": "music.overworld.desert",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
     "foliage_color": -4407495,
     "grass_color": -4407495,
     "sky_color": -9782804,

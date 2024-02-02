@@ -12,15 +12,6 @@
         "state": {
           "Name": "minecraft:sandstone"
         }
-      },
-      {
-        "target": {
-          "predicate_type": "block_match",
-          "block": "minecraft:grass_block"
-        },
-        "state": {
-          "Name": "minecraft:sandstone"
-        }
       }
     ]
   }

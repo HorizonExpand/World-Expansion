@@ -13,7 +13,7 @@
       "value": "Blocks.GRAVEL"
     },
     "airColor": {
-      "value": -10318145,
+      "value": -6241568,
       "falpha": 0.0
     },
     "grassColor": {
@@ -42,7 +42,7 @@
       "value": "music.creative"
     },
     "moodSound": {
-      "value": ""
+      "value": "ambient.cave"
     },
     "moodSoundDelay": 6000,
     "spawnParticles": false,

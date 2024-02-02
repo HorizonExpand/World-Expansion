@@ -3,6 +3,18 @@
   "temperature": 1.4,
   "downfall": 0.3,
   "effects": {
+    "mood_sound": {
+      "sound": "ambient.cave",
+      "tick_delay": 6000,
+      "offset": 8,
+      "block_search_extent": 2
+    },
+    "music": {
+      "sound": "music.nether.nether_wastes",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
     "foliage_color": -7306931,
     "grass_color": -7306931,
     "sky_color": -11502955,

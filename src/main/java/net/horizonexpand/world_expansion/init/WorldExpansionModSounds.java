@@ -15,7 +15,6 @@ import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 public class WorldExpansionModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, WorldExpansionMod.MODID);
-	public static final RegistryObject<SoundEvent> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "music_disc_destroyer")));
 	public static final RegistryObject<SoundEvent> MUSIC_DISC_SPOOKY_FOREST = REGISTRY.register("music_disc_spooky_forest", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "music_disc_spooky_forest")));
 	public static final RegistryObject<SoundEvent> BASS0 = REGISTRY.register("bass0", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "bass0")));
 	public static final RegistryObject<SoundEvent> BASS1 = REGISTRY.register("bass1", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "bass1")));
@@ -48,4 +47,5 @@ public class WorldExpansionModSounds {
 	public static final RegistryObject<SoundEvent> MELODY8 = REGISTRY.register("melody8", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "melody8")));
 	public static final RegistryObject<SoundEvent> MELODY9 = REGISTRY.register("melody9", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "melody9")));
 	public static final RegistryObject<SoundEvent> MINI_FIREFLIES_AMBIENT = REGISTRY.register("mini-fireflies_ambient", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "mini-fireflies_ambient")));
+	public static final RegistryObject<SoundEvent> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "music_disc_destroyer")));
 }

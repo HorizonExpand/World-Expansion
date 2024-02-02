@@ -1,0 +1,35 @@
+{
+  "feature": "world_expansion:savanna_surface_stone",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 256
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "data": {
+              "type": "minecraft:trapezoid",
+              "min_inclusive": {
+                "absolute": 148
+              },
+              "max_inclusive": {
+                "absolute": 164
+              }
+            },
+            "weight": 1
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

@@ -3,6 +3,12 @@
   "temperature": 1.1,
   "downfall": 0.7,
   "effects": {
+    "mood_sound": {
+      "sound": "ambient.cave",
+      "tick_delay": 6000,
+      "offset": 8,
+      "block_search_extent": 2
+    },
     "music": {
       "sound": "music.creative",
       "min_delay": 12000,
@@ -11,8 +17,8 @@
     },
     "foliage_color": -4740034,
     "grass_color": -4407495,
-    "sky_color": -10318145,
-    "fog_color": -10318145,
+    "sky_color": -6241568,
+    "fog_color": -6241568,
     "water_color": -12801844,
     "water_fog_color": -12802356
   },

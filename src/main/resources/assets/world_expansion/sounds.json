@@ -1,12 +1,4 @@
 {
-  "music_disc_destroyer": {
-    "sounds": [
-      {
-        "name": "world_expansion:music_disc_destroyer",
-        "stream": true
-      }
-    ]
-  },
   "music_disc_spooky_forest": {
     "sounds": [
       {
@@ -303,6 +295,14 @@
       {
         "name": "world_expansion:fireflies_ambient3",
         "stream": false
+      }
+    ]
+  },
+  "music_disc_destroyer": {
+    "sounds": [
+      {
+        "name": "world_expansion:music_disc_destroyer",
+        "stream": true
       }
     ]
   }

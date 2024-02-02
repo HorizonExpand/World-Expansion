@@ -10294,6 +10294,70 @@
         ]
       },
       "path": "~/Drops/Blocks/Kabanyt/Ore"
+    },
+    {
+      "name": "SavannaSurfaceTerracotta",
+      "type": "feature",
+      "sortid": 544,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_surface_terracotta",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/forge/biome_modifier/savanna_surface_terracotta_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_surface_terracotta.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_terracotta.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "SavannaSurfaceYellowTerracotta",
+      "type": "feature",
+      "sortid": 545,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_surface_yellow_terracotta",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_yellow_terracotta.json",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/savanna_surface_yellow_terracotta_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_surface_yellow_terracotta.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "AcaciaBushFeature",
+      "type": "feature",
+      "sortid": 549,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "acacia_bush_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/acacia_bush_feature.json",
+          "src/main/resources/data/world_expansion/forge/biome_modifier/acacia_bush_feature_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/acacia_bush_feature.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "SavannaSurfaceStone",
+      "type": "feature",
+      "sortid": 550,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_surface_stone",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/forge/biome_modifier/savanna_surface_stone_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_stone.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_surface_stone.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
     }
   ],
   "variable_elements": [
@@ -10305,14 +10369,6 @@
     }
   ],
   "sound_elements": [
-    {
-      "name": "music_disc_destroyer",
-      "files": [
-        "music_disc_destroyer"
-      ],
-      "category": "record",
-      "subtitle": ""
-    },
     {
       "name": "music_disc_spooky_forest",
       "files": [
@@ -10571,6 +10627,14 @@
       ],
       "category": "hostile",
       "subtitle": "The Mini-Firefly Chirps"
+    },
+    {
+      "name": "music_disc_destroyer",
+      "files": [
+        "music_disc_destroyer"
+      ],
+      "category": "record",
+      "subtitle": ""
     }
   ],
   "language_map": {
@@ -10697,6 +10761,7 @@
       "biome.world_expansion.halloween_pumpkin_field": "Хеллоунское тыквенное поле",
       "block.world_expansion.kabanyt_stairs": "Ступеньки из кабанита",
       "biome.world_expansion.baobab_valley": "Долина баобабов",
+      "subtitles.music_disc_destroyer": "",
       "item_group.world_expansion.natural_blocks": "WE: Природные блоки",
       "advancements.tile_slab.title": "Плиточная плита",
       "item.world_expansion.music_disc_destroyer.desc": "Hrumer — Destroyer",
@@ -10770,7 +10835,7 @@
       "block.world_expansion.baobab_fence": "Baobab fence",
       "block.world_expansion.carved_kabanyt": "Carved kabanyt",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
-      "advancements.oh_great_baobab.title": "Oh, Great Baobab!",
+      "advancements.oh_great_baobab.title": "Oh, the Great Baobab!",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_the_coordinate_template_for_snow": "The Coordinate ",
       "block.world_expansion.baobab_fence_gate": "Baobab fence gate",
       "item.world_expansion.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
@@ -10869,6 +10934,7 @@
       "biome.world_expansion.halloween_pumpkin_field": "Halloween Pumpkin Field",
       "block.world_expansion.kabanyt_stairs": "Kabanyt stairs",
       "biome.world_expansion.baobab_valley": "Baobab valley",
+      "subtitles.music_disc_destroyer": "",
       "item_group.world_expansion.natural_blocks": "WE: Natural Blocks",
       "advancements.tile_slab.title": "Tile slab",
       "item.world_expansion.music_disc_destroyer.desc": "Hrumer — Destroyer",
@@ -11436,7 +11502,7 @@
   "workspaceSettings": {
     "modid": "world_expansion",
     "modName": "World Expansion: Light and Dark",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "This mod upgraded vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark Forest.",
     "author": "HorizonExpand",
     "websiteURL": "https://discord.gg/sJayn3BYDh",

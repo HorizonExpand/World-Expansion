@@ -39,10 +39,10 @@
       "value": ""
     },
     "music": {
-      "value": ""
+      "value": "music.nether"
     },
     "moodSound": {
-      "value": ""
+      "value": "ambient.cave"
     },
     "moodSoundDelay": 6000,
     "spawnParticles": false,
