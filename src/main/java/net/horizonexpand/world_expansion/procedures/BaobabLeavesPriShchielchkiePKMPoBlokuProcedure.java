@@ -43,7 +43,7 @@ public class BaobabLeavesPriShchielchkiePKMPoBlokuProcedure {
 			return;
 		if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == WorldExpansionModBlocks.BAOBAB_LEAVES.get() && world.isEmptyBlock(BlockPos.containing(x, y - 1, z))
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL) {
-			world.setBlock(BlockPos.containing(x, y - 1, z), WorldExpansionModBlocks.JUDAS_FRUIT1.get().defaultBlockState(), 3);
+			world.setBlock(BlockPos.containing(x, y - 1, z), WorldExpansionModBlocks.JUDAS_FRUIT_PLANT.get().defaultBlockState(), 3);
 			if (entity instanceof LivingEntity _entity)
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 			if (world instanceof Level _level) {

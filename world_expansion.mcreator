@@ -2681,24 +2681,6 @@
       "path": "~/Procedures/Tumbleweed"
     },
     {
-      "name": "JudasFruit1",
-      "type": "block",
-      "sortid": 222,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "judas_fruit1",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/block/entity/JudasFruit1BlockEntity.java",
-          "src/main/java/net/horizonexpand/world_expansion/block/JudasFruit1Block.java",
-          "src/main/resources/assets/world_expansion/models/item/judas_fruit1.json",
-          "src/main/resources/assets/world_expansion/blockstates/judas_fruit1.json",
-          "src/main/resources/assets/world_expansion/models/block/judas_fruit1.json"
-        ]
-      },
-      "path": "~/Blocks/Plants/Baobab/Judas fruit"
-    },
-    {
       "name": "JudasFruit",
       "type": "item",
       "sortid": 58,
@@ -2794,42 +2776,6 @@
       "path": "~/Procedures/Judas Fruit/Item"
     },
     {
-      "name": "JudasFruit2",
-      "type": "block",
-      "sortid": 225,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "judas_fruit_2",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/world_expansion/models/block/judas_fruit_2.json",
-          "src/main/resources/assets/world_expansion/blockstates/judas_fruit_2.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/JudasFruit2Block.java",
-          "src/main/java/net/horizonexpand/world_expansion/block/entity/JudasFruit2BlockEntity.java",
-          "src/main/resources/assets/world_expansion/models/item/judas_fruit_2.json"
-        ]
-      },
-      "path": "~/Blocks/Plants/Baobab/Judas fruit"
-    },
-    {
-      "name": "JudasFruit3",
-      "type": "block",
-      "sortid": 226,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "judas_fruit_3",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/block/entity/JudasFruit3BlockEntity.java",
-          "src/main/resources/assets/world_expansion/blockstates/judas_fruit_3.json",
-          "src/main/resources/assets/world_expansion/models/item/judas_fruit_3.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/JudasFruit3Block.java",
-          "src/main/resources/assets/world_expansion/models/block/judas_fruit_3.json"
-        ]
-      },
-      "path": "~/Blocks/Plants/Baobab/Judas fruit"
-    },
-    {
       "name": "JudasFruit1ObnovlieniieTika",
       "type": "procedure",
       "sortid": 227,
@@ -2862,70 +2808,6 @@
       "path": "~/Procedures/Judas Fruit/Block"
     },
     {
-      "name": "JudasFruit2ObnovlieniieTika",
-      "type": "procedure",
-      "sortid": 228,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "judas_fruit_2_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/JudasFruit2ObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Judas Fruit/Block"
-    },
-    {
-      "name": "JudasFruit3ObnovlieniieTika",
-      "type": "procedure",
-      "sortid": 229,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "judas_fruit_3_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/JudasFruit3ObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Judas Fruit/Block"
-    },
-    {
       "name": "JudasFruit1PriIspolzovaniiKostnoiMuki",
       "type": "procedure",
       "sortid": 230,
@@ -2935,38 +2817,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/horizonexpand/world_expansion/procedures/JudasFruit1PriIspolzovaniiKostnoiMukiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Judas Fruit/Block"
-    },
-    {
-      "name": "JudasFruit2PriIspolzovaniiKostnoiMuki",
-      "type": "procedure",
-      "sortid": 231,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "judas_fruit_2_pri_ispolzovanii_kostnoi_muki",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/JudasFruit2PriIspolzovaniiKostnoiMukiProcedure.java"
         ],
         "dependencies": [
           {
@@ -8561,38 +8411,6 @@
       "path": "~/Procedures/Judas Fruit/Block"
     },
     {
-      "name": "JudasFruit3PriIzmienieniiSosiednieghoBloka",
-      "type": "procedure",
-      "sortid": 455,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "judas_fruit_3_pri_izmienienii_sosiedniegho_bloka",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/JudasFruit3PriIzmienieniiSosiednieghoBlokaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Judas Fruit/Block"
-    },
-    {
       "name": "BaobabLeavesPriShchielchkiePKMPoBloku",
       "type": "procedure",
       "sortid": 456,
@@ -10358,6 +10176,142 @@
         ]
       },
       "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "TumbleweedDamageType",
+      "type": "damagetype",
+      "sortid": 551,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tumbleweed_damage_type",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/damage_type/tumbleweed_damage_type.json"
+        ]
+      },
+      "path": "~/Damage Type"
+    },
+    {
+      "name": "TumbleweedProjectileProjectileKoghdaSnariadPopadaietVSushchnost",
+      "type": "procedure",
+      "sortid": 552,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tumbleweed_projectile_projectile_koghda_snariad_popadaiet_v_sushchnost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/TumbleweedProjectileProjectileKoghdaSnariadPopadaietVSushchnostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Tumbleweed"
+    },
+    {
+      "name": "JudasFruitPlant",
+      "type": "block",
+      "sortid": 554,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "judas_fruit_plant",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/block/JudasFruitPlantBlock.java",
+          "src/main/resources/assets/world_expansion/blockstates/judas_fruit_plant.json",
+          "src/main/resources/assets/world_expansion/models/item/judas_fruit_plant.json",
+          "src/main/resources/assets/world_expansion/models/block/judas_fruit_plant.json"
+        ]
+      },
+      "path": "~/Blocks/Plants/Baobab/Judas fruit"
+    },
+    {
+      "name": "JudasFruitPlantUsloviieRazrieshieniiaIspolzovaniiaKostnoiMuki",
+      "type": "procedure",
+      "sortid": 555,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "judas_fruit_plant_usloviie_razrieshieniia_ispolzovaniia_kostnoi_muki",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/JudasFruitPlantUsloviieRazrieshieniiaIspolzovaniiaKostnoiMukiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Judas Fruit/Block"
+    },
+    {
+      "name": "JudasFruitPlantBlockState",
+      "type": "blockstates",
+      "sortid": 558,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "judas_fruit_plant_block_state",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/world_expansion/models/block/judas_fruit_plant_block_state_blockstate_0.json",
+          "src/main/resources/assets/world_expansion/models/block/judas_fruit_plant_block_state_blockstate_2.json",
+          "src/main/resources/assets/world_expansion/models/block/judas_fruit_plant_block_state_blockstate_1.json"
+        ]
+      },
+      "path": "~/BlockStates"
+    },
+    {
+      "name": "JudasFruitPlantPriRazrushieniiBlokaIghrokom",
+      "type": "procedure",
+      "sortid": 559,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "judas_fruit_plant_pri_razrushienii_bloka_ighrokom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/JudasFruitPlantPriRazrushieniiBlokaIghrokomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Judas Fruit/Block"
     }
   ],
   "variable_elements": [
@@ -10639,17 +10593,17 @@
   ],
   "language_map": {
     "ru_ru": {
-      "item.world_expansion.copper_horn3": "Медный рог ",
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
+      "item.world_expansion.copper_horn3": "Медный рог ",
       "item.world_expansion.copper_horn2": "Медный рог ",
       "biome.world_expansion.politania": "Политания",
       "item.world_expansion.copper_horn5": "Медный рог ",
       "item.world_expansion.copper_horn4": "Медный рог ",
       "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
       "item.world_expansion.copper_horn7": "Медный рог ",
-      "item.world_expansion.copper_horn6": "Медный рог ",
-      "advancements.world_expansion.title": "World Expansion",
       "block.world_expansion.little_shroomlight": "Маленький грибосвет",
+      "advancements.world_expansion.title": "World Expansion",
+      "item.world_expansion.copper_horn6": "Медный рог ",
       "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
       "item.world_expansion.copper_horn9": "Медный рог ",
       "block.world_expansion.kabanyt_emerald_ore": "Изумрудоносный кабанит",
@@ -10657,6 +10611,7 @@
       "block.world_expansion.kabanyt_slab": "Плита из кабанита",
       "advancements.new_year.descr": "Счастливый Новый Год!",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
+      "death.attack.tumbleweed_damage_type.item": "Ковбой %1$s был остановлен %2$s при помощи %3$s",
       "block.world_expansion.kabanyt_copper_ore": "Меденосный кабанит",
       "advancements.ancient_civilization_part_1.title": "Древняя Цивилизация: Часть 1",
       "block.world_expansion.baobab_fence": "Забор из древесины баобаба",
@@ -10665,6 +10620,7 @@
       "advancements.oh_great_baobab.title": "Ох, Великий Баобаб!",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_the_coordinate_template_for_snow": "Шаблон координат",
       "block.world_expansion.baobab_fence_gate": "Калитка из древесины баобаба",
+      "death.attack.tumbleweed_damage_type": "Ковбой %1$s был остановлен",
       "item.world_expansion.mini_fireflies_spawn_egg": "Яйцо призива Мини-Светлячков",
       "block.world_expansion.titanium_block": "Титановый блок",
       "block.world_expansion.baobab_pressure_plate": "Нажимная пластина из древесины баобаба",
@@ -10692,8 +10648,6 @@
       "trim_pattern.world_expansion.brute": "§7Отделка «Брутал»",
       "block.world_expansion.baobab_door": "Дверь из древесины баобаба",
       "biome.world_expansion.halloween_dark_forest": "Хеллоунский тёмный лес",
-      "block.world_expansion.judas_fruit_3": "Плод Иуды3",
-      "block.world_expansion.judas_fruit_2": "Плод Иуды2",
       "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
       "block.world_expansion.kabanyt_bricks": "Кирпичи из кабанита",
       "block.world_expansion.suspicious_mud": "Подозрительная грязь",
@@ -10701,7 +10655,6 @@
       "block.world_expansion.kabanyt_diamond_ore": "Алмазоносный кабанит",
       "block.world_expansion.kabanyt_tiles_wall": "Ограда из плиточного кабанита",
       "advancements.cannonist.descr": "Никто не знает для чего она была создана... Но это Пушка!",
-      "block.world_expansion.judas_fruit1": "Плод Иуды1",
       "block.world_expansion.baobab_planks": "Доски из древесины баобаба",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_light_blue_dye": "1x Светло-синий краситель",
       "block.world_expansion.hanging_bottle": "Подвешенная бутылка",
@@ -10730,6 +10683,7 @@
       "block.world_expansion.kabanyt_iron_ore": "Железоносный кабанит",
       "block.world_expansion.snow_cannon_base": "Основание снежной пушки",
       "block.world_expansion.deepslate_titanium_ore": "Титаноносный глубинный сланец",
+      "death.attack.tumbleweed_damage_type.player": "Ковбой %1$s был остановлен при попытке к бегству %2$s",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_yellow_dye": "1x Жёлтый краситель",
       "block.world_expansion.astilba": "Астильба",
       "item_group.world_expansion.halloween": "WE: Хеллоуин",
@@ -10747,6 +10701,7 @@
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_for_snow_cannon": "для Снежной пушки",
       "block.world_expansion.kabanyt_redstone_ore_on": "Редстоуноносный кабанит",
       "item.world_expansion.split_judas_fruit": "Расколотый плод Иуды",
+      "block.world_expansion.judas_fruit_plant": "Плод Иуды",
       "block.world_expansion.baobab_trapdoor": "Люк из древесины баобаба",
       "block.world_expansion.baobab_leaves": "Листва баобаба",
       "block.world_expansion.baobab_button": "Кнопка из древесины баобаба",
@@ -10812,17 +10767,17 @@
       "item.world_expansion.copper_horn0": "Медный рог "
     },
     "en_us": {
-      "item.world_expansion.copper_horn3": "Copper Horn",
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
+      "item.world_expansion.copper_horn3": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn2": "Copper Horn",
       "item.world_expansion.copper_horn5": "Copper Horn",
       "item.world_expansion.copper_horn4": "Copper Horn",
       "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
       "item.world_expansion.copper_horn7": "Copper Horn",
-      "block.world_expansion.little_shroomlight": "Little Shroomlight",
-      "item.world_expansion.copper_horn6": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
+      "item.world_expansion.copper_horn6": "Copper Horn",
+      "block.world_expansion.little_shroomlight": "Little Shroomlight",
       "item.world_expansion.copper_horn9": "Copper Horn",
       "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "block.world_expansion.kabanyt_emerald_ore": "Kabanyt Emerald Ore",
@@ -10830,6 +10785,7 @@
       "block.world_expansion.kabanyt_slab": "Kabanyt slab",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
       "advancements.new_year.descr": "Happy New Year!",
+      "death.attack.tumbleweed_damage_type.item": "Cowboy %1$s was stopped by %2$s using %3$s",
       "block.world_expansion.kabanyt_copper_ore": "Kabanyt Copper Ore",
       "advancements.ancient_civilization_part_1.title": "Ancient Civilization: Part 1",
       "block.world_expansion.baobab_fence": "Baobab fence",
@@ -10838,6 +10794,7 @@
       "advancements.oh_great_baobab.title": "Oh, the Great Baobab!",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_the_coordinate_template_for_snow": "The Coordinate ",
       "block.world_expansion.baobab_fence_gate": "Baobab fence gate",
+      "death.attack.tumbleweed_damage_type": "Cowboy %1$s was stopped",
       "item.world_expansion.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
       "block.world_expansion.titanium_block": "Titanium Block",
       "block.world_expansion.baobab_pressure_plate": "Baobab pressure plate",
@@ -10864,8 +10821,6 @@
       "trim_pattern.world_expansion.brute": "§7Brute Armor Trim",
       "block.world_expansion.baobab_door": "Baobab door",
       "biome.world_expansion.halloween_dark_forest": "Halloween Dark Forest",
-      "block.world_expansion.judas_fruit_3": "Judas Fruit3",
-      "block.world_expansion.judas_fruit_2": "Judas Fruit2",
       "block.world_expansion.baobab_slab": "Baobab slab",
       "block.world_expansion.kabanyt_bricks": "Kabanyt bricks",
       "block.world_expansion.suspicious_mud": "Suspicious Mud",
@@ -10873,7 +10828,6 @@
       "block.world_expansion.kabanyt_diamond_ore": "Kabanyt Diamond Ore",
       "block.world_expansion.kabanyt_tiles_wall": "Kabanyt tiles wall",
       "advancements.cannonist.descr": "No one knows what it was created for... But it\u0027s a Cannon!",
-      "block.world_expansion.judas_fruit1": "Judas Fruit1",
       "block.world_expansion.baobab_planks": "Baobab planks",
       "block.world_expansion.hanging_bottle": "Hanging Bottle",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_light_blue_dye": "1x Light Blue Dye",
@@ -10903,6 +10857,7 @@
       "block.world_expansion.kabanyt_iron_ore": "Kabanyt Iron Ore",
       "block.world_expansion.snow_cannon_base": "Snow Cannon Base",
       "block.world_expansion.deepslate_titanium_ore": "Deepslate Titanium Ore",
+      "death.attack.tumbleweed_damage_type.player": "Cowboy %1$s was stopped whilst trying to escape %2$s",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_yellow_dye": "1x Yellow Dye",
       "block.world_expansion.astilba": "Astilba ",
       "item_group.world_expansion.halloween": "WE: Halloween",
@@ -10920,6 +10875,7 @@
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_for_snow_cannon": "For Snow Cannon",
       "block.world_expansion.kabanyt_redstone_ore_on": "Kabanyt Redstone Ore",
       "item.world_expansion.split_judas_fruit": "Judas Fruit",
+      "block.world_expansion.judas_fruit_plant": "Judas Fruit",
       "block.world_expansion.baobab_leaves": "Baobab leaves",
       "block.world_expansion.baobab_button": "Baobab button",
       "block.world_expansion.baobab_trapdoor": "Baobab trapdoor",
@@ -11495,6 +11451,14 @@
       },
       {
         "name": "Command",
+        "children": []
+      },
+      {
+        "name": "Damage Type",
+        "children": []
+      },
+      {
+        "name": "BlockStates",
         "children": []
       }
     ]

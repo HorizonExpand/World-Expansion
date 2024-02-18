@@ -106,6 +106,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.JUDAS_FRUIT_PLANT.get().asItem());
 			})
 
 					.build());

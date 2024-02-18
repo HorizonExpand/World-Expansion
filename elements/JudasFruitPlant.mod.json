@@ -2,14 +2,14 @@
   "_fv": 57,
   "_type": "block",
   "definition": {
-    "texture": "judas_fruit3",
+    "texture": "judas_fruit1",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "judas_fruit:default",
+    "customModelName": "judas_fruit:first",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
@@ -33,16 +33,16 @@
         "subtract": false
       },
       {
-        "mx": 5.0,
-        "my": 2.0,
-        "mz": 5.0,
-        "Mx": 11.0,
-        "My": 14.0,
-        "Mz": 11.0,
+        "mx": 5.5,
+        "my": 3.0,
+        "mz": 5.5,
+        "Mx": 10.5,
+        "My": 13.0,
+        "Mz": 10.5,
         "subtract": false
       }
     ],
-    "name": "Judas Fruit3",
+    "name": "Judas Fruit",
     "specialInformation": {
       "fixedValue": []
     },
@@ -51,13 +51,13 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:NatureBlocks"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:JudasFruit"
+      "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
@@ -110,8 +110,14 @@
     "luminance": 0,
     "unbreakable": false,
     "breakHarvestLevel": 1,
-    "isBonemealable": false,
-    "hasInventory": true,
+    "isBonemealable": true,
+    "isBonemealTargetCondition": {
+      "name": "JudasFruitPlantUsloviieRazrieshieniiaIspolzovaniiaKostnoiMuki"
+    },
+    "onBonemealSuccess": {
+      "name": "JudasFruit1PriIspolzovaniiKostnoiMuki"
+    },
+    "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,
     "inventorySize": 9,
@@ -129,10 +135,13 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onNeighbourBlockChanges": {
-      "name": "JudasFruit3PriIzmienieniiSosiednieghoBloka"
+      "name": "JudasFruitPriIzmienieniiSosiednieghoBloka"
     },
     "onTickUpdate": {
-      "name": "JudasFruit3ObnovlieniieTika"
+      "name": "JudasFruit1ObnovlieniieTika"
+    },
+    "onDestroyedByPlayer": {
+      "name": "JudasFruitPlantPriRazrushieniiBlokaIghrokom"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

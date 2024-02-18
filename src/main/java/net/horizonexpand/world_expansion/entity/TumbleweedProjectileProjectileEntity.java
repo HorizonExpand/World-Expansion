@@ -7,6 +7,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -20,6 +21,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
+import net.horizonexpand.world_expansion.procedures.TumbleweedProjectileProjectileKoghdaSnariadPopadaietVSushchnostProcedure;
 import net.horizonexpand.world_expansion.procedures.TumbleweedProjectileKoghdaSnariadPopadaietVBlokProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
 import net.horizonexpand.world_expansion.init.WorldExpansionModEntities;
@@ -67,6 +69,12 @@ public class TumbleweedProjectileProjectileEntity extends AbstractArrow implemen
 	}
 
 	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		TumbleweedProjectileProjectileKoghdaSnariadPopadaietVSushchnostProcedure.execute(this.level(), entityHitResult.getEntity());
+	}
+
+	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
 		TumbleweedProjectileKoghdaSnariadPopadaietVBlokProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
@@ -80,7 +88,7 @@ public class TumbleweedProjectileProjectileEntity extends AbstractArrow implemen
 	}
 
 	public static TumbleweedProjectileProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 0.4f, 2.5, 0);
+		return shoot(world, entity, source, 0.4f, 0, 0);
 	}
 
 	public static TumbleweedProjectileProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -102,7 +110,7 @@ public class TumbleweedProjectileProjectileEntity extends AbstractArrow implemen
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.4f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(2.5);
+		entityarrow.setBaseDamage(0);
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level().addFreshEntity(entityarrow);

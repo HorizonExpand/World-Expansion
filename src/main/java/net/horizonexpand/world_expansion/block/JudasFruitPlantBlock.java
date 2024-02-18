@@ -6,37 +6,39 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelReader;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.Containers;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.procedures.JudasFruitPriIzmienieniiSosiednieghoBlokaProcedure;
-import net.horizonexpand.world_expansion.procedures.JudasFruit2PriIspolzovaniiKostnoiMukiProcedure;
-import net.horizonexpand.world_expansion.procedures.JudasFruit2ObnovlieniieTikaProcedure;
+import net.horizonexpand.world_expansion.procedures.JudasFruitPlantUsloviieRazrieshieniiaIspolzovaniiaKostnoiMukiProcedure;
+import net.horizonexpand.world_expansion.procedures.JudasFruitPlantPriRazrushieniiBlokaIghrokomProcedure;
+import net.horizonexpand.world_expansion.procedures.JudasFruit1PriIspolzovaniiKostnoiMukiProcedure;
+import net.horizonexpand.world_expansion.procedures.JudasFruit1ObnovlieniieTikaProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
-import net.horizonexpand.world_expansion.block.entity.JudasFruit2BlockEntity;
 
 import java.util.List;
 
-public class JudasFruit2Block extends Block implements EntityBlock, BonemealableBlock {
-	public JudasFruit2Block() {
+public class JudasFruitPlantBlock extends Block implements BonemealableBlock {
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
+
+	public JudasFruitPlantBlock() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).noLootTable());
 	}
 
@@ -62,7 +64,12 @@ public class JudasFruit2Block extends Block implements EntityBlock, Bonemealable
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		return Shapes.or(box(7, 12, 7, 9, 16, 9), box(6, 2, 6, 10, 14, 10));
+		return Shapes.or(box(7, 12, 7, 9, 16, 9), box(5.5, 3, 5.5, 10.5, 13, 10.5));
+	}
+
+	@Override
+	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		builder.add(BLOCKSTATE);
 	}
 
 	@Override
@@ -82,12 +89,25 @@ public class JudasFruit2Block extends Block implements EntityBlock, Bonemealable
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		JudasFruit2ObnovlieniieTikaProcedure.execute(world, x, y, z);
+		JudasFruit1ObnovlieniieTikaProcedure.execute(world, x, y, z);
+	}
+
+	@Override
+	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
+		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+		JudasFruitPlantPriRazrushieniiBlokaIghrokomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		return retval;
 	}
 
 	@Override
 	public boolean isValidBonemealTarget(LevelReader worldIn, BlockPos pos, BlockState blockstate, boolean clientSide) {
-		return true;
+		if (worldIn instanceof LevelAccessor world) {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return JudasFruitPlantUsloviieRazrieshieniiaIspolzovaniiaKostnoiMukiProcedure.execute(world, x, y, z);
+		}
+		return false;
 	}
 
 	@Override
@@ -97,50 +117,6 @@ public class JudasFruit2Block extends Block implements EntityBlock, Bonemealable
 
 	@Override
 	public void performBonemeal(ServerLevel world, RandomSource random, BlockPos pos, BlockState blockstate) {
-		JudasFruit2PriIspolzovaniiKostnoiMukiProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@Override
-	public MenuProvider getMenuProvider(BlockState state, Level worldIn, BlockPos pos) {
-		BlockEntity tileEntity = worldIn.getBlockEntity(pos);
-		return tileEntity instanceof MenuProvider menuProvider ? menuProvider : null;
-	}
-
-	@Override
-	public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-		return new JudasFruit2BlockEntity(pos, state);
-	}
-
-	@Override
-	public boolean triggerEvent(BlockState state, Level world, BlockPos pos, int eventID, int eventParam) {
-		super.triggerEvent(state, world, pos, eventID, eventParam);
-		BlockEntity blockEntity = world.getBlockEntity(pos);
-		return blockEntity == null ? false : blockEntity.triggerEvent(eventID, eventParam);
-	}
-
-	@Override
-	public void onRemove(BlockState state, Level world, BlockPos pos, BlockState newState, boolean isMoving) {
-		if (state.getBlock() != newState.getBlock()) {
-			BlockEntity blockEntity = world.getBlockEntity(pos);
-			if (blockEntity instanceof JudasFruit2BlockEntity be) {
-				Containers.dropContents(world, pos, be);
-				world.updateNeighbourForOutputSignal(pos, this);
-			}
-			super.onRemove(state, world, pos, newState, isMoving);
-		}
-	}
-
-	@Override
-	public boolean hasAnalogOutputSignal(BlockState state) {
-		return true;
-	}
-
-	@Override
-	public int getAnalogOutputSignal(BlockState blockState, Level world, BlockPos pos) {
-		BlockEntity tileentity = world.getBlockEntity(pos);
-		if (tileentity instanceof JudasFruit2BlockEntity be)
-			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
-		else
-			return 0;
+		JudasFruit1PriIspolzovaniiKostnoiMukiProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

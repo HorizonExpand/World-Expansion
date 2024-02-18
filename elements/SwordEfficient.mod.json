@@ -9,18 +9,13 @@
         "value": "CUSTOM:Tumbleweed"
       },
       {
-        "value": "CUSTOM:JudasFruit1"
-      },
-      {
-        "value": "CUSTOM:JudasFruit2"
-      },
-      {
-        "value": "CUSTOM:JudasFruit3"
+        "value": "CUSTOM:JudasFruitPlant"
       }
     ],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "sword_efficient",
     "namespace": "minecraft"
   }

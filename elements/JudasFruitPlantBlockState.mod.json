@@ -1,0 +1,42 @@
+{
+  "_fv": 57,
+  "_type": "blockstates",
+  "definition": {
+    "block": "JudasFruitPlant",
+    "blockstateList": [
+      {
+        "texture": "judas_fruit1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "judas_fruit:first"
+      },
+      {
+        "texture": "judas_fruit2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "judas_fruit:second"
+      },
+      {
+        "texture": "judas_fruit3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "judas_fruit:default"
+      }
+    ]
+  }
+}

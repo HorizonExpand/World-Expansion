@@ -45,9 +45,7 @@ import net.horizonexpand.world_expansion.block.KabanytDiamondOreBlock;
 import net.horizonexpand.world_expansion.block.KabanytCopperOreBlock;
 import net.horizonexpand.world_expansion.block.KabanytCoalOreBlock;
 import net.horizonexpand.world_expansion.block.KabanytBlock;
-import net.horizonexpand.world_expansion.block.JudasFruit3Block;
-import net.horizonexpand.world_expansion.block.JudasFruit2Block;
-import net.horizonexpand.world_expansion.block.JudasFruit1Block;
+import net.horizonexpand.world_expansion.block.JudasFruitPlantBlock;
 import net.horizonexpand.world_expansion.block.JackOLanternWithSoulBlock;
 import net.horizonexpand.world_expansion.block.DryDirtBlock;
 import net.horizonexpand.world_expansion.block.DeepslateTitaniumOreBlock;
@@ -128,8 +126,6 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> SNOW_CANNON_BARREL = REGISTRY.register("snow_cannon_barrel", () -> new SnowCannonBarrelBlock());
 	public static final RegistryObject<Block> JACK_O_LANTERN_WITH_SOUL = REGISTRY.register("jack_o_lantern_with_soul", () -> new JackOLanternWithSoulBlock());
 	public static final RegistryObject<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", () -> new TumbleweedBlock());
-	public static final RegistryObject<Block> JUDAS_FRUIT1 = REGISTRY.register("judas_fruit1", () -> new JudasFruit1Block());
-	public static final RegistryObject<Block> JUDAS_FRUIT_2 = REGISTRY.register("judas_fruit_2", () -> new JudasFruit2Block());
-	public static final RegistryObject<Block> JUDAS_FRUIT_3 = REGISTRY.register("judas_fruit_3", () -> new JudasFruit3Block());
 	public static final RegistryObject<Block> KABANYT_REDSTONE_ORE_ON = REGISTRY.register("kabanyt_redstone_ore_on", () -> new KabanytRedstoneOreOnBlock());
+	public static final RegistryObject<Block> JUDAS_FRUIT_PLANT = REGISTRY.register("judas_fruit_plant", () -> new JudasFruitPlantBlock());
 }

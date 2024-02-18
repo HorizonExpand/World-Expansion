@@ -124,10 +124,8 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> JACK_O_LANTERN_WITH_SOUL = block(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL);
 	public static final RegistryObject<Item> SOUL = REGISTRY.register("soul", () -> new SoulItem());
 	public static final RegistryObject<Item> TUMBLEWEED = block(WorldExpansionModBlocks.TUMBLEWEED);
-	public static final RegistryObject<Item> JUDAS_FRUIT1 = block(WorldExpansionModBlocks.JUDAS_FRUIT1);
-	public static final RegistryObject<Item> JUDAS_FRUIT_2 = block(WorldExpansionModBlocks.JUDAS_FRUIT_2);
-	public static final RegistryObject<Item> JUDAS_FRUIT_3 = block(WorldExpansionModBlocks.JUDAS_FRUIT_3);
 	public static final RegistryObject<Item> KABANYT_REDSTONE_ORE_ON = block(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE_ON);
+	public static final RegistryObject<Item> JUDAS_FRUIT_PLANT = block(WorldExpansionModBlocks.JUDAS_FRUIT_PLANT);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
