@@ -12,8 +12,8 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class JudasFruit1ObnovlieniieTikaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip1) : -1) != 3) {
-			if (Math.random() < 0.1) {
+		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip1) : -1) != 2) {
+			if (Math.random() < 0.4) {
 				{
 					int _value = (int) (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip3
 							? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip3)

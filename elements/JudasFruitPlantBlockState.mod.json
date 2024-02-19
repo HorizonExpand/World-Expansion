@@ -5,17 +5,6 @@
     "block": "JudasFruitPlant",
     "blockstateList": [
       {
-        "texture": "judas_fruit1",
-        "textureTop": "",
-        "textureLeft": "",
-        "textureFront": "",
-        "textureRight": "",
-        "textureBack": "",
-        "particleTexture": "",
-        "renderType": 2,
-        "customModelName": "judas_fruit:first"
-      },
-      {
         "texture": "judas_fruit2",
         "textureTop": "",
         "textureLeft": "",

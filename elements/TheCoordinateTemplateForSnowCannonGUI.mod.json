@@ -78,7 +78,7 @@
         "data": {
           "name": "label_for_snow_cannon",
           "text": {
-            "fixedValue": "For Snow Cannon"
+            "fixedValue": "For Cannon"
           },
           "color": {
             "value": -1315964,
@@ -98,9 +98,6 @@
         }
       }
     ],
-    "onOpen": {
-      "name": "TheCoordinateTemplateForSnowCannonGUIPriOtkrytiiIntierfieisa"
-    },
     "gridSettings": {
       "sx": 9,
       "sy": 9,

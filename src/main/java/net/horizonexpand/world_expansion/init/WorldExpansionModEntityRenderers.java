@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.horizonexpand.world_expansion.client.renderer.TNTProjectileRenderer;
 import net.horizonexpand.world_expansion.client.renderer.PieceOfSnowRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -19,5 +20,6 @@ public class WorldExpansionModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(WorldExpansionModEntities.TUMBLEWEED_PROJECTILE.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(WorldExpansionModEntities.PIECE_OF_SNOW.get(), PieceOfSnowRenderer::new);
+		event.registerEntityRenderer(WorldExpansionModEntities.TNT_PROJECTILE.get(), TNTProjectileRenderer::new);
 	}
 }

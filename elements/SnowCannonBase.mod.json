@@ -51,7 +51,7 @@
         "subtract": false
       }
     ],
-    "name": "Snow Cannon Base",
+    "name": "Cannon Base",
     "specialInformation": {
       "fixedValue": []
     },
@@ -137,12 +137,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "SnowCannonGUIChangeSlot"
-    },
-    "onDestroyedByPlayer": {
-      "name": "SnowCannonBasePriRazrushieniiBlokaIghrokom"
-    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],

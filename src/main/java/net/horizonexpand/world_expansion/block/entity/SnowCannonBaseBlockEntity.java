@@ -35,7 +35,7 @@ public class SnowCannonBaseBlockEntity extends RandomizableContainerBlockEntity 
 	private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
 
 	public SnowCannonBaseBlockEntity(BlockPos position, BlockState state) {
-		super(WorldExpansionModBlockEntities.SNOW_CANNON_BASE.get(), position, state);
+		super(WorldExpansionModBlockEntities.CANNON_BASE.get(), position, state);
 	}
 
 	@Override
@@ -79,7 +79,7 @@ public class SnowCannonBaseBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDefaultName() {
-		return Component.literal("snow_cannon_base");
+		return Component.literal("cannon_base");
 	}
 
 	@Override
@@ -94,7 +94,7 @@ public class SnowCannonBaseBlockEntity extends RandomizableContainerBlockEntity 
 
 	@Override
 	public Component getDisplayName() {
-		return Component.literal("Snow Cannon Base");
+		return Component.literal("Cannon Base");
 	}
 
 	@Override

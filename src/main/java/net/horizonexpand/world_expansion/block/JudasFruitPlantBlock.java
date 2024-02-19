@@ -36,7 +36,7 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
 import java.util.List;
 
 public class JudasFruitPlantBlock extends Block implements BonemealableBlock {
-	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
+	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 2);
 
 	public JudasFruitPlantBlock() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).noLootTable());

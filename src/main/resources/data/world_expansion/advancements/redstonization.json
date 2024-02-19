@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "world_expansion:textures/screens/redstone_lamp_on.png",
+    "icon": {
+      "item": "minecraft:redstone"
+    },
+    "title": {
+      "translate": "advancements.redstonization.title"
+    },
+    "description": {
+      "translate": "advancements.redstonization.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "redstonization": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

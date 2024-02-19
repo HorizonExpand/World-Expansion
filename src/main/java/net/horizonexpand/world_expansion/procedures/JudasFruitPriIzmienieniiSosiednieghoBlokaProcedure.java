@@ -11,7 +11,7 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class JudasFruitPriIzmienieniiSosiednieghoBlokaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip1) : -1) != 3) {
+		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip1) : -1) != 2) {
 			if (!((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == WorldExpansionModBlocks.BAOBAB_LEAVES.get())) {
 				{
 					BlockPos _pos = BlockPos.containing(x, y, z);

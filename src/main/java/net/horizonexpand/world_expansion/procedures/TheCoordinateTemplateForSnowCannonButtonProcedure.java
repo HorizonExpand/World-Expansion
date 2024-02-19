@@ -34,7 +34,7 @@ public class TheCoordinateTemplateForSnowCannonButtonProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : "")) + "" + ("Y:" + new Object() {
+			}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : "") + " ") + "" + ("Y:" + new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -42,7 +42,7 @@ public class TheCoordinateTemplateForSnowCannonButtonProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "")) + ("Z:" + new Object() {
+			}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "") + " ") + ("Z:" + new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -96,7 +96,7 @@ public class TheCoordinateTemplateForSnowCannonButtonProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : "")) + "" + ("Y:" + new Object() {
+			}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : "") + " ") + "" + ("Y:" + new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());
@@ -104,7 +104,7 @@ public class TheCoordinateTemplateForSnowCannonButtonProcedure {
 					}
 					return 0;
 				}
-			}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "")) + ("Z:" + new Object() {
+			}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "") + " ") + ("Z:" + new Object() {
 				double convert(String s) {
 					try {
 						return Double.parseDouble(s.trim());

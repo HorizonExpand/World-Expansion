@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.horizonexpand.world_expansion.entity.TumbleweedProjectileProjectileEntity;
+import net.horizonexpand.world_expansion.entity.TNTProjectileEntity;
 import net.horizonexpand.world_expansion.entity.PieceOfSnowEntity;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
@@ -28,6 +29,8 @@ public class WorldExpansionModEntities {
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<PieceOfSnowEntity>> PIECE_OF_SNOW = register("projectile_piece_of_snow",
 			EntityType.Builder.<PieceOfSnowEntity>of(PieceOfSnowEntity::new, MobCategory.MISC).setCustomClientFactory(PieceOfSnowEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TNTProjectileEntity>> TNT_PROJECTILE = register("projectile_tnt_projectile",
+			EntityType.Builder.<TNTProjectileEntity>of(TNTProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TNTProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

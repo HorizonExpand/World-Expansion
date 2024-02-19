@@ -6,7 +6,7 @@ import net.minecraft.core.BlockPos;
 
 public class JudasFruitPlantUsloviieRazrieshieniiaIspolzovaniiaKostnoiMukiProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip1) : -1) != 3) {
+		if (((world.getBlockState(BlockPos.containing(x, y, z))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip1 ? (world.getBlockState(BlockPos.containing(x, y, z))).getValue(_getip1) : -1) != 2) {
 			return true;
 		}
 		return false;

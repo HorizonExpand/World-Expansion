@@ -16,7 +16,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.horizonexpand.world_expansion.procedures.TheCoordinateTemplateForSnowCannonGUIPriOtkrytiiIntierfieisaProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModMenus;
 
 import java.util.function.Supplier;
@@ -49,7 +48,6 @@ public class TheCoordinateTemplateForSnowCannonGUIMenu extends AbstractContainer
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
-		TheCoordinateTemplateForSnowCannonGUIPriOtkrytiiIntierfieisaProcedure.execute(entity, guistate);
 	}
 
 	@Override

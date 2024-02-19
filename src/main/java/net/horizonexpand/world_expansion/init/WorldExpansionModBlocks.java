@@ -87,6 +87,7 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> TAKYR = REGISTRY.register("takyr", () -> new TakyrBlock());
 	public static final RegistryObject<Block> DRY_DIRT = REGISTRY.register("dry_dirt", () -> new DryDirtBlock());
 	public static final RegistryObject<Block> BAOBAB_LEAVES = REGISTRY.register("baobab_leaves", () -> new BaobabLeavesBlock());
+	public static final RegistryObject<Block> JUDAS_FRUIT_PLANT = REGISTRY.register("judas_fruit_plant", () -> new JudasFruitPlantBlock());
 	public static final RegistryObject<Block> BAOBAB_SAPLING = REGISTRY.register("baobab_sapling", () -> new BaobabSaplingBlock());
 	public static final RegistryObject<Block> ALOE_VERA = REGISTRY.register("aloe_vera", () -> new AloeVeraBlock());
 	public static final RegistryObject<Block> TIGER_ALOE_VERA = REGISTRY.register("tiger_aloe_vera", () -> new AloeVeraTigerBlock());
@@ -122,10 +123,9 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> KABANYT_TILES_SLAB = REGISTRY.register("kabanyt_tiles_slab", () -> new KabanyttilesslabBlock());
 	public static final RegistryObject<Block> KABANYT_TILES_WALL = REGISTRY.register("kabanyt_tiles_wall", () -> new KabanyttileswallBlock());
 	public static final RegistryObject<Block> CARVED_KABANYT = REGISTRY.register("carved_kabanyt", () -> new CarvedkabanytBlock());
-	public static final RegistryObject<Block> SNOW_CANNON_BASE = REGISTRY.register("snow_cannon_base", () -> new SnowCannonBaseBlock());
-	public static final RegistryObject<Block> SNOW_CANNON_BARREL = REGISTRY.register("snow_cannon_barrel", () -> new SnowCannonBarrelBlock());
+	public static final RegistryObject<Block> CANNON_BASE = REGISTRY.register("cannon_base", () -> new SnowCannonBaseBlock());
+	public static final RegistryObject<Block> CANNON_BARREL = REGISTRY.register("cannon_barrel", () -> new SnowCannonBarrelBlock());
 	public static final RegistryObject<Block> JACK_O_LANTERN_WITH_SOUL = REGISTRY.register("jack_o_lantern_with_soul", () -> new JackOLanternWithSoulBlock());
 	public static final RegistryObject<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", () -> new TumbleweedBlock());
 	public static final RegistryObject<Block> KABANYT_REDSTONE_ORE_ON = REGISTRY.register("kabanyt_redstone_ore_on", () -> new KabanytRedstoneOreOnBlock());
-	public static final RegistryObject<Block> JUDAS_FRUIT_PLANT = REGISTRY.register("judas_fruit_plant", () -> new JudasFruitPlantBlock());
 }

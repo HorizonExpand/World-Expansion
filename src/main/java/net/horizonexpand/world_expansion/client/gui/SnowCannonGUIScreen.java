@@ -11,7 +11,6 @@ import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.horizonexpand.world_expansion.world.inventory.SnowCannonGUIMenu;
-import net.horizonexpand.world_expansion.procedures.SnowValueProcedure;
 import net.horizonexpand.world_expansion.network.SnowCannonGUIButtonMessage;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
@@ -86,9 +85,6 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.drawString(this.font,
-
-				SnowValueProcedure.execute(world, x, y, z), 67, 75, -12829636, false);
 	}
 
 	@Override

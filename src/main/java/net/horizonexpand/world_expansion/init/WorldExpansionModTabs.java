@@ -98,6 +98,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.TAKYR.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.DRY_DIRT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.JUDAS_FRUIT_PLANT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem());
 				tabData.accept(WorldExpansionModItems.TUMBLEWEED_ITEM.get());
 				tabData.accept(WorldExpansionModBlocks.ALOE_VERA.get().asItem());
@@ -106,14 +107,13 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.JUDAS_FRUIT_PLANT.get().asItem());
 			})
 
 					.build());
 	public static final RegistryObject<CreativeModeTab> NEW_YEAR_2024 = REGISTRY.register("new_year_2024",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.new_year_2024")).icon(() -> new ItemStack(WorldExpansionModBlocks.SNOW_CANNON_BARREL.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BASE.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.SNOW_CANNON_BARREL.get().asItem());
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.new_year_2024")).icon(() -> new ItemStack(WorldExpansionModBlocks.CANNON_BARREL.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WorldExpansionModBlocks.CANNON_BASE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.CANNON_BARREL.get().asItem());
 				tabData.accept(WorldExpansionModItems.ICE_SKATES_BOOTS.get());
 			})
 

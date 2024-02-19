@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "world_expansion:snow_cannon_barrel"
+      "item": "world_expansion:cannon_barrel"
     },
     "title": {
       "translate": "advancements.cannonist.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "world_expansion:snow_cannon_barrel"
+              "world_expansion:cannon_barrel"
             ],
             "count": {
               "min": 1,
@@ -35,5 +35,5 @@
   "rewards": {
     "experience": 4
   },
-  "parent": "world_expansion:new_year"
+  "parent": "world_expansion:redstonization"
 }

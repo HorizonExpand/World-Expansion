@@ -2,12 +2,12 @@
   "_fv": 57,
   "_type": "achievement",
   "definition": {
-    "achievementName": "New Year",
-    "achievementDescription": "Happy New Year!",
+    "achievementName": "Redstonization",
+    "achievementDescription": "Welcome to the Redstone World!",
     "achievementIcon": {
-      "value": "Items.COOKIE"
+      "value": "Items.REDSTONE"
     },
-    "background": "snow.png",
+    "background": "redstone_lamp_on.png",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
@@ -20,6 +20,6 @@
     "parent": {
       "value": "No parent: root"
     },
-    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"67\" y=\"114\"><next><block type=\"advancement_trigger\"></block></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"27\" y=\"39\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
   }
 }
