@@ -21,18 +21,18 @@ public class TheWildestInTheWildWestProcedureProcedure {
 	@SubscribeEvent
 	public static void onEntityDeath(LivingDeathEvent event) {
 		if (event != null && event.getEntity() != null) {
-			execute(event, event.getSource(), event.getEntity(), event.getSource().getEntity());
+			execute(event, event.getSource(), event.getEntity());
 		}
 	}
 
-	public static void execute(DamageSource damagesource, Entity entity, Entity sourceentity) {
-		execute(null, damagesource, entity, sourceentity);
+	public static void execute(DamageSource damagesource, Entity entity) {
+		execute(null, damagesource, entity);
 	}
 
-	private static void execute(@Nullable Event event, DamageSource damagesource, Entity entity, Entity sourceentity) {
-		if (damagesource == null || entity == null || sourceentity == null)
+	private static void execute(@Nullable Event event, DamageSource damagesource, Entity entity) {
+		if (damagesource == null || entity == null)
 			return;
-		if (damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("world_expansion:tumbleweed_damage_type"))) && entity == sourceentity) {
+		if (damagesource.is(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("world_expansion:tumbleweed_damage_type")))) {
 			if (entity instanceof ServerPlayer _player) {
 				Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("world_expansion:the_wildest_in_the_wild_west"));
 				AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

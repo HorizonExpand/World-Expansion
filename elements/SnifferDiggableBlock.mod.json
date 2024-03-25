@@ -4,17 +4,11 @@
   "definition": {
     "type": "Blocks",
     "items": [],
-    "blocks": [
-      {
-        "value": "CUSTOM:Takyr"
-      },
-      {
-        "value": "CUSTOM:DryDirt"
-      }
-    ],
+    "blocks": [],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "sniffer_diggable_block",
     "namespace": "minecraft"
   }

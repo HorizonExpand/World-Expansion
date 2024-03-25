@@ -1187,12 +1187,6 @@
         "value": "Blocks.PEARLESCENT_FROGLIGHT"
       },
       {
-        "value": "CUSTOM:Takyr"
-      },
-      {
-        "value": "CUSTOM:DryDirt"
-      },
-      {
         "value": "CUSTOM:SuspiciousMud"
       },
       {
@@ -1273,7 +1267,7 @@
     "patchSize": 54,
     "generateAtAnyHeight": false,
     "onTickUpdate": {
-      "name": "TumbleweedObnovlieniieTika"
+      "name": "TumbleweedTick"
     },
     "onRightClicked": {
       "name": "TumbleweedPriShchielchkiePKMPoRastieniiu"

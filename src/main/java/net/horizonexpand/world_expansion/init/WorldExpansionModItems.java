@@ -7,19 +7,12 @@ package net.horizonexpand.world_expansion.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.item.ItemProperties;
 
-import net.horizonexpand.world_expansion.procedures.AnemometerZnachieniieSvoistvaProcedure;
 import net.horizonexpand.world_expansion.item.TumbleweedProjectileItem;
 import net.horizonexpand.world_expansion.item.TitaniumIngotItem;
 import net.horizonexpand.world_expansion.item.SplitJudasFruitItem;
@@ -41,10 +34,8 @@ import net.horizonexpand.world_expansion.item.CopperHorn3Item;
 import net.horizonexpand.world_expansion.item.CopperHorn2Item;
 import net.horizonexpand.world_expansion.item.CopperHorn1Item;
 import net.horizonexpand.world_expansion.item.BruteArmorTrimSmithingTemplateItem;
-import net.horizonexpand.world_expansion.item.AnemometerItem;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class WorldExpansionModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, WorldExpansionMod.MODID);
 	public static final RegistryObject<Item> TITANIUM_ORE = block(WorldExpansionModBlocks.TITANIUM_ORE);
@@ -60,8 +51,6 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> KABANYT_LAPIS_ORE = block(WorldExpansionModBlocks.KABANYT_LAPIS_ORE);
 	public static final RegistryObject<Item> KABANYT_DIAMOND_ORE = block(WorldExpansionModBlocks.KABANYT_DIAMOND_ORE);
 	public static final RegistryObject<Item> SUSPICIOUS_MUD = block(WorldExpansionModBlocks.SUSPICIOUS_MUD);
-	public static final RegistryObject<Item> TAKYR = block(WorldExpansionModBlocks.TAKYR);
-	public static final RegistryObject<Item> DRY_DIRT = block(WorldExpansionModBlocks.DRY_DIRT);
 	public static final RegistryObject<Item> BAOBAB_LEAVES = block(WorldExpansionModBlocks.BAOBAB_LEAVES);
 	public static final RegistryObject<Item> JUDAS_FRUIT_PLANT = block(WorldExpansionModBlocks.JUDAS_FRUIT_PLANT);
 	public static final RegistryObject<Item> BAOBAB_SAPLING = block(WorldExpansionModBlocks.BAOBAB_SAPLING);
@@ -111,7 +100,6 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> BRUTE_ARMOR_TRIM_SMITHING_TEMPLATE = REGISTRY.register("brute_armor_trim_smithing_template", () -> new BruteArmorTrimSmithingTemplateItem());
 	public static final RegistryObject<Item> PIECE_TOTEM_OF_UNDYING = REGISTRY.register("piece_totem_of_undying", () -> new PieceTotemOfUndyingItem());
 	public static final RegistryObject<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> new MusicDiscDestroyerItem());
-	public static final RegistryObject<Item> WINDOMETER = REGISTRY.register("windometer", () -> new AnemometerItem());
 	public static final RegistryObject<Item> COPPER_HORN0 = REGISTRY.register("copper_horn0", () -> new CopperHornItem());
 	public static final RegistryObject<Item> COPPER_HORN1 = REGISTRY.register("copper_horn1", () -> new CopperHorn1Item());
 	public static final RegistryObject<Item> COPPER_HORN2 = REGISTRY.register("copper_horn2", () -> new CopperHorn2Item());
@@ -126,6 +114,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> SOUL = REGISTRY.register("soul", () -> new SoulItem());
 	public static final RegistryObject<Item> TUMBLEWEED = block(WorldExpansionModBlocks.TUMBLEWEED);
 	public static final RegistryObject<Item> KABANYT_REDSTONE_ORE_ON = block(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE_ON);
+	public static final RegistryObject<Item> WINDOMETER = block(WorldExpansionModBlocks.WINDOMETER);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
@@ -133,13 +122,5 @@ public class WorldExpansionModItems {
 
 	private static RegistryObject<Item> doubleBlock(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties()));
-	}
-
-	@SubscribeEvent
-	public static void clientLoad(FMLClientSetupEvent event) {
-		event.enqueueWork(() -> {
-			ItemProperties.register(WINDOMETER.get(), new ResourceLocation("world_expansion:windometer_wind"),
-					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) AnemometerZnachieniieSvoistvaProcedure.execute(entity != null ? entity.level() : clientWorld));
-		});
 	}
 }

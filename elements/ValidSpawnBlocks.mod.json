@@ -7,14 +7,12 @@
     "blocks": [
       {
         "value": "CUSTOM:Kabanyt"
-      },
-      {
-        "value": "CUSTOM:DryDirt"
       }
     ],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "valid_spawn",
     "namespace": "minecraft"
   }

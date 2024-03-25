@@ -13,17 +13,12 @@
       },
       {
         "value": "Blocks.SAND#1"
-      },
-      {
-        "value": "CUSTOM:Takyr"
-      },
-      {
-        "value": "CUSTOM:DryDirt"
       }
     ],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "dirt",
     "namespace": "minecraft"
   }

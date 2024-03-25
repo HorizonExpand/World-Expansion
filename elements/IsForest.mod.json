@@ -12,6 +12,7 @@
         "value": "CUSTOM:HalloweenForest"
       }
     ],
+    "damageTypes": [],
     "name": "is_forest",
     "namespace": "minecraft"
   }

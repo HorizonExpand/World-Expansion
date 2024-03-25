@@ -71,7 +71,7 @@ public class TumbleweedProjectileProjectileEntity extends AbstractArrow implemen
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		TumbleweedProjectileProjectileKoghdaSnariadPopadaietVSushchnostProcedure.execute(this.level(), entityHitResult.getEntity(), this.getOwner());
+		TumbleweedProjectileProjectileKoghdaSnariadPopadaietVSushchnostProcedure.execute(this.level(), entityHitResult.getEntity());
 	}
 
 	@Override

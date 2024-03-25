@@ -1,9 +1,9 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "savanna_plateau",
+    "world_expansion:dry_savanna",
     "savanna",
-    "world_expansion:dry_savanna"
+    "savanna_plateau"
   ],
   "features": "world_expansion:acacia_bush_feature",
   "step": "vegetal_decoration"

@@ -27,8 +27,9 @@
     "world_expansion:kabanyt_tiles_slab",
     "world_expansion:kabanyt_tiles_wall",
     "world_expansion:carved_kabanyt",
-    "world_expansion:snow_cannon_base",
-    "world_expansion:snow_cannon_barrel",
-    "world_expansion:kabanyt_redstone_ore_on"
+    "world_expansion:cannon_base",
+    "world_expansion:cannon_barrel",
+    "world_expansion:kabanyt_redstone_ore_on",
+    "world_expansion:windometer"
   ]
 }

@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "stone_ore_replaceables",
     "namespace": "minecraft"
   }

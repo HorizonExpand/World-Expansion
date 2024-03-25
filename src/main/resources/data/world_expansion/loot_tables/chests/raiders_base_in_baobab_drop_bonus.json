@@ -140,7 +140,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "world_expansion:copper_horn7",
+          "name": "world_expansion:copper_horn8",
           "weight": 1,
           "functions": [
             {

@@ -12,7 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.world.inventory.SnowCannonGUIMenu;
-import net.horizonexpand.world_expansion.procedures.SnowCannonBaseRiedstounVkliuchionProcedure;
+import net.horizonexpand.world_expansion.procedures.CannonShootProcedure;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 import java.util.function.Supplier;
@@ -64,7 +64,7 @@ public class SnowCannonGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			SnowCannonBaseRiedstounVkliuchionProcedure.execute(world, x, y, z, entity, guistate);
+			CannonShootProcedure.execute(world, x, y, z, entity, guistate);
 		}
 	}
 

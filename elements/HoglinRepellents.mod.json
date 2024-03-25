@@ -54,6 +54,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "hoglin_repellents",
     "namespace": "minecraft"
   }

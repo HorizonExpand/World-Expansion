@@ -18,6 +18,7 @@ import net.minecraft.world.entity.Entity;
 
 import net.horizonexpand.world_expansion.entity.TumbleweedProjectileProjectileEntity;
 import net.horizonexpand.world_expansion.entity.TNTProjectileEntity;
+import net.horizonexpand.world_expansion.entity.PowderSnowProjectileEntity;
 import net.horizonexpand.world_expansion.entity.PieceOfSnowEntity;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
@@ -27,10 +28,12 @@ public class WorldExpansionModEntities {
 	public static final RegistryObject<EntityType<TumbleweedProjectileProjectileEntity>> TUMBLEWEED_PROJECTILE = register("projectile_tumbleweed_projectile",
 			EntityType.Builder.<TumbleweedProjectileProjectileEntity>of(TumbleweedProjectileProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TumbleweedProjectileProjectileEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<PieceOfSnowEntity>> PIECE_OF_SNOW = register("projectile_piece_of_snow",
+	public static final RegistryObject<EntityType<PieceOfSnowEntity>> SNOW_PROJECTILE = register("projectile_snow_projectile",
 			EntityType.Builder.<PieceOfSnowEntity>of(PieceOfSnowEntity::new, MobCategory.MISC).setCustomClientFactory(PieceOfSnowEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<TNTProjectileEntity>> TNT_PROJECTILE = register("projectile_tnt_projectile",
 			EntityType.Builder.<TNTProjectileEntity>of(TNTProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TNTProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PowderSnowProjectileEntity>> POWDER_SNOW_PROJECTILE = register("projectile_powder_snow_projectile", EntityType.Builder.<PowderSnowProjectileEntity>of(PowderSnowProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(PowderSnowProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

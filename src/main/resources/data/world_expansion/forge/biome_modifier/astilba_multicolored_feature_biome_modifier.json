@@ -1,10 +1,10 @@
 {
   "type": "forge:add_features",
   "biomes": [
+    "meadow",
+    "flower_forest",
     "bamboo_jungle",
     "sparse_jungle",
-    "flower_forest",
-    "meadow",
     "cherry_grove"
   ],
   "features": "world_expansion:astilba_multicolored_feature",

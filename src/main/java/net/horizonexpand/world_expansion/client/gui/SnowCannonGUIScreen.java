@@ -55,7 +55,7 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 
-		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/snow_cannon_gui_overlay.png"), this.leftPos + 1, this.topPos + 0, 0, 0, 298, 166, 298, 166);
+		guiGraphics.blit(new ResourceLocation("world_expansion:textures/screens/snow_cannon_gui_overlay.png"), this.leftPos + 0, this.topPos + 0, 0, 0, 298, 166, 298, 166);
 
 		RenderSystem.disableBlend();
 	}

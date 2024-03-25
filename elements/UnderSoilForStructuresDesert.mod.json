@@ -15,6 +15,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "under_soil_for_structures_desert",
     "namespace": "forge"
   }

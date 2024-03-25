@@ -31,7 +31,7 @@ public class PieceOfSnowEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(Blocks.SNOW_BLOCK);
 
 	public PieceOfSnowEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(WorldExpansionModEntities.PIECE_OF_SNOW.get(), world);
+		super(WorldExpansionModEntities.SNOW_PROJECTILE.get(), world);
 	}
 
 	public PieceOfSnowEntity(EntityType<? extends PieceOfSnowEntity> type, Level world) {
@@ -88,11 +88,11 @@ public class PieceOfSnowEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static PieceOfSnowEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1f, 2, 0);
+		return shoot(world, entity, source, 0.6f, 2, 0);
 	}
 
 	public static PieceOfSnowEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		PieceOfSnowEntity entityarrow = new PieceOfSnowEntity(WorldExpansionModEntities.PIECE_OF_SNOW.get(), entity, world);
+		PieceOfSnowEntity entityarrow = new PieceOfSnowEntity(WorldExpansionModEntities.SNOW_PROJECTILE.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
@@ -104,11 +104,11 @@ public class PieceOfSnowEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static PieceOfSnowEntity shoot(LivingEntity entity, LivingEntity target) {
-		PieceOfSnowEntity entityarrow = new PieceOfSnowEntity(WorldExpansionModEntities.PIECE_OF_SNOW.get(), entity, entity.level());
+		PieceOfSnowEntity entityarrow = new PieceOfSnowEntity(WorldExpansionModEntities.SNOW_PROJECTILE.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.6f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(2);
 		entityarrow.setKnockback(0);

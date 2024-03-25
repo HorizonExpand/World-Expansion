@@ -46,6 +46,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_SLAB.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_WALL.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.CARVED_KABANYT.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.WINDOMETER.get().asItem());
 			})
 
 					.build());
@@ -59,7 +60,6 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.BRUTE_ARMOR_TRIM_SMITHING_TEMPLATE.get());
 				tabData.accept(WorldExpansionModItems.PIECE_TOTEM_OF_UNDYING.get());
 				tabData.accept(WorldExpansionModItems.MUSIC_DISC_DESTROYER.get());
-				tabData.accept(WorldExpansionModItems.WINDOMETER.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN0.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN1.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN2.get());
@@ -95,8 +95,6 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_LAPIS_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_DIAMOND_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.TAKYR.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.DRY_DIRT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.JUDAS_FRUIT_PLANT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_SAPLING.get().asItem());

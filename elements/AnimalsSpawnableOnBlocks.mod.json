@@ -7,14 +7,12 @@
     "blocks": [
       {
         "value": "CUSTOM:Kabanyt"
-      },
-      {
-        "value": "CUSTOM:DryDirt"
       }
     ],
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "animals_spawnable_on",
     "namespace": "minecraft"
   }

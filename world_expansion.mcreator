@@ -4091,106 +4091,6 @@
       "path": "~/Advancement"
     },
     {
-      "name": "Takyr",
-      "type": "block",
-      "sortid": 14,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "takyr",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/world_expansion/models/block/takyr.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/entity/TakyrBlockEntity.java",
-          "src/main/resources/assets/world_expansion/blockstates/takyr.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/TakyrBlock.java",
-          "src/main/resources/assets/world_expansion/models/item/takyr.json"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "TakyrObnovlieniieTika",
-      "type": "procedure",
-      "sortid": 273,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "takyr_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/TakyrObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Takyr-Dry Dirt"
-    },
-    {
-      "name": "DryDirt",
-      "type": "block",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dry_dirt",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/world_expansion/blockstates/dry_dirt.json",
-          "src/main/resources/assets/world_expansion/models/block/dry_dirt.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/DryDirtBlock.java",
-          "src/main/resources/assets/world_expansion/models/item/dry_dirt.json",
-          "src/main/java/net/horizonexpand/world_expansion/block/entity/DryDirtBlockEntity.java"
-        ]
-      },
-      "path": "~/Blocks"
-    },
-    {
-      "name": "DryDirtObnovlieniieTika",
-      "type": "procedure",
-      "sortid": 274,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dry_dirt_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/DryDirtObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Takyr-Dry Dirt"
-    },
-    {
       "name": "DryDirtPriDobavlieniiBloka",
       "type": "procedure",
       "sortid": 275,
@@ -4235,20 +4135,6 @@
         ]
       },
       "path": "~/Advancement"
-    },
-    {
-      "name": "TakyrDrop",
-      "type": "loottable",
-      "sortid": 277,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "takyr_drop",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/loot_tables/blocks/takyr.json"
-        ]
-      },
-      "path": "~/Drops/Blocks"
     },
     {
       "name": "TumbleweedObnovlieniieTika",
@@ -7873,46 +7759,6 @@
       "path": "~/Tags/Items"
     },
     {
-      "name": "SnowCannonBaseRiedstounVkliuchion",
-      "type": "procedure",
-      "sortid": 430,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "snow_cannon_base_riedstoun_vkliuchion",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/SnowCannonBaseRiedstounVkliuchionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "guistate",
-            "type": "map"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/New Year 2024/Procedures"
-    },
-    {
       "name": "Replaceable",
       "type": "tag",
       "sortid": 431,
@@ -7932,7 +7778,7 @@
       "sortid": 433,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "piece_of_snow",
+      "registry_name": "snow_projectile",
       "metadata": {
         "files": [
           "src/main/java/net/horizonexpand/world_expansion/entity/PieceOfSnowEntity.java",
@@ -8467,25 +8313,6 @@
       "path": "~/Procedures/Desc"
     },
     {
-      "name": "Anemometer",
-      "type": "item",
-      "sortid": 65,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "windometer",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/world_expansion/models/item/windometer_3.json",
-          "src/main/resources/assets/world_expansion/models/item/windometer_0.json",
-          "src/main/java/net/horizonexpand/world_expansion/item/AnemometerItem.java",
-          "src/main/resources/assets/world_expansion/models/item/windometer_2.json",
-          "src/main/resources/assets/world_expansion/models/item/windometer_1.json",
-          "src/main/resources/assets/world_expansion/models/item/windometer.json"
-        ]
-      },
-      "path": "~/Items"
-    },
-    {
       "name": "AnemometerZnachieniieSvoistva",
       "type": "procedure",
       "sortid": 457,
@@ -8505,62 +8332,6 @@
         ]
       },
       "path": "~/Procedures/ItemState"
-    },
-    {
-      "name": "WindOverlayUsloviiePokazaNalozhieniia",
-      "type": "procedure",
-      "sortid": 458,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wind_overlay_usloviie_pokaza_nalozhieniia",
-      "metadata": {
-        "return_type": "logic",
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/WindOverlayUsloviiePokazaNalozhieniiaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Wind/Overlay"
-    },
-    {
-      "name": "WindOverlay",
-      "type": "overlay",
-      "sortid": 459,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wind_overlay",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/client/screens/WindOverlayOverlay.java"
-        ]
-      },
-      "path": "~/Overlay"
-    },
-    {
-      "name": "WindOverlayValue",
-      "type": "procedure",
-      "sortid": 460,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "wind_overlay_value",
-      "metadata": {
-        "return_type": "string",
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/WindOverlayValueProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Wind/Overlay"
     },
     {
       "name": "WindGet",
@@ -9886,21 +9657,6 @@
       "path": "~/Blocks/Kabanyt/Ores"
     },
     {
-      "name": "RedstoneOn",
-      "type": "particle",
-      "sortid": 534,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "redstone_on",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/world_expansion/particles/redstone_on.json",
-          "src/main/java/net/horizonexpand/world_expansion/client/particle/RedstoneOnParticle.java"
-        ]
-      },
-      "path": "~/Particles"
-    },
-    {
       "name": "KabanytRedstoneOreOnObnovlieniieTika",
       "type": "procedure",
       "sortid": 535,
@@ -10073,10 +9829,6 @@
             "type": "entity"
           },
           {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
             "name": "world",
             "type": "world"
           }
@@ -10199,52 +9951,10 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
           }
         ]
       },
       "path": "~/Procedures/Tumbleweed"
-    },
-    {
-      "name": "Redstonization",
-      "type": "achievement",
-      "sortid": 549,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "redstonization",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/advancements/redstonization.json"
-        ]
-      },
-      "path": "~/Advancement/Redstone Tab"
-    },
-    {
-      "name": "RedstonizationProcedure",
-      "type": "procedure",
-      "sortid": 550,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "redstonization_procedure",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/RedstonizationProcedureProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "placedagainst",
-            "type": "blockstate"
-          },
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Redstone Advancements"
     },
     {
       "name": "TNTProjectile",
@@ -10339,6 +10049,205 @@
         ]
       },
       "path": "~/BlockStates"
+    },
+    {
+      "name": "PillagerOutpost",
+      "type": "loottable",
+      "sortid": 555,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillager_outpost",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_tables/chests/pillager_outpost.json"
+        ]
+      },
+      "path": "~/Drops/Structures"
+    },
+    {
+      "name": "PillagerOutpostModifier",
+      "type": "lootmodifier",
+      "sortid": 556,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pillager_outpost_modifier",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_modifiers/pillager_outpost_modifier.json"
+        ]
+      },
+      "path": "~/Drops/Modifier"
+    },
+    {
+      "name": "CannonShoot",
+      "type": "procedure",
+      "sortid": 557,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_shoot",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/CannonShootProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "PowderSnowProjectile",
+      "type": "projectile",
+      "sortid": 559,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powder_snow_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/entity/PowderSnowProjectileEntity.java",
+          "src/main/java/net/horizonexpand/world_expansion/client/renderer/PowderSnowProjectileRenderer.java"
+        ]
+      },
+      "path": "~/New Year 2024/Projectiles"
+    },
+    {
+      "name": "PowderSnowProjectileKoghdaSnariadPopadaietVBlok",
+      "type": "procedure",
+      "sortid": 560,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powder_snow_projectile_koghda_snariad_popadaiet_v_blok",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/PowderSnowProjectileKoghdaSnariadPopadaietVBlokProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "PowderSnowProjectileKoghdaSnariadPopadaietVSushchnost",
+      "type": "procedure",
+      "sortid": 561,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powder_snow_projectile_koghda_snariad_popadaiet_v_sushchnost",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/PowderSnowProjectileKoghdaSnariadPopadaietVSushchnostProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/New Year 2024/Procedures"
+    },
+    {
+      "name": "Windometer",
+      "type": "block",
+      "sortid": 562,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "windometer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/world_expansion/blockstates/windometer.json",
+          "src/main/java/net/horizonexpand/world_expansion/block/entity/WindometerBlockEntity.java",
+          "src/main/java/net/horizonexpand/world_expansion/block/WindometerBlock.java",
+          "src/main/resources/assets/world_expansion/models/item/windometer.json",
+          "src/main/resources/assets/world_expansion/models/block/windometer.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TumbleweedTick",
+      "type": "procedure",
+      "sortid": 570,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tumbleweed_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/TumbleweedTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Tumbleweed"
+    },
+    {
+      "name": "CannonExplosionDamageType",
+      "type": "damagetype",
+      "sortid": 571,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cannon_explosion_damage_type",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/damage_type/cannon_explosion_damage_type.json"
+        ]
+      },
+      "path": "~/Damage Type"
     }
   ],
   "variable_elements": [
@@ -10346,7 +10255,7 @@
       "name": "Wind",
       "type": "string",
       "scope": "map",
-      "value": "North"
+      "value": "Still"
     }
   ],
   "sound_elements": [
@@ -10620,15 +10529,14 @@
   ],
   "language_map": {
     "ru_ru": {
-      "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог ",
+      "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn2": "Медный рог ",
       "biome.world_expansion.politania": "Политания",
       "item.world_expansion.copper_horn5": "Медный рог ",
-      "item.world_expansion.copper_horn4": "Медный рог ",
       "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
+      "item.world_expansion.copper_horn4": "Медный рог ",
       "item.world_expansion.copper_horn7": "Медный рог ",
-      "advancements.redstonization.descr": "Добро пожаловать в Мир Красного камня!",
       "block.world_expansion.little_shroomlight": "Маленький грибосвет",
       "advancements.world_expansion.title": "World Expansion",
       "item.world_expansion.copper_horn6": "Медный рог ",
@@ -10638,7 +10546,7 @@
       "item.world_expansion.copper_horn8": "Медный рог ",
       "block.world_expansion.kabanyt_slab": "Плита из кабанита",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
-      "advancements.the_wildest_in_the_wild_west.descr": "Убить самого себя при помощи Перекати-поля",
+      "advancements.the_wildest_in_the_wild_west.descr": "Умрите от Перекати-поля",
       "death.attack.tumbleweed_damage_type.item": "Ковбой %1$s был остановлен %2$s при помощи %3$s",
       "block.world_expansion.kabanyt_copper_ore": "Меденосный кабанит",
       "advancements.ancient_civilization_part_1.title": "Древняя Цивилизация: Часть 1",
@@ -10676,8 +10584,11 @@
       "block.world_expansion.baobab_door": "Дверь из древесины баобаба",
       "biome.world_expansion.halloween_dark_forest": "Хеллоунский тёмный лес",
       "block.world_expansion.cannon_barrel": "Дуло пушки",
+      "wind.world_expansion.east": "Восточный",
       "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
+      "entity.world_expansion.projectile_snow_projectile": "Ком снега",
       "block.world_expansion.kabanyt_bricks": "Кирпичи из кабанита",
+      "block.world_expansion.windometer": "Ветрометр",
       "block.world_expansion.suspicious_mud": "Подозрительная грязь",
       "item.world_expansion.brute_armor_trim_smithing_template": "Кузнечный шаблон",
       "block.world_expansion.kabanyt_diamond_ore": "Алмазоносный кабанит",
@@ -10692,17 +10603,17 @@
       "item_group.world_expansion.new_year_2024": "WE: Новый Год 2024",
       "gui.world_expansion.snow_cannon_gui.label_y": "Y",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_y": "Y",
-      "block.world_expansion.dry_dirt": "Сухая земля",
       "gui.world_expansion.snow_cannon_gui.label_z": "Z",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_z": "Z",
       "item.world_expansion.tumbleweed_item": "Перекати-поле",
       "item.minecraft.smithing_template.armor_trim.ingredients": "§9Слитки и кристаллы",
       "biome.world_expansion.halloween_plains": "Хеллоуинская равнина",
-      "item.world_expansion.windometer": "Ветрометр",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_x": "X",
       "gui.world_expansion.snow_cannon_gui.label_powder_snow": "Рыхлый снег:",
+      "death.attack.cannon_explosion_damage_type.player": "%1$s взорвался вместе с пушкой при попытке к бегству %2$s",
       "block.world_expansion.stripped_baobab_log": "Обтёсанная древесина баобаба",
       "advancements.fallen_paradise.descr": "Найдите Сухую саванну",
+      "entity.world_expansion.projectile_powder_snow_projectile": "Ком рыхлого снега",
       "biome.world_expansion.dry_savanna": "Сухая саванна",
       "item.minecraft.smithing_template.armor_trim.applies_to": " §9Доспехам",
       "block.world_expansion.raw_titanium_block": "Блок необработанного титана",
@@ -10717,13 +10628,15 @@
       "gui.world_expansion.multi_crafting_table_gui_astilba.label_inventory": "Инвентарь",
       "advancements.the_wildest_in_the_wild_west.title": "Самый дикий на Диком Западе",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.button_accept": "Принять",
+      "wind.world_expansion.still": "Штиль",
       "advancements.world_expansion.descr": "Исследуйте мир!",
+      "death.attack.cannon_explosion_damage_type": "%1$s взорвался вместе с пушкой",
       "advancements.summer_resort_in_winter.title": "§6Летний курорт зимой",
+      "wind.world_expansion.west": "Западный",
       "advancements.lisa_simpson.title": "Лиза Симпсон",
       "block.world_expansion.kabanyt_coal_ore": "Угленосный кабанит",
       "block.world_expansion.baobab_stairs": "Ступеньки из древесины баобаба",
       "block.world_expansion.kabanyt_wall": "Ограда из кабанита",
-      "entity.world_expansion.mini_fireflies": "Мини-Светлячки",
       "block.world_expansion.jack_o_lantern_with_soul": "Светильник Джека с душой",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_for_snow_cannon": "для Пушки",
       "block.world_expansion.kabanyt_redstone_ore_on": "Редстоуноносный кабанит",
@@ -10733,14 +10646,12 @@
       "block.world_expansion.baobab_leaves": "Листва баобаба",
       "block.world_expansion.baobab_button": "Кнопка из древесины баобаба",
       "advancements.cannonist.title": "Канонир",
-      "block.world_expansion.bottle": "Бутылка",
-      "block.world_expansion.takyr": "Такыр",
+      "death.attack.cannon_explosion_damage_type.item": "%1$s взорвался вместе с пушкой из-за %2$s при помощи %3$s",
       "block.world_expansion.tumbleweed": "Перекати-поле",
       "item_group.world_expansion.building_blocks": "WE: Строительные блоки",
       "block.world_expansion.cannon_base": "Основание пушки",
       "item.world_expansion.music_disc_destroyer": "Пластинка",
       "item_group.world_expansion.items": "WE: Предметы",
-      "advancements.redstonization.title": "Редстонизация",
       "block.world_expansion.kabanyt_bricks_slab": "Кирпичная плита из кабанита",
       "biome.world_expansion.halloween_pumpkin_field": "Хеллоунское тыквенное поле",
       "block.world_expansion.kabanyt_stairs": "Ступеньки из кабанита",
@@ -10750,13 +10661,13 @@
       "advancements.tile_slab.title": "Плиточная плита",
       "item.world_expansion.music_disc_destroyer.desc": "Hrumer — Destroyer",
       "item_group.world_expansion.mobs": "WE: Мобы",
+      "entity.world_expansion.projectile_tnt_projectile": "Динамит",
       "item.minecraft.smithing_template.applies_to": "Применяется к:",
       "advancements.tile_slab.descr": "Создайте плиту из плиточного кабанита (ну и название)...",
       "item.world_expansion.titanium_ingot": "Титановый слиток",
-      "gui.world_expansion.wind_overlay.label_empty": "",
       "block.world_expansion.kabanyt_bricks_stairs": "Кирпичные ступеньки из кабанита",
+      "command.world_expansion.wind.set": "Установлено направление ветра:",
       "advancements.poor_zhorik.title": "Бедный Жорик!",
-      "block.world_expansion.bottle_with_mini_fireflies": "Бутылка с Мини-Светлячками",
       "block.world_expansion.kabanyt_lapis_ore": "Лазуритоносный кабанит",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_9": "1x Медный рог 9",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_8": "1x Медный рог 8",
@@ -10770,16 +10681,18 @@
       "gui.world_expansion.snow_cannon_gui.Z": "0",
       "advancements.oh_great_baobab.descr": "Найдите Долину баобабов",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_pink_dye": "2x Розовый краситель",
+      "command.world_expansion.wind.get": "Направление ветра:",
       "block.world_expansion.kabanyt_gold_ore": "Золотоносный кабанит",
+      "wind.world_expansion.south": "Южный",
       "advancements.ancient_civilization_part_1.descr": "Найдите Политанию",
       "advancements.poor_zhorik.descr": "Получите Козий рог",
+      "wind.world_expansion.north": "Северный",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_3": "1x Медный рог 3",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_2": "1x Медный рог 2",
       "item.world_expansion.raw_titanium": "Необработанный титан",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_1": "1x Медный рог 1",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_0": "1x Медный рог 0",
       "item.world_expansion.judas_fruit": "Плод Иуды",
-      "entity.world_expansion.projectile_piece_of_snow": "Ком снега",
       "block.world_expansion.kabanyt_tiles_slab": "Плита из плиточного кабанита",
       "gui.world_expansion.multi_crafting_table_gui_astilba.label_multicrafting_table": "Мульти-Верстак",
       "block.world_expansion.titanium_ore": "Титановая руда",
@@ -10796,15 +10709,14 @@
       "item.world_expansion.copper_horn0": "Медный рог "
     },
     "en_us": {
-      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
-      "biome.world_expansion.politania": "Politania",
+      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn2": "Copper Horn",
+      "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn5": "Copper Horn",
       "item.world_expansion.copper_horn4": "Copper Horn",
       "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
       "item.world_expansion.copper_horn7": "Copper Horn",
-      "advancements.redstonization.descr": "Welcome to the Redstone World!",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
       "item.world_expansion.copper_horn6": "Copper Horn",
       "advancements.world_expansion.title": "World Expansion",
@@ -10814,7 +10726,7 @@
       "item.world_expansion.copper_horn8": "Copper Horn",
       "block.world_expansion.kabanyt_slab": "Kabanyt slab",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
-      "advancements.the_wildest_in_the_wild_west.descr": "Kill yourself with a Tumbleweed",
+      "advancements.the_wildest_in_the_wild_west.descr": "Die of a Tumbleweed",
       "death.attack.tumbleweed_damage_type.item": "Cowboy %1$s was stopped by %2$s using %3$s",
       "block.world_expansion.kabanyt_copper_ore": "Kabanyt Copper Ore",
       "advancements.ancient_civilization_part_1.title": "Ancient Civilization: Part 1",
@@ -10851,8 +10763,11 @@
       "block.world_expansion.baobab_door": "Baobab door",
       "biome.world_expansion.halloween_dark_forest": "Halloween Dark Forest",
       "block.world_expansion.cannon_barrel": "Cannon Barrel",
+      "wind.world_expansion.east": "East",
       "block.world_expansion.baobab_slab": "Baobab slab",
+      "entity.world_expansion.projectile_snow_projectile": "Lump of Snow",
       "block.world_expansion.kabanyt_bricks": "Kabanyt bricks",
+      "block.world_expansion.windometer": "Wind\u0027o Meter",
       "block.world_expansion.suspicious_mud": "Suspicious Mud",
       "item.world_expansion.brute_armor_trim_smithing_template": "Brute Armor Trim Smithing Template",
       "block.world_expansion.kabanyt_diamond_ore": "Kabanyt Diamond Ore",
@@ -10867,18 +10782,18 @@
       "item_group.world_expansion.new_year_2024": "WE: New Year 2024",
       "gui.world_expansion.snow_cannon_gui.label_y": "Y",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_y": "Y",
-      "block.world_expansion.dry_dirt": "Dry Dirt",
       "gui.world_expansion.snow_cannon_gui.label_z": "Z",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_z": "Z",
       "item.world_expansion.tumbleweed_item": "Tumbleweed ",
       "item.minecraft.smithing_template.armor_trim.ingredients": " §9Ingots \u0026 Crystals",
       "biome.world_expansion.halloween_plains": "Halloween Plains",
-      "item.world_expansion.windometer": "Wind\u0027o Meter",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_x": "X",
       "gui.world_expansion.snow_cannon_gui.label_powder_snow": "Powder Snow:",
       "entity.world_expansion.projectile_tumbleweed": "Tumbleweed",
+      "death.attack.cannon_explosion_damage_type.player": "%1$s exploded along with the cannon whilst trying to escape %2$s",
       "block.world_expansion.stripped_baobab_log": "Stripped baobab log",
       "advancements.fallen_paradise.descr": "Find the Dry Savanna",
+      "entity.world_expansion.projectile_powder_snow_projectile": "Lump of Powder Snow",
       "biome.world_expansion.dry_savanna": "Dry Savanna",
       "item.minecraft.smithing_template.armor_trim.applies_to": " §9Armor",
       "block.world_expansion.raw_titanium_block": "Raw Titanium Block",
@@ -10893,13 +10808,15 @@
       "gui.world_expansion.multi_crafting_table_gui_astilba.label_inventory": "Inventory",
       "advancements.the_wildest_in_the_wild_west.title": "The Wildest in the Wild West",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.button_accept": "Accept",
+      "wind.world_expansion.still": "Still",
       "advancements.world_expansion.descr": "Explore the world!",
+      "death.attack.cannon_explosion_damage_type": "%1$s exploded along with the cannon",
       "advancements.summer_resort_in_winter.title": "§6Summer Resort in Winter",
+      "wind.world_expansion.west": "West",
       "advancements.lisa_simpson.title": "Lisa Simpson",
       "block.world_expansion.kabanyt_coal_ore": "Kabanyt Coal Ore",
       "block.world_expansion.baobab_stairs": "Baobab stairs",
       "block.world_expansion.kabanyt_wall": "Kabanyt wall",
-      "entity.world_expansion.mini_fireflies": "Mini-Fireflies",
       "block.world_expansion.jack_o_lantern_with_soul": "Jack o\u0027Lantern with Soul",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_for_snow_cannon": "For Cannon",
       "block.world_expansion.kabanyt_redstone_ore_on": "Kabanyt Redstone Ore",
@@ -10909,14 +10826,12 @@
       "block.world_expansion.baobab_button": "Baobab button",
       "block.world_expansion.baobab_trapdoor": "Baobab trapdoor",
       "advancements.cannonist.title": "Cannonist",
-      "block.world_expansion.bottle": "Bottle",
-      "block.world_expansion.takyr": "Takyr",
+      "death.attack.cannon_explosion_damage_type.item": "%1$s exploded along with the cannon because of %2$s using %3$s",
       "block.world_expansion.tumbleweed": "Tumbleweed",
       "item_group.world_expansion.building_blocks": "WE: Building Blocks",
       "block.world_expansion.cannon_base": "Cannon Base",
       "item.world_expansion.music_disc_destroyer": "Music Disc ",
       "item_group.world_expansion.items": "WE: Items",
-      "advancements.redstonization.title": "Redstonization",
       "block.world_expansion.kabanyt_bricks_slab": "Kabanyt bricks slab",
       "biome.world_expansion.halloween_pumpkin_field": "Halloween Pumpkin Field",
       "block.world_expansion.kabanyt_stairs": "Kabanyt stairs",
@@ -10926,13 +10841,13 @@
       "advancements.tile_slab.title": "Tile slab",
       "item.world_expansion.music_disc_destroyer.desc": "Hrumer — Destroyer",
       "item_group.world_expansion.mobs": "WE: Mobs",
+      "entity.world_expansion.projectile_tnt_projectile": "TNT",
       "item.minecraft.smithing_template.applies_to": "Applies to:",
       "advancements.tile_slab.descr": "Create a slab from kabanyt tiles (well, the name)...",
       "item.world_expansion.titanium_ingot": "Titanium Ingot",
-      "gui.world_expansion.wind_overlay.label_empty": "",
       "block.world_expansion.kabanyt_bricks_stairs": "Kabanyt bricks stairs",
+      "command.world_expansion.wind.set": "Set Wind Direction:",
       "advancements.poor_zhorik.title": "Poor Zhorik!",
-      "block.world_expansion.bottle_with_mini_fireflies": "Bottle Witn Mini Fireflies",
       "block.world_expansion.kabanyt_lapis_ore": "Kabanyt Lapis Lazuli Ore",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_9": "1x Copper Horn 9",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_8": "1x Copper Horn 8",
@@ -10946,16 +10861,18 @@
       "gui.world_expansion.snow_cannon_gui.Z": "0",
       "advancements.oh_great_baobab.descr": "Find the Baobab Valley",
       "gui.world_expansion.multi_crafting_table_gui_astilba.tooltip_pink_dye": "2x Pink Dye",
+      "command.world_expansion.wind.get": "Wind Direction:",
       "block.world_expansion.kabanyt_gold_ore": "Kabanyt Gold Ore",
+      "wind.world_expansion.south": "South",
       "advancements.ancient_civilization_part_1.descr": "Find the Politania",
       "advancements.poor_zhorik.descr": "Get a Goat Horn",
+      "wind.world_expansion.north": "North",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_3": "1x Copper Horn 3",
       "item.world_expansion.raw_titanium": "Raw Titanium",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_2": "1x Copper Horn 2",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_1": "1x Copper Horn 1",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_0": "1x Copper Horn 0",
       "item.world_expansion.judas_fruit": "Judas Fruit",
-      "entity.world_expansion.projectile_piece_of_snow": "Piece of Snow",
       "block.world_expansion.kabanyt_tiles_slab": "Kabanyt tiles slab",
       "gui.world_expansion.multi_crafting_table_gui_astilba.label_multicrafting_table": "Multi-Crafting Table",
       "block.world_expansion.titanium_ore": "Titanium Ore",
@@ -11201,19 +11118,11 @@
               {
                 "name": "Command",
                 "children": []
-              },
-              {
-                "name": "Overlay",
-                "children": []
               }
             ]
           },
           {
             "name": "Redstone",
-            "children": []
-          },
-          {
-            "name": "Redstone Advancements",
             "children": []
           }
         ]
@@ -11229,12 +11138,7 @@
       },
       {
         "name": "Advancement",
-        "children": [
-          {
-            "name": "Redstone Tab",
-            "children": []
-          }
-        ]
+        "children": []
       },
       {
         "name": "Biomes",
@@ -11332,6 +11236,10 @@
           },
           {
             "name": "Archeology",
+            "children": []
+          },
+          {
+            "name": "Modifier",
             "children": []
           }
         ]
@@ -11513,7 +11421,7 @@
     "version": "0.1.1",
     "description": "This mod upgraded vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark Forest.",
     "author": "HorizonExpand",
-    "websiteURL": "https://discord.gg/sJayn3BYDh",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion",
     "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -11527,5 +11435,5 @@
     "modElementsPackage": "net.horizonexpand.world_expansion",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300451615
+  "mcreatorVersion": 202300452316
 }

@@ -1,7 +1,4 @@
 {
   "replace": false,
-  "values": [
-    "world_expansion:dry_dirt",
-    "world_expansion:takyr"
-  ]
+  "values": []
 }

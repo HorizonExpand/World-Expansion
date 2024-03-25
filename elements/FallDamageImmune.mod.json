@@ -12,6 +12,7 @@
       }
     ],
     "biomes": [],
+    "damageTypes": [],
     "name": "fall_damage_immune",
     "namespace": "minecraft"
   }

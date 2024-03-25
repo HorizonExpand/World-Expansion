@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "stone_tool_materials",
     "namespace": "minecraft"
   }

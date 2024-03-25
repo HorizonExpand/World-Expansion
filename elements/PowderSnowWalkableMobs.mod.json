@@ -12,6 +12,7 @@
       }
     ],
     "biomes": [],
+    "damageTypes": [],
     "name": "powder_snow_walkable_mobs",
     "namespace": "minecraft"
   }

@@ -27,20 +27,20 @@ public class WindProcedure {
 	}
 
 	private static void execute(@Nullable Event event, LevelAccessor world) {
-		if (world.dayTime() == 0 || world.dayTime() == 4000 || world.dayTime() == 8000 || world.dayTime() == 12000 || world.dayTime() == 16000 || world.dayTime() == 20000) {
-			if (Mth.nextInt(RandomSource.create(), 1, 4) == 1) {
+		if (world.dayTime() % 4000 == 0) {
+			if (Mth.nextInt(RandomSource.create(), 1, 5) == 1) {
 				WorldExpansionModVariables.MapVariables.get(world).Wind = "North";
 				WorldExpansionModVariables.MapVariables.get(world).syncData(world);
-			} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 2) {
+			} else if (Mth.nextInt(RandomSource.create(), 1, 5) == 2) {
 				WorldExpansionModVariables.MapVariables.get(world).Wind = "South";
 				WorldExpansionModVariables.MapVariables.get(world).syncData(world);
-			} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 3) {
+			} else if (Mth.nextInt(RandomSource.create(), 1, 5) == 3) {
 				WorldExpansionModVariables.MapVariables.get(world).Wind = "West";
 				WorldExpansionModVariables.MapVariables.get(world).syncData(world);
-			} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 4) {
+			} else if (Mth.nextInt(RandomSource.create(), 1, 5) == 4) {
 				WorldExpansionModVariables.MapVariables.get(world).Wind = "East";
 				WorldExpansionModVariables.MapVariables.get(world).syncData(world);
-			} else if (Mth.nextInt(RandomSource.create(), 1, 4) == 5) {
+			} else if (Mth.nextInt(RandomSource.create(), 1, 5) == 5) {
 				WorldExpansionModVariables.MapVariables.get(world).Wind = "Still";
 				WorldExpansionModVariables.MapVariables.get(world).syncData(world);
 			}

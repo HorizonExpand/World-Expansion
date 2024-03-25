@@ -82,7 +82,7 @@ public class TNTProjectileEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	public static TNTProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
-		return shoot(world, entity, source, 1f, 2, 0);
+		return shoot(world, entity, source, 0.8f, 2, 0);
 	}
 
 	public static TNTProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
@@ -102,7 +102,7 @@ public class TNTProjectileEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 1f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.8f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(2);
 		entityarrow.setKnockback(0);

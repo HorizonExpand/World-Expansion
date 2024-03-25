@@ -78,6 +78,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "stripped_log",
     "namespace": "forge"
   }

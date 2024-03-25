@@ -10,7 +10,7 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class TumbleweedObnovlieniieTikaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((WorldExpansionModVariables.MapVariables.get(world).Wind).equals("North")) {
+		if ((WorldExpansionModVariables.MapVariables.get(world).Wind).equals("South")) {
 			if (WorldExpansionModBlocks.TUMBLEWEED.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z - 1))
 					&& (world.getBlockState(BlockPos.containing(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("forge:tumbleweed_replaceable")))) {
 				world.setBlock(BlockPos.containing(x, y, z - 1), WorldExpansionModBlocks.TUMBLEWEED.get().defaultBlockState(), 3);
@@ -24,7 +24,7 @@ public class TumbleweedObnovlieniieTikaProcedure {
 				world.setBlock(BlockPos.containing(x, y + 1, z - 1), WorldExpansionModBlocks.TUMBLEWEED.get().defaultBlockState(), 3);
 				world.destroyBlock(BlockPos.containing(x, y, z), false);
 			}
-		} else if ((WorldExpansionModVariables.MapVariables.get(world).Wind).equals("South")) {
+		} else if ((WorldExpansionModVariables.MapVariables.get(world).Wind).equals("North")) {
 			if (WorldExpansionModBlocks.TUMBLEWEED.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z + 1))
 					&& (world.getBlockState(BlockPos.containing(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("forge:tumbleweed_replaceable")))) {
 				world.setBlock(BlockPos.containing(x, y, z + 1), WorldExpansionModBlocks.TUMBLEWEED.get().defaultBlockState(), 3);

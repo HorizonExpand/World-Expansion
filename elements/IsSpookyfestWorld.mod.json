@@ -15,6 +15,7 @@
         "value": "CUSTOM:HalloweenWheatField"
       }
     ],
+    "damageTypes": [],
     "name": "is_spookyfest_world",
     "namespace": "forge"
   }

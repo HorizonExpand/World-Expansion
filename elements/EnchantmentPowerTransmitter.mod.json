@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "enchantment_power_transmitter",
     "namespace": "minecraft"
   }

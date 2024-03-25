@@ -2,9 +2,7 @@
   "replace": false,
   "values": [
     "world_expansion:kabanyt",
-    "world_expansion:dry_dirt",
     "minecraft:sand",
-    "minecraft:red_sand",
-    "world_expansion:takyr"
+    "minecraft:red_sand"
   ]
 }

@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "The Wildest in the Wild West",
-    "achievementDescription": "Kill yourself with a Tumbleweed",
+    "achievementDescription": "Die of a Tumbleweed",
     "achievementIcon": {
       "value": "CUSTOM:TumbleweedProjectile"
     },

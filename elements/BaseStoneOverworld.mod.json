@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "base_stone_overworld",
     "namespace": "minecraft"
   }

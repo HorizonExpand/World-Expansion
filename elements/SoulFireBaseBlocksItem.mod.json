@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "soul_fire_base_blocks",
     "namespace": "minecraft"
   }

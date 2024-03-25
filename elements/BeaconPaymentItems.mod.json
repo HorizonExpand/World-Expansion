@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "beacon_payment_items",
     "namespace": "minecraft"
   }

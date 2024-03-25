@@ -2,8 +2,8 @@
   "type": "forge:add_features",
   "biomes": [
     "plains",
-    "flower_forest",
     "meadow",
+    "flower_forest",
     "cherry_grove"
   ],
   "features": "world_expansion:astilba_feature",

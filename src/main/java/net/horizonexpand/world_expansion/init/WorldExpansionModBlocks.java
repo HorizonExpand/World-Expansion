@@ -11,10 +11,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.level.block.Block;
 
 import net.horizonexpand.world_expansion.block.YellowAstilbaBlock;
+import net.horizonexpand.world_expansion.block.WindometerBlock;
 import net.horizonexpand.world_expansion.block.TumbleweedBlock;
 import net.horizonexpand.world_expansion.block.TitaniumOreBlock;
 import net.horizonexpand.world_expansion.block.TitaniumBlockBlock;
-import net.horizonexpand.world_expansion.block.TakyrBlock;
 import net.horizonexpand.world_expansion.block.SuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobabwoodBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobablogBlock;
@@ -47,7 +47,6 @@ import net.horizonexpand.world_expansion.block.KabanytCoalOreBlock;
 import net.horizonexpand.world_expansion.block.KabanytBlock;
 import net.horizonexpand.world_expansion.block.JudasFruitPlantBlock;
 import net.horizonexpand.world_expansion.block.JackOLanternWithSoulBlock;
-import net.horizonexpand.world_expansion.block.DryDirtBlock;
 import net.horizonexpand.world_expansion.block.DeepslateTitaniumOreBlock;
 import net.horizonexpand.world_expansion.block.CarvedkabanytBlock;
 import net.horizonexpand.world_expansion.block.BaobabtrapdoorBlock;
@@ -84,8 +83,6 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> KABANYT_LAPIS_ORE = REGISTRY.register("kabanyt_lapis_ore", () -> new KabanytLapisOreBlock());
 	public static final RegistryObject<Block> KABANYT_DIAMOND_ORE = REGISTRY.register("kabanyt_diamond_ore", () -> new KabanytDiamondOreBlock());
 	public static final RegistryObject<Block> SUSPICIOUS_MUD = REGISTRY.register("suspicious_mud", () -> new SuspiciousMudBlock());
-	public static final RegistryObject<Block> TAKYR = REGISTRY.register("takyr", () -> new TakyrBlock());
-	public static final RegistryObject<Block> DRY_DIRT = REGISTRY.register("dry_dirt", () -> new DryDirtBlock());
 	public static final RegistryObject<Block> BAOBAB_LEAVES = REGISTRY.register("baobab_leaves", () -> new BaobabLeavesBlock());
 	public static final RegistryObject<Block> JUDAS_FRUIT_PLANT = REGISTRY.register("judas_fruit_plant", () -> new JudasFruitPlantBlock());
 	public static final RegistryObject<Block> BAOBAB_SAPLING = REGISTRY.register("baobab_sapling", () -> new BaobabSaplingBlock());
@@ -128,4 +125,5 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> JACK_O_LANTERN_WITH_SOUL = REGISTRY.register("jack_o_lantern_with_soul", () -> new JackOLanternWithSoulBlock());
 	public static final RegistryObject<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", () -> new TumbleweedBlock());
 	public static final RegistryObject<Block> KABANYT_REDSTONE_ORE_ON = REGISTRY.register("kabanyt_redstone_ore_on", () -> new KabanytRedstoneOreOnBlock());
+	public static final RegistryObject<Block> WINDOMETER = REGISTRY.register("windometer", () -> new WindometerBlock());
 }

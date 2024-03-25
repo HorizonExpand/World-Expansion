@@ -123,12 +123,14 @@
     "hasInventory": true,
     "guiBoundTo": "SnowCannonGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 2,
+    "inventorySize": 3,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": false,
     "inventoryOutSlotIDs": [],
-    "inventoryInSlotIDs": [],
+    "inventoryInSlotIDs": [
+      0
+    ],
     "hasEnergyStorage": false,
     "energyInitial": 0,
     "energyCapacity": 400000,

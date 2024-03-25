@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "world_expansion:judas_fruit_plant",
-    "world_expansion:tumbleweed"
+    "world_expansion:tumbleweed",
+    "world_expansion:judas_fruit_plant"
   ]
 }

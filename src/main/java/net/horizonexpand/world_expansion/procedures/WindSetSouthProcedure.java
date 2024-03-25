@@ -14,6 +14,6 @@ public class WindSetSouthProcedure {
 		WorldExpansionModVariables.MapVariables.get(world).Wind = "South";
 		WorldExpansionModVariables.MapVariables.get(world).syncData(world);
 		if (entity instanceof Player _player && !_player.level().isClientSide())
-			_player.displayClientMessage(Component.literal(WorldExpansionModVariables.MapVariables.get(world).Wind), false);
+			_player.displayClientMessage(Component.literal((Component.translatable("command.world_expansion.wind.set").getString() + " " + Component.translatable("wind.world_expansion.south").getString())), false);
 	}
 }

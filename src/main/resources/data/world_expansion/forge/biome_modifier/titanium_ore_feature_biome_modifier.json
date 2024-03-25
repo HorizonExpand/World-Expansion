@@ -1,16 +1,16 @@
 {
   "type": "forge:add_features",
   "biomes": [
-    "world_expansion:halloween_plains",
-    "world_expansion:halloween_forest",
-    "world_expansion:halloween_pumpkin_field",
     "world_expansion:baobab_valley",
-    "dark_forest",
-    "deep_dark",
+    "world_expansion:politania",
     "windswept_savanna",
     "world_expansion:halloween_dark_forest",
-    "world_expansion:dry_savanna",
-    "world_expansion:politania"
+    "dark_forest",
+    "deep_dark",
+    "world_expansion:halloween_forest",
+    "world_expansion:halloween_plains",
+    "world_expansion:halloween_pumpkin_field",
+    "world_expansion:dry_savanna"
   ],
   "features": "world_expansion:titanium_ore_feature",
   "step": "underground_ores"

@@ -1,7 +1,0 @@
-{
-  "parent": "world_expansion:custom/anemometer",
-  "textures": {
-    "empty": "world_expansion:block/anemometer_north",
-    "particle": "world_expansion:item/anemometer_north"
-  }
-}

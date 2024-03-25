@@ -54,6 +54,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "piglin_repellents",
     "namespace": "minecraft"
   }

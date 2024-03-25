@@ -56,7 +56,7 @@ public class KabanytRedstoneOreOnBlock extends Block {
 	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		world.scheduleTick(pos, this, 4);
+		world.scheduleTick(pos, this, 10);
 	}
 
 	@Override
@@ -66,6 +66,6 @@ public class KabanytRedstoneOreOnBlock extends Block {
 		int y = pos.getY();
 		int z = pos.getZ();
 		KabanytRedstoneOreOnObnovlieniieTikaProcedure.execute(world, x, y, z);
-		world.scheduleTick(pos, this, 4);
+		world.scheduleTick(pos, this, 10);
 	}
 }

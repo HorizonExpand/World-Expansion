@@ -21,6 +21,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "halloween_forest_surface_block",
     "namespace": "forge"
   }

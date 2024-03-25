@@ -60,6 +60,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "top_soil_for_structures_badlands",
     "namespace": "forge"
   }

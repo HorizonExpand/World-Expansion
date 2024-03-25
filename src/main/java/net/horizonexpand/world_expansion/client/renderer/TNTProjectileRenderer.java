@@ -16,7 +16,7 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class TNTProjectileRenderer extends EntityRenderer<TNTProjectileEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("world_expansion:textures/entities/tnt.png");
+	private static final ResourceLocation texture = new ResourceLocation("world_expansion:textures/entities/tnt_projectile.png");
 	private final Modelpiece_of_powder_snow model;
 
 	public TNTProjectileRenderer(EntityRendererProvider.Context context) {

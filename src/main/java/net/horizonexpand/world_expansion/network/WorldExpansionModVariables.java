@@ -87,7 +87,7 @@ public class WorldExpansionModVariables {
 
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "world_expansion_mapvars";
-		public String Wind = "North";
+		public String Wind = "Still";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();

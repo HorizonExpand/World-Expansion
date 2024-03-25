@@ -132,6 +132,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "air_for_structures",
     "namespace": "forge"
   }

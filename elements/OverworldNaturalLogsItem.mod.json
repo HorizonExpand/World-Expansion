@@ -12,6 +12,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "overworld_natural_logs",
     "namespace": "minecraft"
   }

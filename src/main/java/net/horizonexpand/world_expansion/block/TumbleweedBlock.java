@@ -28,8 +28,8 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.horizonexpand.world_expansion.procedures.TumbleweedTickProcedure;
 import net.horizonexpand.world_expansion.procedures.TumbleweedPriShchielchkiePKMPoRastieniiuProcedure;
-import net.horizonexpand.world_expansion.procedures.TumbleweedObnovlieniieTikaProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
@@ -148,12 +148,12 @@ public class TumbleweedBlock extends FlowerBlock {
 				|| groundState.is(Blocks.BARREL) || groundState.is(Blocks.SMOKER) || groundState.is(Blocks.BLAST_FURNACE) || groundState.is(Blocks.CARTOGRAPHY_TABLE) || groundState.is(Blocks.FLETCHING_TABLE) || groundState.is(Blocks.SMITHING_TABLE)
 				|| groundState.is(Blocks.BEEHIVE) || groundState.is(Blocks.BEE_NEST) || groundState.is(Blocks.BASALT) || groundState.is(Blocks.POLISHED_BASALT) || groundState.is(Blocks.SMOOTH_BASALT) || groundState.is(Blocks.LODESTONE)
 				|| groundState.is(Blocks.AZALEA) || groundState.is(Blocks.FLOWERING_AZALEA) || groundState.is(Blocks.OCHRE_FROGLIGHT) || groundState.is(Blocks.VERDANT_FROGLIGHT) || groundState.is(Blocks.PEARLESCENT_FROGLIGHT)
-				|| groundState.is(WorldExpansionModBlocks.TAKYR.get()) || groundState.is(WorldExpansionModBlocks.DRY_DIRT.get()) || groundState.is(WorldExpansionModBlocks.SUSPICIOUS_MUD.get()) || groundState.is(Blocks.TNT)
-				|| groundState.is(Blocks.BOOKSHELF) || groundState.is(Blocks.CHISELED_BOOKSHELF) || groundState.is(Blocks.SPAWNER) || groundState.is(Blocks.CHEST) || groundState.is(Blocks.TRAPPED_CHEST) || groundState.is(Blocks.ENDER_CHEST)
-				|| groundState.is(Blocks.CRAFTING_TABLE) || groundState.is(Blocks.FARMLAND) || groundState.is(Blocks.FURNACE) || groundState.is(Blocks.HOPPER) || groundState.is(Blocks.CHERRY_LOG) || groundState.is(Blocks.BAMBOO_BLOCK)
-				|| groundState.is(Blocks.STRIPPED_CHERRY_LOG) || groundState.is(Blocks.STRIPPED_BAMBOO_BLOCK) || groundState.is(Blocks.CHERRY_WOOD) || groundState.is(Blocks.STRIPPED_CHERRY_WOOD)
-				|| groundState.is(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL.get()) || groundState.is(WorldExpansionModBlocks.TITANIUM_ORE.get()) || groundState.is(WorldExpansionModBlocks.TITANIUM_BLOCK.get())
-				|| groundState.is(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get()) || groundState.is(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get()) || groundState.is(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE.get());
+				|| groundState.is(WorldExpansionModBlocks.SUSPICIOUS_MUD.get()) || groundState.is(Blocks.TNT) || groundState.is(Blocks.BOOKSHELF) || groundState.is(Blocks.CHISELED_BOOKSHELF) || groundState.is(Blocks.SPAWNER)
+				|| groundState.is(Blocks.CHEST) || groundState.is(Blocks.TRAPPED_CHEST) || groundState.is(Blocks.ENDER_CHEST) || groundState.is(Blocks.CRAFTING_TABLE) || groundState.is(Blocks.FARMLAND) || groundState.is(Blocks.FURNACE)
+				|| groundState.is(Blocks.HOPPER) || groundState.is(Blocks.CHERRY_LOG) || groundState.is(Blocks.BAMBOO_BLOCK) || groundState.is(Blocks.STRIPPED_CHERRY_LOG) || groundState.is(Blocks.STRIPPED_BAMBOO_BLOCK)
+				|| groundState.is(Blocks.CHERRY_WOOD) || groundState.is(Blocks.STRIPPED_CHERRY_WOOD) || groundState.is(WorldExpansionModBlocks.JACK_O_LANTERN_WITH_SOUL.get()) || groundState.is(WorldExpansionModBlocks.TITANIUM_ORE.get())
+				|| groundState.is(WorldExpansionModBlocks.TITANIUM_BLOCK.get()) || groundState.is(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get()) || groundState.is(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get())
+				|| groundState.is(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE.get());
 	}
 
 	@Override
@@ -166,7 +166,7 @@ public class TumbleweedBlock extends FlowerBlock {
 	@Override
 	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
-		TumbleweedObnovlieniieTikaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		TumbleweedTickProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

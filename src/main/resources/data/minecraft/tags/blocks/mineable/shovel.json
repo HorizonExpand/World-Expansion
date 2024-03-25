@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "world_expansion:suspicious_mud",
-    "world_expansion:takyr",
-    "world_expansion:dry_dirt"
+    "world_expansion:suspicious_mud"
   ]
 }

@@ -35,5 +35,5 @@
   "rewards": {
     "experience": 4
   },
-  "parent": "world_expansion:redstonization"
+  "parent": "world_expansion:world_expansion"
 }

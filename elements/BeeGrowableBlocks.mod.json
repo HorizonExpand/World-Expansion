@@ -18,6 +18,7 @@
     "functions": [],
     "entities": [],
     "biomes": [],
+    "damageTypes": [],
     "name": "bee_growables",
     "namespace": "minecraft"
   }
