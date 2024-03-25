@@ -80,7 +80,7 @@ public class CannonShootProcedure {
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getOrCreateTag().getDouble("Z")));
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == WorldExpansionModBlocks.CANNON_BARREL.get()) {
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == WorldExpansionModBlocks.CANNON_BARREL.get() && world.isEmptyBlock(BlockPos.containing(x, y + 2, z))) {
 			if ((new Object() {
 				double convert(String s) {
 					try {
@@ -245,99 +245,140 @@ public class CannonShootProcedure {
 					}
 				} else if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Blocks.SNOW_BLOCK
 						.asItem()) {
-					if (world instanceof Level _level) {
-						if (!_level.isClientSide()) {
-							_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.snow.break")), SoundSource.BLOCKS, (float) 0.5, 1);
-						} else {
-							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.snow.break")), SoundSource.BLOCKS, (float) 0.5, 1, false);
+					if (new Object() {
+						public int getAmount(int sltid) {
+							if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+								ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+								if (stack != null)
+									return stack.getCount();
+							}
+							return 0;
 						}
-					}
-					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = new Object() {
-							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-								AbstractArrow entityToSpawn = new PieceOfSnowEntity(WorldExpansionModEntities.SNOW_PROJECTILE.get(), level);
-								entityToSpawn.setOwner(shooter);
-								entityToSpawn.setBaseDamage(damage);
-								entityToSpawn.setKnockback(knockback);
-								entityToSpawn.setSilent(true);
-								return entityToSpawn;
+					}.getAmount(2) < 17
+							&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, (float) 0.5, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.bucket.empty")), SoundSource.BLOCKS, (float) 0.5, 1, false);
 							}
-						}.getArrow(projectileLevel, entity, 4, 0);
-						_entityToSpawn.setPos((x + 0.5), (y + 3), (z + 0.5));
-						_entityToSpawn.shoot(new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+						}
+						world.setBlock(BlockPos.containing(x, y + 2, z), Blocks.WATER.defaultBlockState(), 3);
+						if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+							((Slot) _slots.get(2)).set(ItemStack.EMPTY);
+							_player.containerMenu.broadcastChanges();
+						}
+					} else if (new Object() {
+						public int getAmount(int sltid) {
+							if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+								ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+								if (stack != null)
+									return stack.getCount();
+							}
+							return 0;
+						}
+					}.getAmount(2) > 16
+							&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
+						if (world instanceof Level _level && !_level.isClientSide()) {
+							_level.explode(entity,
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("world_expansion:cannon_explosion_damage_type")))),
+									null, x, y, z, 4, true, Level.ExplosionInteraction.BLOCK);
+						}
+					} else if (!((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER)) {
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.snow.break")), SoundSource.BLOCKS, (float) 0.5, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.snow.break")), SoundSource.BLOCKS, (float) 0.5, 1, false);
+							}
+						}
+						if (world instanceof ServerLevel projectileLevel) {
+							Projectile _entityToSpawn = new Object() {
+								public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
+									AbstractArrow entityToSpawn = new PieceOfSnowEntity(WorldExpansionModEntities.SNOW_PROJECTILE.get(), level);
+									entityToSpawn.setOwner(shooter);
+									entityToSpawn.setBaseDamage(damage);
+									entityToSpawn.setKnockback(knockback);
+									entityToSpawn.setSilent(true);
+									return entityToSpawn;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : ""), Math.abs(new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+							}.getArrow(projectileLevel, entity, 4, 0);
+							_entityToSpawn.setPos((x + 0.5), (y + 3), (z + 0.5));
+							_entityToSpawn.shoot(new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "")), new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+							}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : ""), Math.abs(new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:Z") ? ((EditBox) guistate.get("text:Z")).getValue() : ""), (float) (Math.abs(new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+							}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "")), new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : "") + Math.abs(new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+							}.convert(guistate.containsKey("text:Z") ? ((EditBox) guistate.get("text:Z")).getValue() : ""), (float) (Math.abs(new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "")) + new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+							}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : "") + Math.abs(new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:Z") ? ((EditBox) guistate.get("text:Z")).getValue() : "")) / 32), (float) (Math.abs(new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+							}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "")) + new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : "") + Math.abs(new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+							}.convert(guistate.containsKey("text:Z") ? ((EditBox) guistate.get("text:Z")).getValue() : "")) / 32), (float) (Math.abs(new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "")) + new Object() {
-							double convert(String s) {
-								try {
-									return Double.parseDouble(s.trim());
-								} catch (Exception e) {
+							}.convert(guistate.containsKey("text:X") ? ((EditBox) guistate.get("text:X")).getValue() : "") + Math.abs(new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
 								}
-								return 0;
-							}
-						}.convert(guistate.containsKey("text:Z") ? ((EditBox) guistate.get("text:Z")).getValue() : "")) / 32));
-						projectileLevel.addFreshEntity(_entityToSpawn);
+							}.convert(guistate.containsKey("text:Y") ? ((EditBox) guistate.get("text:Y")).getValue() : "")) + new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
+								}
+							}.convert(guistate.containsKey("text:Z") ? ((EditBox) guistate.get("text:Z")).getValue() : "")) / 32));
+							projectileLevel.addFreshEntity(_entityToSpawn);
+						}
 					}
 				} else if ((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getItem() == Blocks.TNT.asItem()) {
 					if (new Object() {
@@ -349,7 +390,8 @@ public class CannonShootProcedure {
 							}
 							return 0;
 						}
-					}.getAmount(2) < 17) {
+					}.getAmount(2) < 17
+							&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.tnt.primed")), SoundSource.BLOCKS, (float) 0.5, 1);
@@ -466,7 +508,17 @@ public class CannonShootProcedure {
 							((Slot) _slots.get(2)).set(ItemStack.EMPTY);
 							_player.containerMenu.broadcastChanges();
 						}
-					} else {
+					} else if (new Object() {
+						public int getAmount(int sltid) {
+							if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
+								ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
+								if (stack != null)
+									return stack.getCount();
+							}
+							return 0;
+						}
+					}.getAmount(2) > 16
+							&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
 							_level.explode(entity,
 									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("world_expansion:cannon_explosion_damage_type")))),

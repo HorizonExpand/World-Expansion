@@ -10173,9 +10173,6 @@
       "locked_code": false,
       "registry_name": "powder_snow_projectile_koghda_snariad_popadaiet_v_sushchnost",
       "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/PowderSnowProjectileKoghdaSnariadPopadaietVSushchnostProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -10529,13 +10526,13 @@
   ],
   "language_map": {
     "ru_ru": {
-      "item.world_expansion.copper_horn3": "Медный рог ",
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
-      "item.world_expansion.copper_horn2": "Медный рог ",
+      "item.world_expansion.copper_horn3": "Медный рог ",
       "biome.world_expansion.politania": "Политания",
+      "item.world_expansion.copper_horn2": "Медный рог ",
       "item.world_expansion.copper_horn5": "Медный рог ",
-      "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
       "item.world_expansion.copper_horn4": "Медный рог ",
+      "advancements.summer_resort_in_winter.descr": "Вы решили прогуляться по всем биомам в этом мире? Хотя... Может вам пришлось это сделать",
       "item.world_expansion.copper_horn7": "Медный рог ",
       "block.world_expansion.little_shroomlight": "Маленький грибосвет",
       "advancements.world_expansion.title": "World Expansion",
@@ -10709,13 +10706,13 @@
       "item.world_expansion.copper_horn0": "Медный рог "
     },
     "en_us": {
-      "item.world_expansion.copper_horn3": "Copper Horn",
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
-      "item.world_expansion.copper_horn2": "Copper Horn",
+      "item.world_expansion.copper_horn3": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
+      "item.world_expansion.copper_horn2": "Copper Horn",
       "item.world_expansion.copper_horn5": "Copper Horn",
-      "item.world_expansion.copper_horn4": "Copper Horn",
       "advancements.summer_resort_in_winter.descr": "Have You Decided to Take a Walk through All The Biomes in this World? Although... Maybe You Had To Do It",
+      "item.world_expansion.copper_horn4": "Copper Horn",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
       "item.world_expansion.copper_horn6": "Copper Horn",
