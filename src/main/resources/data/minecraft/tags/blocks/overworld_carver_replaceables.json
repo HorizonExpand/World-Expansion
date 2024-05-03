@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:stone",
     "minecraft:farmland",
     "minecraft:dirt",
     "minecraft:grass_block"
