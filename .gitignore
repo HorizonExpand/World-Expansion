@@ -20,28 +20,28 @@
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+*hs_err_pid*
+*replay_pid*
 
 # Gradle build system ignores
-.gradle/
-.eclipse/
+*.gradle/
+*.eclipse/
 build/
 
 # Other IDE related folders
-.idea/
-.settings/
+*.idea/
+*.settings/
 
 # MCreator workspace
-.mcreator/
+*.mcreator/
 
 # Minecraft client/server files
-run/
-runs/
+*run/
+*runs/
 
 # MacOS system files
-.DS_STORE
+*.DS_STORE
 
 # Other Files (In Eclipse)
-.classpath
-.project
+*.classpath
+*.project
