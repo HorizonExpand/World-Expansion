@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "iron_ingot",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.7000000000000001,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:KabanytIronOre"
+    },
+    "blastingReturnStack": {
+      "value": "Items.IRON_INGOT"
+    },
+    "name": "iron_from_blasting_kabanyt_iron_ore",
+    "namespace": "mod"
+  }
+}

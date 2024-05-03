@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "world_expansion:block/judas_fruit_plant"
+    },
+    "blockstate=1": {
+      "model": "world_expansion:block/judas_fruit_plant_block_state_blockstate_0"
+    },
+    "blockstate=2": {
+      "model": "world_expansion:block/judas_fruit_plant_block_state_blockstate_1"
+    }
+  }
+}

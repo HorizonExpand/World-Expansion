@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 4,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "BUILDING",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Kabanyt"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Kabanyt"
+      },
+      {
+        "value": "CUSTOM:Kabanyt"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Kabanyt"
+      },
+      {
+        "value": "CUSTOM:Kabanyt"
+      },
+      {
+        "value": "CUSTOM:Kabanyt"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Kabanytstairs"
+    },
+    "name": "kabanyt_stairs_craft_recipe",
+    "namespace": "mod"
+  }
+}

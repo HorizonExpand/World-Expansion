@@ -1,0 +1,41 @@
+{
+  "_fv": 60,
+  "_type": "structure",
+  "definition": {
+    "structure": "ancient_corridors_entrance",
+    "projection": "rigid",
+    "ignoredBlocks": [],
+    "spacing": 22,
+    "separation": 18,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:SavannaPrairie"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_thin",
+    "generationStep": "SURFACE_STRUCTURES",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": [
+      {
+        "poolName": "hall",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "ancient_corridors_hall0",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "ancient_corridors_hall1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

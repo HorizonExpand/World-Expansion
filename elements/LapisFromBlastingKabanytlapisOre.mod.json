@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "lapis_lazuli",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.2,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:KabanytLapisOre"
+    },
+    "blastingReturnStack": {
+      "value": "Items.DYE#4"
+    },
+    "name": "lapis_from_blasting_kabanytlapis_ore",
+    "namespace": "mod"
+  }
+}

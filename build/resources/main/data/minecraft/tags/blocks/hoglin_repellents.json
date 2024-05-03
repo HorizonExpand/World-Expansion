@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:astilba_multicolored",
+    "world_expansion:kabanyt",
+    "world_expansion:kabanyt_bricks",
+    "world_expansion:kabanyt_tiles",
+    "world_expansion:carved_kabanyt",
+    "world_expansion:kabanyt_stairs",
+    "world_expansion:kabanyt_slab",
+    "world_expansion:kabanyt_wall",
+    "world_expansion:kabanyt_bricks_stairs",
+    "world_expansion:kabanyt_bricks_slab",
+    "world_expansion:kabanyt_bricks_wall",
+    "world_expansion:kabanyt_tiles_stairs",
+    "world_expansion:kabanyt_tiles_slab",
+    "world_expansion:kabanyt_tiles_wall",
+    "world_expansion:titanium_block"
+  ]
+}

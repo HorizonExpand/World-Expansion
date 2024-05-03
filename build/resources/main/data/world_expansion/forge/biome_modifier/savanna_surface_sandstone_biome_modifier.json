@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna",
+    "savanna_plateau"
+  ],
+  "features": "world_expansion:savanna_surface_sandstone",
+  "step": "top_layer_modification"
+}

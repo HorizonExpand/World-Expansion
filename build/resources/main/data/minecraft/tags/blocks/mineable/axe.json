@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:multi_crafting_table",
+    "world_expansion:baobab_door",
+    "world_expansion:baobab_trapdoor",
+    "world_expansion:stripped_baobab_log",
+    "world_expansion:stripped_baobab_wood",
+    "world_expansion:baobab_button",
+    "world_expansion:baobab_pressure_plate",
+    "world_expansion:baobab_fence_gate",
+    "world_expansion:baobab_fence",
+    "world_expansion:baobab_slab",
+    "world_expansion:baobab_stairs",
+    "world_expansion:baobab_planks",
+    "world_expansion:baobab_log",
+    "world_expansion:baobab_wood"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "gold_ingot",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:KabanytGoldOre"
+    },
+    "blastingReturnStack": {
+      "value": "Items.GOLD_INGOT"
+    },
+    "name": "gold_from_blasting_kabanyt_gold_ore",
+    "namespace": "mod"
+  }
+}

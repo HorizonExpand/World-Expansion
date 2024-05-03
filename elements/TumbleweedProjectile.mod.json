@@ -1,0 +1,53 @@
+{
+  "_fv": 60,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "tumbleweed",
+    "customModelName": "Normal",
+    "customProperties": {},
+    "states": [],
+    "name": "Tumbleweed ",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:NatureBlocks"
+    },
+    "stackSize": 16,
+    "enchantability": 0,
+    "useDuration": 72000,
+    "toolType": 0.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 2.0,
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "enableRanged": true,
+    "shootConstantly": false,
+    "projectile": {
+      "value": "CUSTOM:TumbleweedProjectileProjectile"
+    },
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "bow"
+  }
+}

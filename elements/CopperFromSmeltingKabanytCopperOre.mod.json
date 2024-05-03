@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "copper_ingot",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.7000000000000001,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:KabanytCopperOre"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.COPPER_INGOT"
+    },
+    "name": "copper_from_smelting_kabanyt_copper_ore",
+    "namespace": "mod"
+  }
+}

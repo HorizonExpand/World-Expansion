@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "world_expansion:block/astilba",
+    "particle": "world_expansion:block/astilba"
+  },
+  "render_type": "cutout"
+}

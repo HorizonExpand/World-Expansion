@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "world_expansion:baobab_valley",
+  "features": "world_expansion:kabanyt_coal_ore_feature",
+  "step": "underground_ores"
+}

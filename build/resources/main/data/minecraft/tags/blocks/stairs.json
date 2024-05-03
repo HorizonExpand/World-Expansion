@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:baobab_stairs",
+    "world_expansion:kabanyt_stairs",
+    "world_expansion:kabanyt_bricks_stairs",
+    "world_expansion:kabanyt_tiles_stairs"
+  ]
+}

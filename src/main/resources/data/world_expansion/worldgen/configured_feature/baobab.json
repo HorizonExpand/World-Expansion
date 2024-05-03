@@ -1,0 +1,37 @@
+{
+  "type": "world_expansion:baobab",
+  "config": {
+    "features": [
+      {
+        "feature": {
+          "type": "world_expansion:structure_feature",
+          "config": {
+            "structure": "world_expansion:baobab0",
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "world_expansion:structure_feature",
+          "config": {
+            "structure": "world_expansion:baobab1",
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "world_expansion:structure_feature",
+          "config": {
+            "structure": "world_expansion:baobab2",
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      }
+    ]
+  }
+}

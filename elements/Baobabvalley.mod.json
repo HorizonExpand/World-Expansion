@@ -1,0 +1,312 @@
+{
+  "_fv": 60,
+  "_type": "biome",
+  "definition": {
+    "name": "Baobab valley",
+    "groundBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.GRAVEL"
+    },
+    "airColor": {
+      "value": -6241568,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -4407495,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -4740034,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -12801844,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -12802356,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": "music.creative"
+    },
+    "moodSound": {
+      "value": "ambient.cave"
+    },
+    "moodSoundDelay": 6000,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.5,
+    "rainingPossibility": 0.35,
+    "temperature": 1.0999999999999999,
+    "spawnBiome": true,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": 0.3,
+      "max": 0.9
+    },
+    "genHumidity": {
+      "min": -0.3,
+      "max": 0.3
+    },
+    "genContinentalness": {
+      "min": -0.2,
+      "max": 1.0
+    },
+    "genErosion": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "genWeirdness": {
+      "min": -0.3,
+      "max": 0.3
+    },
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 0,
+    "minHeight": 7,
+    "treeStem": {
+      "value": ""
+    },
+    "treeBranch": {
+      "value": ""
+    },
+    "treeVines": {
+      "value": ""
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "AmethystGeodes",
+      "Caves",
+      "DeadBushes",
+      "Dripstone",
+      "ExtraEmeraldOre",
+      "ExtraGoldOre",
+      "InfestedStone",
+      "Lakes",
+      "MonsterRooms",
+      "Ores",
+      "PlainsTallGrass",
+      "ForestGrass",
+      "DefaultFlowers"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": true,
+    "spawnPillagerOutpost": true,
+    "villageType": "savanna",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "DESERT",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityCow"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityChicken"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityLlama"
+        },
+        "minGroup": 2,
+        "maxGroup": 4,
+        "weight": 7,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityPig"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 8,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntitySheep"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 8,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityHorse"
+        },
+        "minGroup": 2,
+        "maxGroup": 4,
+        "weight": 7,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityDonkey"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 7,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityBat"
+        },
+        "minGroup": 5,
+        "maxGroup": 10,
+        "weight": 10,
+        "spawnType": "ambient"
+      },
+      {
+        "entity": {
+          "value": "EntityEnderman"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 3,
+        "spawnType": "misc"
+      },
+      {
+        "entity": {
+          "value": "EntityZombie"
+        },
+        "minGroup": 3,
+        "maxGroup": 3,
+        "weight": 45,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 3,
+        "maxGroup": 3,
+        "weight": 45,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCreeper"
+        },
+        "minGroup": 3,
+        "maxGroup": 3,
+        "weight": 45,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySpider"
+        },
+        "minGroup": 3,
+        "maxGroup": 3,
+        "weight": 45,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityWitch"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 3,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityZombieVillager"
+        },
+        "minGroup": 1,
+        "maxGroup": 1,
+        "weight": 5,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCod"
+        },
+        "minGroup": 2,
+        "maxGroup": 6,
+        "weight": 20,
+        "spawnType": "waterCreature"
+      },
+      {
+        "entity": {
+          "value": "EntityGlowSquid"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 10,
+        "spawnType": "undergroundWaterCreature"
+      },
+      {
+        "entity": {
+          "value": "EntitySalmon"
+        },
+        "minGroup": 3,
+        "maxGroup": 5,
+        "weight": 25,
+        "spawnType": "waterCreature"
+      },
+      {
+        "entity": {
+          "value": "EntityRabbit"
+        },
+        "minGroup": 2,
+        "maxGroup": 3,
+        "weight": 6,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntitySquid"
+        },
+        "minGroup": 1,
+        "maxGroup": 3,
+        "weight": 20,
+        "spawnType": "waterCreature"
+      }
+    ]
+  }
+}

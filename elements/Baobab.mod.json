@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "feature",
+  "definition": {
+    "generationStep": "TOP_LAYER_MODIFICATION",
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Baobabvalley"
+      }
+    ],
+    "generateCondition": {
+      "name": "BaobabDopolnitielnoieUsloviieGienieratsii"
+    },
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_simple_random_selector\" inline=\"false\" collapsed=\"true\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"3\"></mutation><value name=\"feature0\"><block type=\"feature_custom_structure\"><field name=\"structure\">baobab0</field><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><field name=\"random_rotation\">FALSE</field><field name=\"random_mirror\">FALSE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.AIR</field></block></value></block></value><value name=\"feature1\"><block type=\"feature_custom_structure\"><field name=\"structure\">baobab1</field><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><field name=\"random_rotation\">FALSE</field><field name=\"random_mirror\">FALSE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.AIR</field></block></value></block></value><value name=\"feature2\"><block type=\"feature_custom_structure\"><field name=\"structure\">baobab2</field><field name=\"x\">0</field><field name=\"y\">0</field><field name=\"z\">0</field><field name=\"random_rotation\">FALSE</field><field name=\"random_mirror\">FALSE</field><value name=\"ignored_blocks\"><block type=\"block_holderset_list\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"1\"></mutation><field name=\"block0\">Blocks.AIR</field></block></value></block></value></block></value><next><block type=\"placement_count\"><value name=\"count\"><block type=\"int_provider_constant\"><field name=\"value\">4</field></block></value><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">OCEAN_FLOOR_WG</field><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></xml>"
+  }
+}

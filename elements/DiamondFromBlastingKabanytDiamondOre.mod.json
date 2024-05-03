@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "diamond",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:KabanytDiamondOre"
+    },
+    "blastingReturnStack": {
+      "value": "Items.DIAMOND"
+    },
+    "name": "diamond_from_blasting_kabanyt_diamond_ore",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 60,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "Blocks.SNOW"
+    },
+    "showParticles": false,
+    "actionSound": {
+      "value": "entity.snowball.throw"
+    },
+    "igniteFire": false,
+    "power": 0.6,
+    "damage": 2.0,
+    "knockback": 0,
+    "entityModel": "Modelpiece_of_powder_snow",
+    "customModelTexture": "snow_projectile.png",
+    "onHitsBlock": {
+      "name": "PieceOfSnowKoghdaSnariadPopadaietVBlok"
+    },
+    "onHitsEntity": {
+      "name": "PieceOfSnowKoghdaSnariadPopadaietVSushchnost"
+    }
+  }
+}

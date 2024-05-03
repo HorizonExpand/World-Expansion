@@ -1,0 +1,19 @@
+{
+  "feature": "world_expansion:aloe_vera_feature",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 28
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

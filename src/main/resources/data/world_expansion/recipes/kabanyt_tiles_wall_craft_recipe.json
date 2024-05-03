@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "world_expansion:kabanyt_tiles"
+    }
+  },
+  "result": {
+    "item": "world_expansion:kabanyt_tiles_wall",
+    "count": 6
+  }
+}

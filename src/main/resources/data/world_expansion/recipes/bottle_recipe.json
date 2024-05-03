@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "result": {
+    "item": "world_expansion:bottle",
+    "count": 1
+  }
+}

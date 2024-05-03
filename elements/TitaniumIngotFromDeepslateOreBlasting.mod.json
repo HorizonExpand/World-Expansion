@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "titanium_ingot",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.2000000000000002,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:DeepslateTitaniumOre"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:TitaniumIngot"
+    },
+    "name": "titanium_ingot_from_deepslate_ore_blasting",
+    "namespace": "mod"
+  }
+}

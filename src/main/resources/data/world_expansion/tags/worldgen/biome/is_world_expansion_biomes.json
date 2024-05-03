@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:baobab_valley",
+    "world_expansion:halloween_dark_forest",
+    "world_expansion:halloween_forest",
+    "world_expansion:halloween_plains",
+    "world_expansion:halloween_pumpkin_field",
+    "world_expansion:politania",
+    "world_expansion:dry_savanna"
+  ]
+}

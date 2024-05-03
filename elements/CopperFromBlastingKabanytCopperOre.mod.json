@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "copper_ingot",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.7,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:KabanytCopperOre"
+    },
+    "blastingReturnStack": {
+      "value": "Items.COPPER_INGOT"
+    },
+    "name": "copper_from_blasting_kabanyt_copper_ore",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "world_expansion:displaysettings/bottle_witn_mini_fireflies.item",
+  "textures": {
+    "particle": "world_expansion:block/bottle_witn_mini_fireflies"
+  }
+}

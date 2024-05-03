@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "REDSTONE",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "Items.GUNPOWDER"
+      },
+      {
+        "value": "Items.DYE#1"
+      },
+      {
+        "value": "Items.PAPER"
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": "Items.PAPER"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.IRON_BLOCK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SnowCannonBarrel"
+    },
+    "name": "snow_cannon_barrel_recipe",
+    "namespace": "mod"
+  }
+}

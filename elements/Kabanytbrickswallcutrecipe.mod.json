@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:Kabanytbricks"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:Kabanytbrickswall"
+    },
+    "name": "kabanyt_bricks_wall_cut_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 60,
+  "_type": "structure",
+  "definition": {
+    "structure": "raiders_base_in_baobab",
+    "projection": "rigid",
+    "ignoredBlocks": [
+      {
+        "value": "Blocks.STRUCTURE_BLOCK"
+      }
+    ],
+    "spacing": 48,
+    "separation": 32,
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Baobabvalley"
+      }
+    ],
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "terrainAdaptation": "beard_box",
+    "generationStep": "SURFACE_STRUCTURES",
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

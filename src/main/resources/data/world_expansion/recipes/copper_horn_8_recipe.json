@@ -1,0 +1,36 @@
+{
+  "type": "world_expansion:multi_crafting_table_jei_category",
+  "ingredients": [
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "minecraft:goat_horn"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "tag": "world_expansion:jei_empty_tag"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "tag": "world_expansion:jei_empty_tag"
+    },
+    {
+      "tag": "world_expansion:jei_empty_tag"
+    },
+    {
+      "tag": "world_expansion:jei_empty_tag"
+    },
+    {
+      "tag": "world_expansion:jei_empty_tag"
+    }
+  ],
+  "output": {
+    "item": "world_expansion:copper_horn8",
+    "count": 1
+  }
+}

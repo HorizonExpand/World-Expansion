@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "always",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s exploded along with the cannon",
+    "itemDeathMessage": "%1$s exploded along with the cannon because of %2$s using %3$s",
+    "playerDeathMessage": "%1$s exploded along with the cannon whilst trying to escape %2$s"
+  }
+}

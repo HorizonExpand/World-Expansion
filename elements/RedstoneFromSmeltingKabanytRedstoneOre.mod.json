@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "recipeRetstackSize": 1,
+    "group": "redstone",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.7000000000000001,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:KabanytRedstoneOre"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.REDSTONE"
+    },
+    "name": "redstone_from_smelting_kabanyt_redstone_ore",
+    "namespace": "mod"
+  }
+}

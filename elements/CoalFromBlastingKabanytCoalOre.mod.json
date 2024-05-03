@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "coal",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.1,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:KabanytCoalOre"
+    },
+    "blastingReturnStack": {
+      "value": "Items.COAL#0"
+    },
+    "name": "coal_from_blasting_kabanyt_coal_ore",
+    "namespace": "mod"
+  }
+}

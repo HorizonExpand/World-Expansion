@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ice_skates",
+  "category": "equipment",
+  "pattern": [
+    "a  ",
+    "aaa",
+    "bcb"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:leather"
+    },
+    "b": {
+      "item": "minecraft:iron_nugget"
+    },
+    "c": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "world_expansion:ice_skates_boots",
+    "count": 1
+  }
+}

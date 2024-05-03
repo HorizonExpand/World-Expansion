@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "world_expansion:item/leave_of_aloe_vera"
+  }
+}

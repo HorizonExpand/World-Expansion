@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "blockstate=0": {
+      "model": "world_expansion:custom/bottle_with_mini_fireflies_particle"
+    },
+    "blockstate=1": {
+      "model": "world_expansion:block/bottle_with_mini_fireflies_blockstate_0"
+    }
+  }
+}

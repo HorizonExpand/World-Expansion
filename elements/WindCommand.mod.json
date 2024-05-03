@@ -1,0 +1,10 @@
+{
+  "_fv": 60,
+  "_type": "command",
+  "definition": {
+    "commandName": "wind",
+    "type": "STANDARD",
+    "permissionLevel": "1",
+    "argsxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"args_start\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"literal\"><field name=\"name\">get</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WindGet</field></block></statement><next><block type=\"literal\"><field name=\"name\">set</field><statement name=\"args\"><block type=\"literal\"><field name=\"name\">north</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WindSetNorth</field></block></statement><next><block type=\"literal\"><field name=\"name\">south</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WindSetSouth</field></block></statement><next><block type=\"literal\"><field name=\"name\">west</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WindSetWest</field></block></statement><next><block type=\"literal\"><field name=\"name\">east</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WindSetEast</field></block></statement><next><block type=\"literal\"><field name=\"name\">still</field><statement name=\"args\"><block type=\"call_procedure\"><field name=\"procedure\">WindSetStill</field></block></statement></block></next></block></next></block></next></block></next></block></statement></block></next></block></next></block></xml>"
+  }
+}

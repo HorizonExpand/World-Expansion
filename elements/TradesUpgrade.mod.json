@@ -1,0 +1,141 @@
+{
+  "_fv": 60,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "WANDERING_TRADER"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:BaobabSapling"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 10,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:AloeVeraTiger"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 8,
+            "xp": 5,
+            "priceMultiplier": 0.1
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 2,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Blocks.CARVED_PUMPKIN"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 12,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.ECHO_SHARD"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 5,
+            "xp": 5,
+            "priceMultiplier": 0.5
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 4,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.HONEY_BOTTLE"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 6,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 12,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EXPERIENCE_BOTTLE"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 4,
+            "xp": 5,
+            "priceMultiplier": 0.55
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 5,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "CUSTOM:CopperHorn7"
+            },
+            "countOffer": 1,
+            "level": 1,
+            "maxTrades": 2,
+            "xp": 5,
+            "priceMultiplier": 0.2
+          }
+        ]
+      }
+    ]
+  }
+}

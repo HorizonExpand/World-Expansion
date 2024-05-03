@@ -1,0 +1,29 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"1": {
+			"animation_length": 1,
+			"bones": {
+				"soft": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.25": {
+							"vector": [-10, 0, 0]
+						},
+						"0.75": {
+							"vector": [5, 0, 0]
+						},
+						"1.0": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"animation.bottle.idle": {
+			"loop": true
+		}
+	}
+}

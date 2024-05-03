@@ -1,0 +1,158 @@
+{
+  "has_precipitation": true,
+  "temperature": 0.7,
+  "downfall": 1,
+  "effects": {
+    "ambient_sound": "ambient.soul_sand_valley.loop",
+    "mood_sound": {
+      "sound": "ambient.soul_sand_valley.mood",
+      "tick_delay": 3000,
+      "offset": 8,
+      "block_search_extent": 2
+    },
+    "additions_sound": {
+      "sound": "ambient.soul_sand_valley.additions",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "music.overworld.deep_dark",
+      "min_delay": 12000,
+      "max_delay": 24000,
+      "replace_current_music": true
+    },
+    "particle": {
+      "options": {
+        "type": "large_smoke"
+      },
+      "probability": 0.02
+    },
+    "foliage_color": -7705559,
+    "grass_color": -7705559,
+    "sky_color": -10066330,
+    "fog_color": -10066330,
+    "water_color": -10202301,
+    "water_fog_color": -10202301
+  },
+  "spawners": {
+    "monster": [
+      {
+        "type": "cave_spider",
+        "weight": 100,
+        "minCount": 3,
+        "maxCount": 4
+      },
+      {
+        "type": "skeleton",
+        "weight": 120,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "spider",
+        "weight": 100,
+        "minCount": 3,
+        "maxCount": 4
+      },
+      {
+        "type": "witch",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "zombie",
+        "weight": 110,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "bat",
+        "weight": 50,
+        "minCount": 3,
+        "maxCount": 6
+      },
+      {
+        "type": "creeper",
+        "weight": 100,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "creature": [
+      {
+        "type": "pig",
+        "weight": 20,
+        "minCount": 4,
+        "maxCount": 4
+      }
+    ],
+    "ambient": [],
+    "axolotls": [],
+    "underground_water_creature": [],
+    "water_creature": [],
+    "water_ambient": [],
+    "misc": [
+      {
+        "type": "enderman",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "features": [
+    [],
+    [
+      "minecraft:lake_lava_underground"
+    ],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [
+      "minecraft:monster_room",
+      "minecraft:monster_room_deep"
+    ],
+    [],
+    [],
+    [
+      "minecraft:ore_coal_upper",
+      "minecraft:ore_coal_lower",
+      "minecraft:ore_iron_upper",
+      "minecraft:ore_iron_middle",
+      "minecraft:ore_iron_small",
+      "minecraft:ore_gold",
+      "minecraft:ore_gold_lower",
+      "minecraft:ore_redstone",
+      "minecraft:ore_redstone_lower",
+      "minecraft:ore_diamond",
+      "minecraft:ore_diamond_large",
+      "minecraft:ore_diamond_buried",
+      "minecraft:ore_lapis",
+      "minecraft:ore_lapis_buried",
+      "minecraft:ore_copper",
+      "minecraft:underwater_magma",
+      "minecraft:ore_gold_extra",
+      "minecraft:ore_emerald"
+    ],
+    [],
+    [],
+    [
+      "world_expansion:halloween_forest_tree",
+      "minecraft:forest_flowers",
+      "minecraft:patch_tall_grass",
+      "minecraft:patch_grass_forest",
+      "minecraft:patch_dead_bush_2",
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_pumpkin"
+    ],
+    []
+  ]
+}

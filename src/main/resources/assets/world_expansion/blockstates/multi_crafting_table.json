@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "world_expansion:block/multi_crafting_table"
+    },
+    "facing=east": {
+      "model": "world_expansion:block/multi_crafting_table",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "world_expansion:block/multi_crafting_table",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "world_expansion:block/multi_crafting_table",
+      "y": 270
+    }
+  }
+}

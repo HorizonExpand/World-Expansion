@@ -1,0 +1,6 @@
+{
+  "parent": "world_expansion:displaysettings/bottle.item",
+  "textures": {
+    "particle": "world_expansion:block/bottle_stayed"
+  }
+}

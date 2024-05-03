@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:mossy_stone_bricks"
+    },
+    "title": {
+      "translate": "advancements.ancient_civilization_part_2.title"
+    },
+    "description": {
+      "translate": "advancements.ancient_civilization_part_2.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "world_expansion:ancient_civilization_part_1",
+  "criteria": {
+    "in_ancient_corridors_entrance": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "world_expansion:ancient_corridors_entrance"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "in_ancient_corridors_entrance"
+    ]
+  ],
+  "rewards": {
+    "experience": 10
+  },
+  "sends_telemetry_event": true
+}

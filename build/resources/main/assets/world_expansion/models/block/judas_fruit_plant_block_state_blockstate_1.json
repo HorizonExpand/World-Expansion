@@ -1,0 +1,9 @@
+{
+  "parent": "world_expansion:custom/judas_fruit",
+  "textures": {
+    "all": "world_expansion:block/judas_fruit3",
+    "particle": "world_expansion:block/judas_fruit1",
+    "3": "world_expansion:block/judas_fruit3"
+  },
+  "render_type": "cutout"
+}

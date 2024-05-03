@@ -1,0 +1,220 @@
+{
+  "_fv": 60,
+  "_type": "biome",
+  "definition": {
+    "name": "Halloween Pumpkin Field",
+    "groundBlock": {
+      "value": "Blocks.FARMLAND"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.DIRT#0"
+    },
+    "underwaterBlock": {
+      "value": "Blocks.GRAVEL"
+    },
+    "airColor": {
+      "value": -13224913,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -6587336,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -6587336,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -10202301,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -10202301,
+      "falpha": 0.0
+    },
+    "ambientSound": {
+      "value": "ambient.soul_sand_valley.loop"
+    },
+    "additionsSound": {
+      "value": "ambient.soul_sand_valley.additions"
+    },
+    "music": {
+      "value": "music.overworld.deep_dark"
+    },
+    "moodSound": {
+      "value": "ambient.soul_sand_valley.mood"
+    },
+    "moodSoundDelay": 3000,
+    "spawnParticles": true,
+    "particleToSpawn": {
+      "value": "SMOKE_LARGE"
+    },
+    "particlesProbability": 2.0,
+    "rainingPossibility": 0.7000000000000001,
+    "temperature": 0.7,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.6,
+      "max": 0.2
+    },
+    "genHumidity": {
+      "min": -0.2,
+      "max": 0.6
+    },
+    "genContinentalness": {
+      "min": -1.0,
+      "max": 1.0
+    },
+    "genErosion": {
+      "min": -1.0,
+      "max": 0.0
+    },
+    "genWeirdness": {
+      "min": -1.0,
+      "max": 0.0
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 5,
+    "treeStem": {
+      "value": "Blocks.LOG#0"
+    },
+    "treeBranch": {
+      "value": "Blocks.LEAVES#0"
+    },
+    "treeVines": {
+      "value": "Blocks.VINE"
+    },
+    "treeFruits": {
+      "value": ""
+    },
+    "defaultFeatures": [
+      "Caves",
+      "Ores",
+      "MonsterRooms",
+      "ForestGrass",
+      "ForestFlowers",
+      "AmethystGeodes",
+      "DeadBushes",
+      "ExtraEmeraldOre",
+      "ExtraGoldOre",
+      "PlainsTallGrass",
+      "ReedsAndPumpkins"
+    ],
+    "spawnStronghold": false,
+    "spawnMineshaft": false,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "SWAMP",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "EntityCaveSpider"
+        },
+        "minGroup": 3,
+        "maxGroup": 4,
+        "weight": 100,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityEnderman"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 8,
+        "spawnType": "misc"
+      },
+      {
+        "entity": {
+          "value": "EntitySkeleton"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 120,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntitySpider"
+        },
+        "minGroup": 3,
+        "maxGroup": 4,
+        "weight": 100,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityWitch"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 8,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityZombie"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 110,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityBat"
+        },
+        "minGroup": 3,
+        "maxGroup": 6,
+        "weight": 50,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCreeper"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 100,
+        "spawnType": "monster"
+      },
+      {
+        "entity": {
+          "value": "EntityCow"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityChicken"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 20,
+        "spawnType": "creature"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "_fv": 60,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 0.1,
+    "scaling": "always",
+    "effects": "poking",
+    "normalDeathMessage": "Cowboy %1$s was stopped",
+    "itemDeathMessage": "Cowboy %1$s was stopped by %2$s using %3$s",
+    "playerDeathMessage": "Cowboy %1$s was stopped whilst trying to escape %2$s"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "_fv": 60,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "redstone",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.7000000000000001,
+    "cookingTime": 100,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:KabanytRedstoneOre"
+    },
+    "blastingReturnStack": {
+      "value": "Items.REDSTONE"
+    },
+    "name": "redstone_from_blasting_kabanyt_redstone_ore",
+    "namespace": "mod"
+  }
+}

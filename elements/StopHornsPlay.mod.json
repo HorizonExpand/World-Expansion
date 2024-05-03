@@ -1,0 +1,9 @@
+{
+  "_fv": 60,
+  "_type": "function",
+  "definition": {
+    "code": "stopsound @p player world_expansion:bass0\nstopsound @p player world_expansion:bass1\nstopsound @p player world_expansion:bass2\nstopsound @p player world_expansion:bass3\nstopsound @p player world_expansion:bass4\nstopsound @p player world_expansion:bass5\nstopsound @p player world_expansion:bass6\nstopsound @p player world_expansion:bass7\nstopsound @p player world_expansion:bass8\nstopsound @p player world_expansion:bass9\nstopsound @p player world_expansion:harmony0\nstopsound @p player world_expansion:harmony1\nstopsound @p player world_expansion:harmony2\nstopsound @p player world_expansion:harmony3\nstopsound @p player world_expansion:harmony4\nstopsound @p player world_expansion:harmony5\nstopsound @p player world_expansion:harmony6\nstopsound @p player world_expansion:harmony7\nstopsound @p player world_expansion:harmony8\nstopsound @p player world_expansion:harmony9\nstopsound @p player world_expansion:melody0\nstopsound @p player world_expansion:melody1\nstopsound @p player world_expansion:melody2\nstopsound @p player world_expansion:melody3\nstopsound @p player world_expansion:melody4\nstopsound @p player world_expansion:melody5\nstopsound @p player world_expansion:melody6\nstopsound @p player world_expansion:melody7\nstopsound @p player world_expansion:melody8\nstopsound @p player world_expansion:melody9",
+    "name": "stop_horns_play",
+    "namespace": "mod"
+  }
+}

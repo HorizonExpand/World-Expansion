@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "world_expansion:block/kabanyt",
+    "top": "world_expansion:block/kabanyt",
+    "side": "world_expansion:block/kabanyt"
+  },
+  "render_type": "solid"
+}

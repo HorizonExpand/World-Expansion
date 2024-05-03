@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "aba",
+    "cdc",
+    " d "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:red_dye"
+    },
+    "b": {
+      "item": "minecraft:gunpowder"
+    },
+    "c": {
+      "item": "minecraft:paper"
+    },
+    "d": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "world_expansion:cannon_barrel",
+    "count": 1
+  }
+}

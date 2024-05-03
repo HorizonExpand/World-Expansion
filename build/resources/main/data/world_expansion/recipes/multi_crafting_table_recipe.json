@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    " a ",
+    "aba",
+    " a "
+  ],
+  "key": {
+    "a": {
+      "item": "world_expansion:titanium_ingot"
+    },
+    "b": {
+      "tag": "forge:stripped_log"
+    }
+  },
+  "result": {
+    "item": "world_expansion:multi_crafting_table",
+    "count": 1
+  }
+}

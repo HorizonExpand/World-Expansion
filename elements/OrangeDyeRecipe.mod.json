@@ -1,0 +1,40 @@
+{
+  "_fv": 60,
+  "_type": "jeirecipe",
+  "definition": {
+    "category": "multi_crafting_table_jei_category",
+    "result": {
+      "value": "Items.DYE#14"
+    },
+    "count": 1,
+    "ingredients": [
+      {
+        "value": "CUSTOM:Astilbamulticolored"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.AIR"
+      },
+      {
+        "value": "Blocks.AIR"
+      }
+    ]
+  }
+}

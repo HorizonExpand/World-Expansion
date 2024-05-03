@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "world_expansion:block/baobab_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "world_expansion:block/baobab_wood"
+    },
+    "axis=z": {
+      "model": "world_expansion:block/baobab_wood",
+      "x": 90
+    }
+  }
+}

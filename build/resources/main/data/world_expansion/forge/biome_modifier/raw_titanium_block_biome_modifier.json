@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_overworld",
+  "features": "world_expansion:raw_titanium_block",
+  "step": "underground_ores"
+}

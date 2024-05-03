@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "world_expansion:blocks/windometer",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "world_expansion:windometer"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "SuspiciousMud",
+    "blockstateList": [
+      {
+        "texture": "suspicious_mud1",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "suspicious_mud2",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 0,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "suspicious_mud3",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 4,
+        "customModelName": "Single texture",
+        "luminance": 0,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

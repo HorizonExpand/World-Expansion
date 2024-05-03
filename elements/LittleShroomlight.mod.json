@@ -1,0 +1,148 @@
+{
+  "_fv": 60,
+  "_type": "plant",
+  "definition": {
+    "renderType": 12,
+    "texture": "little_shroomlight_",
+    "textureBottom": "",
+    "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "plantType": "normal",
+    "suspiciousStewEffect": "NIGHT_VISION",
+    "suspiciousStewDuration": 8,
+    "growapableSpawnType": "Plains",
+    "growapableMaxHeight": 3,
+    "customBoundingBox": true,
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 3.0,
+        "my": 0.0,
+        "mz": 3.0,
+        "Mx": 13.0,
+        "My": 16.0,
+        "Mz": 13.0,
+        "subtract": false
+      }
+    ],
+    "name": "Little Shroomlight",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "creativeTab": {
+      "value": "CUSTOM:NatureBlocks"
+    },
+    "hardness": 0.0,
+    "resistance": 0.0,
+    "luminance": 12,
+    "unbreakable": false,
+    "isSolid": false,
+    "isCustomSoundType": false,
+    "soundOnStep": {
+      "value": "SHROOMLIGHT"
+    },
+    "breakSound": {
+      "value": ""
+    },
+    "stepSound": {
+      "value": ""
+    },
+    "placeSound": {
+      "value": ""
+    },
+    "hitSound": {
+      "value": ""
+    },
+    "fallSound": {
+      "value": ""
+    },
+    "useLootTableForDrops": false,
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "forceTicking": false,
+    "emissiveRendering": true,
+    "hasTileEntity": false,
+    "isReplaceable": false,
+    "colorOnMap": "RED",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "XZ",
+    "aiPathNodeType": "WALKABLE",
+    "flammability": 0,
+    "fireSpreadSpeed": 100,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [
+      {
+        "value": "CUSTOM:Kabanyt"
+      },
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.MYCELIUM"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.ROOTED_DIRT"
+      },
+      {
+        "value": "Blocks.MUD"
+      },
+      {
+        "value": "Blocks.MOSS_BLOCK"
+      },
+      {
+        "value": "Blocks.SAND#0"
+      },
+      {
+        "value": "Blocks.SAND#1"
+      },
+      {
+        "value": "Blocks.FARMLAND"
+      },
+      {
+        "value": "Blocks.NETHERRACK"
+      },
+      {
+        "value": "Blocks.CRIMSON_NYLIUM"
+      },
+      {
+        "value": "Blocks.WARPED_NYLIUM"
+      },
+      {
+        "value": "Blocks.SOUL_SAND"
+      },
+      {
+        "value": "Blocks.SOUL_SOIL"
+      },
+      {
+        "value": "Blocks.SHROOMLIGHT"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      }
+    ],
+    "isBonemealable": false,
+    "frequencyOnChunks": 5,
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "generationType": "Flower",
+    "patchSize": 64,
+    "generateAtAnyHeight": false
+  }
+}
