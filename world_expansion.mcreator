@@ -7255,7 +7255,8 @@
       "CUSTOM:TitaniumBlock"
     ],
     "BLOCKS:minecraft:valid_spawn": [
-      "CUSTOM:Kabanyt"
+      "CUSTOM:Kabanyt",
+      "Blocks.SAND#1"
     ],
     "BLOCKS:minecraft:coal_ores": [
       "CUSTOM:KabanytCoalOre"
@@ -7664,7 +7665,7 @@
       "CUSTOM:Strippedbaobablog"
     ],
     "ENTITIES:minecraft:fall_damage_immune": [
-      "CUSTOM:MiniFirefly"
+      "CUSTOM:MiniFireflies"
     ],
     "BLOCKS:minecraft:logs": [
       "CUSTOM:BaobabWood",
@@ -7719,7 +7720,8 @@
       "CUSTOM:TitaniumIngot"
     ],
     "BLOCKS:minecraft:animals_spawnable_on": [
-      "CUSTOM:Kabanyt"
+      "CUSTOM:Kabanyt",
+      "Blocks.SAND#1"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~CUSTOM:Windometer",
@@ -7802,7 +7804,7 @@
       "CUSTOM:TitaniumIngot"
     ],
     "ENTITIES:minecraft:powder_snow_walkable_mobs": [
-      "CUSTOM:MiniFirefly"
+      "CUSTOM:MiniFireflies"
     ],
     "ITEMS:minecraft:creeper_drop_music_discs": [
       "CUSTOM:MusicDiscDestroyer"
@@ -7932,7 +7934,7 @@
       "CUSTOM:BaobabSapling"
     ],
     "ENTITIES:minecraft:frog_food": [
-      "CUSTOM:MiniFirefly"
+      "CUSTOM:MiniFireflies"
     ],
     "BIOMES:minecraft:without_patrol_spawns": [
       "CUSTOM:DrySavanna"

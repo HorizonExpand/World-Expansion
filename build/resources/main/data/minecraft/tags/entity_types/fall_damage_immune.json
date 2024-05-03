@@ -1,4 +1,6 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "world_expansion:mini_fireflies"
+  ]
 }
