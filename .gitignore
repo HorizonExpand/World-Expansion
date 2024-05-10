@@ -27,6 +27,7 @@
 *.gradle
 *.eclipse
 *build
+*.gradle\
 
 # Other IDE related folders
 *.idea
