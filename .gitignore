@@ -24,20 +24,20 @@
 *replay_pid*
 
 # Gradle build system ignores
-*.gradle/
-*.eclipse/
-build/
+*.gradle
+*.eclipse
+build
 
 # Other IDE related folders
-*.idea/
-*.settings/
+*.idea
+*.settings
 
 # MCreator workspace
-*.mcreator/
+*.mcreator
 
 # Minecraft client/server files
-*run/
-*runs/
+*run
+*runs
 
 # MacOS system files
 *.DS_STORE
