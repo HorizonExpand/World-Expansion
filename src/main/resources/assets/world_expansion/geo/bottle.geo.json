@@ -13,71 +13,45 @@
 			"bones": [
 				{
 					"name": "bottle",
-					"pivot": [0, 15.75, 0],
+					"pivot": [0, 16, 0],
 					"cubes": [
 						{"origin": [-1.1, 13, -1.1], "size": [2.2, 3, 2.2], "uv": [40, 59]}
-					]
+					],
+					"locators": {
+						"_null_ik_controller": [0, 0, 0]
+					}
 				},
 				{
-					"name": "soft",
+					"name": "anim",
 					"parent": "bottle",
-					"pivot": [0, 12.75, 0],
+					"pivot": [0, 13, 0],
 					"cubes": [
-						{"origin": [-3, 0.1, -3], "size": [6, 8, 6], "uv": [0, 50]},
-						{"origin": [-2, 8, -2], "size": [4, 3, 4], "uv": [0, 0]},
 						{"origin": [-2.1, 9, -2.1], "size": [4.2, 4, 4.2], "uv": [48, 56]}
 					]
 				},
 				{
+					"name": "bottle_anim",
+					"parent": "anim",
+					"pivot": [0, 9.5, 0],
+					"cubes": [
+						{"origin": [-2, 8, -2], "size": [4, 3, 4], "uv": [0, 0]},
+						{"origin": [-3, 0.1, -3], "size": [6, 8, 6], "uv": [0, 50]}
+					],
+					"locators": {
+						"ik_locator": [0, 0, 0]
+					}
+				},
+				{
 					"name": "fireflies",
-					"pivot": [0, 4, 0]
-				},
-				{
-					"name": "fireflies0",
-					"parent": "fireflies",
-					"pivot": [0, 4, 0],
+					"pivot": [0, 1.5, 2],
 					"cubes": [
-						{"origin": [-2, 2, -1], "size": [0, 1, 2], "pivot": [-2, 2.5, 0], "rotation": [0, 180, 0], "uv": [60, -2]}
-					]
-				},
-				{
-					"name": "fireflies1",
-					"parent": "fireflies",
-					"pivot": [0, 4, 0],
-					"cubes": [
-						{"origin": [1, 2, -1], "size": [0, 1, 2], "uv": [60, -2]}
-					]
-				},
-				{
-					"name": "fireflies2",
-					"parent": "fireflies",
-					"pivot": [0, 4, 0],
-					"cubes": [
-						{"origin": [0, 4, 1], "size": [0, 1, 2], "pivot": [0, 4.5, 2], "rotation": [0, -90, 0], "uv": [60, -2]}
-					]
-				},
-				{
-					"name": "fireflies3",
-					"parent": "fireflies",
-					"pivot": [0, 4, 0],
-					"cubes": [
-						{"origin": [2, 3, -1], "size": [0, 1, 2], "uv": [60, -2]}
-					]
-				},
-				{
-					"name": "fireflies4",
-					"parent": "fireflies",
-					"pivot": [0, 4, 0],
-					"cubes": [
-						{"origin": [-1, 4, -3], "size": [0, 1, 2], "pivot": [-1, 4.5, -2], "rotation": [0, 90, 0], "uv": [60, -2]}
-					]
-				},
-				{
-					"name": "fireflies5",
-					"parent": "fireflies",
-					"pivot": [0, 4, 0],
-					"cubes": [
-						{"origin": [0, 6, 0], "size": [0, 1, 2], "pivot": [0, 6.5, 1], "rotation": [0, -90, 0], "uv": [60, -2]}
+						{"origin": [-1, 1, 2], "size": [2, 1, 0], "uv": [58, 0]},
+						{"origin": [-1, 1, -2], "size": [2, 1, 0], "uv": [58, 0]},
+						{"origin": [-1, 3, -2], "size": [2, 1, 0], "uv": [58, 0]},
+						{"origin": [-1, 5, 2], "size": [2, 1, 0], "uv": [58, 0]},
+						{"origin": [-3, 5, 0], "size": [2, 1, 0], "pivot": [-2, 5.5, 0], "rotation": [0, -90, 0], "uv": [58, 0]},
+						{"origin": [1, 4, 0], "size": [2, 1, 0], "pivot": [2, 4.5, 0], "rotation": [0, -90, 0], "uv": [58, 0]},
+						{"origin": [1, 2, 0], "size": [2, 1, 0], "pivot": [2, 2.5, 0], "rotation": [0, -90, 0], "uv": [58, 0]}
 					]
 				}
 			]

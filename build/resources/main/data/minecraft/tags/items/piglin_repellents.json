@@ -15,6 +15,16 @@
     "world_expansion:kabanyt_tiles_stairs",
     "world_expansion:kabanyt_tiles_slab",
     "world_expansion:kabanyt_tiles_wall",
-    "world_expansion:titanium_block"
+    "world_expansion:titanium_block",
+    "world_expansion:kabanyt_coal_ore",
+    "world_expansion:kabanyt_copper_ore",
+    "world_expansion:kabanyt_diamond_ore",
+    "world_expansion:kabanyt_emerald_ore",
+    "world_expansion:kabanyt_gold_ore",
+    "world_expansion:kabanyt_lapis_ore",
+    "world_expansion:kabanyt_iron_ore",
+    "world_expansion:kabanyt_redstone_ore",
+    "world_expansion:kabanyt_titanium_ore",
+    "world_expansion:kabanyt_redstone_ore_on"
   ]
 }

@@ -17,9 +17,12 @@ import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.components.EditBox;
@@ -173,6 +176,11 @@ public class CannonShootProcedure {
 						}
 					}.getAmount(2) > 16
 							&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
+						if (world instanceof Level _level && !_level.isClientSide()) {
+							_level.explode(entity,
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("world_expansion:cannon_explosion_damage_type")))),
+									null, x, y, z, 4, true, Level.ExplosionInteraction.BLOCK);
+						}
 					} else if (!((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER)) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
@@ -316,6 +324,11 @@ public class CannonShootProcedure {
 						}
 					}.getAmount(2) > 16
 							&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
+						if (world instanceof Level _level && !_level.isClientSide()) {
+							_level.explode(entity,
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("world_expansion:cannon_explosion_damage_type")))),
+									null, x, y, z, 4, true, Level.ExplosionInteraction.BLOCK);
+						}
 					} else if (!((entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER)) {
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
@@ -569,6 +582,11 @@ public class CannonShootProcedure {
 						}
 					}.getAmount(2) > 16
 							&& (entity instanceof Player _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).getItem() == Items.GUNPOWDER) {
+						if (world instanceof Level _level && !_level.isClientSide()) {
+							_level.explode(entity,
+									new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("world_expansion:cannon_explosion_damage_type")))),
+									null, x, y, z, 4, true, Level.ExplosionInteraction.TNT);
+						}
 					}
 					if (world instanceof ServerLevel _level)
 						_level.sendParticles(ParticleTypes.LARGE_SMOKE, x, (y + 2), z, 8, 0.1, 0.1, 0.1, 0.1);

@@ -5806,37 +5806,6 @@
       "path": "~/Damage Type"
     },
     {
-      "name": "F",
-      "type": "procedure",
-      "sortid": 524,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "f",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/FProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "MiniFireflies",
       "type": "animatedentity",
       "sortid": 79,
@@ -6947,6 +6916,193 @@
         ]
       },
       "path": "~/Function"
+    },
+    {
+      "name": "DealersShotgun",
+      "type": "animateditem",
+      "sortid": 585,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dealers_shotgun",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/item/model/DealersShotgunItemModel.java",
+          "src/main/java/net/horizonexpand/world_expansion/item/DealersShotgunItem.java",
+          "src/main/java/net/horizonexpand/world_expansion/item/renderer/DealersShotgunItemRenderer.java",
+          "src/main/resources/assets/world_expansion/models/item/dealers_shotgun.json"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "DealersShotgunPriShchielchkiePKM",
+      "type": "procedure",
+      "sortid": 586,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dealers_shotgun_pri_shchielchkie_pkm",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/DealersShotgunPriShchielchkiePKMProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Dealers Shotgun"
+    },
+    {
+      "name": "GunDischargePriNazhatiiKlavishi",
+      "type": "procedure",
+      "sortid": 588,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_discharge_pri_nazhatii_klavishi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/GunDischargePriNazhatiiKlavishiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Key"
+    },
+    {
+      "name": "GunDischarge",
+      "type": "keybind",
+      "sortid": 589,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_discharge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/network/GunDischargeMessage.java"
+        ]
+      },
+      "path": "~/Key"
+    },
+    {
+      "name": "GunReloadPriNazhatiiKlavishi",
+      "type": "procedure",
+      "sortid": 590,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_reload_pri_nazhatii_klavishi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/GunReloadPriNazhatiiKlavishiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Key"
+    },
+    {
+      "name": "GunReload",
+      "type": "keybind",
+      "sortid": 591,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gun_reload",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/network/GunReloadMessage.java"
+        ]
+      },
+      "path": "~/Key"
+    },
+    {
+      "name": "LiveShotgunBullet",
+      "type": "item",
+      "sortid": 592,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "live_shotgun_bullet",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/world_expansion/models/item/live_shotgun_bullet.json",
+          "src/main/java/net/horizonexpand/world_expansion/item/LiveShotgunBulletItem.java"
+        ]
+      },
+      "path": "~/Items"
+    },
+    {
+      "name": "BlankShotgunBullet",
+      "type": "item",
+      "sortid": 593,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blank_shotgun_bullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/item/BlankShotgunBulletItem.java",
+          "src/main/resources/assets/world_expansion/models/item/blank_shotgun_bullet.json"
+        ]
+      },
+      "path": "~/Items"
     }
   ],
   "variable_elements": [
@@ -7231,11 +7387,82 @@
       ],
       "category": "player",
       "subtitle": "The hum of a copper horn"
+    },
+    {
+      "name": "dealers_shotgun_reload_start",
+      "files": [
+        "shotgun_reload_start"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "dealers_shotgun_reload_continue",
+      "files": [
+        "shotgun_reload_continue"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "dealers_shotgun_forearm",
+      "files": [
+        "shotgun_forearm"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "dealers_shotgun_forearm_start",
+      "files": [
+        "shotgun_forearm_start"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "dealers_shotgun_forearm_end",
+      "files": [
+        "shotgun_forearm_end"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "dealers_shotgun_shooting",
+      "files": [
+        "shotgun_shoot1",
+        "shotgun_shoot2"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "empty_dealers_shotgun_shooting",
+      "files": [
+        "empty_shotgun_shoot1",
+        "empty_shotgun_shoot2"
+      ],
+      "category": "player",
+      "subtitle": ""
+    },
+    {
+      "name": "dealers_shotgun_shell",
+      "files": [
+        "shotgun_shell1"
+      ],
+      "category": "player",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
     "ITEMS:minecraft:planks": [
       "CUSTOM:BaobabPlanks"
+    ],
+    "BLOCKS:minecraft:valid_spawn": [
+      "CUSTOM:Kabanyt",
+      "Blocks.SAND#1",
+      "Blocks.SAND#0"
     ],
     "ITEMS:minecraft:piglin_repellents": [
       "CUSTOM:Astilbamulticolored",
@@ -7252,20 +7479,26 @@
       "CUSTOM:Kabanyttilesstairs",
       "CUSTOM:Kabanyttilesslab",
       "CUSTOM:Kabanyttileswall",
-      "CUSTOM:TitaniumBlock"
-    ],
-    "BLOCKS:minecraft:valid_spawn": [
-      "CUSTOM:Kabanyt",
-      "Blocks.SAND#1"
+      "CUSTOM:TitaniumBlock",
+      "CUSTOM:KabanytCoalOre",
+      "CUSTOM:KabanytCopperOre",
+      "CUSTOM:KabanytDiamondOre",
+      "CUSTOM:KabanytEmeraldOre",
+      "CUSTOM:KabanytGoldOre",
+      "CUSTOM:KabanytLapisOre",
+      "CUSTOM:KabanytIronOre",
+      "CUSTOM:KabanytRedstoneOre",
+      "CUSTOM:KabanytTitaniumOre",
+      "CUSTOM:KabanytRedstoneOreOn"
     ],
     "BLOCKS:minecraft:coal_ores": [
       "CUSTOM:KabanytCoalOre"
     ],
-    "ITEMS:minecraft:wooden_stairs": [
-      "CUSTOM:BaobabStairs"
-    ],
     "ITEMS:minecraft:iron_ores": [
       "CUSTOM:KabanytIronOre"
+    ],
+    "ITEMS:minecraft:wooden_stairs": [
+      "CUSTOM:BaobabStairs"
     ],
     "ITEMS:minecraft:diamond_ores": [
       "CUSTOM:KabanytDiamondOre"
@@ -7319,12 +7552,6 @@
     "ITEMS:minecraft:soul_fire_base_blocks": [
       "CUSTOM:TitaniumBlock"
     ],
-    "ITEMS:forge:baobab_log": [
-      "CUSTOM:BaobabWood",
-      "CUSTOM:BaobabLog",
-      "CUSTOM:Strippedbaobabwood",
-      "CUSTOM:Strippedbaobablog"
-    ],
     "ITEMS:forge:copper_horns": [
       "CUSTOM:CopperHorn",
       "CUSTOM:CopperHorn1",
@@ -7337,6 +7564,15 @@
       "CUSTOM:CopperHorn8",
       "CUSTOM:CopperHorn9"
     ],
+    "ITEMS:forge:baobab_log": [
+      "CUSTOM:BaobabWood",
+      "CUSTOM:BaobabLog",
+      "CUSTOM:Strippedbaobabwood",
+      "CUSTOM:Strippedbaobablog"
+    ],
+    "BLOCKS:forge:stripped_woods": [
+      "CUSTOM:Strippedbaobabwood"
+    ],
     "BLOCKS:minecraft:doors": [
       "CUSTOM:Baobabdoor"
     ],
@@ -7345,9 +7581,6 @@
       "CUSTOM:BaobabLog",
       "CUSTOM:Strippedbaobabwood",
       "CUSTOM:Strippedbaobablog"
-    ],
-    "BLOCKS:minecraft:soul_fire_base_blocks": [
-      "CUSTOM:TitaniumBlock"
     ],
     "BLOCKS:minecraft:stone_ore_replaceables": [
       "CUSTOM:Kabanyt"
@@ -7377,7 +7610,17 @@
       "CUSTOM:Kabanyttilesstairs",
       "CUSTOM:Kabanyttilesslab",
       "CUSTOM:Kabanyttileswall",
-      "CUSTOM:TitaniumBlock"
+      "CUSTOM:TitaniumBlock",
+      "CUSTOM:KabanytCoalOre",
+      "CUSTOM:KabanytCopperOre",
+      "CUSTOM:KabanytDiamondOre",
+      "CUSTOM:KabanytEmeraldOre",
+      "CUSTOM:KabanytGoldOre",
+      "CUSTOM:KabanytLapisOre",
+      "CUSTOM:KabanytIronOre",
+      "CUSTOM:KabanytRedstoneOre",
+      "CUSTOM:KabanytTitaniumOre",
+      "CUSTOM:KabanytRedstoneOreOn"
     ],
     "BIOMES:minecraft:is_overworld": [
       "CUSTOM:Baobabvalley",
@@ -7392,7 +7635,8 @@
     ],
     "ITEMS:minecraft:flowers": [
       "CUSTOM:Astilba",
-      "CUSTOM:Astilbamulticolored"
+      "CUSTOM:Astilbamulticolored",
+      "CUSTOM:YellowAstilba"
     ],
     "BLOCKS:minecraft:overworld_natural_logs": [
       "CUSTOM:BaobabLog"
@@ -7588,11 +7832,14 @@
     "BLOCKS:minecraft:replaceable": [
       "~CUSTOM:Tumbleweed"
     ],
-    "BLOCKS:minecraft:saplings": [
-      "CUSTOM:BaobabSapling"
+    "ITEMS:forge:stripped_woods": [
+      "CUSTOM:Strippedbaobabwood"
     ],
     "ITEMS:minecraft:leaves": [
       "CUSTOM:BaobabLeaves"
+    ],
+    "BLOCKS:minecraft:saplings": [
+      "CUSTOM:BaobabSapling"
     ],
     "ITEMS:minecraft:music_discs": [
       "CUSTOM:MusicDiscDestroyer"
@@ -7617,6 +7864,9 @@
       "CUSTOM:Kabanytbrickswall",
       "CUSTOM:Kabanyttileswall"
     ],
+    "BLOCKS:forge:stripped_logs": [
+      "CUSTOM:Strippedbaobablog"
+    ],
     "BLOCKS:minecraft:diamond_ores": [
       "CUSTOM:KabanytDiamondOre"
     ],
@@ -7637,13 +7887,13 @@
     "ITEMS:minecraft:trapdoors": [
       "CUSTOM:Baobabtrapdoor"
     ],
+    "ITEMS:minecraft:lapis_ores": [
+      "CUSTOM:KabanytLapisOre"
+    ],
     "BLOCKS:minecraft:walls": [
       "CUSTOM:Kabanytwall",
       "CUSTOM:Kabanytbrickswall",
       "CUSTOM:Kabanyttileswall"
-    ],
-    "ITEMS:minecraft:lapis_ores": [
-      "CUSTOM:KabanytLapisOre"
     ],
     "BIOMES:minecraft:is_savanna": [
       "CUSTOM:Baobabvalley",
@@ -7654,10 +7904,6 @@
       "CUSTOM:Astilba",
       "CUSTOM:Astilbamulticolored",
       "CUSTOM:YellowAstilba"
-    ],
-    "ITEMS:forge:stripped_log": [
-      "CUSTOM:Strippedbaobabwood",
-      "CUSTOM:Strippedbaobablog"
     ],
     "ENTITIES:minecraft:fall_damage_immune": [
       "CUSTOM:MiniFireflies"
@@ -7714,6 +7960,9 @@
     "ITEMS:minecraft:trim_materials": [
       "CUSTOM:TitaniumIngot"
     ],
+    "ITEMS:forge:stripped_logs": [
+      "CUSTOM:Strippedbaobablog"
+    ],
     "BLOCKS:minecraft:animals_spawnable_on": [
       "CUSTOM:Kabanyt",
       "Blocks.SAND#1"
@@ -7765,31 +8014,6 @@
     "BLOCKS:minecraft:wooden_doors": [
       "CUSTOM:Baobabdoor"
     ],
-    "BLOCKS:forge:stripped_log": [
-      "CUSTOM:Strippedbaobabwood",
-      "CUSTOM:Strippedbaobablog",
-      "Blocks.STRIPPED_OAK_LOG",
-      "Blocks.STRIPPED_SPRUCE_LOG",
-      "Blocks.STRIPPED_BIRCH_LOG",
-      "Blocks.STRIPPED_JUNGLE_LOG",
-      "Blocks.STRIPPED_ACACIA_LOG",
-      "Blocks.STRIPPED_DARK_OAK_LOG",
-      "Blocks.STRIPPED_WARPED_STEM",
-      "Blocks.STRIPPED_CRIMSON_STEM",
-      "Blocks.STRIPPED_MANGROVE_LOG",
-      "Blocks.STRIPPED_CHERRY_LOG",
-      "Blocks.STRIPPED_BAMBOO_BLOCK",
-      "Blocks.STRIPPED_OAK_WOOD",
-      "Blocks.STRIPPED_SPRUCE_WOOD",
-      "Blocks.STRIPPED_BIRCH_WOOD",
-      "Blocks.STRIPPED_JUNGLE_WOOD",
-      "Blocks.STRIPPED_ACACIA_WOOD",
-      "Blocks.STRIPPED_DARK_OAK_WOOD",
-      "Blocks.STRIPPED_WARPED_HYPHAE",
-      "Blocks.STRIPPED_CRIMSON_HYPHAE",
-      "Blocks.STRIPPED_MANGROVE_WOOD",
-      "Blocks.STRIPPED_CHERRY_WOOD"
-    ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:KabanytIronOre",
       "~CUSTOM:KabanytLapisOre",
@@ -7801,11 +8025,11 @@
     "ENTITIES:minecraft:powder_snow_walkable_mobs": [
       "CUSTOM:MiniFireflies"
     ],
-    "ITEMS:minecraft:creeper_drop_music_discs": [
-      "CUSTOM:MusicDiscDestroyer"
-    ],
     "ITEMS:minecraft:coal_ores": [
       "CUSTOM:KabanytCoalOre"
+    ],
+    "ITEMS:minecraft:creeper_drop_music_discs": [
+      "CUSTOM:MusicDiscDestroyer"
     ],
     "BLOCKS:mod:titanium_ores": [
       "CUSTOM:TitaniumOre",
@@ -7982,13 +8206,23 @@
       "CUSTOM:Kabanyttilesstairs",
       "CUSTOM:Kabanyttilesslab",
       "CUSTOM:Kabanyttileswall",
-      "CUSTOM:TitaniumBlock"
-    ],
-    "ITEMS:minecraft:stone_crafting_materials": [
-      "CUSTOM:Kabanyt"
+      "CUSTOM:TitaniumBlock",
+      "CUSTOM:KabanytCoalOre",
+      "CUSTOM:KabanytCopperOre",
+      "CUSTOM:KabanytDiamondOre",
+      "CUSTOM:KabanytEmeraldOre",
+      "CUSTOM:KabanytGoldOre",
+      "CUSTOM:KabanytLapisOre",
+      "CUSTOM:KabanytIronOre",
+      "CUSTOM:KabanytRedstoneOre",
+      "CUSTOM:KabanytTitaniumOre",
+      "CUSTOM:KabanytRedstoneOreOn"
     ],
     "ITEMS:minecraft:gold_ores": [
       "CUSTOM:KabanytGoldOre"
+    ],
+    "ITEMS:minecraft:stone_crafting_materials": [
+      "CUSTOM:Kabanyt"
     ]
   },
   "language_map": {
@@ -8005,8 +8239,8 @@
       "item.world_expansion.copper_horn9": "Медный рог ",
       "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
       "item.world_expansion.copper_horn8": "Медный рог ",
-      "advancements.the_wildest_in_the_wild_west.descr": "Умрите от Перекати-поля",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
+      "advancements.the_wildest_in_the_wild_west.descr": "Умрите от Перекати-поля",
       "block.world_expansion.kabanyt_copper_ore": "Меденосный кабанит",
       "block.world_expansion.baobab_fence": "Забор из древесины баобаба",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Инвентарь",
@@ -8037,6 +8271,7 @@
       "subtitles.melody8": "Гул медного рога",
       "subtitles.melody7": "Гул медного рога",
       "advancements.cannonist.descr": "Никто не знает для чего она была создана... Но это Пушка!",
+      "subtitles.dealers_shotgun_shooting": "",
       "gui.world_expansion.snow_cannon_gui.label_x": "X",
       "gui.world_expansion.snow_cannon_gui.label_y": "Y",
       "gui.world_expansion.snow_cannon_gui.label_z": "Z",
@@ -8048,6 +8283,7 @@
       "block.world_expansion.raw_titanium_block": "Блок необработанного титана",
       "block.world_expansion.deepslate_titanium_ore": "Титаноносный глубинный сланец",
       "death.attack.tumbleweed_damage_type.player": "Ковбой %1$s был остановлен при попытке к бегству %2$s",
+      "subtitles.dealers_shotgun_forearm_end": "",
       "subtitles.harmony9": "Высокий гул медного рога",
       "subtitles.harmony7": "Высокий гул медного рога",
       "advancements.world_expansion.descr": "Исследуйте мир!",
@@ -8062,8 +8298,9 @@
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_for_snow_cannon": "для Пушки",
       "item.world_expansion.split_judas_fruit": "Расколотый плод Иуды",
       "block.world_expansion.judas_fruit_plant": "Плод Иуды",
-      "death.attack.cannon_explosion_damage_type.item": "%1$s взорвался вместе с пушкой из-за %2$s при помощи %3$s",
       "advancements.cannonist.title": "Канонир",
+      "death.attack.cannon_explosion_damage_type.item": "%1$s взорвался вместе с пушкой из-за %2$s при помощи %3$s",
+      "subtitles.empty_dealers_shotgun_shooting": "",
       "block.world_expansion.tumbleweed": "Перекати-поле",
       "item_group.world_expansion.items": "WE: Предметы",
       "subtitles.harmony1": "Высокий гул медного рога",
@@ -8078,6 +8315,7 @@
       "item_group.world_expansion.mobs": "WE: Мобы",
       "item.minecraft.smithing_template.applies_to": "Применяется к:",
       "advancements.poor_zhorik.title": "Бедный Жорик!",
+      "key.world_expansion.gun_discharge": "Разрядка оружия",
       "gui.world_expansion.snow_cannon_gui.Y": "16",
       "gui.world_expansion.snow_cannon_gui.X": "0",
       "gui.world_expansion.snow_cannon_gui.Z": "0",
@@ -8102,6 +8340,7 @@
       "advancements.world_expansion.title": "World Expansion",
       "block.world_expansion.kabanyt_emerald_ore": "Изумрудоносный кабанит",
       "block.world_expansion.kabanyt_slab": "Плита из кабанита",
+      "subtitles.dealers_shotgun_forearm_start": "",
       "death.attack.tumbleweed_damage_type.item": "Ковбой %1$s был остановлен %2$s при помощи %3$s",
       "advancements.ancient_civilization_part_1.title": "Древняя Цивилизация: Часть 1",
       "block.world_expansion.carved_kabanyt": "Резной кабанит",
@@ -8113,6 +8352,7 @@
       "item.world_expansion.piece_totem_of_undying": "Кусочек Тотема бессмертия",
       "block.world_expansion.tiger_aloe_vera": "Тигровое алое вера",
       "block.world_expansion.multi_crafting_table": "Мульти-Верстак",
+      "item.world_expansion.blank_shotgun_bullet": "Холостой патрон дробовика",
       "block.world_expansion.baobab_wood": "Кора баобаба",
       "subtitles.bass7": "Ритмичный гул медного рога",
       "subtitles.bass6": "Ритмичный гул медного рога",
@@ -8129,6 +8369,7 @@
       "block.world_expansion.cannon_barrel": "Дуло пушки",
       "wind.world_expansion.east": "Восточный",
       "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
+      "item.world_expansion.dealers_shotgun": "Дробовик Дилера",
       "entity.world_expansion.projectile_snow_projectile": "Ком снега",
       "block.world_expansion.kabanyt_bricks": "Кирпичи из кабанита",
       "block.world_expansion.windometer": "Ветрометр",
@@ -8136,6 +8377,7 @@
       "item.world_expansion.brute_armor_trim_smithing_template": "Кузнечный шаблон",
       "block.world_expansion.kabanyt_diamond_ore": "Алмазоносный кабанит",
       "block.world_expansion.kabanyt_tiles_wall": "Ограда из плиточного кабанита",
+      "subtitles.dealers_shotgun_forearm": "",
       "block.world_expansion.baobab_planks": "Доски из древесины баобаба",
       "block.world_expansion.hanging_bottle": "Подвешенная бутылка",
       "block.world_expansion.kabanyt_tiles": "Плитняк из кабанита",
@@ -8147,12 +8389,14 @@
       "advancements.fallen_paradise.descr": "Найдите Сухую саванну",
       "entity.world_expansion.projectile_powder_snow_projectile": "Ком рыхлого снега",
       "trim_material.world_expansion.titanium": "Титановый материал",
+      "item.world_expansion.live_shotgun_bullet": "Боевой патрон дробовика",
       "item.world_expansion.leave_of_aloe_vera": "Листки алое вера",
       "block.world_expansion.kabanyt_iron_ore": "Железоносный кабанит",
       "block.world_expansion.astilba": "Астильба",
       "advancements.the_wildest_in_the_wild_west.title": "Самый дикий на Диком Западе",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.button_accept": "Принять",
       "wind.world_expansion.still": "Штиль",
+      "subtitles.dealers_shotgun_shell": "",
       "death.attack.cannon_explosion_damage_type": "%1$s взорвался вместе с пушкой",
       "block.world_expansion.baobab_stairs": "Ступеньки из древесины баобаба",
       "block.world_expansion.kabanyt_wall": "Ограда из кабанита",
@@ -8173,6 +8417,7 @@
       "block.world_expansion.kabanyt_bricks_stairs": "Кирпичные ступеньки из кабанита",
       "command.world_expansion.wind.set": "Установлено направление ветра:",
       "block.world_expansion.bottle_with_mini_fireflies": "Бутылка с Мини-Светлячками",
+      "key.world_expansion.gun_reload": "Перезарядка оружия",
       "block.world_expansion.kabanyt_lapis_ore": "Лазуритоносный кабанит",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_9": "1x Медный рог 9",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_8": "1x Медный рог 8",
@@ -8180,6 +8425,7 @@
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_6": "1x Медный рог 6",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_5": "1x Медный рог 5",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_4": "1x Медный рог 4",
+      "subtitles.dealers_shotgun_reload_start": "",
       "wind.world_expansion.south": "Южный",
       "advancements.ancient_civilization_part_1.descr": "Найдите Политанию",
       "advancements.poor_zhorik.descr": "Получите Козий рог",
@@ -8187,6 +8433,7 @@
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_2": "1x Медный рог 2",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_1": "1x Медный рог 1",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_0": "1x Медный рог 0",
+      "subtitles.dealers_shotgun_reload_continue": "",
       "block.world_expansion.titanium_ore": "Титановая руда",
       "block.world_expansion.hanging_bottle_witn_mini_fireflies": "Подвешенная бутылка с Мини-Светлячками"
     },
@@ -8200,11 +8447,11 @@
       "item.world_expansion.copper_horn7": "Copper Horn",
       "item.world_expansion.copper_horn6": "Copper Horn",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
-      "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "item.world_expansion.copper_horn9": "Copper Horn",
+      "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "item.world_expansion.copper_horn8": "Copper Horn",
-      "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
       "advancements.the_wildest_in_the_wild_west.descr": "Die of a Tumbleweed",
+      "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
       "block.world_expansion.kabanyt_copper_ore": "Kabanyt Copper Ore",
       "block.world_expansion.baobab_fence": "Baobab fence",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
@@ -8234,6 +8481,7 @@
       "subtitles.melody9": "The hum of a copper horn",
       "subtitles.melody8": "The hum of a copper horn",
       "subtitles.melody7": "The hum of a copper horn",
+      "subtitles.dealers_shotgun_shooting": "",
       "advancements.cannonist.descr": "No one knows what it was created for... But it\u0027s a Cannon!",
       "gui.world_expansion.snow_cannon_gui.label_x": "X",
       "gui.world_expansion.snow_cannon_gui.label_y": "Y",
@@ -8246,6 +8494,7 @@
       "block.world_expansion.raw_titanium_block": "Raw Titanium Block",
       "block.world_expansion.deepslate_titanium_ore": "Deepslate Titanium Ore",
       "death.attack.tumbleweed_damage_type.player": "Cowboy %1$s was stopped whilst trying to escape %2$s",
+      "subtitles.dealers_shotgun_forearm_end": "",
       "subtitles.harmony9": "The high hum of a copper horn",
       "subtitles.harmony7": "The high hum of a copper horn",
       "advancements.world_expansion.descr": "Explore the world!",
@@ -8262,6 +8511,7 @@
       "block.world_expansion.judas_fruit_plant": "Judas Fruit",
       "advancements.cannonist.title": "Cannonist",
       "death.attack.cannon_explosion_damage_type.item": "%1$s exploded along with the cannon because of %2$s using %3$s",
+      "subtitles.empty_dealers_shotgun_shooting": "",
       "block.world_expansion.tumbleweed": "Tumbleweed",
       "item_group.world_expansion.items": "WE: Items",
       "subtitles.harmony1": "The high hum of a copper horn",
@@ -8276,6 +8526,7 @@
       "item_group.world_expansion.mobs": "WE: Mobs",
       "item.minecraft.smithing_template.applies_to": "Applies to:",
       "advancements.poor_zhorik.title": "Poor Zhorik!",
+      "key.world_expansion.gun_discharge": "Gun Discharge",
       "gui.world_expansion.snow_cannon_gui.Y": "16",
       "gui.world_expansion.snow_cannon_gui.X": "0",
       "gui.world_expansion.snow_cannon_gui.Z": "0",
@@ -8300,6 +8551,7 @@
       "advancements.world_expansion.title": "World Expansion",
       "block.world_expansion.kabanyt_emerald_ore": "Kabanyt Emerald Ore",
       "block.world_expansion.kabanyt_slab": "Kabanyt slab",
+      "subtitles.dealers_shotgun_forearm_start": "",
       "death.attack.tumbleweed_damage_type.item": "Cowboy %1$s was stopped by %2$s using %3$s",
       "advancements.ancient_civilization_part_1.title": "Ancient Civilization: Part 1",
       "block.world_expansion.carved_kabanyt": "Carved kabanyt",
@@ -8310,6 +8562,7 @@
       "item.world_expansion.piece_totem_of_undying": "Piece Totem of Undying",
       "block.world_expansion.tiger_aloe_vera": "Aloe vera tiger",
       "block.world_expansion.multi_crafting_table": "Multi-Crafting Table",
+      "item.world_expansion.blank_shotgun_bullet": "Blank Shotgun Bullet",
       "block.world_expansion.baobab_wood": "Baobab wood",
       "subtitles.bass7": "The rhythmic hum of a copper horn",
       "subtitles.bass6": "The rhythmic hum of a copper horn",
@@ -8326,6 +8579,7 @@
       "block.world_expansion.cannon_barrel": "Cannon Barrel",
       "wind.world_expansion.east": "East",
       "block.world_expansion.baobab_slab": "Baobab slab",
+      "item.world_expansion.dealers_shotgun": "Dealer\u0027s Shotgun",
       "entity.world_expansion.projectile_snow_projectile": "Lump of Snow",
       "block.world_expansion.kabanyt_bricks": "Kabanyt bricks",
       "block.world_expansion.windometer": "Wind\u0027o Meter",
@@ -8333,6 +8587,7 @@
       "item.world_expansion.brute_armor_trim_smithing_template": "Brute Armor Trim Smithing Template",
       "block.world_expansion.kabanyt_diamond_ore": "Kabanyt Diamond Ore",
       "block.world_expansion.kabanyt_tiles_wall": "Kabanyt tiles wall",
+      "subtitles.dealers_shotgun_forearm": "",
       "block.world_expansion.baobab_planks": "Baobab planks",
       "block.world_expansion.hanging_bottle": "Hanging Bottle",
       "block.world_expansion.kabanyt_tiles": "Kabanyt tiles",
@@ -8345,12 +8600,14 @@
       "advancements.fallen_paradise.descr": "Find the Dry Savanna",
       "entity.world_expansion.projectile_powder_snow_projectile": "Lump of Powder Snow",
       "trim_material.world_expansion.titanium": "Titanium Material",
+      "item.world_expansion.live_shotgun_bullet": "Live Shotgun Bullet",
       "item.world_expansion.leave_of_aloe_vera": "Leave of aloe vera",
       "block.world_expansion.kabanyt_iron_ore": "Kabanyt Iron Ore",
       "block.world_expansion.astilba": "Astilba ",
       "advancements.the_wildest_in_the_wild_west.title": "The Wildest in the Wild West",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.button_accept": "Accept",
       "wind.world_expansion.still": "Still",
+      "subtitles.dealers_shotgun_shell": "",
       "death.attack.cannon_explosion_damage_type": "%1$s exploded along with the cannon",
       "block.world_expansion.baobab_stairs": "Baobab stairs",
       "block.world_expansion.kabanyt_wall": "Kabanyt wall",
@@ -8371,6 +8628,7 @@
       "block.world_expansion.kabanyt_bricks_stairs": "Kabanyt bricks stairs",
       "command.world_expansion.wind.set": "Set Wind Direction:",
       "block.world_expansion.bottle_with_mini_fireflies": "Bottle With Mini-Fireflies",
+      "key.world_expansion.gun_reload": "Gun Reload",
       "block.world_expansion.kabanyt_lapis_ore": "Kabanyt Lapis Lazuli Ore",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_9": "1x Copper Horn 9",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_8": "1x Copper Horn 8",
@@ -8378,6 +8636,7 @@
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_6": "1x Copper Horn 6",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_5": "1x Copper Horn 5",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_4": "1x Copper Horn 4",
+      "subtitles.dealers_shotgun_reload_start": "",
       "wind.world_expansion.south": "South",
       "advancements.ancient_civilization_part_1.descr": "Find the Politania",
       "advancements.poor_zhorik.descr": "Get a Goat Horn",
@@ -8385,6 +8644,7 @@
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_2": "1x Copper Horn 2",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_1": "1x Copper Horn 1",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_0": "1x Copper Horn 0",
+      "subtitles.dealers_shotgun_reload_continue": "",
       "block.world_expansion.titanium_ore": "Titanium Ore",
       "block.world_expansion.hanging_bottle_witn_mini_fireflies": "Hanging Bottle Witn Mini Fireflies"
     }
@@ -8587,6 +8847,10 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "Dealers Shotgun",
+            "children": []
           }
         ]
       },
@@ -8849,7 +9113,7 @@
   "workspaceSettings": {
     "modid": "world_expansion",
     "modName": "World Expansion: Light and Dark",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "This mod upgraded vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark Forest.",
     "author": "HorizonExpand",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion",

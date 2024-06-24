@@ -150,14 +150,14 @@
     "frequencyOnChunk": 16,
     "minGenerateHeight": 0,
     "maxGenerateHeight": 64,
-    "normal": "bottle_witn_mini_fireflies.geo.json",
-    "displaySettings": "bottle_witn_mini_fireflies.item.json",
+    "normal": "bottle.geo.json",
+    "displaySettings": "bottle.item.json",
     "blockstateList": [
       {
         "texture": "bottle_witn_mini_fireflies_top",
         "particleTexture": "",
         "renderType": 0,
-        "customModelName": "bottle_witn_mini_fireflies.geo.json",
+        "customModelName": "bottle.geo.json",
         "luminance": 7,
         "boundingBoxes": [
           {

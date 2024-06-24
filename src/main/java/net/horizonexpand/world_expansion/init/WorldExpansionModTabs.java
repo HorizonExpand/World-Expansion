@@ -37,6 +37,9 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.COPPER_HORN8.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN9.get());
 				tabData.accept(WorldExpansionModItems.ICE_SKATES_BOOTS.get());
+				tabData.accept(WorldExpansionModItems.DEALERS_SHOTGUN.get());
+				tabData.accept(WorldExpansionModItems.LIVE_SHOTGUN_BULLET.get());
+				tabData.accept(WorldExpansionModItems.BLANK_SHOTGUN_BULLET.get());
 			})
 
 					.build());

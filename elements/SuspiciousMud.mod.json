@@ -59,7 +59,7 @@
       "value": "EARTH"
     },
     "tickRate": 1,
-    "tickRandomly": true,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {

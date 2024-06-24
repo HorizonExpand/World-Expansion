@@ -284,5 +284,77 @@
         "stream": false
       }
     ]
+  },
+  "dealers_shotgun_reload_start": {
+    "sounds": [
+      {
+        "name": "world_expansion:shotgun_reload_start",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_reload_continue": {
+    "sounds": [
+      {
+        "name": "world_expansion:shotgun_reload_continue",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_forearm": {
+    "sounds": [
+      {
+        "name": "world_expansion:shotgun_forearm",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_forearm_start": {
+    "sounds": [
+      {
+        "name": "world_expansion:shotgun_forearm_start",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_forearm_end": {
+    "sounds": [
+      {
+        "name": "world_expansion:shotgun_forearm_end",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_shooting": {
+    "sounds": [
+      {
+        "name": "world_expansion:shotgun_shoot1",
+        "stream": false
+      },
+      {
+        "name": "world_expansion:shotgun_shoot2",
+        "stream": false
+      }
+    ]
+  },
+  "empty_dealers_shotgun_shooting": {
+    "sounds": [
+      {
+        "name": "world_expansion:empty_shotgun_shoot1",
+        "stream": false
+      },
+      {
+        "name": "world_expansion:empty_shotgun_shoot2",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_shell": {
+    "sounds": [
+      {
+        "name": "world_expansion:shotgun_shell1",
+        "stream": false
+      }
+    ]
   }
 }

@@ -47,4 +47,15 @@ public class WorldExpansionModSounds {
 	public static final RegistryObject<SoundEvent> BASS9 = REGISTRY.register("bass9", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "bass9")));
 	public static final RegistryObject<SoundEvent> HARMONY0 = REGISTRY.register("harmony0", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "harmony0")));
 	public static final RegistryObject<SoundEvent> MELODY0 = REGISTRY.register("melody0", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "melody0")));
+	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_RELOAD_START = REGISTRY.register("dealers_shotgun_reload_start", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_reload_start")));
+	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_RELOAD_CONTINUE = REGISTRY.register("dealers_shotgun_reload_continue",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_reload_continue")));
+	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_FOREARM = REGISTRY.register("dealers_shotgun_forearm", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_forearm")));
+	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_FOREARM_START = REGISTRY.register("dealers_shotgun_forearm_start",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_forearm_start")));
+	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_FOREARM_END = REGISTRY.register("dealers_shotgun_forearm_end", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_forearm_end")));
+	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_SHOOTING = REGISTRY.register("dealers_shotgun_shooting", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_shooting")));
+	public static final RegistryObject<SoundEvent> EMPTY_DEALERS_SHOTGUN_SHOOTING = REGISTRY.register("empty_dealers_shotgun_shooting",
+			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "empty_dealers_shotgun_shooting")));
+	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_SHELL = REGISTRY.register("dealers_shotgun_shell", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_shell")));
 }

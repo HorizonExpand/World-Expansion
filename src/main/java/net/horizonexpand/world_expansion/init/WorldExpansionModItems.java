@@ -20,9 +20,11 @@ import net.horizonexpand.world_expansion.item.SplitJudasFruitItem;
 import net.horizonexpand.world_expansion.item.RawTitaniumItem;
 import net.horizonexpand.world_expansion.item.PieceTotemOfUndyingItem;
 import net.horizonexpand.world_expansion.item.MusicDiscDestroyerItem;
+import net.horizonexpand.world_expansion.item.LiveShotgunBulletItem;
 import net.horizonexpand.world_expansion.item.LeaveOfAloeVeraItem;
 import net.horizonexpand.world_expansion.item.JudasFruitItem;
 import net.horizonexpand.world_expansion.item.IceSkatesItem;
+import net.horizonexpand.world_expansion.item.DealersShotgunItem;
 import net.horizonexpand.world_expansion.item.CopperHornItem;
 import net.horizonexpand.world_expansion.item.CopperHorn9Item;
 import net.horizonexpand.world_expansion.item.CopperHorn8Item;
@@ -34,6 +36,7 @@ import net.horizonexpand.world_expansion.item.CopperHorn3Item;
 import net.horizonexpand.world_expansion.item.CopperHorn2Item;
 import net.horizonexpand.world_expansion.item.CopperHorn1Item;
 import net.horizonexpand.world_expansion.item.BruteArmorTrimSmithingTemplateItem;
+import net.horizonexpand.world_expansion.item.BlankShotgunBulletItem;
 import net.horizonexpand.world_expansion.block.display.BottleWithMiniFirefliesDisplayItem;
 import net.horizonexpand.world_expansion.block.display.BottleDisplayItem;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
@@ -119,6 +122,9 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> BOTTLE = REGISTRY.register(WorldExpansionModBlocks.BOTTLE.getId().getPath(), () -> new BottleDisplayItem(WorldExpansionModBlocks.BOTTLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.getId().getPath(),
 			() -> new BottleWithMiniFirefliesDisplayItem(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get(), new Item.Properties()));
+	public static final RegistryObject<Item> DEALERS_SHOTGUN = REGISTRY.register("dealers_shotgun", () -> new DealersShotgunItem());
+	public static final RegistryObject<Item> LIVE_SHOTGUN_BULLET = REGISTRY.register("live_shotgun_bullet", () -> new LiveShotgunBulletItem());
+	public static final RegistryObject<Item> BLANK_SHOTGUN_BULLET = REGISTRY.register("blank_shotgun_bullet", () -> new BlankShotgunBulletItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
