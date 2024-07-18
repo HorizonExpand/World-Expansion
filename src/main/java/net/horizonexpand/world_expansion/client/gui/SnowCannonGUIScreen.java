@@ -27,6 +27,7 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 	EditBox Y;
 	EditBox Z;
 	Button button_fire;
+	Button button_pos;
 
 	public SnowCannonGUIScreen(SnowCannonGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -136,7 +137,7 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 		Y.setMaxLength(32767);
 		guistate.put("text:Y", Y);
 		this.addWidget(this.Y);
-		Z = new EditBox(this.font, this.leftPos + 23, this.topPos + 85, 34, 18, Component.translatable("gui.world_expansion.snow_cannon_gui.Z")) {
+		Z = new EditBox(this.font, this.leftPos + 23, this.topPos + 86, 34, 18, Component.translatable("gui.world_expansion.snow_cannon_gui.Z")) {
 			@Override
 			public void insertText(String text) {
 				super.insertText(text);
@@ -167,5 +168,13 @@ public class SnowCannonGUIScreen extends AbstractContainerScreen<SnowCannonGUIMe
 		}).bounds(this.leftPos + 22, this.topPos + 106, 36, 20).build();
 		guistate.put("button:button_fire", button_fire);
 		this.addRenderableWidget(button_fire);
+		button_pos = Button.builder(Component.translatable("gui.world_expansion.snow_cannon_gui.button_pos"), e -> {
+			if (true) {
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new SnowCannonGUIButtonMessage(1, x, y, z));
+				SnowCannonGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
+		}).bounds(this.leftPos + 22, this.topPos + 26, 36, 20).build();
+		guistate.put("button:button_pos", button_pos);
+		this.addRenderableWidget(button_pos);
 	}
 }

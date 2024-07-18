@@ -23,30 +23,32 @@ import com.mojang.blaze3d.shaders.FogShape;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT)
 public class ComputeFogProcedure {
-	private static ViewportEvent.RenderFog _provider = null;
+	public static ViewportEvent.RenderFog provider = null;
 
-	private static void setDistance(float start, float end) {
-		_provider.setNearPlaneDistance(start);
-		_provider.setFarPlaneDistance(end);
-		if (!_provider.isCanceled())
-			_provider.setCanceled(true);
+	public static void setDistance(float start, float end) {
+		provider.setNearPlaneDistance(start);
+		provider.setFarPlaneDistance(end);
+		if (!provider.isCanceled()) {
+			provider.setCanceled(true);
+		}
 	}
 
-	private static void setShape(FogShape shape) {
-		_provider.setFogShape(shape);
-		if (!_provider.isCanceled())
-			_provider.setCanceled(true);
+	public static void setShape(FogShape shape) {
+		provider.setFogShape(shape);
+		if (!provider.isCanceled()) {
+			provider.setCanceled(true);
+		}
 	}
 
 	@SubscribeEvent
 	public static void renderFog(ViewportEvent.RenderFog event) {
-		_provider = event;
-		if (_provider.getMode() == FogRenderer.FogMode.FOG_TERRAIN) {
+		provider = event;
+		if (provider.getMode() == FogRenderer.FogMode.FOG_TERRAIN) {
 			ClientLevel level = Minecraft.getInstance().level;
-			Entity entity = _provider.getCamera().getEntity();
+			Entity entity = provider.getCamera().getEntity();
 			if (level != null && entity != null) {
-				Vec3 entPos = entity.getPosition((float) _provider.getPartialTick());
-				execute(_provider, level, entPos.x(), entPos.y(), entPos.z());
+				Vec3 pos = entity.getPosition((float) provider.getPartialTick());
+				execute(provider, level, pos.x(), pos.y(), pos.z());
 			}
 		}
 	}

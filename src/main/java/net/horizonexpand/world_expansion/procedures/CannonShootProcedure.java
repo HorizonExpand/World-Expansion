@@ -81,6 +81,34 @@ public class CannonShootProcedure {
 						return _retval.get();
 					}
 				}.getItemStack(world, BlockPos.containing(x, y, z), 1)).getOrCreateTag().getDouble("Z")));
+		} else {
+			if (guistate.get("text:X") instanceof EditBox _tf)
+				_tf.setValue(("" + (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "X"))));
+			if (guistate.get("text:Y") instanceof EditBox _tf)
+				_tf.setValue(("" + (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "Y"))));
+			if (guistate.get("text:Z") instanceof EditBox _tf)
+				_tf.setValue(("" + (new Object() {
+					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+						BlockEntity blockEntity = world.getBlockEntity(pos);
+						if (blockEntity != null)
+							return blockEntity.getPersistentData().getDouble(tag);
+						return -1;
+					}
+				}.getValue(world, BlockPos.containing(x, y, z), "Z"))));
 		}
 		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() == WorldExpansionModBlocks.CANNON_BARREL.get() && world.isEmptyBlock(BlockPos.containing(x, y + 2, z))) {
 			if ((new Object() {

@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 0,
     "texture": "dealers_shotgun",
-    "name": "Dealer's Shotgun",
+    "name": "§oGambler's §rShotgun",
     "idle": "animation.dealers_shotgun.idle",
     "rarity": "COMMON",
     "displaySettings": "dealers_shotgun.item.json",

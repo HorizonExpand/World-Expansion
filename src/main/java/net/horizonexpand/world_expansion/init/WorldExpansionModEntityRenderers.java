@@ -12,9 +12,11 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.horizonexpand.world_expansion.client.renderer.TNTProjectileRenderer;
+import net.horizonexpand.world_expansion.client.renderer.ShotgunBlastRenderer;
 import net.horizonexpand.world_expansion.client.renderer.PowderSnowProjectileRenderer;
 import net.horizonexpand.world_expansion.client.renderer.PieceOfSnowRenderer;
 import net.horizonexpand.world_expansion.client.renderer.MiniFirefliesRenderer;
+import net.horizonexpand.world_expansion.client.renderer.CannonCoordsAreaRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class WorldExpansionModEntityRenderers {
@@ -25,5 +27,7 @@ public class WorldExpansionModEntityRenderers {
 		event.registerEntityRenderer(WorldExpansionModEntities.TNT_PROJECTILE.get(), TNTProjectileRenderer::new);
 		event.registerEntityRenderer(WorldExpansionModEntities.POWDER_SNOW_PROJECTILE.get(), PowderSnowProjectileRenderer::new);
 		event.registerEntityRenderer(WorldExpansionModEntities.MINI_FIREFLIES.get(), MiniFirefliesRenderer::new);
+		event.registerEntityRenderer(WorldExpansionModEntities.CANNON_COORDS_AREA.get(), CannonCoordsAreaRenderer::new);
+		event.registerEntityRenderer(WorldExpansionModEntities.SHOTGUN_BLAST.get(), ShotgunBlastRenderer::new);
 	}
 }

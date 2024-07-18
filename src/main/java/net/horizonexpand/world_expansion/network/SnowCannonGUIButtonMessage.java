@@ -13,6 +13,7 @@ import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.world.inventory.SnowCannonGUIMenu;
 import net.horizonexpand.world_expansion.procedures.CannonShootProcedure;
+import net.horizonexpand.world_expansion.procedures.CannonCoordsProcedure;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 import java.util.function.Supplier;
@@ -65,6 +66,10 @@ public class SnowCannonGUIButtonMessage {
 		if (buttonID == 0) {
 
 			CannonShootProcedure.execute(world, x, y, z, entity, guistate);
+		}
+		if (buttonID == 1) {
+
+			CannonCoordsProcedure.execute(x, y, z, entity);
 		}
 	}
 

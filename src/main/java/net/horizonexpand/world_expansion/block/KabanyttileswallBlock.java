@@ -9,6 +9,6 @@ import net.minecraft.world.level.block.SoundType;
 
 public class KabanyttileswallBlock extends WallBlock {
 	public KabanyttileswallBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.STONE).strength(1.2f, 4.5f).dynamicShape().forceSolidOn());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.STONE).strength(1.2f, 4.5f).requiresCorrectToolForDrops().dynamicShape().forceSolidOn());
 	}
 }

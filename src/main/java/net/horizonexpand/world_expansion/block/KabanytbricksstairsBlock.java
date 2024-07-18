@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Blocks;
 
 public class KabanytbricksstairsBlock extends StairBlock {
 	public KabanytbricksstairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.STONE).strength(1.2f, 4.5f).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.STONE).strength(1.2f, 4.5f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

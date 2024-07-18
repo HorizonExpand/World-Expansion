@@ -18,9 +18,11 @@ import net.minecraft.world.entity.Entity;
 
 import net.horizonexpand.world_expansion.entity.TumbleweedProjectileProjectileEntity;
 import net.horizonexpand.world_expansion.entity.TNTProjectileEntity;
+import net.horizonexpand.world_expansion.entity.ShotgunBlastEntity;
 import net.horizonexpand.world_expansion.entity.PowderSnowProjectileEntity;
 import net.horizonexpand.world_expansion.entity.PieceOfSnowEntity;
 import net.horizonexpand.world_expansion.entity.MiniFirefliesEntity;
+import net.horizonexpand.world_expansion.entity.CannonCoordsAreaEntity;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -39,6 +41,12 @@ public class WorldExpansionModEntities {
 			EntityType.Builder.<MiniFirefliesEntity>of(MiniFirefliesEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MiniFirefliesEntity::new)
 
 					.sized(0.6f, 0.9f));
+	public static final RegistryObject<EntityType<CannonCoordsAreaEntity>> CANNON_COORDS_AREA = register("cannon_coords_area",
+			EntityType.Builder.<CannonCoordsAreaEntity>of(CannonCoordsAreaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CannonCoordsAreaEntity::new)
+
+					.sized(0f, 0f));
+	public static final RegistryObject<EntityType<ShotgunBlastEntity>> SHOTGUN_BLAST = register("shotgun_blast",
+			EntityType.Builder.<ShotgunBlastEntity>of(ShotgunBlastEntity::new, MobCategory.MISC).setCustomClientFactory(ShotgunBlastEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -48,11 +56,13 @@ public class WorldExpansionModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			MiniFirefliesEntity.init();
+			CannonCoordsAreaEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MINI_FIREFLIES.get(), MiniFirefliesEntity.createAttributes().build());
+		event.put(CANNON_COORDS_AREA.get(), CannonCoordsAreaEntity.createAttributes().build());
 	}
 }

@@ -103,7 +103,7 @@
           "width": 36,
           "height": 20,
           "x": 87,
-          "y": 121
+          "y": 122
         }
       },
       {
@@ -119,6 +119,21 @@
           "height": 20,
           "x": 87,
           "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_pos",
+          "text": "Coords",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "CannonCoords"
+          },
+          "width": 36,
+          "height": 20,
+          "x": 87,
+          "y": 63
         }
       }
     ],

@@ -46,3 +46,9 @@
 # Other Files (In Eclipse)
 *.classpath
 *.project
+.classpath
+/.gradle
+/.mcreator
+/.settings
+/build
+/run

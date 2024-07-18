@@ -12,7 +12,7 @@ import net.minecraft.core.BlockPos;
 
 public class KabanyttilesBlock extends Block {
 	public KabanyttilesBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.STONE).strength(1.2f, 4.5f));
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.STONE).strength(1.2f, 4.5f).requiresCorrectToolForDrops());
 	}
 
 	@Override
