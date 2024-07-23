@@ -47,7 +47,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="D:/Games/MCreator 2023.3 (EAP 3)/MCreatorWorkspaces/world_expansion/build/fg_cache/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-sources.jar" kind="lib" path="D:/Games/MCreator 2023.3 (EAP 3)/MCreatorWorkspaces/world_expansion/build/fg_cache/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1.jar">
+	<classpathentry sourcepath="D:/Games/MCreator 2023.3 (EAP 3)/MCreatorWorkspaces/world_expansion/build/fg_cache/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-sources.jar" kind="lib" path="D:/Games/MCreator 2023.3 (EAP 3)/MCreatorWorkspaces/world_expansion/build/fg_cache/net/minecraftforge/forge/1.20.1-47.2.0_mapped_official_1.20.1/forge-1.20.1-47.2.0_mapped_official_1.20.1-recomp.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

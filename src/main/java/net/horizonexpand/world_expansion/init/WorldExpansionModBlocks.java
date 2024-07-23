@@ -18,8 +18,6 @@ import net.horizonexpand.world_expansion.block.TitaniumBlockBlock;
 import net.horizonexpand.world_expansion.block.SuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobabwoodBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobablogBlock;
-import net.horizonexpand.world_expansion.block.SnowCannonBaseBlock;
-import net.horizonexpand.world_expansion.block.SnowCannonBarrelBlock;
 import net.horizonexpand.world_expansion.block.RawTitaniumBlockBlock;
 import net.horizonexpand.world_expansion.block.MultiCraftingTableBlock;
 import net.horizonexpand.world_expansion.block.LittleShroomlightBlock;
@@ -111,8 +109,6 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> RAW_TITANIUM_BLOCK = REGISTRY.register("raw_titanium_block", () -> new RawTitaniumBlockBlock());
 	public static final RegistryObject<Block> MULTI_CRAFTING_TABLE = REGISTRY.register("multi_crafting_table", () -> new MultiCraftingTableBlock());
 	public static final RegistryObject<Block> DEEPSLATE_TITANIUM_ORE = REGISTRY.register("deepslate_titanium_ore", () -> new DeepslateTitaniumOreBlock());
-	public static final RegistryObject<Block> CANNON_BASE = REGISTRY.register("cannon_base", () -> new SnowCannonBaseBlock());
-	public static final RegistryObject<Block> CANNON_BARREL = REGISTRY.register("cannon_barrel", () -> new SnowCannonBarrelBlock());
 	public static final RegistryObject<Block> BAOBAB_SAPLING = REGISTRY.register("baobab_sapling", () -> new BaobabSaplingBlock());
 	public static final RegistryObject<Block> KABANYT_COAL_ORE = REGISTRY.register("kabanyt_coal_ore", () -> new KabanytCoalOreBlock());
 	public static final RegistryObject<Block> KABANYT_COPPER_ORE = REGISTRY.register("kabanyt_copper_ore", () -> new KabanytCopperOreBlock());

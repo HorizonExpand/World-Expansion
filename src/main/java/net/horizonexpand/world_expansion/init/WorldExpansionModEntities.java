@@ -17,12 +17,8 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.horizonexpand.world_expansion.entity.TumbleweedProjectileProjectileEntity;
-import net.horizonexpand.world_expansion.entity.TNTProjectileEntity;
 import net.horizonexpand.world_expansion.entity.ShotgunBlastEntity;
-import net.horizonexpand.world_expansion.entity.PowderSnowProjectileEntity;
-import net.horizonexpand.world_expansion.entity.PieceOfSnowEntity;
 import net.horizonexpand.world_expansion.entity.MiniFirefliesEntity;
-import net.horizonexpand.world_expansion.entity.CannonCoordsAreaEntity;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -31,20 +27,10 @@ public class WorldExpansionModEntities {
 	public static final RegistryObject<EntityType<TumbleweedProjectileProjectileEntity>> TUMBLEWEED_PROJECTILE = register("tumbleweed_projectile",
 			EntityType.Builder.<TumbleweedProjectileProjectileEntity>of(TumbleweedProjectileProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TumbleweedProjectileProjectileEntity::new).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<PieceOfSnowEntity>> SNOW_PROJECTILE = register("snow_projectile",
-			EntityType.Builder.<PieceOfSnowEntity>of(PieceOfSnowEntity::new, MobCategory.MISC).setCustomClientFactory(PieceOfSnowEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<TNTProjectileEntity>> TNT_PROJECTILE = register("tnt_projectile",
-			EntityType.Builder.<TNTProjectileEntity>of(TNTProjectileEntity::new, MobCategory.MISC).setCustomClientFactory(TNTProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<PowderSnowProjectileEntity>> POWDER_SNOW_PROJECTILE = register("powder_snow_projectile", EntityType.Builder.<PowderSnowProjectileEntity>of(PowderSnowProjectileEntity::new, MobCategory.MISC)
-			.setCustomClientFactory(PowderSnowProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MiniFirefliesEntity>> MINI_FIREFLIES = register("mini_fireflies",
 			EntityType.Builder.<MiniFirefliesEntity>of(MiniFirefliesEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MiniFirefliesEntity::new)
 
 					.sized(0.6f, 0.9f));
-	public static final RegistryObject<EntityType<CannonCoordsAreaEntity>> CANNON_COORDS_AREA = register("cannon_coords_area",
-			EntityType.Builder.<CannonCoordsAreaEntity>of(CannonCoordsAreaEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CannonCoordsAreaEntity::new)
-
-					.sized(0f, 0f));
 	public static final RegistryObject<EntityType<ShotgunBlastEntity>> SHOTGUN_BLAST = register("shotgun_blast",
 			EntityType.Builder.<ShotgunBlastEntity>of(ShotgunBlastEntity::new, MobCategory.MISC).setCustomClientFactory(ShotgunBlastEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
@@ -56,13 +42,11 @@ public class WorldExpansionModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			MiniFirefliesEntity.init();
-			CannonCoordsAreaEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MINI_FIREFLIES.get(), MiniFirefliesEntity.createAttributes().build());
-		event.put(CANNON_COORDS_AREA.get(), CannonCoordsAreaEntity.createAttributes().build());
 	}
 }

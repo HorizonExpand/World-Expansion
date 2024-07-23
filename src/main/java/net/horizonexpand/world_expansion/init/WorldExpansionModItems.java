@@ -102,8 +102,6 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> DEEPSLATE_TITANIUM_ORE = block(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE);
 	public static final RegistryObject<Item> BRUTE_ARMOR_TRIM_SMITHING_TEMPLATE = REGISTRY.register("brute_armor_trim_smithing_template", () -> new BruteArmorTrimSmithingTemplateItem());
 	public static final RegistryObject<Item> TUMBLEWEED_ITEM = REGISTRY.register("tumbleweed_item", () -> new TumbleweedProjectileItem());
-	public static final RegistryObject<Item> CANNON_BASE = block(WorldExpansionModBlocks.CANNON_BASE);
-	public static final RegistryObject<Item> CANNON_BARREL = block(WorldExpansionModBlocks.CANNON_BARREL);
 	public static final RegistryObject<Item> BAOBAB_SAPLING = block(WorldExpansionModBlocks.BAOBAB_SAPLING);
 	public static final RegistryObject<Item> ICE_SKATES_BOOTS = REGISTRY.register("ice_skates_boots", () -> new IceSkatesItem.Boots());
 	public static final RegistryObject<Item> KABANYT_COAL_ORE = block(WorldExpansionModBlocks.KABANYT_COAL_ORE);

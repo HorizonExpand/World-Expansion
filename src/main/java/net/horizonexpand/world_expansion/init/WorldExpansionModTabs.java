@@ -74,8 +74,6 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES_WALL.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.CARVED_KABANYT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.WINDOMETER.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.CANNON_BASE.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.CANNON_BARREL.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BOTTLE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
 			})
