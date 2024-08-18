@@ -74,16 +74,16 @@
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": false,
-    "immuneToArrows": false,
-    "immuneToFallDamage": false,
-    "immuneToCactus": false,
+    "immuneToArrows": true,
+    "immuneToFallDamage": true,
+    "immuneToCactus": true,
     "immuneToDrowning": false,
-    "immuneToLightning": false,
+    "immuneToLightning": true,
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "immuneToExplosion": false,
-    "immuneToTrident": false,
-    "immuneToAnvil": false,
+    "immuneToTrident": true,
+    "immuneToAnvil": true,
     "immuneToWither": false,
     "immuneToDragonBreath": false,
     "mobDrop": {
@@ -100,9 +100,6 @@
     },
     "stepSound": {
       "value": ""
-    },
-    "onRightClickedOn": {
-      "name": "MiniFirefliesPriShchielchkiePKMPoSushchnosti"
     },
     "hasAI": true,
     "aiBase": "(none)",

@@ -18,9 +18,10 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 
-import net.horizonexpand.world_expansion.item.DealersShotgunItem;
+import net.horizonexpand.world_expansion.item.GamblersShotgunItem;
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
 import net.horizonexpand.world_expansion.init.WorldExpansionModEntities;
+import net.horizonexpand.world_expansion.init.WorldExpansionModAttributes;
 import net.horizonexpand.world_expansion.entity.ShotgunBlastEntity;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
@@ -29,16 +30,18 @@ public class DealersShotgunPriShchielchkiePKMProcedure {
 		if (entity == null)
 			return;
 		if (itemstack.getOrCreateTag().getDouble("total") != 0) {
-			if (world instanceof Level _level) {
-				if (!_level.isClientSide()) {
-					_level.playSound(null, x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:dealers_shotgun_forearm")), SoundSource.PLAYERS, 1, 1);
+			WorldExpansionMod.queueServerWork(4, () -> {
+				if (world instanceof Level _level) {
+					if (!_level.isClientSide()) {
+						_level.playSound(null, x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:dealers_shotgun_forearm")), SoundSource.PLAYERS, 1, 1);
+					}
 				}
-			}
+			});
 			if (entity instanceof Player _player)
-				_player.getCooldowns().addCooldown(itemstack.getItem(), 20);
+				_player.getCooldowns().addCooldown(itemstack.getItem(), 16);
 			if ((itemstack.getOrCreateTag().getString(("" + itemstack.getOrCreateTag().getDouble("total")))).equals(ForgeRegistries.ITEMS.getKey(WorldExpansionModItems.LIVE_SHOTGUN_BULLET.get()).toString())) {
-				if (itemstack.getItem() instanceof DealersShotgunItem)
-					itemstack.getOrCreateTag().putString("geckoAnim", "animation.dealers_shotgun.shoot_live");
+				if (itemstack.getItem() instanceof GamblersShotgunItem)
+					itemstack.getOrCreateTag().putString("geckoAnim", "animation.gamblers_shotgun.shoot_live");
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:dealers_shotgun_shooting")), SoundSource.PLAYERS, 1, 1);
@@ -64,11 +67,13 @@ public class DealersShotgunPriShchielchkiePKMProcedure {
 					world.addParticle(ParticleTypes.SMOKE, (entity.getX() + entity.getLookAngle().x / 6), (y + 1.8), (entity.getZ() + entity.getLookAngle().z / 6), (Mth.nextDouble(RandomSource.create(), -0.1, 0.1)), 0.1,
 							(Mth.nextDouble(RandomSource.create(), -0.1, 0.1)));
 				}
-				entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * (-0.1)), (entity.getLookAngle().y * (-0.1)), (entity.getLookAngle().z * (-0.1))));
+				entity.setDeltaMovement(new Vec3((entity.getLookAngle().x * (-0.1) * ((LivingEntity) entity).getAttribute(WorldExpansionModAttributes.KICKBACKMULTIPLIERATTRIBUTE.get()).getValue()),
+						(entity.getLookAngle().y * (-0.1) * ((LivingEntity) entity).getAttribute(WorldExpansionModAttributes.KICKBACKMULTIPLIERATTRIBUTE.get()).getValue()),
+						(entity.getLookAngle().z * (-0.1) * ((LivingEntity) entity).getAttribute(WorldExpansionModAttributes.KICKBACKMULTIPLIERATTRIBUTE.get()).getValue())));
 				{
 					Entity _ent = entity;
 					_ent.setYRot(entity.getYRot());
-					_ent.setXRot((float) (entity.getXRot() - 10));
+					_ent.setXRot((float) (entity.getXRot() - 10 * ((LivingEntity) entity).getAttribute(WorldExpansionModAttributes.KICKBACKMULTIPLIERATTRIBUTE.get()).getValue()));
 					_ent.setYBodyRot(_ent.getYRot());
 					_ent.setYHeadRot(_ent.getYRot());
 					_ent.yRotO = _ent.getYRot();
@@ -79,8 +84,8 @@ public class DealersShotgunPriShchielchkiePKMProcedure {
 					}
 				}
 			} else if ((itemstack.getOrCreateTag().getString(("" + itemstack.getOrCreateTag().getDouble("total")))).equals(ForgeRegistries.ITEMS.getKey(WorldExpansionModItems.BLANK_SHOTGUN_BULLET.get()).toString())) {
-				if (itemstack.getItem() instanceof DealersShotgunItem)
-					itemstack.getOrCreateTag().putString("geckoAnim", "animation.dealers_shotgun.shoot_blank");
+				if (itemstack.getItem() instanceof GamblersShotgunItem)
+					itemstack.getOrCreateTag().putString("geckoAnim", "animation.gamblers_shotgun.shoot_blank");
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:empty_dealers_shotgun_shooting")), SoundSource.PLAYERS, 1, 1);
@@ -88,7 +93,9 @@ public class DealersShotgunPriShchielchkiePKMProcedure {
 				}
 			}
 			itemstack.getOrCreateTag().putString(("" + itemstack.getOrCreateTag().getDouble("total")), "Empty");
-			itemstack.getOrCreateTag().putDouble("total", (itemstack.getOrCreateTag().getDouble("total") - 1));
+			WorldExpansionMod.queueServerWork(1, () -> {
+				itemstack.getOrCreateTag().putDouble("total", (itemstack.getOrCreateTag().getDouble("total") - 1));
+			});
 			WorldExpansionMod.queueServerWork(20, () -> {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

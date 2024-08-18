@@ -23,7 +23,7 @@ import net.horizonexpand.world_expansion.procedures.AstilbaOnBoneMealSuccessProc
 
 public class AstilbaBlock extends FlowerBlock implements BonemealableBlock {
 	public AstilbaBlock() {
-		super(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(() -> MobEffects.SLOW_FALLING, 100, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PINK).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class AstilbaBlock extends FlowerBlock implements BonemealableBlock {
 
 	@Override
 	public int getEffectDuration() {
-		return 5;
+		return 100;
 	}
 
 	@Override

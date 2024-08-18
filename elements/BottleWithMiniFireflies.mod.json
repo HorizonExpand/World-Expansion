@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": true,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "bottle_stayed",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -54,9 +54,9 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Bottle"
     },
-    "dropAmount": 0,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
@@ -129,13 +129,13 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "BottleWithMiniFirefliesPriShchielchkiePKMPoBloku"
+      "name": "BottleWithMinifirefliesRMC"
     },
     "onBlockAdded": {
-      "name": "BottlePriDobavlieniiBloka"
+      "name": "BottleWithMiniFirefliesPriDobavlieniiBloka"
     },
     "onNeighbourBlockChanges": {
-      "name": "BottlePriDobavlieniiBloka"
+      "name": "BottleWithMiniFirefliesPriDobavlieniiBloka"
     },
     "onDestroyedByPlayer": {
       "name": "BottleWithMiniFirefliesPriRazrushieniiBlokaIghrokom"

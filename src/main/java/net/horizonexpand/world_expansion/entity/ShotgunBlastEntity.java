@@ -69,7 +69,7 @@ public class ShotgunBlastEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitEntity(EntityHitResult entityHitResult) {
 		super.onHitEntity(entityHitResult);
-		ShotgunBlastKoghdaSnariadPopadaietVSushchnostProcedure.execute(this.level(), entityHitResult.getEntity(), this, this.getOwner());
+		ShotgunBlastKoghdaSnariadPopadaietVSushchnostProcedure.execute(this.level(), entityHitResult.getEntity(), this);
 	}
 
 	@Override

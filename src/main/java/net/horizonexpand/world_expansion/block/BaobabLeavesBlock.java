@@ -1,6 +1,7 @@
 
 package net.horizonexpand.world_expansion.block;
 
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
@@ -17,7 +18,7 @@ import net.horizonexpand.world_expansion.procedures.BaobabLeavesKoghdaBlokRazrus
 
 public class BaobabLeavesBlock extends LeavesBlock {
 	public BaobabLeavesBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().mapColor(MapColor.PLANT).sound(SoundType.GRASS).strength(0.2f).noOcclusion().randomTicks());
+		super(BlockBehaviour.Properties.of().ignitedByLava().mapColor(MapColor.PLANT).sound(SoundType.GRASS).strength(0.2f).noOcclusion().randomTicks().pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override

@@ -1,0 +1,6 @@
+{
+  "parent": "world_expansion:displaysettings/gamblers_shotgun.item",
+  "textures": {
+    "layer0": "world_expansion:item/gamblers_shotgun"
+  }
+}

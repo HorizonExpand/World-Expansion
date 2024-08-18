@@ -301,14 +301,6 @@
       }
     ]
   },
-  "dealers_shotgun_forearm": {
-    "sounds": [
-      {
-        "name": "world_expansion:shotgun_forearm",
-        "stream": false
-      }
-    ]
-  },
   "dealers_shotgun_forearm_start": {
     "sounds": [
       {
@@ -353,6 +345,30 @@
     "sounds": [
       {
         "name": "world_expansion:shotgun_shell1",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_forearm": {
+    "sounds": [
+      {
+        "name": "world_expansion:shotgun_forearm",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_chamber_start": {
+    "sounds": [
+      {
+        "name": "world_expansion:chamber_start",
+        "stream": false
+      }
+    ]
+  },
+  "dealers_shotgun_chamber_end": {
+    "sounds": [
+      {
+        "name": "world_expansion:chamber_end",
         "stream": false
       }
     ]

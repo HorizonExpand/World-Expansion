@@ -24,24 +24,6 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -1.00949,
-        "my": 8.0,
-        "mz": 7.9891,
-        "Mx": 16.99051,
-        "My": 18.0,
-        "Mz": 7.9891,
-        "subtract": false
-      },
-      {
-        "mx": 10.3,
-        "my": 8.0,
-        "mz": 4.68558,
-        "Mx": 28.3,
-        "My": 18.0,
-        "Mz": 4.68558,
-        "subtract": false
-      },
-      {
         "mx": 4.0,
         "my": 8.0,
         "mz": 4.0,
@@ -76,7 +58,7 @@
     "hardness": 3.0,
     "resistance": 6.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:Worldexpansionblocks"
     },
@@ -94,7 +76,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 0,
+    "tickRate": 1,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -155,6 +137,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "WindometerPriObnovlieniiTika"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],

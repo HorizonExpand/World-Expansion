@@ -37,7 +37,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.horizonexpand.world_expansion.procedures.BottleWithMiniFirefliesPriShchielchkiePKMPoBlokuProcedure;
+import net.horizonexpand.world_expansion.procedures.BottleWithMinifirefliesRMCProcedure;
 import net.horizonexpand.world_expansion.procedures.BottlePriStolknovieniiSushchnostiSBlokomProcedure;
 import net.horizonexpand.world_expansion.procedures.BottlePriDobavlieniiBlokaProcedure;
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlockEntities;
@@ -160,7 +160,7 @@ public class BottleBlock extends BaseEntityBlock implements SimpleWaterloggedBlo
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		BottleWithMiniFirefliesPriShchielchkiePKMPoBlokuProcedure.execute(world, x, y, z, blockstate, entity);
+		BottleWithMinifirefliesRMCProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

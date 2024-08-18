@@ -22,7 +22,7 @@ import net.horizonexpand.world_expansion.procedures.AloeVeraPriRazrushieniiRasti
 
 public class AloeVeraBlock extends FlowerBlock {
 	public AloeVeraBlock() {
-		super(() -> MobEffects.DAMAGE_BOOST, 10, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(() -> MobEffects.REGENERATION, 100, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -33,7 +33,7 @@ public class AloeVeraBlock extends FlowerBlock {
 
 	@Override
 	public int getEffectDuration() {
-		return 10;
+		return 100;
 	}
 
 	@Override

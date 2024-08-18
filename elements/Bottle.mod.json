@@ -14,7 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": true,
     "itemTexture": "",
-    "particleTexture": "",
+    "particleTexture": "bottle_stayed",
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
@@ -129,7 +129,7 @@
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
     "onRightClicked": {
-      "name": "BottleWithMiniFirefliesPriShchielchkiePKMPoBloku"
+      "name": "BottleWithMinifirefliesRMC"
     },
     "onBlockAdded": {
       "name": "BottlePriDobavlieniiBloka"

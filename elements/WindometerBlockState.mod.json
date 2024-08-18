@@ -1,0 +1,61 @@
+{
+  "_fv": 60,
+  "_type": "blockstates",
+  "definition": {
+    "block": "Windometer",
+    "blockstateList": [
+      {
+        "texture": "windometer_n",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "windometer:n",
+        "luminance": 4,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "windometer_s",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "windometer:s",
+        "luminance": 2,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "windometer_e",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "windometer:e",
+        "luminance": 3,
+        "boundingBoxes": []
+      },
+      {
+        "texture": "windometer_w",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "particleTexture": "",
+        "renderType": 2,
+        "customModelName": "windometer:w",
+        "luminance": 1,
+        "boundingBoxes": []
+      }
+    ]
+  }
+}

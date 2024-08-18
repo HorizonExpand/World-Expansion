@@ -33,7 +33,7 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class TumbleweedBlock extends FlowerBlock {
 	public TumbleweedBlock() {
-		super(() -> MobEffects.DIG_SLOWDOWN, 10,
+		super(() -> MobEffects.DIG_SLOWDOWN, 100,
 				BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).randomTicks().sound(SoundType.MANGROVE_ROOTS).instabreak().noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
@@ -45,7 +45,7 @@ public class TumbleweedBlock extends FlowerBlock {
 
 	@Override
 	public int getEffectDuration() {
-		return 10;
+		return 100;
 	}
 
 	@Override

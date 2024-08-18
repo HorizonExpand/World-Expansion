@@ -16,7 +16,7 @@ import net.minecraft.core.BlockPos;
 
 public class YellowAstilbaBlock extends FlowerBlock {
 	public YellowAstilbaBlock() {
-		super(() -> MobEffects.SLOW_FALLING, 5, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(() -> MobEffects.DAMAGE_BOOST, 100, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class YellowAstilbaBlock extends FlowerBlock {
 
 	@Override
 	public int getEffectDuration() {
-		return 5;
+		return 100;
 	}
 
 	@Override

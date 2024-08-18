@@ -26,7 +26,7 @@ import net.horizonexpand.world_expansion.procedures.AloeVeraTigerPriRazrushienii
 
 public class AloeVeraTigerBlock extends FlowerBlock {
 	public AloeVeraTigerBlock() {
-		super(() -> MobEffects.DAMAGE_BOOST, 10, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(() -> MobEffects.DAMAGE_RESISTANCE, 100, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_RED).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
@@ -37,7 +37,7 @@ public class AloeVeraTigerBlock extends FlowerBlock {
 
 	@Override
 	public int getEffectDuration() {
-		return 10;
+		return 100;
 	}
 
 	@Override

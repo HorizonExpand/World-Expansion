@@ -7,13 +7,21 @@ package net.horizonexpand.world_expansion.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.common.ForgeSpawnEggItem;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.renderer.item.ItemProperties;
 
+import net.horizonexpand.world_expansion.procedures.GamblersShotgunChamberZnachieniieSvoistvaProcedure;
+import net.horizonexpand.world_expansion.procedures.GamblersShotgunChamberZnachieniieSvoistva2Procedure;
 import net.horizonexpand.world_expansion.item.TumbleweedProjectileItem;
 import net.horizonexpand.world_expansion.item.TitaniumIngotItem;
 import net.horizonexpand.world_expansion.item.SplitJudasFruitItem;
@@ -24,7 +32,8 @@ import net.horizonexpand.world_expansion.item.LiveShotgunBulletItem;
 import net.horizonexpand.world_expansion.item.LeaveOfAloeVeraItem;
 import net.horizonexpand.world_expansion.item.JudasFruitItem;
 import net.horizonexpand.world_expansion.item.IceSkatesItem;
-import net.horizonexpand.world_expansion.item.DealersShotgunItem;
+import net.horizonexpand.world_expansion.item.GamblersShotgunItem;
+import net.horizonexpand.world_expansion.item.GamblersShotgunChamberItem;
 import net.horizonexpand.world_expansion.item.CopperHornItem;
 import net.horizonexpand.world_expansion.item.CopperHorn9Item;
 import net.horizonexpand.world_expansion.item.CopperHorn8Item;
@@ -41,6 +50,7 @@ import net.horizonexpand.world_expansion.block.display.BottleWithMiniFirefliesDi
 import net.horizonexpand.world_expansion.block.display.BottleDisplayItem;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class WorldExpansionModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, WorldExpansionMod.MODID);
 	public static final RegistryObject<Item> BAOBAB_WOOD = block(WorldExpansionModBlocks.BAOBAB_WOOD);
@@ -120,9 +130,10 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> BOTTLE = REGISTRY.register(WorldExpansionModBlocks.BOTTLE.getId().getPath(), () -> new BottleDisplayItem(WorldExpansionModBlocks.BOTTLE.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.getId().getPath(),
 			() -> new BottleWithMiniFirefliesDisplayItem(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get(), new Item.Properties()));
-	public static final RegistryObject<Item> DEALERS_SHOTGUN = REGISTRY.register("dealers_shotgun", () -> new DealersShotgunItem());
 	public static final RegistryObject<Item> LIVE_SHOTGUN_BULLET = REGISTRY.register("live_shotgun_bullet", () -> new LiveShotgunBulletItem());
 	public static final RegistryObject<Item> BLANK_SHOTGUN_BULLET = REGISTRY.register("blank_shotgun_bullet", () -> new BlankShotgunBulletItem());
+	public static final RegistryObject<Item> GAMBLERS_SHOTGUN = REGISTRY.register("gamblers_shotgun", () -> new GamblersShotgunItem());
+	public static final RegistryObject<Item> GAMBLERS_SHOTGUN_CHAMBER = REGISTRY.register("gamblers_shotgun_chamber", () -> new GamblersShotgunChamberItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
@@ -132,5 +143,15 @@ public class WorldExpansionModItems {
 
 	private static RegistryObject<Item> doubleBlock(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties()));
+	}
+
+	@SubscribeEvent
+	public static void clientLoad(FMLClientSetupEvent event) {
+		event.enqueueWork(() -> {
+			ItemProperties.register(GAMBLERS_SHOTGUN_CHAMBER.get(), new ResourceLocation("world_expansion:gamblers_shotgun_chamber_live"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) GamblersShotgunChamberZnachieniieSvoistvaProcedure.execute(itemStackToRender));
+			ItemProperties.register(GAMBLERS_SHOTGUN_CHAMBER.get(), new ResourceLocation("world_expansion:gamblers_shotgun_chamber_blank"),
+					(itemStackToRender, clientWorld, entity, itemEntityId) -> (float) GamblersShotgunChamberZnachieniieSvoistva2Procedure.execute(itemStackToRender));
+		});
 	}
 }

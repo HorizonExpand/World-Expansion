@@ -10,7 +10,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.horizonexpand.world_expansion.item.DealersShotgunItem;
+import net.horizonexpand.world_expansion.item.GamblersShotgunItem;
 
 @Mod.EventBusSubscriber
 public class ItemAnimationFactory {
@@ -34,21 +34,21 @@ public class ItemAnimationFactory {
 		ItemStack mainhandItem = event.player.getMainHandItem().copy();
 		ItemStack offhandItem = event.player.getOffhandItem().copy();
 		if (event.phase == TickEvent.Phase.START && (mainhandItem.getItem() instanceof GeoItem || offhandItem.getItem() instanceof GeoItem)) {
-			if (mainhandItem.getItem() instanceof DealersShotgunItem animatable) {
+			if (mainhandItem.getItem() instanceof GamblersShotgunItem animatable) {
 				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
 				if (!animation.isEmpty()) {
 					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						((DealersShotgunItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+						((GamblersShotgunItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}
-			if (offhandItem.getItem() instanceof DealersShotgunItem animatable) {
+			if (offhandItem.getItem() instanceof GamblersShotgunItem animatable) {
 				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
 				if (!animation.isEmpty()) {
 					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 					if (event.player.level().isClientSide()) {
-						((DealersShotgunItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+						((GamblersShotgunItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}

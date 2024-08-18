@@ -2,9 +2,33 @@
   "mappings": {
     "default": {
       "map": {
-        "1": "windometer"
+        "0": "windometer"
       },
       "name": "default"
+    },
+    "n": {
+      "map": {
+        "0": "windometer_n"
+      },
+      "name": "n"
+    },
+    "s": {
+      "map": {
+        "0": "windometer_s"
+      },
+      "name": "s"
+    },
+    "e": {
+      "map": {
+        "0": "windometer_e"
+      },
+      "name": "e"
+    },
+    "w": {
+      "map": {
+        "0": "windometer_w"
+      },
+      "name": "w"
     }
   }
 }

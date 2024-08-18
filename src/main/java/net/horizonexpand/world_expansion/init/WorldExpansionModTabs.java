@@ -26,7 +26,8 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.BRUTE_ARMOR_TRIM_SMITHING_TEMPLATE.get());
 				tabData.accept(WorldExpansionModItems.PIECE_TOTEM_OF_UNDYING.get());
 				tabData.accept(WorldExpansionModItems.MUSIC_DISC_DESTROYER.get());
-				tabData.accept(WorldExpansionModItems.DEALERS_SHOTGUN.get());
+				tabData.accept(WorldExpansionModItems.GAMBLERS_SHOTGUN.get());
+				tabData.accept(WorldExpansionModItems.GAMBLERS_SHOTGUN_CHAMBER.get());
 				tabData.accept(WorldExpansionModItems.LIVE_SHOTGUN_BULLET.get());
 				tabData.accept(WorldExpansionModItems.BLANK_SHOTGUN_BULLET.get());
 				tabData.accept(WorldExpansionModItems.COPPER_HORN0.get());

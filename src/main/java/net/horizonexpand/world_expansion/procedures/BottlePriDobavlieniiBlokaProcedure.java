@@ -3,22 +3,17 @@ package net.horizonexpand.world_expansion.procedures;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
-
-import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class BottlePriDobavlieniiBlokaProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (!Blocks.TORCH.defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z)) && world.isEmptyBlock(BlockPos.containing(x, y + 1, z))) {
-			world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			if (world instanceof ServerLevel _level) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(WorldExpansionModBlocks.BOTTLE.get()));
-				entityToSpawn.setPickUpDelay(10);
-				_level.addFreshEntity(entityToSpawn);
+			{
+				BlockPos _pos = BlockPos.containing(x, y, z);
+				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);
+				world.destroyBlock(_pos, false);
 			}
 		} else if (!Blocks.TORCH.defaultBlockState().canSurvive(world, BlockPos.containing(x, y, z)) && !world.isEmptyBlock(BlockPos.containing(x, y + 1, z))) {
 			{

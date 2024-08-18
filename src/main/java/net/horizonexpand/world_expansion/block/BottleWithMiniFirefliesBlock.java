@@ -7,6 +7,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
@@ -28,6 +29,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResult;
@@ -35,13 +37,17 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.horizonexpand.world_expansion.procedures.BottleWithMiniFirefliesPriShchielchkiePKMPoBlokuProcedure;
+import net.horizonexpand.world_expansion.procedures.BottleWithMinifirefliesRMCProcedure;
 import net.horizonexpand.world_expansion.procedures.BottleWithMiniFirefliesPriRazrushieniiBlokaIghrokomProcedure;
+import net.horizonexpand.world_expansion.procedures.BottleWithMiniFirefliesPriDobavlieniiBlokaProcedure;
 import net.horizonexpand.world_expansion.procedures.BottlePriStolknovieniiSushchnostiSBlokomProcedure;
-import net.horizonexpand.world_expansion.procedures.BottlePriDobavlieniiBlokaProcedure;
+import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlockEntities;
 
 import javax.annotation.Nullable;
+
+import java.util.List;
+import java.util.Collections;
 
 public class BottleWithMiniFirefliesBlock extends BaseEntityBlock implements SimpleWaterloggedBlock, EntityBlock {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 1);
@@ -55,7 +61,7 @@ public class BottleWithMiniFirefliesBlock extends BaseEntityBlock implements Sim
 					return 7;
 				return 7;
 			}
-		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false).noLootTable());
+		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -120,15 +126,23 @@ public class BottleWithMiniFirefliesBlock extends BaseEntityBlock implements Sim
 	}
 
 	@Override
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+		if (!dropsOriginal.isEmpty())
+			return dropsOriginal;
+		return Collections.singletonList(new ItemStack(WorldExpansionModBlocks.BOTTLE.get()));
+	}
+
+	@Override
 	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
 		super.onPlace(blockstate, world, pos, oldState, moving);
-		BottlePriDobavlieniiBlokaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		BottleWithMiniFirefliesPriDobavlieniiBlokaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
 	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
 		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		BottlePriDobavlieniiBlokaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		BottleWithMiniFirefliesPriDobavlieniiBlokaProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override
@@ -155,7 +169,7 @@ public class BottleWithMiniFirefliesBlock extends BaseEntityBlock implements Sim
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
 
-		BottleWithMiniFirefliesPriShchielchkiePKMPoBlokuProcedure.execute(world, x, y, z, blockstate, entity);
+		BottleWithMinifirefliesRMCProcedure.execute(world, x, y, z, blockstate, entity);
 		return InteractionResult.SUCCESS;
 	}
 }

@@ -91,7 +91,6 @@ public class WorldExpansionModVariables {
 		public String Dye = "minecraft:pink_dye";
 		public String CopperHorn = "world_expansion:copper_horn0";
 		public boolean DenseFog = false;
-		public String RecoverInventory = "";
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -104,7 +103,6 @@ public class WorldExpansionModVariables {
 			Dye = nbt.getString("Dye");
 			CopperHorn = nbt.getString("CopperHorn");
 			DenseFog = nbt.getBoolean("DenseFog");
-			RecoverInventory = nbt.getString("RecoverInventory");
 		}
 
 		@Override
@@ -113,7 +111,6 @@ public class WorldExpansionModVariables {
 			nbt.putString("Dye", Dye);
 			nbt.putString("CopperHorn", CopperHorn);
 			nbt.putBoolean("DenseFog", DenseFog);
-			nbt.putString("RecoverInventory", RecoverInventory);
 			return nbt;
 		}
 

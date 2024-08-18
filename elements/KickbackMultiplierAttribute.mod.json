@@ -1,0 +1,16 @@
+{
+  "_fv": 60,
+  "_type": "attribute",
+  "definition": {
+    "description": "Kickback Multiplier",
+    "minValue": -1024.0,
+    "maxValue": 1024.0,
+    "defaultValue": 1.0,
+    "isPersistent": false,
+    "entities": [
+      {
+        "value": "EntityPlayer"
+      }
+    ]
+  }
+}
