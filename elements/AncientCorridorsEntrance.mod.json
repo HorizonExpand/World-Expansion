@@ -13,10 +13,10 @@
       }
     ],
     "surfaceDetectionType": "WORLD_SURFACE_WG",
-    "terrainAdaptation": "beard_thin",
+    "terrainAdaptation": "bury",
     "generationStep": "SURFACE_STRUCTURES",
-    "size": 1,
-    "maxDistanceFromCenter": 64,
+    "size": 7,
+    "maxDistanceFromCenter": 116,
     "jigsawPools": [
       {
         "poolName": "hall",
@@ -31,6 +31,72 @@
           {
             "weight": 1,
             "structure": "ancient_corridors_hall1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "corridors",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "ancient_corridors_waterlogged_corridor",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 12,
+            "structure": "ancient_corridors_corridor0",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "fighting_room",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "ancient_corridors_fighting_room0",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      },
+      {
+        "poolName": "fighting_room_decor",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 3,
+            "structure": "ancient_corridors_fighting_room_decor0",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "ancient_corridors_fighting_room_decor1",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 1,
+            "structure": "ancient_corridors_fighting_room_decor2",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "ancient_corridors_fighting_room_decor3",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          },
+          {
+            "weight": 3,
+            "structure": "ancient_corridors_fighting_room_decor4",
             "projection": "rigid",
             "ignoredBlocks": []
           }

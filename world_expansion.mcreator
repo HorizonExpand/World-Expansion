@@ -6111,6 +6111,9 @@
       "metadata": {
         "files": [
           "src/main/resources/data/world_expansion/worldgen/structure/ancient_corridors_entrance.json",
+          "src/main/resources/data/world_expansion/worldgen/template_pool/ancient_corridors_entrance_fighting_room_decor.json",
+          "src/main/resources/data/world_expansion/worldgen/template_pool/ancient_corridors_entrance_corridors.json",
+          "src/main/resources/data/world_expansion/worldgen/template_pool/ancient_corridors_entrance_fighting_room.json",
           "src/main/resources/data/world_expansion/worldgen/structure_set/ancient_corridors_entrance.json",
           "src/main/resources/data/world_expansion/worldgen/template_pool/ancient_corridors_entrance.json",
           "src/main/resources/data/world_expansion/worldgen/template_pool/ancient_corridors_entrance_hall.json"
