@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.horizonexpand.world_expansion.procedures.GunDischargePriNazhatiiKlavishiProcedure;
+import net.horizonexpand.world_expansion.procedures.GunDischargeProcedureProcedure;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 import java.util.function.Supplier;
@@ -52,7 +52,7 @@ public class GunDischargeMessage {
 			return;
 		if (type == 0) {
 
-			GunDischargePriNazhatiiKlavishiProcedure.execute(world, x, y, z, entity);
+			GunDischargeProcedureProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

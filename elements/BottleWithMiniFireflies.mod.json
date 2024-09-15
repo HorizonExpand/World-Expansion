@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "animatedblock",
   "definition": {
     "texture": "bottle_witn_mini_fireflies",
@@ -52,6 +52,7 @@
     "creativeTab": {
       "value": "CUSTOM:Worldexpansionblocks"
     },
+    "creativeTabs": [],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": "CUSTOM:Bottle"
@@ -152,6 +153,7 @@
     "maxGenerateHeight": 64,
     "normal": "bottle.geo.json",
     "displaySettings": "bottle.item.json",
+    "vanillaToolTier": "NONE",
     "blockstateList": [
       {
         "texture": "bottle_witn_mini_fireflies_top",

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "armor",
   "definition": {
     "enableHelmet": false,
@@ -13,9 +13,11 @@
     "onBootsTick": {
       "name": "IceSkatesProcedure"
     },
-    "creativeTab": {
-      "value": "CUSTOM:Items"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Items"
+      }
+    ],
     "armorTextureFile": "engineers_armor_",
     "helmetName": "Шлем Ice Skates",
     "bodyName": "Нагрудник Ice Skates",

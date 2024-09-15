@@ -1,12 +1,12 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "keybind",
   "definition": {
     "triggerKey": "R",
     "keyBindingName": "Gun Reload",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
-      "name": "GunReloadPriNazhatiiKlavishi"
+      "name": "GunReloadProcedure"
     }
   }
 }

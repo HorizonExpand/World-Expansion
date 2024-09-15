@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "world_expansion:kabanyt_tiles_slab"
+      "item": "world_expansion:kabanyt_tile_slab"
     },
     "title": {
       "translate": "advancements.tile_slab.title"
@@ -21,7 +21,7 @@
         "items": [
           {
             "items": [
-              "world_expansion:kabanyt_tiles_slab"
+              "world_expansion:kabanyt_tile_slab"
             ],
             "count": {
               "min": 1,

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
@@ -11,9 +11,11 @@
     "leftArm": "left",
     "rightArm": "right",
     "perspective": "All Perspectives",
-    "creativeTab": {
-      "value": "CUSTOM:Items"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Items"
+      }
+    ],
     "firstPersonArms": true,
     "stackSize": 1,
     "enchantability": 0,
@@ -26,7 +28,7 @@
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
-    "enableArmPose": false,
+    "enableArmPose": true,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
@@ -38,7 +40,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "DealersShotgunPriShchielchkiePKM"
+      "name": "GamblersShotgunShoot"
     },
     "isFood": false,
     "nutritionalValue": 4,

@@ -1,0 +1,50 @@
+{
+  "name": "world_expansion:ancient_corridors_entrance_fighting_room1_decor_stairs",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "world_expansion:ancient_corridors_fighting_room1_decor_water",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "world_expansion:ancient_corridors_fighting_room1_decor_iron_bars",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "world_expansion:ancient_corridors_fighting_room1_decor_potted_flowering_azalea_bush",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "world_expansion:ancient_corridors_fighting_room1_decor_stairs_empty",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

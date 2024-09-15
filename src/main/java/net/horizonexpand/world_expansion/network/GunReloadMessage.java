@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.horizonexpand.world_expansion.procedures.GunReloadPriNazhatiiKlavishiProcedure;
+import net.horizonexpand.world_expansion.procedures.GunReloadProcedureProcedure;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 import java.util.function.Supplier;
@@ -52,7 +52,7 @@ public class GunReloadMessage {
 			return;
 		if (type == 0) {
 
-			GunReloadPriNazhatiiKlavishiProcedure.execute(world, x, y, z, entity);
+			GunReloadProcedureProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "structure",
   "definition": {
     "structure": "raiders_base_in_baobab",
@@ -16,9 +16,13 @@
         "value": "CUSTOM:Baobabvalley"
       }
     ],
-    "surfaceDetectionType": "WORLD_SURFACE_WG",
     "terrainAdaptation": "beard_box",
     "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
     "size": 1,
     "maxDistanceFromCenter": 64,
     "jigsawPools": []

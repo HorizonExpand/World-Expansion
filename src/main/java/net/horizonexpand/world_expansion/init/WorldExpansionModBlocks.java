@@ -63,6 +63,7 @@ import net.horizonexpand.world_expansion.block.BaobabFenceBlock;
 import net.horizonexpand.world_expansion.block.BaobabButtonBlock;
 import net.horizonexpand.world_expansion.block.AstilbamulticoloredBlock;
 import net.horizonexpand.world_expansion.block.AstilbaBlock;
+import net.horizonexpand.world_expansion.block.AncientCorridorsSpawnerBlock;
 import net.horizonexpand.world_expansion.block.AloeVeraTigerBlock;
 import net.horizonexpand.world_expansion.block.AloeVeraBlock;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
@@ -94,9 +95,9 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> KABANYT_BRICKS_STAIRS = REGISTRY.register("kabanyt_bricks_stairs", () -> new KabanytbricksstairsBlock());
 	public static final RegistryObject<Block> KABANYT_BRICKS_SLAB = REGISTRY.register("kabanyt_bricks_slab", () -> new KabanytbricksslabBlock());
 	public static final RegistryObject<Block> KABANYT_BRICKS_WALL = REGISTRY.register("kabanyt_bricks_wall", () -> new KabanytbrickswallBlock());
-	public static final RegistryObject<Block> KABANYT_TILES_STAIRS = REGISTRY.register("kabanyt_tiles_stairs", () -> new KabanyttilesstairsBlock());
-	public static final RegistryObject<Block> KABANYT_TILES_SLAB = REGISTRY.register("kabanyt_tiles_slab", () -> new KabanyttilesslabBlock());
-	public static final RegistryObject<Block> KABANYT_TILES_WALL = REGISTRY.register("kabanyt_tiles_wall", () -> new KabanyttileswallBlock());
+	public static final RegistryObject<Block> KABANYT_TILE_STAIRS = REGISTRY.register("kabanyt_tile_stairs", () -> new KabanyttilesstairsBlock());
+	public static final RegistryObject<Block> KABANYT_TILE_SLAB = REGISTRY.register("kabanyt_tile_slab", () -> new KabanyttilesslabBlock());
+	public static final RegistryObject<Block> KABANYT_TILE_WALL = REGISTRY.register("kabanyt_tile_wall", () -> new KabanyttileswallBlock());
 	public static final RegistryObject<Block> YELLOW_ASTILBA = REGISTRY.register("yellow_astilba", () -> new YellowAstilbaBlock());
 	public static final RegistryObject<Block> TIGER_ALOE_VERA = REGISTRY.register("tiger_aloe_vera", () -> new AloeVeraTigerBlock());
 	public static final RegistryObject<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", () -> new TumbleweedBlock());
@@ -124,6 +125,7 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> WINDOMETER = REGISTRY.register("windometer", () -> new WindometerBlock());
 	public static final RegistryObject<Block> BOTTLE = REGISTRY.register("bottle", () -> new BottleBlock());
 	public static final RegistryObject<Block> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register("bottle_with_mini_fireflies", () -> new BottleWithMiniFirefliesBlock());
+	public static final RegistryObject<Block> ANCIENT_CORRIDORS_SPAWNER = REGISTRY.register("ancient_corridors_spawner", () -> new AncientCorridorsSpawnerBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

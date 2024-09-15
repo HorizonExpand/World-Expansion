@@ -1,6 +1,7 @@
 {
   "parent": "block/door_top_left",
   "textures": {
+    "particle": "world_expansion:block/baobab_door_bottom",
     "bottom": "world_expansion:block/baobab_door_bottom",
     "top": "world_expansion:block/baobab_door_top"
   },

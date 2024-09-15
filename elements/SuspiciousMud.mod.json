@@ -1,5 +1,5 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "block",
   "definition": {
     "texture": "suspicious_mud",
@@ -41,9 +41,11 @@
     "resistance": 2.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTab": {
-      "value": "CUSTOM:NatureBlocks"
-    },
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:NatureBlocks"
+      }
+    ],
     "destroyTool": "shovel",
     "customDrop": {
       "value": ""
@@ -56,7 +58,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "EARTH"
+      "value": "ROCK"
     },
     "tickRate": 1,
     "tickRandomly": false,
@@ -100,7 +102,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "vanillaToolTier": "NONE",
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
@@ -123,9 +125,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "SuspiciousMudPriShchielchkiePKMPoBloku"
-    },
     "onTickUpdate": {
       "name": "SuspiciousMudObnovlieniieTika"
     },

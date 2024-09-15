@@ -18,13 +18,15 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.client.model.HumanoidModel;
 
-import net.horizonexpand.world_expansion.procedures.DealersShotgunPriShchielchkiePKMProcedure;
+import net.horizonexpand.world_expansion.procedures.GamblersShotgunShootProcedure;
 import net.horizonexpand.world_expansion.item.renderer.GamblersShotgunItemRenderer;
 
 import java.util.function.Consumer;
@@ -49,6 +51,22 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 			@Override
 			public BlockEntityWithoutLevelRenderer getCustomRenderer() {
 				return renderer;
+			}
+
+			private static final HumanoidModel.ArmPose GamblersShotgunPose = HumanoidModel.ArmPose.create("GamblersShotgun", false, (model, entity, arm) -> {
+				if (arm == HumanoidArm.LEFT) {
+				} else {
+				}
+			});
+
+			@Override
+			public HumanoidModel.ArmPose getArmPose(LivingEntity entityLiving, InteractionHand hand, ItemStack itemStack) {
+				if (!itemStack.isEmpty()) {
+					if (entityLiving.getUsedItemHand() == hand) {
+						return GamblersShotgunPose;
+					}
+				}
+				return HumanoidModel.ArmPose.EMPTY;
 			}
 
 			public boolean applyForgeHandTransform(PoseStack poseStack, LocalPlayer player, HumanoidArm arm, ItemStack itemInHand, float partialTick, float equipProcess, float swingProcess) {
@@ -76,18 +94,24 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 		return PlayState.STOP;
 	}
 
+	String prevAnim = "empty";
+
 	private PlayState procedurePredicate(AnimationState event) {
 		if (this.transformType != null ? true : false) {
-			if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+			if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!this.animationprocedure.equals(prevAnim) && !this.animationprocedure.equals("empty"))) {
+				if (!this.animationprocedure.equals(prevAnim))
+					event.getController().forceAnimationReset();
 				event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
 				if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
 					this.animationprocedure = "empty";
 					event.getController().forceAnimationReset();
 				}
 			} else if (this.animationprocedure.equals("empty")) {
+				prevAnim = "empty";
 				return PlayState.STOP;
 			}
 		}
+		prevAnim = this.animationprocedure;
 		return PlayState.CONTINUE;
 	}
 
@@ -112,7 +136,7 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		DealersShotgunPriShchielchkiePKMProcedure.execute(world, x, y, z, entity, itemstack);
+		GamblersShotgunShootProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

@@ -1,12 +1,12 @@
 {
-  "_fv": 60,
+  "_fv": 66,
   "_type": "keybind",
   "definition": {
     "triggerKey": "G",
     "keyBindingName": "Gun Discharge",
     "keyBindingCategoryKey": "misc",
     "onKeyPressed": {
-      "name": "GunDischargePriNazhatiiKlavishi"
+      "name": "GunDischargeProcedure"
     }
   }
 }

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "world_expansion:block/trial_spawner_bottom",
+    "up": "world_expansion:block/trial_spawner_top_ejecting_reward",
+    "north": "world_expansion:block/trial_spawner_side_active",
+    "east": "world_expansion:block/trial_spawner_side_active",
+    "south": "world_expansion:block/trial_spawner_side_active",
+    "west": "world_expansion:block/trial_spawner_side_active",
+    "particle": "world_expansion:block/trial_spawner_bottom"
+  },
+  "render_type": "cutout"
+}

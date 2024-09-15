@@ -63,9 +63,13 @@ public class BottleTileEntity extends RandomizableContainerBlockEntity implement
 		return PlayState.STOP;
 	}
 
+	String prevAnim = "0";
+
 	private PlayState procedurePredicate(AnimationState event) {
 		String animationprocedure = ("" + this.getBlockState().getValue(BottleBlock.ANIMATION));
-		if (!animationprocedure.equals("0") && event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+		if (!animationprocedure.equals("0") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!animationprocedure.equals(prevAnim) && !animationprocedure.equals("0"))) {
+			if (!animationprocedure.equals(prevAnim))
+				event.getController().forceAnimationReset();
 			event.getController().setAnimation(RawAnimation.begin().thenPlay(animationprocedure));
 			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
 				if (this.getBlockState().getBlock().getStateDefinition().getProperty("animation") instanceof IntegerProperty _integerProp)
@@ -73,8 +77,10 @@ public class BottleTileEntity extends RandomizableContainerBlockEntity implement
 				event.getController().forceAnimationReset();
 			}
 		} else if (animationprocedure.equals("0")) {
+			prevAnim = "0";
 			return PlayState.STOP;
 		}
+		prevAnim = animationprocedure;
 		return PlayState.CONTINUE;
 	}
 

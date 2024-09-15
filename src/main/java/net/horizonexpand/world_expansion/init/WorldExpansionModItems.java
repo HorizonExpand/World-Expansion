@@ -78,9 +78,9 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> KABANYT_BRICKS_STAIRS = block(WorldExpansionModBlocks.KABANYT_BRICKS_STAIRS);
 	public static final RegistryObject<Item> KABANYT_BRICKS_SLAB = block(WorldExpansionModBlocks.KABANYT_BRICKS_SLAB);
 	public static final RegistryObject<Item> KABANYT_BRICKS_WALL = block(WorldExpansionModBlocks.KABANYT_BRICKS_WALL);
-	public static final RegistryObject<Item> KABANYT_TILES_STAIRS = block(WorldExpansionModBlocks.KABANYT_TILES_STAIRS);
-	public static final RegistryObject<Item> KABANYT_TILES_SLAB = block(WorldExpansionModBlocks.KABANYT_TILES_SLAB);
-	public static final RegistryObject<Item> KABANYT_TILES_WALL = block(WorldExpansionModBlocks.KABANYT_TILES_WALL);
+	public static final RegistryObject<Item> KABANYT_TILE_STAIRS = block(WorldExpansionModBlocks.KABANYT_TILE_STAIRS);
+	public static final RegistryObject<Item> KABANYT_TILE_SLAB = block(WorldExpansionModBlocks.KABANYT_TILE_SLAB);
+	public static final RegistryObject<Item> KABANYT_TILE_WALL = block(WorldExpansionModBlocks.KABANYT_TILE_WALL);
 	public static final RegistryObject<Item> YELLOW_ASTILBA = block(WorldExpansionModBlocks.YELLOW_ASTILBA);
 	public static final RegistryObject<Item> TIGER_ALOE_VERA = block(WorldExpansionModBlocks.TIGER_ALOE_VERA);
 	public static final RegistryObject<Item> LEAVE_OF_ALOE_VERA = REGISTRY.register("leave_of_aloe_vera", () -> new LeaveOfAloeVeraItem());
@@ -134,6 +134,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> BLANK_SHOTGUN_BULLET = REGISTRY.register("blank_shotgun_bullet", () -> new BlankShotgunBulletItem());
 	public static final RegistryObject<Item> GAMBLERS_SHOTGUN = REGISTRY.register("gamblers_shotgun", () -> new GamblersShotgunItem());
 	public static final RegistryObject<Item> GAMBLERS_SHOTGUN_CHAMBER = REGISTRY.register("gamblers_shotgun_chamber", () -> new GamblersShotgunChamberItem());
+	public static final RegistryObject<Item> ANCIENT_CORRIDORS_SPAWNER = block(WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

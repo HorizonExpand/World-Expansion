@@ -22,6 +22,7 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	private final static HashMap<String, String> textstate = new HashMap<>();
 	ImageButton imagebutton_change;
 
 	public MultiCraftingTableGUIScreen(MultiCraftingTableGUIMenu container, Inventory inventory, Component text) {
@@ -53,6 +54,10 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		RenderSystem.disableBlend();
 	}
 
+	public static HashMap<String, String> getTextboxValues() {
+		return textstate;
+	}
+
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
 		if (key == 256) {
@@ -65,6 +70,8 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 	@Override
 	public void containerTick() {
 		super.containerTick();
+		WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIMenu.MultiCraftingTableGUIOtherMessage(0, x, y, z, textstate));
+		MultiCraftingTableGUIMenu.MultiCraftingTableGUIOtherMessage.handleOtherAction(entity, 0, x, y, z, textstate);
 	}
 
 	@Override
@@ -78,8 +85,8 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		super.init();
 		imagebutton_change = new ImageButton(this.leftPos + 132, this.topPos + 43, 8, 8, 0, 0, 8, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_change.png"), 8, 16, e -> {
 			if (true) {
-				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(0, x, y, z));
-				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(0, x, y, z, textstate));
+				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, textstate);
 			}
 		});
 		guistate.put("button:imagebutton_change", imagebutton_change);

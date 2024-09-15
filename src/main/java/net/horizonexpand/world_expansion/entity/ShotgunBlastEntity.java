@@ -90,6 +90,10 @@ public class ShotgunBlastEntity extends AbstractArrow implements ItemSupplier {
 		return shoot(world, entity, source, 4f, 0, 2);
 	}
 
+	public static ShotgunBlastEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+		return shoot(world, entity, source, pullingPower * 4f, 0, 2);
+	}
+
 	public static ShotgunBlastEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		ShotgunBlastEntity entityarrow = new ShotgunBlastEntity(WorldExpansionModEntities.SHOTGUN_BLAST.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);

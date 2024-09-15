@@ -91,6 +91,7 @@ public class WorldExpansionModVariables {
 		public String Dye = "minecraft:pink_dye";
 		public String CopperHorn = "world_expansion:copper_horn0";
 		public boolean DenseFog = false;
+		public double ancient_corridors_spawner_entity_yaw = 0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -103,6 +104,7 @@ public class WorldExpansionModVariables {
 			Dye = nbt.getString("Dye");
 			CopperHorn = nbt.getString("CopperHorn");
 			DenseFog = nbt.getBoolean("DenseFog");
+			ancient_corridors_spawner_entity_yaw = nbt.getDouble("ancient_corridors_spawner_entity_yaw");
 		}
 
 		@Override
@@ -111,6 +113,7 @@ public class WorldExpansionModVariables {
 			nbt.putString("Dye", Dye);
 			nbt.putString("CopperHorn", CopperHorn);
 			nbt.putBoolean("DenseFog", DenseFog);
+			nbt.putDouble("ancient_corridors_spawner_entity_yaw", ancient_corridors_spawner_entity_yaw);
 			return nbt;
 		}
 

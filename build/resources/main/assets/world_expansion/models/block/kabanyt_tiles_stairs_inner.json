@@ -1,9 +1,0 @@
-{
-  "parent": "block/inner_stairs",
-  "textures": {
-    "bottom": "world_expansion:block/kabanyt_tiles",
-    "top": "world_expansion:block/kabanyt_tiles",
-    "side": "world_expansion:block/kabanyt_tiles"
-  },
-  "render_type": "solid"
-}

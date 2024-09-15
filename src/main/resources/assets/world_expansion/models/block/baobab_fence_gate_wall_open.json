@@ -1,6 +1,7 @@
 {
   "parent": "block/template_fence_gate_wall_open",
   "textures": {
+    "particle": "world_expansion:block/baobab_planks",
     "texture": "world_expansion:block/baobab_planks"
   },
   "render_type": "solid"

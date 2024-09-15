@@ -1,6 +1,7 @@
 {
   "parent": "block/cube_bottom_top",
   "textures": {
+    "particle": "world_expansion:block/baobab_planks",
     "bottom": "world_expansion:block/baobab_planks",
     "top": "world_expansion:block/baobab_planks",
     "side": "world_expansion:block/baobab_planks"

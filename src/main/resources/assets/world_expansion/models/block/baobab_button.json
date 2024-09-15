@@ -1,6 +1,7 @@
 {
   "parent": "block/button",
   "textures": {
+    "particle": "world_expansion:block/baobab_planks",
     "texture": "world_expansion:block/baobab_planks"
   },
   "render_type": "solid"

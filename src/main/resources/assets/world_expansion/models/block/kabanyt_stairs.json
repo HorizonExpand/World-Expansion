@@ -1,6 +1,7 @@
 {
   "parent": "block/stairs",
   "textures": {
+    "particle": "world_expansion:block/kabanyt",
     "bottom": "world_expansion:block/kabanyt",
     "top": "world_expansion:block/kabanyt",
     "side": "world_expansion:block/kabanyt"
