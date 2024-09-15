@@ -5729,37 +5729,6 @@
       "path": "~/Procedures/Archeology/Suspicious Mud"
     },
     {
-      "name": "SuspiciousMudObnovlieniieTika",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "suspicious_mud_obnovlieniie_tika",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/SuspiciousMudObnovlieniieTikaProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Archeology/Suspicious Mud"
-    },
-    {
       "name": "AncientCorridorsEntrance",
       "type": "structure",
       "compiles": true,
@@ -6778,29 +6747,6 @@
         ]
       },
       "path": "~/Procedures/Shotgun"
-    },
-    {
-      "name": "Ti",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ti",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/TiProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Archeology/Suspicious Mud"
     }
   ],
   "variable_elements": [
@@ -8084,24 +8030,24 @@
   },
   "language_map": {
     "ru_ru": {
-      "item.world_expansion.copper_horn3": "Медный рог ",
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
-      "biome.world_expansion.politania": "Политания",
+      "item.world_expansion.copper_horn3": "Медный рог ",
       "item.world_expansion.copper_horn2": "Медный рог ",
+      "biome.world_expansion.politania": "Политания",
       "item.world_expansion.copper_horn5": "Медный рог ",
       "item.world_expansion.copper_horn4": "Медный рог ",
       "item.world_expansion.copper_horn7": "Медный рог ",
-      "block.world_expansions.kabanyt_bricks_slab": "Kabanyt bricks slab",
-      "block.world_expansion.little_shroomlight": "Маленький грибосвет",
       "item.world_expansion.copper_horn6": "Медный рог ",
-      "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
+      "block.world_expansion.little_shroomlight": "Маленький грибосвет",
+      "block.world_expansions.kabanyt_bricks_slab": "Kabanyt bricks slab",
       "item.world_expansion.copper_horn9": "Медный рог ",
+      "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
       "item.world_expansion.copper_horn8": "Медный рог ",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
       "advancements.the_wildest_in_the_wild_west.descr": "Умрите от Перекати-поля",
       "block.world_expansion.kabanyt_copper_ore": "Меденосный кабанит",
-      "key.world_expansions.gun_reload": "Gun Reload",
       "block.world_expansion.kabanyt_tile_wall": "Ограда из кабанитной плитки",
+      "key.world_expansions.gun_reload": "Gun Reload",
       "block.world_expansion.baobab_fence": "Забор из древесины баобаба",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Инвентарь",
       "advancements.oh_great_baobab.title": "Ох, Великий Баобаб!",
@@ -8117,8 +8063,8 @@
       "block.world_expansion.stripped_baobab_wood": "Обтёсанная кора баобаба",
       "block.world_expansions.kabanyt_tiles": "Kabanyt tiles",
       "block.world_expansion.aloe_vera": "Алое вера",
-      "block.world_expansions.baobab_door": "Baobab door",
       "block.world_expansions.baobab_leaves": "Baobab leaves",
+      "block.world_expansions.baobab_door": "Baobab door",
       "block.world_expansion.kabanyt_titanium_ore": "Титаноносный кабанит",
       "block.world_expansions.kabanyt_tile_slab": "Kabanyt tiles slab",
       "item.world_expansions.judas_fruit": "Judas Fruit",
@@ -8377,24 +8323,24 @@
       "item.world_expansions.ice_skates_boots": "Ice Skates"
     },
     "en_us": {
-      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
-      "item.world_expansion.copper_horn2": "Copper Horn",
+      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "biome.world_expansion.politania": "Politania",
+      "item.world_expansion.copper_horn2": "Copper Horn",
       "item.world_expansion.copper_horn5": "Copper Horn",
       "item.world_expansion.copper_horn4": "Copper Horn",
       "item.world_expansion.copper_horn7": "Copper Horn",
-      "block.world_expansions.kabanyt_bricks_slab": "Kabanyt bricks slab",
-      "block.world_expansion.little_shroomlight": "Little Shroomlight",
       "item.world_expansion.copper_horn6": "Copper Horn",
-      "item.world_expansion.copper_horn9": "Copper Horn",
+      "block.world_expansion.little_shroomlight": "Little Shroomlight",
+      "block.world_expansions.kabanyt_bricks_slab": "Kabanyt bricks slab",
       "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
+      "item.world_expansion.copper_horn9": "Copper Horn",
       "item.world_expansion.copper_horn8": "Copper Horn",
       "advancements.the_wildest_in_the_wild_west.descr": "Die of a Tumbleweed",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
       "block.world_expansion.kabanyt_copper_ore": "Kabanyt Copper Ore",
-      "key.world_expansions.gun_reload": "Gun Reload",
       "block.world_expansion.kabanyt_tile_wall": "Kabanyt tiles wall",
+      "key.world_expansions.gun_reload": "Gun Reload",
       "block.world_expansion.baobab_fence": "Baobab fence",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
       "advancements.oh_great_baobab.title": "Oh, the Great Baobab!",
@@ -8410,8 +8356,8 @@
       "block.world_expansion.stripped_baobab_wood": "Stripped baobab wood",
       "block.world_expansions.kabanyt_tiles": "Kabanyt tiles",
       "block.world_expansion.aloe_vera": "Aloe Vera",
-      "block.world_expansions.baobab_door": "Baobab door",
       "block.world_expansions.baobab_leaves": "Baobab leaves",
+      "block.world_expansions.baobab_door": "Baobab door",
       "block.world_expansion.kabanyt_titanium_ore": "Kabanyt Titanium Ore",
       "block.world_expansions.kabanyt_tile_slab": "Kabanyt tiles slab",
       "item.world_expansions.judas_fruit": "Judas Fruit",

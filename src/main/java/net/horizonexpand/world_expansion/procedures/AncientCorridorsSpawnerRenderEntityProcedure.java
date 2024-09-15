@@ -7,7 +7,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.client.model.data.ModelData;
 import net.minecraftforge.client.event.RenderLevelStageEvent;
 import net.minecraftforge.api.distmarker.Dist;
@@ -19,7 +18,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.EntityBlock;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemDisplayContext;
@@ -50,7 +48,6 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 import javax.annotation.Nullable;
 
-import java.util.concurrent.atomic.AtomicReference;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -275,38 +272,54 @@ public class AncientCorridorsSpawnerRenderEntityProcedure {
 								if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip9
 										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip9)
 										: -1) == 0) {
-									renderItem((new Object() {
-										public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-											AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-											BlockEntity _ent = world.getBlockEntity(pos);
-											if (_ent != null)
-												_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-											return _retval.get();
+									renderItem(new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((new Object() {
+										public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getString(tag);
+											return "";
 										}
-									}.getItemStack(world, new BlockPos(positionx, positiony, positionz), 0)), (positionx + 0.5), (positiony + 0.5), (positionz + 0.5), 0, 0, 0, (float) 0.5, false, false);
-								} else if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip22
-										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip22)
+									}.getValue(world, new BlockPos(positionx, positiony, positionz), "Items"))).toLowerCase(java.util.Locale.ENGLISH)))), (positionx + 0.5), (positiony + 0.7), (positionz + 0.5), 0, 0, 0, (float) 0.5, false, false);
+								} else if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip23
+										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip23)
 										: -1) == 1) {
-									renderItem((new Object() {
-										public ItemStack getItemStack(LevelAccessor world, BlockPos pos, int slotid) {
-											AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-											BlockEntity _ent = world.getBlockEntity(pos);
-											if (_ent != null)
-												_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
-											return _retval.get();
+									renderItem(new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((new Object() {
+										public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getString(tag);
+											return "";
 										}
-									}.getItemStack(world, new BlockPos(positionx, positiony, positionz), 0)), (positionx + 0.5), (positiony + 0.9), (positionz + 0.5), 0, 0, 0, (float) 0.5, false, false);
-								} else if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip35
-										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip35)
+									}.getValue(world, new BlockPos(positionx, positiony, positionz), "Items"))).toLowerCase(java.util.Locale.ENGLISH)))), (positionx + 0.5), (positiony + 0.9), (positionz + 0.5), 0, 0, 0, (float) 0.5, false, false);
+								} else if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip37
+										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip37)
 										: -1) == 2) {
-									renderItem(new ItemStack(Blocks.STONE), (positionx + 0.5), (positiony + 1.1), (positionz + 0.5), 0, 0, 0, (float) 0.5, false, false);
+									renderItem(new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((new Object() {
+										public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getString(tag);
+											return "";
+										}
+									}.getValue(world, new BlockPos(positionx, positiony, positionz), "Items"))).toLowerCase(java.util.Locale.ENGLISH)))), (positionx + 0.5), (positiony + 1), (positionz + 0.5), 0, 0, 0, (float) 0.5, false, false);
+								} else if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip51
+										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip51)
+										: -1) == 3) {
+									renderItem(new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(((new Object() {
+										public String getValue(LevelAccessor world, BlockPos pos, String tag) {
+											BlockEntity blockEntity = world.getBlockEntity(pos);
+											if (blockEntity != null)
+												return blockEntity.getPersistentData().getString(tag);
+											return "";
+										}
+									}.getValue(world, new BlockPos(positionx, positiony, positionz), "Items"))).toLowerCase(java.util.Locale.ENGLISH)))), (positionx + 0.5), (positiony + 1.1), (positionz + 0.5), 0, 0, 0, (float) 0.5, false, false);
 								}
 							} else if ((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock() == WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER.get()) {
-								if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip49
-										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip49)
+								if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip70
+										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip70)
 										: -1) == 1
-										|| ((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip54
-												? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip54)
+										|| ((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip75
+												? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip75)
 												: -1) == 2) {
 									renderEntity(ForgeRegistries.ENTITY_TYPES.getValue(new ResourceLocation(((new Object() {
 										public String getValue(LevelAccessor world, BlockPos pos, String tag) {
