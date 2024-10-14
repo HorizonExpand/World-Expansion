@@ -19,6 +19,7 @@ import net.horizonexpand.world_expansion.block.SuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobabwoodBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobablogBlock;
 import net.horizonexpand.world_expansion.block.RawTitaniumBlockBlock;
+import net.horizonexpand.world_expansion.block.MysteriousDoorBlock;
 import net.horizonexpand.world_expansion.block.MultiCraftingTableBlock;
 import net.horizonexpand.world_expansion.block.LittleShroomlightBlock;
 import net.horizonexpand.world_expansion.block.KabanytwallBlock;
@@ -126,6 +127,7 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> BOTTLE = REGISTRY.register("bottle", () -> new BottleBlock());
 	public static final RegistryObject<Block> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register("bottle_with_mini_fireflies", () -> new BottleWithMiniFirefliesBlock());
 	public static final RegistryObject<Block> ANCIENT_CORRIDORS_SPAWNER = REGISTRY.register("ancient_corridors_spawner", () -> new AncientCorridorsSpawnerBlock());
+	public static final RegistryObject<Block> MYSTERIOUS_DOOR = REGISTRY.register("mysterious_door", () -> new MysteriousDoorBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

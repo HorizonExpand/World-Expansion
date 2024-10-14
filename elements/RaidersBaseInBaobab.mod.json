@@ -1,14 +1,10 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "structure",
   "definition": {
     "structure": "raiders_base_in_baobab",
     "projection": "rigid",
-    "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
-    ],
+    "ignoredBlocks": [],
     "spacing": 48,
     "separation": 32,
     "restrictionBiomes": [

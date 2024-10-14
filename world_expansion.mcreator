@@ -1670,7 +1670,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/tumbleweed.json"
         ]
       },
-      "path": "~/Drops/Blocks"
+      "path": "~/Loot Table/Blocks"
     },
     {
       "name": "AloeVeraTigerPriStolknovieniiSushchnostiSRastieniiem",
@@ -2005,7 +2005,7 @@
           "src/main/resources/data/minecraft/loot_tables/entities/evoker.json"
         ]
       },
-      "path": "~/Drops/Mobs"
+      "path": "~/Loot Table/Mobs"
     },
     {
       "name": "PieceTotemOfUndying",
@@ -2669,14 +2669,14 @@
       "name": "SuspiciousMudDrop",
       "type": "loottable",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "suspicious_mud_drop",
       "metadata": {
         "files": [
           "src/main/resources/data/world_expansion/loot_tables/chests/suspicious_mud_drop.json"
         ]
       },
-      "path": "~/Drops/Archeology"
+      "path": "~/Loot Table/Archeology"
     },
     {
       "name": "AloeVera",
@@ -3462,7 +3462,7 @@
           "src/main/resources/data/world_expansion/loot_tables/chests/mud_ruin0_drop.json"
         ]
       },
-      "path": "~/Drops/Structures"
+      "path": "~/Loot Table/Structures"
     },
     {
       "name": "RaidersBaseInBaobabDrop",
@@ -3475,7 +3475,7 @@
           "src/main/resources/data/world_expansion/loot_tables/chests/raiders_base_in_baobab_drop.json"
         ]
       },
-      "path": "~/Drops/Structures"
+      "path": "~/Loot Table/Structures"
     },
     {
       "name": "RaidersBaseInBaobabDropBonus",
@@ -3488,7 +3488,7 @@
           "src/main/resources/data/world_expansion/loot_tables/chests/raiders_base_in_baobab_drop_bonus.json"
         ]
       },
-      "path": "~/Drops/Structures"
+      "path": "~/Loot Table/Structures"
     },
     {
       "name": "BruteArmorTrimSmithingTemplateDopolnitielnaiaInformatsiia",
@@ -4115,7 +4115,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_coal_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "KabanytCopperOreDrop",
@@ -4128,7 +4128,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_copper_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "KabanytDiamondOreDrop",
@@ -4141,7 +4141,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_diamond_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "KabanytEmeraldOreDrop",
@@ -4154,7 +4154,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_emerald_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "KabanytGoldOreDrop",
@@ -4167,7 +4167,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_gold_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "KabanytIronOreDrop",
@@ -4180,7 +4180,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_iron_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "KabanytLapisOreDrop",
@@ -4193,7 +4193,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_lapis_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "KabanytRedstoneOreDrop",
@@ -4206,7 +4206,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_redstone_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "KabanytTitaniumOre",
@@ -4235,7 +4235,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_titanium_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "TitaniumOreDrop",
@@ -4248,7 +4248,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/titanium_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "DeepslateTitaniumOreDrop",
@@ -4261,7 +4261,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/deepslate_titanium_ore.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "CoalFromBlastingKabanytCoalOre",
@@ -4717,7 +4717,7 @@
           "src/main/resources/data/world_expansion/loot_tables/blocks/kabanyt_redstone_ore_on.json"
         ]
       },
-      "path": "~/Drops/Blocks/Kabanyt/Ore"
+      "path": "~/Loot Table/Blocks/Kabanyt/Ore"
     },
     {
       "name": "SavannaSurfaceTerracotta",
@@ -4956,7 +4956,7 @@
           "src/main/resources/data/world_expansion/loot_tables/chests/pillager_outpost.json"
         ]
       },
-      "path": "~/Drops/Structures"
+      "path": "~/Loot Table/Structures"
     },
     {
       "name": "Windometer",
@@ -5266,7 +5266,7 @@
           "src/main/resources/data/world_expansion/loot_modifiers/pillager_outpost_modifier.json"
         ]
       },
-      "path": "~/Drops/Modifier"
+      "path": "~/Loot Table/Modifier"
     },
     {
       "name": "MultiCraftingTableOutputSlot",
@@ -5950,7 +5950,7 @@
           "src/main/resources/data/world_expansion/loot_tables/chests/ancient_corridors_entrance_drop.json"
         ]
       },
-      "path": "~/Drops/Structures"
+      "path": "~/Loot Table/Structures"
     },
     {
       "name": "AncientCorridorsHallDrop",
@@ -5963,7 +5963,7 @@
           "src/main/resources/data/world_expansion/loot_tables/chests/ancient_corridors_hall_drop.json"
         ]
       },
-      "path": "~/Drops/Structures"
+      "path": "~/Loot Table/Structures"
     },
     {
       "name": "HornStopPlay",
@@ -6170,17 +6170,6 @@
         ]
       },
       "path": "~/Procedures/Shotgun"
-    },
-    {
-      "name": "KickbackMultiplierAttribute",
-      "type": "attribute",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "kickback_multiplier_attribute",
-      "metadata": {
-        "files": []
-      },
-      "path": "~/Attribute"
     },
     {
       "name": "GamblersShotgun",
@@ -6605,45 +6594,6 @@
       }
     },
     {
-      "name": "GamblersShotgunShoot",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "gamblers_shotgun_shoot",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/GamblersShotgunShootProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Shotgun"
-    },
-    {
       "name": "GunReloadProcedure",
       "type": "procedure",
       "compiles": true,
@@ -6747,6 +6697,175 @@
         ]
       },
       "path": "~/Procedures/Shotgun"
+    },
+    {
+      "name": "GamblersShotgunShooting",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gamblers_shotgun_shooting",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/GamblersShotgunShootingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Shotgun"
+    },
+    {
+      "name": "KickbackMultiplier",
+      "type": "attribute",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kickback_multiplier",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Attribute"
+    },
+    {
+      "name": "Tavern",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tavern",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/template_pool/tavern_cellar.json",
+          "src/main/resources/data/world_expansion/worldgen/structure/tavern.json",
+          "src/main/resources/data/world_expansion/worldgen/template_pool/tavern.json",
+          "src/main/resources/data/world_expansion/worldgen/structure_set/tavern.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "MysteriousDoor",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mysterious_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/world_expansion/models/block/mysterious_door_bottom_left.json",
+          "src/main/resources/assets/world_expansion/models/item/mysterious_door.json",
+          "src/main/resources/assets/world_expansion/models/block/mysterious_door_bottom_right_open.json",
+          "src/main/resources/assets/world_expansion/models/block/mysterious_door_top_right.json",
+          "src/main/resources/assets/world_expansion/blockstates/mysterious_door.json",
+          "src/main/resources/assets/world_expansion/models/block/mysterious_door_top_left_open.json",
+          "src/main/resources/assets/world_expansion/models/block/mysterious_door_top_right_open.json",
+          "src/main/resources/assets/world_expansion/models/block/mysterious_door_bottom_left_open.json",
+          "src/main/java/net/horizonexpand/world_expansion/block/MysteriousDoorBlock.java",
+          "src/main/resources/assets/world_expansion/models/block/mysterious_door_bottom_right.json",
+          "src/main/resources/data/world_expansion/loot_tables/blocks/mysterious_door.json",
+          "src/main/resources/assets/world_expansion/models/block/mysterious_door_top_left.json"
+        ]
+      },
+      "path": "~/Blocks"
+    },
+    {
+      "name": "TavernCellarLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tavern_cellar_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_tables/chests/tavern_cellar_loot_table.json"
+        ]
+      },
+      "path": "~/Loot Table/Structures"
+    },
+    {
+      "name": "MudHouse0",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mud_house_0",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/structure_set/mud_house_0.json",
+          "src/main/resources/data/world_expansion/worldgen/structure/mud_house_0.json",
+          "src/main/resources/data/world_expansion/worldgen/template_pool/mud_house_0.json"
+        ]
+      },
+      "path": "~/Structures"
+    },
+    {
+      "name": "MudHouse0LootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mud_house_0_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_tables/chests/mud_house_0_loot_table.json"
+        ]
+      },
+      "path": "~/Loot Table/Structures"
+    },
+    {
+      "name": "MysteriousDoorCancelAction",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mysterious_door_cancel_action",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/MysteriousDoorCancelActionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -7484,6 +7603,7 @@
       "CUSTOM:BaobabStairs"
     ],
     "BLOCKS:minecraft:mineable/axe": [
+      "~CUSTOM:MysteriousDoor",
       "~CUSTOM:MultiCraftingTable",
       "~CUSTOM:Baobabdoor",
       "~CUSTOM:Baobabtrapdoor",
@@ -8002,6 +8122,41 @@
       "BlankShotgunBullet",
       "IceSkates"
     ],
+    "CUSTOM:Worldexpansionblocks": [
+      "BaobabWood",
+      "BaobabLog",
+      "BaobabPlanks",
+      "BaobabStairs",
+      "BaobabSlab",
+      "BaobabFence",
+      "BaobabFenceGate",
+      "BaobabPressurePlate",
+      "BaobabButton",
+      "Strippedbaobabwood",
+      "Strippedbaobablog",
+      "Baobabtrapdoor",
+      "Baobabdoor",
+      "MysteriousDoor",
+      "Kabanyt",
+      "Kabanytbricks",
+      "Kabanyttiles",
+      "Carvedkabanyt",
+      "Kabanytstairs",
+      "Kabanytslab",
+      "Kabanytwall",
+      "Kabanytbricksstairs",
+      "Kabanytbricksslab",
+      "Kabanytbrickswall",
+      "Kabanyttilesstairs",
+      "Kabanyttilesslab",
+      "Kabanyttileswall",
+      "TitaniumBlock",
+      "MultiCraftingTable",
+      "Windometer",
+      "Bottle",
+      "BottleWithMiniFireflies",
+      "AncientCorridorsSpawner"
+    ],
     "CUSTOM:NatureBlocks": [
       "BaobabLeaves",
       "JudasFruitPlant",
@@ -8030,24 +8185,23 @@
   },
   "language_map": {
     "ru_ru": {
-      "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "item.world_expansion.copper_horn3": "Медный рог ",
-      "item.world_expansion.copper_horn2": "Медный рог ",
+      "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
       "biome.world_expansion.politania": "Политания",
+      "item.world_expansion.copper_horn2": "Медный рог ",
       "item.world_expansion.copper_horn5": "Медный рог ",
+      "attribute.world_expansion.kickback_multiplier": "Отдача",
       "item.world_expansion.copper_horn4": "Медный рог ",
       "item.world_expansion.copper_horn7": "Медный рог ",
       "item.world_expansion.copper_horn6": "Медный рог ",
       "block.world_expansion.little_shroomlight": "Маленький грибосвет",
-      "block.world_expansions.kabanyt_bricks_slab": "Kabanyt bricks slab",
-      "item.world_expansion.copper_horn9": "Медный рог ",
       "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
+      "item.world_expansion.copper_horn9": "Медный рог ",
       "item.world_expansion.copper_horn8": "Медный рог ",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
       "advancements.the_wildest_in_the_wild_west.descr": "Умрите от Перекати-поля",
       "block.world_expansion.kabanyt_copper_ore": "Меденосный кабанит",
       "block.world_expansion.kabanyt_tile_wall": "Ограда из кабанитной плитки",
-      "key.world_expansions.gun_reload": "Gun Reload",
       "block.world_expansion.baobab_fence": "Забор из древесины баобаба",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Инвентарь",
       "advancements.oh_great_baobab.title": "Ох, Великий Баобаб!",
@@ -8055,20 +8209,12 @@
       "subtitles.music_disc_spooky_forest": "",
       "item.world_expansion.mini_fireflies_spawn_egg": "Яйцо призыва Мини-Светлячков",
       "advancements.ancient_civilization_part_2.description": "Что это за странное строение?",
-      "item.world_expansions.titanium_ingot": "Titanium Ingot",
       "block.world_expansion.titanium_block": "Титановый блок",
       "block.world_expansion.baobab_log": "Древисина баобаба",
       "jei.world_expansion.category.multi_crafting_table_copper_horn_jei_category": "Мульти-Верстак (Медные рога)",
-      "block.world_expansions.baobab_fence": "Baobab fence",
       "block.world_expansion.stripped_baobab_wood": "Обтёсанная кора баобаба",
-      "block.world_expansions.kabanyt_tiles": "Kabanyt tiles",
       "block.world_expansion.aloe_vera": "Алое вера",
-      "block.world_expansions.baobab_leaves": "Baobab leaves",
-      "block.world_expansions.baobab_door": "Baobab door",
       "block.world_expansion.kabanyt_titanium_ore": "Титаноносный кабанит",
-      "block.world_expansions.kabanyt_tile_slab": "Kabanyt tiles slab",
-      "item.world_expansions.judas_fruit": "Judas Fruit",
-      "block.world_expansions.kabanyt_diamond_ore": "Kabanyt Diamond Ore",
       "trim_pattern.world_expansion.brute": "§7Отделка «Брутал»",
       "block.world_expansion.baobab_door": "Дверь из древесины баобаба",
       "subtitles.melody2": "Гул медного рога",
@@ -8082,114 +8228,75 @@
       "subtitles.melody8": "Гул медного рога",
       "subtitles.melody7": "Гул медного рога",
       "subtitles.dealers_shotgun_shooting": "",
-      "block.world_expansions.windometer": "Wind\u0027o Meter",
       "gui.world_expansion.snow_cannon_gui.label_x": "X",
       "gui.world_expansion.snow_cannon_gui.label_y": "Y",
-      "block.world_expansions.ancient_corridors_spawner": "Ancient Corridors Spawner",
       "gui.world_expansion.snow_cannon_gui.label_z": "Z",
-      "item.world_expansions.gamblers_shotgun_chamber": "Gambler\u0027s Shotgun Chamber",
-      "block.world_expansions.kabanyt_iron_ore": "Kabanyt Iron Ore",
       "gui.world_expansion.snow_cannon_gui.label_powder_snow": "Рыхлый снег:",
       "death.attack.cannon_explosion_damage_type.player": "%1$s взорвался вместе с пушкой при попытке к бегству %2$s",
       "block.world_expansion.stripped_baobab_log": "Обтёсанная древесина баобаба",
-      "gui.world_expansions.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
-      "item_group.world_expansions.mobs": "WE: Mobs",
       "biome.world_expansion.dry_savanna": "Сухая саванна",
       "block.world_expansion.raw_titanium_block": "Блок необработанного титана",
       "subtitles.dealers_shotgun_chamber_start": "",
-      "block.world_expansions.judas_fruit_plant": "Judas Fruit",
       "block.world_expansion.deepslate_titanium_ore": "Титаноносный глубинный сланец",
       "death.attack.tumbleweed_damage_type.player": "Ковбой %1$s был остановлен при попытке к бегству %2$s",
       "block.world_expansion.kabanyt_tile_slab": "Плита из кабанитной плитки",
-      "block.world_expansions.baobab_sapling": "Baobab Sapling",
-      "item_group.world_expansions.natural_blocks": "WE: Natural Blocks",
       "subtitles.dealers_shotgun_forearm_end": "",
       "subtitles.harmony9": "Высокий гул медного рога",
-      "block.world_expansions.baobab_trapdoor": "Baobab trapdoor",
       "subtitles.harmony7": "Высокий гул медного рога",
-      "advancements.world_expansion.descr": "Исследуйте мир!",
       "subtitles.harmony8": "Высокий гул медного рога",
+      "advancements.world_expansion.descr": "Исследуйте мир!",
       "subtitles.harmony5": "Высокий гул медного рога",
       "subtitles.harmony6": "Высокий гул медного рога",
       "subtitles.harmony3": "Высокий гул медного рога",
       "wind.world_expansion.west": "Западный",
       "subtitles.harmony4": "Высокий гул медного рога",
-      "attribute.world_expansion.kickback_multiplier_attribute": "Множитель отдачи",
       "advancements.lisa_simpson.title": "Лиза Симпсон",
       "block.world_expansion.kabanyt_coal_ore": "Угленосный кабанит",
-      "gui.world_expansions.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
-      "block.world_expansions.kabanyt_titanium_ore": "Kabanyt Titanium Ore",
-      "block.world_expansions.baobab_slab": "Baobab slab",
       "item.world_expansion.split_judas_fruit": "Расколотый плод Иуды",
       "block.world_expansion.judas_fruit_plant": "Плод Иуды",
       "death.attack.cannon_explosion_damage_type.item": "%1$s взорвался вместе с пушкой из-за %2$s при помощи %3$s",
-      "item.world_expansions.piece_totem_of_undying": "Piece Totem of Undying",
-      "block.world_expansions.deepslate_titanium_ore": "Deepslate Titanium Ore",
       "subtitles.empty_dealers_shotgun_shooting": "",
-      "block.world_expansions.kabanyt_redstone_ore": "Kabanyt Redstone Ore",
-      "item.world_expansions.live_shotgun_bullet": "Live Shotgun Bullet",
       "block.world_expansion.tumbleweed": "Перекати-поле",
       "item_group.world_expansion.items": "WE: Предметы",
       "subtitles.harmony1": "Высокий гул медного рога",
       "subtitles.harmony2": "Высокий гул медного рога",
-      "block.world_expansions.titanium_block": "Titanium Block",
       "block.world_expansion.kabanyt_bricks_slab": "Кирпичная плита из кабанита",
-      "block.world_expansions.baobab_planks": "Baobab planks",
       "advancements.ancient_civilization_part_2.title": "Древняя Цивилизация: Часть 2",
       "subtitles.harmony0": "Высокий гул медного рога",
-      "biome.world_expansion.baobab_valley": "Долина баобабов",
       "subtitles.music_disc_destroyer": "",
-      "block.world_expansions.baobab_button": "Baobab button",
+      "biome.world_expansion.baobab_valley": "Долина баобабов",
       "item_group.world_expansion.natural_blocks": "WE: Природные блоки",
-      "block.world_expansions.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "advancements.tile_slab.title": "Плиточная плита",
-      "block.world_expansions.kabanyt_coal_ore": "Kabanyt Coal Ore",
       "item_group.world_expansion.mobs": "WE: Мобы",
-      "block.world_expansions.astilba_multicolored": "Astilba Multicolored",
       "advancements.poor_zhorik.title": "Бедный Жорик!",
       "key.world_expansion.gun_discharge": "Разрядка оружия",
       "advancements.oh_great_baobab.descr": "Найдите Долину баобабов",
       "command.world_expansion.wind.get": "Направление ветра:",
-      "block.world_expansions.kabanyt_gold_ore": "Kabanyt Gold Ore",
       "block.world_expansion.kabanyt_gold_ore": "Золотоносный кабанит",
       "wind.world_expansion.north": "Северный",
-      "block.world_expansions.raw_titanium_block": "Raw Titanium Block",
       "item.world_expansion.raw_titanium": "Необработанный титан",
-      "item.world_expansions.split_judas_fruit": "Judas Fruit",
       "item.world_expansion.judas_fruit": "Плод Иуды",
-      "block.world_expansions.kabanyt_lapis_ore": "Kabanyt Lapis Lazuli Ore",
-      "entity.world_expansions.mini_fireflies": "Mini-Fireflies",
       "gui.world_expansion.snow_cannon_gui.label_snow": "Снег:",
       "block.world_expansion.astilba_multicolored": "Астильба многоцветная",
       "block.world_expansion.baobab_sapling": "Саженец баобаба",
       "block.world_expansion.yellow_astilba": "Жёлтая астильба",
       "block.world_expansion.kabanyt_redstone_ore": "Редстоуноносный кабанит",
-      "block.world_expansions.kabanyt_tile_stairs": "Kabanyt tiles stairs",
       "item.world_expansion.copper_horn1": "Медный рог ",
-      "block.world_expansions.kabanyt": "Kabanyt",
       "item.world_expansion.copper_horn0": "Медный рог ",
-      "block.world_expansions.kabanyt_bricks": "Kabanyt bricks",
       "block.world_expansion.kabanyt_tile_stairs": "Ступеньки из кабанитной плитки",
       "subtitles.bass1": "Ритмичный гул медного рога",
       "subtitles.bass0": "Ритмичный гул медного рога",
       "advancements.world_expansion.title": "World Expansion",
       "block.world_expansion.kabanyt_emerald_ore": "Изумрудоносный кабанит",
-      "block.world_expansions.baobab_wood": "Baobab wood",
       "block.world_expansion.kabanyt_slab": "Плита из кабанита",
       "subtitles.dealers_shotgun_forearm_start": "",
       "item.world_expansion.gamblers_shotgun": "Дробовик §oИгрального",
       "death.attack.tumbleweed_damage_type.item": "Ковбой %1$s был остановлен %2$s при помощи %3$s",
       "advancements.ancient_civilization_part_1.title": "Древняя Цивилизация: Часть 1",
       "block.world_expansion.carved_kabanyt": "Резной кабанит",
-      "block.world_expansions.little_shroomlight": "Little Shroomlight",
       "block.world_expansion.baobab_fence_gate": "Калитка из древесины баобаба",
-      "item.world_expansions.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
       "block.world_expansion.baobab_pressure_plate": "Нажимная пластина из древесины баобаба",
       "advancements.fallen_paradise.title": "Павший Рай",
-      "block.world_expansions.yellow_astilba": "Yellow astilba",
-      "block.world_expansions.tiger_aloe_vera": "Aloe vera tiger",
-      "item.world_expansions.tumbleweed_item": "Tumbleweed ",
-      "item.world_expansions.blank_shotgun_bullet": "Blank Shotgun Bullet",
       "entity.world_expansion.projectile_tumbleweed_projectile": "Перекати-поле",
       "item.world_expansion.piece_totem_of_undying": "Кусочек Тотема бессмертия",
       "block.world_expansion.tiger_aloe_vera": "Тигровое алое вера",
@@ -8198,22 +8305,17 @@
       "block.world_expansion.baobab_wood": "Кора баобаба",
       "subtitles.bass7": "Ритмичный гул медного рога",
       "subtitles.bass6": "Ритмичный гул медного рога",
-      "block.world_expansions.baobab_stairs": "Baobab stairs",
       "subtitles.bass9": "Ритмичный гул медного рога",
       "subtitles.bass8": "Ритмичный гул медного рога",
       "item.world_expansion.ice_skates_boots": "Коньки",
       "subtitles.bass3": "Ритмичный гул медного рога",
-      "block.world_expansions.kabanyt_copper_ore": "Kabanyt Copper Ore",
       "block.world_expansion.kabanyt": "Кабанит",
       "subtitles.bass2": "Ритмичный гул медного рога",
       "subtitles.bass5": "Ритмичный гул медного рога",
       "subtitles.bass4": "Ритмичный гул медного рога",
-      "block.world_expansions.tumbleweed": "Tumbleweed",
-      "attribute.world_expansions.kickback_multiplier_attribute": "Kickback Multiplier",
-      "block.world_expansions.kabanyt_redstone_ore_on": "Kabanyt Redstone Ore",
       "wind.world_expansion.east": "Восточный",
       "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
-      "block.world_expansions.kabanyt_wall": "Kabanyt wall",
+      "action.mysterious_door": "Дверь не поддаётся усилиям открыть её. Стоит вернуться чуть позже",
       "entity.world_expansion.projectile_snow_projectile": "Ком снега",
       "block.world_expansion.kabanyt_bricks": "Кирпичи из кабанита",
       "block.world_expansion.windometer": "Ветрометр",
@@ -8224,103 +8326,66 @@
       "block.world_expansion.baobab_planks": "Доски из древесины баобаба",
       "block.world_expansion.hanging_bottle": "Подвешенная бутылка",
       "block.world_expansion.kabanyt_tiles": "Плитняк из кабанита",
-      "block.world_expansions.bottle_with_mini_fireflies": "Bottle With Mini-Fireflies",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_y": "Y",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_z": "Z",
-      "item.world_expansions.brute_armor_trim_smithing_template": "Brute Armor Trim Smithing Template",
       "item.world_expansion.tumbleweed_item": "Перекати-поле",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_x": "X",
-      "block.world_expansions.baobab_fence_gate": "Baobab fence gate",
-      "block.world_expansions.multi_crafting_table": "Multi-Crafting Table",
-      "item_group.world_expansions.items": "WE: Items",
       "advancements.fallen_paradise.descr": "Найдите Сухую саванну",
       "entity.world_expansion.projectile_powder_snow_projectile": "Ком рыхлого снега",
       "trim_material.world_expansion.titanium": "Титановый материал",
       "item.world_expansion.live_shotgun_bullet": "Боевой патрон дробовика",
       "item.world_expansion.leave_of_aloe_vera": "Листки алое вера",
       "block.world_expansion.kabanyt_iron_ore": "Железоносный кабанит",
-      "block.world_expansions.baobab_pressure_plate": "Baobab pressure plate",
       "block.world_expansion.astilba": "Астильба",
-      "item_group.world_expansions.building_blocks": "WE: Building Blocks",
-      "block.world_expansions.suspicious_mud": "Suspicious Mud",
       "advancements.the_wildest_in_the_wild_west.title": "Самый дикий на Диком Западе",
       "wind.world_expansion.still": "Штиль",
       "subtitles.dealers_shotgun_shell": "",
-      "item.world_expansions.leave_of_aloe_vera": "Leave of aloe vera",
       "item.world_expansion.gamblers_shotgun_chamber": "Магазин Дробовика §oИгрального",
       "death.attack.cannon_explosion_damage_type": "%1$s взорвался вместе с пушкой",
-      "block.world_expansions.kabanyt_emerald_ore": "Kabanyt Emerald Ore",
       "gui.world_expansion.cannon_coords_distance.distance": "Дистанция:",
       "block.world_expansion.baobab_stairs": "Ступеньки из древесины баобаба",
-      "block.world_expansions.stripped_baobab_wood": "Stripped baobab wood",
       "block.world_expansion.kabanyt_wall": "Ограда из кабанита",
       "entity.world_expansion.mini_fireflies": "Мини-Светлячки",
-      "block.world_expansions.kabanyt_bricks_stairs": "Kabanyt bricks stairs",
       "block.world_expansion.kabanyt_redstone_ore_on": "Редстоуноносный кабанит",
-      "block.world_expansions.stripped_baobab_log": "Stripped baobab log",
-      "block.world_expansions.aloe_vera": "Aloe Vera",
-      "block.world_expansions.bottle": "Bottle",
       "block.world_expansion.baobab_button": "Кнопка из древесины баобаба",
       "block.world_expansion.baobab_leaves": "Листва баобаба",
       "block.world_expansion.baobab_trapdoor": "Люк из древесины баобаба",
-      "item.world_expansions.music_disc_destroyer": "Music Disc ",
-      "block.world_expansions.titanium_ore": "Titanium Ore",
+      "block.world_expansion.mysterious_door": "Мистическая дверь",
       "block.world_expansion.bottle": "Бутылка",
-      "item.world_expansions.copper_horn7": "Copper Horn",
-      "item.world_expansions.copper_horn8": "Copper Horn",
-      "item.world_expansions.copper_horn9": "Copper Horn",
       "item_group.world_expansion.building_blocks": "WE: Строительные блоки",
       "item.world_expansion.music_disc_destroyer": "Пластинка",
       "block.world_expansion.kabanyt_stairs": "Ступеньки из кабанита",
       "death.attack.shotgun_damage_type.item": "%1$s был застрелен %2$s из дробовика %3$s",
-      "block.world_expansions.baobab_log": "Baobab log",
       "item.world_expansion.music_disc_destroyer.desc": "Hrumer — Destroyer",
       "entity.world_expansion.projectile_tnt_projectile": "Динамит",
       "advancements.tile_slab.descr": "Создайте плиту из плиточного кабанита (ну и название)...",
       "item.world_expansion.titanium_ingot": "Титановый слиток",
       "block.world_expansion.kabanyt_bricks_stairs": "Кирпичные ступеньки из кабанита",
       "command.world_expansion.wind.set": "Установлено направление ветра:",
-      "block.world_expansions.kabanyt_tile_wall": "Kabanyt tiles wall",
-      "item.world_expansions.gamblers_shotgun": "§oGambler\u0027s §rShotgun",
       "block.world_expansion.bottle_with_mini_fireflies": "Бутылка с Мини-Светлячками",
       "key.world_expansion.gun_reload": "Перезарядка оружия",
       "block.world_expansion.kabanyt_lapis_ore": "Лазуритоносный кабанит",
       "subtitles.dealers_shotgun_chamber_end": "",
-      "item.world_expansions.copper_horn0": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_9": "1x Медный рог 9",
-      "item.world_expansions.copper_horn1": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_8": "1x Медный рог 8",
-      "item.world_expansions.copper_horn2": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_7": "1x Медный рог 7",
       "death.attack.shotgun_damage_type.player": "%1$s был застрелен из дробовика при попытке к бегству %2$s",
-      "item.world_expansions.copper_horn3": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_6": "1x Медный рог 6",
-      "item.world_expansions.copper_horn4": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_5": "1x Медный рог 5",
-      "item.world_expansions.copper_horn5": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_4": "1x Медный рог 4",
-      "item.world_expansions.copper_horn6": "Copper Horn",
       "subtitles.dealers_shotgun_reload_start": "",
-      "item.world_expansions.music_disc_destroyer.desc": "Hrumer — Destroyer",
       "death.attack.shotgun_damage_type": "%1$s был застрелен из Дробовика",
       "wind.world_expansion.south": "Южный",
       "advancements.ancient_civilization_part_1.descr": "Найдите Политанию",
-      "block.world_expansions.kabanyt_stairs": "Kabanyt stairs",
       "advancements.poor_zhorik.descr": "Получите Козий рог",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_3": "1x Медный рог 3",
-      "block.world_expansions.astilba": "Astilba ",
-      "key.world_expansions.gun_discharge": "Gun Discharge",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_2": "1x Медный рог 2",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_1": "1x Медный рог 1",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_0": "1x Медный рог 0",
-      "item.world_expansions.raw_titanium": "Raw Titanium",
       "subtitles.dealers_shotgun_reload_continue": "",
       "block.world_expansion.titanium_ore": "Титановая руда",
       "block.world_expansion.ancient_corridors_spawner": "Ancient Corridors Spawner",
-      "block.world_expansion.hanging_bottle_witn_mini_fireflies": "Подвешенная бутылка с Мини-Светлячками",
-      "block.world_expansions.carved_kabanyt": "Carved kabanyt",
-      "block.world_expansions.kabanyt_slab": "Kabanyt slab",
-      "item.world_expansions.ice_skates_boots": "Ice Skates"
+      "block.world_expansion.hanging_bottle_witn_mini_fireflies": "Подвешенная бутылка с Мини-Светлячками"
     },
     "en_us": {
       "item.world_expansion.copper_horn3": "Copper Horn",
@@ -8328,11 +8393,11 @@
       "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn2": "Copper Horn",
       "item.world_expansion.copper_horn5": "Copper Horn",
+      "attribute.world_expansion.kickback_multiplier": "Kickback Multiplier",
       "item.world_expansion.copper_horn4": "Copper Horn",
       "item.world_expansion.copper_horn7": "Copper Horn",
-      "item.world_expansion.copper_horn6": "Copper Horn",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
-      "block.world_expansions.kabanyt_bricks_slab": "Kabanyt bricks slab",
+      "item.world_expansion.copper_horn6": "Copper Horn",
       "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "item.world_expansion.copper_horn9": "Copper Horn",
       "item.world_expansion.copper_horn8": "Copper Horn",
@@ -8340,7 +8405,6 @@
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
       "block.world_expansion.kabanyt_copper_ore": "Kabanyt Copper Ore",
       "block.world_expansion.kabanyt_tile_wall": "Kabanyt tiles wall",
-      "key.world_expansions.gun_reload": "Gun Reload",
       "block.world_expansion.baobab_fence": "Baobab fence",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
       "advancements.oh_great_baobab.title": "Oh, the Great Baobab!",
@@ -8348,20 +8412,12 @@
       "subtitles.music_disc_spooky_forest": "",
       "item.world_expansion.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
       "advancements.ancient_civilization_part_2.description": "What is this Strange structure?",
-      "item.world_expansions.titanium_ingot": "Titanium Ingot",
       "block.world_expansion.titanium_block": "Titanium Block",
       "block.world_expansion.baobab_log": "Baobab log",
       "jei.world_expansion.category.multi_crafting_table_copper_horn_jei_category": "Multi-Crafting Table (Copper Horns)",
-      "block.world_expansions.baobab_fence": "Baobab fence",
       "block.world_expansion.stripped_baobab_wood": "Stripped baobab wood",
-      "block.world_expansions.kabanyt_tiles": "Kabanyt tiles",
       "block.world_expansion.aloe_vera": "Aloe Vera",
-      "block.world_expansions.baobab_leaves": "Baobab leaves",
-      "block.world_expansions.baobab_door": "Baobab door",
       "block.world_expansion.kabanyt_titanium_ore": "Kabanyt Titanium Ore",
-      "block.world_expansions.kabanyt_tile_slab": "Kabanyt tiles slab",
-      "item.world_expansions.judas_fruit": "Judas Fruit",
-      "block.world_expansions.kabanyt_diamond_ore": "Kabanyt Diamond Ore",
       "trim_pattern.world_expansion.brute": "§7Brute Armor Trim",
       "block.world_expansion.baobab_door": "Baobab door",
       "subtitles.melody2": "The hum of a copper horn",
@@ -8375,114 +8431,75 @@
       "subtitles.melody8": "The hum of a copper horn",
       "subtitles.melody7": "The hum of a copper horn",
       "subtitles.dealers_shotgun_shooting": "",
-      "block.world_expansions.windometer": "Wind\u0027o Meter",
       "gui.world_expansion.snow_cannon_gui.label_x": "X",
       "gui.world_expansion.snow_cannon_gui.label_y": "Y",
-      "block.world_expansions.ancient_corridors_spawner": "Ancient Corridors Spawner",
       "gui.world_expansion.snow_cannon_gui.label_z": "Z",
-      "item.world_expansions.gamblers_shotgun_chamber": "Gambler\u0027s Shotgun Chamber",
-      "block.world_expansions.kabanyt_iron_ore": "Kabanyt Iron Ore",
       "gui.world_expansion.snow_cannon_gui.label_powder_snow": "Powder Snow:",
       "death.attack.cannon_explosion_damage_type.player": "%1$s exploded along with the cannon whilst trying to escape %2$s",
       "block.world_expansion.stripped_baobab_log": "Stripped baobab log",
-      "gui.world_expansions.multi_crafting_table_gui_copper_horn.label_inventory": "Inventory",
-      "item_group.world_expansions.mobs": "WE: Mobs",
       "biome.world_expansion.dry_savanna": "Dry Savanna",
       "block.world_expansion.raw_titanium_block": "Raw Titanium Block",
       "subtitles.dealers_shotgun_chamber_start": "",
-      "block.world_expansions.judas_fruit_plant": "Judas Fruit",
       "block.world_expansion.deepslate_titanium_ore": "Deepslate Titanium Ore",
       "death.attack.tumbleweed_damage_type.player": "Cowboy %1$s was stopped whilst trying to escape %2$s",
       "block.world_expansion.kabanyt_tile_slab": "Kabanyt tiles slab",
-      "block.world_expansions.baobab_sapling": "Baobab Sapling",
-      "item_group.world_expansions.natural_blocks": "WE: Natural Blocks",
       "subtitles.dealers_shotgun_forearm_end": "",
       "subtitles.harmony9": "The high hum of a copper horn",
-      "block.world_expansions.baobab_trapdoor": "Baobab trapdoor",
       "subtitles.harmony7": "The high hum of a copper horn",
-      "advancements.world_expansion.descr": "Explore the world!",
       "subtitles.harmony8": "The high hum of a copper horn",
+      "advancements.world_expansion.descr": "Explore the world!",
       "subtitles.harmony5": "The high hum of a copper horn",
       "subtitles.harmony6": "The high hum of a copper horn",
       "subtitles.harmony3": "The high hum of a copper horn",
       "wind.world_expansion.west": "West",
       "subtitles.harmony4": "The high hum of a copper horn",
-      "attribute.world_expansion.kickback_multiplier_attribute": "Kickback Multiplier",
       "advancements.lisa_simpson.title": "Lisa Simpson",
       "block.world_expansion.kabanyt_coal_ore": "Kabanyt Coal Ore",
-      "gui.world_expansions.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
-      "block.world_expansions.kabanyt_titanium_ore": "Kabanyt Titanium Ore",
-      "block.world_expansions.baobab_slab": "Baobab slab",
       "item.world_expansion.split_judas_fruit": "Judas Fruit",
       "block.world_expansion.judas_fruit_plant": "Judas Fruit",
       "death.attack.cannon_explosion_damage_type.item": "%1$s exploded along with the cannon because of %2$s using %3$s",
-      "item.world_expansions.piece_totem_of_undying": "Piece Totem of Undying",
-      "block.world_expansions.deepslate_titanium_ore": "Deepslate Titanium Ore",
       "subtitles.empty_dealers_shotgun_shooting": "",
-      "block.world_expansions.kabanyt_redstone_ore": "Kabanyt Redstone Ore",
-      "item.world_expansions.live_shotgun_bullet": "Live Shotgun Bullet",
       "block.world_expansion.tumbleweed": "Tumbleweed",
       "item_group.world_expansion.items": "WE: Items",
       "subtitles.harmony1": "The high hum of a copper horn",
       "subtitles.harmony2": "The high hum of a copper horn",
-      "block.world_expansions.titanium_block": "Titanium Block",
       "block.world_expansion.kabanyt_bricks_slab": "Kabanyt bricks slab",
-      "block.world_expansions.baobab_planks": "Baobab planks",
       "advancements.ancient_civilization_part_2.title": "Ancient Civilization: Part 2",
       "subtitles.harmony0": "The high hum of a copper horn",
-      "subtitles.music_disc_destroyer": "",
       "biome.world_expansion.baobab_valley": "Baobab valley",
-      "block.world_expansions.baobab_button": "Baobab button",
+      "subtitles.music_disc_destroyer": "",
       "item_group.world_expansion.natural_blocks": "WE: Natural Blocks",
-      "block.world_expansions.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "advancements.tile_slab.title": "Tile slab",
-      "block.world_expansions.kabanyt_coal_ore": "Kabanyt Coal Ore",
       "item_group.world_expansion.mobs": "WE: Mobs",
-      "block.world_expansions.astilba_multicolored": "Astilba Multicolored",
       "advancements.poor_zhorik.title": "Poor Zhorik!",
       "key.world_expansion.gun_discharge": "Gun Discharge",
       "advancements.oh_great_baobab.descr": "Find the Baobab Valley",
       "command.world_expansion.wind.get": "Wind Direction:",
-      "block.world_expansions.kabanyt_gold_ore": "Kabanyt Gold Ore",
       "block.world_expansion.kabanyt_gold_ore": "Kabanyt Gold Ore",
       "wind.world_expansion.north": "North",
-      "block.world_expansions.raw_titanium_block": "Raw Titanium Block",
       "item.world_expansion.raw_titanium": "Raw Titanium",
-      "item.world_expansions.split_judas_fruit": "Judas Fruit",
       "item.world_expansion.judas_fruit": "Judas Fruit",
-      "block.world_expansions.kabanyt_lapis_ore": "Kabanyt Lapis Lazuli Ore",
-      "entity.world_expansions.mini_fireflies": "Mini-Fireflies",
       "gui.world_expansion.snow_cannon_gui.label_snow": "Snow:",
       "block.world_expansion.astilba_multicolored": "Astilba Multicolored",
       "block.world_expansion.baobab_sapling": "Baobab Sapling",
       "block.world_expansion.yellow_astilba": "Yellow astilba",
       "block.world_expansion.kabanyt_redstone_ore": "Kabanyt Redstone Ore",
-      "block.world_expansions.kabanyt_tile_stairs": "Kabanyt tiles stairs",
       "item.world_expansion.copper_horn1": "Copper Horn",
-      "block.world_expansions.kabanyt": "Kabanyt",
       "item.world_expansion.copper_horn0": "Copper Horn",
-      "block.world_expansions.kabanyt_bricks": "Kabanyt bricks",
       "block.world_expansion.kabanyt_tile_stairs": "Kabanyt tiles stairs",
       "subtitles.bass1": "The rhythmic hum of a copper horn",
       "subtitles.bass0": "The rhythmic hum of a copper horn",
       "advancements.world_expansion.title": "World Expansion",
       "block.world_expansion.kabanyt_emerald_ore": "Kabanyt Emerald Ore",
-      "block.world_expansions.baobab_wood": "Baobab wood",
       "block.world_expansion.kabanyt_slab": "Kabanyt slab",
       "subtitles.dealers_shotgun_forearm_start": "",
       "item.world_expansion.gamblers_shotgun": "§oGambler\u0027s §rShotgun",
       "death.attack.tumbleweed_damage_type.item": "Cowboy %1$s was stopped by %2$s using %3$s",
       "advancements.ancient_civilization_part_1.title": "Ancient Civilization: Part 1",
       "block.world_expansion.carved_kabanyt": "Carved kabanyt",
-      "block.world_expansions.little_shroomlight": "Little Shroomlight",
       "block.world_expansion.baobab_fence_gate": "Baobab fence gate",
-      "item.world_expansions.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
       "block.world_expansion.baobab_pressure_plate": "Baobab pressure plate",
       "advancements.fallen_paradise.title": "Fallen Paradise",
-      "block.world_expansions.yellow_astilba": "Yellow astilba",
-      "block.world_expansions.tiger_aloe_vera": "Aloe vera tiger",
-      "item.world_expansions.tumbleweed_item": "Tumbleweed ",
-      "item.world_expansions.blank_shotgun_bullet": "Blank Shotgun Bullet",
       "item.world_expansion.piece_totem_of_undying": "Piece Totem of Undying",
       "block.world_expansion.tiger_aloe_vera": "Aloe vera tiger",
       "block.world_expansion.multi_crafting_table": "Multi-Crafting Table",
@@ -8490,22 +8507,17 @@
       "block.world_expansion.baobab_wood": "Baobab wood",
       "subtitles.bass7": "The rhythmic hum of a copper horn",
       "subtitles.bass6": "The rhythmic hum of a copper horn",
-      "block.world_expansions.baobab_stairs": "Baobab stairs",
       "subtitles.bass9": "The rhythmic hum of a copper horn",
       "subtitles.bass8": "The rhythmic hum of a copper horn",
       "item.world_expansion.ice_skates_boots": "Ice Skates",
       "subtitles.bass3": "The rhythmic hum of a copper horn",
-      "block.world_expansions.kabanyt_copper_ore": "Kabanyt Copper Ore",
       "block.world_expansion.kabanyt": "Kabanyt",
       "subtitles.bass2": "The rhythmic hum of a copper horn",
       "subtitles.bass5": "The rhythmic hum of a copper horn",
       "subtitles.bass4": "The rhythmic hum of a copper horn",
-      "block.world_expansions.tumbleweed": "Tumbleweed",
-      "attribute.world_expansions.kickback_multiplier_attribute": "Kickback Multiplier",
-      "block.world_expansions.kabanyt_redstone_ore_on": "Kabanyt Redstone Ore",
       "wind.world_expansion.east": "East",
       "block.world_expansion.baobab_slab": "Baobab slab",
-      "block.world_expansions.kabanyt_wall": "Kabanyt wall",
+      "action.mysterious_door": "The door resists efforts to open it. It\u0027s worth coming back a little later",
       "entity.world_expansion.projectile_snow_projectile": "Lump of Snow",
       "block.world_expansion.kabanyt_bricks": "Kabanyt bricks",
       "block.world_expansion.windometer": "Wind\u0027o Meter",
@@ -8516,104 +8528,67 @@
       "block.world_expansion.baobab_planks": "Baobab planks",
       "block.world_expansion.hanging_bottle": "Hanging Bottle",
       "block.world_expansion.kabanyt_tiles": "Kabanyt tiles",
-      "block.world_expansions.bottle_with_mini_fireflies": "Bottle With Mini-Fireflies",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_y": "Y",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_z": "Z",
-      "item.world_expansions.brute_armor_trim_smithing_template": "Brute Armor Trim Smithing Template",
       "item.world_expansion.tumbleweed_item": "Tumbleweed ",
       "gui.world_expansion.the_coordinate_template_for_snow_cannon_gui.label_x": "X",
-      "block.world_expansions.baobab_fence_gate": "Baobab fence gate",
-      "block.world_expansions.multi_crafting_table": "Multi-Crafting Table",
       "entity.world_expansion.projectile_tumbleweed": "Tumbleweed",
-      "item_group.world_expansions.items": "WE: Items",
       "advancements.fallen_paradise.descr": "Find the Dry Savanna",
       "entity.world_expansion.projectile_powder_snow_projectile": "Lump of Powder Snow",
       "trim_material.world_expansion.titanium": "Titanium Material",
       "item.world_expansion.live_shotgun_bullet": "Live Shotgun Bullet",
       "item.world_expansion.leave_of_aloe_vera": "Leave of aloe vera",
       "block.world_expansion.kabanyt_iron_ore": "Kabanyt Iron Ore",
-      "block.world_expansions.baobab_pressure_plate": "Baobab pressure plate",
       "block.world_expansion.astilba": "Astilba ",
-      "item_group.world_expansions.building_blocks": "WE: Building Blocks",
-      "block.world_expansions.suspicious_mud": "Suspicious Mud",
       "advancements.the_wildest_in_the_wild_west.title": "The Wildest in the Wild West",
       "wind.world_expansion.still": "Still",
       "subtitles.dealers_shotgun_shell": "",
-      "item.world_expansions.leave_of_aloe_vera": "Leave of aloe vera",
       "item.world_expansion.gamblers_shotgun_chamber": "Gambler\u0027s Shotgun Chamber",
       "death.attack.cannon_explosion_damage_type": "%1$s exploded along with the cannon",
-      "block.world_expansions.kabanyt_emerald_ore": "Kabanyt Emerald Ore",
       "gui.world_expansion.cannon_coords_distance.distance": "Distance:",
       "block.world_expansion.baobab_stairs": "Baobab stairs",
-      "block.world_expansions.stripped_baobab_wood": "Stripped baobab wood",
       "block.world_expansion.kabanyt_wall": "Kabanyt wall",
       "entity.world_expansion.mini_fireflies": "Mini-Fireflies",
-      "block.world_expansions.kabanyt_bricks_stairs": "Kabanyt bricks stairs",
       "block.world_expansion.kabanyt_redstone_ore_on": "Kabanyt Redstone Ore",
-      "block.world_expansions.stripped_baobab_log": "Stripped baobab log",
-      "block.world_expansions.aloe_vera": "Aloe Vera",
-      "block.world_expansions.bottle": "Bottle",
       "block.world_expansion.baobab_trapdoor": "Baobab trapdoor",
       "block.world_expansion.baobab_button": "Baobab button",
       "block.world_expansion.baobab_leaves": "Baobab leaves",
-      "item.world_expansions.music_disc_destroyer": "Music Disc ",
-      "block.world_expansions.titanium_ore": "Titanium Ore",
+      "block.world_expansion.mysterious_door": "Mysterious door",
       "block.world_expansion.bottle": "Bottle",
-      "item.world_expansions.copper_horn7": "Copper Horn",
-      "item.world_expansions.copper_horn8": "Copper Horn",
-      "item.world_expansions.copper_horn9": "Copper Horn",
       "item_group.world_expansion.building_blocks": "WE: Building Blocks",
       "item.world_expansion.music_disc_destroyer": "Music Disc ",
       "block.world_expansion.kabanyt_stairs": "Kabanyt stairs",
       "death.attack.shotgun_damage_type.item": "%1$s was shot by %2$s with a %3$s",
-      "block.world_expansions.baobab_log": "Baobab log",
       "item.world_expansion.music_disc_destroyer.desc": "Hrumer — Destroyer",
       "entity.world_expansion.projectile_tnt_projectile": "TNT",
       "advancements.tile_slab.descr": "Create a slab from kabanyt tiles (well, the name)...",
       "item.world_expansion.titanium_ingot": "Titanium Ingot",
       "block.world_expansion.kabanyt_bricks_stairs": "Kabanyt bricks stairs",
       "command.world_expansion.wind.set": "Set Wind Direction:",
-      "block.world_expansions.kabanyt_tile_wall": "Kabanyt tiles wall",
-      "item.world_expansions.gamblers_shotgun": "§oGambler\u0027s §rShotgun",
       "block.world_expansion.bottle_with_mini_fireflies": "Bottle With Mini-Fireflies",
       "key.world_expansion.gun_reload": "Gun Reload",
       "block.world_expansion.kabanyt_lapis_ore": "Kabanyt Lapis Lazuli Ore",
       "subtitles.dealers_shotgun_chamber_end": "",
-      "item.world_expansions.copper_horn0": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_9": "1x Copper Horn 9",
-      "item.world_expansions.copper_horn1": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_8": "1x Copper Horn 8",
-      "item.world_expansions.copper_horn2": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_7": "1x Copper Horn 7",
       "death.attack.shotgun_damage_type.player": "%1$s was shot with a shotgun whilst trying to escape %2$s",
-      "item.world_expansions.copper_horn3": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_6": "1x Copper Horn 6",
-      "item.world_expansions.copper_horn4": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_5": "1x Copper Horn 5",
-      "item.world_expansions.copper_horn5": "Copper Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_4": "1x Copper Horn 4",
-      "item.world_expansions.copper_horn6": "Copper Horn",
       "subtitles.dealers_shotgun_reload_start": "",
-      "item.world_expansions.music_disc_destroyer.desc": "Hrumer — Destroyer",
       "death.attack.shotgun_damage_type": "%1$s was shot with a shotgun",
       "wind.world_expansion.south": "South",
       "advancements.ancient_civilization_part_1.descr": "Find the Politania",
-      "block.world_expansions.kabanyt_stairs": "Kabanyt stairs",
       "advancements.poor_zhorik.descr": "Get a Goat Horn",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_3": "1x Copper Horn 3",
-      "block.world_expansions.astilba": "Astilba ",
-      "key.world_expansions.gun_discharge": "Gun Discharge",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_2": "1x Copper Horn 2",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_1": "1x Copper Horn 1",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.tooltip_copper_horn_0": "1x Copper Horn 0",
-      "item.world_expansions.raw_titanium": "Raw Titanium",
       "subtitles.dealers_shotgun_reload_continue": "",
       "block.world_expansion.titanium_ore": "Titanium Ore",
       "block.world_expansion.ancient_corridors_spawner": "Ancient Corridors Spawner",
-      "block.world_expansion.hanging_bottle_witn_mini_fireflies": "Hanging Bottle Witn Mini Fireflies",
-      "block.world_expansions.carved_kabanyt": "Carved kabanyt",
-      "block.world_expansions.kabanyt_slab": "Kabanyt slab",
-      "item.world_expansions.ice_skates_boots": "Ice Skates"
+      "block.world_expansion.hanging_bottle_witn_mini_fireflies": "Hanging Bottle Witn Mini Fireflies"
     }
   },
   "foldersRoot": {
@@ -8903,7 +8878,7 @@
         ]
       },
       {
-        "name": "Drops",
+        "name": "Loot Table",
         "children": [
           {
             "name": "Blocks",
@@ -9086,8 +9061,8 @@
       "jei"
     ],
     "currentGenerator": "forge-1.20.1",
-    "credits": "Hrumer, Samuelchik",
+    "credits": "Hrumer, Samuelchik, Max_D",
     "modElementsPackage": "net.horizonexpand.world_expansion"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400340720
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
@@ -40,7 +40,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "GamblersShotgunShoot"
+      "name": "GamblersShotgunShooting"
     },
     "isFood": false,
     "nutritionalValue": 4,
@@ -52,7 +52,56 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "normal": "gamblers_shotgun.geo.json",
-    "armPoseList": [],
+    "armPoseList": [
+      {
+        "armHeld": "RIGHT",
+        "arm": "RIGHT",
+        "angle": "X",
+        "rotation": -1.6,
+        "swings": false,
+        "followsHead": false
+      },
+      {
+        "armHeld": "RIGHT",
+        "arm": "RIGHT",
+        "angle": "Y",
+        "rotation": -0.5,
+        "swings": false,
+        "followsHead": false
+      },
+      {
+        "armHeld": "RIGHT",
+        "arm": "RIGHT",
+        "angle": "Z",
+        "rotation": -0.30000000000000004,
+        "swings": false,
+        "followsHead": false
+      },
+      {
+        "armHeld": "RIGHT",
+        "arm": "LEFT",
+        "angle": "X",
+        "rotation": -1.8,
+        "swings": false,
+        "followsHead": false
+      },
+      {
+        "armHeld": "RIGHT",
+        "arm": "LEFT",
+        "angle": "Y",
+        "rotation": 0.4,
+        "swings": false,
+        "followsHead": false
+      },
+      {
+        "armHeld": "RIGHT",
+        "arm": "LEFT",
+        "angle": "Z",
+        "rotation": 0.3,
+        "swings": false,
+        "followsHead": false
+      }
+    ],
     "disableSwing": true
   }
 }

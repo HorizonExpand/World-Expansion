@@ -1,9 +1,0 @@
-{
-  "required": true,
-  "package": "net.horizonexpand.world_expansions.mixins",
-  "compatibilityLevel": "JAVA_17",
-  "refmap": "mixins.world_expansions.refmap.json",
-  "mixins": [],
-  "client": [],
-  "minVersion": "0.8"
-}

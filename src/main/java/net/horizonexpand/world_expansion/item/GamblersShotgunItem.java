@@ -26,7 +26,7 @@ import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.model.HumanoidModel;
 
-import net.horizonexpand.world_expansion.procedures.GamblersShotgunShootProcedure;
+import net.horizonexpand.world_expansion.procedures.GamblersShotgunShootingProcedure;
 import net.horizonexpand.world_expansion.item.renderer.GamblersShotgunItemRenderer;
 
 import java.util.function.Consumer;
@@ -56,6 +56,12 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 			private static final HumanoidModel.ArmPose GamblersShotgunPose = HumanoidModel.ArmPose.create("GamblersShotgun", false, (model, entity, arm) -> {
 				if (arm == HumanoidArm.LEFT) {
 				} else {
+					model.rightArm.xRot = -1.6F;
+					model.rightArm.yRot = -0.5F;
+					model.rightArm.zRot = -0.3F;
+					model.leftArm.xRot = -1.8F;
+					model.leftArm.yRot = 0.4F;
+					model.leftArm.zRot = 0.3F;
 				}
 			});
 
@@ -136,7 +142,7 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		GamblersShotgunShootProcedure.execute(world, x, y, z, entity, itemstack);
+		GamblersShotgunShootingProcedure.execute(world, x, y, z, entity, itemstack);
 		return ar;
 	}
 }

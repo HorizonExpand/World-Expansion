@@ -86,7 +86,9 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:bamboo_jungle": "2024-09-02 15:36:44 +0300",
-      "minecraft:wooded_badlands": "2024-09-02 15:34:54 +0300"
+      "minecraft:wooded_badlands": "2024-09-02 15:34:54 +0300",
+      "minecraft:stony_peaks": "2024-09-21 17:04:13 +0300",
+      "minecraft:savanna": "2024-09-21 17:03:15 +0300"
     },
     "done": false
   },

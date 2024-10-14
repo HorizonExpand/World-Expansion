@@ -1,13 +1,12 @@
 
 package net.horizonexpand.world_expansion.world.inventory;
 
-import net.minecraftforge.network.NetworkEvent;
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -20,20 +19,19 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.procedures.MultiCraftingTableGUIKazhdyiTikPokaIntierfieisOtkrytProcedure;
 import net.horizonexpand.world_expansion.network.MultiCraftingTableGUISlotMessage;
 import net.horizonexpand.world_expansion.init.WorldExpansionModMenus;
-import net.horizonexpand.world_expansion.client.gui.MultiCraftingTableGUIScreen;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
+@Mod.EventBusSubscriber
 public class MultiCraftingTableGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -273,8 +271,8 @@ public class MultiCraftingTableGUIMenu extends AbstractContainerMenu implements 
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUISlotMessage(slotid, x, y, z, ctype, meta, MultiCraftingTableGUIScreen.getTextboxValues()));
-			MultiCraftingTableGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z, MultiCraftingTableGUIScreen.getTextboxValues());
+			WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUISlotMessage(slotid, x, y, z, ctype, meta));
+			MultiCraftingTableGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 
@@ -282,87 +280,15 @@ public class MultiCraftingTableGUIMenu extends AbstractContainerMenu implements 
 		return customSlots;
 	}
 
-	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-	public static class MultiCraftingTableGUIOtherMessage {
-		private final int mode, x, y, z;
-		private HashMap<String, String> textstate;
-
-		public MultiCraftingTableGUIOtherMessage(FriendlyByteBuf buffer) {
-			this.mode = buffer.readInt();
-			this.x = buffer.readInt();
-			this.y = buffer.readInt();
-			this.z = buffer.readInt();
-			this.textstate = readTextState(buffer);
-		}
-
-		public MultiCraftingTableGUIOtherMessage(int mode, int x, int y, int z, HashMap<String, String> textstate) {
-			this.mode = mode;
-			this.x = x;
-			this.y = y;
-			this.z = z;
-			this.textstate = textstate;
-		}
-
-		public static void buffer(MultiCraftingTableGUIOtherMessage message, FriendlyByteBuf buffer) {
-			buffer.writeInt(message.mode);
-			buffer.writeInt(message.x);
-			buffer.writeInt(message.y);
-			buffer.writeInt(message.z);
-			writeTextState(message.textstate, buffer);
-		}
-
-		public static void handler(MultiCraftingTableGUIOtherMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
-			NetworkEvent.Context context = contextSupplier.get();
-			context.enqueueWork(() -> {
-				Player entity = context.getSender();
-				int mode = message.mode;
-				int x = message.x;
-				int y = message.y;
-				int z = message.z;
-				HashMap<String, String> textstate = message.textstate;
-				handleOtherAction(entity, mode, x, y, z, textstate);
-			});
-			context.setPacketHandled(true);
-		}
-
-		public static void handleOtherAction(Player entity, int mode, int x, int y, int z, HashMap<String, String> textstate) {
+	@SubscribeEvent
+	public static void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		Player entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.containerMenu instanceof MultiCraftingTableGUIMenu) {
 			Level world = entity.level();
-			HashMap guistate = MultiCraftingTableGUIMenu.guistate;
-			for (Map.Entry<String, String> entry : textstate.entrySet()) {
-				String key = entry.getKey();
-				String value = entry.getValue();
-				guistate.put(key, value);
-			}
-			// security measure to prevent arbitrary chunk generation
-			if (!world.hasChunkAt(new BlockPos(x, y, z)))
-				return;
-			if (mode == 0) {
-				MultiCraftingTableGUIKazhdyiTikPokaIntierfieisOtkrytProcedure.execute(world, entity);
-			}
-		}
-
-		@SubscribeEvent
-		public static void registerMessage(FMLCommonSetupEvent event) {
-			WorldExpansionMod.addNetworkMessage(MultiCraftingTableGUIOtherMessage.class, MultiCraftingTableGUIOtherMessage::buffer, MultiCraftingTableGUIOtherMessage::new, MultiCraftingTableGUIOtherMessage::handler);
-		}
-
-		public static void writeTextState(HashMap<String, String> map, FriendlyByteBuf buffer) {
-			buffer.writeInt(map.size());
-			for (Map.Entry<String, String> entry : map.entrySet()) {
-				buffer.writeComponent(Component.literal(entry.getKey()));
-				buffer.writeComponent(Component.literal(entry.getValue()));
-			}
-		}
-
-		public static HashMap<String, String> readTextState(FriendlyByteBuf buffer) {
-			int size = buffer.readInt();
-			HashMap<String, String> map = new HashMap<>();
-			for (int i = 0; i < size; i++) {
-				String key = buffer.readComponent().getString();
-				String value = buffer.readComponent().getString();
-				map.put(key, value);
-			}
-			return map;
+			double x = entity.getX();
+			double y = entity.getY();
+			double z = entity.getZ();
+			MultiCraftingTableGUIKazhdyiTikPokaIntierfieisOtkrytProcedure.execute(world, entity);
 		}
 	}
 }

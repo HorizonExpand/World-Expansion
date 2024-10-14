@@ -1,14 +1,10 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "structure",
   "definition": {
     "structure": "mud_ruin0",
     "projection": "rigid",
-    "ignoredBlocks": [
-      {
-        "value": "Blocks.STRUCTURE_BLOCK"
-      }
-    ],
+    "ignoredBlocks": [],
     "spacing": 22,
     "separation": 18,
     "restrictionBiomes": [

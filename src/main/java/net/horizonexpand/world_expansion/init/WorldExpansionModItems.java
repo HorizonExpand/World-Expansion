@@ -135,6 +135,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> GAMBLERS_SHOTGUN = REGISTRY.register("gamblers_shotgun", () -> new GamblersShotgunItem());
 	public static final RegistryObject<Item> GAMBLERS_SHOTGUN_CHAMBER = REGISTRY.register("gamblers_shotgun_chamber", () -> new GamblersShotgunChamberItem());
 	public static final RegistryObject<Item> ANCIENT_CORRIDORS_SPAWNER = block(WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER);
+	public static final RegistryObject<Item> MYSTERIOUS_DOOR = doubleBlock(WorldExpansionModBlocks.MYSTERIOUS_DOOR);
 
 	// Start of user code block custom items
 	// End of user code block custom items

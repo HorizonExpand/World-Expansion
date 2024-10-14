@@ -32,12 +32,12 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
-	<classpathentry sourcepath="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-common-api/15.2.0.27_mapped_official_1.20.1/jei-1.20.1-common-api-15.2.0.27_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-common-api/15.2.0.27_mapped_official_1.20.1/jei-1.20.1-common-api-15.2.0.27_mapped_official_1.20.1.jar">
+	<classpathentry sourcepath="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-common-api/15.3.0.8_mapped_official_1.20.1/jei-1.20.1-common-api-15.3.0.8_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-common-api/15.3.0.8_mapped_official_1.20.1/jei-1.20.1-common-api-15.3.0.8_mapped_official_1.20.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value=""/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-forge-api/15.2.0.27_mapped_official_1.20.1/jei-1.20.1-forge-api-15.2.0.27_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-forge-api/15.2.0.27_mapped_official_1.20.1/jei-1.20.1-forge-api-15.2.0.27_mapped_official_1.20.1.jar">
+	<classpathentry sourcepath="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-forge-api/15.3.0.8_mapped_official_1.20.1/jei-1.20.1-forge-api-15.3.0.8_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-forge-api/15.3.0.8_mapped_official_1.20.1/jei-1.20.1-forge-api-15.3.0.8_mapped_official_1.20.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value=""/>
 		</attributes>
@@ -612,7 +612,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-forge/15.2.0.27_mapped_official_1.20.1/jei-1.20.1-forge-15.2.0.27_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-forge/15.2.0.27_mapped_official_1.20.1/jei-1.20.1-forge-15.2.0.27_mapped_official_1.20.1.jar">
+	<classpathentry sourcepath="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-forge/15.3.0.8_mapped_official_1.20.1/jei-1.20.1-forge-15.3.0.8_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/Huawei/.mcreator/gradle/caches/forge_gradle/deobf_dependencies/mezz/jei/jei-1.20.1-forge/15.3.0.8_mapped_official_1.20.1/jei-1.20.1-forge-15.3.0.8_mapped_official_1.20.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

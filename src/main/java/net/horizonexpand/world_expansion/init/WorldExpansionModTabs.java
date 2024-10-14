@@ -59,6 +59,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.STRIPPED_BAOBAB_LOG.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_TRAPDOOR.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_DOOR.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.MYSTERIOUS_DOOR.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_BRICKS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES.get().asItem());

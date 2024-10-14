@@ -1,0 +1,9 @@
+{
+  "parent": "block/door_bottom_left",
+  "textures": {
+    "particle": "world_expansion:block/mysterious_door_bottom",
+    "bottom": "world_expansion:block/mysterious_door_bottom",
+    "top": "world_expansion:block/mysterious_door_top"
+  },
+  "render_type": "cutout"
+}

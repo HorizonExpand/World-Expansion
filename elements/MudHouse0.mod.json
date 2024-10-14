@@ -1,0 +1,26 @@
+{
+  "_fv": 69,
+  "_type": "structure",
+  "definition": {
+    "structure": "mud_house0",
+    "projection": "rigid",
+    "ignoredBlocks": [],
+    "spacing": 22,
+    "separation": 16,
+    "restrictionBiomes": [
+      {
+        "value": "mangrove_swamp"
+      }
+    ],
+    "terrainAdaptation": "beard_box",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": []
+  }
+}

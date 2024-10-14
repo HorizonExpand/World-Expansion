@@ -1,0 +1,39 @@
+{
+  "_fv": 69,
+  "_type": "structure",
+  "definition": {
+    "structure": "tavern",
+    "projection": "rigid",
+    "ignoredBlocks": [],
+    "spacing": 8,
+    "separation": 6,
+    "restrictionBiomes": [
+      {
+        "value": "roofed_forest"
+      }
+    ],
+    "terrainAdaptation": "beard_box",
+    "generationStep": "SURFACE_STRUCTURES",
+    "surfaceDetectionType": "WORLD_SURFACE_WG",
+    "useStartHeight": false,
+    "startHeightProviderType": "UNIFORM",
+    "startHeightMin": 0,
+    "startHeightMax": 128,
+    "size": 1,
+    "maxDistanceFromCenter": 64,
+    "jigsawPools": [
+      {
+        "poolName": "cellar",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "tavern_cellar",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
+      }
+    ]
+  }
+}

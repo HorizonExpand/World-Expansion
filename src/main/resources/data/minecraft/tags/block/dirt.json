@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:kabanyt",
+    "minecraft:sand",
+    "minecraft:red_sand"
+  ]
+}
