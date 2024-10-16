@@ -123,6 +123,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "Mysterious_Door_Action"
+    },
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [],

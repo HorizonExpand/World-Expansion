@@ -6830,42 +6830,23 @@
       "path": "~/Loot Table/Structures"
     },
     {
-      "name": "MysteriousDoorCancelAction",
+      "name": "Mysterious_Door_Action",
       "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "mysterious_door_cancel_action",
+      "registry_name": "mysterious_door_action",
       "metadata": {
         "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/MysteriousDoorCancelActionProcedure.java"
+          "src/main/java/net/horizonexpand/world_expansion/procedures/Mysterious_Door_ActionProcedure.java"
         ],
         "dependencies": [
           {
-            "name": "blockstate",
-            "type": "blockstate"
-          },
-          {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -8388,18 +8369,18 @@
       "block.world_expansion.hanging_bottle_witn_mini_fireflies": "Подвешенная бутылка с Мини-Светлячками"
     },
     "en_us": {
-      "item.world_expansion.copper_horn3": "Copper Horn",
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
-      "biome.world_expansion.politania": "Politania",
+      "item.world_expansion.copper_horn3": "Copper Horn",
       "item.world_expansion.copper_horn2": "Copper Horn",
+      "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn5": "Copper Horn",
-      "attribute.world_expansion.kickback_multiplier": "Kickback Multiplier",
       "item.world_expansion.copper_horn4": "Copper Horn",
+      "attribute.world_expansion.kickback_multiplier": "Kickback Multiplier",
       "item.world_expansion.copper_horn7": "Copper Horn",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
       "item.world_expansion.copper_horn6": "Copper Horn",
-      "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "item.world_expansion.copper_horn9": "Copper Horn",
+      "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "item.world_expansion.copper_horn8": "Copper Horn",
       "advancements.the_wildest_in_the_wild_west.descr": "Die of a Tumbleweed",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
@@ -8446,8 +8427,8 @@
       "subtitles.dealers_shotgun_forearm_end": "",
       "subtitles.harmony9": "The high hum of a copper horn",
       "subtitles.harmony7": "The high hum of a copper horn",
-      "subtitles.harmony8": "The high hum of a copper horn",
       "advancements.world_expansion.descr": "Explore the world!",
+      "subtitles.harmony8": "The high hum of a copper horn",
       "subtitles.harmony5": "The high hum of a copper horn",
       "subtitles.harmony6": "The high hum of a copper horn",
       "subtitles.harmony3": "The high hum of a copper horn",
@@ -8466,8 +8447,8 @@
       "block.world_expansion.kabanyt_bricks_slab": "Kabanyt bricks slab",
       "advancements.ancient_civilization_part_2.title": "Ancient Civilization: Part 2",
       "subtitles.harmony0": "The high hum of a copper horn",
-      "biome.world_expansion.baobab_valley": "Baobab valley",
       "subtitles.music_disc_destroyer": "",
+      "biome.world_expansion.baobab_valley": "Baobab valley",
       "item_group.world_expansion.natural_blocks": "WE: Natural Blocks",
       "advancements.tile_slab.title": "Tile slab",
       "item_group.world_expansion.mobs": "WE: Mobs",
