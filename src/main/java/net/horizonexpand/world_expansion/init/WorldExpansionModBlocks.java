@@ -4,6 +4,16 @@
  */
 package net.horizonexpand.world_expansion.init;
 
+import net.horizonexpand.world_expansion.block.custom.ModHangingSignBlock;
+import net.horizonexpand.world_expansion.block.custom.ModStandingSignBlock;
+import net.horizonexpand.world_expansion.block.custom.ModWallHangingSignBlock;
+import net.horizonexpand.world_expansion.block.custom.ModWallSignBlock;
+import net.horizonexpand.world_expansion.util.ModWoodTypes;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -69,6 +79,10 @@ import net.horizonexpand.world_expansion.block.AloeVeraTigerBlock;
 import net.horizonexpand.world_expansion.block.AloeVeraBlock;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
+import java.util.function.Supplier;
+
+import static software.bernie.example.registry.BlockRegistry.BLOCKS;
+
 public class WorldExpansionModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, WorldExpansionMod.MODID);
 	public static final RegistryObject<Block> BAOBAB_WOOD = REGISTRY.register("baobab_wood", () -> new BaobabWoodBlock());
@@ -129,5 +143,24 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> ANCIENT_CORRIDORS_SPAWNER = REGISTRY.register("ancient_corridors_spawner", () -> new AncientCorridorsSpawnerBlock());
 	public static final RegistryObject<Block> MYSTERIOUS_DOOR = REGISTRY.register("mysterious_door", () -> new MysteriousDoorBlock());
 	// Start of user code block custom blocks
+	public static final RegistryObject<Block> BAOBAB_SIGN = REGISTRY.register("baobab_sign", () -> new ModStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN), ModWoodTypes.BAOBAB));
+	public static final RegistryObject<Block> BAOBAB_WALL_SIGN = REGISTRY.register("baobab_wall_sign", () -> new ModWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN), ModWoodTypes.BAOBAB));
+
+	public static final RegistryObject<Block> BAOBAB_HANGING_SIGN = REGISTRY.register("baobab_hanging_sign", () -> new ModHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN), ModWoodTypes.BAOBAB));
+	public static final RegistryObject<Block> BAOBAB_WALL_HANGING_SIGN = REGISTRY.register("baobab_wall_hanging_sign", () -> new ModWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.BAOBAB));
+
+	private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
+		RegistryObject<T> toReturn = BLOCKS.register(name, block);
+		registerBlockItem(name, toReturn);
+		return toReturn;
+	}
+
+	private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
+		return WorldExpansionModItems.REGISTRY.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+	}
+
+	public static void register(IEventBus eventBus) {
+		BLOCKS.register(eventBus);
+	}
 	// End of user code block custom blocks
 }

@@ -6828,25 +6828,6 @@
         ]
       },
       "path": "~/Loot Table/Structures"
-    },
-    {
-      "name": "Mysterious_Door_Action",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mysterious_door_action",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/Mysterious_Door_ActionProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Blocks"
     }
   ],
   "variable_elements": [
@@ -7634,6 +7615,10 @@
     "BIOMES:minecraft:without_wandering_trader_spawns": [
       "CUSTOM:DrySavanna"
     ],
+    "ITEMS:mod:shotgun_bullets": [
+      "CUSTOM:LiveShotgunBullet",
+      "CUSTOM:BlankShotgunBullet"
+    ],
     "BLOCKS:minecraft:gold_ores": [
       "CUSTOM:KabanytGoldOre"
     ],
@@ -8038,10 +8023,6 @@
       "CUSTOM:Kabanyt",
       "Blocks.SAND#0",
       "Blocks.SAND#1"
-    ],
-    "ITEMS:mod:shotgun_bullet": [
-      "CUSTOM:LiveShotgunBullet",
-      "CUSTOM:BlankShotgunBullet"
     ],
     "BLOCKS:minecraft:hoglin_repellents": [
       "CUSTOM:Astilbamulticolored",
@@ -9027,7 +9008,7 @@
   "workspaceSettings": {
     "modid": "world_expansion",
     "modName": "World Expansion: Light and Dark",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "This mod upgraded vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark Forest.",
     "author": "HorizonExpand",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion",

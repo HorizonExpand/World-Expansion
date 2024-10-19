@@ -4,6 +4,8 @@
  */
 package net.horizonexpand.world_expansion.init;
 
+import net.minecraft.world.item.*;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
@@ -14,9 +16,6 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DoubleHighBlockItem;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.item.ItemProperties;
 
@@ -49,6 +48,9 @@ import net.horizonexpand.world_expansion.item.BlankShotgunBulletItem;
 import net.horizonexpand.world_expansion.block.display.BottleWithMiniFirefliesDisplayItem;
 import net.horizonexpand.world_expansion.block.display.BottleDisplayItem;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
+import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
+
+import static software.bernie.example.registry.ItemRegistry.ITEMS;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class WorldExpansionModItems {
@@ -138,6 +140,12 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> MYSTERIOUS_DOOR = doubleBlock(WorldExpansionModBlocks.MYSTERIOUS_DOOR);
 
 	// Start of user code block custom items
+	public static final RegistryObject<Item> BAOBAB_SIGN = REGISTRY.register("baobab_sign", () -> new SignItem(new Item.Properties().stacksTo(16), WorldExpansionModBlocks.BAOBAB_SIGN.get(), WorldExpansionModBlocks.BAOBAB_WALL_SIGN.get()));
+	public static final RegistryObject<Item> BAOBAB_HANGING_SIGN = REGISTRY.register("baobab_hanging_sign", () -> new HangingSignItem(WorldExpansionModBlocks.BAOBAB_HANGING_SIGN.get(), WorldExpansionModBlocks.BAOBAB_WALL_HANGING_SIGN.get(), new Item.Properties().stacksTo(16)));
+
+	public static void register(IEventBus eventBus) {
+		ITEMS.register(eventBus);
+	}
 	// End of user code block custom items
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

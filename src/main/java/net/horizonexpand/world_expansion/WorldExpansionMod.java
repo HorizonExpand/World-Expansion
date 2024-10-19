@@ -1,5 +1,10 @@
 package net.horizonexpand.world_expansion;
 
+import net.horizonexpand.world_expansion.util.ModWoodTypes;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.world.entity.animal.Sheep;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -64,6 +69,14 @@ public class WorldExpansionMod {
 	}
 
 	// Start of user code block mod methods
+
+	@Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class ClientModEvents {
+		@SubscribeEvent
+		public static void onClientSetup(FMLClientSetupEvent event) {
+			Sheets.addWoodType(ModWoodTypes.BAOBAB);
+		}
+	}
 	// End of user code block mod methods
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
