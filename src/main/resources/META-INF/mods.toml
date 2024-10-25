@@ -4,13 +4,13 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="world_expansion"
-version="0.1.2"
+version="0.1.3"
 displayName="World Expansion: Light and Dark"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion"
 logoFile="logo.png"
 credits="Hrumer, Samuelchik, Maks_D"
 authors="HorizonExpand"
-description="This mod upgraded vanilla biomes and adds new ones for a more interesting journey around the world! Update 1.0.0 - Savanna and Dark Forest."
+description="This mod upgraded vanilla biomes and adds new ones for a more interesting journey around the world!"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration

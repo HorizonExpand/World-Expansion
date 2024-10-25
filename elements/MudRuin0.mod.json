@@ -9,7 +9,7 @@
     "separation": 18,
     "restrictionBiomes": [
       {
-        "value": "#forge:mud_ruin_based_to"
+        "value": "#mod:mud_ruins_based_to"
       }
     ],
     "terrainAdaptation": "beard_thin",

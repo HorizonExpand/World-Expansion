@@ -10,6 +10,6 @@
     "absolute": 0
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
-  "biomes": "#forge:mud_ruin_based_to",
+  "biomes": "#world_expansion:mud_ruins_based_to",
   "use_expansion_hack": false
 }
