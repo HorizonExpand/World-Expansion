@@ -1,0 +1,9 @@
+{
+  "parent": "world_expansion:custom/windometer",
+  "textures": {
+    "all": "world_expansion:block/windometer_n",
+    "particle": "world_expansion:block/windometer",
+    "0": "world_expansion:block/windometer_n"
+  },
+  "render_type": "cutout"
+}

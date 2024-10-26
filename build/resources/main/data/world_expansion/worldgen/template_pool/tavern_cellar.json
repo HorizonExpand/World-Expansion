@@ -1,0 +1,74 @@
+{
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "projection": "rigid",
+        "location": "world_expansion:tavern_cellar",
+        "processors": {
+          "processors": [
+            {
+              "processor_type": "minecraft:rule",
+              "rules": [
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:barrel",
+                      "Properties": {
+                        "facing": "south",
+                        "open": "false"
+                      }
+                    }
+                  },
+                  "output_state": {
+                    "Name": "minecraft:barrel",
+                    "Properties": {
+                      "facing": "south",
+                      "open": "false"
+                    }
+                  },
+                  "block_entity_modifier": {
+                    "type": "minecraft:append_loot",
+                    "loot_table": "world_expansion:chests/tavern_cellar_loot_table"
+                  }
+                },
+                {
+                  "location_predicate": {
+                    "predicate_type": "minecraft:always_true"
+                  },
+                  "input_predicate": {
+                    "predicate_type": "minecraft:blockstate_match",
+                    "block_state": {
+                      "Name": "minecraft:barrel",
+                      "Properties": {
+                        "facing": "north",
+                        "open": "false"
+                      }
+                    }
+                  },
+                  "output_state": {
+                    "Name": "minecraft:barrel",
+                    "Properties": {
+                      "facing": "north",
+                      "open": "false"
+                    }
+                  },
+                  "block_entity_modifier": {
+                    "type": "minecraft:append_loot",
+                    "loot_table": "world_expansion:chests/tavern_cellar_loot_table"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

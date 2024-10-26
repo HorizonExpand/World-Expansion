@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "world_expansion:item/gamblers_shotgun_chamber_blank"
+  }
+}

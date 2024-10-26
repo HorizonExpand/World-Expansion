@@ -1,0 +1,10 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "particle": "world_expansion:block/kabanyt_tiles",
+    "bottom": "world_expansion:block/kabanyt_tiles",
+    "top": "world_expansion:block/kabanyt_tiles",
+    "side": "world_expansion:block/kabanyt_tiles"
+  },
+  "render_type": "solid"
+}

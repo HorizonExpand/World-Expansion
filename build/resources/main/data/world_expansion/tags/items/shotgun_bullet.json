@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:live_shotgun_bullet",
+    "world_expansion:blank_shotgun_bullet"
+  ]
+}

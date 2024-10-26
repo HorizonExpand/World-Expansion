@@ -1,6 +1,6 @@
 {
-  "item.world_expansion.copper_horn3": "Copper Horn",
   "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
+  "item.world_expansion.copper_horn3": "Copper Horn",
   "item.world_expansion.copper_horn2": "Copper Horn",
   "biome.world_expansion.politania": "Politania",
   "block.world_expansion.kabanyt_tile_stairs": "Kabanyt tiles stairs",
@@ -61,7 +61,6 @@
   "block.world_expansion.baobab_door": "Baobab door",
   "wind.world_expansion.east": "East",
   "block.world_expansion.baobab_slab": "Baobab slab",
-  "action.mysterious_door": "The door resists efforts to open it. It\u0027s worth coming back a little later",
   "subtitles.melody2": "The hum of a copper horn",
   "subtitles.melody1": "The hum of a copper horn",
   "subtitles.melody0": "The hum of a copper horn",

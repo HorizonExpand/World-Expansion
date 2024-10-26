@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:baobab_slab",
+    "world_expansion:kabanyt_slab",
+    "world_expansion:kabanyt_bricks_slab",
+    "world_expansion:kabanyt_tile_slab"
+  ]
+}

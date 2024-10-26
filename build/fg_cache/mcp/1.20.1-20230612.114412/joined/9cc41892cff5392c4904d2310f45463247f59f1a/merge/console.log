@@ -1,0 +1,6 @@
+JVM:         C:\Users\Huawei\.mcreator\gradle\jdks\eclipse_adoptium-17-amd64-windows\jdk-17.0.12+7\bin\java.exe
+JVM Args:    
+Run Args:    "--client", "D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\stripClient\output.jar", "--server", "D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\stripServer\output.jar", "--ann", "1.20.1", "--output", "D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\merge\output.jar", "--inject", "false"
+Classpath:   C:\Users\Huawei\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\mergetool\1.1.7\mergetool-1.1.7-fatjar.jar
+Working Dir: D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\merge
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger

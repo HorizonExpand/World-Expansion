@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "world_expansion:tavern",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "salt": 878512389,
+    "distance": 16,
+    "spread": 3,
+    "count": 64,
+    "preferred_biomes": "minecraft:dark_forest"
+  }
+}

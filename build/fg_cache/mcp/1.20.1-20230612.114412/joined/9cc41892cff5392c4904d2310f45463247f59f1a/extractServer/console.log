@@ -1,0 +1,13 @@
+JVM:         C:\Users\Huawei\.mcreator\gradle\jdks\eclipse_adoptium-17-amd64-windows\jdk-17.0.12+7\bin\java.exe
+JVM Args:    
+Run Args:    "--task", "bundler_extract", "--input", "D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\downloadServer\server.jar", "--output", "D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\extractServer\output.jar", "--jar-only"
+Classpath:   C:\Users\Huawei\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\installertools\1.3.2\installertools-1.3.2-fatjar.jar
+Working Dir: D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\extractServer
+Main Class:  net.minecraftforge.installertools.ConsoleTool
+Task: BUNDLER_EXTRACT
+Input:   D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\downloadServer\server.jar
+Output:  D:\Games\MCreator 2023.3 (EAP 3)\MCreatorWorkspaces\world_expansion\build\fg_cache\mcp\1.20.1-20230612.114412\joined\9cc41892cff5392c4904d2310f45463247f59f1a\extractServer\output.jar
+All:     false
+JarOnly: true
+Libs:    false
+Extracted: versions/1.20.1/server-1.20.1.jar

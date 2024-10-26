@@ -1,6 +1,6 @@
 {
-  "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
   "item.world_expansion.copper_horn3": "Медный рог ",
+  "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
   "biome.world_expansion.politania": "Политания",
   "item.world_expansion.copper_horn2": "Медный рог ",
   "block.world_expansion.kabanyt_tile_stairs": "Ступеньки из кабанитной плитки",
@@ -62,7 +62,6 @@
   "block.world_expansion.baobab_door": "Дверь из древесины баобаба",
   "wind.world_expansion.east": "Восточный",
   "block.world_expansion.baobab_slab": "Плита из древесины баобаба",
-  "action.mysterious_door": "Дверь не поддаётся усилиям открыть её. Стоит вернуться чуть позже",
   "subtitles.melody2": "Гул медного рога",
   "subtitles.melody1": "Гул медного рога",
   "subtitles.melody0": "Гул медного рога",
