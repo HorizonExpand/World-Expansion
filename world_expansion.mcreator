@@ -8129,8 +8129,8 @@
   },
   "language_map": {
     "ru_ru": {
-      "item.world_expansion.copper_horn3": "Медный рог ",
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
+      "item.world_expansion.copper_horn3": "Медный рог ",
       "biome.world_expansion.politania": "Политания",
       "item.world_expansion.copper_horn2": "Медный рог ",
       "block.world_expansion.kabanyt_tile_stairs": "Ступеньки из кабанитной плитки",
@@ -8317,8 +8317,8 @@
       "item.world_expansion.copper_horn0": "Медный рог "
     },
     "en_us": {
-      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
+      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
       "item.world_expansion.copper_horn2": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
       "block.world_expansion.kabanyt_tile_stairs": "Kabanyt tiles stairs",
