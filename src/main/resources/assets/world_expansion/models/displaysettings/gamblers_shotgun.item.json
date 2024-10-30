@@ -9,11 +9,11 @@
     "thirdperson_righthand": {
       "rotation": [
         0,
-        10,
+        0,
         0
       ],
       "translation": [
-        -4,
+        -2,
         -1,
         -6
       ],
@@ -26,11 +26,11 @@
     "thirdperson_lefthand": {
       "rotation": [
         0,
-        10,
+        0,
         0
       ],
       "translation": [
-        -4,
+        -2,
         -1,
         -6
       ],
@@ -81,9 +81,9 @@
         -5
       ],
       "scale": [
-        0.6,
-        0.6,
-        0.6
+        0.7,
+        0.7,
+        0.7
       ]
     },
     "gui": {

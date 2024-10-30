@@ -92,6 +92,7 @@ public class WorldExpansionModVariables {
 		public String CopperHorn = "world_expansion:copper_horn0";
 		public boolean DenseFog = false;
 		public double ancient_corridors_spawner_entity_yaw = 0;
+		public boolean FirstJoin = true;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -105,6 +106,7 @@ public class WorldExpansionModVariables {
 			CopperHorn = nbt.getString("CopperHorn");
 			DenseFog = nbt.getBoolean("DenseFog");
 			ancient_corridors_spawner_entity_yaw = nbt.getDouble("ancient_corridors_spawner_entity_yaw");
+			FirstJoin = nbt.getBoolean("FirstJoin");
 		}
 
 		@Override
@@ -114,6 +116,7 @@ public class WorldExpansionModVariables {
 			nbt.putString("CopperHorn", CopperHorn);
 			nbt.putBoolean("DenseFog", DenseFog);
 			nbt.putDouble("ancient_corridors_spawner_entity_yaw", ancient_corridors_spawner_entity_yaw);
+			nbt.putBoolean("FirstJoin", FirstJoin);
 			return nbt;
 		}
 

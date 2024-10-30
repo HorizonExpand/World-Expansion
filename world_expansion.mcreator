@@ -6815,6 +6815,52 @@
         ]
       },
       "path": "~/Loot Table/Structures"
+    },
+    {
+      "name": "PlayerFirstSpawnHalloween2024",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_first_spawn_halloween_2024",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/PlayerFirstSpawnHalloween2024Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TavernMap",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tavern_map",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_tables/chests/tavern_map.json"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -6847,6 +6893,12 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "FirstJoin",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
     }
   ],
   "sound_elements": [
@@ -8275,6 +8327,7 @@
       "item_group.world_expansion.mobs": "WE: Мобы",
       "advancements.tile_slab.descr": "Создайте плиту из плиточного кабанита (ну и название)...",
       "item.world_expansion.titanium_ingot": "Титановый слиток",
+      "filled_map.tavern": "Карта искателя судьбы",
       "block.world_expansion.kabanyt_bricks_stairs": "Кирпичные ступеньки из кабанита",
       "command.world_expansion.wind.set": "Установлено направление ветра:",
       "advancements.poor_zhorik.title": "Бедный Жорик!",
@@ -8317,8 +8370,8 @@
       "item.world_expansion.copper_horn0": "Медный рог "
     },
     "en_us": {
-      "item.world_expansion.copper_horn3": "Copper Horn",
       "block.world_expansion.kabanyt_bricks_wall": "Kabanyt bricks wall",
+      "item.world_expansion.copper_horn3": "Copper Horn",
       "item.world_expansion.copper_horn2": "Copper Horn",
       "biome.world_expansion.politania": "Politania",
       "block.world_expansion.kabanyt_tile_stairs": "Kabanyt tiles stairs",
@@ -8463,6 +8516,7 @@
       "item_group.world_expansion.mobs": "WE: Mobs",
       "advancements.tile_slab.descr": "Create a slab from kabanyt tiles (well, the name)...",
       "item.world_expansion.titanium_ingot": "Titanium Ingot",
+      "filled_map.tavern": "The Fortune Seeker\u0027s Map",
       "block.world_expansion.kabanyt_bricks_stairs": "Kabanyt bricks stairs",
       "command.world_expansion.wind.set": "Set Wind Direction:",
       "advancements.poor_zhorik.title": "Poor Zhorik!",
