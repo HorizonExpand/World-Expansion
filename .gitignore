@@ -52,6 +52,7 @@
 */.settings
 */build
 */run
+*/.gradle/
 
 # Compiled class file
 .class
@@ -111,3 +112,6 @@ runs
 *.lock
 /run
 /run/saves
+/.gradle/
+.gradle
+.gradle/

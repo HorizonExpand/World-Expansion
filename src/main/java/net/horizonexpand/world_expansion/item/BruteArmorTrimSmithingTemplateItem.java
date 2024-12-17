@@ -22,6 +22,11 @@ public class BruteArmorTrimSmithingTemplateItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
 		Entity entity = itemstack.getEntityRepresentation();
-		list.add(Component.literal(BruteArmorTrimSmithingTemplateDopolnitielnaiaInformatsiiaProcedure.execute()));
+		String hoverText = BruteArmorTrimSmithingTemplateDopolnitielnaiaInformatsiiaProcedure.execute();
+		if (hoverText != null) {
+			for (String line : hoverText.split("\n")) {
+				list.add(Component.literal(line));
+			}
+		}
 	}
 }

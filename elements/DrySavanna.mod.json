@@ -1,5 +1,5 @@
 {
-  "_fv": 69,
+  "_fv": 73,
   "_type": "biome",
   "definition": {
     "name": "Dry Savanna",
@@ -13,6 +13,10 @@
       "value": "Blocks.GRAVEL"
     },
     "airColor": {
+      "value": -11502955,
+      "falpha": 0.0
+    },
+    "fogColor": {
       "value": -11502955,
       "falpha": 0.0
     },

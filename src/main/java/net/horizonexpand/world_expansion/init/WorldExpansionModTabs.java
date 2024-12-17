@@ -41,9 +41,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.LIVE_SHOTGUN_BULLET.get());
 				tabData.accept(WorldExpansionModItems.BLANK_SHOTGUN_BULLET.get());
 				tabData.accept(WorldExpansionModItems.ICE_SKATES_BOOTS.get());
-			})
-
-					.build());
+			}).build());
 	public static final RegistryObject<CreativeModeTab> BUILDING_BLOCKS = REGISTRY.register("building_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.building_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.KABANYT_BRICKS.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_WOOD.get().asItem());
@@ -79,15 +77,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.BOTTLE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER.get().asItem());
-			})
-
-					.build());
-	public static final RegistryObject<CreativeModeTab> MOBS = REGISTRY.register("mobs",
-			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.mobs")).icon(() -> new ItemStack(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
-				tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
-			})
-
-					.build());
+			}).withTabsBefore(ITEMS.getId()).build());
 	public static final RegistryObject<CreativeModeTab> NATURAL_BLOCKS = REGISTRY.register("natural_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.natural_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LEAVES.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem());
@@ -113,7 +103,9 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_LAPIS_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_IRON_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE.get().asItem());
-			})
-
-					.build());
+			}).withTabsBefore(BUILDING_BLOCKS.getId()).build());
+	public static final RegistryObject<CreativeModeTab> MOBS = REGISTRY.register("mobs",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.mobs")).icon(() -> new ItemStack(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
+			}).withTabsBefore(NATURAL_BLOCKS.getId()).build());
 }

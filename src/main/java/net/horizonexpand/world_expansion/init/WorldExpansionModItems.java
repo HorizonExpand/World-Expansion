@@ -87,7 +87,6 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> TUMBLEWEED = block(WorldExpansionModBlocks.TUMBLEWEED);
 	public static final RegistryObject<Item> JUDAS_FRUIT = REGISTRY.register("judas_fruit", () -> new JudasFruitItem());
 	public static final RegistryObject<Item> SPLIT_JUDAS_FRUIT = REGISTRY.register("split_judas_fruit", () -> new SplitJudasFruitItem());
-	public static final RegistryObject<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> new MusicDiscDestroyerItem());
 	public static final RegistryObject<Item> PIECE_TOTEM_OF_UNDYING = REGISTRY.register("piece_totem_of_undying", () -> new PieceTotemOfUndyingItem());
 	public static final RegistryObject<Item> COPPER_HORN0 = REGISTRY.register("copper_horn0", () -> new CopperHornItem());
 	public static final RegistryObject<Item> COPPER_HORN1 = REGISTRY.register("copper_horn1", () -> new CopperHorn1Item());
@@ -136,6 +135,7 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> GAMBLERS_SHOTGUN_CHAMBER = REGISTRY.register("gamblers_shotgun_chamber", () -> new GamblersShotgunChamberItem());
 	public static final RegistryObject<Item> ANCIENT_CORRIDORS_SPAWNER = block(WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER);
 	public static final RegistryObject<Item> MYSTERIOUS_DOOR = doubleBlock(WorldExpansionModBlocks.MYSTERIOUS_DOOR);
+	public static final RegistryObject<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> new MusicDiscDestroyerItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

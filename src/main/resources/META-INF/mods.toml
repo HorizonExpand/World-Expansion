@@ -4,13 +4,13 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="world_expansion"
-version="0.1.4"
+version="0.1.5"
 displayName="World Expansion: Light and Dark"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion"
 logoFile="logo.png"
-credits="Hrumer, Samuelchik, Maks_D"
+credits="Hrumer, Samuelchik, Max_D"
 authors="HorizonExpand"
-description="This mod upgraded vanilla biomes and adds new ones for a more interesting journey around the world!"
+description="This mod upgraded vanilla biomes and adds new for a more interesting journey around the world!"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
@@ -19,7 +19,7 @@ description="This mod upgraded vanilla biomes and adds new ones for a more inter
     modId="minecraft"
     mandatory=true
     versionRange="[1.20.1]"
-    ordering="NONE"
+    ordering="AFTER"
     side="BOTH"
 
 
@@ -36,3 +36,6 @@ description="This mod upgraded vanilla biomes and adds new ones for a more inter
     ordering="NONE"
     side="BOTH"
 
+
+# Start of user code block dependencies configuration
+# End of user code block dependencies configuration

@@ -32,9 +32,9 @@ public class BaobabSpawnConditionProcedure {
 		AirTagName = "forge:air_for_structures";
 		TopSoilTagName = "minecraft:dirt";
 		UnderSoilTagName = "forge:under_soil_for_structures";
-		Air = new ItemStack(Blocks.AIR);
-		TopSoil = new ItemStack(Blocks.GRASS_BLOCK);
-		UnderSoil = new ItemStack(Blocks.DIRT);
+		Air = new ItemStack(Blocks.AIR).copy();
+		TopSoil = new ItemStack(Blocks.GRASS_BLOCK).copy();
+		UnderSoil = new ItemStack(Blocks.DIRT).copy();
 		PositionOffsetX = x + 0;
 		PositionOffsetZ = z + 0;
 		StructureSizeX = 9;
