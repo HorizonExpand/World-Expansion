@@ -133,6 +133,24 @@
             "maxTrades": 2,
             "xp": 5,
             "priceMultiplier": 0.2
+          },
+          {
+            "price1": {
+              "value": "CUSTOM:BruteArmorTrimSmithingTemplate"
+            },
+            "countPrice1": 1,
+            "price2": {
+              "value": ""
+            },
+            "countPrice2": 1,
+            "offer": {
+              "value": "Items.EMERALD"
+            },
+            "countOffer": 16,
+            "level": 1,
+            "maxTrades": 4,
+            "xp": 8,
+            "priceMultiplier": 0.0
           }
         ]
       }

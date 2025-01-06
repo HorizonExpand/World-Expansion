@@ -38,5 +38,8 @@ public class WorldExpansionModTrades {
 		event.getGenericTrades().add(new BasicItemListing(new ItemStack(Items.EMERALD, 5),
 
 				new ItemStack(WorldExpansionModItems.COPPER_HORN7.get()), 2, 5, 0.2f));
+		event.getGenericTrades().add(new BasicItemListing(new ItemStack(WorldExpansionModItems.BRUTE_ARMOR_TRIM_SMITHING_TEMPLATE.get()),
+
+				new ItemStack(Items.EMERALD, 16), 4, 8, 0f));
 	}
 }
