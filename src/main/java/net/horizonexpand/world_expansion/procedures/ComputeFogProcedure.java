@@ -62,7 +62,29 @@ public class ComputeFogProcedure {
 			return;
 		if ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).DenseFog == true) {
 			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("world_expansion:dry_savanna"))) {
-				setDistance(32, 128);
+				if ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Fog_Test > 10) {
+					{
+						double _setval = (entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Fog_Test - 0.2;
+						entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.Fog_Test = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				}
+				setDistance((float) ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Fog_Test * 1.6),
+						(float) ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Fog_Test * 6.4));
+			} else {
+				if ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Fog_Test < 40) {
+					{
+						double _setval = (entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Fog_Test + 0.2;
+						entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.Fog_Test = _setval;
+							capability.syncPlayerVariables(entity);
+						});
+					}
+				}
+				setDistance((float) ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Fog_Test * 1.6),
+						(float) ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Fog_Test * 6.4));
 			}
 		}
 	}

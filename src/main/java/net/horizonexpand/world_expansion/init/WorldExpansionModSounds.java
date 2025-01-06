@@ -61,4 +61,5 @@ public class WorldExpansionModSounds {
 	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_CHAMBER_START = REGISTRY.register("dealers_shotgun_chamber_start",
 			() -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_chamber_start")));
 	public static final RegistryObject<SoundEvent> DEALERS_SHOTGUN_CHAMBER_END = REGISTRY.register("dealers_shotgun_chamber_end", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "dealers_shotgun_chamber_end")));
+	public static final RegistryObject<SoundEvent> SUSPICIOUS_MUD_BREAK = REGISTRY.register("suspicious_mud_break", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("world_expansion", "suspicious_mud_break")));
 }

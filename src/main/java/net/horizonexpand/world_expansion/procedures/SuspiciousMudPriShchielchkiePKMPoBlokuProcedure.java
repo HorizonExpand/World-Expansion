@@ -21,9 +21,12 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.advancements.AdvancementProgress;
+import net.minecraft.advancements.Advancement;
 
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
@@ -81,6 +84,14 @@ public class SuspiciousMudPriShchielchkiePKMPoBlokuProcedure {
 				}
 				world.levelEvent(2001, BlockPos.containing(x, y, z), Block.getId(blockstate));
 				world.setBlock(BlockPos.containing(x, y, z), Blocks.MUD.defaultBlockState(), 3);
+				if (entity instanceof ServerPlayer _player) {
+					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("world_expansion:someone_dropped_it"));
+					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+					if (!_ap.isDone()) {
+						for (String criteria : _ap.getRemainingCriteria())
+							_player.getAdvancements().award(_adv, criteria);
+					}
+				}
 			}
 			if (!world.isClientSide()) {
 				BlockPos _bp = BlockPos.containing(x, y, z);

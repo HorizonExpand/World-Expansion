@@ -3,6 +3,9 @@ package net.horizonexpand.world_expansion.block;
 
 import org.checkerframework.checker.units.qual.s;
 
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.common.util.ForgeSoundType;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -13,12 +16,12 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.MenuProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.block.entity.SuspiciousMudBlockEntity;
@@ -27,17 +30,21 @@ public class SuspiciousMudBlock extends Block implements EntityBlock {
 	public static final IntegerProperty BLOCKSTATE = IntegerProperty.create("blockstate", 0, 3);
 
 	public SuspiciousMudBlock() {
-		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).sound(SoundType.MUD).strength(0.8f, 2f).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
-				if (s.getValue(BLOCKSTATE) == 2)
-					return 0;
-				if (s.getValue(BLOCKSTATE) == 3)
-					return 0;
-				return 0;
-			}
-		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY)
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:suspicious_mud_break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.mud.step")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:suspicious_mud_break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:suspicious_mud_break")),
+						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.mud.fall"))))
+				.strength(0.8f, 2f).lightLevel(s -> (new Object() {
+					public int getLightLevel() {
+						if (s.getValue(BLOCKSTATE) == 1)
+							return 0;
+						if (s.getValue(BLOCKSTATE) == 2)
+							return 0;
+						if (s.getValue(BLOCKSTATE) == 3)
+							return 0;
+						return 0;
+					}
+				}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

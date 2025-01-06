@@ -76,6 +76,7 @@ public class WorldExpansionModVariables {
 			clone.CopperHorn = original.CopperHorn;
 			clone.DenseFog = original.DenseFog;
 			clone.FirstJoin = original.FirstJoin;
+			clone.Fog_Test = original.Fog_Test;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -139,7 +140,7 @@ public class WorldExpansionModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "world_expansion_mapvars";
 		public String Wind = "Still";
-		public double ancient_corridors_spawner_entity_yaw = 0;
+		public double ancient_corridors_spawner_entity_yaw = 0.0;
 
 		public static MapVariables load(CompoundTag tag) {
 			MapVariables data = new MapVariables();
@@ -252,6 +253,7 @@ public class WorldExpansionModVariables {
 		public String CopperHorn = "world_expansion:copper_horn0";
 		public boolean DenseFog = false;
 		public boolean FirstJoin = true;
+		public double Fog_Test = 40.0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -264,6 +266,7 @@ public class WorldExpansionModVariables {
 			nbt.putString("CopperHorn", CopperHorn);
 			nbt.putBoolean("DenseFog", DenseFog);
 			nbt.putBoolean("FirstJoin", FirstJoin);
+			nbt.putDouble("Fog_Test", Fog_Test);
 			return nbt;
 		}
 
@@ -273,6 +276,7 @@ public class WorldExpansionModVariables {
 			CopperHorn = nbt.getString("CopperHorn");
 			DenseFog = nbt.getBoolean("DenseFog");
 			FirstJoin = nbt.getBoolean("FirstJoin");
+			Fog_Test = nbt.getDouble("Fog_Test");
 		}
 	}
 
@@ -301,6 +305,7 @@ public class WorldExpansionModVariables {
 					variables.CopperHorn = message.data.CopperHorn;
 					variables.DenseFog = message.data.DenseFog;
 					variables.FirstJoin = message.data.FirstJoin;
+					variables.Fog_Test = message.data.Fog_Test;
 				}
 			});
 			context.setPacketHandled(true);

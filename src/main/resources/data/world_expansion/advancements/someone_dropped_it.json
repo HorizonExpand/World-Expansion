@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "world_expansion:suspicious_mud"
+    },
+    "title": {
+      "translate": "advancements.someone_dropped_it.title"
+    },
+    "description": {
+      "translate": "advancements.someone_dropped_it.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "someone_dropped_it_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "minecraft:adventure/salvage_sherd"
+}

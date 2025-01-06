@@ -82,24 +82,24 @@
     "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
     "isNotColidable": false,
-    "isCustomSoundType": false,
+    "isCustomSoundType": true,
     "soundOnStep": {
       "value": "MUD"
     },
     "breakSound": {
-      "value": ""
+      "value": "CUSTOM:suspicious_mud_break"
     },
     "fallSound": {
-      "value": ""
+      "value": "block.mud.fall"
     },
     "hitSound": {
-      "value": ""
+      "value": "CUSTOM:suspicious_mud_break"
     },
     "placeSound": {
-      "value": ""
+      "value": "CUSTOM:suspicious_mud_break"
     },
     "stepSound": {
-      "value": ""
+      "value": "block.mud.step"
     },
     "luminance": 0,
     "unbreakable": false,

@@ -372,5 +372,22 @@
         "stream": false
       }
     ]
+  },
+  "suspicious_mud_break": {
+    "subtitle": "subtitles.suspicious_mud_break",
+    "sounds": [
+      {
+        "name": "world_expansion:suspicious_mud_break1",
+        "stream": false
+      },
+      {
+        "name": "world_expansion:suspicious_mud_break2",
+        "stream": false
+      },
+      {
+        "name": "world_expansion:suspicious_mud_break3",
+        "stream": false
+      }
+    ]
   }
 }
