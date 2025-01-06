@@ -1,0 +1,10 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "particle": "minecraft:block/hay_block_top",
+    "bottom": "minecraft:block/hay_block_top",
+    "top": "minecraft:block/hay_block_top",
+    "side": "minecraft:block/hay_block_side"
+  },
+  "render_type": "solid"
+}

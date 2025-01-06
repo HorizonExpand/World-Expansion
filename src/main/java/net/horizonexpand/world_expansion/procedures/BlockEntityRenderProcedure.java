@@ -43,7 +43,6 @@ import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.Minecraft;
 
-import net.horizonexpand.world_expansion.network.WorldExpansionModVariables;
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 import javax.annotation.Nullable;
@@ -56,7 +55,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
 @Mod.EventBusSubscriber(value = Dist.CLIENT)
-public class AncientCorridorsSpawnerRenderEntityProcedure {
+public class BlockEntityRenderProcedure {
 	private static RenderLevelStageEvent provider = null;
 	private static Map<EntityType, Entity> data = new HashMap<>();
 	private static float textWidth = 1.0F;
@@ -65,16 +64,16 @@ public class AncientCorridorsSpawnerRenderEntityProcedure {
 	private static int backColor = 0;
 
 	public static void setBackColor(int color) {
-		AncientCorridorsSpawnerRenderEntityProcedure.backColor = color;
+		BlockEntityRenderProcedure.backColor = color;
 	}
 
 	public static void setTextColor(int color) {
-		AncientCorridorsSpawnerRenderEntityProcedure.textColor = color;
+		BlockEntityRenderProcedure.textColor = color;
 	}
 
 	public static void setScale(float width, float height) {
-		AncientCorridorsSpawnerRenderEntityProcedure.textWidth = width;
-		AncientCorridorsSpawnerRenderEntityProcedure.textHeight = height;
+		BlockEntityRenderProcedure.textWidth = width;
+		BlockEntityRenderProcedure.textHeight = height;
 	}
 
 	public static void renderBlock(BlockState blockState, double x, double y, double z, float yaw, float pitch, float roll, float scale, boolean glowing) {
@@ -313,23 +312,6 @@ public class AncientCorridorsSpawnerRenderEntityProcedure {
 											return "";
 										}
 									}.getValue(world, new BlockPos(positionx, positiony, positionz), "Items"))).toLowerCase(java.util.Locale.ENGLISH)))), (positionx + 0.5), (positiony + 1.1), (positionz + 0.5), 0, 0, 0, (float) 0.5, false, false);
-								}
-							} else if ((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock() == WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER.get()) {
-								if (((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip70
-										? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip70)
-										: -1) == 1
-										|| ((world.getBlockState(new BlockPos(positionx, positiony, positionz))).getBlock().getStateDefinition().getProperty("blockstate") instanceof IntegerProperty _getip75
-												? (world.getBlockState(new BlockPos(positionx, positiony, positionz))).getValue(_getip75)
-												: -1) == 2) {
-									renderEntity(ForgeRegistries.ENTITY_TYPES.getValue(new ResourceLocation(((new Object() {
-										public String getValue(LevelAccessor world, BlockPos pos, String tag) {
-											BlockEntity blockEntity = world.getBlockEntity(pos);
-											if (blockEntity != null)
-												return blockEntity.getPersistentData().getString(tag);
-											return "";
-										}
-									}.getValue(world, new BlockPos(positionx, positiony, positionz), "Entity"))).toLowerCase(java.util.Locale.ENGLISH))), (positionx + 0.5), (positiony + 0), (positionz + 0.5),
-											(float) WorldExpansionModVariables.MapVariables.get(world).ancient_corridors_spawner_entity_yaw, -30, 0, (float) 0.4, true);
 								}
 							}
 						}

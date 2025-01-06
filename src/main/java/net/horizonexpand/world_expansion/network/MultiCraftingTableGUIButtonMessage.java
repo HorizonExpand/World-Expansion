@@ -64,7 +64,7 @@ public class MultiCraftingTableGUIButtonMessage {
 			return;
 		if (buttonID == 0) {
 
-			ChangeButtonProcedure.execute(world);
+			ChangeButtonProcedure.execute(entity);
 		}
 	}
 

@@ -288,7 +288,7 @@ public class MultiCraftingTableGUIMenu extends AbstractContainerMenu implements 
 			double x = entity.getX();
 			double y = entity.getY();
 			double z = entity.getZ();
-			MultiCraftingTableGUIKazhdyiTikPokaIntierfieisOtkrytProcedure.execute(world, entity);
+			MultiCraftingTableGUIKazhdyiTikPokaIntierfieisOtkrytProcedure.execute(entity);
 		}
 	}
 }

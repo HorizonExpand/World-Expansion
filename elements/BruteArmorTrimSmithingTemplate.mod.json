@@ -29,8 +29,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInformation": {
-      "fixedValue": [],
-      "name": "BruteArmorTrimSmithingTemplateDopolnitielnaiaInformatsiia"
+      "fixedValue": [
+        "§7Brute Armor Trim",
+        "",
+        "§7Applies to:",
+        " §9Armor",
+        "§7Ingredients:",
+        " §9Ingots & Crystals"
+      ]
     },
     "glowCondition": {
       "fixedValue": false
@@ -54,6 +60,10 @@
     "isAlwaysEdible": false,
     "animation": "none",
     "isMusicDisc": false,
+    "musicDiscMusic": {
+      "value": ""
+    },
+    "musicDiscDescription": "",
     "musicDiscLengthInTicks": 0,
     "musicDiscAnalogOutput": 0
   }

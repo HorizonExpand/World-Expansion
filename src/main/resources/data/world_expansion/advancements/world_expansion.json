@@ -10,7 +10,7 @@
     "description": {
       "translate": "advancements.world_expansion.descr"
     },
-    "frame": "task",
+    "frame": "challenge",
     "show_toast": false,
     "announce_to_chat": false,
     "hidden": false
@@ -21,6 +21,6 @@
     }
   },
   "rewards": {
-    "experience": 15
+    "experience": 5
   }
 }

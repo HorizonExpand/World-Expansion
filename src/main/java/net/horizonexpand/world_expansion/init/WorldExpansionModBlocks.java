@@ -45,6 +45,8 @@ import net.horizonexpand.world_expansion.block.KabanytCopperOreBlock;
 import net.horizonexpand.world_expansion.block.KabanytCoalOreBlock;
 import net.horizonexpand.world_expansion.block.KabanytBlock;
 import net.horizonexpand.world_expansion.block.JudasFruitPlantBlock;
+import net.horizonexpand.world_expansion.block.HayBlockStairsBlock;
+import net.horizonexpand.world_expansion.block.HayBlockSlabBlock;
 import net.horizonexpand.world_expansion.block.DeepslateTitaniumOreBlock;
 import net.horizonexpand.world_expansion.block.CarvedkabanytBlock;
 import net.horizonexpand.world_expansion.block.BottleWithMiniFirefliesBlock;
@@ -64,7 +66,6 @@ import net.horizonexpand.world_expansion.block.BaobabFenceBlock;
 import net.horizonexpand.world_expansion.block.BaobabButtonBlock;
 import net.horizonexpand.world_expansion.block.AstilbamulticoloredBlock;
 import net.horizonexpand.world_expansion.block.AstilbaBlock;
-import net.horizonexpand.world_expansion.block.AncientCorridorsSpawnerBlock;
 import net.horizonexpand.world_expansion.block.AloeVeraTigerBlock;
 import net.horizonexpand.world_expansion.block.AloeVeraBlock;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
@@ -126,8 +127,9 @@ public class WorldExpansionModBlocks {
 	public static final RegistryObject<Block> WINDOMETER = REGISTRY.register("windometer", () -> new WindometerBlock());
 	public static final RegistryObject<Block> BOTTLE = REGISTRY.register("bottle", () -> new BottleBlock());
 	public static final RegistryObject<Block> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register("bottle_with_mini_fireflies", () -> new BottleWithMiniFirefliesBlock());
-	public static final RegistryObject<Block> ANCIENT_CORRIDORS_SPAWNER = REGISTRY.register("ancient_corridors_spawner", () -> new AncientCorridorsSpawnerBlock());
 	public static final RegistryObject<Block> MYSTERIOUS_DOOR = REGISTRY.register("mysterious_door", () -> new MysteriousDoorBlock());
+	public static final RegistryObject<Block> HAY_BLOCK_STAIRS = REGISTRY.register("hay_block_stairs", () -> new HayBlockStairsBlock());
+	public static final RegistryObject<Block> HAY_BLOCK_SLAB = REGISTRY.register("hay_block_slab", () -> new HayBlockSlabBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

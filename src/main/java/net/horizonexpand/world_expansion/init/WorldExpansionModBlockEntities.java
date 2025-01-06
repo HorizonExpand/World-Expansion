@@ -15,7 +15,6 @@ import net.horizonexpand.world_expansion.block.entity.SuspiciousMudBlockEntity;
 import net.horizonexpand.world_expansion.block.entity.MultiCraftingTableBlockEntity;
 import net.horizonexpand.world_expansion.block.entity.BottleWithMiniFirefliesTileEntity;
 import net.horizonexpand.world_expansion.block.entity.BottleTileEntity;
-import net.horizonexpand.world_expansion.block.entity.AncientCorridorsSpawnerBlockEntity;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 public class WorldExpansionModBlockEntities {
@@ -25,7 +24,6 @@ public class WorldExpansionModBlockEntities {
 	public static final RegistryObject<BlockEntityType<BottleTileEntity>> BOTTLE = REGISTRY.register("bottle", () -> BlockEntityType.Builder.of(BottleTileEntity::new, WorldExpansionModBlocks.BOTTLE.get()).build(null));
 	public static final RegistryObject<BlockEntityType<BottleWithMiniFirefliesTileEntity>> BOTTLE_WITH_MINI_FIREFLIES = REGISTRY.register("bottle_with_mini_fireflies",
 			() -> BlockEntityType.Builder.of(BottleWithMiniFirefliesTileEntity::new, WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get()).build(null));
-	public static final RegistryObject<BlockEntityType<?>> ANCIENT_CORRIDORS_SPAWNER = register("ancient_corridors_spawner", WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER, AncientCorridorsSpawnerBlockEntity::new);
 
 	// Start of user code block custom block entities
 	// End of user code block custom block entities

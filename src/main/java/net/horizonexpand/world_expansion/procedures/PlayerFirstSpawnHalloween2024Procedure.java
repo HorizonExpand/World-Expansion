@@ -37,7 +37,7 @@ public class PlayerFirstSpawnHalloween2024Procedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (WorldExpansionModVariables.MapVariables.get(world).FirstJoin) {
+		if ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).FirstJoin) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
 				_player.displayClientMessage(Component.literal("Message"), false);
 			if (!world.isClientSide() && world.getServer() != null) {
@@ -53,7 +53,12 @@ public class PlayerFirstSpawnHalloween2024Procedure {
 				}
 			}
 		}
-		WorldExpansionModVariables.MapVariables.get(world).FirstJoin = false;
-		WorldExpansionModVariables.MapVariables.get(world).syncData(world);
+		{
+			boolean _setval = false;
+			entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.FirstJoin = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

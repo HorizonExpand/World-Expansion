@@ -1,5 +1,5 @@
 {
-  "parent": "world_expansion:block/ancient_corridors_spawner",
+  "parent": "world_expansion:block/hay_block_slab",
   "display": {
     "thirdperson": {
       "rotation": [

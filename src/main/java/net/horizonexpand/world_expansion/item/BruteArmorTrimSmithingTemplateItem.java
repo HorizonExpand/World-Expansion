@@ -6,10 +6,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.network.chat.Component;
-
-import net.horizonexpand.world_expansion.procedures.BruteArmorTrimSmithingTemplateDopolnitielnaiaInformatsiiaProcedure;
 
 import java.util.List;
 
@@ -21,12 +18,11 @@ public class BruteArmorTrimSmithingTemplateItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level level, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, level, list, flag);
-		Entity entity = itemstack.getEntityRepresentation();
-		String hoverText = BruteArmorTrimSmithingTemplateDopolnitielnaiaInformatsiiaProcedure.execute();
-		if (hoverText != null) {
-			for (String line : hoverText.split("\n")) {
-				list.add(Component.literal(line));
-			}
-		}
+		list.add(Component.translatable("item.world_expansion.brute_armor_trim_smithing_template.description_0"));
+		list.add(Component.translatable("item.world_expansion.brute_armor_trim_smithing_template.description_1"));
+		list.add(Component.translatable("item.world_expansion.brute_armor_trim_smithing_template.description_2"));
+		list.add(Component.translatable("item.world_expansion.brute_armor_trim_smithing_template.description_3"));
+		list.add(Component.translatable("item.world_expansion.brute_armor_trim_smithing_template.description_4"));
+		list.add(Component.translatable("item.world_expansion.brute_armor_trim_smithing_template.description_5"));
 	}
 }

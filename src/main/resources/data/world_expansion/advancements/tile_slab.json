@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.tile_slab.descr"
     },
-    "frame": "task",
+    "frame": "goal",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": true
@@ -31,6 +31,9 @@
         ]
       }
     }
+  },
+  "rewards": {
+    "experience": 5
   },
   "parent": "world_expansion:oh_great_baobab"
 }

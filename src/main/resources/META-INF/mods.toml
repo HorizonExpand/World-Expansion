@@ -4,7 +4,7 @@ license="GNU General Public License version 3 (GPLv3)"
 
 [[mods]]
 modId="world_expansion"
-version="0.1.5"
+version="0.1.4"
 displayName="World Expansion: Light and Dark"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion"
 logoFile="logo.png"

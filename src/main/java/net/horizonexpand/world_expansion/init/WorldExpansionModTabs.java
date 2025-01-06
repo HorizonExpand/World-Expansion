@@ -6,14 +6,19 @@ package net.horizonexpand.world_expansion.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class WorldExpansionModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WorldExpansionMod.MODID);
 	public static final RegistryObject<CreativeModeTab> BUILDING_BLOCKS = REGISTRY.register("building_blocks",
@@ -45,12 +50,11 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILE_STAIRS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILE_SLAB.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILE_WALL.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.WINDOMETER.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.WINDOMETER.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.BOTTLE.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
 			}).build());
 	public static final RegistryObject<CreativeModeTab> NATURAL_BLOCKS = REGISTRY.register("natural_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.natural_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LEAVES.get())).displayItems((parameters, tabData) -> {
@@ -108,4 +112,12 @@ public class WorldExpansionModTabs {
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.mobs")).icon(() -> new ItemStack(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
 			}).withTabsBefore(ITEMS.getId()).build());
+
+	@SubscribeEvent
+	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
+		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
+			tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
+		}
+	}
 }

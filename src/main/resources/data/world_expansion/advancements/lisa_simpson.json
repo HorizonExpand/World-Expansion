@@ -20,7 +20,7 @@
     }
   },
   "rewards": {
-    "experience": 5
+    "experience": 3
   },
   "parent": "world_expansion:poor_zhorik"
 }

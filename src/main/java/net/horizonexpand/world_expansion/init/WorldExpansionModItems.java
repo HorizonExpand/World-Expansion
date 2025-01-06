@@ -133,9 +133,10 @@ public class WorldExpansionModItems {
 	public static final RegistryObject<Item> BLANK_SHOTGUN_BULLET = REGISTRY.register("blank_shotgun_bullet", () -> new BlankShotgunBulletItem());
 	public static final RegistryObject<Item> GAMBLERS_SHOTGUN = REGISTRY.register("gamblers_shotgun", () -> new GamblersShotgunItem());
 	public static final RegistryObject<Item> GAMBLERS_SHOTGUN_CHAMBER = REGISTRY.register("gamblers_shotgun_chamber", () -> new GamblersShotgunChamberItem());
-	public static final RegistryObject<Item> ANCIENT_CORRIDORS_SPAWNER = block(WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER);
 	public static final RegistryObject<Item> MYSTERIOUS_DOOR = doubleBlock(WorldExpansionModBlocks.MYSTERIOUS_DOOR);
 	public static final RegistryObject<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", () -> new MusicDiscDestroyerItem());
+	public static final RegistryObject<Item> HAY_BLOCK_STAIRS = block(WorldExpansionModBlocks.HAY_BLOCK_STAIRS);
+	public static final RegistryObject<Item> HAY_BLOCK_SLAB = block(WorldExpansionModBlocks.HAY_BLOCK_SLAB);
 
 	// Start of user code block custom items
 	// End of user code block custom items

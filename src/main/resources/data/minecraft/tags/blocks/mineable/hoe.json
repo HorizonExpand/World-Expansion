@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:hay_block_slab",
+    "world_expansion:hay_block_stairs"
+  ]
+}

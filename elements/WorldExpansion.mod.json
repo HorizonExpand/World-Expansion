@@ -3,7 +3,7 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "World Expansion",
-    "achievementDescription": "Explore the world!",
+    "achievementDescription": "Explore the World!",
     "achievementIcon": {
       "value": "CUSTOM:Kabanyt"
     },
@@ -14,8 +14,8 @@
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],
-    "rewardXP": 15,
-    "achievementType": "task",
+    "rewardXP": 5,
+    "achievementType": "challenge",
     "parent": {
       "value": "No parent: root"
     },

@@ -48,17 +48,19 @@ public class ComputeFogProcedure {
 			Entity entity = provider.getCamera().getEntity();
 			if (level != null && entity != null) {
 				Vec3 pos = entity.getPosition((float) provider.getPartialTick());
-				execute(provider, level, pos.x(), pos.y(), pos.z());
+				execute(provider, level, pos.x(), pos.y(), pos.z(), entity);
 			}
 		}
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z) {
-		execute(null, world, x, y, z);
+	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
+		execute(null, world, x, y, z, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
-		if (WorldExpansionModVariables.MapVariables.get(world).DenseFog == true) {
+	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
+		if (entity == null)
+			return;
+		if ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).DenseFog == true) {
 			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("world_expansion:dry_savanna"))) {
 				setDistance(32, 128);
 			}
