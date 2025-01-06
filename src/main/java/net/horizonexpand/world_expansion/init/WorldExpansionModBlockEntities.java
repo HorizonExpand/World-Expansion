@@ -27,6 +27,8 @@ public class WorldExpansionModBlockEntities {
 			() -> BlockEntityType.Builder.of(BottleWithMiniFirefliesTileEntity::new, WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get()).build(null));
 	public static final RegistryObject<BlockEntityType<?>> ANCIENT_CORRIDORS_SPAWNER = register("ancient_corridors_spawner", WorldExpansionModBlocks.ANCIENT_CORRIDORS_SPAWNER, AncientCorridorsSpawnerBlockEntity::new);
 
+	// Start of user code block custom block entities
+	// End of user code block custom block entities
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));
 	}

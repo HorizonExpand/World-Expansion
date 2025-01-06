@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "world_expansion:mysterious_door",
     "world_expansion:multi_crafting_table",
     "world_expansion:baobab_door",
     "world_expansion:baobab_trapdoor",

@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "world_expansion:block/tumbleweed",
-    "particle": "world_expansion:block/tumbleweed"
-  },
-  "render_type": "cutout"
-}

@@ -13,6 +13,7 @@
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": true,
+    "animateBlockItem": false,
     "itemTexture": "",
     "particleTexture": "bottle_stayed",
     "tintType": "No tint",

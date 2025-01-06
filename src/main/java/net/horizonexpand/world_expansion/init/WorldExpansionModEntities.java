@@ -34,6 +34,8 @@ public class WorldExpansionModEntities {
 	public static final RegistryObject<EntityType<ShotgunBlastEntity>> SHOTGUN_BLAST = register("shotgun_blast",
 			EntityType.Builder.<ShotgunBlastEntity>of(ShotgunBlastEntity::new, MobCategory.MISC).setCustomClientFactory(ShotgunBlastEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
+	// Start of user code block custom entities
+	// End of user code block custom entities
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
 	}

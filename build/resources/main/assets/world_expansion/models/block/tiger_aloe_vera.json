@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "world_expansion:block/aloe_vera_tiger",
-    "particle": "world_expansion:block/aloe_vera_tiger"
-  },
-  "render_type": "cutout"
-}

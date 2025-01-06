@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "world_expansion:block/little_shroomlight_",
-    "particle": "world_expansion:block/little_shroomlight_"
-  },
-  "render_type": "cutout"
-}

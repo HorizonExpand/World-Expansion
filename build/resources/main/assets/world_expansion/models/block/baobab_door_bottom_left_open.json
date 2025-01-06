@@ -1,9 +1,0 @@
-{
-  "parent": "block/door_bottom_left_open",
-  "textures": {
-    "particle": "world_expansion:block/baobab_door_bottom",
-    "bottom": "world_expansion:block/baobab_door_bottom",
-    "top": "world_expansion:block/baobab_door_top"
-  },
-  "render_type": "cutout"
-}

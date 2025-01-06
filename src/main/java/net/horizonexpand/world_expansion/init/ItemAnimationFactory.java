@@ -7,27 +7,11 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.client.renderer.ItemInHandRenderer;
-import net.minecraft.client.Minecraft;
 
 import net.horizonexpand.world_expansion.item.GamblersShotgunItem;
 
 @Mod.EventBusSubscriber
 public class ItemAnimationFactory {
-	public static void disableUseAnim(String hand) {
-		ItemInHandRenderer renderer = Minecraft.getInstance().gameRenderer.itemInHandRenderer;
-		if (renderer != null) {
-			if (hand.equals("right")) {
-				renderer.mainHandHeight = 1F;
-				renderer.oMainHandHeight = 1F;
-			}
-			if (hand.equals("left")) {
-				renderer.offHandHeight = 1F;
-				renderer.oOffHandHeight = 1F;
-			}
-		}
-	}
-
 	@SubscribeEvent
 	public static void animatedItems(TickEvent.PlayerTickEvent event) {
 		String animation = "";

@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 2,
-  "ingredient": {
-    "item": "world_expansion:kabanyt"
-  },
-  "result": "world_expansion:kabanyt_slab"
-}

@@ -68,6 +68,7 @@ public class AncientCorridorsSpawnerBlock extends Block implements EntityBlock {
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
 		builder.add(BLOCKSTATE);
 	}
 

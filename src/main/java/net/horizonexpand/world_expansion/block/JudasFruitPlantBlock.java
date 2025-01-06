@@ -70,6 +70,7 @@ public class JudasFruitPlantBlock extends Block implements BonemealableBlock {
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+		super.createBlockStateDefinition(builder);
 		builder.add(BLOCKSTATE);
 	}
 

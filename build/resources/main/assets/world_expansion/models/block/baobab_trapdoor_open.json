@@ -1,8 +1,0 @@
-{
-  "parent": "block/template_orientable_trapdoor_open",
-  "textures": {
-    "texture": "world_expansion:block/baobab_trapdoor",
-    "particle": "world_expansion:block/baobab_trapdoor"
-  },
-  "render_type": "cutout"
-}

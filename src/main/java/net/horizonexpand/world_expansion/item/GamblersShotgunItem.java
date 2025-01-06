@@ -15,7 +15,6 @@ import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -36,10 +35,14 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class GamblersShotgunItem extends Item implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
 	public String animationprocedure = "empty";
-	public static ItemDisplayContext transformType;
 
 	public GamblersShotgunItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
+	}
+
+	@Override
+	public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
+		return false;
 	}
 
 	@Override
@@ -56,11 +59,11 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 			private static final HumanoidModel.ArmPose GamblersShotgunPose = HumanoidModel.ArmPose.create("GamblersShotgun", false, (model, entity, arm) -> {
 				if (arm == HumanoidArm.LEFT) {
 				} else {
-					model.rightArm.xRot = -1.6F;
-					model.rightArm.yRot = -0.5F;
+					model.rightArm.xRot = -1.5F;
+					model.rightArm.yRot = -0.1F;
 					model.rightArm.zRot = -0.3F;
-					model.leftArm.xRot = -1.8F;
-					model.leftArm.yRot = 0.4F;
+					model.leftArm.xRot = -1.5F;
+					model.leftArm.yRot = 0.7F;
 					model.leftArm.zRot = 0.3F;
 				}
 			});
@@ -86,16 +89,10 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 		});
 	}
 
-	public void getTransformType(ItemDisplayContext type) {
-		this.transformType = type;
-	}
-
 	private PlayState idlePredicate(AnimationState event) {
-		if (this.transformType != null ? true : false) {
-			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(RawAnimation.begin().thenLoop("animation.gamblers_shotgun.idle"));
-				return PlayState.CONTINUE;
-			}
+		if (this.animationprocedure.equals("empty")) {
+			event.getController().setAnimation(RawAnimation.begin().thenLoop("animation.gamblers_shotgun.idle"));
+			return PlayState.CONTINUE;
 		}
 		return PlayState.STOP;
 	}
@@ -103,19 +100,17 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 	String prevAnim = "empty";
 
 	private PlayState procedurePredicate(AnimationState event) {
-		if (this.transformType != null ? true : false) {
-			if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!this.animationprocedure.equals(prevAnim) && !this.animationprocedure.equals("empty"))) {
-				if (!this.animationprocedure.equals(prevAnim))
-					event.getController().forceAnimationReset();
-				event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
-				if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
-					this.animationprocedure = "empty";
-					event.getController().forceAnimationReset();
-				}
-			} else if (this.animationprocedure.equals("empty")) {
-				prevAnim = "empty";
-				return PlayState.STOP;
+		if (!this.animationprocedure.equals("empty") && event.getController().getAnimationState() == AnimationController.State.STOPPED || (!this.animationprocedure.equals(prevAnim) && !this.animationprocedure.equals("empty"))) {
+			if (!this.animationprocedure.equals(prevAnim))
+				event.getController().forceAnimationReset();
+			event.getController().setAnimation(RawAnimation.begin().thenPlay(this.animationprocedure));
+			if (event.getController().getAnimationState() == AnimationController.State.STOPPED) {
+				this.animationprocedure = "empty";
+				event.getController().forceAnimationReset();
 			}
+		} else if (this.animationprocedure.equals("empty")) {
+			prevAnim = "empty";
+			return PlayState.STOP;
 		}
 		prevAnim = this.animationprocedure;
 		return PlayState.CONTINUE;

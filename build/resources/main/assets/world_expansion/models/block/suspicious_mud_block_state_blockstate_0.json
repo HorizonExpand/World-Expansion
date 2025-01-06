@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "world_expansion:block/suspicious_mud1",
-    "particle": "world_expansion:block/suspicious_mud"
-  },
-  "render_type": "solid"
-}

@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "world_expansion:block/kabanyt_copper_ore",
-    "particle": "world_expansion:block/kabanyt_copper_ore"
-  },
-  "render_type": "solid"
-}

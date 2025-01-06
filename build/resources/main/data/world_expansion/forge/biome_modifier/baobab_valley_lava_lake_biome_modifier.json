@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "world_expansion:baobab_valley",
-  "features": "world_expansion:baobab_valley_lava_lake",
-  "step": "lakes"
-}

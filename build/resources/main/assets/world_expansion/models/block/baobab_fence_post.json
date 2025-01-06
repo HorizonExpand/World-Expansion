@@ -1,8 +1,0 @@
-{
-  "parent": "block/fence_post",
-  "textures": {
-    "texture": "world_expansion:block/baobab_planks",
-    "particle": "world_expansion:block/baobab_planks"
-  },
-  "render_type": "solid"
-}

@@ -10,7 +10,6 @@
     "displaySettings": "gamblers_shotgun.item.json",
     "leftArm": "left",
     "rightArm": "right",
-    "perspective": "All Perspectives",
     "creativeTabs": [
       {
         "value": "CUSTOM:Items"
@@ -57,7 +56,7 @@
         "armHeld": "RIGHT",
         "arm": "RIGHT",
         "angle": "X",
-        "rotation": -1.6,
+        "rotation": -1.5,
         "swings": false,
         "followsHead": false
       },
@@ -65,7 +64,7 @@
         "armHeld": "RIGHT",
         "arm": "RIGHT",
         "angle": "Y",
-        "rotation": -0.5,
+        "rotation": -0.1,
         "swings": false,
         "followsHead": false
       },
@@ -81,7 +80,7 @@
         "armHeld": "RIGHT",
         "arm": "LEFT",
         "angle": "X",
-        "rotation": -1.8,
+        "rotation": -1.5,
         "swings": false,
         "followsHead": false
       },
@@ -89,7 +88,7 @@
         "armHeld": "RIGHT",
         "arm": "LEFT",
         "angle": "Y",
-        "rotation": 0.4,
+        "rotation": 0.7000000000000001,
         "swings": false,
         "followsHead": false
       },

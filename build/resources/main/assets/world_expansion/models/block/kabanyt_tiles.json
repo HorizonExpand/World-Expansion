@@ -1,8 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "world_expansion:block/kabanyt_tiles",
-    "particle": "world_expansion:block/kabanyt_tiles"
-  },
-  "render_type": "solid"
-}

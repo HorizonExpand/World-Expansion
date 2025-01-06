@@ -44,6 +44,7 @@ public class WorldExpansionMod {
 
 	public WorldExpansionMod() {
 		// Start of user code block mod constructor
+		//MinecraftForge.EVENT_BUS.addListener(this::addPackFinder);
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -52,11 +53,9 @@ public class WorldExpansionMod {
 		WorldExpansionModBlockEntities.REGISTRY.register(bus);
 		WorldExpansionModItems.REGISTRY.register(bus);
 		WorldExpansionModEntities.REGISTRY.register(bus);
-
 		WorldExpansionModTabs.REGISTRY.register(bus);
 		WorldExpansionModFeatures.REGISTRY.register(bus);
 		StructureFeature.REGISTRY.register(bus);
-
 		WorldExpansionModMenus.REGISTRY.register(bus);
 		WorldExpansionModAttributes.REGISTRY.register(bus);
 		// Start of user code block mod init
@@ -64,6 +63,13 @@ public class WorldExpansionMod {
 	}
 
 	// Start of user code block mod methods
+	//private void addPackFinder(AddPackFindersEvent event) {
+	//event.addRepositorySource((consumer, factory) -> {
+	// Регистрируем ресурс-пак из папки resourcepacks
+	//new ModResourcePack("test");
+	//consumer.accept(ModResourcePack);
+	//});
+	//}
 	// End of user code block mod methods
 	private static final String PROTOCOL_VERSION = "1";
 	public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation(MODID, MODID), () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);

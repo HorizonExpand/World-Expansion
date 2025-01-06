@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "world_expansion:dry_savanna",
-  "features": "world_expansion:dry_savanna_underwater_coarsedirt",
-  "step": "underground_decoration"
-}
