@@ -39,7 +39,7 @@ public class PlayerFirstSpawnHalloween2024Procedure {
 			return;
 		if ((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).FirstJoin) {
 			if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal("Message"), false);
+				_player.displayClientMessage(Component.literal((Component.translatable("message.first_join").getString())), false);
 			if (!world.isClientSide() && world.getServer() != null) {
 				BlockPos _bpLootTblWorld = BlockPos.containing(x, y, z);
 				for (ItemStack itemstackiterator : world.getServer().getLootData().getLootTable(new ResourceLocation("world_expansion:chests/tavern_map"))
