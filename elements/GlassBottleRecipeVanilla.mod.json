@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 1,
+    "recipeRetstackSize": 3,
     "group": "glass_bottle",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -21,19 +21,19 @@
         "value": ""
       },
       {
-        "value": "TAG:forge:glass"
+        "value": "TAG:c:glass"
       },
       {
         "value": ""
       },
       {
-        "value": "TAG:forge:glass"
+        "value": "TAG:c:glass"
       },
       {
         "value": ""
       },
       {
-        "value": "TAG:forge:glass"
+        "value": "TAG:c:glass"
       },
       {
         "value": ""

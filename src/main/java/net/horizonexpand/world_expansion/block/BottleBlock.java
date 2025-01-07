@@ -11,7 +11,6 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -54,13 +53,15 @@ public class BottleBlock extends BaseEntityBlock implements SimpleWaterloggedBlo
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public BottleBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).sound(SoundType.GLASS).strength(1f).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 0;
-				return 0;
-			}
-		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of()
+
+				.sound(SoundType.GLASS).strength(1f).lightLevel(s -> (new Object() {
+					public int getLightLevel() {
+						if (s.getValue(BLOCKSTATE) == 1)
+							return 0;
+						return 0;
+					}
+				}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 

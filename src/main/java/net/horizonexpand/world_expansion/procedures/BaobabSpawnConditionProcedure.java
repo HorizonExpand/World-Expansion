@@ -29,9 +29,9 @@ public class BaobabSpawnConditionProcedure {
 		double PositionX = 0;
 		EnableSoilReplacement = true;
 		EnableTagSupport = true;
-		AirTagName = "forge:air_for_structures";
+		AirTagName = "world_expansion:air";
 		TopSoilTagName = "minecraft:dirt";
-		UnderSoilTagName = "forge:under_soil_for_structures";
+		UnderSoilTagName = "minecraft:dirt";
 		Air = new ItemStack(Blocks.AIR).copy();
 		TopSoil = new ItemStack(Blocks.GRASS_BLOCK).copy();
 		UnderSoil = new ItemStack(Blocks.DIRT).copy();

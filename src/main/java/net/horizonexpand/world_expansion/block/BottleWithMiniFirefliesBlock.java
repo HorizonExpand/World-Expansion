@@ -11,7 +11,6 @@ import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraft.world.level.material.FluidState;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -56,13 +55,15 @@ public class BottleWithMiniFirefliesBlock extends BaseEntityBlock implements Sim
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public BottleWithMiniFirefliesBlock() {
-		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.HAT).sound(SoundType.GLASS).strength(1f).lightLevel(s -> (new Object() {
-			public int getLightLevel() {
-				if (s.getValue(BLOCKSTATE) == 1)
-					return 7;
-				return 7;
-			}
-		}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of()
+
+				.sound(SoundType.GLASS).strength(1f).lightLevel(s -> (new Object() {
+					public int getLightLevel() {
+						if (s.getValue(BLOCKSTATE) == 1)
+							return 7;
+						return 7;
+					}
+				}.getLightLevel())).noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 

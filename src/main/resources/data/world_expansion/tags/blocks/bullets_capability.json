@@ -2,7 +2,6 @@
   "replace": false,
   "values": [
     "#minecraft:ice",
-    "#forge:all_glass",
     "#world_expansion:bottles",
     "minecraft:amethyst_cluster",
     "minecraft:large_amethyst_bud",
@@ -47,6 +46,7 @@
     "minecraft:potted_flowering_azalea_bush",
     "minecraft:potted_cherry_sapling",
     "minecraft:potted_torchflower",
-    "minecraft:decorated_pot"
+    "minecraft:decorated_pot",
+    "#c:glass_blocks"
   ]
 }

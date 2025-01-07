@@ -34,7 +34,7 @@ public class MultiCraftingTableJEICategoryRecipeCategory implements IRecipeCateg
 
 	@Override
 	public Component getTitle() {
-		return Component.literal(Component.translatable("gui.jei.world_expansion.category.multi_crafting_table").getString());
+		return Component.literal("Multi-Crafting Table");
 	}
 
 	@Override
