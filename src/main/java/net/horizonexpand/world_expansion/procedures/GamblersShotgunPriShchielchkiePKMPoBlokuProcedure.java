@@ -15,6 +15,8 @@ import javax.annotation.Nullable;
 public class GamblersShotgunPriShchielchkiePKMPoBlokuProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
+		if (event.getHand() != event.getEntity().getUsedItemHand())
+			return;
 		execute(event, event.getEntity());
 	}
 

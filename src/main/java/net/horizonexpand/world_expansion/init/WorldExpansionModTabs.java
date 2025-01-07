@@ -53,6 +53,8 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.WINDOMETER.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.BOTTLE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
 			}).build());

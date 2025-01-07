@@ -50,7 +50,11 @@
     "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": true,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Worldexpansionblocks"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -63,7 +67,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "GLASS"
+      "value": "NONE"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -108,7 +112,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

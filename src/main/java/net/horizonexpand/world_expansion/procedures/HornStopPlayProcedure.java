@@ -39,8 +39,8 @@ public class HornStopPlayProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:copper_horns"))))
-				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:copper_horns"))))) {
+		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("world_expansion:copper_horns"))))
+				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("world_expansion:copper_horns"))))) {
 			if (world instanceof ServerLevel _level && _level.getServer() != null) {
 				Optional<CommandFunction> _fopt = _level.getServer().getFunctions().get(new ResourceLocation("world_expansion:stop_horns_play"));
 				if (_fopt.isPresent())

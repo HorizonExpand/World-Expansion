@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "enum": "net/minecraft/client/model/HumanoidModel$ArmPose",
+      "name": "WORLD_EXPANSION_GAMBLERS_SHOTGUN",
+      "constructor": "(ZLnet/neoforged/neoforge/client/IArmPoseTransformer;)V",
+      "parameters": {
+        "class": "net/horizonexpand/world_expansion/item/GamblersShotgunItem",
+        "field": "ARM_POSE"
+      }
+    }
+  ]
+}

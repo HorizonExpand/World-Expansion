@@ -36,7 +36,7 @@ public class Baobab1SaplingProcedure {
 		double sizeZ = 0;
 		if (!world.isClientSide()) {
 			customSappling = WorldExpansionModBlocks.BAOBAB_SAPLING.get().defaultBlockState();
-			airTag = "forge:air";
+			airTag = "world_expansion:air";
 			structureOffsetX = 1;
 			structureOffsetZ = 1;
 			conditionOffsetX = 1;

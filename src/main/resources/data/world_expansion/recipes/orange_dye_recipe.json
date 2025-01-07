@@ -2,31 +2,31 @@
   "type": "world_expansion:multi_crafting_table_jei_category",
   "ingredients": [
     {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
       "item": "world_expansion:astilba_multicolored"
     },
     {
-      "tag": "world_expansion:jei_empty_tag"
+      "tag": "jei:empty"
     },
     {
-      "tag": "world_expansion:jei_empty_tag"
+      "tag": "jei:empty"
     },
     {
-      "tag": "world_expansion:jei_empty_tag"
+      "tag": "jei:empty"
     },
     {
-      "tag": "world_expansion:jei_empty_tag"
-    },
-    {
-      "tag": "world_expansion:jei_empty_tag"
-    },
-    {
-      "tag": "world_expansion:jei_empty_tag"
-    },
-    {
-      "tag": "world_expansion:jei_empty_tag"
-    },
-    {
-      "tag": "world_expansion:jei_empty_tag"
+      "tag": "jei:empty"
     }
   ],
   "output": {

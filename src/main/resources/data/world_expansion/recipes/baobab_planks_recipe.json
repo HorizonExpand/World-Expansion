@@ -4,7 +4,7 @@
   "category": "building",
   "ingredients": [
     {
-      "tag": "forge:baobab_log"
+      "tag": "world_expansion:baobab_logs"
     }
   ],
   "result": {
