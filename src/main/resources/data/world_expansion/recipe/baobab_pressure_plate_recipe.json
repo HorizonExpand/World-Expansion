@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_pressure_plate",
+  "category": "building",
+  "pattern": [
+    "aa"
+  ],
+  "key": {
+    "a": {
+      "item": "world_expansion:baobab_planks"
+    }
+  },
+  "result": {
+    "id": "world_expansion:baobab_pressure_plate",
+    "count": 1
+  }
+}

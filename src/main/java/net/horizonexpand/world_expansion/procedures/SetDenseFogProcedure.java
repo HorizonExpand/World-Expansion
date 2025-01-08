@@ -14,19 +14,15 @@ public class SetDenseFogProcedure {
 			return;
 		if (BoolArgumentType.getBool(arguments, "boolean") == true) {
 			{
-				boolean _setval = true;
-				entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.DenseFog = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				WorldExpansionModVariables.PlayerVariables _vars = entity.getData(WorldExpansionModVariables.PLAYER_VARIABLES);
+				_vars.DenseFog = true;
+				_vars.syncPlayerVariables(entity);
 			}
 		} else {
 			{
-				boolean _setval = false;
-				entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.DenseFog = _setval;
-					capability.syncPlayerVariables(entity);
-				});
+				WorldExpansionModVariables.PlayerVariables _vars = entity.getData(WorldExpansionModVariables.PLAYER_VARIABLES);
+				_vars.DenseFog = false;
+				_vars.syncPlayerVariables(entity);
 			}
 		}
 	}

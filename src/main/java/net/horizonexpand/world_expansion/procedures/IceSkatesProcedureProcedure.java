@@ -8,9 +8,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.util.RandomSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
@@ -24,10 +24,10 @@ public class IceSkatesProcedureProcedure {
 		found = false;
 		sy = -3;
 		for (int index0 = 0; index0 < 3; index0++) {
-			if ((world.getBlockState(BlockPos.containing(x, y + sy, z))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))
-					&& ((world.getBlockState(BlockPos.containing(x, y + sy + 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))
-							&& (world.getBlockState(BlockPos.containing(x, y + sy + 2, z))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))
-							&& (world.getBlockState(BlockPos.containing(x, y + sy + 3, z))).is(BlockTags.create(new ResourceLocation("minecraft:ice")))
+			if ((world.getBlockState(BlockPos.containing(x, y + sy, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:ice")))
+					&& ((world.getBlockState(BlockPos.containing(x, y + sy + 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:ice")))
+							&& (world.getBlockState(BlockPos.containing(x, y + sy + 2, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:ice")))
+							&& (world.getBlockState(BlockPos.containing(x, y + sy + 3, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:ice")))
 							|| world.isEmptyBlock(BlockPos.containing(x, y + sy + 1, z)) && world.isEmptyBlock(BlockPos.containing(x, y + sy + 2, z)) && world.isEmptyBlock(BlockPos.containing(x, y + sy + 3, z)))) {
 				found = true;
 			}
@@ -49,12 +49,9 @@ public class IceSkatesProcedureProcedure {
 					return false;
 				}
 			}.checkGamemode(entity)) && (!entity.onGround() || entity.isSprinting())) {
-				{
-					ItemStack _ist = itemstack;
-					if (_ist.hurt(1, RandomSource.create(), null)) {
-						_ist.shrink(1);
-						_ist.setDamageValue(0);
-					}
+				if (world instanceof ServerLevel _level) {
+					itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
+					});
 				}
 			}
 		} else {

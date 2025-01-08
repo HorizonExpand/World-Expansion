@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "world_expansion:kabanyt_tiles"
-  },
-  "result": "world_expansion:kabanyt_tile_wall"
-}

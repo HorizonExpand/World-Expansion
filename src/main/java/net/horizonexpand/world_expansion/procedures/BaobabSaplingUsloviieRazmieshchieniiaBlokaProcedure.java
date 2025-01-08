@@ -8,7 +8,7 @@ import net.minecraft.core.BlockPos;
 
 public class BaobabSaplingUsloviieRazmieshchieniiaBlokaProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("minecraft:dirt"))) && !((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() instanceof LiquidBlock)
+		if ((world.getBlockState(BlockPos.containing(x, y - 1, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:dirt"))) && !((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() instanceof LiquidBlock)
 				&& !((world.getBlockState(BlockPos.containing(x, y, z - 1))).getBlock() instanceof LiquidBlock) && !((world.getBlockState(BlockPos.containing(x + 1, y, z))).getBlock() instanceof LiquidBlock)
 				&& !((world.getBlockState(BlockPos.containing(x, y, z + 1))).getBlock() instanceof LiquidBlock) && !((world.getBlockState(BlockPos.containing(x - 1, y, z))).getBlock() instanceof LiquidBlock)) {
 			return true;

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "group": "emerald",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "world_expansion:kabanyt_emerald_ore"
+  },
+  "result": {
+    "id": "minecraft:emerald"
+  }
+}

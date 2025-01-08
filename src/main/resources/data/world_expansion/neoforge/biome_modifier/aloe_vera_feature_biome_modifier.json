@@ -1,0 +1,18 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "world_expansion:baobab_valley",
+    "world_expansion:politania",
+    "badlands",
+    "bamboo_jungle",
+    "desert",
+    "eroded_badlands",
+    "jungle",
+    "savanna",
+    "savanna_plateau",
+    "sparse_jungle",
+    "wooded_badlands"
+  ],
+  "features": "world_expansion:aloe_vera_feature",
+  "step": "vegetal_decoration"
+}

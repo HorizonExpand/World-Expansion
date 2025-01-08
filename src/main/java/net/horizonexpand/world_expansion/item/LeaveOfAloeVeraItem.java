@@ -12,11 +12,11 @@ import net.horizonexpand.world_expansion.procedures.LeaveOfAloeVeraPriZaviershie
 
 public class LeaveOfAloeVeraItem extends Item {
 	public LeaveOfAloeVeraItem() {
-		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.3f).alwaysEat().build()));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationModifier(0.3f).alwaysEdible().build()));
 	}
 
 	@Override
-	public int getUseDuration(ItemStack itemstack) {
+	public int getUseDuration(ItemStack itemstack, LivingEntity livingEntity) {
 		return 10;
 	}
 

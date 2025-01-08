@@ -1,0 +1,9 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "savanna",
+    "savanna_plateau"
+  ],
+  "features": "world_expansion:savanna_surface_yellow_terracotta",
+  "step": "top_layer_modification"
+}

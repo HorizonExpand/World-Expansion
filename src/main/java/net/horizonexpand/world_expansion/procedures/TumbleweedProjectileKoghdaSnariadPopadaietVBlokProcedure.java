@@ -14,7 +14,7 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 public class TumbleweedProjectileKoghdaSnariadPopadaietVBlokProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (WorldExpansionModBlocks.TUMBLEWEED.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y + 1, z))
-				&& (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(new ResourceLocation("forge:tumbleweed_replaceable")))) {
+				&& (world.getBlockState(BlockPos.containing(x, y + 1, z))).is(BlockTags.create(ResourceLocation.parse("world_expansion:tumbleweed_replaceable")))) {
 			world.setBlock(BlockPos.containing(x, y + 1, z), WorldExpansionModBlocks.TUMBLEWEED.get().defaultBlockState(), 3);
 		} else {
 			if (world instanceof ServerLevel _level) {

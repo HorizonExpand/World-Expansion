@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "world_expansion:tumbleweed_item"
+    },
+    "title": {
+      "translate": "advancements.the_wildest_in_the_wild_west.title"
+    },
+    "description": {
+      "translate": "advancements.the_wildest_in_the_wild_west.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_wildest_in_the_wild_west_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "world_expansion:world_expansion"
+}

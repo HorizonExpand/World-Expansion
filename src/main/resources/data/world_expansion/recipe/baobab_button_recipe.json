@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wooden_button",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "world_expansion:baobab_planks"
+    }
+  ],
+  "result": {
+    "id": "world_expansion:baobab_button",
+    "count": 1
+  }
+}

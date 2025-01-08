@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "plains",
+    "meadow",
+    "flower_forest",
+    "cherry_grove"
+  ],
+  "features": "world_expansion:astilba_feature",
+  "step": "vegetal_decoration"
+}

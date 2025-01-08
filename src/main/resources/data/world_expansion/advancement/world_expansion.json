@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "world_expansion:textures/screens/kabanyt.png",
+    "icon": {
+      "id": "world_expansion:kabanyt"
+    },
+    "title": {
+      "translate": "advancements.world_expansion.title"
+    },
+    "description": {
+      "translate": "advancements.world_expansion.descr"
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "world_expansion_0": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 5
+  }
+}

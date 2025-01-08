@@ -6,20 +6,20 @@ package net.horizonexpand.world_expansion.init;
 
 import org.lwjgl.glfw.GLFW;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.client.event.RegisterKeyMappingsEvent;
-import net.minecraftforge.api.distmarker.Dist;
+import net.neoforged.neoforge.network.PacketDistributor;
+import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
+import net.neoforged.neoforge.client.event.ClientTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.horizonexpand.world_expansion.network.GunReloadMessage;
 import net.horizonexpand.world_expansion.network.GunDischargeMessage;
-import net.horizonexpand.world_expansion.WorldExpansionMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class WorldExpansionModKeyMappings {
 	public static final KeyMapping GUN_DISCHARGE = new KeyMapping("key.world_expansion.gun_discharge", GLFW.GLFW_KEY_G, "key.categories.misc") {
 		private boolean isDownOld = false;
@@ -28,7 +28,7 @@ public class WorldExpansionModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				WorldExpansionMod.PACKET_HANDLER.sendToServer(new GunDischargeMessage(0, 0));
+				PacketDistributor.sendToServer(new GunDischargeMessage(0, 0));
 				GunDischargeMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -41,7 +41,7 @@ public class WorldExpansionModKeyMappings {
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				WorldExpansionMod.PACKET_HANDLER.sendToServer(new GunReloadMessage(0, 0));
+				PacketDistributor.sendToServer(new GunReloadMessage(0, 0));
 				GunReloadMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
@@ -54,10 +54,10 @@ public class WorldExpansionModKeyMappings {
 		event.register(GUN_RELOAD);
 	}
 
-	@Mod.EventBusSubscriber({Dist.CLIENT})
+	@EventBusSubscriber({Dist.CLIENT})
 	public static class KeyEventListener {
 		@SubscribeEvent
-		public static void onClientTick(TickEvent.ClientTickEvent event) {
+		public static void onClientTick(ClientTickEvent.Post event) {
 			if (Minecraft.getInstance().screen == null) {
 				GUN_DISCHARGE.consumeClick();
 				GUN_RELOAD.consumeClick();

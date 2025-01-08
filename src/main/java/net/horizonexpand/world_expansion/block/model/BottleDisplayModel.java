@@ -9,16 +9,16 @@ import net.horizonexpand.world_expansion.block.display.BottleDisplayItem;
 public class BottleDisplayModel extends GeoModel<BottleDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(BottleDisplayItem animatable) {
-		return new ResourceLocation("world_expansion", "animations/bottle.animation.json");
+		return ResourceLocation.parse("world_expansion:animations/bottle.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(BottleDisplayItem animatable) {
-		return new ResourceLocation("world_expansion", "geo/bottle.geo.json");
+		return ResourceLocation.parse("world_expansion:geo/bottle.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(BottleDisplayItem entity) {
-		return new ResourceLocation("world_expansion", "textures/block/bottle_stayed.png");
+		return ResourceLocation.parse("world_expansion:textures/block/bottle_stayed.png");
 	}
 }

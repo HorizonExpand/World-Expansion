@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "group": "redstone",
+  "category": "misc",
+  "experience": 0.7,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "world_expansion:kabanyt_redstone_ore"
+  },
+  "result": {
+    "id": "minecraft:redstone"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 73,
+  "_type": "armortrim",
+  "definition": {
+    "name": "Brute Armor Trim",
+    "item": {
+      "value": "CUSTOM:BruteArmorTrimSmithingTemplate"
+    },
+    "armorTextureFile": "brute"
+  }
+}

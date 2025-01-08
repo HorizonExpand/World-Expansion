@@ -6,7 +6,7 @@ import org.checkerframework.checker.units.qual.s;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.pathfinder.BlockPathTypes;
+import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.BlockState;
@@ -25,7 +25,7 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class LittleShroomlightBlock extends FlowerBlock {
 	public LittleShroomlightBlock() {
-		super(() -> MobEffects.NIGHT_VISION, 100, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.SHROOMLIGHT).instabreak().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 12)
+		super(MobEffects.NIGHT_VISION, 100, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_RED).sound(SoundType.SHROOMLIGHT).instabreak().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 12)
 				.noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
@@ -36,13 +36,8 @@ public class LittleShroomlightBlock extends FlowerBlock {
 	}
 
 	@Override
-	public int getEffectDuration() {
-		return 100;
-	}
-
-	@Override
-	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
-		return BlockPathTypes.WALKABLE;
+	public PathType getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+		return PathType.WALKABLE;
 	}
 
 	@Override

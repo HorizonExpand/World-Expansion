@@ -4,9 +4,9 @@
  */
 package net.horizonexpand.world_expansion.init;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.server.ServerAboutToStartEvent;
+import net.neoforged.neoforge.event.server.ServerAboutToStartEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
 import net.minecraft.world.level.levelgen.SurfaceRules;
@@ -36,7 +36,7 @@ import com.mojang.datafixers.util.Pair;
 
 import com.google.common.base.Suppliers;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class WorldExpansionModBiomes {
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {
@@ -52,17 +52,17 @@ public class WorldExpansionModBiomes {
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters().values());
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.3f, 0.9f), Climate.Parameter.span(-0.3f, 0.3f), Climate.Parameter.span(-0.2f, 1f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "baobab_valley")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab_valley")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.3f, 0.9f), Climate.Parameter.span(-0.3f, 0.3f), Climate.Parameter.span(-0.2f, 1f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "baobab_valley")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab_valley")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.4f, 1f), Climate.Parameter.span(-0.2f, 0.4f), Climate.Parameter.span(-0.2f, 1f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "politania")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "politania")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.4f, 1f), Climate.Parameter.span(-0.2f, 0.4f), Climate.Parameter.span(-0.2f, 1f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "politania")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "politania")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.6f, 1.1f), Climate.Parameter.span(-0.5f, 0.2f), Climate.Parameter.span(0.2f, 1f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "dry_savanna")))));
+							Climate.Parameter.point(0.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "dry_savanna")))));
 					addParameterPoint(parameters, new Pair<>(new Climate.ParameterPoint(Climate.Parameter.span(0.6f, 1.1f), Climate.Parameter.span(-0.5f, 0.2f), Climate.Parameter.span(0.2f, 1f), Climate.Parameter.span(-1f, 1f),
-							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "dry_savanna")))));
+							Climate.Parameter.point(1.0f), Climate.Parameter.span(-0.3f, 0.3f), 0), biomeRegistry.getHolderOrThrow(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "dry_savanna")))));
 					chunkGenerator.biomeSource = MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(parameters));
 					chunkGenerator.featuresPerStep = Suppliers
 							.memoize(() -> FeatureSorter.buildFeaturesPerStep(List.copyOf(chunkGenerator.biomeSource.possibleBiomes()), biome -> chunkGenerator.generationSettingsGetter.apply(biome).features(), true));
@@ -73,11 +73,11 @@ public class WorldExpansionModBiomes {
 					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "baobab_valley")), Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(),
-								Blocks.GRAVEL.defaultBlockState()));
-						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "politania")), Blocks.RED_SAND.defaultBlockState(), Blocks.RED_SAND.defaultBlockState(),
-								Blocks.GRAVEL.defaultBlockState()));
-						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, new ResourceLocation("world_expansion", "dry_savanna")), Blocks.COARSE_DIRT.defaultBlockState(),
+						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab_valley")), Blocks.GRASS_BLOCK.defaultBlockState(),
+								Blocks.DIRT.defaultBlockState(), Blocks.GRAVEL.defaultBlockState()));
+						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "politania")), Blocks.RED_SAND.defaultBlockState(),
+								Blocks.RED_SAND.defaultBlockState(), Blocks.GRAVEL.defaultBlockState()));
+						addSurfaceRule(surfaceRules, 1, preliminarySurfaceRule(ResourceKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath("world_expansion", "dry_savanna")), Blocks.COARSE_DIRT.defaultBlockState(),
 								Blocks.COARSE_DIRT.defaultBlockState(), Blocks.GRAVEL.defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(), noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(),
 								noiseGeneratorSettings.noiseRouter(), SurfaceRules.sequence(surfaceRules.toArray(SurfaceRules.RuleSource[]::new)), noiseGeneratorSettings.spawnTarget(), noiseGeneratorSettings.seaLevel(),

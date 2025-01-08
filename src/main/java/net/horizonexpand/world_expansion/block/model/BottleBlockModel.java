@@ -11,23 +11,23 @@ public class BottleBlockModel extends GeoModel<BottleTileEntity> {
 	public ResourceLocation getAnimationResource(BottleTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("world_expansion", "animations/bottle.animation.json");
-		return new ResourceLocation("world_expansion", "animations/bottle.animation.json");
+			return ResourceLocation.parse("world_expansion:animations/bottle.animation.json");
+		return ResourceLocation.parse("world_expansion:animations/bottle.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(BottleTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("world_expansion", "geo/bottle.geo.json");
-		return new ResourceLocation("world_expansion", "geo/bottle.geo.json");
+			return ResourceLocation.parse("world_expansion:geo/bottle.geo.json");
+		return ResourceLocation.parse("world_expansion:geo/bottle.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(BottleTileEntity animatable) {
 		final int blockstate = animatable.blockstateNew;
 		if (blockstate == 1)
-			return new ResourceLocation("world_expansion", "textures/block/bottle_top.png");
-		return new ResourceLocation("world_expansion", "textures/block/bottle_stayed.png");
+			return ResourceLocation.parse("world_expansion:textures/block/bottle_top.png");
+		return ResourceLocation.parse("world_expansion:textures/block/bottle_stayed.png");
 	}
 }

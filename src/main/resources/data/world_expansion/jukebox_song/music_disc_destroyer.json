@@ -1,0 +1,8 @@
+{
+  "comparator_output": 13,
+  "description": {
+    "translate": "item.world_expansion.music_disc_destroyer.desc"
+  },
+  "length_in_seconds": 247,
+  "sound_event": "world_expansion:music_disc_destroyer"
+}

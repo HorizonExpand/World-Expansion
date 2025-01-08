@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "world_expansion:dry_savanna",
+    "savanna",
+    "savanna_plateau"
+  ],
+  "features": "world_expansion:acacia_bush_feature",
+  "step": "vegetal_decoration"
+}

@@ -2,15 +2,18 @@
 package net.horizonexpand.world_expansion.item;
 
 import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.core.animation.RawAnimation;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.RawAnimation;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.GeoItem;
 
-import net.minecraftforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.neoforge.client.IArmPoseTransformer;
+import net.neoforged.fml.common.asm.enumextension.EnumProxy;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Rarity;
@@ -46,33 +49,40 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 	}
 
 	@Override
+	public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
+		consumer.accept(new GeoRenderProvider() {
+			private GamblersShotgunItemRenderer renderer;
+
+			@Override
+			public BlockEntityWithoutLevelRenderer getGeoItemRenderer() {
+				if (this.renderer == null)
+					this.renderer = new GamblersShotgunItemRenderer();
+				return this.renderer;
+			}
+		});
+	}
+
+	public static final EnumProxy<HumanoidModel.ArmPose> ARM_POSE = new EnumProxy<>(HumanoidModel.ArmPose.class, false, (IArmPoseTransformer) (model, entity, arm) -> {
+		if (arm == HumanoidArm.LEFT) {
+		} else {
+			model.rightArm.xRot = -1.5F;
+			model.rightArm.yRot = -0.1F;
+			model.rightArm.zRot = -0.3F;
+			model.leftArm.xRot = -1.5F;
+			model.leftArm.yRot = 0.7F;
+			model.leftArm.zRot = 0.3F;
+		}
+	});
+
+	@Override
 	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
 		super.initializeClient(consumer);
 		consumer.accept(new IClientItemExtensions() {
-			private final BlockEntityWithoutLevelRenderer renderer = new GamblersShotgunItemRenderer();
-
-			@Override
-			public BlockEntityWithoutLevelRenderer getCustomRenderer() {
-				return renderer;
-			}
-
-			private static final HumanoidModel.ArmPose GamblersShotgunPose = HumanoidModel.ArmPose.create("GamblersShotgun", false, (model, entity, arm) -> {
-				if (arm == HumanoidArm.LEFT) {
-				} else {
-					model.rightArm.xRot = -1.5F;
-					model.rightArm.yRot = -0.1F;
-					model.rightArm.zRot = -0.3F;
-					model.leftArm.xRot = -1.5F;
-					model.leftArm.yRot = 0.7F;
-					model.leftArm.zRot = 0.3F;
-				}
-			});
-
 			@Override
 			public HumanoidModel.ArmPose getArmPose(LivingEntity entityLiving, InteractionHand hand, ItemStack itemStack) {
 				if (!itemStack.isEmpty()) {
 					if (entityLiving.getUsedItemHand() == hand) {
-						return GamblersShotgunPose;
+						return (HumanoidModel.ArmPose) ARM_POSE.getValue();
 					}
 				}
 				return HumanoidModel.ArmPose.EMPTY;
@@ -132,12 +142,7 @@ public class GamblersShotgunItem extends Item implements GeoItem {
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		ItemStack itemstack = ar.getObject();
-		double x = entity.getX();
-		double y = entity.getY();
-		double z = entity.getZ();
-
-		GamblersShotgunShootingProcedure.execute(world, x, y, z, entity, itemstack);
+		GamblersShotgunShootingProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 }

@@ -9,16 +9,16 @@ import net.horizonexpand.world_expansion.block.display.BottleWithMiniFirefliesDi
 public class BottleWithMiniFirefliesDisplayModel extends GeoModel<BottleWithMiniFirefliesDisplayItem> {
 	@Override
 	public ResourceLocation getAnimationResource(BottleWithMiniFirefliesDisplayItem animatable) {
-		return new ResourceLocation("world_expansion", "animations/bottle.animation.json");
+		return ResourceLocation.parse("world_expansion:animations/bottle.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(BottleWithMiniFirefliesDisplayItem animatable) {
-		return new ResourceLocation("world_expansion", "geo/bottle.geo.json");
+		return ResourceLocation.parse("world_expansion:geo/bottle.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(BottleWithMiniFirefliesDisplayItem entity) {
-		return new ResourceLocation("world_expansion", "textures/block/bottle_witn_mini_fireflies.png");
+		return ResourceLocation.parse("world_expansion:textures/block/bottle_witn_mini_fireflies.png");
 	}
 }

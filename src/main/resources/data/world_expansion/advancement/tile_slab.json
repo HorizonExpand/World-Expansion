@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "world_expansion:kabanyt_tile_slab"
+    },
+    "title": {
+      "translate": "advancements.tile_slab.title"
+    },
+    "description": {
+      "translate": "advancements.tile_slab.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "tile_slab_0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "world_expansion:kabanyt_tile_slab"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5
+  },
+  "parent": "world_expansion:oh_great_baobab"
+}

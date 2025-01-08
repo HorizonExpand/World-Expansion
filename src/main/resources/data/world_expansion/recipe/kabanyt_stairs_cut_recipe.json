@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "world_expansion:kabanyt"
+  },
+  "result": {
+    "id": "world_expansion:kabanyt_stairs",
+    "count": 1
+  }
+}

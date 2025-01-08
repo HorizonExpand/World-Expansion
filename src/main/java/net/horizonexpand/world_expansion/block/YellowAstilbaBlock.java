@@ -16,17 +16,12 @@ import net.minecraft.core.BlockPos;
 
 public class YellowAstilbaBlock extends FlowerBlock {
 	public YellowAstilbaBlock() {
-		super(() -> MobEffects.DAMAGE_BOOST, 100, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(MobEffects.DAMAGE_BOOST, 100, BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return box(3, 0, 3, 13, 13, 13);
-	}
-
-	@Override
-	public int getEffectDuration() {
-		return 100;
 	}
 
 	@Override

@@ -13,17 +13,12 @@ import net.minecraft.core.BlockPos;
 
 public class HayBlockStairsBlock extends StairBlock {
 	public HayBlockStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).strength(0.5f).dynamicShape());
+		super(Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_YELLOW).sound(SoundType.GRASS).strength(0.5f).dynamicShape());
 	}
 
 	@Override
 	public float getExplosionResistance() {
 		return 0.5f;
-	}
-
-	@Override
-	public boolean isRandomlyTicking(BlockState state) {
-		return false;
 	}
 
 	@Override

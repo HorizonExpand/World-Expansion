@@ -20,7 +20,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.InteractionHand;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
@@ -33,7 +32,7 @@ import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
 
 public class TumbleweedBlock extends FlowerBlock {
 	public TumbleweedBlock() {
-		super(() -> MobEffects.DIG_SLOWDOWN, 100,
+		super(MobEffects.DIG_SLOWDOWN, 100,
 				BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_BROWN).randomTicks().sound(SoundType.MANGROVE_ROOTS).instabreak().noCollission().replaceable().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
@@ -41,11 +40,6 @@ public class TumbleweedBlock extends FlowerBlock {
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
 		return box(1, 1, 1, 15, 15, 15).move(offset.x, offset.y, offset.z);
-	}
-
-	@Override
-	public int getEffectDuration() {
-		return 100;
 	}
 
 	@Override
@@ -59,7 +53,7 @@ public class TumbleweedBlock extends FlowerBlock {
 	}
 
 	@Override
-	public ItemStack getCloneItemStack(BlockState state, HitResult target, BlockGetter world, BlockPos pos, Player player) {
+	public ItemStack getCloneItemStack(BlockState state, HitResult target, LevelReader world, BlockPos pos, Player player) {
 		return new ItemStack(WorldExpansionModItems.TUMBLEWEED_ITEM.get());
 	}
 
@@ -163,8 +157,8 @@ public class TumbleweedBlock extends FlowerBlock {
 	}
 
 	@Override
-	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
-		super.use(blockstate, world, pos, entity, hand, hit);
+	public InteractionResult useWithoutItem(BlockState blockstate, Level world, BlockPos pos, Player entity, BlockHitResult hit) {
+		super.useWithoutItem(blockstate, world, pos, entity, hit);
 		TumbleweedPriShchielchkiePKMPoRastieniiuProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return InteractionResult.SUCCESS;
 	}

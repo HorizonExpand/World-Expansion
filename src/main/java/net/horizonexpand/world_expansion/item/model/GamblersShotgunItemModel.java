@@ -9,16 +9,16 @@ import net.horizonexpand.world_expansion.item.GamblersShotgunItem;
 public class GamblersShotgunItemModel extends GeoModel<GamblersShotgunItem> {
 	@Override
 	public ResourceLocation getAnimationResource(GamblersShotgunItem animatable) {
-		return new ResourceLocation("world_expansion", "animations/gamblers_shotgun.animation.json");
+		return ResourceLocation.parse("world_expansion:animations/gamblers_shotgun.animation.json");
 	}
 
 	@Override
 	public ResourceLocation getModelResource(GamblersShotgunItem animatable) {
-		return new ResourceLocation("world_expansion", "geo/gamblers_shotgun.geo.json");
+		return ResourceLocation.parse("world_expansion:geo/gamblers_shotgun.geo.json");
 	}
 
 	@Override
 	public ResourceLocation getTextureResource(GamblersShotgunItem animatable) {
-		return new ResourceLocation("world_expansion", "textures/item/gamblers_shotgun.png");
+		return ResourceLocation.parse("world_expansion:textures/item/gamblers_shotgun.png");
 	}
 }

@@ -9,31 +9,31 @@
     "count": 1,
     "ingredients": [
       {
+        "value": "TAG:jei:empty"
+      },
+      {
+        "value": "TAG:jei:empty"
+      },
+      {
+        "value": "TAG:jei:empty"
+      },
+      {
+        "value": "TAG:jei:empty"
+      },
+      {
         "value": "CUSTOM:Astilbamulticolored"
       },
       {
-        "value": "Blocks.AIR"
+        "value": "TAG:jei:empty"
       },
       {
-        "value": "Blocks.AIR"
+        "value": "TAG:jei:empty"
       },
       {
-        "value": "Blocks.AIR"
+        "value": "TAG:jei:empty"
       },
       {
-        "value": "Blocks.AIR"
-      },
-      {
-        "value": "Blocks.AIR"
-      },
-      {
-        "value": "Blocks.AIR"
-      },
-      {
-        "value": "Blocks.AIR"
-      },
-      {
-        "value": "Blocks.AIR"
+        "value": "TAG:jei:empty"
       }
     ]
   }

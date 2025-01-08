@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "world_expansion:copper_horn0"
+    },
+    "title": {
+      "translate": "advancements.lisa_simpson.title"
+    },
+    "description": {
+      "translate": "advancements.lisa_simpson.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lisa_simpson_0": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "world_expansion:poor_zhorik"
+}

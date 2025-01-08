@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "a",
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "world_expansion:kabanyt_bricks_slab"
+    }
+  },
+  "result": {
+    "id": "world_expansion:carved_kabanyt",
+    "count": 1
+  }
+}

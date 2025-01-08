@@ -1,0 +1,36 @@
+{
+  "type": "world_expansion:multi_crafting_table_jei_category",
+  "ingredients": [
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "item": "world_expansion:astilba_multicolored"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    },
+    {
+      "tag": "jei:empty"
+    }
+  ],
+  "output": {
+    "id": "minecraft:magenta_dye",
+    "count": 1
+  }
+}

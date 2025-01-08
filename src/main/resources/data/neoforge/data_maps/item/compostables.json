@@ -1,0 +1,37 @@
+{
+  "values": {
+    "world_expansion:astilba": {
+      "chance": 0.65
+    },
+    "world_expansion:astilba_multicolored": {
+      "chance": 0.65
+    },
+    "world_expansion:baobab_sapling": {
+      "chance": 0.3
+    },
+    "world_expansion:aloe_vera": {
+      "chance": 0.65
+    },
+    "world_expansion:tiger_aloe_vera": {
+      "chance": 0.65
+    },
+    "world_expansion:yellow_astilba": {
+      "chance": 0.65
+    },
+    "world_expansion:judas_fruit": {
+      "chance": 0.5
+    },
+    "world_expansion:split_judas_fruit": {
+      "chance": 0.5
+    },
+    "world_expansion:leave_of_aloe_vera": {
+      "chance": 0.3
+    },
+    "world_expansion:tumbleweed_item": {
+      "chance": 0.5
+    },
+    "world_expansion:baobab_leaves": {
+      "chance": 0.3
+    }
+  }
+}

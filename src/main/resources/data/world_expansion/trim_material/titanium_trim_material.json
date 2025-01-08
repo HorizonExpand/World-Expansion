@@ -1,0 +1,9 @@
+{
+  "asset_name": "titanium_trim_material",
+  "description": {
+    "color": "#84AAAD",
+    "translate": "trim_material.world_expansion.titanium_trim_material"
+  },
+  "ingredient": "world_expansion:titanium_ingot",
+  "item_model_index": 0.0
+}

@@ -11,7 +11,6 @@ public class ShotgunBlastKoghdaSnariadPopadaietVSushchnostProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity immediatesourceentity) {
 		if (entity == null || immediatesourceentity == null)
 			return;
-		entity.hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation("world_expansion:shotgun_damage_type")))),
-				(float) (8 / (immediatesourceentity.getPersistentData().getDouble("live") + 1)));
+		entity.hurt(new DamageSource(world.holderOrThrow(ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.parse("world_expansion:shotgun_damage_type")))), (float) (8 / (immediatesourceentity.getPersistentData().getDouble("live") + 1)));
 	}
 }

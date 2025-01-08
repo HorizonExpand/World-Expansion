@@ -4,11 +4,11 @@
  */
 package net.horizonexpand.world_expansion.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -18,10 +18,10 @@ import net.minecraft.core.registries.Registries;
 
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
 public class WorldExpansionModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, WorldExpansionMod.MODID);
-	public static final RegistryObject<CreativeModeTab> BUILDING_BLOCKS = REGISTRY.register("building_blocks",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> BUILDING_BLOCKS = REGISTRY.register("building_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.building_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.KABANYT_BRICKS.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_WOOD.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LOG.get().asItem());
@@ -53,10 +53,12 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.WINDOMETER.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.BOTTLE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
 			}).build());
-	public static final RegistryObject<CreativeModeTab> NATURAL_BLOCKS = REGISTRY.register("natural_blocks",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NATURAL_BLOCKS = REGISTRY.register("natural_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.natural_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LEAVES.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_LEAVES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.JUDAS_FRUIT_PLANT.get().asItem());
@@ -82,7 +84,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_IRON_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE.get().asItem());
 			}).withTabsBefore(BUILDING_BLOCKS.getId()).build());
-	public static final RegistryObject<CreativeModeTab> ITEMS = REGISTRY.register("items",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ITEMS = REGISTRY.register("items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.items")).icon(() -> new ItemStack(WorldExpansionModItems.COPPER_HORN0.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModItems.JUDAS_FRUIT.get());
 				tabData.accept(WorldExpansionModItems.SPLIT_JUDAS_FRUIT.get());
@@ -108,7 +110,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.BLANK_SHOTGUN_BULLET.get());
 				tabData.accept(WorldExpansionModItems.ICE_SKATES_BOOTS.get());
 			}).withTabsBefore(NATURAL_BLOCKS.getId()).build());
-	public static final RegistryObject<CreativeModeTab> MOBS = REGISTRY.register("mobs",
+	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> MOBS = REGISTRY.register("mobs",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.mobs")).icon(() -> new ItemStack(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
 			}).withTabsBefore(ITEMS.getId()).build());

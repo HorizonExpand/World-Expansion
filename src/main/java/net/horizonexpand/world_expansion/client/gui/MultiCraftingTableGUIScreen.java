@@ -1,17 +1,19 @@
 package net.horizonexpand.world_expansion.client.gui;
 
+import net.neoforged.neoforge.network.PacketDistributor;
+
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIMenu;
 import net.horizonexpand.world_expansion.network.MultiCraftingTableGUIButtonMessage;
-import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 import java.util.HashMap;
 
@@ -35,11 +37,11 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		this.imageHeight = 166;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("world_expansion:textures/screens/multi_crafting_table_gui_copper_horn.png");
+	private static final ResourceLocation texture = ResourceLocation.parse("world_expansion:textures/screens/multi_crafting_table_gui_copper_horn.png");
 
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-		this.renderBackground(guiGraphics);
+		this.renderBackground(guiGraphics, mouseX, mouseY, partialTicks);
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
@@ -71,12 +73,18 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 	@Override
 	public void init() {
 		super.init();
-		imagebutton_change = new ImageButton(this.leftPos + 132, this.topPos + 43, 8, 8, 0, 0, 8, new ResourceLocation("world_expansion:textures/screens/atlas/imagebutton_change.png"), 8, 16, e -> {
-			if (true) {
-				WorldExpansionMod.PACKET_HANDLER.sendToServer(new MultiCraftingTableGUIButtonMessage(0, x, y, z));
-				MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+		imagebutton_change = new ImageButton(this.leftPos + 132, this.topPos + 43, 8, 8,
+				new WidgetSprites(ResourceLocation.parse("world_expansion:textures/screens/change.png"), ResourceLocation.parse("world_expansion:textures/screens/change_light.png")), e -> {
+					if (true) {
+						PacketDistributor.sendToServer(new MultiCraftingTableGUIButtonMessage(0, x, y, z));
+						MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+					}
+				}) {
+			@Override
+			public void renderWidget(GuiGraphics guiGraphics, int x, int y, float partialTicks) {
+				guiGraphics.blit(sprites.get(isActive(), isHoveredOrFocused()), getX(), getY(), 0, 0, width, height, width, height);
 			}
-		});
+		};
 		guistate.put("button:imagebutton_change", imagebutton_change);
 		this.addRenderableWidget(imagebutton_change);
 	}

@@ -1,0 +1,42 @@
+{
+  "_fv": 73,
+  "_type": "trimmaterial",
+  "definition": {
+    "name": "Titanium Material",
+    "item": {
+      "value": "CUSTOM:TitaniumIngot"
+    },
+    "color1": {
+      "value": -11968414,
+      "falpha": 0.0
+    },
+    "color2": {
+      "value": -10717062,
+      "falpha": 0.0
+    },
+    "color3": {
+      "value": -9399659,
+      "falpha": 0.0
+    },
+    "color4": {
+      "value": -8082771,
+      "falpha": 0.0
+    },
+    "color5": {
+      "value": -4138519,
+      "falpha": 0.0
+    },
+    "color6": {
+      "value": -6240306,
+      "falpha": 0.0
+    },
+    "color7": {
+      "value": -4138519,
+      "falpha": 0.0
+    },
+    "color8": {
+      "value": -2036226,
+      "falpha": 0.0
+    }
+  }
+}

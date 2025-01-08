@@ -1,10 +1,10 @@
 
 package net.horizonexpand.world_expansion.command;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegisterCommandsEvent;
-import net.minecraftforge.common.util.FakePlayerFactory;
+import net.neoforged.neoforge.event.RegisterCommandsEvent;
+import net.neoforged.neoforge.common.util.FakePlayerFactory;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
@@ -16,7 +16,7 @@ import net.horizonexpand.world_expansion.procedures.SetDenseFogProcedure;
 
 import com.mojang.brigadier.arguments.BoolArgumentType;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class DenseFogCommandCommand {
 	@SubscribeEvent
 	public static void registerCommand(RegisterCommandsEvent event) {

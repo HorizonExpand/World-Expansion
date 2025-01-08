@@ -22,18 +22,13 @@ import net.horizonexpand.world_expansion.procedures.AloeVeraPriRazrushieniiRasti
 
 public class AloeVeraBlock extends FlowerBlock {
 	public AloeVeraBlock() {
-		super(() -> MobEffects.REGENERATION, 100, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(MobEffects.REGENERATION, 100, BlockBehaviour.Properties.of().mapColor(MapColor.PLANT).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		Vec3 offset = state.getOffset(world, pos);
 		return box(4, 0, 4, 12, 13, 12).move(offset.x, offset.y, offset.z);
-	}
-
-	@Override
-	public int getEffectDuration() {
-		return 100;
 	}
 
 	@Override

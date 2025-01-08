@@ -1,0 +1,7 @@
+{
+  "asset_id": "world_expansion:brute_armor_trim",
+  "description": {
+    "translate": "trim_pattern.world_expansion.brute_armor_trim"
+  },
+  "template_item": "world_expansion:brute_armor_trim_smithing_template"
+}

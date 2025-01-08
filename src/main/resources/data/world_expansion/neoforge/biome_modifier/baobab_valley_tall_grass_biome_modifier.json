@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "world_expansion:baobab_valley",
+  "features": "world_expansion:baobab_valley_tall_grass",
+  "step": "top_layer_modification"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "meadow",
+    "flower_forest",
+    "bamboo_jungle",
+    "sparse_jungle",
+    "cherry_grove"
+  ],
+  "features": "world_expansion:astilba_multicolored_feature",
+  "step": "vegetal_decoration"
+}

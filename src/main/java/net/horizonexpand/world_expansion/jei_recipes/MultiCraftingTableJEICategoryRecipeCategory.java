@@ -4,6 +4,7 @@ package net.horizonexpand.world_expansion.jei_recipes;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.GuiGraphics;
 
 import net.horizonexpand.world_expansion.init.WorldExpansionModJeiPlugin;
 import net.horizonexpand.world_expansion.init.WorldExpansionModBlocks;
@@ -12,13 +13,14 @@ import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.helpers.IGuiHelper;
+import mezz.jei.api.gui.ingredient.IRecipeSlotsView;
 import mezz.jei.api.gui.drawable.IDrawable;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
 import mezz.jei.api.constants.VanillaTypes;
 
 public class MultiCraftingTableJEICategoryRecipeCategory implements IRecipeCategory<MultiCraftingTableJEICategoryRecipe> {
-	public final static ResourceLocation UID = new ResourceLocation("world_expansion", "multi_crafting_table_jei_category");
-	public final static ResourceLocation TEXTURE = new ResourceLocation("world_expansion", "textures/screens/multi_crafting_table_gui_jei.png");
+	public final static ResourceLocation UID = ResourceLocation.parse("world_expansion:multi_crafting_table_jei_category");
+	public final static ResourceLocation TEXTURE = ResourceLocation.parse("world_expansion:textures/screens/multi_crafting_table_gui_jei.png");
 	private final IDrawable background;
 	private final IDrawable icon;
 
@@ -34,17 +36,27 @@ public class MultiCraftingTableJEICategoryRecipeCategory implements IRecipeCateg
 
 	@Override
 	public Component getTitle() {
-		return Component.literal(Component.translatable("gui.jei.world_expansion.category.multi_crafting_table").getString());
-	}
-
-	@Override
-	public IDrawable getBackground() {
-		return this.background;
+		return Component.literal("Multi-Crafting Table");
 	}
 
 	@Override
 	public IDrawable getIcon() {
 		return this.icon;
+	}
+
+	@Override
+	public int getWidth() {
+		return this.background.getWidth();
+	}
+
+	@Override
+	public int getHeight() {
+		return this.background.getHeight();
+	}
+
+	@Override
+	public void draw(MultiCraftingTableJEICategoryRecipe recipe, IRecipeSlotsView recipeSlotsView, GuiGraphics guiGraphics, double mouseX, double mouseY) {
+		this.background.draw(guiGraphics);
 	}
 
 	@Override

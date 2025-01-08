@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "world_expansion:hay_block_stairs",
+    "world_expansion:hay_block_slab",
+    "minecraft:hay_block"
+  ]
+}

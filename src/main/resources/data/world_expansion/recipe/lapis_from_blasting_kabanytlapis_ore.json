@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "group": "lapis_lazuli",
+  "category": "misc",
+  "experience": 0.2,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "world_expansion:kabanyt_lapis_ore"
+  },
+  "result": {
+    "id": "minecraft:lapis_lazuli"
+  }
+}

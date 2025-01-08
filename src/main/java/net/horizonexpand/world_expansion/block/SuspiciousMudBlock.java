@@ -3,8 +3,7 @@ package net.horizonexpand.world_expansion.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.common.util.ForgeSoundType;
+import net.neoforged.neoforge.common.util.DeferredSoundType;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -22,6 +21,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.block.entity.SuspiciousMudBlockEntity;
@@ -31,9 +31,9 @@ public class SuspiciousMudBlock extends Block implements EntityBlock {
 
 	public SuspiciousMudBlock() {
 		super(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY)
-				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:suspicious_mud_break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.mud.step")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:suspicious_mud_break")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("world_expansion:suspicious_mud_break")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.mud.fall"))))
+				.sound(new DeferredSoundType(1.0f, 1.0f, () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("world_expansion:suspicious_mud_break")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.mud.step")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("world_expansion:suspicious_mud_break")), () -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("world_expansion:suspicious_mud_break")),
+						() -> BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("block.mud.fall"))))
 				.strength(0.8f, 2f).lightLevel(s -> (new Object() {
 					public int getLightLevel() {
 						if (s.getValue(BLOCKSTATE) == 1)

@@ -22,7 +22,7 @@ public class ShotgunBlastKoghdaSnariadPopadaietVBlokProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(new ResourceLocation("world_expansion:bullets_capability")))) {
+		if ((world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("world_expansion:bullets_capability")))) {
 			{
 				BlockPos _pos = BlockPos.containing(x, y, z);
 				Block.dropResources(world.getBlockState(_pos), world, BlockPos.containing(x, y, z), null);

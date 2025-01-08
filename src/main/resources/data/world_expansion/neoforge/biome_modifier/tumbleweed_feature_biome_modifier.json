@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "badlands",
+    "desert",
+    "eroded_badlands",
+    "windswept_savanna",
+    "wooded_badlands",
+    "world_expansion:dry_savanna",
+    "world_expansion:politania"
+  ],
+  "features": "world_expansion:tumbleweed_feature",
+  "step": "vegetal_decoration"
+}

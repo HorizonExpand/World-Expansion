@@ -19,7 +19,7 @@ import java.util.ArrayList;
 public class WorldExpansionModBrewingRecipes implements IModPlugin {
 	@Override
 	public ResourceLocation getPluginUid() {
-		return new ResourceLocation("world_expansion:brewing_recipes");
+		return ResourceLocation.parse("world_expansion:brewing_recipes");
 	}
 
 	@Override

@@ -1,15 +1,13 @@
 package net.horizonexpand.world_expansion.block.display;
 
 import software.bernie.geckolib.util.GeckoLibUtil;
-import software.bernie.geckolib.core.object.PlayState;
-import software.bernie.geckolib.core.animation.AnimationState;
-import software.bernie.geckolib.core.animation.AnimationController;
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animation.PlayState;
+import software.bernie.geckolib.animation.AnimationState;
+import software.bernie.geckolib.animation.AnimationController;
+import software.bernie.geckolib.animation.AnimatableManager;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.client.GeoRenderProvider;
 import software.bernie.geckolib.animatable.GeoItem;
-
-import net.minecraftforge.common.property.Properties;
-import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.BlockItem;
@@ -18,6 +16,7 @@ import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.horizonexpand.world_expansion.block.renderer.BottleWithMiniFirefliesDisplayItemRenderer;
 
 import java.util.function.Consumer;
+import java.util.Properties;
 
 public class BottleWithMiniFirefliesDisplayItem extends BlockItem implements GeoItem {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
@@ -31,14 +30,15 @@ public class BottleWithMiniFirefliesDisplayItem extends BlockItem implements Geo
 	}
 
 	@Override
-	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
-		super.initializeClient(consumer);
-		consumer.accept(new IClientItemExtensions() {
-			private final BlockEntityWithoutLevelRenderer renderer = new BottleWithMiniFirefliesDisplayItemRenderer();
+	public void createGeoRenderer(Consumer<GeoRenderProvider> consumer) {
+		consumer.accept(new GeoRenderProvider() {
+			private BottleWithMiniFirefliesDisplayItemRenderer renderer;
 
 			@Override
-			public BlockEntityWithoutLevelRenderer getCustomRenderer() {
-				return renderer;
+			public BlockEntityWithoutLevelRenderer getGeoItemRenderer() {
+				if (this.renderer == null)
+					this.renderer = new BottleWithMiniFirefliesDisplayItemRenderer();
+				return this.renderer;
 			}
 		});
 	}

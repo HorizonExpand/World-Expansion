@@ -2,37 +2,39 @@ package net.horizonexpand.world_expansion.init;
 
 import software.bernie.geckolib.animatable.GeoItem;
 
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
+import net.neoforged.neoforge.event.tick.PlayerTickEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
 
+import net.minecraft.world.item.component.CustomData;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.component.DataComponents;
 
 import net.horizonexpand.world_expansion.item.GamblersShotgunItem;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ItemAnimationFactory {
 	@SubscribeEvent
-	public static void animatedItems(TickEvent.PlayerTickEvent event) {
+	public static void animatedItems(PlayerTickEvent.Post event) {
 		String animation = "";
-		ItemStack mainhandItem = event.player.getMainHandItem().copy();
-		ItemStack offhandItem = event.player.getOffhandItem().copy();
-		if (event.phase == TickEvent.Phase.START && (mainhandItem.getItem() instanceof GeoItem || offhandItem.getItem() instanceof GeoItem)) {
+		ItemStack mainhandItem = event.getEntity().getMainHandItem().copy();
+		ItemStack offhandItem = event.getEntity().getOffhandItem().copy();
+		if (mainhandItem.getItem() instanceof GeoItem || offhandItem.getItem() instanceof GeoItem) {
 			if (mainhandItem.getItem() instanceof GamblersShotgunItem animatable) {
-				animation = mainhandItem.getOrCreateTag().getString("geckoAnim");
+				animation = mainhandItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("geckoAnim");
 				if (!animation.isEmpty()) {
-					event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
-					if (event.player.level().isClientSide()) {
-						((GamblersShotgunItem) event.player.getMainHandItem().getItem()).animationprocedure = animation;
+					CustomData.update(DataComponents.CUSTOM_DATA, event.getEntity().getMainHandItem(), tag -> tag.putString("geckoAnim", ""));
+					if (event.getEntity().level().isClientSide()) {
+						((GamblersShotgunItem) event.getEntity().getMainHandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}
 			if (offhandItem.getItem() instanceof GamblersShotgunItem animatable) {
-				animation = offhandItem.getOrCreateTag().getString("geckoAnim");
+				animation = offhandItem.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString("geckoAnim");
 				if (!animation.isEmpty()) {
-					event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
-					if (event.player.level().isClientSide()) {
-						((GamblersShotgunItem) event.player.getOffhandItem().getItem()).animationprocedure = animation;
+					CustomData.update(DataComponents.CUSTOM_DATA, event.getEntity().getOffhandItem(), tag -> tag.putString("geckoAnim", ""));
+					if (event.getEntity().level().isClientSide()) {
+						((GamblersShotgunItem) event.getEntity().getOffhandItem().getItem()).animationprocedure = animation;
 					}
 				}
 			}

@@ -1,0 +1,17 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "world_expansion:baobab_valley",
+    "world_expansion:politania",
+    "badlands",
+    "desert",
+    "eroded_badlands",
+    "savanna",
+    "savanna_plateau",
+    "windswept_savanna",
+    "wooded_badlands",
+    "world_expansion:dry_savanna"
+  ],
+  "features": "world_expansion:tiger_aloe_vera_feature",
+  "step": "vegetal_decoration"
+}

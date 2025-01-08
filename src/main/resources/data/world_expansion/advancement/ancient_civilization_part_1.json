@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:red_sand"
+    },
+    "title": {
+      "translate": "advancements.ancient_civilization_part_1.title"
+    },
+    "description": {
+      "translate": "advancements.ancient_civilization_part_1.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "ancient_civilization_part_1_0": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biomes": "world_expansion:politania"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "world_expansion:world_expansion"
+}

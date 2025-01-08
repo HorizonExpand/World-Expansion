@@ -1,12 +1,11 @@
 package net.horizonexpand.world_expansion.procedures;
 
-import net.minecraftforge.registries.ForgeRegistries;
-
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
 
 import net.horizonexpand.world_expansion.network.WorldExpansionModVariables;
 
@@ -21,17 +20,14 @@ public class MultiCraftingTableGUIKazhdyiTikPokaIntierfieisOtkrytProcedure {
 		OutputSlot = 9;
 		if (DyeConditionProcedure.execute(entity)) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ForgeRegistries.ITEMS
-						.getValue(new ResourceLocation((((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).Dye)).toLowerCase(java.util.Locale.ENGLISH))))
-						.copy();
+				ItemStack _setstack = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse((entity.getData(WorldExpansionModVariables.PLAYER_VARIABLES).Dye).toLowerCase(java.util.Locale.ENGLISH)))).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get((int) OutputSlot)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}
 		} else if (CopperHornConditionProcedure.execute(entity)) {
 			if (entity instanceof Player _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
-				ItemStack _setstack = new ItemStack(ForgeRegistries.ITEMS.getValue(
-						new ResourceLocation((((entity.getCapability(WorldExpansionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new WorldExpansionModVariables.PlayerVariables())).CopperHorn)).toLowerCase(java.util.Locale.ENGLISH)))).copy();
+				ItemStack _setstack = new ItemStack(BuiltInRegistries.ITEM.get(ResourceLocation.parse((entity.getData(WorldExpansionModVariables.PLAYER_VARIABLES).CopperHorn).toLowerCase(java.util.Locale.ENGLISH)))).copy();
 				_setstack.setCount(1);
 				((Slot) _slots.get((int) OutputSlot)).set(_setstack);
 				_player.containerMenu.broadcastChanges();

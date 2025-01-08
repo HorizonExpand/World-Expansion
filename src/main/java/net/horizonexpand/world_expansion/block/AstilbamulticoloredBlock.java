@@ -16,17 +16,12 @@ import net.minecraft.core.BlockPos;
 
 public class AstilbamulticoloredBlock extends FlowerBlock {
 	public AstilbamulticoloredBlock() {
-		super(() -> MobEffects.LEVITATION, 100, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PURPLE).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
+		super(MobEffects.LEVITATION, 100, BlockBehaviour.Properties.of().mapColor(MapColor.TERRACOTTA_PURPLE).sound(SoundType.GRASS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.XZ).pushReaction(PushReaction.DESTROY));
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return box(3, 0, 3, 13, 13, 13);
-	}
-
-	@Override
-	public int getEffectDuration() {
-		return 100;
 	}
 
 	@Override

@@ -36,7 +36,7 @@ public class Baobab0SaplingProcedure {
 		double sizeZ = 0;
 		if (!world.isClientSide()) {
 			customSappling = WorldExpansionModBlocks.BAOBAB_SAPLING.get().defaultBlockState();
-			airTag = "forge:air";
+			airTag = "world_expansion:air";
 			structureOffsetX = 1;
 			structureOffsetZ = 1;
 			conditionOffsetX = 1;
@@ -59,7 +59,7 @@ public class Baobab0SaplingProcedure {
 				for (int index0 = 0; index0 < (int) (sizeY - 1); index0++) {
 					for (int index1 = 0; index1 < (int) sizeX; index1++) {
 						for (int index2 = 0; index2 < (int) sizeZ; index2++) {
-							if (!(world.getBlockState(BlockPos.containing(posX, posY, posZ))).is(BlockTags.create(new ResourceLocation((airTag).toLowerCase(java.util.Locale.ENGLISH))))) {
+							if (!(world.getBlockState(BlockPos.containing(posX, posY, posZ))).is(BlockTags.create(ResourceLocation.parse((airTag).toLowerCase(java.util.Locale.ENGLISH))))) {
 								dontSpawn = true;
 								break;
 							}
@@ -81,7 +81,7 @@ public class Baobab0SaplingProcedure {
 				rotation = Mth.nextInt(RandomSource.create(), 0, 11);
 				if (!dontSpawn && rotation == 0) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
 									BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
@@ -90,7 +90,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 1) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
 									BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
@@ -99,7 +99,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 2) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z + (sizeZ - offset) / 2 + structureOffsetZ),
 									BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z + (sizeZ - offset) / 2 + structureOffsetZ),
@@ -108,7 +108,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 3) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z + (sizeZ - offset) / 2 + structureOffsetZ),
 									BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z + (sizeZ - offset) / 2 + structureOffsetZ),
@@ -117,7 +117,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 4) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
 									BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
@@ -126,7 +126,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 5) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z + (sizeZ - offset) / 2 + structureOffsetZ),
 									BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z + (sizeZ - offset) / 2 + structureOffsetZ),
@@ -135,7 +135,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 6) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z + (sizeZ - offset) / 2 + structureOffsetZ),
 									BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z + (sizeZ - offset) / 2 + structureOffsetZ),
@@ -144,7 +144,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 7) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
 									BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
@@ -153,7 +153,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 8) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z + (sizeZ - offset) / 2 + structureOffsetZ),
 									BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z + (sizeZ - offset) / 2 + structureOffsetZ),
@@ -162,7 +162,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 9) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
 									BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
@@ -171,7 +171,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 10) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
 									BlockPos.containing(x - ((sizeX - offset) / 2 - structureOffsetX), y, z - ((sizeZ - offset) / 2 - structureOffsetZ)),
@@ -180,7 +180,7 @@ public class Baobab0SaplingProcedure {
 					}
 				} else if (!dontSpawn && rotation == 11) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("world_expansion", "baobab0"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(ResourceLocation.fromNamespaceAndPath("world_expansion", "baobab0"));
 						if (template != null) {
 							template.placeInWorld(_serverworld, BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z + (sizeZ - offset) / 2 + structureOffsetZ),
 									BlockPos.containing(x + (sizeX - offset) / 2 + structureOffsetX, y, z + (sizeZ - offset) / 2 + structureOffsetZ),
