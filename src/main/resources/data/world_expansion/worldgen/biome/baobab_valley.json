@@ -17,8 +17,8 @@
     },
     "foliage_color": -4740034,
     "grass_color": -4407495,
-    "sky_color": -6241568,
-    "fog_color": -3022869,
+    "sky_color": -8538151,
+    "fog_color": -3744014,
     "water_color": -12801844,
     "water_fog_color": -12802356
   },
@@ -192,6 +192,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",

@@ -117,7 +117,11 @@ public class WorldExpansionModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+			tabData.accept(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
 			tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
 		}

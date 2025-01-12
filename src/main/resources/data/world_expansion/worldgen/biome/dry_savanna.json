@@ -18,7 +18,7 @@
     "foliage_color": -7306931,
     "grass_color": -7306931,
     "sky_color": -11502955,
-    "fog_color": -6837062,
+    "fog_color": -7493704,
     "water_color": -12622724,
     "water_fog_color": -12622724
   },
@@ -61,7 +61,20 @@
         "maxCount": 1
       }
     ],
-    "creature": [],
+    "creature": [
+      {
+        "type": "wolf",
+        "weight": 10,
+        "minCount": 4,
+        "maxCount": 4
+      },
+      {
+        "type": "armadillo",
+        "weight": 8,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
     "ambient": [
       {
         "type": "bat",
@@ -129,6 +142,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",

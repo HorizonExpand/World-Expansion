@@ -30,6 +30,9 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:Mobs"
+      },
+      {
+        "value": "MISC"
       }
     ],
     "isBoss": false,

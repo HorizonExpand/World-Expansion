@@ -31,6 +31,46 @@
           }
         },
         "placement": []
+      },
+      {
+        "feature": {
+          "type": "world_expansion:structure_feature",
+          "config": {
+            "structure": "world_expansion:baobab3",
+            "ignored_blocks": "minecraft:air"
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "world_expansion:structure_feature",
+          "config": {
+            "structure": "world_expansion:baobab4",
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          }
+        },
+        "placement": []
+      },
+      {
+        "feature": {
+          "type": "world_expansion:structure_feature",
+          "config": {
+            "structure": "world_expansion:baobab5",
+            "ignored_blocks": "minecraft:air",
+            "offset": [
+              0,
+              -1,
+              0
+            ]
+          }
+        },
+        "placement": []
       }
     ]
   }

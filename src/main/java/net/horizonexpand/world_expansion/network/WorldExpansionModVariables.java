@@ -71,6 +71,7 @@ public class WorldExpansionModVariables {
 			clone.DenseFog = original.DenseFog;
 			clone.FirstJoin = original.FirstJoin;
 			clone.Fog_Test = original.Fog_Test;
+			clone.GamblersGame = original.GamblersGame;
 			if (!event.isWasDeath()) {
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -218,6 +219,7 @@ public class WorldExpansionModVariables {
 		public boolean DenseFog = false;
 		public boolean FirstJoin = true;
 		public double Fog_Test = 40.0;
+		public boolean GamblersGame = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
@@ -227,6 +229,7 @@ public class WorldExpansionModVariables {
 			nbt.putBoolean("DenseFog", DenseFog);
 			nbt.putBoolean("FirstJoin", FirstJoin);
 			nbt.putDouble("Fog_Test", Fog_Test);
+			nbt.putBoolean("GamblersGame", GamblersGame);
 			return nbt;
 		}
 
@@ -237,6 +240,7 @@ public class WorldExpansionModVariables {
 			DenseFog = nbt.getBoolean("DenseFog");
 			FirstJoin = nbt.getBoolean("FirstJoin");
 			Fog_Test = nbt.getDouble("Fog_Test");
+			GamblersGame = nbt.getBoolean("GamblersGame");
 		}
 
 		public void syncPlayerVariables(Entity entity) {

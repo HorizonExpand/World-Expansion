@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "fogColor": {
-      "value": -11502955,
+      "value": -7493704,
       "falpha": 0.0
     },
     "grassColor": {
@@ -214,6 +214,24 @@
         "maxGroup": 4,
         "weight": 20,
         "spawnType": "misc"
+      },
+      {
+        "entity": {
+          "value": "EntityWolf"
+        },
+        "minGroup": 4,
+        "maxGroup": 4,
+        "weight": 10,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "EntityArmadillo"
+        },
+        "minGroup": 1,
+        "maxGroup": 2,
+        "weight": 8,
+        "spawnType": "creature"
       }
     ]
   }
