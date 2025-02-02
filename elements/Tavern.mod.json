@@ -33,6 +33,18 @@
             "ignoredBlocks": []
           }
         ]
+      },
+      {
+        "poolName": "cellar_gamblers_room",
+        "fallbackPool": "",
+        "poolParts": [
+          {
+            "weight": 1,
+            "structure": "tavern_cellar_gamblers_room",
+            "projection": "rigid",
+            "ignoredBlocks": []
+          }
+        ]
       }
     ]
   }

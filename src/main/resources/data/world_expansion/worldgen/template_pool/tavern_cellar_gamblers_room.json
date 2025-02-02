@@ -1,0 +1,17 @@
+{
+  "name": "world_expansion:tavern_cellar_gamblers_room",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 1,
+      "element": {
+        "element_type": "minecraft:single_pool_element",
+        "location": "world_expansion:tavern_cellar_gamblers_room",
+        "projection": "rigid",
+        "processors": {
+          "processors": []
+        }
+      }
+    }
+  ]
+}

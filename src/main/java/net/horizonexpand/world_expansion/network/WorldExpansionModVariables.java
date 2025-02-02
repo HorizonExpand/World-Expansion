@@ -70,7 +70,7 @@ public class WorldExpansionModVariables {
 			clone.CopperHorn = original.CopperHorn;
 			clone.DenseFog = original.DenseFog;
 			clone.FirstJoin = original.FirstJoin;
-			clone.Fog_Test = original.Fog_Test;
+			clone.DenseFogDistance = original.DenseFogDistance;
 			clone.GamblersGame = original.GamblersGame;
 			if (!event.isWasDeath()) {
 			}
@@ -218,7 +218,7 @@ public class WorldExpansionModVariables {
 		public String CopperHorn = "world_expansion:copper_horn0";
 		public boolean DenseFog = false;
 		public boolean FirstJoin = true;
-		public double Fog_Test = 40.0;
+		public double DenseFogDistance = 160.0;
 		public boolean GamblersGame = false;
 
 		@Override
@@ -228,7 +228,7 @@ public class WorldExpansionModVariables {
 			nbt.putString("CopperHorn", CopperHorn);
 			nbt.putBoolean("DenseFog", DenseFog);
 			nbt.putBoolean("FirstJoin", FirstJoin);
-			nbt.putDouble("Fog_Test", Fog_Test);
+			nbt.putDouble("DenseFogDistance", DenseFogDistance);
 			nbt.putBoolean("GamblersGame", GamblersGame);
 			return nbt;
 		}
@@ -239,7 +239,7 @@ public class WorldExpansionModVariables {
 			CopperHorn = nbt.getString("CopperHorn");
 			DenseFog = nbt.getBoolean("DenseFog");
 			FirstJoin = nbt.getBoolean("FirstJoin");
-			Fog_Test = nbt.getDouble("Fog_Test");
+			DenseFogDistance = nbt.getDouble("DenseFogDistance");
 			GamblersGame = nbt.getBoolean("GamblersGame");
 		}
 
