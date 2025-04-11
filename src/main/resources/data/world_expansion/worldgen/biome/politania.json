@@ -10,7 +10,7 @@
       "block_search_extent": 2
     },
     "music": {
-      "sound": "music.overworld.desert",
+      "sound": "world_expansion:music.overworld.savanna",
       "min_delay": 12000,
       "max_delay": 24000,
       "replace_current_music": true
@@ -90,12 +90,6 @@
         "type": "sheep",
         "weight": 8,
         "minCount": 4,
-        "maxCount": 4
-      },
-      {
-        "type": "rabbit",
-        "weight": 14,
-        "minCount": 2,
         "maxCount": 4
       },
       {
@@ -198,6 +192,7 @@
       "minecraft:ore_redstone",
       "minecraft:ore_redstone_lower",
       "minecraft:ore_diamond",
+      "minecraft:ore_diamond_medium",
       "minecraft:ore_diamond_large",
       "minecraft:ore_diamond_buried",
       "minecraft:ore_lapis",

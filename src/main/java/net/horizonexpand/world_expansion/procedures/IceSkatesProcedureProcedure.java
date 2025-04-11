@@ -13,6 +13,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 public class IceSkatesProcedureProcedure {
@@ -38,17 +39,7 @@ public class IceSkatesProcedureProcedure {
 				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 2, 0, false, false));
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2, 1, false, false));
-			if (Math.random() < 0.05 && !(new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayer _serverPlayer) {
-						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-					}
-					return false;
-				}
-			}.checkGamemode(entity)) && (!entity.onGround() || entity.isSprinting())) {
+			if (Math.random() < 0.05 && !(getEntityGameType(entity) == GameType.CREATIVE) && (!entity.onGround() || entity.isSprinting())) {
 				if (world instanceof ServerLevel _level) {
 					itemstack.hurtAndBreak(1, _level, null, _stkprov -> {
 					});
@@ -58,5 +49,16 @@ public class IceSkatesProcedureProcedure {
 			if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 2, 1, false, false));
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

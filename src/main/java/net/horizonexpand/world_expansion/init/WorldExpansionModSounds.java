@@ -15,8 +15,6 @@ import net.horizonexpand.world_expansion.WorldExpansionMod;
 
 public class WorldExpansionModSounds {
 	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(Registries.SOUND_EVENT, WorldExpansionMod.MODID);
-	public static final DeferredHolder<SoundEvent, SoundEvent> MUSIC_DISC_SPOOKY_FOREST = REGISTRY.register("music_disc_spooky_forest",
-			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "music_disc_spooky_forest")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> HARMONY1 = REGISTRY.register("harmony1", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "harmony1")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> HARMONY2 = REGISTRY.register("harmony2", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "harmony2")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> HARMONY3 = REGISTRY.register("harmony3", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "harmony3")));
@@ -71,4 +69,6 @@ public class WorldExpansionModSounds {
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "dealers_shotgun_chamber_end")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> SUSPICIOUS_MUD_BREAK = REGISTRY.register("suspicious_mud_break",
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "suspicious_mud_break")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> MUSIC_OVERWORLD_SAVANNA = REGISTRY.register("music.overworld.savanna",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "music.overworld.savanna")));
 }

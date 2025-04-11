@@ -11,15 +11,17 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.WidgetSprites;
 import net.minecraft.client.gui.components.ImageButton;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.Minecraft;
 
 import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIMenu;
 import net.horizonexpand.world_expansion.network.MultiCraftingTableGUIButtonMessage;
+import net.horizonexpand.world_expansion.init.WorldExpansionModScreens.WidgetScreen;
 
 import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCraftingTableGUIMenu> {
+public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCraftingTableGUIMenu> implements WidgetScreen {
 	private final static HashMap<String, Object> guistate = MultiCraftingTableGUIMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
@@ -35,6 +37,25 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		this.entity = container.entity;
 		this.imageWidth = 176;
 		this.imageHeight = 166;
+	}
+
+	public static HashMap<String, String> getEditBoxAndCheckBoxValues() {
+		HashMap<String, String> textstate = new HashMap<>();
+		if (Minecraft.getInstance().screen instanceof MultiCraftingTableGUIScreen sc) {
+
+		}
+		return textstate;
+	}
+
+	public HashMap<String, Object> getWidgets() {
+		return guistate;
+	}
+
+	@Override
+	public void containerTick() {
+		super.containerTick();
+		PacketDistributor.sendToServer(new MultiCraftingTableGUIButtonMessage(-1, x, y, z, getEditBoxAndCheckBoxValues()));
+		MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, -1, x, y, z, getEditBoxAndCheckBoxValues());
 	}
 
 	private static final ResourceLocation texture = ResourceLocation.parse("world_expansion:textures/screens/multi_crafting_table_gui_copper_horn.png");
@@ -76,8 +97,8 @@ public class MultiCraftingTableGUIScreen extends AbstractContainerScreen<MultiCr
 		imagebutton_change = new ImageButton(this.leftPos + 132, this.topPos + 43, 8, 8,
 				new WidgetSprites(ResourceLocation.parse("world_expansion:textures/screens/change.png"), ResourceLocation.parse("world_expansion:textures/screens/change_light.png")), e -> {
 					if (true) {
-						PacketDistributor.sendToServer(new MultiCraftingTableGUIButtonMessage(0, x, y, z));
-						MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
+						PacketDistributor.sendToServer(new MultiCraftingTableGUIButtonMessage(0, x, y, z, getEditBoxAndCheckBoxValues()));
+						MultiCraftingTableGUIButtonMessage.handleButtonAction(entity, 0, x, y, z, getEditBoxAndCheckBoxValues());
 					}
 				}) {
 			@Override

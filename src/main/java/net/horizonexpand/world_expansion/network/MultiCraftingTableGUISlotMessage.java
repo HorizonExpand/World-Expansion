@@ -12,6 +12,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.protocol.PacketFlow;
 import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.network.chat.ComponentSerialization;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.core.BlockPos;
@@ -20,10 +21,11 @@ import net.horizonexpand.world_expansion.world.inventory.MultiCraftingTableGUIMe
 import net.horizonexpand.world_expansion.procedures.MultiCraftingTableOutputSlotProcedure;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
+import java.util.Map;
 import java.util.HashMap;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD)
-public record MultiCraftingTableGUISlotMessage(int slotID, int x, int y, int z, int changeType, int meta) implements CustomPacketPayload {
+public record MultiCraftingTableGUISlotMessage(int slotID, int x, int y, int z, int changeType, int meta, HashMap<String, String> textstate) implements CustomPacketPayload {
 
 	public static final Type<MultiCraftingTableGUISlotMessage> TYPE = new Type<>(ResourceLocation.fromNamespaceAndPath(WorldExpansionMod.MODID, "multi_crafting_table_gui_copper_horn_slots"));
 	public static final StreamCodec<RegistryFriendlyByteBuf, MultiCraftingTableGUISlotMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, MultiCraftingTableGUISlotMessage message) -> {
@@ -33,7 +35,8 @@ public record MultiCraftingTableGUISlotMessage(int slotID, int x, int y, int z, 
 		buffer.writeInt(message.z);
 		buffer.writeInt(message.changeType);
 		buffer.writeInt(message.meta);
-	}, (RegistryFriendlyByteBuf buffer) -> new MultiCraftingTableGUISlotMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
+		writeTextState(message.textstate, buffer);
+	}, (RegistryFriendlyByteBuf buffer) -> new MultiCraftingTableGUISlotMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt(), readTextState(buffer)));
 	@Override
 	public Type<MultiCraftingTableGUISlotMessage> type() {
 		return TYPE;
@@ -49,7 +52,8 @@ public record MultiCraftingTableGUISlotMessage(int slotID, int x, int y, int z, 
 				int x = message.x;
 				int y = message.y;
 				int z = message.z;
-				handleSlotAction(entity, slotID, changeType, meta, x, y, z);
+				HashMap<String, String> textstate = message.textstate;
+				handleSlotAction(entity, slotID, changeType, meta, x, y, z, textstate);
 			}).exceptionally(e -> {
 				context.connection().disconnect(Component.literal(e.getMessage()));
 				return null;
@@ -57,9 +61,15 @@ public record MultiCraftingTableGUISlotMessage(int slotID, int x, int y, int z, 
 		}
 	}
 
-	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z) {
+	public static void handleSlotAction(Player entity, int slot, int changeType, int meta, int x, int y, int z, HashMap<String, String> textstate) {
 		Level world = entity.level();
 		HashMap guistate = MultiCraftingTableGUIMenu.guistate;
+		// connect EditBox and CheckBox to guistate
+		for (Map.Entry<String, String> entry : textstate.entrySet()) {
+			String key = entry.getKey();
+			String value = entry.getValue();
+			guistate.put(key, value);
+		}
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
@@ -67,6 +77,33 @@ public record MultiCraftingTableGUISlotMessage(int slotID, int x, int y, int z, 
 
 			MultiCraftingTableOutputSlotProcedure.execute(world, x, y, z, entity);
 		}
+	}
+
+	private static void writeTextState(HashMap<String, String> map, RegistryFriendlyByteBuf buffer) {
+		buffer.writeInt(map.size());
+		for (Map.Entry<String, String> entry : map.entrySet()) {
+			writeComponent(buffer, Component.literal(entry.getKey()));
+			writeComponent(buffer, Component.literal(entry.getValue()));
+		}
+	}
+
+	private static HashMap<String, String> readTextState(RegistryFriendlyByteBuf buffer) {
+		int size = buffer.readInt();
+		HashMap<String, String> map = new HashMap<>();
+		for (int i = 0; i < size; i++) {
+			String key = readComponent(buffer).getString();
+			String value = readComponent(buffer).getString();
+			map.put(key, value);
+		}
+		return map;
+	}
+
+	private static Component readComponent(RegistryFriendlyByteBuf buffer) {
+		return ComponentSerialization.TRUSTED_STREAM_CODEC.decode(buffer);
+	}
+
+	private static void writeComponent(RegistryFriendlyByteBuf buffer, Component component) {
+		ComponentSerialization.TRUSTED_STREAM_CODEC.encode(buffer, component);
 	}
 
 	@SubscribeEvent

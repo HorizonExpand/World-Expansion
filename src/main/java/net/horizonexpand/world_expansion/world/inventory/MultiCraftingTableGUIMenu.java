@@ -7,10 +7,7 @@ import net.neoforged.neoforge.items.SlotItemHandler;
 import net.neoforged.neoforge.items.ItemStackHandler;
 import net.neoforged.neoforge.items.IItemHandlerModifiable;
 import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 import net.neoforged.neoforge.capabilities.Capabilities;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.bus.api.SubscribeEvent;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BaseContainerBlockEntity;
@@ -26,15 +23,14 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.horizonexpand.world_expansion.procedures.MultiCraftingTableGUIKazhdyiTikPokaIntierfieisOtkrytProcedure;
 import net.horizonexpand.world_expansion.network.MultiCraftingTableGUISlotMessage;
 import net.horizonexpand.world_expansion.init.WorldExpansionModMenus;
+import net.horizonexpand.world_expansion.client.gui.MultiCraftingTableGUIScreen;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-@EventBusSubscriber
 public class MultiCraftingTableGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
@@ -263,24 +259,12 @@ public class MultiCraftingTableGUIMenu extends AbstractContainerMenu implements 
 
 	private void slotChanged(int slotid, int ctype, int meta) {
 		if (this.world != null && this.world.isClientSide()) {
-			PacketDistributor.sendToServer(new MultiCraftingTableGUISlotMessage(slotid, x, y, z, ctype, meta));
-			MultiCraftingTableGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
+			PacketDistributor.sendToServer(new MultiCraftingTableGUISlotMessage(slotid, x, y, z, ctype, meta, MultiCraftingTableGUIScreen.getEditBoxAndCheckBoxValues()));
+			MultiCraftingTableGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z, MultiCraftingTableGUIScreen.getEditBoxAndCheckBoxValues());
 		}
 	}
 
 	public Map<Integer, Slot> get() {
 		return customSlots;
-	}
-
-	@SubscribeEvent
-	public static void onPlayerTick(PlayerTickEvent.Post event) {
-		Player entity = event.getEntity();
-		if (entity.containerMenu instanceof MultiCraftingTableGUIMenu) {
-			Level world = entity.level();
-			double x = entity.getX();
-			double y = entity.getY();
-			double z = entity.getZ();
-			MultiCraftingTableGUIKazhdyiTikPokaIntierfieisOtkrytProcedure.execute(entity);
-		}
 	}
 }

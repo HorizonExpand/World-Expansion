@@ -19,7 +19,7 @@
         "predicates": [
           {
             "type": "minecraft:matching_blocks",
-            "blocks": "#forge:replaceable"
+            "blocks": "#world_expansion:tumbleweed_replaceable"
           },
           {
             "type": "minecraft:matching_blocks",

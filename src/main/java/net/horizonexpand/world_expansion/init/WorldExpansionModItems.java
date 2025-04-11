@@ -137,6 +137,7 @@ public class WorldExpansionModItems {
 	public static final DeferredItem<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", MusicDiscDestroyerItem::new);
 	public static final DeferredItem<Item> HAY_BLOCK_STAIRS = block(WorldExpansionModBlocks.HAY_BLOCK_STAIRS);
 	public static final DeferredItem<Item> HAY_BLOCK_SLAB = block(WorldExpansionModBlocks.HAY_BLOCK_SLAB);
+	public static final DeferredItem<Item> THICK_SAVANNA_BUSH = block(WorldExpansionModBlocks.THICK_SAVANNA_BUSH);
 
 	// Start of user code block custom items
 	// End of user code block custom items

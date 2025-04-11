@@ -4,6 +4,6 @@
     "savanna",
     "savanna_plateau"
   ],
-  "features": "world_expansion:savanna_surface_stone",
+  "features": "world_expansion:savanna_surface_kabanyt",
   "step": "top_layer_modification"
 }

@@ -20,6 +20,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.multiplayer.PlayerInfo;
 import net.minecraft.client.Minecraft;
 
 import net.horizonexpand.world_expansion.init.WorldExpansionModItems;
@@ -45,17 +46,7 @@ public class JudasFruitPriShchielchkiePKMProcedure {
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WorldExpansionModItems.JUDAS_FRUIT.get()
 				&& (world.getBlockState(BlockPos.containing(x, y, z))).is(BlockTags.create(ResourceLocation.parse("minecraft:mineable/pickaxe"))) && entity.isShiftKeyDown()) {
-			if (!(new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayer _serverPlayer) {
-						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-					}
-					return false;
-				}
-			}.checkGamemode(entity))) {
+			if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 			}
 			if (entity instanceof Player _player) {
@@ -67,17 +58,7 @@ public class JudasFruitPriShchielchkiePKMProcedure {
 				_entity.swing(InteractionHand.MAIN_HAND, true);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == WorldExpansionModItems.JUDAS_FRUIT.get()
 				&& WorldExpansionModBlocks.BAOBAB_SAPLING.get().defaultBlockState().canSurvive(world, BlockPos.containing(x, y + 1, z)) && world.isEmptyBlock(BlockPos.containing(x, y + 1, z))) {
-			if (!(new Object() {
-				public boolean checkGamemode(Entity _ent) {
-					if (_ent instanceof ServerPlayer _serverPlayer) {
-						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
-					} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
-					}
-					return false;
-				}
-			}.checkGamemode(entity))) {
+			if (!(getEntityGameType(entity) == GameType.CREATIVE)) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).shrink(1);
 			}
 			world.setBlock(BlockPos.containing(x, y + 1, z), WorldExpansionModBlocks.BAOBAB_SAPLING.get().defaultBlockState(), 3);
@@ -91,5 +72,16 @@ public class JudasFruitPriShchielchkiePKMProcedure {
 				}
 			}
 		}
+	}
+
+	private static GameType getEntityGameType(Entity entity) {
+		if (entity instanceof ServerPlayer serverPlayer) {
+			return serverPlayer.gameMode.getGameModeForPlayer();
+		} else if (entity instanceof Player player && player.level().isClientSide()) {
+			PlayerInfo playerInfo = Minecraft.getInstance().getConnection().getPlayerInfo(player.getGameProfile().getId());
+			if (playerInfo != null)
+				return playerInfo.getGameMode();
+		}
+		return null;
 	}
 }

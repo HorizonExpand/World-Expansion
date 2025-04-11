@@ -3,20 +3,21 @@ package net.horizonexpand.world_expansion.procedures;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.item.component.CustomData;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.component.DataComponents;
@@ -48,31 +49,8 @@ public class GamblersShotgunShootingProcedure {
 					((Level) world).playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("world_expansion:dealers_shotgun_shooting")), SoundSource.PLAYERS, 1, 1);
 				for (int index0 = 0; index0 < 6; index0++) {
 					if (world instanceof ServerLevel projectileLevel) {
-						Projectile _entityToSpawn = new Object() {
-							public Projectile getArrow(Level level, Entity shooter, float damage, int knockback, byte piercing) {
-								AbstractArrow entityToSpawn = new ShotgunBlastEntity(WorldExpansionModEntities.SHOTGUN_BLAST.get(), level) {
-									@Override
-									public byte getPierceLevel() {
-										return piercing;
-									}
-
-									@Override
-									protected void doKnockback(LivingEntity livingEntity, DamageSource damageSource) {
-										if (knockback > 0) {
-											double d1 = Math.max(0.0, 1.0 - livingEntity.getAttributeValue(Attributes.KNOCKBACK_RESISTANCE));
-											Vec3 vec3 = this.getDeltaMovement().multiply(1.0, 0.0, 1.0).normalize().scale(knockback * 0.6 * d1);
-											if (vec3.lengthSqr() > 0.0) {
-												livingEntity.push(vec3.x, 0.1, vec3.z);
-											}
-										}
-									}
-								};
-								entityToSpawn.setOwner(shooter);
-								entityToSpawn.setBaseDamage(damage);
-								entityToSpawn.setSilent(true);
-								return entityToSpawn;
-							}
-						}.getArrow(projectileLevel, entity, 0, 2, (byte) 1);
+						Projectile _entityToSpawn = initArrowProjectile(new ShotgunBlastEntity(WorldExpansionModEntities.SHOTGUN_BLAST.get(), 0, 0, 0, projectileLevel, createArrowWeaponItemStack(projectileLevel, 2, (byte) 1)), entity, 0, true, false,
+								false, AbstractArrow.Pickup.DISALLOWED);
 						_entityToSpawn.setPos((entity.getX() + entity.getLookAngle().x / 6), (y + 1.4), (entity.getZ() + entity.getLookAngle().z / 6));
 						_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y + 0.05), (entity.getLookAngle().z), 4, (float) Mth.nextDouble(RandomSource.create(), -2, 2));
 						projectileLevel.addFreshEntity(_entityToSpawn);
@@ -135,5 +113,27 @@ public class GamblersShotgunShootingProcedure {
 			if (world instanceof Level)
 				((Level) world).playSound(null, BlockPos.containing(x, y, z), BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.parse("world_expansion:empty_dealers_shotgun_shooting")), SoundSource.PLAYERS, 1, 1);
 		}
+	}
+
+	private static AbstractArrow initArrowProjectile(AbstractArrow entityToSpawn, Entity shooter, float damage, boolean silent, boolean fire, boolean particles, AbstractArrow.Pickup pickup) {
+		entityToSpawn.setOwner(shooter);
+		entityToSpawn.setBaseDamage(damage);
+		if (silent)
+			entityToSpawn.setSilent(true);
+		if (fire)
+			entityToSpawn.igniteForSeconds(100);
+		if (particles)
+			entityToSpawn.setCritArrow(true);
+		entityToSpawn.pickup = pickup;
+		return entityToSpawn;
+	}
+
+	private static ItemStack createArrowWeaponItemStack(Level level, int knockback, byte piercing) {
+		ItemStack weapon = new ItemStack(Items.ARROW);
+		if (knockback > 0)
+			weapon.enchant(level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.KNOCKBACK), knockback);
+		if (piercing > 0)
+			weapon.enchant(level.registryAccess().lookupOrThrow(Registries.ENCHANTMENT).getOrThrow(Enchantments.PIERCING), piercing);
+		return weapon;
 	}
 }

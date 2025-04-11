@@ -14,6 +14,7 @@ import net.horizonexpand.world_expansion.block.WindometerBlock;
 import net.horizonexpand.world_expansion.block.TumbleweedBlock;
 import net.horizonexpand.world_expansion.block.TitaniumOreBlock;
 import net.horizonexpand.world_expansion.block.TitaniumBlockBlock;
+import net.horizonexpand.world_expansion.block.ThickSavannaBushBlock;
 import net.horizonexpand.world_expansion.block.SuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobabwoodBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobablogBlock;
@@ -129,6 +130,7 @@ public class WorldExpansionModBlocks {
 	public static final DeferredBlock<Block> MYSTERIOUS_DOOR = REGISTRY.register("mysterious_door", MysteriousDoorBlock::new);
 	public static final DeferredBlock<Block> HAY_BLOCK_STAIRS = REGISTRY.register("hay_block_stairs", HayBlockStairsBlock::new);
 	public static final DeferredBlock<Block> HAY_BLOCK_SLAB = REGISTRY.register("hay_block_slab", HayBlockSlabBlock::new);
+	public static final DeferredBlock<Block> THICK_SAVANNA_BUSH = REGISTRY.register("thick_savanna_bush", ThickSavannaBushBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "biome",
   "definition": {
     "name": "Dry Savanna",
@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "fogColor": {
-      "value": -11502955,
+      "value": -6837062,
       "falpha": 0.0
     },
     "grassColor": {

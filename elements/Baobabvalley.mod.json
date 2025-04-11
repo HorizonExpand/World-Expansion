@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "biome",
   "definition": {
     "name": "Baobab valley",
@@ -13,11 +13,11 @@
       "value": "Blocks.GRAVEL"
     },
     "airColor": {
-      "value": -6241568,
+      "value": -7159575,
       "falpha": 0.0
     },
     "fogColor": {
-      "value": -6241568,
+      "value": -3943714,
       "falpha": 0.0
     },
     "grassColor": {
@@ -43,7 +43,7 @@
       "value": ""
     },
     "music": {
-      "value": "music.creative"
+      "value": "CUSTOM:music.overworld.savanna"
     },
     "moodSound": {
       "value": "ambient.cave"

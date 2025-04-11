@@ -1,12 +1,4 @@
 {
-  "music_disc_spooky_forest": {
-    "sounds": [
-      {
-        "name": "world_expansion:music_disc_spooky_forest",
-        "stream": true
-      }
-    ]
-  },
   "harmony1": {
     "subtitle": "subtitles.harmony1",
     "sounds": [
@@ -387,6 +379,18 @@
       {
         "name": "world_expansion:suspicious_mud_break3",
         "stream": false
+      }
+    ]
+  },
+  "music.overworld.savanna": {
+    "sounds": [
+      {
+        "name": "world_expansion:western_baobab",
+        "stream": true
+      },
+      {
+        "name": "world_expansion:little_tree",
+        "stream": true
       }
     ]
   }

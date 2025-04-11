@@ -1,5 +1,5 @@
 {
-  "_fv": 73,
+  "_fv": 77,
   "_type": "biome",
   "definition": {
     "name": "Politania",
@@ -17,7 +17,7 @@
       "falpha": 0.0
     },
     "fogColor": {
-      "value": -9782804,
+      "value": -4069635,
       "falpha": 0.0
     },
     "grassColor": {
@@ -43,7 +43,7 @@
       "value": ""
     },
     "music": {
-      "value": "music.overworld.desert"
+      "value": "CUSTOM:music.overworld.savanna"
     },
     "moodSound": {
       "value": "ambient.cave"

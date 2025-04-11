@@ -83,6 +83,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_LAPIS_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_IRON_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.THICK_SAVANNA_BUSH.get().asItem());
 			}).withTabsBefore(BUILDING_BLOCKS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ITEMS = REGISTRY.register("items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.items")).icon(() -> new ItemStack(WorldExpansionModItems.COPPER_HORN0.get())).displayItems((parameters, tabData) -> {

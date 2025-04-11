@@ -1,5 +1,5 @@
 {
-  "feature": "world_expansion:kabanyt_titanium_ore_feature",
+  "feature": "world_expansion:savanna_surface_kabanyt",
   "placement": [
     {
       "type": "minecraft:count",
@@ -13,10 +13,10 @@
       "height": {
         "type": "minecraft:trapezoid",
         "min_inclusive": {
-          "absolute": 32
+          "absolute": 148
         },
         "max_inclusive": {
-          "absolute": 128
+          "absolute": 164
         }
       }
     },
