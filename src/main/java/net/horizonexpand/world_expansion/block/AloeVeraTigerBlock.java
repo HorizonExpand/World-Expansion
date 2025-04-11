@@ -7,14 +7,12 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.pathfinder.PathType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
@@ -22,7 +20,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.horizonexpand.world_expansion.procedures.AloeVeraTigerPriStolknovieniiSushchnostiSRastieniiemProcedure;
-import net.horizonexpand.world_expansion.procedures.AloeVeraTigerPriRazrushieniiRastieniiaIghrokomProcedure;
 
 public class AloeVeraTigerBlock extends FlowerBlock {
 	public AloeVeraTigerBlock() {
@@ -54,12 +51,5 @@ public class AloeVeraTigerBlock extends FlowerBlock {
 	public void entityInside(BlockState blockstate, Level world, BlockPos pos, Entity entity) {
 		super.entityInside(blockstate, world, pos, entity);
 		AloeVeraTigerPriStolknovieniiSushchnostiSRastieniiemProcedure.execute(world, entity);
-	}
-
-	@Override
-	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
-		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		AloeVeraTigerPriRazrushieniiRastieniiaIghrokomProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
-		return retval;
 	}
 }

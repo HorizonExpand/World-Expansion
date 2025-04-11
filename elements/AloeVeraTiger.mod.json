@@ -75,7 +75,7 @@
     "fallSound": {
       "value": ""
     },
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "customDrop": {
       "value": ""
     },
@@ -102,9 +102,6 @@
     "generationType": "Flower",
     "patchSize": 24,
     "generateAtAnyHeight": false,
-    "onDestroyedByPlayer": {
-      "name": "AloeVeraTigerPriRazrushieniiRastieniiaIghrokom"
-    },
     "onEntityCollides": {
       "name": "AloeVeraTigerPriStolknovieniiSushchnostiSRastieniiem"
     }

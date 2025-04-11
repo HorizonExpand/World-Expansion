@@ -75,7 +75,7 @@
     "fallSound": {
       "value": ""
     },
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "customDrop": {
       "value": ""
     },
@@ -101,9 +101,6 @@
     "restrictionBiomes": [],
     "generationType": "Flower",
     "patchSize": 64,
-    "generateAtAnyHeight": false,
-    "onDestroyedByPlayer": {
-      "name": "AloeVeraPriRazrushieniiRastieniiaIghrokom"
-    }
+    "generateAtAnyHeight": false
   }
 }
