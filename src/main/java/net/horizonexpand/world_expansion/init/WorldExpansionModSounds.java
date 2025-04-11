@@ -71,4 +71,6 @@ public class WorldExpansionModSounds {
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "suspicious_mud_break")));
 	public static final DeferredHolder<SoundEvent, SoundEvent> MUSIC_OVERWORLD_SAVANNA = REGISTRY.register("music.overworld.savanna",
 			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "music.overworld.savanna")));
+	public static final DeferredHolder<SoundEvent, SoundEvent> MUSIC_OVERWORLD_DRY_SAVANNA = REGISTRY.register("music.overworld.dry_savanna",
+			() -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("world_expansion", "music.overworld.dry_savanna")));
 }

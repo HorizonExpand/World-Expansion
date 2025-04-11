@@ -393,5 +393,13 @@
         "stream": true
       }
     ]
+  },
+  "music.overworld.dry_savanna": {
+    "sounds": [
+      {
+        "name": "world_expansion:epilogue",
+        "stream": true
+      }
+    ]
   }
 }

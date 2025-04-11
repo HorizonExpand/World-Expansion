@@ -43,7 +43,7 @@
       "value": ""
     },
     "music": {
-      "value": "music.nether"
+      "value": "CUSTOM:music.overworld.dry_savanna"
     },
     "moodSound": {
       "value": "ambient.cave"
