@@ -57,6 +57,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.STONES.get().asItem());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NATURAL_BLOCKS = REGISTRY.register("natural_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.natural_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LEAVES.get())).displayItems((parameters, tabData) -> {
