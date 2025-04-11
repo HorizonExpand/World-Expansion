@@ -69,10 +69,7 @@ public class WorldExpansionModVariables {
 			PlayerVariables clone = new PlayerVariables();
 			clone.Dye = original.Dye;
 			clone.CopperHorn = original.CopperHorn;
-			clone.DenseFog = original.DenseFog;
 			clone.FirstJoin = original.FirstJoin;
-			clone.Fog_Test = original.Fog_Test;
-			clone.GamblersGame = original.GamblersGame;
 			if (!event.isWasDeath()) {
 			}
 			event.getEntity().setData(PLAYER_VARIABLES, clone);
@@ -137,7 +134,6 @@ public class WorldExpansionModVariables {
 	public static class MapVariables extends SavedData {
 		public static final String DATA_NAME = "world_expansion_mapvars";
 		public String Wind = "Still";
-		public double ancient_corridors_spawner_entity_yaw = 0.0;
 
 		public static MapVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			MapVariables data = new MapVariables();
@@ -147,13 +143,11 @@ public class WorldExpansionModVariables {
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			Wind = nbt.getString("Wind");
-			ancient_corridors_spawner_entity_yaw = nbt.getDouble("ancient_corridors_spawner_entity_yaw");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
 			nbt.putString("Wind", Wind);
-			nbt.putDouble("ancient_corridors_spawner_entity_yaw", ancient_corridors_spawner_entity_yaw);
 			return nbt;
 		}
 
@@ -217,20 +211,14 @@ public class WorldExpansionModVariables {
 	public static class PlayerVariables implements INBTSerializable<CompoundTag> {
 		public String Dye = "minecraft:pink_dye";
 		public String CopperHorn = "world_expansion:copper_horn0";
-		public boolean DenseFog = false;
 		public boolean FirstJoin = true;
-		public double Fog_Test = 40.0;
-		public boolean GamblersGame = false;
 
 		@Override
 		public CompoundTag serializeNBT(HolderLookup.Provider lookupProvider) {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putString("Dye", Dye);
 			nbt.putString("CopperHorn", CopperHorn);
-			nbt.putBoolean("DenseFog", DenseFog);
 			nbt.putBoolean("FirstJoin", FirstJoin);
-			nbt.putDouble("Fog_Test", Fog_Test);
-			nbt.putBoolean("GamblersGame", GamblersGame);
 			return nbt;
 		}
 
@@ -238,10 +226,7 @@ public class WorldExpansionModVariables {
 		public void deserializeNBT(HolderLookup.Provider lookupProvider, CompoundTag nbt) {
 			Dye = nbt.getString("Dye");
 			CopperHorn = nbt.getString("CopperHorn");
-			DenseFog = nbt.getBoolean("DenseFog");
 			FirstJoin = nbt.getBoolean("FirstJoin");
-			Fog_Test = nbt.getDouble("Fog_Test");
-			GamblersGame = nbt.getBoolean("GamblersGame");
 		}
 
 		public void syncPlayerVariables(Entity entity) {
