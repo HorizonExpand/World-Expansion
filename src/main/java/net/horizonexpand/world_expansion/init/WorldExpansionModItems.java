@@ -138,7 +138,7 @@ public class WorldExpansionModItems {
 	public static final DeferredItem<Item> HAY_BLOCK_STAIRS = block(WorldExpansionModBlocks.HAY_BLOCK_STAIRS);
 	public static final DeferredItem<Item> HAY_BLOCK_SLAB = block(WorldExpansionModBlocks.HAY_BLOCK_SLAB);
 	public static final DeferredItem<Item> THICK_SAVANNA_BUSH = block(WorldExpansionModBlocks.THICK_SAVANNA_BUSH);
-	public static final DeferredItem<Item> STONES = block(WorldExpansionModBlocks.STONES);
+	public static final DeferredItem<Item> CROCKSHENG = block(WorldExpansionModBlocks.CROCKSHENG);
 
 	// Start of user code block custom items
 	// End of user code block custom items

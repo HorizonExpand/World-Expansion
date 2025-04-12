@@ -45,9 +45,6 @@
     "creativeTabs": [
       {
         "value": "CUSTOM:NatureBlocks"
-      },
-      {
-        "value": "REDSTONE"
       }
     ],
     "destroyTool": "pickaxe",

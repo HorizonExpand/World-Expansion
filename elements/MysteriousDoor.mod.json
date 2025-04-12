@@ -43,11 +43,7 @@
     "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
-    "creativeTabs": [
-      {
-        "value": "CUSTOM:Worldexpansionblocks"
-      }
-    ],
+    "creativeTabs": [],
     "destroyTool": "axe",
     "customDrop": {
       "value": ""

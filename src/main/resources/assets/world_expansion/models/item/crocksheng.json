@@ -1,5 +1,5 @@
 {
-  "parent": "world_expansion:block/stones",
+  "parent": "world_expansion:block/crocksheng",
   "display": {
     "thirdperson": {
       "rotation": [

@@ -2,7 +2,7 @@
   "_fv": 77,
   "_type": "block",
   "definition": {
-    "texture": "stones",
+    "texture": "crocksheng",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -34,17 +34,20 @@
       }
     ],
     "customProperties": [],
-    "name": "Kabanyt",
+    "name": "Crocksheng",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.2,
-    "resistance": 4.5,
+    "hardness": 1.3,
+    "resistance": 3.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
       {
         "value": "CUSTOM:Worldexpansionblocks"
+      },
+      {
+        "value": "CUSTOM:NatureBlocks"
       }
     ],
     "destroyTool": "pickaxe",
@@ -52,7 +55,7 @@
       "value": ""
     },
     "dropAmount": 1,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -68,7 +71,7 @@
     "emittedRedstonePower": {
       "fixedValue": 15.0
     },
-    "colorOnMap": "RED_TERRACOTTA",
+    "colorOnMap": "YELLOW_TERRACOTTA",
     "creativePickItem": {
       "value": ""
     },

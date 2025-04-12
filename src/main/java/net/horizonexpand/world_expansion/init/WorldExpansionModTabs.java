@@ -36,7 +36,6 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.STRIPPED_BAOBAB_LOG.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_TRAPDOOR.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.BAOBAB_DOOR.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.MYSTERIOUS_DOOR.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_BRICKS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILES.get().asItem());
@@ -50,6 +49,7 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILE_STAIRS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILE_SLAB.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TILE_WALL.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.CROCKSHENG.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.WINDOMETER.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.MULTI_CRAFTING_TABLE.get().asItem());
@@ -57,7 +57,6 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.BOTTLE_WITH_MINI_FIREFLIES.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.STONES.get().asItem());
 			}).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> NATURAL_BLOCKS = REGISTRY.register("natural_blocks",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.natural_blocks")).icon(() -> new ItemStack(WorldExpansionModBlocks.BAOBAB_LEAVES.get())).displayItems((parameters, tabData) -> {
@@ -73,8 +72,9 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModItems.TUMBLEWEED_ITEM.get());
 				tabData.accept(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.KABANYT.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.CROCKSHENG.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.TITANIUM_ORE.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.DEEPSLATE_TITANIUM_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_TITANIUM_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_COAL_ORE.get().asItem());
@@ -85,6 +85,9 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.KABANYT_LAPIS_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_IRON_ORE.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
 			}).withTabsBefore(BUILDING_BLOCKS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ITEMS = REGISTRY.register("items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.items")).icon(() -> new ItemStack(WorldExpansionModItems.COPPER_HORN0.get())).displayItems((parameters, tabData) -> {
@@ -119,13 +122,8 @@ public class WorldExpansionModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
-			tabData.accept(WorldExpansionModBlocks.KABANYT_REDSTONE_ORE.get().asItem());
-		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(WorldExpansionModItems.MINI_FIREFLIES_SPAWN_EGG.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-			tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
-			tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
 		}
 	}
 }

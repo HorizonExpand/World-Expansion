@@ -6,9 +6,6 @@
     "generationStep": "VEGETAL_DECORATION",
     "restrictionBiomes": [
       {
-        "value": "plains"
-      },
-      {
         "value": "meadow"
       },
       {
@@ -18,6 +15,6 @@
         "value": "cherry_grove"
       }
     ],
-    "featurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"feature_container\" x=\"40\" y=\"40\"><value name=\"feature\"><block inline=\"false\" type=\"feature_random_patch_simple\"><field name=\"tries\">128</field><field name=\"xzSpread\">7</field><field name=\"ySpread\">3</field><comment h=\"122\" pinned=\"false\" w=\"245\">This block represents a block patch feature. The blocks will only generate in valid positions (for example, grass will never generate on a stone block). Patches of plants should be generated during the VEGETAL_DECORATION stage.</comment><value name=\"block\"><block type=\"blockstate_selector\"><mutation inputs=\"0\"/><field name=\"block\">CUSTOM:Astilba</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is the block being placed.</comment></block></value><value name=\"condition\"><block type=\"block_predicate_is_air\"><comment h=\"72\" pinned=\"false\" w=\"251\">This condition is checked for every block that is being placed. Here we don't want the mushrooms to replace other blocks</comment></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">13</field><comment h=\"80\" pinned=\"false\" w=\"160\">This is so the patch only generates in some of the chunks. The higher the value, the rarer the patch will be</comment><next><block type=\"placement_in_square\"><comment h=\"83\" pinned=\"false\" w=\"182\">We then move each patch horizontally. This way they don't generate only in the corner of the chunk</comment><next><block type=\"placement_heightmap\"><field name=\"heightmap\">MOTION_BLOCKING</field><comment h=\"92\" pinned=\"false\" w=\"165\">We then move the patches at the highest motion blocking block, so that they generate on the surface</comment><next><block type=\"placement_biome_filter\"><comment h=\"80\" pinned=\"false\" w=\"160\">We add a biome filter, so that the patches don't generate outside of the current biome</comment></block></next></block></next></block></next></block></next></block></xml>"
+    "featurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"feature_container\" deletable=\"false\" x=\"40\" y=\"40\"><value name=\"feature\"><block type=\"feature_random_patch_simple\"><field name=\"tries\">256</field><field name=\"xzSpread\">10</field><field name=\"ySpread\">5</field><field name=\"schedule_tick\">FALSE</field><value name=\"block\"><block type=\"blockstate_selector\"><mutation xmlns=\"http://www.w3.org/1999/xhtml\" inputs=\"0\"></mutation><field name=\"block\">CUSTOM:Astilba</field></block></value><value name=\"condition\"><block type=\"block_predicate_is_air\"></block></value></block></value><next><block type=\"placement_rarity\"><field name=\"rarity\">8</field><next><block type=\"placement_in_square\"><next><block type=\"placement_heightmap\"><field name=\"heightmap\">MOTION_BLOCKING</field><next><block type=\"placement_biome_filter\"></block></next></block></next></block></next></block></next></block></xml>"
   }
 }

@@ -18,7 +18,6 @@ import net.horizonexpand.world_expansion.block.ThickSavannaBushBlock;
 import net.horizonexpand.world_expansion.block.SuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobabwoodBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobablogBlock;
-import net.horizonexpand.world_expansion.block.StonesBlock;
 import net.horizonexpand.world_expansion.block.RawTitaniumBlockBlock;
 import net.horizonexpand.world_expansion.block.MysteriousDoorBlock;
 import net.horizonexpand.world_expansion.block.MultiCraftingTableBlock;
@@ -49,6 +48,7 @@ import net.horizonexpand.world_expansion.block.JudasFruitPlantBlock;
 import net.horizonexpand.world_expansion.block.HayBlockStairsBlock;
 import net.horizonexpand.world_expansion.block.HayBlockSlabBlock;
 import net.horizonexpand.world_expansion.block.DeepslateTitaniumOreBlock;
+import net.horizonexpand.world_expansion.block.CrockshengBlock;
 import net.horizonexpand.world_expansion.block.CarvedkabanytBlock;
 import net.horizonexpand.world_expansion.block.BottleWithMiniFirefliesBlock;
 import net.horizonexpand.world_expansion.block.BottleBlock;
@@ -132,7 +132,7 @@ public class WorldExpansionModBlocks {
 	public static final DeferredBlock<Block> HAY_BLOCK_STAIRS = REGISTRY.register("hay_block_stairs", HayBlockStairsBlock::new);
 	public static final DeferredBlock<Block> HAY_BLOCK_SLAB = REGISTRY.register("hay_block_slab", HayBlockSlabBlock::new);
 	public static final DeferredBlock<Block> THICK_SAVANNA_BUSH = REGISTRY.register("thick_savanna_bush", ThickSavannaBushBlock::new);
-	public static final DeferredBlock<Block> STONES = REGISTRY.register("stones", StonesBlock::new);
+	public static final DeferredBlock<Block> CROCKSHENG = REGISTRY.register("crocksheng", CrockshengBlock::new);
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

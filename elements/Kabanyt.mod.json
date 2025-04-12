@@ -38,13 +38,16 @@
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 1.2,
+    "hardness": 1.15,
     "resistance": 4.5,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTabs": [
       {
         "value": "CUSTOM:Worldexpansionblocks"
+      },
+      {
+        "value": "CUSTOM:NatureBlocks"
       }
     ],
     "destroyTool": "pickaxe",
