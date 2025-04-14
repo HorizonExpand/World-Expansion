@@ -5,8 +5,8 @@
     "structure": "mud_ruin0",
     "projection": "rigid",
     "ignoredBlocks": [],
-    "spacing": 22,
-    "separation": 18,
+    "spacing": 28,
+    "separation": 22,
     "restrictionBiomes": [
       {
         "value": "#mod:mud_ruins_based_to"
