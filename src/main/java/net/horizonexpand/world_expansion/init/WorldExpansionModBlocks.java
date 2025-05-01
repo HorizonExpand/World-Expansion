@@ -6,6 +6,10 @@ package net.horizonexpand.world_expansion.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
 
@@ -14,7 +18,8 @@ import net.horizonexpand.world_expansion.block.WindometerBlock;
 import net.horizonexpand.world_expansion.block.TumbleweedBlock;
 import net.horizonexpand.world_expansion.block.TitaniumOreBlock;
 import net.horizonexpand.world_expansion.block.TitaniumBlockBlock;
-import net.horizonexpand.world_expansion.block.ThickSavannaBushBlock;
+import net.horizonexpand.world_expansion.block.TigerAloeVeraBlock;
+import net.horizonexpand.world_expansion.block.ThickBushBlock;
 import net.horizonexpand.world_expansion.block.SuspiciousMudBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobabwoodBlock;
 import net.horizonexpand.world_expansion.block.StrippedbaobablogBlock;
@@ -22,6 +27,7 @@ import net.horizonexpand.world_expansion.block.RawTitaniumBlockBlock;
 import net.horizonexpand.world_expansion.block.MysteriousDoorBlock;
 import net.horizonexpand.world_expansion.block.MultiCraftingTableBlock;
 import net.horizonexpand.world_expansion.block.LittleShroomlightBlock;
+import net.horizonexpand.world_expansion.block.LittleGrassBlock;
 import net.horizonexpand.world_expansion.block.KabanytwallBlock;
 import net.horizonexpand.world_expansion.block.KabanyttileswallBlock;
 import net.horizonexpand.world_expansion.block.KabanyttilesstairsBlock;
@@ -67,7 +73,6 @@ import net.horizonexpand.world_expansion.block.BaobabFenceBlock;
 import net.horizonexpand.world_expansion.block.BaobabButtonBlock;
 import net.horizonexpand.world_expansion.block.AstilbamulticoloredBlock;
 import net.horizonexpand.world_expansion.block.AstilbaBlock;
-import net.horizonexpand.world_expansion.block.AloeVeraTigerBlock;
 import net.horizonexpand.world_expansion.block.AloeVeraBlock;
 import net.horizonexpand.world_expansion.WorldExpansionMod;
 
@@ -102,7 +107,6 @@ public class WorldExpansionModBlocks {
 	public static final DeferredBlock<Block> KABANYT_TILE_SLAB = REGISTRY.register("kabanyt_tile_slab", KabanyttilesslabBlock::new);
 	public static final DeferredBlock<Block> KABANYT_TILE_WALL = REGISTRY.register("kabanyt_tile_wall", KabanyttileswallBlock::new);
 	public static final DeferredBlock<Block> YELLOW_ASTILBA = REGISTRY.register("yellow_astilba", YellowAstilbaBlock::new);
-	public static final DeferredBlock<Block> TIGER_ALOE_VERA = REGISTRY.register("tiger_aloe_vera", AloeVeraTigerBlock::new);
 	public static final DeferredBlock<Block> TUMBLEWEED = REGISTRY.register("tumbleweed", TumbleweedBlock::new);
 	public static final DeferredBlock<Block> SUSPICIOUS_MUD = REGISTRY.register("suspicious_mud", SuspiciousMudBlock::new);
 	public static final DeferredBlock<Block> ALOE_VERA = REGISTRY.register("aloe_vera", AloeVeraBlock::new);
@@ -131,8 +135,25 @@ public class WorldExpansionModBlocks {
 	public static final DeferredBlock<Block> MYSTERIOUS_DOOR = REGISTRY.register("mysterious_door", MysteriousDoorBlock::new);
 	public static final DeferredBlock<Block> HAY_BLOCK_STAIRS = REGISTRY.register("hay_block_stairs", HayBlockStairsBlock::new);
 	public static final DeferredBlock<Block> HAY_BLOCK_SLAB = REGISTRY.register("hay_block_slab", HayBlockSlabBlock::new);
-	public static final DeferredBlock<Block> THICK_SAVANNA_BUSH = REGISTRY.register("thick_savanna_bush", ThickSavannaBushBlock::new);
 	public static final DeferredBlock<Block> CROCKSHENG = REGISTRY.register("crocksheng", CrockshengBlock::new);
+	public static final DeferredBlock<Block> TIGER_ALOE_VERA = REGISTRY.register("tiger_aloe_vera", TigerAloeVeraBlock::new);
+	public static final DeferredBlock<Block> THICK_BUSH = REGISTRY.register("thick_bush", ThickBushBlock::new);
+	public static final DeferredBlock<Block> LITTLE_GRASS = REGISTRY.register("little_grass", LittleGrassBlock::new);
+
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
+	@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+	public static class BlocksClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
+			ThickBushBlock.blockColorLoad(event);
+			LittleGrassBlock.blockColorLoad(event);
+		}
+
+		@SubscribeEvent
+		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+			ThickBushBlock.itemColorLoad(event);
+			LittleGrassBlock.itemColorLoad(event);
+		}
+	}
 }

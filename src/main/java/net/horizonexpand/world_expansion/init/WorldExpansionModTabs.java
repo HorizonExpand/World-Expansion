@@ -66,9 +66,8 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.ASTILBA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ASTILBA_MULTICOLORED.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.YELLOW_ASTILBA.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.TIGER_ALOE_VERA.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.ALOE_VERA.get().asItem());
-				tabData.accept(WorldExpansionModBlocks.THICK_SAVANNA_BUSH.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.TIGER_ALOE_VERA.get().asItem());
 				tabData.accept(WorldExpansionModItems.TUMBLEWEED_ITEM.get());
 				tabData.accept(WorldExpansionModBlocks.LITTLE_SHROOMLIGHT.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.SUSPICIOUS_MUD.get().asItem());
@@ -88,6 +87,8 @@ public class WorldExpansionModTabs {
 				tabData.accept(WorldExpansionModBlocks.RAW_TITANIUM_BLOCK.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get().asItem());
 				tabData.accept(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.THICK_BUSH.get().asItem());
+				tabData.accept(WorldExpansionModBlocks.LITTLE_GRASS.get().asItem());
 			}).withTabsBefore(BUILDING_BLOCKS.getId()).build());
 	public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ITEMS = REGISTRY.register("items",
 			() -> CreativeModeTab.builder().title(Component.translatable("item_group.world_expansion.items")).icon(() -> new ItemStack(WorldExpansionModItems.COPPER_HORN0.get())).displayItems((parameters, tabData) -> {

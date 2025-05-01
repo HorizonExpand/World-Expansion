@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "world_expansion:block/thick_savanna_bush_tint",
+    "particle": "world_expansion:block/thick_savanna_bush_tint"
+  },
+  "render_type": "cutout"
+}

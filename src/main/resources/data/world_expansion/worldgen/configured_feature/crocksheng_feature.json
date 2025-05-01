@@ -6,8 +6,8 @@
     "targets": [
       {
         "target": {
-          "predicate_type": "block_match",
-          "block": "minecraft:grass_block"
+          "predicate_type": "tag_match",
+          "tag": "minecraft:dirt"
         },
         "state": {
           "Name": "world_expansion:crocksheng"

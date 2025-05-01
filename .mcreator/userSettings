@@ -1,0 +1,19 @@
+{
+  "workspacePanelIconSize": "LARGE",
+  "workspacePanelSortType": "NAME",
+  "workspacePanelSortAscending": true,
+  "projectBrowserSplitPos": 0,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, World Expansion: Light and Dark]",
+      "[, World Expansion: Light and Dark, Resources (Gradle)]",
+      "[, World Expansion: Light and Dark, Resources (Gradle), D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data]",
+      "[, World Expansion: Light and Dark, Resources (Gradle), D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion]",
+      "[, World Expansion: Light and Dark, Resources (Gradle), D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion\\neoforge]",
+      "[, World Expansion: Light and Dark, Resources (Gradle), D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion\\neoforge, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion\\neoforge\\biome_modifier]",
+      "[, World Expansion: Light and Dark, Resources (Gradle), D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion\\worldgen]",
+      "[, World Expansion: Light and Dark, Resources (Gradle), D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion\\worldgen, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion\\worldgen\\configured_feature]",
+      "[, World Expansion: Light and Dark, Resources (Gradle), D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion\\worldgen, D:\\Games\\MCreator 2025.1\\MCreatorWorkspaces\\world_expansion\\src\\main\\resources\\data\\world_expansion\\worldgen\\placed_feature]"
+    ]
+  }
+}

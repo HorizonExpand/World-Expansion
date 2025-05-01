@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "savanna",
+    "savanna_plateau",
+    "windswept_savanna",
+    "world_expansion:dry_savanna"
+  ],
+  "features": "world_expansion:thick_bush_feature",
+  "step": "vegetal_decoration"
+}

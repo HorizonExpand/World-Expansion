@@ -1,0 +1,8 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "world_expansion:block/little_grass",
+    "particle": "world_expansion:block/little_grass"
+  },
+  "render_type": "cutout"
+}

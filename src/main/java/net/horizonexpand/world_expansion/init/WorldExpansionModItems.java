@@ -82,7 +82,6 @@ public class WorldExpansionModItems {
 	public static final DeferredItem<Item> KABANYT_TILE_SLAB = block(WorldExpansionModBlocks.KABANYT_TILE_SLAB);
 	public static final DeferredItem<Item> KABANYT_TILE_WALL = block(WorldExpansionModBlocks.KABANYT_TILE_WALL);
 	public static final DeferredItem<Item> YELLOW_ASTILBA = block(WorldExpansionModBlocks.YELLOW_ASTILBA);
-	public static final DeferredItem<Item> TIGER_ALOE_VERA = block(WorldExpansionModBlocks.TIGER_ALOE_VERA);
 	public static final DeferredItem<Item> LEAVE_OF_ALOE_VERA = REGISTRY.register("leave_of_aloe_vera", LeaveOfAloeVeraItem::new);
 	public static final DeferredItem<Item> TUMBLEWEED = block(WorldExpansionModBlocks.TUMBLEWEED);
 	public static final DeferredItem<Item> JUDAS_FRUIT = REGISTRY.register("judas_fruit", JudasFruitItem::new);
@@ -137,8 +136,10 @@ public class WorldExpansionModItems {
 	public static final DeferredItem<Item> MUSIC_DISC_DESTROYER = REGISTRY.register("music_disc_destroyer", MusicDiscDestroyerItem::new);
 	public static final DeferredItem<Item> HAY_BLOCK_STAIRS = block(WorldExpansionModBlocks.HAY_BLOCK_STAIRS);
 	public static final DeferredItem<Item> HAY_BLOCK_SLAB = block(WorldExpansionModBlocks.HAY_BLOCK_SLAB);
-	public static final DeferredItem<Item> THICK_SAVANNA_BUSH = block(WorldExpansionModBlocks.THICK_SAVANNA_BUSH);
 	public static final DeferredItem<Item> CROCKSHENG = block(WorldExpansionModBlocks.CROCKSHENG);
+	public static final DeferredItem<Item> TIGER_ALOE_VERA = block(WorldExpansionModBlocks.TIGER_ALOE_VERA);
+	public static final DeferredItem<Item> THICK_BUSH = block(WorldExpansionModBlocks.THICK_BUSH);
+	public static final DeferredItem<Item> LITTLE_GRASS = block(WorldExpansionModBlocks.LITTLE_GRASS);
 
 	// Start of user code block custom items
 	// End of user code block custom items

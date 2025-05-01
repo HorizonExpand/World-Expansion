@@ -1,8 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "world_expansion:block/thick_savanna_bush",
-    "particle": "world_expansion:block/thick_savanna_bush"
-  },
-  "render_type": "cutout"
-}

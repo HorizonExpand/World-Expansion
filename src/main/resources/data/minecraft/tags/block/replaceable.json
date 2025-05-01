@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
+    "world_expansion:little_grass",
+    "world_expansion:thick_bush",
     "world_expansion:tumbleweed"
   ]
 }
