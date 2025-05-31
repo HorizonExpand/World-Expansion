@@ -12,13 +12,13 @@
                 "data": {
                   "Name": "minecraft:short_grass"
                 },
-                "weight": 2
+                "weight": 3
               },
               {
                 "data": {
                   "Name": "world_expansion:little_grass"
                 },
-                "weight": 1
+                "weight": 2
               }
             ]
           }
@@ -34,7 +34,7 @@
         }
       ]
     },
-    "tries": 40,
+    "tries": 48,
     "xz_spread": 7,
     "y_spread": 3
   }

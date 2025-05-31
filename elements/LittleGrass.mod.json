@@ -95,7 +95,10 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "isBonemealable": false,
+    "isBonemealable": true,
+    "onBonemealSuccess": {
+      "name": "LittleGrassBoneMealUse"
+    },
     "frequencyOnChunks": 5,
     "generateFeature": false,
     "restrictionBiomes": [],
