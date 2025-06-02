@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wheat_from_hay_blocks",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": {
+      "item": "world_expansion:hay_block_slab"
+    }
+  },
+  "result": {
+    "id": "minecraft:wheat",
+    "count": 3
+  }
+}

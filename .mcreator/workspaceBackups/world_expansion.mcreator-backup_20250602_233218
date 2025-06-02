@@ -2813,76 +2813,6 @@
       "path": "~/Features/Blocks/Kabanyt"
     },
     {
-      "name": "AloeVeraTigerPriRazrushieniiRastieniiaIghrokom",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aloe_vera_tiger_pri_razrushienii_rastieniia_ighrokom",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/AloeVeraTigerPriRazrushieniiRastieniiaIghrokomProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Mining Blocks"
-    },
-    {
-      "name": "AloeVeraPriRazrushieniiRastieniiaIghrokom",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aloe_vera_pri_razrushienii_rastieniia_ighrokom",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/AloeVeraPriRazrushieniiRastieniiaIghrokomProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Mining Blocks"
-    },
-    {
       "name": "NatureBlocks",
       "type": "tab",
       "compiles": true,
@@ -6800,6 +6730,67 @@
         ]
       },
       "path": "~/Blocks/Plants"
+    },
+    {
+      "name": "LittleGrassBoneMealUse",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "little_grass_bone_meal_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/horizonexpand/world_expansion/procedures/LittleGrassBoneMealUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "SavannaCoarseDirtRandomPatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_coarse_dirt_random_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_coarse_dirt_random_patch_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_coarse_dirt_random_patch.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_coarse_dirt_random_patch.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "SavannaPackedMudRandomPatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_packed_mud_random_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_packed_mud_random_patch_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_packed_mud_random_patch.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_packed_mud_random_patch.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
     }
   ],
   "variable_elements": [
@@ -8100,6 +8091,8 @@
       "AloeVera",
       "TigerAloeVera",
       "TumbleweedProjectile",
+      "ThickBush",
+      "LittleGrass",
       "LittleShroomlight",
       "SuspiciousMud",
       "Kabanyt",
@@ -8117,9 +8110,7 @@
       "KabanytRedstoneOre",
       "RawTitaniumBlock",
       "HayBlockStairs",
-      "HayBlockSlab",
-      "ThickBush",
-      "LittleGrass"
+      "HayBlockSlab"
     ],
     "CUSTOM:Items": [
       "JudasFruit",
@@ -9046,7 +9037,7 @@
   "workspaceSettings": {
     "modid": "world_expansion",
     "modName": "World Expansion: Light and Dark",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "This mod upgraded vanilla biomes and adds new for a more interesting journey around the world!",
     "author": "HorizonExpand",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion",

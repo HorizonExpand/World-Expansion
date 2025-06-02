@@ -3,7 +3,7 @@
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
-    "recipeRetstackSize": 4,
+    "recipeRetstackSize": 1,
     "group": "",
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -12,7 +12,7 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Items.WHEAT"
       },
       {
         "value": ""
@@ -21,22 +21,22 @@
         "value": ""
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Items.WHEAT"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Items.WHEAT"
       },
       {
         "value": ""
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Items.WHEAT"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Items.WHEAT"
       },
       {
-        "value": "Blocks.HAY_BLOCK"
+        "value": "Items.WHEAT"
       }
     ],
     "recipeReturnStack": {

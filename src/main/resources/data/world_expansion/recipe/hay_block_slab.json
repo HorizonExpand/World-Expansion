@@ -6,11 +6,11 @@
   ],
   "key": {
     "a": {
-      "item": "minecraft:hay_block"
+      "item": "minecraft:wheat"
     }
   },
   "result": {
     "id": "world_expansion:hay_block_slab",
-    "count": 6
+    "count": 1
   }
 }

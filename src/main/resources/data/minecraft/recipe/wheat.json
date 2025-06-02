@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "wheat_from_hay_blocks",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:hay_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "minecraft:wheat"
+  }
+}

@@ -2813,76 +2813,6 @@
       "path": "~/Features/Blocks/Kabanyt"
     },
     {
-      "name": "AloeVeraTigerPriRazrushieniiRastieniiaIghrokom",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aloe_vera_tiger_pri_razrushienii_rastieniia_ighrokom",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/AloeVeraTigerPriRazrushieniiRastieniiaIghrokomProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Mining Blocks"
-    },
-    {
-      "name": "AloeVeraPriRazrushieniiRastieniiaIghrokom",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "aloe_vera_pri_razrushienii_rastieniia_ighrokom",
-      "metadata": {
-        "files": [
-          "src/main/java/net/horizonexpand/world_expansion/procedures/AloeVeraPriRazrushieniiRastieniiaIghrokomProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures/Mining Blocks"
-    },
-    {
       "name": "NatureBlocks",
       "type": "tab",
       "compiles": true,
@@ -3286,19 +3216,6 @@
         ]
       },
       "path": "~/Recipe/Trims"
-    },
-    {
-      "name": "SavannaSurfaceSandstone",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "savanna_surface_sandstone",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_sandstone.json"
-        ]
-      },
-      "path": "~/Features/Biomes/Savanna"
     },
     {
       "name": "TumbleweedProjectileProjectile",
@@ -4583,32 +4500,6 @@
         ]
       },
       "path": "~/Loot Table/Blocks/Kabanyt/Ore"
-    },
-    {
-      "name": "SavannaSurfaceTerracotta",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "savanna_surface_terracotta",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_terracotta.json"
-        ]
-      },
-      "path": "~/Features/Biomes/Savanna"
-    },
-    {
-      "name": "SavannaSurfaceYellowTerracotta",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "savanna_surface_yellow_terracotta",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_yellow_terracotta.json"
-        ]
-      },
-      "path": "~/Features/Biomes/Savanna"
     },
     {
       "name": "AcaciaBushFeature",
@@ -6831,6 +6722,109 @@
         ]
       },
       "path": "~/Procedures"
+    },
+    {
+      "name": "SavannaCoarseDirtRandomPatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_coarse_dirt_random_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_coarse_dirt_random_patch_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_coarse_dirt_random_patch.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_coarse_dirt_random_patch.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "SavannaPackedMudRandomPatch",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_packed_mud_random_patch",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_packed_mud_random_patch_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_packed_mud_random_patch.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_packed_mud_random_patch.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "WheatFromHayBlockStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheat_from_hay_block_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/recipe/wheat_from_hay_block_stairs.json"
+        ]
+      },
+      "path": "~/Recipe/Hay"
+    },
+    {
+      "name": "WheatFromHayBlockSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheat_from_hay_block_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/recipe/wheat_from_hay_block_slab.json"
+        ]
+      },
+      "path": "~/Recipe/Hay"
+    },
+    {
+      "name": "SavannaRockAndesite",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_rock_andesite",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_rock_andesite.json",
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_rock_andesite_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_rock_andesite.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "SavannaRockPackedMud",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_rock_packed_mud",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_rock_packed_mud.json",
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_rock_packed_mud_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_rock_packed_mud.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "SavannaRockCrocksheng",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_rock_crocksheng",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_rock_crocksheng_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_rock_crocksheng.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_rock_crocksheng.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
     }
   ],
   "variable_elements": [
@@ -8131,6 +8125,8 @@
       "AloeVera",
       "TigerAloeVera",
       "TumbleweedProjectile",
+      "ThickBush",
+      "LittleGrass",
       "LittleShroomlight",
       "SuspiciousMud",
       "Kabanyt",
@@ -8148,9 +8144,7 @@
       "KabanytRedstoneOre",
       "RawTitaniumBlock",
       "HayBlockStairs",
-      "HayBlockSlab",
-      "ThickBush",
-      "LittleGrass"
+      "HayBlockSlab"
     ],
     "CUSTOM:Items": [
       "JudasFruit",
@@ -9077,7 +9071,7 @@
   "workspaceSettings": {
     "modid": "world_expansion",
     "modName": "World Expansion: Light and Dark",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "This mod upgraded vanilla biomes and adds new for a more interesting journey around the world!",
     "author": "HorizonExpand",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion",

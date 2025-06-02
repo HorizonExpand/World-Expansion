@@ -253,5 +253,18 @@ public class GiverecipeProcedure {
 			if (entity instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.awardRecipesByKey(Collections.singletonList(ResourceLocation.parse("world_expansion:carved_kabanyt_craft_recipe")));
 		}
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(Items.WHEAT)) : false) {
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(Collections.singletonList(ResourceLocation.parse("world_expansion:hay_block_stairs")));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(Collections.singletonList(ResourceLocation.parse("world_expansion:hay_block_slab")));
+		}
+		if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(WorldExpansionModBlocks.HAY_BLOCK_STAIRS.get())) : false)
+				|| (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(WorldExpansionModBlocks.HAY_BLOCK_SLAB.get())) : false)) {
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(Collections.singletonList(ResourceLocation.parse("world_expansion:wheat_from_hay_block_stairs")));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(Collections.singletonList(ResourceLocation.parse("world_expansion:wheat_from_hay_block_slab")));
+		}
 	}
 }

@@ -1,10 +1,6 @@
 {
-  "feature": "world_expansion:crocksheng_feature",
+  "feature": "world_expansion:savanna_coarse_dirt_random_patch",
   "placement": [
-    {
-      "type": "minecraft:count",
-      "count": 5
-    },
     {
       "type": "minecraft:in_square"
     },
@@ -19,6 +15,10 @@
           "absolute": 128
         }
       }
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "OCEAN_FLOOR_WG"
     },
     {
       "type": "minecraft:biome"
