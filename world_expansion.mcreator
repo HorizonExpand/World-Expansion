@@ -6825,6 +6825,32 @@
         ]
       },
       "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "ThickBushLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "thick_bush_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_table/blocks/thick_bush.json"
+        ]
+      },
+      "path": "~/Loot Table/Blocks"
+    },
+    {
+      "name": "LittleGrassLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "little_grass_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_table/blocks/little_grass.json"
+        ]
+      },
+      "path": "~/Loot Table/Blocks"
     }
   ],
   "variable_elements": [

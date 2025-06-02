@@ -3218,19 +3218,6 @@
       "path": "~/Recipe/Trims"
     },
     {
-      "name": "SavannaSurfaceSandstone",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "savanna_surface_sandstone",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_sandstone.json"
-        ]
-      },
-      "path": "~/Features/Biomes/Savanna"
-    },
-    {
       "name": "TumbleweedProjectileProjectile",
       "type": "projectile",
       "compiles": true,
@@ -4513,32 +4500,6 @@
         ]
       },
       "path": "~/Loot Table/Blocks/Kabanyt/Ore"
-    },
-    {
-      "name": "SavannaSurfaceTerracotta",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "savanna_surface_terracotta",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_terracotta.json"
-        ]
-      },
-      "path": "~/Features/Biomes/Savanna"
-    },
-    {
-      "name": "SavannaSurfaceYellowTerracotta",
-      "type": "feature",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "savanna_surface_yellow_terracotta",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_surface_yellow_terracotta.json"
-        ]
-      },
-      "path": "~/Features/Biomes/Savanna"
     },
     {
       "name": "AcaciaBushFeature",
@@ -6791,6 +6752,92 @@
         ]
       },
       "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "WheatFromHayBlockStairsRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheat_from_hay_block_stairs_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/recipe/wheat_from_hay_block_stairs.json"
+        ]
+      },
+      "path": "~/Recipe/Hay"
+    },
+    {
+      "name": "WheatFromHayBlockSlabRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wheat_from_hay_block_slab_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/recipe/wheat_from_hay_block_slab.json"
+        ]
+      },
+      "path": "~/Recipe/Hay"
+    },
+    {
+      "name": "SavannaRockAndesite",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_rock_andesite",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_rock_andesite.json",
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_rock_andesite_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_rock_andesite.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "SavannaRockPackedMud",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_rock_packed_mud",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_rock_packed_mud.json",
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_rock_packed_mud_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_rock_packed_mud.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "SavannaRockCrocksheng",
+      "type": "feature",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "savanna_rock_crocksheng",
+      "metadata": {
+        "has_nbt_structure": true,
+        "files": [
+          "src/main/resources/data/world_expansion/neoforge/biome_modifier/savanna_rock_crocksheng_biome_modifier.json",
+          "src/main/resources/data/world_expansion/worldgen/configured_feature/savanna_rock_crocksheng.json",
+          "src/main/resources/data/world_expansion/worldgen/placed_feature/savanna_rock_crocksheng.json"
+        ]
+      },
+      "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "ThickBushLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "thick_bush_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_table/blocks/thick_bush.json"
+        ]
+      },
+      "path": "~/Loot Table/Blocks"
     }
   ],
   "variable_elements": [
@@ -9037,7 +9084,7 @@
   "workspaceSettings": {
     "modid": "world_expansion",
     "modName": "World Expansion: Light and Dark",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "This mod upgraded vanilla biomes and adds new for a more interesting journey around the world!",
     "author": "HorizonExpand",
     "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/world-expansion-light-and-dark Or https://modrinth.com/mod/world-expansion",
