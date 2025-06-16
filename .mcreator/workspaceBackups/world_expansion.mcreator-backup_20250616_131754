@@ -6825,6 +6825,32 @@
         ]
       },
       "path": "~/Features/Biomes/Savanna"
+    },
+    {
+      "name": "ThickBushLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "thick_bush_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_table/blocks/thick_bush.json"
+        ]
+      },
+      "path": "~/Loot Table/Blocks"
+    },
+    {
+      "name": "LittleGrassLootTable",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "little_grass_loot_table",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/world_expansion/loot_table/blocks/little_grass.json"
+        ]
+      },
+      "path": "~/Loot Table/Blocks"
     }
   ],
   "variable_elements": [
@@ -7216,10 +7242,8 @@
     "ITEMS:minecraft:planks": [
       "CUSTOM:BaobabPlanks"
     ],
-    "BLOCKS:minecraft:valid_spawn": [
-      "CUSTOM:Kabanyt",
-      "Blocks.SAND#1",
-      "Blocks.SAND#0"
+    "BLOCKS:minecraft:coal_ores": [
+      "CUSTOM:KabanytCoalOre"
     ],
     "ITEMS:minecraft:piglin_repellents": [
       "CUSTOM:Astilbamulticolored",
@@ -7248,8 +7272,10 @@
       "CUSTOM:KabanytTitaniumOre",
       "CUSTOM:KabanytRedstoneOreOn"
     ],
-    "BLOCKS:minecraft:coal_ores": [
-      "CUSTOM:KabanytCoalOre"
+    "BLOCKS:minecraft:valid_spawn": [
+      "CUSTOM:Kabanyt",
+      "Blocks.SAND#1",
+      "Blocks.SAND#0"
     ],
     "ITEMS:minecraft:iron_ores": [
       "CUSTOM:KabanytIronOre"
@@ -7310,9 +7336,6 @@
       "Blocks.STAINED_GLASS#14",
       "Blocks.STAINED_GLASS#15"
     ],
-    "ITEMS:minecraft:wooden_doors": [
-      "CUSTOM:Baobabdoor"
-    ],
     "ITEMS:c:glass_pane": [
       "Blocks.GLASS_PANE",
       "Blocks.STAINED_GLASS_PANE#0",
@@ -7331,6 +7354,9 @@
       "Blocks.STAINED_GLASS_PANE#13",
       "Blocks.STAINED_GLASS_PANE#14",
       "Blocks.STAINED_GLASS_PANE#15"
+    ],
+    "ITEMS:minecraft:wooden_doors": [
+      "CUSTOM:Baobabdoor"
     ],
     "BLOCKS:minecraft:wooden_buttons": [
       "CUSTOM:BaobabButton"
@@ -8177,18 +8203,18 @@
   },
   "language_map": {
     "ru_ru": {
-      "item.world_expansion.copper_horn3": "Медный рог ",
       "block.world_expansion.kabanyt_bricks_wall": "Кирпичная ограда из кабанита",
-      "biome.world_expansion.politania": "Политания",
+      "item.world_expansion.copper_horn3": "Медный рог ",
       "item.world_expansion.copper_horn2": "Медный рог ",
+      "biome.world_expansion.politania": "Политания",
       "item.world_expansion.copper_horn5": "Медный рог ",
-      "item.world_expansion.copper_horn4": "Медный рог ",
       "attribute.world_expansion.kickback_multiplier": "Отдача",
+      "item.world_expansion.copper_horn4": "Медный рог ",
       "item.world_expansion.copper_horn7": "Медный рог ",
-      "block.world_expansion.little_shroomlight": "Маленький грибосвет",
       "item.world_expansion.copper_horn6": "Медный рог ",
-      "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
+      "block.world_expansion.little_shroomlight": "Маленький грибосвет",
       "item.world_expansion.copper_horn9": "Медный рог ",
+      "advancements.lisa_simpson.descr": "Сыграйте великолепную мелодию при помощи медного рога!",
       "item.world_expansion.copper_horn8": "Медный рог ",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Мульти-Верстак",
       "advancements.the_wildest_in_the_wild_west.descr": "Умрите от Перекати-поля",
@@ -8200,8 +8226,8 @@
       "advancements.someone_dropped_it.descr": "Добудьте что-нибудь из Подозрительной грязи",
       "death.attack.tumbleweed_damage_type": "Ковбой %1$s был остановлен",
       "subtitles.music_disc_spooky_forest": "",
-      "advancements.ancient_civilization_part_2.description": "Что это за странное строение?",
       "item.world_expansion.mini_fireflies_spawn_egg": "Яйцо призыва Мини-Светлячков",
+      "advancements.ancient_civilization_part_2.description": "Что это за странное строение?",
       "block.world_expansion.titanium_block": "Титановый блок",
       "block.world_expansion.baobab_log": "Древисина баобаба",
       "block.world_expansion.stripped_baobab_wood": "Обтёсанная кора баобаба",
@@ -8217,11 +8243,11 @@
       "subtitles.melody6": "Гул медного рога",
       "subtitles.melody5": "Гул медного рога",
       "subtitles.melody4": "Гул медного рога",
-      "subtitles.melody3": "Гул медного рога",
-      "block.world_expansion.hay_block_slab": "Плита из сена",
       "item.world_expansion.copper_horn2.description_0": "Стремление",
-      "subtitles.melody9": "Гул медного рога",
+      "block.world_expansion.hay_block_slab": "Плита из сена",
+      "subtitles.melody3": "Гул медного рога",
       "item.world_expansion.copper_horn8.description_0": "Тревожность",
+      "subtitles.melody9": "Гул медного рога",
       "subtitles.melody8": "Гул медного рога",
       "subtitles.melody7": "Гул медного рога",
       "subtitles.dealers_shotgun_shooting": "Выстрел из Дробовика §oИгрального",
@@ -8235,8 +8261,8 @@
       "subtitles.dealers_shotgun_forearm_end": "",
       "subtitles.harmony9": "Высокий гул медного рога",
       "subtitles.harmony7": "Высокий гул медного рога",
-      "subtitles.harmony8": "Высокий гул медного рога",
       "advancements.world_expansion.descr": "Исследуйте мир!",
+      "subtitles.harmony8": "Высокий гул медного рога",
       "subtitles.harmony5": "Высокий гул медного рога",
       "subtitles.harmony6": "Высокий гул медного рога",
       "subtitles.harmony3": "Высокий гул медного рога",
@@ -8254,8 +8280,8 @@
       "block.world_expansion.kabanyt_bricks_slab": "Кирпичная плита из кабанита",
       "advancements.ancient_civilization_part_2.title": "Древняя Цивилизация: Часть 2",
       "subtitles.harmony0": "Высокий гул медного рога",
-      "subtitles.music_disc_destroyer": "",
       "biome.world_expansion.baobab_valley": "Долина баобабов",
+      "subtitles.music_disc_destroyer": "",
       "item_group.world_expansion.natural_blocks": "WE: Природные блоки",
       "advancements.tile_slab.title": "Плиточная плита",
       "item_group.world_expansion.mobs": "WE: Мобы",
@@ -8392,18 +8418,18 @@
       "item.world_expansion.copper_horn5.description_0": "Зов"
     },
     "en_us": {
-      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt Bricks Wall",
       "item.world_expansion.copper_horn3": "Copper Horn",
-      "biome.world_expansion.politania": "Politania",
+      "block.world_expansion.kabanyt_bricks_wall": "Kabanyt Bricks Wall",
       "item.world_expansion.copper_horn2": "Copper Horn",
+      "biome.world_expansion.politania": "Politania",
       "item.world_expansion.copper_horn5": "Copper Horn",
-      "attribute.world_expansion.kickback_multiplier": "Kickback Multiplier",
       "item.world_expansion.copper_horn4": "Copper Horn",
+      "attribute.world_expansion.kickback_multiplier": "Kickback Multiplier",
       "item.world_expansion.copper_horn7": "Copper Horn",
-      "item.world_expansion.copper_horn6": "Copper Horn",
       "block.world_expansion.little_shroomlight": "Little Shroomlight",
-      "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
+      "item.world_expansion.copper_horn6": "Copper Horn",
       "item.world_expansion.copper_horn9": "Copper Horn",
+      "advancements.lisa_simpson.descr": "Play a Great Melody with a Copper Horn",
       "item.world_expansion.copper_horn8": "Copper Horn",
       "advancements.the_wildest_in_the_wild_west.descr": "Die from a Tumbleweed",
       "gui.world_expansion.multi_crafting_table_gui_copper_horn.label_multicrafting_table": "Multi-Crafting Table",
@@ -8415,8 +8441,8 @@
       "advancements.someone_dropped_it.descr": "Get an item from Suspicious Mud",
       "death.attack.tumbleweed_damage_type": "Cowboy %1$s was stopped",
       "subtitles.music_disc_spooky_forest": "",
-      "item.world_expansion.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
       "advancements.ancient_civilization_part_2.description": "What is this Strange structure?",
+      "item.world_expansion.mini_fireflies_spawn_egg": "Mini-Fireflies Spawn Egg",
       "block.world_expansion.titanium_block": "Titanium Block",
       "block.world_expansion.baobab_log": "Baobab Log",
       "block.world_expansion.stripped_baobab_wood": "Stripped Baobab Wood",
@@ -8432,11 +8458,11 @@
       "subtitles.melody6": "The hum of a copper horn",
       "subtitles.melody5": "The hum of a copper horn",
       "subtitles.melody4": "The hum of a copper horn",
-      "item.world_expansion.copper_horn2.description_0": "Seek",
-      "block.world_expansion.hay_block_slab": "Hay Bale Slab",
       "subtitles.melody3": "The hum of a copper horn",
-      "item.world_expansion.copper_horn8.description_0": "Caution",
+      "block.world_expansion.hay_block_slab": "Hay Bale Slab",
+      "item.world_expansion.copper_horn2.description_0": "Seek",
       "subtitles.melody9": "The hum of a copper horn",
+      "item.world_expansion.copper_horn8.description_0": "Caution",
       "subtitles.melody8": "The hum of a copper horn",
       "subtitles.melody7": "The hum of a copper horn",
       "subtitles.dealers_shotgun_shooting": "§oGambler\u0027s §rShotgun shooting",
@@ -8450,8 +8476,8 @@
       "subtitles.dealers_shotgun_forearm_end": "",
       "subtitles.harmony9": "The high hum of a copper horn",
       "subtitles.harmony7": "The high hum of a copper horn",
-      "subtitles.harmony8": "The high hum of a copper horn",
       "advancements.world_expansion.descr": "Explore the World!",
+      "subtitles.harmony8": "The high hum of a copper horn",
       "subtitles.harmony5": "The high hum of a copper horn",
       "subtitles.harmony6": "The high hum of a copper horn",
       "subtitles.harmony3": "The high hum of a copper horn",
@@ -8469,8 +8495,8 @@
       "block.world_expansion.kabanyt_bricks_slab": "Kabanyt Bricks Slab",
       "advancements.ancient_civilization_part_2.title": "Ancient Civilization: Part 2",
       "subtitles.harmony0": "The high hum of a copper horn",
-      "biome.world_expansion.baobab_valley": "Baobab valley",
       "subtitles.music_disc_destroyer": "",
+      "biome.world_expansion.baobab_valley": "Baobab valley",
       "item_group.world_expansion.natural_blocks": "WE: Natural Blocks",
       "advancements.tile_slab.title": "Tile Slab",
       "item_group.world_expansion.mobs": "WE: Mobs",
